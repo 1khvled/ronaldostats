@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.wrangler/
+.superpowers/
+scratch/
+scratch_audit/
+# env — admin password and secrets never committed
+.env
+.env.*
+.env*.local
+*.env

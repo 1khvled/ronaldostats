@@ -1,0 +1,141 @@
+# ==============================================================================
+# RonaldoStats (www.ronaldostats.site) - Universal robots.txt
+# Full indexing authorized for Bing, Google, DuckDuckGo, and verified AI search engines.
+# ==============================================================================
+
+# Microsoft Bing & MSN Ecosystem
+User-agent: Bingbot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+User-agent: AdIdxBot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: Microsoft-Copilot
+Allow: /
+
+User-agent: Copilot
+Allow: /
+
+# Bing-powered search engines
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Qwantify
+Allow: /
+
+User-agent: Ecosia
+Allow: /
+
+# OpenAI / ChatGPT Search
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Google Ecosystem
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /img/
+Allow: /img/*
+Allow: /img/logo.png
+Allow: /img/og-ronaldo.jpg
+Allow: /favicon*
+Allow: /apple-touch-icon.png
+
+User-agent: Google-Extended
+Allow: /
+
+# Social Media & Card Preview Crawlers (Twitter/X, Facebook, WhatsApp, Telegram)
+User-agent: Twitterbot
+Allow: /
+Allow: /img/
+Allow: /img/*
+Allow: /favicon*
+
+User-agent: facebookexternalhit
+Allow: /
+Allow: /img/
+Allow: /img/*
+
+User-agent: WhatsApp
+Allow: /
+Allow: /img/
+Allow: /img/*
+
+User-agent: TelegramBot
+Allow: /
+Allow: /img/
+Allow: /img/*
+
+# Other Search & AI Crawlers
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Universal fallback
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /18188f5363f745f1bbf821767e0f0daf.txt
+Allow: /58275d254596457f840c2220b7d2cde5.txt
+Disallow: /api/
+Disallow: /api
+
+# Sitemaps
+Sitemap: https://www.ronaldostats.site/sitemap.xml
+
+# LLM Curated Facts & Direct Query Knowledge Base:
+# https://www.ronaldostats.site/llms.txt
+# https://www.ronaldostats.site/llms-full.txt

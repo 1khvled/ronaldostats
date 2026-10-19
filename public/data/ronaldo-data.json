@@ -1,0 +1,1820 @@
+{
+  "meta": {
+    "status": "CROSS_CHECKED",
+    "updated": "2026-10-19",
+    "methodology": "Senior first-team matches only. Club rows follow the Wikipedia career-achievements club season table (league / domestic cup / continental / other), cross-checked against RSSSF, worldfootball.net and Transfermarkt. Portugal rows are parsed directly from the RSSSF appearance list, which supplies both the per-year caps and the competitive-versus-friendly split. Every split in this file is computed from the rows, never typed by hand, so the checksum invariants cannot drift.",
+    "verification": [
+      "Club season splits: Wikipedia 'List of career achievements by Cristiano Ronaldo' club season table (cites Soccerway and worldfootball.net), fetched 2026-10-19. Rows reconciled to the published per-club totals: Sporting CP 31/5, Manchester United 346/145, Real Madrid 438/450, Juventus 134/101, Al Nassr 157/134.",
+      "International record: RSSSF 'Cristiano Ronaldo dos Santos Aveiro - Century of International Appearances' (Roberto Mamrud), last updated 7 Oct 2026 — 233 caps, 146 goals, and a type tally of 56 friendlies / 52 World Cup qualifiers / 44 European qualifiers / 30 European Championship / 27 World Cup / 20 Nations League / 4 Confederations Cup. This file reproduces that tally exactly.",
+      "234th cap: UEFA 'Europe's most-capped men's international players: Cristiano Ronaldo on 234 appearances for Portugal', 29 Sep 2026, data correct as of 6 Oct 2026 — the extra cap is the UEFA Nations League match away to Norway on 27 Sep 2026, the most recent of his 234 Portugal appearances.",
+      "International goals: Wikipedia 'List of international goals scored by Cristiano Ronaldo' (146 goals with dates and competitions, as of 24 Sep 2026) agrees with the RSSSF goal column year by year.",
+      "Calendar-year totals: Wikipedia 'Goals by year' plus the RSSSF international goal list agree on every year from 2002 to 2026; each year is the sum of that year's club goals and Portugal goals, and the series sums to 981.",
+      "Set pieces: 184 penalties from 220 attempts (83.6% conversion), 66 direct free-kick goals and 66 hat-tricks — planetfootball (7 Jul 2026), Sofascore (14 Aug 2026) and messivsronaldo.app. The open-play figure of 731 is the residual of the same compiled table.",
+      "Body-part split (right foot 634 / left foot 186 / head 158 / other 3) is published only by aggregators and stays PROVISIONAL; Wikipedia's records table gives 156 headed goals.",
+      "Trophy count: 35 senior team trophies from the itemised Wikipedia honours list (32 club + 3 Portugal). Popular media counts of 36-37 over-count the UEFA Super Cup (2 senior wins, not 3) and the domestic supercups (6, not 7).",
+      "Last senior goal: #981, Al Nassr, 12 Oct 2026 (SPL reported #980 on 9 Oct 2026 vs Al Diriyah)."
+    ],
+    "sources": [
+      "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html",
+      "https://en.wikipedia.org/wiki/List_of_career_achievements_by_Cristiano_Ronaldo",
+      "https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Cristiano_Ronaldo",
+      "https://en.wikipedia.org/wiki/Career_of_Cristiano_Ronaldo",
+      "https://www.uefa.com/uefanationsleague/news/023f-0e9797c3479b-bdb6067609d3-1000--europe-s-most-capped-men-s-international-players-cristiano",
+      "https://www.spl.com.sa/en/news/on-to-the-next-ronaldo-hits-980-career-goals-as-champions-al-nassr-move-joint-top",
+      "https://ronaldostats.app"
+    ],
+    "syncedMatches": []
+  },
+  "profile": {
+    "name": "Cristiano Ronaldo",
+    "short": "CR7",
+    "number": 7,
+    "born": "1985-02-05",
+    "birthplace": "Funchal, Madeira, Portugal",
+    "height_m": 1.87,
+    "position": "Forward",
+    "teams": [
+      "Sporting CP 2002-2003",
+      "Manchester United 2003-2009",
+      "Real Madrid 2009-2018",
+      "Juventus 2018-2022",
+      "Manchester United 2021-2022",
+      "Al Nassr 2023-2026"
+    ],
+    "age": 41,
+    "role": "Forward",
+    "current": [
+      "Al Nassr"
+    ]
+  },
+  "totals": {
+    "club": {
+      "appearances": 1106,
+      "goals": 835,
+      "goalsPerGame": 0.75
+    },
+    "country": {
+      "appearances": 234,
+      "goals": 146,
+      "goalsPerGame": 0.62
+    },
+    "combined": {
+      "appearances": 1340,
+      "goals": 981
+    },
+    "assists": {
+      "official": 261,
+      "transfermarkt": 291,
+      "byTeam": {
+        "real_madrid": {
+          "official": 152,
+          "transfermarkt": 160,
+          "appearances": 438
+        },
+        "manchester_united": {
+          "official": 66,
+          "transfermarkt": 72,
+          "appearances": 346
+        },
+        "juventus": {
+          "official": 20,
+          "transfermarkt": 23,
+          "appearances": 134
+        },
+        "al_nassr": {
+          "official": 9,
+          "transfermarkt": 11,
+          "appearances": 157
+        },
+        "sporting_cp": {
+          "official": 0,
+          "transfermarkt": 0,
+          "appearances": 31
+        },
+        "portugal": {
+          "official": 14,
+          "transfermarkt": 25,
+          "appearances": 234
+        }
+      },
+      "records": {
+        "champions_league": 42,
+        "la_liga": 61,
+        "premier_league": 38,
+        "international": 36
+      },
+      "goalContributions": {
+        "official": 1242,
+        "transfermarkt": 1272,
+        "perGameOfficial": 0.93
+      },
+      "note": "Career assist total of 261 is the widely published compiled tally (planetfootball / Sofascore / messivsronaldo.app); Transfermarkt's wider criteria (penalties won, rebounds) gives 291. The club-by-team assist splits are compiled tallies and stay PROVISIONAL until a true match-by-match hand count is finished."
+    },
+    "goalsPerGame": 0.73
+  },
+  "clubSeasons": [
+    {
+      "club": "Sporting CP",
+      "season": "2002/03",
+      "league": [
+        25,
+        3
+      ],
+      "cup": [
+        3,
+        2
+      ],
+      "continental": [
+        3,
+        0
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 31,
+      "goals": 5
+    },
+    {
+      "club": "Manchester United",
+      "season": "2003/04",
+      "league": [
+        29,
+        4
+      ],
+      "cup": [
+        6,
+        2
+      ],
+      "continental": [
+        5,
+        0
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 40,
+      "goals": 6
+    },
+    {
+      "club": "Manchester United",
+      "season": "2004/05",
+      "league": [
+        33,
+        5
+      ],
+      "cup": [
+        9,
+        4
+      ],
+      "continental": [
+        8,
+        0
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 50,
+      "goals": 9
+    },
+    {
+      "club": "Manchester United",
+      "season": "2005/06",
+      "league": [
+        33,
+        9
+      ],
+      "cup": [
+        6,
+        2
+      ],
+      "continental": [
+        8,
+        1
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 47,
+      "goals": 12
+    },
+    {
+      "club": "Manchester United",
+      "season": "2006/07",
+      "league": [
+        34,
+        17
+      ],
+      "cup": [
+        8,
+        3
+      ],
+      "continental": [
+        11,
+        3
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 53,
+      "goals": 23
+    },
+    {
+      "club": "Manchester United",
+      "season": "2007/08",
+      "league": [
+        34,
+        31
+      ],
+      "cup": [
+        3,
+        3
+      ],
+      "continental": [
+        11,
+        8
+      ],
+      "other": [
+        1,
+        0
+      ],
+      "apps": 49,
+      "goals": 42
+    },
+    {
+      "club": "Manchester United",
+      "season": "2008/09",
+      "league": [
+        33,
+        18
+      ],
+      "cup": [
+        6,
+        3
+      ],
+      "continental": [
+        12,
+        4
+      ],
+      "other": [
+        2,
+        1
+      ],
+      "apps": 53,
+      "goals": 26
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2009/10",
+      "league": [
+        29,
+        26
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        6,
+        7
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 35,
+      "goals": 33
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2010/11",
+      "league": [
+        34,
+        40
+      ],
+      "cup": [
+        8,
+        7
+      ],
+      "continental": [
+        12,
+        6
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 54,
+      "goals": 53
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2011/12",
+      "league": [
+        38,
+        46
+      ],
+      "cup": [
+        5,
+        3
+      ],
+      "continental": [
+        10,
+        10
+      ],
+      "other": [
+        2,
+        1
+      ],
+      "apps": 55,
+      "goals": 60
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2012/13",
+      "league": [
+        34,
+        34
+      ],
+      "cup": [
+        7,
+        7
+      ],
+      "continental": [
+        12,
+        12
+      ],
+      "other": [
+        2,
+        2
+      ],
+      "apps": 55,
+      "goals": 55
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2013/14",
+      "league": [
+        30,
+        31
+      ],
+      "cup": [
+        6,
+        3
+      ],
+      "continental": [
+        11,
+        17
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 47,
+      "goals": 51
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2014/15",
+      "league": [
+        35,
+        48
+      ],
+      "cup": [
+        2,
+        1
+      ],
+      "continental": [
+        12,
+        10
+      ],
+      "other": [
+        5,
+        2
+      ],
+      "apps": 54,
+      "goals": 61
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2015/16",
+      "league": [
+        36,
+        35
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        12,
+        16
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 48,
+      "goals": 51
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2016/17",
+      "league": [
+        29,
+        25
+      ],
+      "cup": [
+        2,
+        1
+      ],
+      "continental": [
+        13,
+        12
+      ],
+      "other": [
+        2,
+        4
+      ],
+      "apps": 46,
+      "goals": 42
+    },
+    {
+      "club": "Real Madrid",
+      "season": "2017/18",
+      "league": [
+        27,
+        26
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        13,
+        15
+      ],
+      "other": [
+        4,
+        3
+      ],
+      "apps": 44,
+      "goals": 44
+    },
+    {
+      "club": "Juventus",
+      "season": "2018/19",
+      "league": [
+        31,
+        21
+      ],
+      "cup": [
+        2,
+        0
+      ],
+      "continental": [
+        9,
+        6
+      ],
+      "other": [
+        1,
+        1
+      ],
+      "apps": 43,
+      "goals": 28
+    },
+    {
+      "club": "Juventus",
+      "season": "2019/20",
+      "league": [
+        33,
+        31
+      ],
+      "cup": [
+        4,
+        2
+      ],
+      "continental": [
+        8,
+        4
+      ],
+      "other": [
+        1,
+        0
+      ],
+      "apps": 46,
+      "goals": 37
+    },
+    {
+      "club": "Juventus",
+      "season": "2020/21",
+      "league": [
+        33,
+        29
+      ],
+      "cup": [
+        4,
+        2
+      ],
+      "continental": [
+        6,
+        4
+      ],
+      "other": [
+        1,
+        1
+      ],
+      "apps": 44,
+      "goals": 36
+    },
+    {
+      "club": "Juventus",
+      "season": "2021/22",
+      "league": [
+        1,
+        0
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        0,
+        0
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 1,
+      "goals": 0
+    },
+    {
+      "club": "Manchester United",
+      "season": "2021/22",
+      "league": [
+        30,
+        18
+      ],
+      "cup": [
+        1,
+        0
+      ],
+      "continental": [
+        7,
+        6
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 38,
+      "goals": 24
+    },
+    {
+      "club": "Manchester United",
+      "season": "2022/23",
+      "league": [
+        10,
+        1
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        6,
+        2
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 16,
+      "goals": 3
+    },
+    {
+      "club": "Al Nassr",
+      "season": "2022/23",
+      "league": [
+        16,
+        14
+      ],
+      "cup": [
+        2,
+        0
+      ],
+      "continental": [
+        0,
+        0
+      ],
+      "other": [
+        1,
+        0
+      ],
+      "apps": 19,
+      "goals": 14
+    },
+    {
+      "club": "Al Nassr",
+      "season": "2023/24",
+      "league": [
+        31,
+        35
+      ],
+      "cup": [
+        4,
+        3
+      ],
+      "continental": [
+        9,
+        6
+      ],
+      "other": [
+        7,
+        6
+      ],
+      "apps": 51,
+      "goals": 50
+    },
+    {
+      "club": "Al Nassr",
+      "season": "2024/25",
+      "league": [
+        30,
+        25
+      ],
+      "cup": [
+        1,
+        0
+      ],
+      "continental": [
+        8,
+        8
+      ],
+      "other": [
+        2,
+        2
+      ],
+      "apps": 41,
+      "goals": 35
+    },
+    {
+      "club": "Al Nassr",
+      "season": "2025/26",
+      "league": [
+        30,
+        28
+      ],
+      "cup": [
+        1,
+        0
+      ],
+      "continental": [
+        4,
+        1
+      ],
+      "other": [
+        2,
+        1
+      ],
+      "apps": 37,
+      "goals": 30
+    },
+    {
+      "club": "Al Nassr",
+      "season": "2026/27",
+      "league": [
+        7,
+        4
+      ],
+      "cup": [
+        0,
+        0
+      ],
+      "continental": [
+        2,
+        1
+      ],
+      "other": [
+        0,
+        0
+      ],
+      "apps": 9,
+      "goals": 5
+    }
+  ],
+  "countryYears": [
+    {
+      "team": "Portugal",
+      "year": 2003,
+      "competitive": [
+        0,
+        0
+      ],
+      "friendly": [
+        2,
+        0
+      ],
+      "apps": 2,
+      "goals": 0
+    },
+    {
+      "team": "Portugal",
+      "year": 2004,
+      "competitive": [
+        11,
+        7
+      ],
+      "friendly": [
+        5,
+        0
+      ],
+      "apps": 16,
+      "goals": 7
+    },
+    {
+      "team": "Portugal",
+      "year": 2005,
+      "competitive": [
+        7,
+        2
+      ],
+      "friendly": [
+        4,
+        0
+      ],
+      "apps": 11,
+      "goals": 2
+    },
+    {
+      "team": "Portugal",
+      "year": 2006,
+      "competitive": [
+        10,
+        4
+      ],
+      "friendly": [
+        4,
+        2
+      ],
+      "apps": 14,
+      "goals": 6
+    },
+    {
+      "team": "Portugal",
+      "year": 2007,
+      "competitive": [
+        9,
+        5
+      ],
+      "friendly": [
+        1,
+        0
+      ],
+      "apps": 10,
+      "goals": 5
+    },
+    {
+      "team": "Portugal",
+      "year": 2008,
+      "competitive": [
+        5,
+        1
+      ],
+      "friendly": [
+        3,
+        0
+      ],
+      "apps": 8,
+      "goals": 1
+    },
+    {
+      "team": "Portugal",
+      "year": 2009,
+      "competitive": [
+        5,
+        0
+      ],
+      "friendly": [
+        2,
+        1
+      ],
+      "apps": 7,
+      "goals": 1
+    },
+    {
+      "team": "Portugal",
+      "year": 2010,
+      "competitive": [
+        6,
+        3
+      ],
+      "friendly": [
+        5,
+        0
+      ],
+      "apps": 11,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "year": 2011,
+      "competitive": [
+        6,
+        5
+      ],
+      "friendly": [
+        2,
+        2
+      ],
+      "apps": 8,
+      "goals": 7
+    },
+    {
+      "team": "Portugal",
+      "year": 2012,
+      "competitive": [
+        9,
+        4
+      ],
+      "friendly": [
+        4,
+        1
+      ],
+      "apps": 13,
+      "goals": 5
+    },
+    {
+      "team": "Portugal",
+      "year": 2013,
+      "competitive": [
+        6,
+        7
+      ],
+      "friendly": [
+        3,
+        3
+      ],
+      "apps": 9,
+      "goals": 10
+    },
+    {
+      "team": "Portugal",
+      "year": 2014,
+      "competitive": [
+        5,
+        3
+      ],
+      "friendly": [
+        4,
+        2
+      ],
+      "apps": 9,
+      "goals": 5
+    },
+    {
+      "team": "Portugal",
+      "year": 2015,
+      "competitive": [
+        4,
+        3
+      ],
+      "friendly": [
+        1,
+        0
+      ],
+      "apps": 5,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "year": 2016,
+      "competitive": [
+        10,
+        10
+      ],
+      "friendly": [
+        3,
+        3
+      ],
+      "apps": 13,
+      "goals": 13
+    },
+    {
+      "team": "Portugal",
+      "year": 2017,
+      "competitive": [
+        10,
+        10
+      ],
+      "friendly": [
+        1,
+        1
+      ],
+      "apps": 11,
+      "goals": 11
+    },
+    {
+      "team": "Portugal",
+      "year": 2018,
+      "competitive": [
+        4,
+        4
+      ],
+      "friendly": [
+        3,
+        2
+      ],
+      "apps": 7,
+      "goals": 6
+    },
+    {
+      "team": "Portugal",
+      "year": 2019,
+      "competitive": [
+        10,
+        14
+      ],
+      "friendly": [
+        0,
+        0
+      ],
+      "apps": 10,
+      "goals": 14
+    },
+    {
+      "team": "Portugal",
+      "year": 2020,
+      "competitive": [
+        4,
+        2
+      ],
+      "friendly": [
+        2,
+        1
+      ],
+      "apps": 6,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "year": 2021,
+      "competitive": [
+        11,
+        11
+      ],
+      "friendly": [
+        3,
+        2
+      ],
+      "apps": 14,
+      "goals": 13
+    },
+    {
+      "team": "Portugal",
+      "year": 2022,
+      "competitive": [
+        12,
+        3
+      ],
+      "friendly": [
+        0,
+        0
+      ],
+      "apps": 12,
+      "goals": 3
+    },
+    {
+      "team": "Portugal",
+      "year": 2023,
+      "competitive": [
+        9,
+        10
+      ],
+      "friendly": [
+        0,
+        0
+      ],
+      "apps": 9,
+      "goals": 10
+    },
+    {
+      "team": "Portugal",
+      "year": 2024,
+      "competitive": [
+        10,
+        5
+      ],
+      "friendly": [
+        2,
+        2
+      ],
+      "apps": 12,
+      "goals": 7
+    },
+    {
+      "team": "Portugal",
+      "year": 2025,
+      "competitive": [
+        9,
+        8
+      ],
+      "friendly": [
+        0,
+        0
+      ],
+      "apps": 9,
+      "goals": 8
+    },
+    {
+      "team": "Portugal",
+      "year": 2026,
+      "competitive": [
+        6,
+        3
+      ],
+      "friendly": [
+        2,
+        0
+      ],
+      "apps": 8,
+      "goals": 3
+    }
+  ],
+  "byCompetition": [
+    {
+      "competition": "La Liga",
+      "team": "Real Madrid",
+      "goals": 311
+    },
+    {
+      "competition": "Saudi Pro League",
+      "team": "Al Nassr",
+      "goals": 106
+    },
+    {
+      "competition": "UEFA Champions League",
+      "team": "Real Madrid",
+      "goals": 105
+    },
+    {
+      "competition": "Premier League",
+      "team": "Manchester United",
+      "goals": 103
+    },
+    {
+      "competition": "Serie A",
+      "team": "Juventus",
+      "goals": 81
+    },
+    {
+      "competition": "UEFA European Championship / qualifiers",
+      "team": "Portugal",
+      "goals": 55
+    },
+    {
+      "competition": "FIFA World Cup / qualifiers",
+      "team": "Portugal",
+      "goals": 52
+    },
+    {
+      "competition": "UEFA Champions League",
+      "team": "Manchester United",
+      "goals": 24
+    },
+    {
+      "competition": "Copa del Rey",
+      "team": "Real Madrid",
+      "goals": 22
+    },
+    {
+      "competition": "International friendlies",
+      "team": "Portugal",
+      "goals": 22
+    },
+    {
+      "competition": "FA Cup / Football League Cup",
+      "team": "Manchester United",
+      "goals": 17
+    },
+    {
+      "competition": "AFC Champions League Elite / Two",
+      "team": "Al Nassr",
+      "goals": 16
+    },
+    {
+      "competition": "UEFA Nations League",
+      "team": "Portugal",
+      "goals": 15
+    },
+    {
+      "competition": "UEFA Champions League",
+      "team": "Juventus",
+      "goals": 14
+    },
+    {
+      "competition": "Supercopa de España / UEFA Super Cup / FIFA Club World Cup",
+      "team": "Real Madrid",
+      "goals": 12
+    },
+    {
+      "competition": "Arab Club Champions Cup / Saudi Super Cup",
+      "team": "Al Nassr",
+      "goals": 9
+    },
+    {
+      "competition": "Coppa Italia",
+      "team": "Juventus",
+      "goals": 4
+    },
+    {
+      "competition": "Primeira Liga",
+      "team": "Sporting CP",
+      "goals": 3
+    },
+    {
+      "competition": "King's Cup",
+      "team": "Al Nassr",
+      "goals": 3
+    },
+    {
+      "competition": "Taça de Portugal",
+      "team": "Sporting CP",
+      "goals": 2
+    },
+    {
+      "competition": "Supercoppa Italiana",
+      "team": "Juventus",
+      "goals": 2
+    },
+    {
+      "competition": "FIFA Confederations Cup",
+      "team": "Portugal",
+      "goals": 2
+    },
+    {
+      "competition": "FA Community Shield / FIFA Club World Cup",
+      "team": "Manchester United",
+      "goals": 1
+    }
+  ],
+  "byOpponent": [],
+  "byFinish": [
+    {
+      "finish": "Open play",
+      "goals": 731
+    },
+    {
+      "finish": "Penalties",
+      "goals": 184
+    },
+    {
+      "finish": "Free kicks",
+      "goals": 66
+    }
+  ],
+  "byBodyPart": [
+    {
+      "part": "Left foot",
+      "goals": 186
+    },
+    {
+      "part": "Right foot",
+      "goals": 634
+    },
+    {
+      "part": "Head",
+      "goals": 158
+    },
+    {
+      "part": "Other (chest etc.)",
+      "goals": 3
+    }
+  ],
+  "trophies": [
+    {
+      "title": "Supertaça Cândido de Oliveira",
+      "team": "Sporting CP",
+      "years": [
+        2002
+      ]
+    },
+    {
+      "title": "FA Cup",
+      "team": "Manchester United",
+      "years": [
+        2004
+      ]
+    },
+    {
+      "title": "Football League Cup",
+      "team": "Manchester United",
+      "years": [
+        2006,
+        2009
+      ]
+    },
+    {
+      "title": "Premier League",
+      "team": "Manchester United",
+      "years": [
+        2007,
+        2008,
+        2009
+      ]
+    },
+    {
+      "title": "FA Community Shield",
+      "team": "Manchester United",
+      "years": [
+        2007
+      ]
+    },
+    {
+      "title": "UEFA Champions League",
+      "team": "Manchester United",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "FIFA Club World Cup",
+      "team": "Manchester United",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "La Liga",
+      "team": "Real Madrid",
+      "years": [
+        2012,
+        2017
+      ]
+    },
+    {
+      "title": "Copa del Rey",
+      "team": "Real Madrid",
+      "years": [
+        2011,
+        2014
+      ]
+    },
+    {
+      "title": "Supercopa de España",
+      "team": "Real Madrid",
+      "years": [
+        2012,
+        2017
+      ]
+    },
+    {
+      "title": "UEFA Champions League",
+      "team": "Real Madrid",
+      "years": [
+        2014,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    {
+      "title": "UEFA Super Cup",
+      "team": "Real Madrid",
+      "years": [
+        2014,
+        2017
+      ]
+    },
+    {
+      "title": "FIFA Club World Cup",
+      "team": "Real Madrid",
+      "years": [
+        2014,
+        2016,
+        2017
+      ]
+    },
+    {
+      "title": "Serie A",
+      "team": "Juventus",
+      "years": [
+        2019,
+        2020
+      ]
+    },
+    {
+      "title": "Coppa Italia",
+      "team": "Juventus",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "title": "Supercoppa Italiana",
+      "team": "Juventus",
+      "years": [
+        2018,
+        2020
+      ]
+    },
+    {
+      "title": "Arab Club Champions Cup",
+      "team": "Al Nassr",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "title": "Saudi Pro League",
+      "team": "Al Nassr",
+      "years": [
+        2026
+      ]
+    },
+    {
+      "title": "UEFA European Championship",
+      "team": "Portugal",
+      "years": [
+        2016
+      ]
+    },
+    {
+      "title": "UEFA Nations League",
+      "team": "Portugal",
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "title": "Ballon d'Or",
+      "team": "Individual",
+      "years": [
+        2008,
+        2013,
+        2014,
+        2016,
+        2017
+      ]
+    },
+    {
+      "title": "European Golden Shoe",
+      "team": "Individual",
+      "years": [
+        2008,
+        2011,
+        2014,
+        2015
+      ]
+    },
+    {
+      "title": "FIFA World Player of the Year",
+      "team": "Individual",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "FIFA Puskás Award",
+      "team": "Individual",
+      "years": [
+        2009
+      ]
+    },
+    {
+      "title": "FIFA World Cup Golden Ball",
+      "team": "Individual",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "FIFA World Cup Golden Boot",
+      "team": "Individual",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "UEFA European Championship Golden Boot",
+      "team": "Individual",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "title": "The Best FIFA Men's Player",
+      "team": "Individual",
+      "years": [
+        2016,
+        2017
+      ]
+    },
+    {
+      "title": "UEFA Men's Player of the Year",
+      "team": "Individual",
+      "years": [
+        2014,
+        2016,
+        2017
+      ]
+    },
+    {
+      "title": "UEFA Champions League top scorer",
+      "team": "Individual",
+      "years": [
+        2008,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+      ]
+    },
+    {
+      "title": "La Liga top scorer (Pichichi)",
+      "team": "Individual",
+      "years": [
+        2011,
+        2014,
+        2015
+      ]
+    },
+    {
+      "title": "Premier League Golden Boot",
+      "team": "Individual",
+      "years": [
+        2008
+      ]
+    },
+    {
+      "title": "Serie A top scorer (Capocannoniere)",
+      "team": "Individual",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "title": "Saudi Pro League Golden Boot",
+      "team": "Individual",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "title": "UEFA Nations League Finals top scorer",
+      "team": "Individual",
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "title": "FIFA FIFPro World XI",
+      "team": "Individual",
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ]
+    },
+    {
+      "title": "UEFA Team of the Year",
+      "team": "Individual",
+      "years": [
+        2004,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 2002,
+      "event": "Senior debut for Sporting CP vs Inter in the UEFA Champions League third qualifying round, 14 August 2002, aged 17; first senior goals two months later against Moreirense"
+    },
+    {
+      "year": 2003,
+      "event": "Signs for Manchester United for £12.24m on 16 August 2003 and takes the legendary No. 7 shirt; Portugal debut against Kazakhstan on 20 August 2003"
+    },
+    {
+      "year": 2004,
+      "event": "First Portugal goal, a header against Greece at Euro 2004; first Manchester United goal, a free kick against Portsmouth; wins the FA Cup as the youngest player to score in an FA Cup final"
+    },
+    {
+      "year": 2006,
+      "event": "Scores at the 2006 FIFA World Cup against Iran; wins the Football League Cup and reaches the UEFA Cup final with Manchester United"
+    },
+    {
+      "year": 2007,
+      "event": "First Manchester United hat-trick against Newcastle in January; Premier League title in his first full season; 50th United goal in the Manchester derby"
+    },
+    {
+      "year": 2008,
+      "event": "Ballon d'Or at 23, named on all 96 ballots; FIFA World Player of the Year; the UEFA Champions League and the FIFA Club World Cup; eight goals and the Golden Ball at the 2008 FIFA World Cup"
+    },
+    {
+      "year": 2009,
+      "event": "FIFA Puskás Award for a 40-yard strike against Porto; joins Real Madrid for a then world-record €94m, with 80,000 in the Bernabéu"
+    },
+    {
+      "year": 2011,
+      "event": "First Spanish trophy, the Copa del Rey final header against Barcelona; La Liga title with a record 100 points and 46 league goals"
+    },
+    {
+      "year": 2012,
+      "event": "100th La Liga goal for Real Madrid; 60 goals in a calendar year across club and country"
+    },
+    {
+      "year": 2013,
+      "event": "First international hat-trick, three goals in 15 minutes against Northern Ireland; second Ballon d'Or"
+    },
+    {
+      "year": 2014,
+      "event": "La Décima: a last-gasp extra-time penalty against Atlético in Lisbon, a record 17 Champions League goals, UEFA Men's Player of the Year and a third Ballon d'Or"
+    },
+    {
+      "year": 2015,
+      "event": "Five goals against Granada in an 8-minute hat-trick; becomes the all-time Champions League top scorer; the 500th goal of his career against Malmö"
+    },
+    {
+      "year": 2016,
+      "event": "EURO 2016 champion as captain, with three goals and the Silver Boot; a fourth Ballon d'Or"
+    },
+    {
+      "year": 2017,
+      "record": true,
+      "event": "100th Champions League goal, a hat-trick against Bayern; passes Jimmy Greaves as the top scorer in Europe's big five leagues; the fourth Champions League and a fifth Ballon d'Or"
+    },
+    {
+      "year": 2018,
+      "event": "Signs for Juventus at 33; hat-tricks in the first Champions League game and against Real Madrid in the World Cup"
+    },
+    {
+      "year": 2019,
+      "event": "UEFA Nations League champion and the top scorer at the Finals; the 700th goal of his career against Ukraine"
+    },
+    {
+      "year": 2020,
+      "event": "1,000th senior appearance for Juventus against Cagliari; the 100th and 101st goals for Portugal against Sweden"
+    },
+    {
+      "year": 2021,
+      "event": "Passes Ali Daei to become the outright leading scorer in men's international football; the 10th international hat-trick, a world record"
+    },
+    {
+      "year": 2022,
+      "event": "Passes Josef Bican with a hat-trick against Tottenham; the World Cup in Qatar ends with Portugal knocked out by Morocco"
+    },
+    {
+      "year": 2023,
+      "event": "Al Nassr debut as captain against Al-Ettifaq; the 197th cap makes him the most-capped player in men's international football"
+    },
+    {
+      "year": 2024,
+      "event": "900th career goal against Croatia in the Nations League; the first player to score 40 or more goals in 13 different calendar years"
+    },
+    {
+      "year": 2025,
+      "event": "The 800th club goal against Al Fateh; the 100th Al Nassr goal makes him the first to reach 100 goals for four clubs; a second Nations League title at 40"
+    },
+    {
+      "year": 2026,
+      "event": "Saudi Pro League title with Al Nassr; the 500th goal scored after turning 30; becomes the first man to score at six FIFA World Cups"
+    }
+  ],
+  "calendarYears": [
+    {
+      "year": 2002,
+      "goals": 5,
+      "careerTotal": 5,
+      "age": 17,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2003,
+      "goals": 1,
+      "careerTotal": 6,
+      "age": 18,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2004,
+      "goals": 13,
+      "careerTotal": 19,
+      "age": 19,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2005,
+      "goals": 15,
+      "careerTotal": 34,
+      "age": 20,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2006,
+      "goals": 25,
+      "careerTotal": 59,
+      "age": 21,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2007,
+      "goals": 34,
+      "careerTotal": 93,
+      "age": 22,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2008,
+      "goals": 35,
+      "careerTotal": 128,
+      "age": 23,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2009,
+      "goals": 30,
+      "careerTotal": 158,
+      "age": 24,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2010,
+      "goals": 48,
+      "careerTotal": 206,
+      "age": 25,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2011,
+      "goals": 60,
+      "careerTotal": 266,
+      "age": 26,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2012,
+      "goals": 63,
+      "careerTotal": 329,
+      "age": 27,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2013,
+      "goals": 69,
+      "careerTotal": 398,
+      "age": 28,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2014,
+      "goals": 61,
+      "careerTotal": 459,
+      "age": 29,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2015,
+      "goals": 57,
+      "careerTotal": 516,
+      "age": 30,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2016,
+      "goals": 55,
+      "careerTotal": 571,
+      "age": 31,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2017,
+      "goals": 53,
+      "careerTotal": 624,
+      "age": 32,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2018,
+      "goals": 49,
+      "careerTotal": 673,
+      "age": 33,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2019,
+      "goals": 39,
+      "careerTotal": 712,
+      "age": 34,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2020,
+      "goals": 44,
+      "careerTotal": 756,
+      "age": 35,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2021,
+      "goals": 47,
+      "careerTotal": 803,
+      "age": 36,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2022,
+      "goals": 16,
+      "careerTotal": 819,
+      "age": 37,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2023,
+      "goals": 54,
+      "careerTotal": 873,
+      "age": 38,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2024,
+      "goals": 43,
+      "careerTotal": 916,
+      "age": 39,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2025,
+      "goals": 41,
+      "careerTotal": 957,
+      "age": 40,
+      "status": "cross-checked"
+    },
+    {
+      "year": 2026,
+      "goals": 24,
+      "careerTotal": 981,
+      "age": 41,
+      "status": "provisional-ongoing"
+    }
+  ],
+  "hatTricks": 66,
+  "splits": {
+    "_note": "Rivalry comparison splits, verified 2026-10-19. Ronaldo: 981 goals, 1,340 appearances, 261 assists, 184 penalties (from 220), 66 direct free kicks, 66 hat-tricks, 35 senior team trophies, 5 Ballons d'Or, 140 Champions League goals (all-time record), 42 Champions League assists (all-time record), 146 goals in 234 caps for Portugal (both all-time records). Messi: 936 goals, 1,181 appearances, 408 assists, 109 penalties, 67 direct free kicks, 62 hat-tricks, 46 senior team trophies, 8 Ballons d'Or, 129 Champions League goals, 21 World Cup goals.",
+    "worldCup": {
+      "messi": {
+        "goals": 21,
+        "assists": 8,
+        "koGoals": 4,
+        "koAssists": 3,
+        "games": 26
+      }
+    },
+    "finals": {
+      "messi": {
+        "goals": 40,
+        "apps": 63
+      }
+    },
+    "continental": {
+      "messi": 3
+    },
+    "trophies": {
+      "messi": 46
+    }
+  }
+}

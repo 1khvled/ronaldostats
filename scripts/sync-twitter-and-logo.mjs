@@ -1,0 +1,209 @@
+/**
+ * scripts/sync-twitter-and-logo.mjs
+ *
+ * 1. Guarantees Twitter/X card metadata across all HTML files:
+ *    - twitter:card = summary_large_image
+ *    - twitter:site = @ronaldostats1
+ *    - twitter:creator = @ronaldostats1
+ *    - twitter:domain = ronaldostats.site
+ *    - Cache-busting twitter:image & og:image = https://www.ronaldostats.site/img/og-ronaldo.jpg?v={live-goals}
+ *    - og:image:secure_url
+ * 2. Guarantees Google Logo Indexing & Schema.org Organization:
+ *    - Organization.logo with ImageObject (512x512, caption, contentUrl)
+ *    - Organization.sameAs includes https://x.com/ronaldostats1
+ *    - WebSite.sameAs includes https://x.com/ronaldostats1
+ *    - apple-touch-icon: single canonical link (/apple-touch-icon.png); /img/logo.png duplicates stripped
+ * 3. Static footer official X link for crawlers & users:
+ *    - <div class="footer-social-bar"><a href="https://x.com/ronaldostats1">...</a></div>
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(__dirname, "..");
+
+function getHtmlFiles(dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (["node_modules", "dist", ".git", "scratch", "scratch_audit"].includes(entry.name)) {
+        continue;
+      }
+      files.push(...getHtmlFiles(full));
+    } else if (entry.isFile() && entry.name.endsWith(".html")) {
+      files.push(full);
+    }
+  }
+  return files;
+}
+
+const htmlFiles = getHtmlFiles(root);
+console.log(`[sync-twitter-and-logo] Processing ${htmlFiles.length} HTML files...`);
+
+let updatedCount = 0;
+
+// Cache-buster tracks the live career total (never a frozen number).
+let OG_V = 934;
+try {
+  const _md = JSON.parse(fs.readFileSync(path.join(root, "public", "data", "ronaldo-data.json"), "utf8"));
+  if (_md?.totals?.combined?.goals) OG_V = _md.totals.combined.goals;
+} catch {}
+
+for (const file of htmlFiles) {
+  let content = fs.readFileSync(file, "utf8");
+  const orig = content;
+
+  // 1. Cache-bust og:image and twitter:image
+  content = content.replace(
+    /(<meta[^>]+property=["']og:image["'][^>]+content=["'])https:\/\/www\.ronaldostats\.com\/img\/og-ronaldo\.jpg(?:[?][^"']*)?(["'])/g,
+    `$1https://www.ronaldostats.site/img/og-ronaldo.jpg?v=${OG_V}$2`
+  );
+  content = content.replace(
+    /(<meta[^>]+content=["'])https:\/\/www\.ronaldostats\.com\/img\/og-ronaldo\.jpg(?:[?][^"']*)?(["'][^>]+property=["']og:image["'])/g,
+    `$1https://www.ronaldostats.site/img/og-ronaldo.jpg?v=${OG_V}$2`
+  );
+  content = content.replace(
+    /(<meta[^>]+name=["']twitter:image["'][^>]+content=["'])https:\/\/www\.ronaldostats\.com\/img\/og-ronaldo\.jpg(?:[?][^"']*)?(["'])/g,
+    `$1https://www.ronaldostats.site/img/og-ronaldo.jpg?v=${OG_V}$2`
+  );
+  content = content.replace(
+    /(<meta[^>]+content=["'])https:\/\/www\.ronaldostats\.com\/img\/og-ronaldo\.jpg(?:[?][^"']*)?(["'][^>]+name=["']twitter:image["'])/g,
+    `$1https://www.ronaldostats.site/img/og-ronaldo.jpg?v=${OG_V}$2`
+  );
+
+  // 1b. Add og:image:secure_url if missing
+  if (content.includes('property="og:image"') && !content.includes('property="og:image:secure_url"')) {
+    content = content.replace(
+      /(<meta[^>]+property=["']og:image["'][^>]+>)/,
+      `$1\n<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=${OG_V}" property="og:image:secure_url"/>`
+    );
+  }
+
+  // 2. Ensure twitter:site, twitter:creator, twitter:domain are present
+  if (!content.includes('name="twitter:site"') && !content.includes("name='twitter:site'")) {
+    // Add right after twitter:card
+    if (content.includes('name="twitter:card"')) {
+      content = content.replace(
+        /(<meta[^>]+name=["']twitter:card["'][^>]*>)/i,
+        `$1\n<meta content="@ronaldostats1" name="twitter:site"/>\n<meta content="@ronaldostats1" name="twitter:creator"/>\n<meta content="ronaldostats.site" name="twitter:domain"/>`
+      );
+    }
+  }
+
+  // 3. Apple-touch-icon: keep exactly one, the canonical /apple-touch-icon.png.
+  //    SERP favicons (Google/Bing) come from /favicon.ico + the rel=icon ladder + Organization logo.
+  //    The /img/logo.png apple-touch duplicate plays no role in indexing and is stripped.
+  content = content.replace(/<link[^>]*rel=["']apple-touch-icon["'][^>]*href=["']\/img\/logo\.png["'][^>]*\/?>\n?/gi, "");
+  content = content.replace(/<link[^>]*href=["']\/img\/logo\.png["'][^>]*rel=["']apple-touch-icon["'][^>]*\/?>\n?/gi, "");
+
+  // 4. Update Schema.org Organization & WebSite with @ronaldostats1 and logo details
+  content = content.replace(
+    /(<script type=["']application\/ld\+json["']>)([\s\S]*?)(<\/script>)/g,
+    (match, p1, jsonStr, p3) => {
+      try {
+        const parsed = JSON.parse(jsonStr);
+        let changed = false;
+
+        const updateGraph = (obj) => {
+          if (!obj || typeof obj !== "object") return;
+          if (Array.isArray(obj)) {
+            obj.forEach(updateGraph);
+            return;
+          }
+
+          if (obj["@type"] === "Organization") {
+            // Update sameAs
+            const socials = ["https://x.com/ronaldostats1", "https://twitter.com/ronaldostats1", "https://t.me/ronaldostatsdotcom"];
+            if (!obj.sameAs) {
+              obj.sameAs = socials;
+              changed = true;
+            } else if (Array.isArray(obj.sameAs)) {
+              for (const s of socials) {
+                if (!obj.sameAs.includes(s)) {
+                  obj.sameAs.push(s);
+                  changed = true;
+                }
+              }
+            }
+
+            // Standardize name
+            if (obj.name === "RonaldoStats") {
+              obj.name = "RonaldoStats";
+              changed = true;
+            }
+
+            // Ensure rich ImageObject for logo
+            obj.logo = {
+              "@type": "ImageObject",
+              "@id": "https://www.ronaldostats.site/#logo",
+              "url": "https://www.ronaldostats.site/img/logo.png",
+              "contentUrl": "https://www.ronaldostats.site/img/logo.png",
+              "caption": "RonaldoStats Official Logo",
+              "width": 512,
+              "height": 512
+            };
+            changed = true;
+          }
+
+          if (obj["@type"] === "WebSite") {
+            const socials = ["https://x.com/ronaldostats1", "https://twitter.com/ronaldostats1", "https://t.me/ronaldostatsdotcom"];
+            if (!obj.sameAs) {
+              obj.sameAs = socials;
+              changed = true;
+            } else if (Array.isArray(obj.sameAs)) {
+              for (const s of socials) {
+                if (!obj.sameAs.includes(s)) {
+                  obj.sameAs.push(s);
+                  changed = true;
+                }
+              }
+            }
+          }
+
+          if (obj["@graph"]) {
+            updateGraph(obj["@graph"]);
+          }
+        };
+
+        updateGraph(parsed);
+
+        if (changed) {
+          return `${p1}\n${JSON.stringify(parsed, null, 2)}\n${p3}`;
+        }
+      } catch (e) {
+        // If JSON.parse fails, keep as is
+      }
+      return match;
+    }
+  );
+
+  // 5. Add static footer official X + Telegram links if missing
+  if (content.includes("<footer") && !content.includes("footer-social-bar")) {
+    const socialBarHtml = `<div class="footer-social-bar"><a href="https://x.com/ronaldostats1" target="_blank" rel="noopener noreferrer" class="footer-x-link" aria-label="Follow RonaldoStats on X (@ronaldostats1)"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Follow @ronaldostats1 on X</span></a><a href="https://t.me/ronaldostatsdotcom" target="_blank" rel="noopener noreferrer" class="footer-x-link footer-tg-link" aria-label="Join RonaldoStats on Telegram"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span>Telegram @ronaldostatsdotcom</span></a></div>`;
+    
+    if (content.includes('<p id="foot-date"></p>')) {
+      content = content.replace(
+        '<p id="foot-date"></p>',
+        `${socialBarHtml}\n  <p id="foot-date"></p>`
+      );
+    } else if (content.includes('<p class="crest-note">')) {
+      content = content.replace(
+        '<p class="crest-note">',
+        `${socialBarHtml}\n  <p class="crest-note">`
+      );
+    } else if (content.includes("</footer>")) {
+      content = content.replace("</footer>", `${socialBarHtml}\n</footer>`);
+    }
+  }
+
+  if (content !== orig) {
+    fs.writeFileSync(file, content, "utf8");
+    updatedCount++;
+  }
+}
+
+console.log(`[sync-twitter-and-logo] Successfully updated ${updatedCount} HTML files!`);

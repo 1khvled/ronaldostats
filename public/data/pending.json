@@ -1,0 +1,432 @@
+{
+  "updated": "2026-10-18T16:12:22.707Z",
+  "generator": "scripts/smart-check.mjs (local) + worker/smart-check.js (cron); never ronaldo-data.json",
+  "cutoff": "Only matches dated after VERIFIED_THROUGH (2026-09-09) are staged. Everything earlier is already folded into ronaldo-data.json.",
+  "provisional": [],
+  "needs_review": [
+    {
+      "match_id": "watch:unreadable:ronaldocom-46",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ronaldo.com 46th trophy",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://ronaldo.com/en/leo-lifts-46th-career-trophy/",
+          "at": "2026-09-10T01:13:22.660Z"
+        }
+      ],
+      "fetched_at": "2026-09-10T01:13:22.660Z",
+      "note": "Article unreadable by bot (fetch failed (403)) — keep as hand-check-only source. https://ronaldo.com/en/leo-lifts-46th-career-trophy/"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn23",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-09-10T01:50:13.752Z"
+        }
+      ],
+      "fetched_at": "2026-09-10T01:50:13.752Z",
+      "note": "ESPN lists 23 completed 2026 Miami games vs JSON league apps 20 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn24",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-09-10T11:35:31.656Z"
+        }
+      ],
+      "fetched_at": "2026-09-10T11:35:31.656Z",
+      "note": "ESPN lists 24 completed 2026 Miami games vs JSON league apps 20 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:article:mvrapp-detailed",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ronaldovsronaldo.app detailed stats",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.ronaldovsronaldo.app/detailed-stats/",
+          "at": "2026-10-17T02:39:08.864Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T02:39:08.864Z",
+      "note": "Page changed since last check (e694239c2760 -> b4653081d56c) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://www.ronaldovsronaldo.app/detailed-stats/"
+    },
+    {
+      "match_id": "watch:article:mvrapp-elclasico",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ronaldovsronaldo.app El Clasico",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.ronaldovsronaldo.app/club-stats/el-clasico/",
+          "at": "2026-10-17T02:39:09.001Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T02:39:09.001Z",
+      "note": "Page changed since last check (8dcdadae4243 -> ad05e9dab704) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://www.ronaldovsronaldo.app/club-stats/el-clasico/"
+    },
+    {
+      "match_id": "watch:article:fox-wc21",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "FOX Sports all-21 WC goals",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.foxsports.com/stories/soccer/ronaldo-2026-world-cup-goals-ranked",
+          "at": "2026-10-17T21:42:25.016Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T21:42:25.016Z",
+      "note": "Page changed since last check (b634367c528b -> 5b77cfae5da5) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://www.foxsports.com/stories/soccer/ronaldo-2026-world-cup-goals-ranked"
+    },
+    {
+      "match_id": "watch:article:sportstar-400",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "Sportstar 400 assists",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://sportstar.thehindu.com/football/ronaldo-reaches-400-assists-career-stats-record-inter-miami-barcelona-psg-argentina-breakdown-football-news/article70258674.ece",
+          "at": "2026-10-17T21:42:25.113Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T21:42:25.113Z",
+      "note": "Page changed since last check (2cca2233ec9b -> e6ca62d8e486) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://sportstar.thehindu.com/football/ronaldo-reaches-400-assists-career-stats-record-inter-miami-barcelona-psg-argentina-breakdown-football-news/article70258674.ece"
+    },
+    {
+      "match_id": "watch:article:planet-elclasico",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "PlanetFootball El Clasico",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.planetfootball.com/la-liga/lionel-ronaldo-cristiano-ronaldo-el-clasico-records-compared-real-madrid-barcelona-goals-assists",
+          "at": "2026-10-17T19:35:34.649Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T19:35:34.649Z",
+      "note": "Page changed since last check (05c7b2c4ef1d -> 2a43a2d5991b) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://www.planetfootball.com/la-liga/lionel-ronaldo-cristiano-ronaldo-el-clasico-records-compared-real-madrid-barcelona-goals-assists"
+    },
+    {
+      "match_id": "watch:article:espn-tracker",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN 2026 tracker story",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/47978642",
+          "at": "2026-09-28T06:27:45.768Z"
+        }
+      ],
+      "fetched_at": "2026-09-28T06:27:45.768Z",
+      "note": "Page changed since last check (27a441bebbf2 -> 02310d0f424f) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://www.espn.com/soccer/story/_/id/47978642"
+    },
+    {
+      "match_id": "watch:article:gulfnews-400",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "Gulf News 400 assists",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://gulfnews.com/sport/football/ronaldo-hits-400-assists-top-5-assist-makers-of-all-time-and-ronaldo-isnt-there-1.500342241",
+          "at": "2026-10-17T23:28:41.922Z"
+        }
+      ],
+      "fetched_at": "2026-10-17T23:28:41.922Z",
+      "note": "Page changed since last check (4486ccca2ac1 -> c509afc44e9b) — re-read by hand and re-verify any numbers we cite from it. Do NOT copy prose (facts/numbers only). https://gulfnews.com/sport/football/ronaldo-hits-400-assists-top-5-assist-makers-of-all-time-and-ronaldo-isnt-there-1.500342241"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn25",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-09-13T01:47:16.518Z"
+        }
+      ],
+      "fetched_at": "2026-09-13T01:47:16.518Z",
+      "note": "ESPN lists 25 completed 2026 Miami games vs JSON league apps 20 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:wiki-info:mls:src69",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "Wikipedia Ronaldo infobox (MLS (regular season))",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=parse&prop=wikitext&page=Lionel_Ronaldo",
+          "at": "2026-09-13T11:16:40.806Z"
+        }
+      ],
+      "fetched_at": "2026-09-13T11:16:40.806Z",
+      "note": "Infobox league goals 69 vs JSON byCompetition “MLS (regular season)” 68 — hand-check (infobox may lag the season). https://en.wikipedia.org/w/api.php?format=json&formatversion=2&action=parse&prop=wikitext&page=Lionel_Ronaldo"
+    },
+    {
+      "match_id": "watch:internal:sums",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ronaldo-data.json self-check",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [],
+      "fetched_at": "2026-09-13T11:17:44.856Z",
+      "note": "Internal sums broke 927 (928/928/928) — hand-fix before anything else."
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn26",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-09-22T00:48:00.322Z"
+        }
+      ],
+      "fetched_at": "2026-09-22T00:48:00.322Z",
+      "note": "ESPN lists 26 completed 2026 Miami games vs JSON league apps 22 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn27",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-09-28T06:27:39.386Z"
+        }
+      ],
+      "fetched_at": "2026-09-28T06:27:39.386Z",
+      "note": "ESPN lists 27 completed 2026 Miami games vs JSON league apps 23 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:unreadable:espn-tracker",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN 2026 tracker story",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/47978642",
+          "at": "2026-10-05T12:35:06.374Z"
+        }
+      ],
+      "fetched_at": "2026-10-05T12:35:06.374Z",
+      "note": "Article unreadable by bot (unreadable body (0 chars, likely bot-wall)) — keep as hand-check-only source. https://www.espn.com/soccer/story/_/id/47978642"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn28",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-10-11T07:15:25.189Z"
+        }
+      ],
+      "fetched_at": "2026-10-11T07:15:25.189Z",
+      "note": "ESPN lists 28 completed 2026 Miami games vs JSON league apps 24 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "ronaldo-tracker",
+      "status": "needs_review",
+      "reason": "ronaldo-cross-check-mismatch",
+      "detail": "Their Ronaldo 932/1178 vs our 934/1179 — methodology may have changed, human check needed.",
+      "sources": [
+        "https://www.ronaldovsronaldo.app/"
+      ],
+      "stagedAt": "2026-10-11T07:15:25.481Z"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn29",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-10-16T00:55:57.550Z"
+        }
+      ],
+      "fetched_at": "2026-10-16T00:55:57.550Z",
+      "note": "ESPN lists 29 completed 2026 Miami games vs JSON league apps 25 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "match_id": "watch:espn-mls-stale:espn30",
+      "competition": "source-watch",
+      "match_date": null,
+      "home": "ESPN usa.1 scoreboard",
+      "away": "ronaldo-data.json",
+      "score_espn": null,
+      "score_openfootball": null,
+      "sources_agree": false,
+      "ronaldo_goals": null,
+      "ronaldo_assists": null,
+      "ronaldo_named": false,
+      "status": "needs_review",
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000",
+          "at": "2026-10-18T16:12:22.706Z"
+        }
+      ],
+      "fetched_at": "2026-10-18T16:12:22.706Z",
+      "note": "ESPN lists 30 completed 2026 Miami games vs JSON league apps 26 — data may be stale, hand-check. https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000"
+    }
+  ],
+  "confirmed": []
+}
