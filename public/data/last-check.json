@@ -1,20 +1,10 @@
 {
-  "checkedAt": "2026-10-18T16:09:17.062Z",
-  "status": "AUTO_SYNCED",
-  "newGoals": 2,
-  "newApps": 1,
-  "finalGoals": 936,
-  "finalApps": 1181,
-  "matches": [
-    {
-      "id": "761880",
-      "date": "2026-10-17T23:30:00.000+00:00",
-      "name": "Inter Miami vs Atlanta United FC",
-      "league": "MLS",
-      "goals": 2,
-      "apps": 1,
-      "assists": 0,
-      "isArgentina": false
-    }
-  ]
+  "checkedAt": "2026-10-19T22:40:24.090Z",
+  "status": "VERIFIED",
+  "newGoals": 0,
+  "newApps": 0,
+  "finalGoals": 981,
+  "finalApps": 1340,
+  "matches": [],
+  "note": "The free public scoreboards are only used to flag new matches for human review. They never change the totals in ronaldo-data.json."
 }

@@ -2430,9 +2430,12 @@ function renderExplore(d, page) {
   const lang = getLang();
   const list = DICT.EXPLORE_LANGS;
   const skip = Array.isArray(page) ? page : [page];
+  // The dictionaries carry the route for one language; force the current
+  // language's prefix so a card never links out of the locale.
+  const localize = (href) => String(href || "").replace(/^\/(en|es|pt|fr|ar|bn|hi|ro|uz)(?=\/|$)/, "/" + lang);
   e.innerHTML = list.filter((x) => !skip.includes(x.page))
     .slice(0, 9)
-    .map((x) => `<a class="link-card" href="${x.href}"><strong>${esc(x.t)}</strong><span>${esc(x.d(d))}</span></a>`)
+    .map((x) => `<a class="link-card" href="${localize(x.href)}"><strong>${esc(x.t)}</strong><span>${esc(x.d(d))}</span></a>`)
     .join("");
 }
 function methodHTML(d, extra) {
@@ -6060,6 +6063,22 @@ function initBackToTop() {
 }
 
 /* ================= BOOT ================= */
+
+/* Some dictionary strings carry a hard-coded route that was written for one
+   language. Force every internal link onto the language the visitor is
+   reading, so a card can never send someone out of their locale. */
+function fixLocaleLinks() {
+  const lang = getLang();
+  if (!lang) return;
+  const re = /^\/(en|es|pt|fr|ar|bn|hi|ro|uz)(?=\/|$)/;
+  const anchors = document.querySelectorAll("a[href]");
+  for (const a of anchors) {
+    const href = a.getAttribute("href") || "";
+    if (!re.test(href)) continue;
+    a.setAttribute("href", href.replace(re, "/" + lang));
+  }
+}
+
 load().then((d) => {
   normalize(d);
   const page = document.body.dataset.page;
@@ -6079,6 +6098,7 @@ load().then((d) => {
   } catch (e) {
     console.error(e);
   }
+  fixLocaleLinks();
   reveal();
   /* Chart entrance: bars grow, donuts sweep, KPIs tick on visibility — one shared
      boot observer, same pattern as the timeline .tl-reveal wiring. */

@@ -54,7 +54,7 @@ export const HOME = {
     silverThTimes: "Număr de ori",
     silverThNote: "Notă",
     silverRows: [
-      ["Trofee de echipă — Real Madrid", "15", "2009–2018, inclusiv 4 Ligi ale Campionilor"],
+      ["Trofee de echipă — Real Madrid", "15", "2009–2018, inclusiv 4 titluri de Ligă a Campionilor"],
       ["Trofee de echipă — Manchester United", "9", "2003–2009, inclusiv Liga Campionilor și Campionatul Lumii al Fotbalului FIFA din 2008"],
       ["Trofee de echipă — Juventus", "5", "Serie A de două ori, Coppa Italia și 2 Supercoppa Italiana"],
       ["Trofee de echipă — Portugalia", "3", "Euro 2016, Liga Națiunilor 2019 și 2025"],
@@ -73,7 +73,7 @@ export const HOME = {
       ["Câte goluri a marcat Cristiano Ronaldo în total, în carieră?", `<b>${n(t.goals)} goluri oficiale în carieră</b> în ${n(t.apps)} meciuri de seniori pentru club și țară, la ${esc(d.lastUpdated)}, adică ${t.goalsPerGame} goluri pe meci. Vezi descompunerea completă pe <a href="/${lang}/goalsbyyear">ani, cu toate golurile</a>.`],
       ["Câte assisturi are Cristiano Ronaldo în carieră?", `Cristiano Ronaldo are <b>${n(LIVE.assists)} assisturi oficiale în carieră</b> — cifra compusă, publicată pe scară largă — și <b>${n(LIVE.tmAssists)} assisturi</b> după criteriile mai generoase ale Transfermarkt, în ${n(t.apps)} meciuri. Detalierea: ${n(d.totals?.assists?.byTeam?.real_madrid?.official || 152)} pentru Real Madrid, ${n(d.totals?.assists?.byTeam?.manchester_united?.official || 66)} pentru Manchester United, ${n(d.totals?.assists?.byTeam?.juventus?.official || 20)} pentru Juventus, ${n(d.totals?.assists?.byTeam?.al_nassr?.official || 9)} pentru Al Nassr și ${n(d.totals?.assists?.byTeam?.portugal?.official || 14)} pentru Portugalia.`],
       ["Care sunt totalurile de goluri și assisturi ale lui Cristiano Ronaldo?", `Pe parcursul carierei de seniori, Cristiano Ronaldo a adunat <b>${n(LIVE.ga)} contribuții directe la gol</b> (<b>${n(t.goals)} goluri</b> și <b>${n(LIVE.assists)} assisturi oficiale</b>) în ${n(t.apps)} meciuri — o medie de <b>0.93 contribuții directe la gol pe meci</b>. După criteriile Transfermarkt, totalul ajunge la <b>${n(LIVE.tmGa)} contribuții la gol</b> (${n(t.goals)} goluri + ${n(LIVE.tmAssists)} assisturi).`],
-      ["Cine are statistici mai bune în toate timpurile, Ronaldo sau Messi?", `În meciurile oficiale de seniori, <b>Cristiano Ronaldo</b> deține recordul absolut de goluri cu <b>${n(t.goals)} goluri</b> și ${n(LIVE.assists)} assisturi în ${n(t.apps)} meciuri (${t.goalsPerGame} goluri pe meci), în timp ce Messi are <b>${n(LIVE.rGoals)} goluri</b> și 408 assisturi în 1,181 meciuri (0.79 goluri pe meci). Ronaldo a ajuns la ${n(t.goals)} goluri în <b>cu 159 de meciuri mai puțin</b>, are ${LIVE.trophies} trofee de echipă la seniori față de cele ${LIVE.rTrophies} ale lui Messi și 5 trofee Ballon d'Or față de 8. Compară istoricul complet față în față pe <a href="/${lang}/ronaldo-vs-messi">pagina de statistici Ronaldo vs Messi</a>.`],
+      ["Cine are statistici mai bune în toate timpurile, Ronaldo sau Messi?", `În meciurile oficiale de seniori, <b>Cristiano Ronaldo</b> deține recordul absolut de goluri cu <b>${n(t.goals)} goluri</b> și ${n(LIVE.assists)} assisturi în ${n(t.apps)} meciuri (${t.goalsPerGame} goluri pe meci), în timp ce Messi are <b>${n(LIVE.rGoals)} goluri</b> și 408 assisturi în 1,181 meciuri (0.79 goluri pe meci). Ronaldo a ajuns la ${n(t.goals)} goluri în <b>159 de meciuri mai puțin</b>, are ${LIVE.trophies} trofee de echipă la seniori față de cele ${LIVE.rTrophies} ale lui Messi și 5 trofee Ballon d'Or față de 8. Compară istoricul complet față în față pe <a href="/${lang}/ronaldo-vs-messi">pagina de statistici Ronaldo vs Messi</a>.`],
       ["Cum se împart golurile lui Ronaldo în carieră pe cluburi?", `<b>${n(t.clubs.goals)} goluri la cluburi</b> în ${n(t.clubs.apps)} meciuri de club — ` + ["Real Madrid", "Manchester United", "Juventus", "Al Nassr", "Sporting CP"].map((c) => {
         const rows = (d.clubSeasons || []).filter((s) => s.club === c);
         const apps = rows.reduce((a, s) => a + s.apps, 0);
@@ -87,7 +87,7 @@ export const HOME = {
       ["Câte goluri a marcat Ronaldo în 2013?", `<b>69 de goluri oficiale în 2013</b> (59 pentru Real Madrid și 10 pentru Portugalia) — cel mai mare an calendaristic al carierei sale și un an care a adus un triplet pentru Portugalia în 15 minute, împotriva Irlandei de Nord. Consultă <a href="/${lang}/goalsbyyear">statisticile pentru 2013</a>.`],
       ["Câte trofee a câștigat Cristiano Ronaldo?", `<b>${n(LIVE.trophies)} trofee de echipă la seniori</b> — 32 cu cluburile (Real Madrid 15, Manchester United 9, Juventus 5, Al Nassr 2, Sporting CP 1) și 3 cu Portugalia (Euro 2016, Liga Națiunilor 2019 și 2025), plus 5 trofee Ballon d'Or. Unele publicații menționează 36–37 pentru că numără diferit Supercupa UEFA și supercupele naționale. Vezi <a href="/${lang}/achievements">lista completă a trofeelor</a>.`],
       ["Câte trofee Ballon d'Or a câștigat Cristiano Ronaldo?", `Cristiano Ronaldo a câștigat <b>5 trofee Ballon d'Or</b> (2008, 2013, 2014, 2016, 2017) — prima în 2008, la 23 de ani, când a fost numit pe toate cele 96 de buletine de vot.`],
-      ["Care este bilanțul lui Ronaldo împotriva lui Real Madrid?", `Bilanțul lui Ronaldo în El Clásico pentru Real Madrid — și fiecare gol marcat împotriva lui Real Madrid în altă echipă — sunt strânse pe <a href="/${lang}/vs-real-madrid">pagina Ronaldo vs Real Madrid</a>.`],
+      ["Care este bilanțul lui Ronaldo împotriva lui Real Madrid?", `Bilanțul lui Ronaldo în El Clásico pentru Real Madrid este strâns împreună cu fiecare gol marcat împotriva lui Real Madrid în altă echipă pe <a href="/${lang}/vs-real-madrid">pagina Ronaldo vs Real Madrid</a>.`],
       ["Care sunt statisticile lui Ronaldo în UEFA Champions League?", `Ronaldo a marcat <b>140 de goluri în 183 de apariții în Liga Campionilor UEFA</b> — recordul absolut al competiției — cu <b>42 de assisturi</b>, și el record, și a câștigat 5 trofee (2008, 2014, 2016, 2017, 2018). Vezi toate datele pe <a href="/${lang}/champions-league">pagina Ligii Campionilor</a>.`],
       ["Care sunt statisticile lui Ronaldo la Campionatul Mondial FIFA?", `Ronaldo a jucat la <b>șase Campionate Mondiale FIFA</b> (2006, 2010, 2014, 2018, 2022 și 2026) și rămâne recordmanul de goluri al Portugaliei, cu <b>146 de goluri în 234 de selecții</b> — recordul absolut la nivel internațional.`],
       ["Cât de departe este Cristiano Ronaldo de 1.000 de goluri în carieră?", `Cu ${n(t.goals)} goluri, Ronaldo mai are nevoie de <b>${Math.max(0, 1000 - t.goals)} goluri</b> pentru a ajunge la 1.000 de goluri în carieră — un prag la care niciun jucător nu a ajuns în fotbalul oficial de seniori.`]
@@ -204,13 +204,13 @@ export const ACH = {
     ["Trofee de echipă", 35, `Real Madrid ${per["Real Madrid"] || 0} · Manchester United ${per["Manchester United"] || 0} · Juventus ${per["Juventus"] || 0} · Portugalia ${per["Portugal"] || 0}.`],
     ["Trofee Ballon d'Or", "5", "2008, 2013, 2014, 2016, 2017."],
     ["Gantele de Aur europene", "4", "2008, 2011, 2014, 2015."],
-    ["Sezoane de golgeter în UCL", "7", "Golgeter în Liga Campionilor în 2008, apoi în fiecare sezon de la 2013 la 2018."]
+    ["Sezoane ca golgeter în Liga Campionilor", "7", "Golgeter în Liga Campionilor în 2008, apoi în fiecare sezon de la 2013 la 2018."]
   ],
   qa: (teamTotal, per) => [
     ["Câte trofee a câștigat Ronaldo?", `<b>${teamTotal} trofee de echipă la seniori</b>: ${per["Real Madrid"] || 0} Real Madrid, ${per["Manchester United"] || 0} Manchester United, ${per["Juventus"] || 0} Juventus, ${per["Al Nassr"] || 0} Al Nassr, ${per["Sporting CP"] || 0} Sporting CP și ${per["Portugal"] || 0} Portugalia.`],
     ["Câte trofee Ballon d'Or a câștigat Ronaldo?", "<b>Cinci</b> — 2008, 2013, 2014, 2016 și 2017, prima la 23 de ani."],
     ["A câștigat Ronaldo un trofeu internațional major?", "<b>Da</b> — Euro 2016 la UEFA, în calitate de căpitan, și Liga Națiunilor UEFA în 2019 și 2025."],
-    ["Câte Ligi ale Campionilor a câștigat Ronaldo?", "<b>Cinci</b>: 2008 cu Manchester United, apoi 2014, 2016, 2017 și 2018 cu Real Madrid."]
+    ["De câte ori a câștigat Ronaldo Liga Campionilor?", "<b>Cinci</b>: 2008 cu Manchester United, apoi 2014, 2016, 2017 și 2018 cu Real Madrid."]
   ],
   teamHeader: (team, sub) => `${esc(team)} — ${sub} trofee`,
   indHeader: (indTotal) => `Distincții individuale — ${indTotal} premii`,
