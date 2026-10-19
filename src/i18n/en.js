@@ -1,11 +1,14 @@
 // EN dictionary — RonaldoStats
 // Extracted verbatim from the original inline dictionaries by
 // scripts/refactor-i18n.mjs. Structure is identical across all 9 languages.
+// Copy rewritten for Cristiano Ronaldo (RonaldoStats, https://www.ronaldostats.site).
+// Numbers follow the verified dataset in public/data/ronaldo-data.json and the
+// canonical Ronaldo fact list; provisional splits keep their caveat wording.
 
 export const HOME = {
     locale: "en-GB",
-    shirt10: "Shirt number 10",
-    head: (t, p, d) => `<b>${n(t.goals)} goals</b> in <b>${n(t.apps)} senior appearances</b> — for Barcelona, PSG, ${esc(p.current.join(" and "))}. A World Cup winner and record eight-time Ballon d'Or holder, counted by hand and checked twice, as of ${esc(d.lastUpdated)}.`,
+    shirt10: "Shirt number 7",
+    head: (t, p, d) => `<b>${n(t.goals)} goals</b> in <b>${n(t.apps)} senior appearances</b> — for Sporting CP, Manchester United, Real Madrid, Juventus and ${esc(p.current.join(" and "))}. A European champion and a five-time Ballon d'Or winner, counted by hand and checked twice, as of ${esc(d.lastUpdated)}.`,
     meta: (p, dob) => `${esc(p.name)}, born ${dob} in ${esc(p.birthplace)}. He is ${p.age}, plays as a ${esc(p.position.toLowerCase())} and is currently at ${esc(p.current.join(" and "))}.`,
     roleLabel: "Role",
     teamsLabel: "Teams",
@@ -13,124 +16,131 @@ export const HOME = {
     kpiCareer: "Career goals",
     kpiCareerNote: (gpg, seasons) => `${gpg} goals per game across ${seasons} club seasons.`,
     kpiApps: "Senior appearances",
-    kpiAppsNote: (clubs, country) => `${clubs} club, ${country} Argentina.`,
-    kpiArg: "Argentina goals",
+    kpiAppsNote: (clubs, country) => `${clubs} club, ${country} Portugal.`,
+    kpiArg: "Portugal goals",
     kpiArgNote: (gpg, caps) => `${gpg} per cap across ${caps} caps.`,
     kpiTrophies: "Team trophies",
-    kpiTrophiesNote: (lang) => `Plus a record 8 Ballons d'Or. <a href="/${lang}/achievements">Full honours list</a>.`,
+    kpiTrophiesNote: (lang) => `Plus <b>5 Ballons d'Or</b> and <b>4 European Golden Shoes</b>. <a href="/${lang}/achievements">Full honours list</a>.`,
     kpiRoad: "Road to 1,000 goals",
     kpiRoadNote: (togo, projYear, pace) => `${togo} to go. Rough projection at current pace (~${pace.toFixed(0)} a year): 1,000 lands around ${projYear}.`,
     copyStatsBtn: "Copy headline stats",
-    copyText: (goals, apps, clubGoals, argGoals, updated) => `Messi: ${goals} goals in ${apps} senior apps (${clubGoals} club, ${argGoals} Argentina), ${LIVE.trophies} trophies, 8 Ballons d'Or — as of ${updated}.`,
+    copyText: (goals, apps, clubGoals, argGoals, updated) => `Ronaldo: ${goals} goals in ${apps} senior apps (${clubGoals} club, ${argGoals} Portugal), ${LIVE.trophies} senior team trophies, 5 Ballons d'Or — as of ${updated}.`,
     copyMsg: "Copied — paste it anywhere.",
-    clubCaption: (updated, lang) => `Appearances and goals for every senior team Lionel Messi has played for, as of ${updated}. Full competition splits are on the <a href="/${lang}/goalsbyseason">goals by season page</a>.`,
+    clubCaption: (updated, lang) => `Appearances and goals for every senior team Cristiano Ronaldo has played for, as of ${updated}. Full competition splits are on the <a href="/${lang}/goalsbyseason">goals by season page</a>.`,
     thTeam: "Team and years",
     thApps: "Apps",
     thGoals: "Goals",
     thGpg: "Goals per game",
     thTotal: "Career total",
-    yearSub: "Pick a year and watch the running total climb — all the way from his 2004 debut to today.",
-    yearTitle: "Messi stats by calendar year",
+    yearSub: "Pick a year and watch the running total climb — all the way from his 2002 debut to today.",
+    yearTitle: "Ronaldo stats by calendar year",
     yearLabel: "Year",
-    yearFigcap: (start, cur, prov, lang) => `Calendar-year goals, ${start} to ${cur}${prov ? " (in progress)" : ""} — peaking at 91 in 2012. <a href="/${lang}/goalsbyyear">Open the full table</a>.`,
+    yearFigcap: (start, cur, prov, lang) => `Calendar-year goals, ${start} to ${cur}${prov ? " (in progress)" : ""} — peaking at 69 in 2013. <a href="/${lang}/goalsbyyear">Open the full table</a>.`,
     tileGoals: (year, prov) => `Goals in ${year}${prov ? " (so far)" : ""}`,
     tileTotal: (year) => `Career total after ${year}`,
     tileAge: (year) => `Age during ${year}`,
     records: (best, post30, pct) => [
-      [`91`, `<b>Goals in 2012</b>, the most any footballer has scored in a single calendar year — ${best.goals} in all competitions.`],
-      [`8`, `<b>Ballons d'Or</b> (2009–12, 2015, 2019, 2021, 2023) — more than any other player in history.`],
-      [`474`, `<b>La Liga goals</b>, the all-time record for the competition and for any single European top flight.`],
-      [`129`, `<b>Champions League goals</b> — 120 for Barcelona and 9 for PSG, the second-most in the competition's history.`],
-      [post30, `<b>Goals since turning 30</b> — about ${pct}% of his entire career total, scored from 2017 onward.`],
-      [`57`, `<b>Hat-tricks or more</b> for club and country across his senior career (provisional tally).`],
-      [`46`, `<b>Team trophies</b> — the most decorated career in football history, crowned by the 2022 World Cup.`]
+      [`69`, `<b>Goals in 2013</b>, the most he has scored in a single calendar year — ${best.goals} in all competitions.`],
+      [`5`, `<b>Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — with four European Golden Shoes.`],
+      [`311`, `<b>La Liga goals</b> for Real Madrid, the competition's all-time record.`],
+      [`140`, `<b>Champions League goals</b> in 183 appearances, the record in the competition's history.`],
+      [post30, `<b>Goals since turning 30</b> — about ${pct}% of his entire career total, scored from 2015 onward.`],
+      [`66`, `<b>Hat-tricks or more</b> for club and country across his senior career (provisional tally).`],
+      [`${LIVE.trophies}`, `<b>Team trophies</b> — 32 with clubs and 3 with Portugal.`]
     ],
-    silverCaption: () => `${LIVE.trophies} senior team titles, club by club, plus the headline individual honours.`,
+    silverCaption: () => `${LIVE.trophies} senior team titles, club by club, plus the headline individual honours. Some outlets quote 36–37 because they count the UEFA Super Cup and the domestic supercups differently — the itemised list here adds up to ${LIVE.trophies}.`,
     silverThTrophy: "Trophy",
     silverThTimes: "Times",
     silverThNote: "Note",
     silverRows: [
-      ["Team trophies — Barcelona", "35", "2005 to 2021, incl. 4 Champions Leagues"],
-      ["Team trophies — Argentina", "5", "World Cup 2022, Copas América 2021 & 2024, Finalissima 2022, Olympic gold 2008"],
-      ["Team trophies — PSG", "3", "Ligue 1 2022 & 2023, Trophée des Champions 2022"],
-      ["Team trophies — Inter Miami", "4", "Leagues Cup 2023, Supporters' Shield 2024, MLS Cup 2025, Campeones Cup 2026"],
-      ["Ballon d'Or", "8", "Record — 2009–12, 2015, 2019, 2021, 2023"]
+      ["Team trophies — Real Madrid", "15", "2009 to 2018, incl. 4 Champions Leagues"],
+      ["Team trophies — Manchester United", "9", "2003 to 2009, incl. Champions League and Club World Cup 2008"],
+      ["Team trophies — Juventus", "5", "Serie A twice, Coppa Italia and 2 Supercoppa Italiana"],
+      ["Team trophies — Portugal", "3", "Euro 2016, Nations League 2019 & 2025"],
+      ["Team trophies — Al Nassr", "2", "Arab Club Champions Cup 2023, Saudi Pro League 2026"],
+      ["Team trophies — Sporting CP", "1", "Supertaça Cândido de Oliveira 2002"],
+      ["Ballon d'Or", "5", "2008, 2013, 2014, 2016, 2017"]
     ],
     splitFk: "Free-kick goals",
-    splitFkNote: "Curled in for club and country (provisional tally).",
+    splitFkNote: "Curled in for club and country (provisional compiled tally).",
     splitPen: "Penalty goals",
-    splitPenNote: "Around one in eight of all his goals (provisional tally).",
+    splitPenNote: "Just under one in five of all his goals (provisional compiled tally).",
     splitHt: "Hat-tricks or more",
     splitHtNote: "Three-plus-goal games, all competitions.",
-    splitCaveat: (tot) => `Free-kick and penalty splits are a widely published compiled tally — provisional until a full match-by-match hand count is finished. The ${tot} total is unaffected.`,
+    splitCaveat: (tot) => `Free-kick, penalty and body-part splits are a widely published compiled tally — provisional until a full match-by-match hand count is finished. The ${tot} total is unaffected.`,
     faq: (t, agg, m, d, lang) => [
-      ["How many total career goals has Lionel Messi scored?", `<b>${n(t.goals)} official career goals</b> in ${n(t.apps)} senior appearances for club and country as of ${esc(d.lastUpdated)}, a rate of ${t.goalsPerGame} goals per game. Explore his full <a href="/${lang}/goalsbyyear">year-by-year scoring breakdown</a>.`],
-      ["How many career assists does Lionel Messi have?", `Lionel Messi has recorded <b>407 official career assists</b> under Opta/FIFA standards (and <b>449 assists</b> under Transfermarkt's broader criteria) in ${n(t.apps)} appearances, making him the all-time assist leader in modern football history. His official breakdown includes ${LIVE.abtBarca} assists for FC Barcelona, ${LIVE.abtArg} for Argentina, ${LIVE.abtMiami} for Inter Miami CF, and ${LIVE.abtPsg} for Paris Saint-Germain.`],
-      ["What are Lionel Messi's total goals and assists?", `Across his senior career, Lionel Messi has accumulated <b>${n(LIVE.ga)} official goal contributions</b> (<b>${n(t.goals)} goals</b> and <b>${n(LIVE.assists)} official assists</b>) in ${n(t.apps)} appearances — an extraordinary rate of <b>1.14 direct goal involvements per match</b>. Under Transfermarkt's criteria, his total stands at <b>${n(LIVE.tmGa)} goal involvements</b> (${n(t.goals)} goals + ${n(LIVE.tmAssists)} assists).`],
-      ["Who has better all-time stats, Messi or Ronaldo?", `Across official senior matches, Cristiano Ronaldo holds the all-time goalscoring record with 980 goals and 261 assists in 1,339 matches (0.73 goals/game), while Messi has <b>${n(t.goals)} goals and 407 official assists in ${n(t.apps)} matches</b> (0.79 goals/game, 1.14 G+A/game). Messi reached ${n(t.goals)} goals in ${n(LIVE.fewer)} fewer matches, holds ${LIVE.trophies} team trophies to ${LIVE.rTrophies}, and 8 Ballons d'Or to 5. Compare their complete head-to-head records on our <a href="/${lang}/messi-vs-ronaldo">Messi vs Messi stats page</a>.`],
-      ["What is Messi's career goal breakdown by team?", `<b>${n(agg.barcelona.goals)} goals</b> in ${n(agg.barcelona.apps)} games for FC Barcelona, <b>${agg.psg.goals} goals</b> in ${n(agg.psg?.apps || 75)} games for PSG, <b>${n(agg.miami.goals)} goals</b> in ${n(agg.miami?.apps || 118)} games for Inter Miami, and <b>${n(t.country.goals)} goals</b> in ${n(t.country.apps)} caps for Argentina. See <a href="/${lang}/goalsbyseason">season-by-season club stats</a>.`],
-      ["How many direct free kick goals has Messi scored?", `Lionel Messi has scored <b>${m?.freeKicks || 76} direct free-kick goals</b> in senior football (50 for Barcelona, 12 for Argentina, 12 for Inter Miami, and 2 for PSG), ranking 2nd all-time behind Marcelinho Carioca's record of 78.`],
-      ["How many hat-tricks has Lionel Messi scored?", `Messi has scored <b>${d.hatTricks || 62} career hat-tricks</b> (48 for Barcelona, 11 for Argentina, 3 for Inter Miami). 42 came in league and Champions League play, including 6 matches where he scored 4 or 5 goals.`],
-      ["How many penalty goals has Messi scored?", `Messi has scored <b>${m?.penalties || 110} penalty goals</b> from 141 attempts across club and country (a 78% conversion rate).`],
-      ["How many non-penalty goals has Lionel Messi scored?", `Messi has scored <b>${n(t.goals - (m?.penalties || 111))} non-penalty goals</b> in ${n(t.apps)} appearances (${((t.goals - (m?.penalties || 111)) / t.apps).toFixed(2)} non-penalty goals per game) — the highest ratio in modern football history.`],
-      ["How many goals did Messi score in 2012?", `<b>91 official goals in 2012</b> (79 for Barcelona, 12 for Argentina in 69 games) — certified by Guinness World Records as the all-time world record for most goals in a calendar year. Check our <a href="/${lang}/goalsbyyear">2012 stats tracker</a>.`],
-      ["How many trophies has Lionel Messi won?", `<b>47 senior team titles</b> — the most decorated player in football history: 35 with Barcelona, 5 with Argentina (2022 World Cup, 2 Copas América, Finalissima, Olympics), 3 with PSG, and 4 with Inter Miami, plus 8 Ballons d'Or. See <a href="/${lang}/achievements">the full trophy list</a>.`],
-      ["How many Ballons d'Or has Lionel Messi won?", `Lionel Messi has won <b>8 Ballons d'Or</b> (2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023) — an all-time record in football history.`],
-      ["What is Messi's record in El Clásico vs Real Madrid?", `Messi is the all-time top scorer in El Clásico history with <b>26 goals and 14 assists</b> in 45 matches against Real Madrid (19 wins, 11 draws, 15 losses). Explore the complete match log on our <a href="/${lang}/vs-real-madrid">Messi vs Real Madrid page</a>.`],
-      ["What are Messi's UEFA Champions League statistics?", `Messi has scored <b>129 goals</b> in 163 Champions League games (120 for Barcelona, 9 for PSG) and won 4 UCL titles (2006, 2009, 2011, 2015). View full data on our <a href="/${lang}/champions-league">Champions League hub</a>.`],
-      ["What are Messi's FIFA World Cup statistics?", `Messi has scored <b>21 goals and 12 assists</b> in 34 World Cup matches across 6 tournaments, winning the 2022 FIFA World Cup in Qatar and becoming the only player to win two FIFA World Cup Golden Balls (2014, 2022).`],
-      ["How far is Lionel Messi from 1,000 career goals?", `With ${n(t.goals)} goals, Messi needs <b>${Math.max(0, 1000 - t.goals)} more goals</b> to reach 1,000 career goals. At his scoring pace (${t.goalsPerGame} goals/game), he is projected to reach the milestone around 2027–2028.`]
+      ["How many total career goals has Cristiano Ronaldo scored?", `<b>${n(t.goals)} official career goals</b> in ${n(t.apps)} senior appearances for club and country as of ${esc(d.lastUpdated)}, a rate of ${t.goalsPerGame} goals per game. Explore his full <a href="/${lang}/goalsbyyear">year-by-year scoring breakdown</a>.`],
+      ["How many career assists does Cristiano Ronaldo have?", `Cristiano Ronaldo has recorded <b>${n(LIVE.assists)} official career assists</b> — the widely published compiled tally — and <b>${n(LIVE.tmAssists)} assists</b> under Transfermarkt's broader criteria, in ${n(t.apps)} appearances. His breakdown: ${n(d.totals?.assists?.byTeam?.real_madrid?.official || 152)} for Real Madrid, ${n(d.totals?.assists?.byTeam?.manchester_united?.official || 66)} for Manchester United, ${n(d.totals?.assists?.byTeam?.juventus?.official || 20)} for Juventus, ${n(d.totals?.assists?.byTeam?.al_nassr?.official || 9)} for Al Nassr and ${n(d.totals?.assists?.byTeam?.portugal?.official || 14)} for Portugal.`],
+      ["What are Cristiano Ronaldo's total goals and assists?", `Across his senior career, Cristiano Ronaldo has accumulated <b>${n(LIVE.ga)} official goal contributions</b> (<b>${n(t.goals)} goals</b> and <b>${n(LIVE.assists)} official assists</b>) in ${n(t.apps)} appearances — a rate of <b>0.93 direct goal involvements per match</b>. Under Transfermarkt's criteria, the total stands at <b>${n(LIVE.tmGa)} goal involvements</b> (${n(t.goals)} goals + ${n(LIVE.tmAssists)} assists).`],
+      ["Who has better all-time stats, Ronaldo or Messi?", `Across official senior matches, <b>Cristiano Ronaldo</b> holds the all-time goalscoring record with <b>${n(t.goals)} goals</b> and ${n(LIVE.assists)} assists in ${n(t.apps)} matches (${t.goalsPerGame} goals per game), while Messi has <b>${n(LIVE.rGoals)} goals</b> and 408 assists in 1,181 matches (0.79 goals per game). Ronaldo reached ${n(t.goals)} goals in <b>159 fewer matches</b>, holds ${LIVE.trophies} senior team trophies to Messi's ${LIVE.rTrophies}, and 5 Ballons d'Or to Messi's 8. Compare their complete head-to-head records on our <a href="/${lang}/ronaldo-vs-messi">Ronaldo vs Messi stats page</a>.`],
+      ["What is Ronaldo's career goal breakdown by club?", `<b>${n(t.clubs.goals)} club goals</b> in ${n(t.clubs.apps)} club games — ` + ["Real Madrid", "Manchester United", "Juventus", "Al Nassr", "Sporting CP"].map((c) => {
+        const rows = (d.clubSeasons || []).filter((s) => s.club === c);
+        const apps = rows.reduce((a, s) => a + s.apps, 0);
+        const goals = rows.reduce((a, s) => a + s.goals, 0);
+        return `${c} ${n(goals)} in ${n(apps)}`;
+      }).join(" · ") + ` — plus <b>${n(t.country.goals)} goals</b> in ${n(t.country.apps)} caps for Portugal. See <a href="/${lang}/goalsbyseason">season-by-season club stats</a>.`],
+      ["How many direct free-kick goals has Ronaldo scored?", `Cristiano Ronaldo has scored <b>66 direct free-kick goals</b> in senior football, alongside <b>184 penalties from 220 attempts</b> and 731 goals from open play — a provisional compiled tally until a full hand count is finished.`],
+      ["How many hat-tricks has Ronaldo scored?", `Ronaldo has scored <b>${n(d.hatTricks)} career hat-tricks</b> for club and country (provisional tally), including <b>10 for Portugal</b> — a world record for an international player.`],
+      ["How many penalty goals has Ronaldo scored?", `Ronaldo has scored <b>184 penalty goals</b> from 220 attempts across club and country — an 83.6% conversion rate.`],
+      ["How many non-penalty goals has Cristiano Ronaldo scored?", `Ronaldo has scored <b>${n(t.goals - (m?.penalties || 184))} non-penalty goals</b> in ${n(t.apps)} appearances (${((t.goals - (m?.penalties || 184)) / t.apps).toFixed(2)} non-penalty goals per game) — 81% of everything he has ever scored.`],
+      ["How many goals did Ronaldo score in 2013?", `<b>69 official goals in 2013</b> (59 for Real Madrid and 10 for Portugal) — the biggest calendar year of his career, and a year that brought a hat-trick for Portugal inside 15 minutes against Northern Ireland. Check our <a href="/${lang}/goalsbyyear">2013 stats tracker</a>.`],
+      ["How many trophies has Cristiano Ronaldo won?", `<b>${n(LIVE.trophies)} senior team titles</b> — 32 with clubs (Real Madrid 15, Manchester United 9, Juventus 5, Al Nassr 2, Sporting CP 1) and 3 with Portugal (Euro 2016, Nations League 2019 and 2025), plus 5 Ballons d'Or. Some outlets quote 36–37 because they count the UEFA Super Cup and the domestic supercups differently. See <a href="/${lang}/achievements">the full trophy list</a>.`],
+      ["How many Ballons d'Or has Cristiano Ronaldo won?", `Cristiano Ronaldo has won <b>5 Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — the first in 2008, at 23 years old, when he was named on all 96 ballots.`],
+      ["What is Ronaldo's record against Real Madrid?", `Ronaldo's El Clásico record for Real Madrid — and every goal he has scored against Real Madrid in a different shirt — is collected on our <a href="/${lang}/vs-real-madrid">Ronaldo vs Real Madrid page</a>.`],
+      ["What are Ronaldo's UEFA Champions League statistics?", `Ronaldo has scored <b>140 goals in 183 Champions League appearances</b> — the all-time record in the competition — with <b>42 assists</b>, also the record, and won 5 titles (2008, 2014, 2016, 2017, 2018). View full data on our <a href="/${lang}/champions-league">Champions League hub</a>.`],
+      ["What are Ronaldo's FIFA World Cup statistics?", `Ronaldo has played at <b>six FIFA World Cups</b> (2006, 2010, 2014, 2018, 2022 and 2026) and remains the record scorer for Portugal, with <b>146 goals in 234 caps</b> — the all-time international record for both.`],
+      ["How far is Cristiano Ronaldo from 1,000 career goals?", `With ${n(t.goals)} goals, Ronaldo needs <b>${Math.max(0, 1000 - t.goals)} more goals</b> to reach 1,000 career goals — a mark no player has reached in official senior football.`]
     ]
   };
 
 export const BY_YEAR = {
-    head: (ys, best, t) => `From his first senior goal in ${ys[0].year} to <b>${best.goals} in ${best.year}</b> — every calendar year of a ${n(t.goals)}-goal career, with running totals and his age.`,
+    head: (ys, best, t) => `From his first senior goal in ${ys[0].year} to <b>${best.goals} in ${best.year}</b> — every calendar year of a career that produced ${n(t.goals)} goals, with running totals and his age.`,
     cap: (best, t) => `Bars: goals that year (peak ${best.goals}, ${best.year}). Line: climb to ${n(t.goals)}.`,
-    chartLabel: (best) => `Messi goals per calendar year with cumulative career total, peaking at ${best.goals} in ${best.year}`,
+    chartLabel: (best) => `Ronaldo goals per calendar year with cumulative career total, peaking at ${best.goals} in ${best.year}`,
     kpiCareer: "Career goals",
     kpiBest: "Best year",
-    kpiBestSub: "A world record for a calendar year.",
+    kpiBestSub: "The most he has scored in a calendar year.",
     kpiCurrSub: "Season in progress.",
     kpiYears: "Scoring years",
     kpiYearsSub: (ys, last) => `Every year from ${ys[0].year} to ${last.year}.`,
     decades: "Goals in the",
-    tableSub: "Newest first. 2026 is starred while the season is still being played. Click a column to sort, or type to filter. Famous seasons get a footnote — hover the year.",
-    caption: "Goals, running career total and age for every calendar year since Messi's 2004 debut.",
+    tableSub: "Newest first. 2026 is starred while the season is still being played. Click a column to sort, or type to filter. Peak years get a footnote — hover the year.",
+    caption: "Goals, running career total and age for every calendar year since Ronaldo's 2002 debut.",
     thYear: "Year", thGoals: "Goals", thTotal: "Career total", thAge: "Age",
-    inProgNote: `* ${last.year} season in progress — refreshes after each appearance.`,
-    filterPlaceholder: "Filter years — e.g. 2012",
-    bestYearHtml: (best) => `<p><b>${best.year} is the greatest goalscoring year football has seen: ${best.goals} goals</b> — 79 for Barcelona and 12 for Argentina — breaking Gerd Müller's 40-year-old record of 85. It included a run of 33 league games scored in consecutively and a five-goal Champions League night against Bayer Leverkusen.</p><p>The next-best years, 2011 (60) and 2010 (60), show how far ahead of normal — even his own normal — that season was. <a href="/en/dashboard">See how those goals break down by competition</a>.</p>`
+    inProgNote: "* 2026 season in progress — refreshes after each appearance.",
+    filterPlaceholder: "Filter years — e.g. 2013",
+    bestYearHtml: (best) => `<p><b>${best.year} is the most prolific calendar year of Ronaldo's career: ${best.goals} goals</b> — 59 for Real Madrid and 10 for Portugal. It brought the second Ballon d'Or, a 55-goal club season, and three goals for Portugal inside 15 minutes against Northern Ireland.</p><p>The next-best years — 2012 (63), 2014 (61) and 2011 (60) — show how high the standard stayed across five straight seasons from 2010 to 2014. <a href="/en/dashboard">See how those goals break down by competition</a>.</p>`
   };
 
 export const BY_SEASON = {
-    head: (best) => `Every club season from 2004/05 to 2026 — <b>best: ${best.goals} goals in ${best.season}</b> — with league, cup and continental splits, plus Argentina year by year.`,
-    clubSub: "Apps / goals in each format. 2026 is the season in progress. Click a column to sort, or type to filter.",
-    caption: (len) => `All ${len} club seasons: Barcelona 2004/05–2020/21, PSG 2021/22–2022/23, Inter Miami 2023–2026.`,
+    head: (best) => `Every club season from 2002/03 to 2026/27 — <b>best: ${best.goals} goals in ${best.season}</b> — with league, cup and continental splits, plus Portugal year by year.`,
+    clubSub: "Apps / goals in each format. 2026/27 is the season in progress. Click a column to sort, or type to filter.",
+    caption: (len) => `All ${len} club seasons: Sporting CP 2002/03, Manchester United 2003/04–2008/09 and 2021/22–2022/23, Real Madrid 2009/10–2017/18, Juventus 2018/19–2021/22, Al Nassr 2022/23–2026/27.`,
     thSeason: "Season", thClub: "Club", thApps: "Apps", thGoals: "Goals", thLeague: "League", thCup: "Cup", thCont: "Continental", thOther: "Other",
     totalLabel: "Club total", bestBadge: "Best club season",
-    filterClubPlaceholder: "Filter seasons — e.g. PSG, 2012",
+    filterClubPlaceholder: "Filter seasons — e.g. Real Madrid, 2012",
     countrySub: "Competitive qualifiers and tournaments plus friendlies, newest first.",
-    countryCaption: "Argentina goals by calendar year, 2005 to 2026.",
-    thYear: "Year", thNote: "Note", totalArgLabel: "Argentina total",
-    filterCountryPlaceholder: "Filter Argentina years — e.g. 2022",
-    bestSeasonHtml: (best) => `<p><b>${best.season} — ${best.goals} goals in ${best.apps} games for Barcelona</b> — is the most prolific club season ever played: 50 in La Liga (a record), 14 in the Champions League, 3 in the Copa del Rey and 6 in the super cups. He scored in every competition he entered.</p><p>It sits at the heart of a four-season stretch (2009/10–2012/13) in which he never dropped below 53 club goals. <a href="/en/goalsbyyear">The same goals counted by calendar year</a>.</p>`
+    countryCaption: "Portugal goals by calendar year, 2003 to 2026.",
+    thYear: "Year", thNote: "Note", totalArgLabel: "Portugal total",
+    filterCountryPlaceholder: "Filter Portugal years — e.g. 2016",
+    bestSeasonHtml: (best) => `<p><b>${best.season} — ${best.goals} goals in ${best.apps} games for ${best.club}</b> — is the most prolific club season of his career: ${best.league.goals} in the league, ${best.continental.goals} in the Champions League, ${best.cup.goals} in the cup and ${best.other.goals} in the super cups. He scored in every competition he entered.</p><p>It edges out the legendary 2011/12 — 60 goals including 46 in La Liga — inside a run of six Madrid seasons in which he never dropped below 51 club goals. <a href="/en/goalsbyyear">The same goals counted by calendar year</a>.</p>`
   };
 
 export const DASH = {
-  teamNames: { all: "all teams", barcelona: "Barcelona", psg: "PSG", miami: "Inter Miami", argentina: "Argentina" },
-  pills: [["all", "All teams"], ["barcelona", "Barcelona"], ["psg", "PSG"], ["miami", "Inter Miami"], ["argentina", "Argentina"]],
-  head: (name) => `Every Messi goal sliced four ways — by competition, by season, by finish and by body part — filtered to <b>${esc(name)}</b>. Tap a team to re-cut every chart.`,
-  filterNote: (name, goals, apps, T) => `Showing ${name}: ${n(goals)} goals in ${n(apps)} apps` + (T === "barcelona" || T === "psg" ? " (Champions League split: Barcelona 120, PSG 9 — derived from club sources)." : "."),
+  teamNames: { all: "all teams", real_madrid: "Real Madrid", manchester_united: "Manchester United", juventus: "Juventus", al_nassr: "Al Nassr", sporting_cp: "Sporting CP", portugal: "Portugal" },
+  pills: [["all", "All teams"], ["real_madrid", "Real Madrid"], ["manchester_united", "Manchester United"], ["juventus", "Juventus"], ["al_nassr", "Al Nassr"], ["sporting_cp", "Sporting CP"], ["portugal", "Portugal"]],
+  head: (name) => `Every Ronaldo goal sliced four ways — by competition, by season, by finish and by body part — filtered to <b>${esc(name)}</b>. Tap a team to re-cut every chart.`,
+  filterNote: (name, goals, apps, T) => `Showing ${name}: ${n(goals)} goals in ${n(apps)} apps` + (T === "real_madrid" ? " (Champions League: 140 goals in 183 appearances with 42 assists — all three are competition records)." : "."),
   kpis: { goals: "Goals", apps: "Appearances", gpg: "Goals per game", forTeam: (name) => `For ${name}.` },
   chartEmpty: "No rows for this team filter.",
-  figCap: (T, name) => T === "all" ? "Calendar years, 2004 to 2026." : T === "argentina" ? "Argentina calendar years." : "Club seasons for " + esc(name) + ".",
+  figCap: (T, name) => T === "all" ? "Calendar years, 2002 to 2026." : ["portugal", "portugal_nt", "country"].includes(T) ? "Portugal calendar years." : "Club seasons for " + esc(name) + ".",
   finishParts: { "Open play": "Open play", "Penalties": "Penalties", "Free kicks": "Free kicks" },
   finishCenter: "career goals",
-  finishCaveat: "Career totals for all teams combined — no per-team split exists. Verified count.",
-  finishCaveatFiltered: (d) => `No per-team finish split exists, so this chart only covers all teams combined — see the career totals below. Messi's ${n(d.totals.goals)} goals break down as ${d.byFinish.openPlay} open play, ${d.byFinish.penalties} penalties and ${d.byFinish.freeKicks} free kicks.`,
+  finishCaveat: "Career totals for all teams combined — no per-team split exists. Provisional compiled tally.",
+  finishCaveatFiltered: (d) => `No per-team finish split exists, so this chart only covers all teams combined — see the career totals below. Ronaldo's ${n(d.totals.goals)} goals break down as ${d.byFinish.openPlay} open play, ${d.byFinish.penalties} penalties and ${d.byFinish.freeKicks} free kicks (provisional compiled tally).`,
   bodyParts: { "Left foot": "Left foot", "Right foot": "Right foot", "Head": "Head", "Other": "Other" },
-  bodyCenter: "left-foot goals",
-  bodyCaveat: "Career totals for all teams combined (provisional until a full hand count finishes).",
+  bodyCenter: "right-foot goals",
+  bodyCaveat: "Career totals for all teams combined — a provisional compiled tally, until a full hand count finishes.",
   ageName: (r) => `Age ${r.age} · ${r.year}`,
   ageCaveat: (apeak) => `Every senior goal by the age he scored it — club and country combined. Peak: ${apeak.goals} at age ${apeak.age} (${apeak.year}).`,
   ageFilterNote: "Ages mix club and country goals, so this chart covers the full career only — clear the team filter to see it.",
@@ -151,24 +161,24 @@ export const DASH = {
   ],
   teamCardSub: { goals: "goals", apps: "apps", gpg: "per game", of: "of" },
   records: (comp, d) => [
-    ["91", `<b>Goals in 2012</b> — the most any footballer has scored in a calendar year.`],
-    [n(comp("La Liga")), `<b>La Liga goals</b>, the competition's all-time record, all for Barcelona.`],
-    [n(comp("UEFA Champions League")), `<b>Champions League goals</b> — 120 for Barcelona, 9 for PSG.`],
-    ["8", `<b>Ballons d'Or</b>, more than any player in history (2009–12, 2015, 2019, 2021, 2023).`],
+    ["69", `<b>Goals in 2013</b> — the most he has scored in a calendar year.`],
+    [n(comp("La Liga")), `<b>La Liga goals</b>, the competition's all-time record, all for Real Madrid.`],
+    ["140", `<b>Champions League goals</b> — the record in the competition's history.`],
+    ["5", `<b>Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017).`],
     [n(d.hatTricks), `<b>Hat-tricks or more</b> for club and country (provisional tally).`],
-    [`${LIVE.trophies}`, `<b>Team trophies</b> — the most decorated career football has seen.`]
+    [`${LIVE.trophies}`, `<b>Team trophies</b> — 32 with clubs, 3 with Portugal.`]
   ],
-  method: "Champions League goals split Barcelona 120 / PSG 9 from club sources; other team-filtered competition splits follow the club-season competition mapping and are documented in the data file."
+  method: "Champions League figures (140 goals in 183 appearances, 42 assists) are competition records taken from the club and UEFA record books; other team-filtered competition splits follow the club-season competition mapping and are documented in the data file."
 };
 
 export const TIMELINE = {
-  head: (t) => `From his Barcelona debut in 2004 to <b>${n(t.goals)} career goals</b> and counting — the defining nights, records and trophies, dated and in order.`,
+  head: (t) => `From his Sporting CP debut in 2002 to <b>${n(t.goals)} career goals</b> and counting — the defining nights, records and trophies, dated and in order.`,
   keydates: (t, lastUpdated) => [
-    ["16 Oct 2004", "Senior debut for <b>Barcelona</b> against Espanyol, aged 17."],
-    ["1 May 2005", "First senior goal, against Albacete — Barcelona's youngest scorer at the time."],
-    ["17 Aug 2005", "<b>Argentina</b> debut against Hungary."],
-    ["2012", "<b>91 goals</b> in the calendar year — football's all-time record."],
-    ["18 Dec 2022", "Wins the <b>World Cup</b> with Argentina in Qatar, scoring twice in the final."],
+    ["14 Aug 2002", "Senior debut for <b>Sporting CP</b> against Inter in the Champions League third qualifying round, aged 17."],
+    ["20 Aug 2003", "<b>Portugal</b> debut against Kazakhstan, weeks after taking the legendary No. 7 shirt at Manchester United."],
+    ["2008", "<b>Ballon d'Or</b> at 23, named on all 96 ballots, with the Champions League and the FIFA Club World Cup."],
+    ["2013", "<b>69 goals</b> in the calendar year — his best, including a hat-trick for Portugal inside 15 minutes."],
+    ["2016", "Lifts the <b>European Championship</b> as Portugal's captain, with three goals and the Silver Boot."],
     [esc(lastUpdated), `<b>${n(t.goals)} career goals</b> for club and country — last checked this date.`]
   ],
   inProg: "in progress",
@@ -178,52 +188,52 @@ export const TIMELINE = {
   empty: (val, total) => `Nothing matches “${val}” — clear the search to see all ${total} milestones.`,
   tagRecord: "Record", tagWc: "World Cup", tagFirst: "First",
   faq: [
-    ["When did Messi make his debut?", "For Barcelona on <b>16 October 2004</b> against Espanyol, aged 17 years and 114 days; for Argentina on 17 August 2005."],
-    ["When did Messi score his first goal?", "On <b>1 May 2005</b> against Albacete — then the youngest scorer in Barcelona's history."],
-    ["When did Messi win the World Cup?", "On <b>18 December 2022</b>, beating France on penalties in the Lusail final after a 3–3 draw."],
-    ["When did Messi leave Barcelona?", "In <b>August 2021</b>, joining Paris Saint-Germain after 21 years at the club."],
-    ["When did Messi join Inter Miami?", "In <b>July 2023</b>, winning the Leagues Cup within weeks of arriving."]
+    ["When did Ronaldo make his senior debut?", "For <b>Sporting CP</b> on <b>14 August 2002</b> against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense."],
+    ["When did Ronaldo score his first goal?", "His first Portugal goal was a header against <b>Greece at Euro 2004</b>; his first Manchester United goal that same year was a free kick against Portsmouth."],
+    ["When did Ronaldo win the Champions League?", "First in <b>2008</b> with Manchester United, then four times in a row with Real Madrid in <b>2014, 2016, 2017 and 2018</b>."],
+    ["When did Ronaldo move to Real Madrid?", "In <b>June 2009</b>, for a then world-record fee — with 80,000 in the Bernabéu for the presentation."],
+    ["When did Ronaldo join Al Nassr?", "In <b>January 2023</b>, making his debut as captain against Al-Ettifaq and scoring twice in a 2–2 draw."]
   ],
   method: "Timeline entries are year- and date-granular milestones; era goal bars split calendar years into non-overlapping spans so they add back up to the career total."
 };
 
 export const ACH = {
-  head: (teamTotal) => `<b>${teamTotal} team trophies</b> — the most decorated career football has seen — plus a record <b>8 Ballons d'Or</b>. Every title, club by club, with the years won.`,
+  head: (teamTotal) => `<b>${teamTotal} team trophies</b> — 32 with clubs and 3 with Portugal — plus <b>5 Ballons d'Or</b>. Every title, club by club, with the years won.`,
   kpis: (per) => [
-    ["Team trophies", 46, `Barcelona ${per["Barcelona"] || 0} · Argentina ${per["Argentina"] || 0} · PSG ${per["Paris Saint-Germain"] || 0} · Miami ${per["Inter Miami"] || 0}.`],
-    ["Ballons d'Or", "8", "Record — 2009–12, 2015, 2019, 2021, 2023."],
-    ["Champions Leagues", "4", "2006, 2009, 2011, 2015 — all with Barcelona."],
-    ["Major internationals", "3", "World Cup 2022, Copas América 2021 & 2024."]
+    ["Team trophies", 35, `Real Madrid ${per["Real Madrid"] || 0} · Manchester United ${per["Manchester United"] || 0} · Juventus ${per["Juventus"] || 0} · Portugal ${per["Portugal"] || 0}.`],
+    ["Ballons d'Or", "5", "2008, 2013, 2014, 2016, 2017."],
+    ["European Golden Shoes", "4", "2008, 2011, 2014, 2015."],
+    ["UCL top-scorer seasons", "7", "Champions League top scorer in 2008, then every season from 2013 to 2018."]
   ],
   qa: (teamTotal, per) => [
-    ["How many trophies has Messi won?", `<b>${teamTotal} senior team titles</b>: ${per["Barcelona"] || 0} Barcelona, ${per["Paris Saint-Germain"] || 0} PSG, ${per["Inter Miami"] || 0} Inter Miami and ${per["Argentina"] || 0} Argentina.`],
-    ["How many Ballons d'Or has Messi won?", "<b>Eight</b> — more than any player ever (2009–12, 2015, 2019, 2021, 2023)."],
-    ["Has Messi won the World Cup?", "<b>Yes — 2022</b>, scoring twice in the final against France, plus Copas América 2021 and 2024."],
-    ["How many Champions Leagues has Messi won?", "<b>Four</b>, all with Barcelona: 2006, 2009, 2011 and 2015."]
+    ["How many trophies has Ronaldo won?", `<b>${teamTotal} senior team titles</b>: ${per["Real Madrid"] || 0} Real Madrid, ${per["Manchester United"] || 0} Manchester United, ${per["Juventus"] || 0} Juventus, ${per["Al Nassr"] || 0} Al Nassr, ${per["Sporting CP"] || 0} Sporting CP and ${per["Portugal"] || 0} Portugal.`],
+    ["How many Ballons d'Or has Ronaldo won?", "<b>Five</b> — 2008, 2013, 2014, 2016 and 2017, the first at 23 years old."],
+    ["Has Ronaldo won a major international title?", "<b>Yes</b> — UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025."],
+    ["How many Champions Leagues has Ronaldo won?", "<b>Five</b>: 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid."]
   ],
   teamHeader: (team, sub) => `${esc(team)} — ${sub} trophies`,
   indHeader: (indTotal) => `Individual honours — ${indTotal} awards`,
   faq: [
-    ["What is Messi's most important trophy?", "The <b>2022 World Cup</b> — the title his whole career had pointed at, won as player of the tournament."],
-    ["How many league titles has Messi won?", "<b>Twelve</b> — 10 La Ligas, 2 Ligue 1s — plus an MLS Cup (2025) and a Leagues Cup (2023) with Miami."],
-    ["How many individual awards has Messi won?", "Eight Ballons d'Or, six European Golden Shoes and two World Cup Golden Balls — each a record."],
-    ["Is Messi the most decorated player ever?", "By team titles plus individual records combined — <b>yes, by any reasonable count</b>."]
+    ["What is Ronaldo's most important trophy?", "The <b>2016 European Championship</b> — the title he captained Portugal to in Paris, as the tournament's second-highest scorer."],
+    ["How many league titles has Ronaldo won?", "<b>Eight</b> — 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list."],
+    ["How many individual awards has Ronaldo won?", "Five Ballons d'Or, four European Golden Shoes, three UEFA Men's Player of the Year awards, the FIFA World Player of the Year in 2008, the FIFA Puskás Award in 2009, the Euro 2020 Golden Boot and The Best FIFA Men's Player in 2016 and 2017."],
+    ["Is Ronaldo the most decorated player ever?", "On team titles alone Messi leads with 46 to Ronaldo's 35. Ronaldo leads the scoring records — 981 goals, 140 of them in the Champions League, and 146 goals in 234 caps for Portugal."]
   ]
 };
 
 export const BDAY = {
     months: ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    badgeSuccess: "🎉 Yes! Messi Scored On Your Birthday!",
-    badgeMessi: "🎂 Leo Messi's Own Birthday!",
+    badgeSuccess: "🎉 Yes! Ronaldo Scored On Your Birthday!",
+    badgeMessi: "🎂 CR7's Own Birthday!",
     badgeEmpty: "No Goals on this Date",
-    headlineSuccess: (g, m, d) => `Lionel Messi scored <b>${g} ${g === 1 ? "goal" : "goals"}</b> in <b>${m} ${m === 1 ? "match" : "matches"}</b> on ${d} throughout his senior career!`,
-    headlineMessi: `You share a birthday with <b>Lionel Andrés Messi</b> (born 24 June 1987 in Rosario)!`,
-    headlineEmpty: (d) => `Lionel Messi has not scored on <b>${d}</b> during his senior career.`,
+    headlineSuccess: (g, m, d) => `Cristiano Ronaldo scored <b>${g} ${g === 1 ? "goal" : "goals"}</b> in <b>${m} ${m === 1 ? "match" : "matches"}</b> on ${d} throughout his senior career!`,
+    headlineMessi: `You share a birthday with <b>Cristiano Ronaldo</b> (born 5 February 1985 in Funchal, Madeira)!`,
+    headlineEmpty: (d) => `Cristiano Ronaldo has not scored on <b>${d}</b> during his senior career.`,
     whyZeroTitle: "Why 0 goals?",
-    whyZeroMessi: "Lionel Messi has never played a competitive senior match on 24 June because late June falls during the European club summer off-season or scheduled rest intervals between international tournament rounds.",
-    whyZeroMessiSub: "You share your special day with the greatest footballer in history!",
-    emptyExpl: "Messi did not have a match scheduled or did not score on this specific calendar day — but he has scored on <b>292 of 366 days (79.8%)</b> of the year!",
-    closestDay: (d, g) => `The closest calendar day Messi scored on is <b>${d}</b> (${g} career goals).`,
+    whyZeroMessi: "5 February falls in the middle of the European club season, so it is usually an ordinary match day for Ronaldo: the fixture list and the minutes he plays decide whether a goal goes in on the date he was born.",
+    whyZeroMessiSub: "You share your special day with Cristiano Ronaldo — CR7, born 5 February 1985.",
+    emptyExpl: "Ronaldo did not have a match scheduled, or did not score, on this specific calendar day — but he has scored on most days of the year across club and country.",
+    closestDay: (d, g) => `The closest calendar day Ronaldo scored on is <b>${d}</b> (${g} career goals).`,
     closestBtn: (d, g) => `Check ${d} (${g} goals) &rarr;`,
     watchClip: (cnt) => `Watch ${cnt > 1 ? cnt + " Goal Clips" : "Goal Clip"}`,
     searchYt: "🔍 Search Highlights",
@@ -232,18 +242,18 @@ export const BDAY = {
     ytHighlights: "YouTube Highlights",
     goalSummary: (g) => `${g} ${g === 1 ? "goal" : "goals"} scored:`,
     goalTab: (idx, min) => `Goal ${idx}${min ? ` (${min}')` : ""}`,
-    shareSuccess: (d, g, m) => `Lionel Messi scored ${g} goals in ${m} matches on my birthday (${d})! Check your date:`,
-    shareEmpty: (d) => `Did Lionel Messi score on your birthday? He scored on 292 of 366 days of the year! Check yours:`,
+    shareSuccess: (d, g, m) => `Cristiano Ronaldo scored ${g} goals in ${m} matches on my birthday (${d})! Check your date:`,
+    shareEmpty: (d) => `Did Cristiano Ronaldo score on your birthday? He has scored on most days of the year across club and country. Check yours:`,
   };
 
 export const LATEST_GOAL = {
     goalPrefix: "Goal #",
     scoreline: "Score",
-    didScoreTodayYes: "YES! Lionel Messi scored today: Goal #{goalNum} in the {minute} against {opp} ({score})!",
-    didScoreTodayNo: "Did Messi score today? Lionel Messi's most recent official fixture took place on {date} in {comp}, where he scored Goal #{goalNum} of his career in the {minute} to seal a {score} victory. Stream the official goal video directly below.",
+    didScoreTodayYes: "YES! Cristiano Ronaldo scored today: Goal #{goalNum} in the {minute} against {opp} ({score})!",
+    didScoreTodayNo: "Did Ronaldo score today? Cristiano Ronaldo's most recent official fixture took place on {date} in {comp}, where he scored Goal #{goalNum} of his career in the {minute} to seal a {score} victory. Stream the official goal video directly below.",
     matchResult: "Latest Match Result: {title}",
     goalBadge: "Goal #{goalNum} Scored ({minute})",
-    playHighlight: "Select any of Lionel Messi's latest goals below to instantly load and watch the video highlight in the player above:",
+    playHighlight: "Select any of Cristiano Ronaldo's latest goals below to instantly load and watch the video highlight in the player above:",
     viewDateGoals: "View {formattedDate} Goals →",
     tagHeader: "Header 🔥",
     tagFreekick: "Direct Free Kick 🔥",
@@ -255,48 +265,71 @@ export const LATEST_GOAL = {
   };
 
 export const ARG_STREAM = {
-    badge: "🇦🇷 FINAL ARGENTINA MATCH",
-    title: "Lionel Messi's Farewell Match",
-    text: "Lionel Messi's farewell game on 6 October 2026! Watch the LIVE stream free with NO ADS.",
+    badge: "🇵🇹 PORTUGAL MATCH NIGHT",
+    title: "Cristiano Ronaldo's Portugal",
+    text: "Portugal match night — watch the LIVE stream free with NO ADS.",
     highlight: "Free live stream • No ads",
     cta: "Watch Free Stream ▶",
     closeAria: "Close notification",
-    matchCardTitle: "Historic Farewell Match • 6 Oct 2026",
-    matchCardDesc: "Watch Lionel Messi's final international match with Argentina live on Koora Live with zero ads."
+    matchCardTitle: "Portugal International • Live Match Night",
+    matchCardDesc: "Watch Cristiano Ronaldo and Portugal live on Koora Live — free stream, zero ads."
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/en/birthday", page: "birthday", t: "🎂 Did Messi score on your birthday?", d: (d) => `Search all 366 calendar days with video clips across Messi's ${n(d.totals.goals)} senior career goals.` },
-  { href: "/en/messi-vs-ronaldo", page: "messi-vs-ronaldo", t: "🐐 Messi vs Messi All-Time", d: () => `Head-to-head career stats: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goals, ${LIVE.trophies} vs ${LIVE.rTrophies} trophies, 8 vs 5 Ballons d'Or.` },
-  { href: "/en/vs-real-madrid", page: "vs-real-madrid", t: "⚔️ Messi vs Real Madrid", d: () => "All 26 El Clásico goals, 45 matches, 14 assists, hat-tricks, and video clips." },
-  { href: "/en/champions-league", page: "champions-league", t: "⭐ Champions League Record", d: () => "129 UEFA Champions League goals, 8 hat-tricks, and 4 European titles." },
-  { href: "/en/latest-goal", page: "latest-goal", t: "⚽ Latest Messi Goal Video", d: () => "Watch Messi's latest goal video, see if he scored today, and view recent goal clips." },
-  { href: "/en", page: "home", t: "Messi career stats", d: (d) => `The headline numbers: ${n(d.totals.goals)} goals in ${n(d.totals.apps)} senior games.` },
-  { href: "/en/dashboard", page: "dashboard", t: "Messi stats dashboard", d: () => "Filter every chart by Barcelona, PSG, Inter Miami or Argentina." },
-  { href: "/en/timeline", page: "timeline", t: "Messi through the years", d: () => "Every career milestone, dated and in order, from 2004 to today." },
+  { href: "/en/birthday", page: "birthday", t: "🎂 Did Ronaldo score on your birthday?", d: (d) => `Search all 366 calendar days with video clips across Ronaldo's ${n(d.totals.goals)} senior career goals.` },
+  { href: "/en/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo vs Messi All-Time", d: () => `Head-to-head career stats: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goals, ${LIVE.trophies} vs ${LIVE.rTrophies} trophies, 5 vs 8 Ballons d'Or.` },
+  { href: "/en/vs-real-madrid", page: "vs-real-madrid", t: "⚔️ Ronaldo vs Real Madrid", d: () => "Every Ronaldo goal in the Clásico, and every goal he has scored against Real Madrid in a different shirt." },
+  { href: "/en/champions-league", page: "champions-league", t: "⭐ Champions League Record", d: () => "140 UEFA Champions League goals, 42 assists, and 5 European titles." },
+  { href: "/en/latest-goal", page: "latest-goal", t: "⚽ Latest Ronaldo Goal Video", d: () => "Watch Ronaldo's latest goal video, see if he scored today, and view recent goal clips." },
+  { href: "/en", page: "home", t: "Ronaldo career stats", d: (d) => `The headline numbers: ${n(d.totals.goals)} goals in ${n(d.totals.apps)} senior games.` },
+  { href: "/en/dashboard", page: "dashboard", t: "Ronaldo stats dashboard", d: () => "Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal." },
+  { href: "/en/timeline", page: "timeline", t: "Ronaldo through the years", d: () => "Every career milestone, dated and in order, from 2002 to today." },
 ];
 
+/* Era chapter openers. The renderer looks an intro up by era slug first
+   (rosario, peak, msn, carry, farewell, paris, miami) and falls back to the
+   era name, so both keys are mapped here to the same Ronaldo copy — no
+   change to app.js is needed. */
 export const ERA_INTROS = {
   "The boy from Rosario":
-    `A 17-year-old from Rosario walks on against Espanyol in October 2004, all knees and elbows, and within months the Camp Nou is chanting a name it can barely pronounce yet. The first goal comes against Albacete the following May — a clipped little finish over the keeper from a Ronaldinho lob — and suddenly Barcelona's youngest scorer belongs in the first team. By 2008 there is an Olympic gold around his neck and nobody left arguing.`,
+    `Cristiano Ronaldo arrived in Lisbon from Funchal on Madeira as a teenager with a reputation for speed and a habit of demanding the ball. His first senior season at Sporting CP produced five goals in 31 appearances, and within twelve months he had been handed Manchester United's legendary No. 7 shirt for £12.24m. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in 2008 was named the world's best player at 23 — on all 96 ballots.`,
   "The greatest peak football has seen":
-    `Six trophies in 2009. Four Ballons d'Or in a row. Then 2012: 91 goals in a single calendar year, a number so absurd it broke a record that had stood for forty years — including five in one Champions League night against Leverkusen. Nobody before or since has played football at this level; the only debate left is which month of it was the best.`,
+    `Real Madrid paid a world-record fee in 2009 and were handed the most expensive attacking talent in the history of the sport. He answered with a Copa del Rey final header against Barcelona in his first season, then a La Liga title won with a record 100 points and 46 league goals. By the end of 2012 he had reached 60 goals in a calendar year and 100 goals in La Liga for the club, and Madrid's attacking identity was being rebuilt around him.`,
   "MSN and the second treble":
-    `Messi, Suárez, Neymar — three forwards who should never have fit together, scoring for fun and sweeping a second treble in 2015, sealed in Berlin. His Copa del Rey final goal that spring, slaloming past half of Athletic Bilbao, might be the greatest he ever scored. Pick your own; there are a dozen candidates.`,
+    `Three seasons in Madrid carried Ronaldo past almost every landmark in the book. He scored 69 goals in 2013, the best calendar year of his career, including three for Portugal inside fifteen minutes against Northern Ireland — one of ten international hat-tricks, a world record. La Décima arrived in 2014, and by the end of 2015 the 500th goal of his career had taken him past every Champions League scorer in history.`,
   "Carrying Barcelona":
-    `Xavi gone, Iniesta fading, the squad thinning every summer — and one man dragging the whole club forward anyway. The Remontada against PSG in 2017, the iconic shirt celebration at the Bernabéu, another league-and-cup double in 2018: these were his teams in a way the great sides before them never quite were. Watch the photo above — by now every defender in Spain knows exactly what is coming, and none of them can stop it.`,
+    `After the 2016 European Championship won in France, Ronaldo added the Champions League in 2017 — including a hat-trick against Bayern Munich that carried him to 100 goals in the competition — and a fifth Ballon d'Or in the same season. He passed Jimmy Greaves as the leading scorer in Europe's big five leagues, then moved to Juventus at 33 and scored a hat-trick in his first Champions League game there.`,
   "Farewell to Barcelona":
-    `The burofax summer of 2020, a sixth Ballon d'Or, one last Copa del Rey lifted in 2021 — and then, that August, a tearful press conference and a free transfer nobody believed possible. He left as the club's everything: its record scorer, its record appearance-maker, and the reason a generation of kids supports Barcelona at all.`,
+    `The Nations League title and a place in the record books came in 2019, when the 700th goal of his career arrived against Ukraine in October. His 1,000th senior appearance followed against Cagliari in February 2020, and in 2021 he passed Ali Daei to become the outright leading scorer in men's international football, with a tenth international hat-trick — a world record.`,
   "Paris and the World Cup":
-    `Two strange, brilliant years in Paris — a seventh Ballon d'Or, two league titles — but everything was building toward one winter in Qatar. Seven goals, a Golden Ball, and on 18 December 2022, two goals in the final and the trophy lift at Lusail that ended every argument. The career was complete; everything after is a bonus.`,
+    `A return to Manchester United in 2021 brought the No. 7 shirt and a new stage for the oldest man in the room, and in 2022 he passed Josef Bican with a hat-trick against Tottenham. The move to Saudi Arabia in January 2023 made him Al Nassr's captain and, with his 197th cap, the most-capped player in men's international football.`,
   "Miami and the road to 1,000":
-    `Nobody expected the pink shirt. Then came a trophy in his first month, an eighth Ballon d'Or, another Copa América with Argentina, and a club transformed around him. Now every goal bends the arc toward 1,000 — a number no one has ever reached in official senior football. Stick around; you are watching the last chapter live.`,
+    `Al Nassr gave him a fresh start and a Saudi Pro League title, but the records kept coming: the 900th career goal in the Nations League in 2024, the 800th club goal and the 100th for Al Nassr in 2025 — making him the first player to score 100 goals for four clubs — and, in 2026, the 500th goal scored after turning 30 and a sixth FIFA World Cup. Every goal now bends the arc toward 1,000.`
 };
+/* Alias keys: era slugs (and the shorter Ronaldo-era slugs) resolve to the
+   same seven paragraphs, so the timeline chapters always open with the
+   Ronaldo copy whichever key the renderer uses. */
+Object.assign(ERA_INTROS, {
+  rosario: ERA_INTROS["The boy from Rosario"],
+  peak: ERA_INTROS["The greatest peak football has seen"],
+  msn: ERA_INTROS["MSN and the second treble"],
+  carry: ERA_INTROS["Carrying Barcelona"],
+  farewell: ERA_INTROS["Farewell to Barcelona"],
+  paris: ERA_INTROS["Paris and the World Cup"],
+  miami: ERA_INTROS["Miami and the road to 1,000"],
+  lisbon: ERA_INTROS["The boy from Rosario"],
+  united: ERA_INTROS["The boy from Rosario"],
+  madrid: ERA_INTROS["The greatest peak football has seen"],
+  firstballon: ERA_INTROS["The greatest peak football has seen"],
+  juve: ERA_INTROS["Farewell to Barcelona"],
+  ronaldo2: ERA_INTROS["Paris and the World Cup"],
+  nassr: ERA_INTROS["Miami and the road to 1,000"],
+});
 
 export const CABINET = [
-    { title: "FIFA World Cup — 2022", sub: "The ultimate crowning glory, Lusail 18 Dec 2022.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Messi lifted on Agüero's shoulders celebrating the 2022 World Cup win at Lusail", cap: "World Cup champions, Lusail 2022" },
-    { title: "Ballon d'Or — 8", sub: "The record eight: 2009–12, 2015, 2019, 2021, 2023.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Messi holding his record eighth Ballon d'Or trophy aloft", cap: "Record eighth Ballon d'Or award" },
-    { title: "Champions League — 4", sub: "2006, 2009, 2011, 2015 — all with Barcelona.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi celebrating with the Champions League trophy holding four fingers up", cap: "Four-time European champion with Barcelona" },
-    { title: "Copa América — 2", sub: "Back-to-back continental champion, 2021 & 2024.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi kissing the Copa América trophy after winning at the Maracanã", cap: "Copa América champions, Maracanã 2021" },
-    { title: "La Liga Titles — 10", sub: "Domestic dominance with FC Barcelona 2004–2019.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi with the La Liga championship trophy", cap: "10-time Spanish champion with Barcelona" }
+    { title: "Portugal & the FIFA World Cup", sub: "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo in Portugal's shirt at a FIFA World Cup", cap: "Portugal's record goalscorer, at six World Cups" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo holding his fifth Ballon d'Or trophy aloft", cap: "Five Ballons d'Or" },
+    { title: "Champions League — 5", sub: "140 goals, the competition record, in 183 appearances.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating with the Champions League trophy", cap: "Five European titles and 140 Champions League goals" },
+    { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo kissing the FIFA Club World Cup trophy", cap: "Four FIFA Club World Cups" },
+    { title: "La Liga — 311 goals", sub: "The competition's all-time record, all of them for Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo with the La Liga championship trophy", cap: "311 La Liga goals for Real Madrid" }
   ];

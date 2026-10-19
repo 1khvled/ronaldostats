@@ -272,6 +272,8 @@ Country (Portugal) always uses `--accent` and is never part of the club ramp.
 | `public/img/site.webmanifest` | PWA manifest (points at the icons above) |
 | `public/img/og-ronaldo.jpg` | 1200×630 Open Graph card |
 | `public/img/ronaldo-450.webp` | 450×600 hero crop (preloaded for LCP) |
+| `public/img/ronaldo.jpg` | 533×800 JPEG derivative of the source portrait |
+| `public/img/ronaldo-vs-messi.webp` | 1107×800 rivalry header (derived from `messi-vs-ronaldo.webp`) |
 | `public/img/teams/*.png` | 7 original geometric team monograms, 256×256 RGBA |
 | `public/img/era/*.webp` | 12 typographic era cards, 1200×675 |
 | `public/img/gear/*.jpg` | 8 generic product mockups, 800×800 |
