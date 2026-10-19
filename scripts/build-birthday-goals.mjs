@@ -75,12 +75,14 @@ const intlMatches = [];
 for (const m of rsssf) {
   if (!m.goals) continue;
   const c = intlByDate.get(m.date);
+  // RSSSF is authoritative for the opponent, the score and the competition.
+  // The open export is used only for the home/away flag, which RSSSF omits.
   intlMatches.push({
     date: m.date,
     team: "Portugal",
-    opponent: c && c.opponent ? c.opponent : m.opponent,
-    competition: c ? (COMP_NAME_INTL[c.competition] || c.competition) : (RSS_COMP[m.competition] || m.competition),
-    score: (c && c.score ? c.score : m.score).replace(/-/, " - "),
+    opponent: m.opponent,
+    competition: RSS_COMP[m.competition] || m.competition,
+    score: m.score ? m.score.replace("-", " - ") : "",
     venue: c && c.venue ? (c.venue === "H" ? "Home" : c.venue === "A" ? "Away" : "Neutral") : "Home",
     goals: m.goals,
     minutes: [],

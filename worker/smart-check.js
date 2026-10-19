@@ -6,8 +6,8 @@
 //   triggers per account, so 12 gated runs/day is far inside budget.
 // - The trigger does NOT escalate by itself (cron cannot do conditional
 //   schedules). Escalation is WORKER-SIDE gating: every run first does the
-//   cheap check (3 scoreboard fetches + 1 D1 read). If no Inter Miami or
-//   Argentina match is scheduled today AND no unseen completed match exists,
+//   cheap check (7 scoreboard fetches + 1 D1 read). If no Ronaldo fixture is
+//   scheduled today AND no unseen completed match exists,
 //   the run exits without fetching any summary detail. Full detail fetches
 //   (ESPN summary per unseen completed match, capped at 5 per run) happen
 //   ONLY on or after matchdays. That is the "daily light, 2h on matchdays"
@@ -16,9 +16,9 @@
 //   check (clearly labeled provisional) for cron outages. Default off, so the
 //   site still makes zero third-party requests.
 // PIPELINE (never touches verified totals in ronaldo-data.json):
-// 1. Fetch ESPN usa.1 scoreboard (MLS) + ESPN fifa.world scoreboard + the
+// 1. Fetch ESPN's public scoreboards for every competition Ronaldo plays in
 //    openfootball 2026 worldcup.json (all free, no keys).
-// 2. Find newly COMPLETED Inter Miami / Argentina matches not in seen_matches.
+// 2. Find newly COMPLETED Al Nassr / club / Portugal matches not in seen_matches.
 // 3. For each (max 5 per run), fetch the ESPN summary and read keyEvents:
 //    goal events carry participants[0] as scorer, participants[1] as assister.
 //    Count events naming Ronaldo as scorer or assister.
@@ -33,7 +33,16 @@
 //    confirm. Argentina World Cup matches CAN reach provisional because
 //    worldcup.json carries scores plus goals1 and goals2 scorer names.
 // Local dry-run mirror: scripts/smart-check.mjs (same algorithm, file store).
-const ESPN_MLS = "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard";
+const ESPN_COMPETITIONS = [
+  { code: "ksa.1", label: "Saudi Pro League" },
+  { code: "esp.1", label: "La Liga" },
+  { code: "eng.1", label: "Premier League" },
+  { code: "ita.1", label: "Serie A" },
+  { code: "por.1", label: "Primeira Liga" },
+  { code: "uefa.champions", label: "UEFA Champions League" },
+  { code: "fifa.world", label: "FIFA World Cup" },
+];
+const ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/";
 const ESPN_WC = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard";
 const WC_JSON = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 const SEASON_QS = "?dates=2026&limit=1000";
@@ -87,11 +96,11 @@ function competitorTeams(e) {
 // Team-identity matching ONLY (never whole-JSON substring: venue cities like
 // "Miami Gardens" and recap text caused false positives on every WC game
 // played in Miami).
-function mentionsMiami(e) {
-  return competitorTeams(e).some((t) => /miami/i.test(t.displayName || "") || /miami/i.test(t.shortDisplayName || "") || /miami/i.test(t.name || ""));
-}
-function mentionsArgentina(e) {
-  return competitorTeams(e).some((t) => /argentina/i.test(t.displayName || "") || /argentina/i.test(t.shortDisplayName || "") || String(t.abbreviation || "").toUpperCase() === "ARG");
+// Team-identity matching ONLY (never a whole-JSON substring: venue city names
+// such as "Miami Gardens" and recap text caused false positives).
+const RONALDO_TEAMS = /al ?nassr|real madrid|manchester united|juventus|sporting cp|portugal/i;
+function mentionsRonaldo(e) {
+  return competitorTeams(e).some((t) => RONALDO_TEAMS.test(t.displayName || "") || RONALDO_TEAMS.test(t.shortDisplayName || "") || RONALDO_TEAMS.test(t.name || ""));
 }
 function sameUtcDay(a, b) {
   return String(a).slice(0, 10) === String(b).slice(0, 10);
@@ -129,8 +138,8 @@ function withinOneDay(a, b) { const pa = Date.parse(String(a || "").slice(0, 10)
 function findWorldCupMatch(matches, home, away, dateIso) {
   const day = String(dateIso || "").slice(0, 10);
   const hit = (matches || []).find((m) => {
-    const argSide = /argentina/i.test(home) || /argentina/i.test(away);
-    if (argSide && !(/argentina/i.test(m.team1) || /argentina/i.test(m.team2))) return false;
+    const portSide = /portugal/i.test(home) || /portugal/i.test(away);
+    if (portSide && !(/portugal/i.test(m.team1) || /portugal/i.test(m.team2))) return false;
     if (!argSide && [m.team1, m.team2].indexOf(home) === -1 && [m.team1, m.team2].indexOf(away) === -1) return false;
     return !day || withinOneDay(m.date, day);
   });
@@ -144,17 +153,16 @@ async function runCheck(env) {
   const out = { checkedAt: new Date().toISOString(), staged: [], skipped: [], errors: [] };
   const db = env && env.DB;
   if (!db) { out.errors.push("no D1 binding (env.DB missing)"); return out; }
-  const results = await Promise.all([getJson(ESPN_MLS + SEASON_QS), getJson(ESPN_WC + SEASON_QS), getJson(WC_JSON)]);
-  const mls = results[0];
-  const wc = results[1];
-  const of = results[2];
-  if (!mls.ok) out.errors.push("espn mls fetch failed: " + (mls.status || mls.error));
-  if (!wc.ok) out.errors.push("espn fifa.world fetch failed: " + (wc.status || wc.error));
+  const boards = await Promise.all(ESPN_COMPETITIONS.map((c) => getJson(ESPN_BASE + c.code + "/scoreboard" + SEASON_QS)));
+  const of = await getJson(WC_JSON);
   if (!of.ok) out.errors.push("openfootball fetch failed: " + (of.status || of.error));
-  const events = []
-    .concat((mls.ok ? mls.data.events || [] : []).map((e) => ({ e: e, league: "usa.1" })))
-    .concat((wc.ok ? wc.data.events || [] : []).map((e) => ({ e: e, league: "fifa.world" })));
-  const tracked = events.filter((x) => mentionsMiami(x.e) || mentionsArgentina(x.e));
+  const events = [];
+  ESPN_COMPETITIONS.forEach((c, i) => {
+    const b = boards[i];
+    if (!b.ok) { out.errors.push("espn " + c.code + " fetch failed: " + (b.status || b.error)); return; }
+    (b.data.events || []).forEach((e) => events.push({ e: e, league: c.code }));
+  });
+  const tracked = events.filter((x) => mentionsRonaldo(x.e));
   const today = new Date().toISOString();
   const matchdayToday = tracked.some((x) => x.e.date && sameUtcDay(x.e.date, today) && (isScheduled(x.e) || isCompleted(x.e)));
   out.matchdayToday = matchdayToday;
@@ -181,10 +189,10 @@ async function runCheck(env) {
     const e = x.e;
     const id = String(e.id);
     const t = teamsOf(e);
-    const isArg = mentionsArgentina(e);
+    const isPortugal = mentionsRonaldo(e);
     const sum = await getJson(summaryUrl(x.league, id));
     const fetchedAt = new Date().toISOString();
-    const prov = [src(ESPN_MLS + SEASON_QS), src(WC_JSON)];
+    const prov = [src(ESPN_BASE + x.league + "/scoreboard" + SEASON_QS), src(WC_JSON)];
     if (!sum.ok) {
       await db.prepare(
         "INSERT OR IGNORE INTO pending_checks (match_id, competition, match_date, home, away, status, sources, fetched_at, note) VALUES (?, ?, ?, ?, ?, 'needs_review', ?, ?, ?)"
@@ -196,8 +204,8 @@ async function runCheck(env) {
       let status = "needs_review";
       let agree = 0;
       let ofScore = null;
-      let note = "single-source (ESPN only): openfootball has no MLS coverage, so auto-publish is impossible";
-      if (isArg && of.ok) {
+      let note = "single-source (ESPN only): openfootball covers World Cup results only, so auto-publish is impossible";
+      if (isPortugal && of.ok) {
         const m = findWorldCupMatch(wcMatches, t.home, t.away, e.date);
         if (m) {
           ofScore = ftString(m);

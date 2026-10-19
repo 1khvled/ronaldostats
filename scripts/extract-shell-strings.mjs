@@ -32,7 +32,7 @@ function record(str, page, ctx) {
   const core = str.trim();
   if (!core) return;
   if (isMachineText(core)) return;
-  if (core.length > 400) return;
+  if (core.length > 4000) return;   // long paragraphs are still translated; only pathological nodes are skipped
   if (!found.has(core)) found.set(core, { count: 0, pages: new Set(), ctx: ctx || "" });
   const e = found.get(core);
   e.count++;

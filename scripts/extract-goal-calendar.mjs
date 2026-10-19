@@ -2,7 +2,7 @@
 //   tmp/cr-rsssf-matches.json   - every Portugal international with goals
 //   tmp/cr-club-goals.json      - every dated club goal
 //   tmp/cr-intl-goals.json      - every dated Portugal goal
-import fs from "node:fs";
+import fs, { existsSync, writeFileSync } from "node:fs";
 
 const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
 
@@ -54,6 +54,21 @@ function parseLooseDate(s) {
   return null;
 }
 
+// ---------- 0. inputs: fetch anything that is not cached -------------------
+const GH = {
+  "gh-mvr-1.csv": "https://raw.githubusercontent.com/joana-neves-correia/CR7-Goals-Project/HEAD/data_1_clean.csv",
+  "gh-mvr-2.csv": "https://raw.githubusercontent.com/joana-neves-correia/CR7-Goals-Project/HEAD/data_2_clean.csv",
+  "gh-mvr-sel.csv": "https://raw.githubusercontent.com/joana-neves-correia/CR7-Goals-Project/HEAD/sele%C3%A7%C3%A3o.csv",
+};
+for (const [name, url] of Object.entries(GH)) {
+  const p = TMP + name;
+  if (existsSync(p)) continue;
+  const r = await fetch(url, { headers: { "User-Agent": "ronaldostats/1.0 (data build)" } });
+  if (!r.ok) { console.error("could not fetch " + name + " (" + r.status + ")"); process.exit(1); }
+  writeFileSync(p, await r.text(), "utf8");
+  console.log("fetched " + name);
+}
+
 // ---------- 1. RSSSF Portugal matches ----------
 const rsssfHtml = fs.readFileSync(TMP + "cr-rsssf.html", "utf8");
 const rsssfText = rsssfHtml
@@ -89,22 +104,28 @@ for (const raw of rsssfText.split(/\r?\n/)) {
   if (yr < 100) yr += yr < 50 ? 2000 : 1900;
   if (mon < 1 || mon > 12 || day < 1 || day > 31) continue;
 
-  const rest = tokens.slice(dateIdx + 2).join(" ");
+  // RSSSF row shape after the date: venue, opponent (one or more words),
+  // score, competition. The date is written either as two tokens
+  // ("24-" "6-17") or as one ("13-10-04"), so the content starts one or two
+  // tokens further on.
+  const dateSplit = /^\d{1,2}-$/.test(tokens[dateIdx] || "");
+  const after = tokens.slice(dateIdx + (dateSplit ? 2 : 1));
+  let scoreIdx = -1;
+  for (let i = 0; i < after.length; i++) {
+    if (/^\d+[-:]\d+/.test(after[i])) { scoreIdx = i; break; }
+  }
+  const venue = after[0] || "";
+  const opponent = after.slice(1, scoreIdx > 0 ? scoreIdx : after.length).join(" ").trim();
+  const score = scoreIdx > 0 ? after[scoreIdx].replace(":", "-") : "";
+  const rest = after.slice(scoreIdx > 0 ? scoreIdx : after.length).join(" ");
   const cm = rest.match(COMP_RE);
   const comp = cm ? cm[1] : "Friendly";
-  const sm = rest.match(/(\d+[-:]\d+)/);
-  const score = sm ? sm[1].replace(":", "-") : "";
-  // opponent: the token block before the score
-  let opponent = "";
-  if (sm) {
-    const before = rest.slice(0, rest.indexOf(sm[0]));
-    opponent = before.trim().split(/\s{2,}/).pop() || before.trim();
-  }
   rsssfMatches.push({
     cap: cap,
     date: iso(yr, mon, day),
     year: yr,
-    opponent: opponent,
+    venue,
+    opponent,
     competition: comp,
     goals: goals,
     score: score,

@@ -64,12 +64,14 @@ export function tokenize(html) {
       const m = closeTag.exec(rest);
       const endRaw = m ? i + m.index : n;
       tokens.push({ type: "raw", start: i, end: endRaw, value: html.slice(i, endRaw), name });
-      i = endRaw;
-      // the closing tag itself
+      // the closing tag itself — its offset is relative to the raw block's
+      // end, NOT to the old cursor, or the scanner skips real content.
       if (m) {
-        const cEnd = i + m.index + m[0].length;
+        const cEnd = endRaw + m[0].length;
         tokens.push({ type: "tag", start: cEnd - m[0].length, end: cEnd, name, attrs: [], selfClosing: false });
         i = cEnd;
+      } else {
+        i = endRaw;
       }
     }
   }

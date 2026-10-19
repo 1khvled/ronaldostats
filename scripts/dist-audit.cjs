@@ -5,8 +5,11 @@ const must = ["index.html", "goalsbyyear.html", "goalsbyseason.html", "dashboard
   "timeline.html", "achievements.html", "birthday.html", "vs-real-madrid.html", "ronaldo-vs-messi.html", "champions-league.html", "latest-goal.html",
   "es/index.html", "es/birthday.html", "es/latest-goal.html", "pt/index.html", "fr/index.html", "ar/index.html", "bn/index.html", "hi/index.html", "ro/index.html", "uz/index.html",
   "404.html", "sitemap.xml", "robots.txt", "llms.txt", "18188f5363f745f1bbf821767e0f0daf.txt",
-  "data/ronaldo-data.json", "data/birthday-goals.json", "fonts/dm-sans-latin.woff2", "img/og-ronaldo.jpg",
-  "img/era-2008-olympic.webp", "img/teams/barcelona.png", "favicon.svg", "favicon.ico", "favicon-48x48.png",
+  "data/ronaldo-data.json", "data/birthday-goals.json", "data/messi.json", "data/latest-goal.json",
+  "fonts/dm-sans-latin.woff2", "img/og-ronaldo.jpg", "img/og-ronaldo.webp",
+  "img/era/era-2008-ballon1.webp", "img/teams/barcelona.png", "img/teams/real-madrid.png",
+  "img/teams/man-utd.png", "img/teams/juventus.png", "img/teams/al-nassr.png", "img/teams/sporting.png",
+  "img/teams/portugal.png", "favicon.svg", "favicon.ico", "favicon-48x48.png",
   "apple-touch-icon.png", "site.webmanifest", "img/logo.png", "img/ronaldo.webp", "img/ronaldo-450.webp"];
 let ok = true;
 for (const f of must) {
@@ -18,8 +21,8 @@ for (const p of ["index.html", "goalsbyyear.html", "goalsbyseason.html", "dashbo
   if (!s.includes('G-FERBLJWWWZ')) { ok = false; console.log("NO GTAG in " + p); }
 }
 const d = JSON.parse(fs.readFileSync(dist + "/data/ronaldo-data.json", "utf8"));
-const totalGoalsStr = String(d.totals?.combined?.goals || 931);
-const bnDigits = ["০","১","২","৩","৪","৫","৬","৭","৮","৯"];
+const totalGoalsStr = String(d.totals?.combined?.goals || 981);
+const bnDigits = ["\u09E6", "\u09E7", "\u09E8", "\u09E9", "\u09EA", "\u09EB", "\u09EC", "\u09ED", "\u09EE", "\u09EF"];
 const bnGoalsStr = totalGoalsStr.split("").map((c) => bnDigits[c] || c).join("");
 for (const p of ["index.html", "es/index.html", "pt/index.html", "fr/index.html", "ar/index.html", "bn/index.html", "hi/index.html", "ro/index.html", "uz/index.html"]) {
   const s = fs.readFileSync(dist + "/" + p, "utf8");
@@ -34,8 +37,10 @@ const b = jsFiles.map((f) => fs.readFileSync(dist + "/assets/" + f, "utf8")).joi
 for (const needle of ["copyStats", "replaceState", "btn-primary"]) {
   if (!b.includes(needle)) { ok = false; console.log("JS MISSING " + needle); }
 }
-const css = fs.readdirSync(dist + "/assets").find((f) => f.endsWith(".css"));
-const c = fs.readFileSync(dist + "/assets/" + css, "utf8");
+// there may be more than one CSS bundle (the gear page has its own), so
+// check the main styles bundle and fall back to all of them
+const cssFiles = fs.readdirSync(dist + "/assets").filter((f) => f.endsWith(".css"));
+const c = cssFiles.map((f) => fs.readFileSync(dist + "/assets/" + f, "utf8")).join("\n");
 for (const needle of [".skip", "@media print", ".btn-primary"]) {
   if (!c.includes(needle)) { ok = false; console.log("CSS MISSING " + needle); }
 }
