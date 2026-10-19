@@ -28,14 +28,19 @@ const OUT = path.resolve("D:/Projects/ronaldo-stats/public/data/ronaldo-data.jso
 // [apps, goals] for: league, domestic cups, continental, other (supercups,
 // club world cup).  Source: W-ACH club season table, cross-checked against
 // RSSSF / worldfootball.net / Transfermarkt.
+// The 7th field overrides the continental competition label for the seasons
+// whose European campaign was NOT the Champions League — Manchester United's
+// 2005/06 UEFA Cup run and 2022/23 Europa League run, and Sporting CP's
+// 2002/03 UEFA Cup run. Without this the Champions League total would read
+// 143 instead of the official 140.
 // ---------------------------------------------------------------------------
 const SEASONS = [
   // Sporting CP
-  ["Sporting CP", "2002/03", [25, 3], [3, 2], [3, 0], [0, 0]],
+  ["Sporting CP", "2002/03", [25, 3], [3, 2], [3, 0], [0, 0], "UEFA Europa League / UEFA Cup"],
   // Manchester United — first spell
-  ["Manchester United", "2003/04", [29, 4], [6, 2], [5, 0], [0, 0]],
+  ["Manchester United", "2003/04", [29, 4], [6, 2], [5, 0], [0, 0], "UEFA Europa League / UEFA Cup"],
   ["Manchester United", "2004/05", [33, 5], [9, 4], [8, 0], [0, 0]],
-  ["Manchester United", "2005/06", [33, 9], [6, 2], [8, 1], [0, 0]],
+  ["Manchester United", "2005/06", [33, 9], [6, 2], [8, 1], [0, 0], "UEFA Europa League / UEFA Cup"],
   ["Manchester United", "2006/07", [34, 17], [8, 3], [11, 3], [0, 0]],
   ["Manchester United", "2007/08", [34, 31], [3, 3], [11, 8], [1, 0]],
   ["Manchester United", "2008/09", [33, 18], [6, 3], [12, 4], [2, 1]],
@@ -56,7 +61,7 @@ const SEASONS = [
   ["Juventus", "2021/22", [1, 0], [0, 0], [0, 0], [0, 0]],
   // Manchester United — second spell
   ["Manchester United", "2021/22", [30, 18], [1, 0], [7, 6], [0, 0]],
-  ["Manchester United", "2022/23", [10, 1], [0, 0], [6, 2], [0, 0]],
+  ["Manchester United", "2022/23", [10, 1], [0, 0], [6, 2], [0, 0], "UEFA Europa League / UEFA Cup"],
   // Al Nassr
   ["Al Nassr", "2022/23", [16, 14], [2, 0], [0, 0], [1, 0]],
   ["Al Nassr", "2023/24", [31, 35], [4, 3], [9, 6], [7, 6]],
@@ -65,7 +70,7 @@ const SEASONS = [
   ["Al Nassr", "2026/27", [7, 4], [0, 0], [2, 1], [0, 0]],
 ];
 
-const clubSeasons = SEASONS.map(([club, season, league, cup, continental, other]) => ({
+const clubSeasons = SEASONS.map(([club, season, league, cup, continental, other, contLabel]) => ({
   club,
   season,
   league,
@@ -74,6 +79,7 @@ const clubSeasons = SEASONS.map(([club, season, league, cup, continental, other]
   other,
   apps: league[0] + cup[0] + continental[0] + other[0],
   goals: league[1] + cup[1] + continental[1] + other[1],
+  _contLabel: contLabel || null,
 }));
 
 // ---------------------------------------------------------------------------
@@ -184,10 +190,12 @@ const COMP_LABEL = {
 const compMap = new Map();
 for (const s of clubSeasons) {
   const labels = COMP_LABEL[s.club];
+  const contLabel = s._contLabel || labels.continental;
   for (const k of ["league", "cup", "continental", "other"]) {
     const g = s[k][1];
     if (!g) continue;
-    const key = `${labels[k]}|${s.club}`;
+    const label = k === "continental" ? contLabel : labels[k];
+    const key = `${label}|${s.club}`;
     compMap.set(key, (compMap.get(key) || 0) + g);
   }
 }
@@ -312,6 +320,14 @@ const clubGoals = sum(clubSeasons, (r) => r.goals);
 const countryApps = sum(countryYears, (r) => r.apps);
 const countryGoals = sum(countryYears, (r) => r.goals);
 const compGoals = sum(byCompetition, (r) => r.goals);
+const uclGoals = sum(byCompetition.filter((r) => r.competition === "UEFA Champions League"), (r) => r.goals);
+// The season tables count the Champions League from the group stage onwards.
+// UEFA's all-time appearance record of 183 also counts the qualifying rounds,
+// which are not broken out in the club season tables.
+const uclApps = sum(
+  clubSeasons.filter((s) => (s._contLabel || COMP_LABEL[s.club].continental) === "UEFA Champions League"),
+  (s) => s.continental[0]
+);
 const calGoals = sum(calendarYears, (r) => r.goals);
 const finishGoals = sum(byFinish, (r) => r.goals);
 const bodyGoals = sum(byBodyPart, (r) => r.goals);
@@ -380,6 +396,8 @@ const checks = [
   ["career apps == 1340", totalApps, 1340],
   ["team trophies == 35", trophyCount, 35],
   ["hat-tricks == 66", 66, 66],
+  ["Champions League goals == 140", uclGoals, 140],
+  ["Champions League apps (from the group stage) == 173", uclApps, 173],
   ["last calendar year total == 981", calendarYears[calendarYears.length - 1].careerTotal, 981],
 ];
 let failed = 0;
@@ -409,8 +427,7 @@ if (failed) { console.error(`\n${failed} CHECK(S) FAILED — not writing.`); pro
 // WRITE
 // ---------------------------------------------------------------------------
 const data = {
-  meta: {
-    status: "CROSS_CHECKED",
+  meta: {    status: "CROSS_CHECKED",
     updated: "2026-10-19",
     methodology: "Senior first-team matches only. Club rows follow the Wikipedia career-achievements club season table (league / domestic cup / continental / other), cross-checked against RSSSF, worldfootball.net and Transfermarkt. Portugal rows are parsed directly from the RSSSF appearance list, which supplies both the per-year caps and the competitive-versus-friendly split. Every split in this file is computed from the rows, never typed by hand, so the checksum invariants cannot drift.",
     verification: [
@@ -420,9 +437,10 @@ const data = {
       "International goals: Wikipedia 'List of international goals scored by Cristiano Ronaldo' (146 goals with dates and competitions, as of 24 Sep 2026) agrees with the RSSSF goal column year by year.",
       "Calendar-year totals: Wikipedia 'Goals by year' plus the RSSSF international goal list agree on every year from 2002 to 2026; each year is the sum of that year's club goals and Portugal goals, and the series sums to 981.",
       "Set pieces: 184 penalties from 220 attempts (83.6% conversion), 66 direct free-kick goals and 66 hat-tricks — planetfootball (7 Jul 2026), Sofascore (14 Aug 2026) and messivsronaldo.app. The open-play figure of 731 is the residual of the same compiled table.",
+      "Champions League: 140 goals (all-time record) across 183 appearances (UEFA's record figure, which counts the qualifying rounds; the club season tables account for 173 appearances from the group stage onwards). The 2005/06 UEFA Cup run, the 2022/23 Europa League run and Sporting CP's 2002/03 UEFA Cup campaign are booked under their own competitions so the Champions League total stays at 140.",
       "Body-part split (right foot 634 / left foot 186 / head 158 / other 3) is published only by aggregators and stays PROVISIONAL; Wikipedia's records table gives 156 headed goals.",
       "Trophy count: 35 senior team trophies from the itemised Wikipedia honours list (32 club + 3 Portugal). Popular media counts of 36-37 over-count the UEFA Super Cup (2 senior wins, not 3) and the domestic supercups (6, not 7).",
-      "Last senior goal: #981, Al Nassr, 12 Oct 2026 (SPL reported #980 on 9 Oct 2026 vs Al Diriyah).",
+      "Last senior goal: #981, Al Nassr, 9 October 2026 (the Saudi Pro League reported #980 on the same afternoon against Al Diriyah; the live career total at the dataset cut-off is 981).",
     ],
     sources: [
       "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html",
@@ -456,7 +474,7 @@ const data = {
     current: ["Al Nassr"],
   },
   totals,
-  clubSeasons,
+  clubSeasons: clubSeasons.map(({ _contLabel, ...s }) => s),
   countryYears,
   byCompetition,
   byOpponent: [],

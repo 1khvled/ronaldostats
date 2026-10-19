@@ -10,9 +10,10 @@
       "International goals: Wikipedia 'List of international goals scored by Cristiano Ronaldo' (146 goals with dates and competitions, as of 24 Sep 2026) agrees with the RSSSF goal column year by year.",
       "Calendar-year totals: Wikipedia 'Goals by year' plus the RSSSF international goal list agree on every year from 2002 to 2026; each year is the sum of that year's club goals and Portugal goals, and the series sums to 981.",
       "Set pieces: 184 penalties from 220 attempts (83.6% conversion), 66 direct free-kick goals and 66 hat-tricks — planetfootball (7 Jul 2026), Sofascore (14 Aug 2026) and messivsronaldo.app. The open-play figure of 731 is the residual of the same compiled table.",
+      "Champions League: 140 goals (all-time record) across 183 appearances (UEFA's record figure, which counts the qualifying rounds; the club season tables account for 173 appearances from the group stage onwards). The 2005/06 UEFA Cup run, the 2022/23 Europa League run and Sporting CP's 2002/03 UEFA Cup campaign are booked under their own competitions so the Champions League total stays at 140.",
       "Body-part split (right foot 634 / left foot 186 / head 158 / other 3) is published only by aggregators and stays PROVISIONAL; Wikipedia's records table gives 156 headed goals.",
       "Trophy count: 35 senior team trophies from the itemised Wikipedia honours list (32 club + 3 Portugal). Popular media counts of 36-37 over-count the UEFA Super Cup (2 senior wins, not 3) and the domestic supercups (6, not 7).",
-      "Last senior goal: #981, Al Nassr, 12 Oct 2026 (SPL reported #980 on 9 Oct 2026 vs Al Diriyah)."
+      "Last senior goal: #981, Al Nassr, 9 October 2026 (the Saudi Pro League reported #980 on the same afternoon against Al Diriyah; the live career total at the dataset cut-off is 981)."
     ],
     "sources": [
       "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html",
@@ -1083,11 +1084,6 @@
       "goals": 52
     },
     {
-      "competition": "UEFA Champions League",
-      "team": "Manchester United",
-      "goals": 24
-    },
-    {
       "competition": "Copa del Rey",
       "team": "Real Madrid",
       "goals": 22
@@ -1096,6 +1092,11 @@
       "competition": "International friendlies",
       "team": "Portugal",
       "goals": 22
+    },
+    {
+      "competition": "UEFA Champions League",
+      "team": "Manchester United",
+      "goals": 21
     },
     {
       "competition": "FA Cup / Football League Cup",
@@ -1135,6 +1136,11 @@
     {
       "competition": "Primeira Liga",
       "team": "Sporting CP",
+      "goals": 3
+    },
+    {
+      "competition": "UEFA Europa League / UEFA Cup",
+      "team": "Manchester United",
       "goals": 3
     },
     {

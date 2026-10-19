@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.ronaldostats.site/en</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -47,13 +47,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo 936 Career Goals Official Stats</image:title>
-      <image:caption>Cristiano Ronaldo career overview: 936 goals in 1,181 senior appearances, 47 trophies, 8 Ballons d'Or.</image:caption>
+      <image:title>Cristiano Ronaldo 981 Career Goals Official Stats</image:title>
+      <image:caption>Cristiano Ronaldo career overview: 981 goals in 1,340 senior appearances, 35 trophies, 8 Ballons d'Or.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -85,7 +85,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -116,14 +116,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/birthday" />
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo Birthday Goal Explorer: 936 Career Goals Across 366 Days</image:title>
+      <image:title>Cristiano Ronaldo Birthday Goal Explorer: 981 Career Goals Across 366 Days</image:title>
       <image:caption>Interactive visual map and video player showing all goals Cristiano Ronaldo scored across 366 calendar days.</image:caption>
       <image:geo_location>Miami, Florida, United States / Barcelona, Spain / Buenos Aires, Argentina</image:geo_location>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -155,7 +155,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -187,7 +187,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -261,7 +261,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -298,7 +298,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -329,22 +329,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo Last Goal Video and Highlights (Goal #936 vs Atlanta United FC)</image:title>
-      <image:caption>Watch Cristiano Ronaldo score Goal #936 of his career for Inter Miami against Atlanta United FC in MLS on 18 October 2026.</image:caption>
+      <image:title>Cristiano Ronaldo Last Goal Video and Highlights (Goal #981 vs Al-Diriyah FC)</image:title>
+      <image:caption>Watch Cristiano Ronaldo score Goal #981 of his career for Al-Nassr against Al-Diriyah FC in Al Nassr on 9 October 2026.</image:caption>
       <image:geo_location>Miami, Florida, United States</image:geo_location>
     </image:image>
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Cristiano Ronaldo Last Goal Video: Goal #936 vs Atlanta United FC</video:title>
-      <video:description>Watch Cristiano Ronaldo's Goal #936: a left foot goal for Inter Miami vs Atlanta United FC in MLS on 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Cristiano Ronaldo Last Goal Video: Goal #981 vs Al-Diriyah FC</video:title>
+      <video:description>Watch Cristiano Ronaldo's Goal #981: a right-footed shot goal for Al-Nassr vs Al-Diriyah FC in Al Nassr on 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>Goal 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>Goal 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Ronaldo Last Goal</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -352,7 +352,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -426,7 +426,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -488,7 +488,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -520,13 +520,13 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/days</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -562,13 +562,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Goles de Ronaldo: 936 Goles Oficiales en Vivo</image:title>
-      <image:caption>Estadísticas completas de la carrera de Cristiano Ronaldo: 936 goles en 1.181 partidos oficiales, 47 títulos colectivos y 8 Balones de Oro.</image:caption>
+      <image:title>Goles de Ronaldo: 981 Goles Oficiales en Vivo</image:title>
+      <image:caption>Estadísticas completas de la carrera de Cristiano Ronaldo: 981 goles en 1.340 partidos oficiales, 35 títulos colectivos y 8 Balones de Oro.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -600,7 +600,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -632,7 +632,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -664,7 +664,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -696,7 +696,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -728,7 +728,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -760,7 +760,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -792,7 +792,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -823,16 +823,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Último Gol de Cristiano Ronaldo: Gol #936 contra Atlanta United FC</video:title>
-      <video:description>Mira el gol #936 de Cristiano Ronaldo: gol de left foot para Inter Miami contra Atlanta United FC en MLS el 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Último Gol de Cristiano Ronaldo: Gol #981 contra Al-Diriyah FC</video:title>
+      <video:description>Mira el gol #981 de Cristiano Ronaldo: gol de right-footed shot para Al-Nassr contra Al-Diriyah FC en Al Nassr el 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>Gol 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>Gol 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Último gol de Ronaldo</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -840,7 +840,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -872,7 +872,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -904,7 +904,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -936,7 +936,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -972,13 +972,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Gols de Ronaldo: 936 Gols Oficiais ao Vivo</image:title>
-      <image:caption>Estatísticas completas da carreira de Cristiano Ronaldo: 936 gols em 1.181 jogos oficiais, 47 títulos coletivos e 8 Bolas de Ouro.</image:caption>
+      <image:title>Gols de Ronaldo: 981 Gols Oficiais ao Vivo</image:title>
+      <image:caption>Estatísticas completas da carreira de Cristiano Ronaldo: 981 gols em 1.340 jogos oficiais, 35 títulos coletivos e 8 Bolas de Ouro.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -1010,7 +1010,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -1042,7 +1042,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -1074,7 +1074,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -1106,7 +1106,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -1138,7 +1138,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -1170,7 +1170,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -1202,7 +1202,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -1233,16 +1233,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Último Gol de Cristiano Ronaldo: Gol #936 contra Atlanta United FC</video:title>
-      <video:description>Veja o gol #936 de Cristiano Ronaldo: gol de left foot pelo Inter Miami contra Atlanta United FC na MLS em 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Último Gol de Cristiano Ronaldo: Gol #981 contra Al-Diriyah FC</video:title>
+      <video:description>Veja o gol #981 de Cristiano Ronaldo: gol de right-footed shot pelo Al-Nassr contra Al-Diriyah FC na Al Nassr em 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>Gol 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>Gol 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Último gol do Ronaldo</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -1250,7 +1250,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -1282,7 +1282,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -1314,7 +1314,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -1346,7 +1346,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -1382,13 +1382,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Buts de Ronaldo : 936 Buts Officiels en Direct</image:title>
-      <image:caption>Statistiques complètes de la carrière de Cristiano Ronaldo : 936 buts en 1 181 matchs officiels, 47 trophées collectifs et 8 Ballons d'Or.</image:caption>
+      <image:title>Buts de Ronaldo : 981 Buts Officiels en Direct</image:title>
+      <image:caption>Statistiques complètes de la carrière de Cristiano Ronaldo : 981 buts en 1 340 matchs officiels, 35 trophées collectifs et 8 Ballons d'Or.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -1420,7 +1420,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -1452,7 +1452,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -1484,7 +1484,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -1516,7 +1516,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -1548,7 +1548,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -1580,7 +1580,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -1612,7 +1612,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -1643,16 +1643,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Dernier But de Cristiano Ronaldo : But #936 contre Atlanta United FC</video:title>
-      <video:description>Regardez le but #936 de Cristiano Ronaldo : une frappe left foot pour Inter Miami contre Atlanta United FC en MLS le 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Dernier But de Cristiano Ronaldo : But #981 contre Al-Diriyah FC</video:title>
+      <video:description>Regardez le but #981 de Cristiano Ronaldo : une frappe right-footed shot pour Al-Nassr contre Al-Diriyah FC en Al Nassr le 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>But 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>But 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Dernier but de Ronaldo</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -1660,7 +1660,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -1692,7 +1692,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -1724,7 +1724,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -1756,7 +1756,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -1792,13 +1792,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>أهداف ميسي: 936 هدفاً رسمياً مباشر</image:title>
-      <image:caption>إحصائيات مسيرة ليونيل ميسي الرسمية: 936 هدفاً في 1,181 مباراة، 47 بطولة و8 كرات ذهبية.</image:caption>
+      <image:title>أهداف ميسي: 981 هدفاً رسمياً مباشر</image:title>
+      <image:caption>إحصائيات مسيرة ليونيل ميسي الرسمية: 981 هدفاً في 1,340 مباراة، 35 بطولة و8 كرات ذهبية.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -1830,7 +1830,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -1862,7 +1862,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -1894,7 +1894,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -1926,7 +1926,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -1958,7 +1958,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -1990,7 +1990,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -2022,7 +2022,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -2053,16 +2053,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>فيديو آخر هدف لليونيل ميسي: الهدف 936 ضد Atlanta United FC</video:title>
-      <video:description>شاهد هدف ليونيل ميسي رقم 936: هدف بقدم اليسرى لصالح Inter Miami ضد Atlanta United FC في MLS يوم 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>فيديو آخر هدف لليونيل ميسي: الهدف 981 ضد Al-Diriyah FC</video:title>
+      <video:description>شاهد هدف ليونيل ميسي رقم 981: هدف بقدم رأسية لصالح Al-Nassr ضد Al-Diriyah FC في Al Nassr يوم 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>ليونيل ميسي</video:tag>
-      <video:tag>الهدف 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>الهدف 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>آخر هدف لميسي</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -2070,7 +2070,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -2102,7 +2102,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -2134,7 +2134,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ar/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -2166,7 +2166,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -2202,13 +2202,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>মেসির মোট গোল: ৯৩৬ গোল লাইভ ট্র্যাকার</image:title>
-      <image:caption>লিওনেল মেসির অফিসিয়াল ক্যারিয়ার পরিসংখ্যান: ১,১৮১ ম্যাচে ৯৩৬ গোল, ৪৭টি শিরোপা এবং ৮টি ব্যালন ডি'অর।</image:caption>
+      <image:title>মেসির মোট গোল: ৯৮১ গোল লাইভ ট্র্যাকার</image:title>
+      <image:caption>লিওনেল মেসির অফিসিয়াল ক্যারিয়ার পরিসংখ্যান: ১,৩৪০ ম্যাচে ৯৮১ গোল, ৩৫টি শিরোপা এবং ৮টি ব্যালন ডি'অর।</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -2240,7 +2240,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -2272,7 +2272,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -2304,7 +2304,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -2336,7 +2336,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -2368,7 +2368,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -2400,7 +2400,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -2432,7 +2432,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -2463,16 +2463,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>লিওনেল মেসির সর্বশেষ গোল ভিডিও: Atlanta United FC-এর বিরুদ্ধে 936তম গোল</video:title>
-      <video:description>লিওনেল মেসির 936তম গোলটি দেখুন: 18 October 2026-এ MLS-এ Atlanta United FC-এর বিরুদ্ধে Inter Miami-এর হয়ে।</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>লিওনেল মেসির সর্বশেষ গোল ভিডিও: Al-Diriyah FC-এর বিরুদ্ধে 981তম গোল</video:title>
+      <video:description>লিওনেল মেসির 981তম গোলটি দেখুন: 9 October 2026-এ Al Nassr-এ Al-Diriyah FC-এর বিরুদ্ধে Al-Nassr-এর হয়ে।</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>লিওনেল মেসি</video:tag>
-      <video:tag>গোল 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>গোল 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>মেসির শেষ গোল</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -2480,7 +2480,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -2512,7 +2512,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -2544,7 +2544,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/bn/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -2576,7 +2576,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -2612,13 +2612,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>मेसी के कुल गोल: 936 आधिकारिक गोल लाइव</image:title>
-      <image:caption>लियोनेल मेसी के करियर के आधिकारिक आंकड़े: 1,181 मैचों में 936 गोल, 47 ट्रॉफियां और 8 बैलन डी'ऑर।</image:caption>
+      <image:title>मेसी के कुल गोल: 981 आधिकारिक गोल लाइव</image:title>
+      <image:caption>लियोनेल मेसी के करियर के आधिकारिक आंकड़े: 1,340 मैचों में 981 गोल, 35 ट्रॉफियां और 8 बैलन डी'ऑर।</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -2650,7 +2650,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -2682,7 +2682,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -2714,7 +2714,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -2746,7 +2746,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -2778,7 +2778,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -2810,7 +2810,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -2842,7 +2842,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -2873,16 +2873,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>लियोनेल मेसी का आखिरी गोल वीडियो: Atlanta United FC के खिलाफ 936वां गोल</video:title>
-      <video:description>लियोनेल मेसी का 936वां करियर गोल देखें: 18 October 2026 को MLS में Atlanta United FC के खिलाफ Inter Miami के लिए।</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>लियोनेल मेसी का आखिरी गोल वीडियो: Al-Diriyah FC के खिलाफ 981वां गोल</video:title>
+      <video:description>लियोनेल मेसी का 981वां करियर गोल देखें: 9 October 2026 को Al Nassr में Al-Diriyah FC के खिलाफ Al-Nassr के लिए।</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>लियोनेल मेसी</video:tag>
-      <video:tag>गोल 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>गोल 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>मेसी का आखिरी गोल</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -2890,7 +2890,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -2922,7 +2922,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -2954,7 +2954,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/hi/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -2986,7 +2986,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -3022,13 +3022,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Goluri Ronaldo: 936 Goluri Oficiale Live</image:title>
-      <image:caption>Statisticile complete ale carierei lui Cristiano Ronaldo: 936 goluri în 1.181 meciuri oficiale, 47 trofee și 8 Baloane de Aur.</image:caption>
+      <image:title>Goluri Ronaldo: 981 Goluri Oficiale Live</image:title>
+      <image:caption>Statisticile complete ale carierei lui Cristiano Ronaldo: 981 goluri în 1.340 meciuri oficiale, 35 trofee și 8 Baloane de Aur.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -3060,7 +3060,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -3092,7 +3092,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -3124,7 +3124,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -3156,7 +3156,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -3188,7 +3188,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -3220,7 +3220,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -3252,7 +3252,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -3283,16 +3283,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Ultimul Gol al lui Cristiano Ronaldo: Golul #936 împotriva Atlanta United FC</video:title>
-      <video:description>Urmărește golul #936 al lui Cristiano Ronaldo: gol left foot pentru Inter Miami împotriva Atlanta United FC în MLS pe 18 October 2026.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Ultimul Gol al lui Cristiano Ronaldo: Golul #981 împotriva Al-Diriyah FC</video:title>
+      <video:description>Urmărește golul #981 al lui Cristiano Ronaldo: gol right-footed shot pentru Al-Nassr împotriva Al-Diriyah FC în Al Nassr pe 9 October 2026.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>Gol 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>Gol 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Ultimul gol Ronaldo</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -3300,7 +3300,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -3332,7 +3332,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -3364,7 +3364,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/ro/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -3396,7 +3396,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -3432,13 +3432,13 @@
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Ronaldo gollari: 936 ta rasmiy gol</image:title>
-      <image:caption>Cristiano Ronaldoning toʻliq rasmiy statistikasi: 1 181 ta oʻyinda 936 ta gol, 47 ta sovrin va 8 ta Oltin toʻp.</image:caption>
+      <image:title>Ronaldo gollari: 981 ta rasmiy gol</image:title>
+      <image:caption>Cristiano Ronaldoning toʻliq rasmiy statistikasi: 1 340 ta oʻyinda 981 ta gol, 35 ta sovrin va 8 ta Oltin toʻp.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/dashboard</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -3470,7 +3470,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/birthday</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/birthday" />
@@ -3502,7 +3502,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/goalsbyseason</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -3534,7 +3534,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/goalsbyyear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -3566,7 +3566,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -3598,7 +3598,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/vs-real-madrid</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/vs-real-madrid" />
@@ -3630,7 +3630,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/champions-league</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -3662,7 +3662,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/latest-goal</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/latest-goal" />
@@ -3693,16 +3693,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/latest-goal" />
     <video:video>
       <video:thumbnail_loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</video:thumbnail_loc>
-      <video:title>Cristiano Ronaldoning so'nggi goli: Atlanta United FC ga qarshi 936-gol</video:title>
-      <video:description>Cristiano Ronaldoning 936-golini tomosha qiling: 18 October 2026 kuni MLS doirasida Atlanta United FC ga qarshi Inter Miami safida.</video:description>
-      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal936.mp4</video:content_loc>
+      <video:title>Cristiano Ronaldoning so'nggi goli: Al-Diriyah FC ga qarshi 981-gol</video:title>
+      <video:description>Cristiano Ronaldoning 981-golini tomosha qiling: 9 October 2026 kuni Al Nassr doirasida Al-Diriyah FC ga qarshi Al-Nassr safida.</video:description>
+      <video:content_loc>https://cdn.ronaldoallgoals.com/Goal981.mp4</video:content_loc>
       <video:duration>35</video:duration>
-      <video:publication_date>2026-10-17T22:00:00Z</video:publication_date>
+      <video:publication_date>2026-10-09T22:00:00Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:tag>Cristiano Ronaldo</video:tag>
-      <video:tag>Gol 936</video:tag>
-      <video:tag>Atlanta United FC</video:tag>
-      <video:tag>MLS</video:tag>
+      <video:tag>Gol 981</video:tag>
+      <video:tag>Al Diriyah FC</video:tag>
+      <video:tag>Al Nassr</video:tag>
       <video:tag>Ronaldoning oxirgi goli</video:tag>
       <video:category>Sports</video:category>
       <video:uploader info="https://www.ronaldostats.site">RonaldoStats Official</video:uploader>
@@ -3710,7 +3710,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/timeline</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -3742,7 +3742,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/achievements</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/achievements" />
@@ -3774,7 +3774,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/uz/gear</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -3805,92 +3805,86 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/gear" />
   </url>
   <url>
+    <loc>https://www.ronaldostats.site/en/birthday/01-03</loc>
+    <lastmod>2021-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-04</loc>
-    <lastmod>2012-01-04</lastmod>
+    <lastmod>2015-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-05</loc>
-    <lastmod>2017-01-05</lastmod>
+    <lastmod>2008-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-06</loc>
-    <lastmod>2021-01-06</lastmod>
+    <lastmod>2020-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-07</loc>
-    <lastmod>2018-01-07</lastmod>
+    <lastmod>2017-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-08</loc>
-    <lastmod>2017-01-08</lastmod>
+    <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-09</loc>
-    <lastmod>2021-01-09</lastmod>
+    <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-10</loc>
-    <lastmod>2010-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/01-11</loc>
-    <lastmod>2023-01-11</lastmod>
+    <lastmod>2021-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-12</loc>
-    <lastmod>2011-01-12</lastmod>
+    <lastmod>2026-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-13</loc>
-    <lastmod>2019-01-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/01-14</loc>
-    <lastmod>2018-01-14</lastmod>
+    <lastmod>2011-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-15</loc>
-    <lastmod>2012-01-15</lastmod>
+    <lastmod>2017-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-16</loc>
-    <lastmod>2014-01-16</lastmod>
+    <lastmod>2019-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-17</loc>
-    <lastmod>2019-01-17</lastmod>
+    <lastmod>2016-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-18</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2015-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -3902,133 +3896,121 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-20</loc>
-    <lastmod>2019-01-20</lastmod>
+    <lastmod>2021-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-21</loc>
-    <lastmod>2018-01-21</lastmod>
+    <lastmod>2026-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-22</loc>
-    <lastmod>2017-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/01-23</loc>
-    <lastmod>2016-01-23</lastmod>
+    <lastmod>2025-01-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-24</loc>
-    <lastmod>2015-01-24</lastmod>
+    <lastmod>2010-01-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-25</loc>
-    <lastmod>2018-01-25</lastmod>
+    <lastmod>2017-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-26</loc>
-    <lastmod>2017-01-26</lastmod>
+    <lastmod>2025-01-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-27</loc>
-    <lastmod>2021-01-27</lastmod>
+    <lastmod>2019-01-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-28</loc>
-    <lastmod>2018-01-28</lastmod>
+    <lastmod>2012-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-29</loc>
-    <lastmod>2024-01-29</lastmod>
+    <lastmod>2017-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-30</loc>
-    <lastmod>2020-01-30</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/01-31</loc>
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2016-01-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-01</loc>
-    <lastmod>2023-02-01</lastmod>
+    <lastmod>2005-02-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-02</loc>
-    <lastmod>2019-02-02</lastmod>
+    <lastmod>2021-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-03</loc>
-    <lastmod>2016-02-03</lastmod>
+    <lastmod>2025-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-04</loc>
-    <lastmod>2023-02-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/02-05</loc>
-    <lastmod>2011-02-05</lastmod>
+    <lastmod>2006-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-06</loc>
-    <lastmod>2022-02-06</lastmod>
+    <lastmod>2021-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-07</loc>
-    <lastmod>2026-02-07</lastmod>
+    <lastmod>2025-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-08</loc>
-    <lastmod>2025-02-08</lastmod>
+    <lastmod>2020-02-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-09</loc>
-    <lastmod>2014-02-09</lastmod>
+    <lastmod>2023-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-10</loc>
-    <lastmod>2013-02-10</lastmod>
+    <lastmod>2019-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4040,91 +4022,79 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-12</loc>
-    <lastmod>2014-02-12</lastmod>
+    <lastmod>2012-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-13</loc>
-    <lastmod>2021-02-13</lastmod>
+    <lastmod>2020-02-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-14</loc>
-    <lastmod>2016-02-14</lastmod>
+    <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-15</loc>
-    <lastmod>2015-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/02-16</loc>
-    <lastmod>2021-02-16</lastmod>
+    <lastmod>2022-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-17</loc>
-    <lastmod>2016-02-17</lastmod>
+    <lastmod>2024-02-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-18</loc>
-    <lastmod>2014-02-18</lastmod>
+    <lastmod>2018-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-19</loc>
-    <lastmod>2025-02-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/02-20</loc>
-    <lastmod>2018-02-20</lastmod>
+    <lastmod>2005-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-21</loc>
-    <lastmod>2021-02-21</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-22</loc>
-    <lastmod>2020-02-22</lastmod>
+    <lastmod>2021-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-23</loc>
-    <lastmod>2019-02-23</lastmod>
+    <lastmod>2008-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-24</loc>
-    <lastmod>2021-02-24</lastmod>
+    <lastmod>2018-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-25</loc>
-    <lastmod>2025-02-25</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/02-26</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2017-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4135,146 +4105,128 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/02-28</loc>
-    <lastmod>2016-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/02-29</loc>
-    <lastmod>2012-02-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-01</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2017-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-02</loc>
-    <lastmod>2024-03-02</lastmod>
+    <lastmod>2021-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-03</loc>
-    <lastmod>2016-03-03</lastmod>
+    <lastmod>2018-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-04</loc>
-    <lastmod>2023-03-04</lastmod>
+    <lastmod>2012-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/03-05</loc>
+    <lastmod>2016-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-06</loc>
-    <lastmod>2016-03-06</lastmod>
+    <lastmod>2018-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-07</loc>
-    <lastmod>2026-03-07</lastmod>
+    <lastmod>2025-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-08</loc>
-    <lastmod>2017-03-08</lastmod>
+    <lastmod>2016-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-09</loc>
-    <lastmod>2019-03-09</lastmod>
+    <lastmod>2014-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-10</loc>
-    <lastmod>2021-03-10</lastmod>
+    <lastmod>2025-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-11</loc>
-    <lastmod>2012-03-11</lastmod>
+    <lastmod>2024-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-12</loc>
-    <lastmod>2016-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/03-13</loc>
-    <lastmod>2025-03-13</lastmod>
+    <lastmod>2022-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-14</loc>
-    <lastmod>2018-03-14</lastmod>
+    <lastmod>2025-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-15</loc>
-    <lastmod>2021-03-15</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-16</loc>
-    <lastmod>2025-03-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/03-17</loc>
-    <lastmod>2019-03-17</lastmod>
+    <lastmod>2013-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-18</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2023-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-19</loc>
-    <lastmod>2017-03-19</lastmod>
+    <lastmod>2008-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-20</loc>
-    <lastmod>2012-03-20</lastmod>
+    <lastmod>2016-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-21</loc>
-    <lastmod>2021-03-21</lastmod>
+    <lastmod>2012-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-22</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2015-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-23</loc>
-    <lastmod>2023-03-23</lastmod>
+    <lastmod>2025-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4286,157 +4238,157 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-25</loc>
-    <lastmod>2022-03-25</lastmod>
+    <lastmod>2017-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-26</loc>
-    <lastmod>2014-03-26</lastmod>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-28</loc>
-    <lastmod>2023-03-28</lastmod>
+    <lastmod>2017-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-29</loc>
-    <lastmod>2025-03-29</lastmod>
+    <lastmod>2016-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-30</loc>
-    <lastmod>2019-03-30</lastmod>
+    <lastmod>2024-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/03-31</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2012-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/04-01</loc>
+    <lastmod>2008-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-02</loc>
-    <lastmod>2019-04-02</lastmod>
+    <lastmod>2024-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-03</loc>
-    <lastmod>2022-04-03</lastmod>
+    <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-04</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2025-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-05</loc>
-    <lastmod>2017-04-05</lastmod>
+    <lastmod>2023-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-06</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2013-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-07</loc>
-    <lastmod>2018-04-07</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-08</loc>
-    <lastmod>2015-04-08</lastmod>
+    <lastmod>2018-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-09</loc>
-    <lastmod>2025-04-09</lastmod>
+    <lastmod>2016-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-10</loc>
-    <lastmod>2012-04-10</lastmod>
+    <lastmod>2019-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-11</loc>
-    <lastmod>2015-04-11</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-12</loc>
-    <lastmod>2011-04-12</lastmod>
+    <lastmod>2025-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-13</loc>
-    <lastmod>2024-04-13</lastmod>
+    <lastmod>2011-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-14</loc>
-    <lastmod>2012-04-14</lastmod>
+    <lastmod>2013-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-15</loc>
-    <lastmod>2017-04-15</lastmod>
+    <lastmod>2010-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-16</loc>
-    <lastmod>2019-04-16</lastmod>
+    <lastmod>2022-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-17</loc>
-    <lastmod>2021-04-17</lastmod>
+    <lastmod>2005-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-18</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2018-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-20</loc>
-    <lastmod>2024-04-20</lastmod>
+    <lastmod>2011-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-21</loc>
-    <lastmod>2018-04-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/04-22</loc>
-    <lastmod>2021-04-22</lastmod>
+    <lastmod>2012-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4447,50 +4399,56 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.ronaldostats.site/en/birthday/04-24</loc>
+    <lastmod>2013-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-25</loc>
-    <lastmod>2015-04-25</lastmod>
+    <lastmod>2012-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-26</loc>
-    <lastmod>2017-04-26</lastmod>
+    <lastmod>2025-04-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-27</loc>
-    <lastmod>2024-04-27</lastmod>
+    <lastmod>2019-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-28</loc>
-    <lastmod>2015-04-28</lastmod>
+    <lastmod>2023-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/04-29</loc>
-    <lastmod>2021-04-29</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-01</loc>
-    <lastmod>2019-05-01</lastmod>
+    <lastmod>2024-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-02</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2022-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-03</loc>
-    <lastmod>2025-05-03</lastmod>
+    <lastmod>2019-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4502,13 +4460,19 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-05</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2015-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-06</loc>
     <lastmod>2018-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/05-07</loc>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4520,133 +4484,109 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-09</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2024-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-10</loc>
-    <lastmod>2025-05-10</lastmod>
+    <lastmod>2011-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-11</loc>
-    <lastmod>2021-05-11</lastmod>
+    <lastmod>2008-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/05-12</loc>
+    <lastmod>2021-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-13</loc>
-    <lastmod>2026-05-13</lastmod>
+    <lastmod>2015-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-14</loc>
-    <lastmod>2022-05-14</lastmod>
+    <lastmod>2017-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/05-15</loc>
+    <lastmod>2021-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-16</loc>
-    <lastmod>2021-05-16</lastmod>
+    <lastmod>2023-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-17</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2017-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-19</loc>
-    <lastmod>2019-05-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-20</loc>
-    <lastmod>2007-05-20</lastmod>
+    <lastmod>2018-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-21</loc>
-    <lastmod>2017-05-21</lastmod>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/05-22</loc>
+    <lastmod>2004-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-23</loc>
-    <lastmod>2015-05-23</lastmod>
+    <lastmod>2023-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-24</loc>
-    <lastmod>2025-05-24</lastmod>
+    <lastmod>2014-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-25</loc>
-    <lastmod>2019-05-25</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/05-26</loc>
+    <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/05-27</loc>
-    <lastmod>2017-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-28</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-29</loc>
-    <lastmod>2024-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-30</loc>
-    <lastmod>2015-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/05-31</loc>
-    <lastmod>2025-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-01</loc>
-    <lastmod>2024-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-02</loc>
-    <lastmod>2012-06-02</lastmod>
+    <lastmod>2024-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-03</loc>
-    <lastmod>2021-06-03</lastmod>
+    <lastmod>2017-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-04</loc>
-    <lastmod>2008-06-04</lastmod>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4657,110 +4597,92 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-07</loc>
-    <lastmod>2019-06-07</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/06-08</loc>
+    <lastmod>2025-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-09</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2021-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-10</loc>
-    <lastmod>2016-06-10</lastmod>
+    <lastmod>2013-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/06-11</loc>
+    <lastmod>2024-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/06-12</loc>
+    <lastmod>2004-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-13</loc>
-    <lastmod>2020-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-14</loc>
-    <lastmod>2024-06-14</lastmod>
+    <lastmod>2015-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-15</loc>
-    <lastmod>2023-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-16</loc>
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2021-06-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-17</loc>
-    <lastmod>2007-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-18</loc>
-    <lastmod>2016-06-18</lastmod>
+    <lastmod>2012-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-19</loc>
-    <lastmod>2025-06-19</lastmod>
+    <lastmod>2021-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-20</loc>
-    <lastmod>2011-06-20</lastmod>
+    <lastmod>2023-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-21</loc>
-    <lastmod>2016-06-21</lastmod>
+    <lastmod>2017-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-22</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2020-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/06-23</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-24</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-25</loc>
-    <lastmod>2014-06-25</lastmod>
+    <lastmod>2017-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/06-26</loc>
-    <lastmod>2018-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-27</loc>
-    <lastmod>2026-06-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/06-28</loc>
-    <lastmod>2021-06-28</lastmod>
+    <lastmod>2020-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4771,104 +4693,68 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-03</loc>
-    <lastmod>2026-07-03</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/07-02</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-05</loc>
-    <lastmod>2025-07-05</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/07-04</loc>
+    <lastmod>2020-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/07-06</loc>
+    <lastmod>2016-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/07-07</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-08</loc>
-    <lastmod>2007-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-09</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2020-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/07-11</loc>
-    <lastmod>2007-07-11</lastmod>
+    <lastmod>2020-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-12</loc>
-    <lastmod>2025-07-12</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/07-20</loc>
+    <lastmod>2020-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-16</loc>
-    <lastmod>2020-07-16</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/07-26</loc>
+    <lastmod>2020-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-19</loc>
-    <lastmod>2025-07-19</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/08-07</loc>
+    <lastmod>2020-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-21</loc>
-    <lastmod>2023-07-21</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/08-09</loc>
+    <lastmod>2005-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-25</loc>
-    <lastmod>2023-07-25</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/08-10</loc>
+    <lastmod>2011-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/07-31</loc>
-    <lastmod>2022-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-02</loc>
-    <lastmod>2023-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-05</loc>
-    <lastmod>2026-08-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-06</loc>
-    <lastmod>2023-08-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-08</loc>
-    <lastmod>2020-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-11</loc>
-    <lastmod>2023-08-11</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/08-12</loc>
+    <lastmod>2014-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -4880,331 +4766,343 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-14</loc>
-    <lastmod>2011-08-14</lastmod>
+    <lastmod>2024-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-15</loc>
-    <lastmod>2023-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-16</loc>
-    <lastmod>2025-08-16</lastmod>
+    <lastmod>2012-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-17</loc>
-    <lastmod>2016-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-18</loc>
-    <lastmod>2018-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-19</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2024-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-20</loc>
-    <lastmod>2016-08-20</lastmod>
+    <lastmod>2006-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-21</loc>
-    <lastmod>2022-08-21</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-22</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2024-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-23</loc>
-    <lastmod>2012-08-23</lastmod>
+    <lastmod>2025-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-24</loc>
-    <lastmod>2014-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/08-26</loc>
-    <lastmod>2023-08-26</lastmod>
+    <loc>https://www.ronaldostats.site/en/birthday/08-25</loc>
+    <lastmod>2023-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-27</loc>
-    <lastmod>2025-08-27</lastmod>
+    <lastmod>2024-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-28</loc>
-    <lastmod>2006-08-28</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/08-29</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/08-31</loc>
+    <lastmod>2019-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-01</loc>
-    <lastmod>2016-09-01</lastmod>
+    <lastmod>2021-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-02</loc>
-    <lastmod>2018-09-02</lastmod>
+    <lastmod>2023-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-04</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2004-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/09-05</loc>
+    <lastmod>2024-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/09-06</loc>
+    <lastmod>2025-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-07</loc>
-    <lastmod>2023-09-07</lastmod>
+    <lastmod>2019-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-08</loc>
-    <lastmod>2015-09-08</lastmod>
+    <lastmod>2024-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-09</loc>
-    <lastmod>2021-09-09</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-10</loc>
-    <lastmod>2013-09-10</lastmod>
+    <lastmod>2019-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/09-11</loc>
+    <lastmod>2021-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-12</loc>
-    <lastmod>2017-09-12</lastmod>
+    <lastmod>2015-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-13</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2017-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-14</loc>
-    <lastmod>2024-09-14</lastmod>
+    <lastmod>2021-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-15</loc>
-    <lastmod>2012-09-15</lastmod>
+    <lastmod>2022-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-16</loc>
-    <lastmod>2025-09-16</lastmod>
+    <lastmod>2023-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-17</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2013-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-18</loc>
-    <lastmod>2022-09-18</lastmod>
+    <lastmod>2012-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-19</loc>
-    <lastmod>2017-09-19</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-20</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2025-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-21</loc>
-    <lastmod>2014-09-21</lastmod>
+    <lastmod>2019-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-22</loc>
-    <lastmod>2009-09-22</lastmod>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-23</loc>
-    <lastmod>2022-09-23</lastmod>
+    <lastmod>2018-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-24</loc>
-    <lastmod>2025-09-24</lastmod>
+    <lastmod>2012-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/09-25</loc>
+    <lastmod>2013-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-26</loc>
-    <lastmod>2007-09-26</lastmod>
+    <lastmod>2025-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-27</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2024-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-28</loc>
-    <lastmod>2024-09-28</lastmod>
+    <lastmod>2019-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-29</loc>
-    <lastmod>2009-09-29</lastmod>
+    <lastmod>2023-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/09-30</loc>
-    <lastmod>2014-09-30</lastmod>
+    <lastmod>2024-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-01</loc>
-    <lastmod>2022-10-01</lastmod>
+    <lastmod>2019-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-02</loc>
-    <lastmod>2024-10-02</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-03</loc>
-    <lastmod>2018-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/10-04</loc>
-    <lastmod>2014-10-04</lastmod>
+    <lastmod>2012-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-05</loc>
-    <lastmod>2022-10-05</lastmod>
+    <lastmod>2024-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-06</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2018-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-07</loc>
-    <lastmod>2018-10-07</lastmod>
+    <lastmod>2017-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-08</loc>
-    <lastmod>2020-10-08</lastmod>
+    <lastmod>2010-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/10-09</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-10</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2016-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-11</loc>
-    <lastmod>2025-10-11</lastmod>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-12</loc>
-    <lastmod>2012-10-12</lastmod>
+    <lastmod>2024-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/10-13</loc>
+    <lastmod>2023-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-14</loc>
-    <lastmod>2014-10-14</lastmod>
+    <lastmod>2025-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-15</loc>
-    <lastmod>2024-10-15</lastmod>
+    <lastmod>2016-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-16</loc>
-    <lastmod>2012-10-16</lastmod>
+    <lastmod>2023-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-17</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2017-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5216,67 +5114,79 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-19</loc>
-    <lastmod>2024-10-19</lastmod>
+    <lastmod>2019-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-20</loc>
-    <lastmod>2020-10-20</lastmod>
+    <lastmod>2021-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-21</loc>
-    <lastmod>2022-10-21</lastmod>
+    <lastmod>2023-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-22</loc>
-    <lastmod>2016-10-22</lastmod>
+    <lastmod>2014-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-23</loc>
-    <lastmod>2019-10-23</lastmod>
+    <lastmod>2013-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-24</loc>
-    <lastmod>2025-10-24</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-25</loc>
-    <lastmod>2022-10-25</lastmod>
+    <lastmod>2025-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/10-26</loc>
+    <lastmod>2002-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-27</loc>
-    <lastmod>2012-10-27</lastmod>
+    <lastmod>2022-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-28</loc>
-    <lastmod>2020-10-28</lastmod>
+    <lastmod>2012-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-29</loc>
-    <lastmod>2022-10-29</lastmod>
+    <lastmod>2016-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/10-30</loc>
-    <lastmod>2010-10-30</lastmod>
+    <lastmod>2021-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/10-31</loc>
+    <lastmod>2015-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5288,31 +5198,37 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-02</loc>
-    <lastmod>2019-11-02</lastmod>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/11-03</loc>
+    <lastmod>2007-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-04</loc>
-    <lastmod>2020-11-04</lastmod>
+    <lastmod>2023-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-05</loc>
-    <lastmod>2014-11-05</lastmod>
+    <lastmod>2024-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-06</loc>
-    <lastmod>2016-11-06</lastmod>
+    <lastmod>2011-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-07</loc>
-    <lastmod>2020-11-07</lastmod>
+    <lastmod>2018-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5324,7 +5240,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-09</loc>
-    <lastmod>2019-11-09</lastmod>
+    <lastmod>2013-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5336,109 +5252,103 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-11</loc>
-    <lastmod>2018-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/11-12</loc>
-    <lastmod>2014-11-12</lastmod>
+    <lastmod>2023-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-13</loc>
-    <lastmod>2010-11-13</lastmod>
+    <lastmod>2016-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-14</loc>
-    <lastmod>2025-11-14</lastmod>
+    <lastmod>2019-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-15</loc>
-    <lastmod>2019-11-15</lastmod>
+    <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-16</loc>
-    <lastmod>2022-11-16</lastmod>
+    <lastmod>2023-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-17</loc>
-    <lastmod>2012-11-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/11-18</loc>
-    <lastmod>2019-11-18</lastmod>
+    <lastmod>2019-11-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-19</loc>
-    <lastmod>2011-11-19</lastmod>
+    <lastmod>2016-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-20</loc>
-    <lastmod>2021-11-20</lastmod>
+    <lastmod>2010-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/11-21</loc>
+    <lastmod>2020-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-22</loc>
-    <lastmod>2022-11-22</lastmod>
+    <lastmod>2024-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-23</loc>
-    <lastmod>2016-11-23</lastmod>
+    <lastmod>2025-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-24</loc>
-    <lastmod>2015-11-24</lastmod>
+    <lastmod>2023-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-25</loc>
-    <lastmod>2014-11-25</lastmod>
+    <lastmod>2024-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-26</loc>
-    <lastmod>2022-11-26</lastmod>
+    <lastmod>2024-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-27</loc>
-    <lastmod>2019-11-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/11-28</loc>
-    <lastmod>2018-11-28</lastmod>
+    <lastmod>2007-11-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/11-29</loc>
-    <lastmod>2020-11-29</lastmod>
+    <lastmod>2024-11-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/11-30</loc>
+    <lastmod>2024-11-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5450,79 +5360,97 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-02</loc>
-    <lastmod>2017-12-02</lastmod>
+    <lastmod>2021-12-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-03</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2011-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-04</loc>
-    <lastmod>2010-12-04</lastmod>
+    <lastmod>2012-12-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-05</loc>
-    <lastmod>2009-12-05</lastmod>
+    <lastmod>2015-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-06</loc>
-    <lastmod>2016-12-06</lastmod>
+    <lastmod>2024-12-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-07</loc>
-    <lastmod>2021-12-07</lastmod>
+    <lastmod>2019-12-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-08</loc>
-    <lastmod>2018-12-08</lastmod>
+    <lastmod>2023-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-09</loc>
-    <lastmod>2022-12-09</lastmod>
+    <lastmod>2017-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-10</loc>
-    <lastmod>2017-12-10</lastmod>
+    <lastmod>2013-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-11</loc>
+    <lastmod>2023-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-12</loc>
-    <lastmod>2015-12-12</lastmod>
+    <lastmod>2014-12-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-13</loc>
-    <lastmod>2022-12-13</lastmod>
+    <lastmod>2020-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-15</loc>
+    <lastmod>2019-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-16</loc>
-    <lastmod>2018-12-16</lastmod>
+    <lastmod>2017-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-17</loc>
+    <lastmod>2011-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-18</loc>
-    <lastmod>2022-12-18</lastmod>
+    <lastmod>2019-12-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -5539,26 +5467,44 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.ronaldostats.site/en/birthday/12-21</loc>
-    <lastmod>2019-12-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-22</loc>
-    <lastmod>2020-12-22</lastmod>
+    <lastmod>2023-12-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-23</loc>
-    <lastmod>2017-12-23</lastmod>
+    <lastmod>2007-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-26</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-27</loc>
+    <lastmod>2025-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-29</loc>
+    <lastmod>2018-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/birthday/12-30</loc>
-    <lastmod>2015-12-30</lastmod>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.ronaldostats.site/en/birthday/12-31</loc>
+    <lastmod>2005-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

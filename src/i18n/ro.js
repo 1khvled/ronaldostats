@@ -1,285 +1,336 @@
 // RO dictionary — RonaldoStats
-// Extracted verbatim from the original inline dictionaries by
-// scripts/refactor-i18n.mjs. Structure is identical across all 9 languages.
+// Traducere românească a dicționarului EN (src/i18n/en.js).
+// Structura este identică cu cea a sursei: aceleași 12 exporturi, în aceeași
+// ordine, cu aceleași chei și aceleași semnături de funcții. Doar valorile
+// text au fost traduse.
+// Numerele rămân în cifre Western și cu același separator zecimal ca sursa;
+// împărțirile provizorii păstrează avertismentul de metodă.
 
 export const HOME = {
     locale: "ro-RO",
-    shirt10: "Numărul 10",
-    head: (t, p, d) => `<b>${n(t.goals)} goluri oficiale</b> în <b>${n(t.apps)} meciuri de seniori</b> pentru Barcelona, PSG, Inter Miami și Argentina la ${esc(d.lastUpdated)}. Campion mondial și record de 8 Baloane de Aur.`,
-    meta: (p, dob) => `${esc(p.name)}, născut la ${dob} în ${esc(p.birthplace)}. Are ${p.age} ani, atacant la ${esc(p.current.join(" și "))}.`,
+    shirt10: "Numărul 7 de pe tricou",
+    head: (t, p, d) => `<b>${n(t.goals)} goluri</b> în <b>${n(t.apps)} meciuri de seniori</b> — pentru Sporting CP, Manchester United, Real Madrid, Juventus și ${esc(p.current.join(" și "))}. Campion al Ligii Campionilor și câștigător de cinci ori al trofeului Ballon d'Or, numărate cu mâna și verificate de două ori, la ${esc(d.lastUpdated)}.`,
+    meta: (p, dob) => `${esc(p.name)}, născut la ${dob} în ${esc(p.birthplace)}. Are ${p.age} ani, joacă pe post de ${esc(p.position.toLowerCase())} și se află în prezent la ${esc(p.current.join(" și "))}.`,
     roleLabel: "Rol",
     teamsLabel: "Echipe",
-    nowLabel: "În prezent",
+    nowLabel: "Acum",
     kpiCareer: "Goluri în carieră",
-    kpiCareerNote: (gpg, seasons) => `${gpg} goluri pe meci în ${seasons} sezoane la club.`,
-    kpiApps: "Meciuri oficiale",
-    kpiAppsNote: (clubs, country) => `${clubs} la cluburi, ${country} cu Argentina.`,
-    kpiArg: "Goluri pentru Argentina",
+    kpiCareerNote: (gpg, seasons) => `${gpg} goluri pe meci în ${seasons} sezoane de club.`,
+    kpiApps: "Meciuri de seniori",
+    kpiAppsNote: (clubs, country) => `${clubs} la cluburi, ${country} cu Portugalia.`,
+    kpiArg: "Goluri cu Portugalia",
     kpiArgNote: (gpg, caps) => `${gpg} pe meci în ${caps} selecții.`,
     kpiTrophies: "Trofee de echipă",
-    kpiTrophiesNote: (lang) => `Record absolut de ${LIVE.trophies} de trofee și 8 Baloane de Aur. <a href="/${lang}/achievements">Palmares complet</a>.`,
+    kpiTrophiesNote: (lang) => `Plus <b>5 trofee Ballon d'Or</b> și <b>4 Gantele de Aur europene</b>. <a href="/${lang}/achievements">Lista completă a palmaresului</a>.`,
     kpiRoad: "Drumul spre 1.000 de goluri",
-    kpiRoadNote: (togo, projYear, pace) => `Mai are nevoie de ${togo} goluri. În ritmul actual (~${pace.toFixed(0)} pe an), borna 1.000 va fi atinsă spre ${projYear}.`,
-    copyStatsBtn: "Copiază statisticile",
-    copyText: (goals, apps, clubGoals, argGoals, updated) => `Messi: ${goals} goluri în ${apps} meciuri oficiale (${clubGoals} la cluburi, ${argGoals} cu Argentina), ${LIVE.trophies} de trofee, 8 Baloane de Aur — la ${updated}.`,
-    copyMsg: "Copiat în clipboard!",
-    clubCaption: (updated, lang) => `Meciuri și goluri pentru fiecare echipă a lui Lionel Messi la ${updated}. Detalii complete pe <a href="/${lang}/goalsbyseason">pagina sezoanelor</a>.`,
+    kpiRoadNote: (togo, projYear, pace) => `Mai sunt ${togo} de goluri. Estimare la ritmul actual (~${pace.toFixed(0)} pe an): pragul de 1.000 se atinge în jurul anului ${projYear}.`,
+    copyStatsBtn: "Copiază cifrele principale",
+    copyText: (goals, apps, clubGoals, argGoals, updated) => `Ronaldo: ${goals} goluri în ${apps} meciuri de seniori (${clubGoals} la cluburi, ${argGoals} cu Portugalia), ${LIVE.trophies} trofee de echipă la seniori, 5 trofee Ballon d'Or — la ${updated}.`,
+    copyMsg: "Copiat — îl poți lipi oriunde.",
+    clubCaption: (updated, lang) => `Apariții și goluri pentru fiecare echipă de seniori în care a jucat Cristiano Ronaldo, la ${updated}. Împărțirea pe competiții se găsește pe <a href="/${lang}/goalsbyseason">pagina golurilor pe sezon</a>.`,
     thTeam: "Echipă și ani",
-    thApps: "Meciuri",
+    thApps: "Apariții",
     thGoals: "Goluri",
-    thGpg: "Goluri / Meci",
-    thTotal: "Total carieră",
-    yearSub: "Alege un an și urmărește ascensiunea totalului de goluri — de la debutul din 2004 până azi.",
-    yearTitle: "Statisticile lui Messi pe ani calendaristici",
+    thGpg: "Goluri pe meci",
+    thTotal: "Total în carieră",
+    yearSub: "Alege un an și urmărește cum crește totalul — de la debutul din 2002 până azi.",
+    yearTitle: "Statisticile lui Ronaldo pe an calendaristic",
     yearLabel: "An",
-    yearFigcap: (start, cur, prov, lang) => `Goluri pe an calendaristic, ${start} - ${cur}${prov ? " (în desfășurare)" : ""} — vârf de 91 în 2012. <a href="/${lang}/goalsbyyear">Tabel complet</a>.`,
+    yearFigcap: (start, cur, prov, lang) => `Goluri pe an calendaristic, de ${start} la ${cur}${prov ? " (în curs)" : ""} — maximul de 69 în 2013. <a href="/${lang}/goalsbyyear">Deschide tabelul complet</a>.`,
     tileGoals: (year, prov) => `Goluri în ${year}${prov ? " (până acum)" : ""}`,
-    tileTotal: (year) => `Total carieră după ${year}`,
+    tileTotal: (year) => `Total în carieră după ${year}`,
     tileAge: (year) => `Vârsta în ${year}`,
     records: (best, post30, pct) => [
-      [`91`, `<b>Goluri în 2012</b>, cel mai prolific an calendaristic din istoria fotbalului mondial — ${best.goals} goluri în total.`],
-      [`8`, `<b>Baloane de Aur</b> (2009–12, 2015, 2019, 2021, 2023) — record mondial absolut.`],
-      [`474`, `<b>Goluri în La Liga</b>, golgheterul all-time al campionatului spaniol.`],
-      [`129`, `<b>Goluri în Champions League</b> — 120 pentru Barcelona și 9 pentru PSG, al doilea din istorie.`],
-      [post30, `<b>Goluri după 30 de ani</b> — aproximativ ${pct}% din totalul golurilor sale din carieră.`],
-      [`57`, `<b>Hat-trick-uri sau mai mult</b> la club și națională în cariera profesionistă.`],
-      [`46`, `<b>Trofee colective</b> — cel mai titrat fotbalist din istorie, încununat de Cupa Mondială 2022.`]
+      [`69`, `<b>Goluri în 2013</b>, cele mai multe marcate într-un singur an calendaristic — ${best.goals} în toate competițiile.`],
+      [`5`, `<b>Trofee Ballon d'Or</b> (2008, 2013, 2014, 2016, 2017) — plus patru Gantele de Aur europene.`],
+      [`311`, `<b>Goluri în La Liga</b> pentru Real Madrid, recordul absolut al competiției.`],
+      [`140`, `<b>Goluri în Liga Campionilor</b> în 183 de apariții, recordul din istoria competiției.`],
+      [post30, `<b>Goluri după împlinirea vârstei de 30 de ani</b> — aproximativ ${pct}% din totalul întregii cariere, marcate din 2015 încolo.`],
+      [`66`, `<b>Triplete sau mai multe</b> pentru club și țară pe parcursul carierei de seniori (cifră provizorie).`],
+      [`${LIVE.trophies}`, `<b>Trofee de echipă</b> — 32 cu cluburile și 3 cu Portugalia.`]
     ],
-    silverCaption: () => `${LIVE.trophies} de titluri oficiale de seniori, club cu club, plus distincțiile individuale supreme.`,
+    silverCaption: () => `${LIVE.trophies} trofee de echipă la seniori, pe rând, plus principalele distincții individuale. Unele publicații menționează 36–37 pentru că numără diferit Supercupa UEFA și supercupele naționale — lista detaliată de aici însumează ${LIVE.trophies}.`,
     silverThTrophy: "Trofeu",
-    silverThTimes: "Nr.",
-    silverThNote: "Detalii",
+    silverThTimes: "Număr de ori",
+    silverThNote: "Notă",
     silverRows: [
-      ["Titluri cu Barcelona", "35", "2005 - 2021, inclusiv 4 Ligi ale Campionilor și 10 titluri La Liga"],
-      ["Titluri cu Argentina", "5", "Cupa Mondială 2022, Copas América 2021 și 2024, Finalissima 2022, Aur Olimpic 2008"],
-      ["Titluri cu PSG", "3", "Ligue 1 2022 și 2023, Supercupa Franței 2022"],
-      ["Titluri cu Inter Miami", "4", "Leagues Cup 2023, Supporters' Shield 2024, MLS Cup 2025, Campeones Cup 2026"],
-      ["Balonul de Aur", "8", "Record mondial — 2009–12, 2015, 2019, 2021, 2023"]
+      ["Trofee de echipă — Real Madrid", "15", "2009–2018, inclusiv 4 Ligi ale Campionilor"],
+      ["Trofee de echipă — Manchester United", "9", "2003–2009, inclusiv Liga Campionilor și Campionatul Lumii al Fotbalului FIFA din 2008"],
+      ["Trofee de echipă — Juventus", "5", "Serie A de două ori, Coppa Italia și 2 Supercoppa Italiana"],
+      ["Trofee de echipă — Portugalia", "3", "Euro 2016, Liga Națiunilor 2019 și 2025"],
+      ["Trofee de echipă — Al Nassr", "2", "Campionatul Cluburilor Arabe 2023, Saudi Pro League 2026"],
+      ["Trofee de echipă — Sporting CP", "1", "Supertaça Cândido de Oliveira 2002"],
+      ["Ballon d'Or", "5", "2008, 2013, 2014, 2016, 2017"]
     ],
     splitFk: "Goluri din lovituri libere",
-    splitFkNote: "Lovituri libere directe spectaculoase.",
-    splitPen: "Goluri din penalty",
-    splitPenNote: "Aproximativ un gol din opt din carieră.",
-    splitHt: "Hat-trick-uri sau mai mult",
-    splitHtNote: "Meciuri cu 3 sau mai multe goluri înscrise.",
-    splitCaveat: (tot) => `Desfășurătorul pentru lovituri libere și penalty-uri este compilat oficial. Totalul de ${tot} goluri este 100% verificat.`,
+    splitFkNote: "Marcate pentru club și pentru țară (cifră compusă, provizorie).",
+    splitPen: "Goluri din penalty-uri",
+    splitPenNote: "Puțin sub unul din cinci dintre toate golurile sale (cifră compusă, provizorie).",
+    splitHt: "Triplete sau mai multe",
+    splitHtNote: "Meciuri cu trei goluri sau mai mult, în toate competițiile.",
+    splitCaveat: (tot) => `Împărțirea pe tipul finalizării — lovituri libere, penalty-uri — și pe partea corpului este o cifră compusă, răspândită în presa de specialitate, provizorie până la terminarea numărării manuale, meci cu meci. Totalul de ${tot} nu este afectat.`,
     faq: (t, agg, m, d, lang) => [
-      ["Câte goluri a marcat Lionel Messi în total?", `<b>${n(t.goals)} goluri oficiale</b> în ${n(t.apps)} meciuri la ${esc(d.lastUpdated)}, medie de ${t.goalsPerGame} goluri/meci. Vezi <a href="/${lang}/goalsbyyear">goluri pe ani</a>.`],
-      ["Câte goluri a marcat Messi pentru Barcelona?", `<b>${n(agg.barcelona.goals)} goluri</b> în ${n(agg.barcelona.apps)} meciuri (2004-2021) — inclusiv recordul de 474 în La Liga.`],
-      ["Câte goluri are pentru PSG și Inter Miami?", `<b>${agg.psg.goals} pentru Paris Saint-Germain</b> și <b>${n(agg.miami.goals)} pentru Inter Miami</b>.`],
-      ["Câte goluri are Messi pentru Argentina?", `<b>${n(t.country.goals)} goluri</b> în ${n(t.country.apps)} meciuri internaționale din 2005.`],
-      ["Care a fost cel mai bun an al lui Messi?", `<b>2012, cu 91 de goluri</b> — record mondial absolut. Vezi <a href="/${lang}/goalsbyyear">toți anii</a>.`],
-      ["Câte trofee a câștigat Messi?", `<b>47 de titluri de echipă</b> (35 cu Barcelona, 3 cu PSG, 4 cu Inter Miami, 5 cu Argentina). Vezi <a href="/${lang}/achievements">palmaresul</a>.`]
+      ["Câte goluri a marcat Cristiano Ronaldo în total, în carieră?", `<b>${n(t.goals)} goluri oficiale în carieră</b> în ${n(t.apps)} meciuri de seniori pentru club și țară, la ${esc(d.lastUpdated)}, adică ${t.goalsPerGame} goluri pe meci. Vezi descompunerea completă pe <a href="/${lang}/goalsbyyear">ani, cu toate golurile</a>.`],
+      ["Câte assisturi are Cristiano Ronaldo în carieră?", `Cristiano Ronaldo are <b>${n(LIVE.assists)} assisturi oficiale în carieră</b> — cifra compusă, publicată pe scară largă — și <b>${n(LIVE.tmAssists)} assisturi</b> după criteriile mai generoase ale Transfermarkt, în ${n(t.apps)} meciuri. Detalierea: ${n(d.totals?.assists?.byTeam?.real_madrid?.official || 152)} pentru Real Madrid, ${n(d.totals?.assists?.byTeam?.manchester_united?.official || 66)} pentru Manchester United, ${n(d.totals?.assists?.byTeam?.juventus?.official || 20)} pentru Juventus, ${n(d.totals?.assists?.byTeam?.al_nassr?.official || 9)} pentru Al Nassr și ${n(d.totals?.assists?.byTeam?.portugal?.official || 14)} pentru Portugalia.`],
+      ["Care sunt totalurile de goluri și assisturi ale lui Cristiano Ronaldo?", `Pe parcursul carierei de seniori, Cristiano Ronaldo a adunat <b>${n(LIVE.ga)} contribuții directe la gol</b> (<b>${n(t.goals)} goluri</b> și <b>${n(LIVE.assists)} assisturi oficiale</b>) în ${n(t.apps)} meciuri — o medie de <b>0.93 contribuții directe la gol pe meci</b>. După criteriile Transfermarkt, totalul ajunge la <b>${n(LIVE.tmGa)} contribuții la gol</b> (${n(t.goals)} goluri + ${n(LIVE.tmAssists)} assisturi).`],
+      ["Cine are statistici mai bune în toate timpurile, Ronaldo sau Messi?", `În meciurile oficiale de seniori, <b>Cristiano Ronaldo</b> deține recordul absolut de goluri cu <b>${n(t.goals)} goluri</b> și ${n(LIVE.assists)} assisturi în ${n(t.apps)} meciuri (${t.goalsPerGame} goluri pe meci), în timp ce Messi are <b>${n(LIVE.rGoals)} goluri</b> și 408 assisturi în 1,181 meciuri (0.79 goluri pe meci). Ronaldo a ajuns la ${n(t.goals)} goluri în <b>cu 159 de meciuri mai puțin</b>, are ${LIVE.trophies} trofee de echipă la seniori față de cele ${LIVE.rTrophies} ale lui Messi și 5 trofee Ballon d'Or față de 8. Compară istoricul complet față în față pe <a href="/${lang}/ronaldo-vs-messi">pagina de statistici Ronaldo vs Messi</a>.`],
+      ["Cum se împart golurile lui Ronaldo în carieră pe cluburi?", `<b>${n(t.clubs.goals)} goluri la cluburi</b> în ${n(t.clubs.apps)} meciuri de club — ` + ["Real Madrid", "Manchester United", "Juventus", "Al Nassr", "Sporting CP"].map((c) => {
+        const rows = (d.clubSeasons || []).filter((s) => s.club === c);
+        const apps = rows.reduce((a, s) => a + s.apps, 0);
+        const goals = rows.reduce((a, s) => a + s.goals, 0);
+        return `${c} ${n(goals)} în ${n(apps)}`;
+      }).join(" · ") + ` — plus <b>${n(t.country.goals)} goluri</b> în ${n(t.country.apps)} selecții pentru Portugalia. Vezi <a href="/${lang}/goalsbyseason">statisticile pe club și sezon</a>.`],
+      ["Câte goluri directe din lovituri libere a marcat Ronaldo?", `Cristiano Ronaldo a marcat <b>66 goluri directe din lovituri libere</b> în fotbalul de seniori, alături de <b>184 penalty-uri din 220 de încercări</b> și 731 goluri din acțiune — o cifră compusă, provizorie, până la terminarea numărării manuale complete.`],
+      ["Câte triplete a marcat Ronaldo?", `Ronaldo a marcat <b>${n(d.hatTricks)} triplete în carieră</b> pentru club și țară (cifră provizorie), inclusiv <b>10 pentru Portugalia</b> — un record mondial pentru un jucător de reprezentativă.`],
+      ["Câte goluri din penalty a marcat Ronaldo?", `Ronaldo a marcat <b>184 goluri din penalty</b> din 220 de încercări la club și pentru țară — o rată de conversie de 83.6%.`],
+      ["Câte goluri fără penalty a marcat Cristiano Ronaldo?", `Ronaldo a marcat <b>${n(t.goals - (m?.penalties || 184))} goluri fără penalty</b> în ${n(t.apps)} meciuri (${((t.goals - (m?.penalties || 184)) / t.apps).toFixed(2)} goluri fără penalty pe meci) — 81% din tot ce a marcat vreodată.`],
+      ["Câte goluri a marcat Ronaldo în 2013?", `<b>69 de goluri oficiale în 2013</b> (59 pentru Real Madrid și 10 pentru Portugalia) — cel mai mare an calendaristic al carierei sale și un an care a adus un triplet pentru Portugalia în 15 minute, împotriva Irlandei de Nord. Consultă <a href="/${lang}/goalsbyyear">statisticile pentru 2013</a>.`],
+      ["Câte trofee a câștigat Cristiano Ronaldo?", `<b>${n(LIVE.trophies)} trofee de echipă la seniori</b> — 32 cu cluburile (Real Madrid 15, Manchester United 9, Juventus 5, Al Nassr 2, Sporting CP 1) și 3 cu Portugalia (Euro 2016, Liga Națiunilor 2019 și 2025), plus 5 trofee Ballon d'Or. Unele publicații menționează 36–37 pentru că numără diferit Supercupa UEFA și supercupele naționale. Vezi <a href="/${lang}/achievements">lista completă a trofeelor</a>.`],
+      ["Câte trofee Ballon d'Or a câștigat Cristiano Ronaldo?", `Cristiano Ronaldo a câștigat <b>5 trofee Ballon d'Or</b> (2008, 2013, 2014, 2016, 2017) — prima în 2008, la 23 de ani, când a fost numit pe toate cele 96 de buletine de vot.`],
+      ["Care este bilanțul lui Ronaldo împotriva lui Real Madrid?", `Bilanțul lui Ronaldo în El Clásico pentru Real Madrid — și fiecare gol marcat împotriva lui Real Madrid în altă echipă — sunt strânse pe <a href="/${lang}/vs-real-madrid">pagina Ronaldo vs Real Madrid</a>.`],
+      ["Care sunt statisticile lui Ronaldo în UEFA Champions League?", `Ronaldo a marcat <b>140 de goluri în 183 de apariții în Liga Campionilor UEFA</b> — recordul absolut al competiției — cu <b>42 de assisturi</b>, și el record, și a câștigat 5 trofee (2008, 2014, 2016, 2017, 2018). Vezi toate datele pe <a href="/${lang}/champions-league">pagina Ligii Campionilor</a>.`],
+      ["Care sunt statisticile lui Ronaldo la Campionatul Mondial FIFA?", `Ronaldo a jucat la <b>șase Campionate Mondiale FIFA</b> (2006, 2010, 2014, 2018, 2022 și 2026) și rămâne recordmanul de goluri al Portugaliei, cu <b>146 de goluri în 234 de selecții</b> — recordul absolut la nivel internațional.`],
+      ["Cât de departe este Cristiano Ronaldo de 1.000 de goluri în carieră?", `Cu ${n(t.goals)} goluri, Ronaldo mai are nevoie de <b>${Math.max(0, 1000 - t.goals)} goluri</b> pentru a ajunge la 1.000 de goluri în carieră — un prag la care niciun jucător nu a ajuns în fotbalul oficial de seniori.`]
     ]
   };
 
 export const BY_YEAR = {
-    head: (ys, best, t) => `De la primul său gol oficial în ${ys[0].year} până la <b>${best.goals} goluri în ${best.year}</b> — fiecare an dintr-o carieră de ${n(t.goals)} goluri.`,
-    cap: (best, t) => `Bare: goluri în acel an (maxim ${best.goals} în ${best.year}). Linie: urcare până la ${n(t.goals)}.`,
-    chartLabel: (best) => `Goluri pe an calendaristic`,
+    head: (ys, best, t) => `De la primul gol la seniori din ${ys[0].year} până la <b>${best.goals} în ${best.year}</b> — fiecare an calendaristic al unei cariere care a produs ${n(t.goals)} goluri, cu totaluri cumulate și vârstă.`,
+    cap: (best, t) => `Bare: golurile acelui an (vârf ${best.goals}, în ${best.year}). Linie: drumul până la ${n(t.goals)}.`,
+    chartLabel: (best) => `Golurile lui Ronaldo pe an calendaristic și totalul cumulat al carierei, cu un vârf de ${best.goals} în ${best.year}`,
     kpiCareer: "Goluri în carieră",
     kpiBest: "Cel mai bun an",
-    kpiBestSub: "Record mondial într-un an calendaristic.",
-    kpiCurrSub: "Sezon în desfășurare.",
-    kpiYears: "Ani cu gol",
-    kpiYearsSub: (ys, last) => `Fiecare an de la ${ys[0].year} până la ${last.year}.`,
+    kpiBestSub: "Cele mai multe goluri marcate într-un an calendaristic.",
+    kpiCurrSub: "Sezon în curs.",
+    kpiYears: "Ani cu goluri",
+    kpiYearsSub: (ys, last) => `Fiecare an de la ${ys[0].year} la ${last.year}.`,
     decades: "Goluri în anii",
-    tableSub: "Cele mai recente primele. 2026 este în desfășurare. Clic pe o coloană pentru sortare.",
-    caption: "Goluri, total în carieră și vârstă pentru fiecare an din 2004 încoace.",
-    thYear: "An", thGoals: "Goluri", thTotal: "Total carieră", thAge: "Vârstă",
-    inProgNote: "* Sezonul 2026 în curs — se actualizează după fiecare meci.",
-    filterPlaceholder: "Filtrează ani — ex. 2012",
-    bestYearHtml: (best) => `<p><b>${best.year} este cel mai prolific an din istoria fotbalului: ${best.goals} goluri</b> — 79 pentru Barcelona și 12 pentru Argentina. <a href="/ro/dashboard">Vezi repartizarea în panou</a>.</p>`
+    tableSub: "Cele mai noi la început. 2026 este marcat cu o stea cât timp sezonul se desfășoară. Apasă pe o coloană pentru a sorta sau scrie pentru a filtra. Anii de vârf primesc o notă de subsol — trece cu mouse-ul peste an.",
+    caption: "Goluri, total cumulat al carierei și vârstă pentru fiecare an calendaristic de la debutul lui Ronaldo din 2002.",
+    thYear: "An", thGoals: "Goluri", thTotal: "Total în carieră", thAge: "Vârstă",
+    inProgNote: "* Sezonul 2026 este în curs — se actualizează după fiecare meci.",
+    filterPlaceholder: "Filtrează anii — de exemplu 2013",
+    bestYearHtml: (best) => `<p><b>${best.year} este anul calendaristic cel mai productiv al carierei lui Ronaldo: ${best.goals} goluri</b> — 59 pentru Real Madrid și 10 pentru Portugalia. A adus al doilea Ballon d'Or, un sezon de club cu 55 de goluri și trei goluri pentru Portugalia în 15 minute, împotriva Irlandei de Nord.</p><p>Anii următori cei mai buni — 2012 (63), 2014 (61) și 2011 (60) — arată cât de ridicat a rămas standardul pe parcursul a cinci sezoane consecutive, între 2010 și 2014. <a href="/ro/dashboard">Vezi cum se împart aceste goluri pe competiții</a>.</p>`
   };
 
 export const BY_SEASON = {
-    head: (best) => `Toate sezoanele de club din 2004/05 până în 2026 — <b>record: ${best.goals} goluri în ${best.season}</b> — campionat, cupă și meciuri europene.`,
-    clubSub: "Meciuri / goluri în fiecare format. 2026 este în desfășurare. Clic pe o coloană pentru sortare.",
-    caption: (len) => `Toate cele ${len} sezoane de club: Barcelona, PSG și Inter Miami.`,
-    thSeason: "Sezon", thClub: "Club", thApps: "Meciuri", thGoals: "Goluri", thLeague: "Campionat", thCup: "Cupă", thCont: "Europe", thOther: "Altele",
-    totalLabel: "Total cluburi", bestBadge: "Cel mai bun sezon de club",
-    filterClubPlaceholder: "Filtrează sezoane — ex. PSG, 2012",
-    countrySub: "Meciuri oficiale și amicale, cele mai recente primele.",
-    countryCaption: "Goluri pentru naționala Argentinei pe ani calendaristici, 2005–2026.",
-    thYear: "An", thNote: "Detalii", totalArgLabel: "Total Argentina",
-    filterCountryPlaceholder: "Filtrează anii Argentinei — ex. 2022",
-    bestSeasonHtml: (best) => `<p><b>${best.season} — ${best.goals} goluri în ${best.apps} meciuri pentru Barcelona</b> — este cel mai prolific sezon de club din istorie: 50 în La Liga, 14 în Champions League. <a href="/ro/goalsbyyear">Vezi aceleași goluri pe ani</a>.</p>`
+    head: (best) => `Fiecare sezon de club de la 2002/03 la 2026/27 — <b>cel mai bun: ${best.goals} goluri în ${best.season}</b> — cu împărțirea pe ligă, cupă și competiții continentale, plus Portugalia an cu an.`,
+    clubSub: "Meciuri / goluri în fiecare format. 2026/27 este sezonul în curs. Apasă pe o coloană pentru a sorta sau scrie pentru a filtra.",
+    caption: (len) => `Toate cele ${len} sezoane de club: Sporting CP 2002/03, Manchester United 2003/04–2008/09 și 2021/22–2022/23, Real Madrid 2009/10–2017/18, Juventus 2018/19–2021/22, Al Nassr 2022/23–2026/27.`,
+    thSeason: "Sezon", thClub: "Club", thApps: "Meciuri", thGoals: "Goluri", thLeague: "Ligă", thCup: "Cupă", thCont: "Continental", thOther: "Altele",
+    totalLabel: "Total la club", bestBadge: "Cel mai bun sezon de club",
+    filterClubPlaceholder: "Filtrează sezoanele — de exemplu Real Madrid, 2012",
+    countrySub: "Preliminare și turnee de calificare, plus meciurile amicale, cele mai noi la început.",
+    countryCaption: "Golurile Portugaliei pe an calendaristic, 2003–2026.",
+    thYear: "An", thNote: "Notă", totalArgLabel: "Total Portugalia",
+    filterCountryPlaceholder: "Filtrează anii Portugaliei — de exemplu 2016",
+    bestSeasonHtml: (best) => `<p><b>${best.season} — ${best.goals} goluri în ${best.apps} meciuri pentru ${best.club}</b> — este sezonul de club cel mai productiv al carierei sale: ${best.league.goals} în ligă, ${best.continental.goals} în Liga Campionilor, ${best.cup.goals} în cupă și ${best.other.goals} în supercupele de campioane. A marcat în fiecare competiție în care a intrat.</p><p>Îl depășește cu puțin pe legendarul 2011/12 — 60 de goluri, dintre care 46 în La Liga — într-o serie de șase sezoane la Madrid în care nu a coborât niciodată sub 51 de goluri la club. <a href="/ro/goalsbyyear">Aceleași goluri numărate pe an calendaristic</a>.</p>`
   };
 
 export const DASH = {
-    teamNames: { all: "toate echipele", barcelona: "Barcelona", psg: "PSG", miami: "Inter Miami", argentina: "Argentina" },
-    pills: [["all", "Toate echipele"], ["barcelona", "Barcelona"], ["psg", "PSG"], ["miami", "Inter Miami"], ["argentina", "Argentina"]],
-    head: (name) => `Toate cele 930 de goluri ale lui Lionel Messi analizate în 4 moduri — după competiție, sezon, tip de finalizare și parte a corpului — filtrate pentru <b>${esc(name)}</b>. Atinge o echipă pentru a actualiza graficele.`,
-    filterNote: (name, goals, apps, T) => `Se afișează ${name}: ${n(goals)} goluri în ${n(apps)} meciuri` + (T === "barcelona" || T === "psg" ? " (Defalcare Champions League: Barcelona 120, PSG 9 — din surse oficiale ale cluburilor)." : "."),
-    kpis: { goals: "Goluri", apps: "Meciuri", gpg: "Goluri pe meci", forTeam: (name) => `Pentru ${name}.` },
-    chartEmpty: "Niciun rând pentru acest filtru de echipă.",
-    figCap: (T, name) => T === "all" ? "Ani calendaristici, 2004 până în 2026." : T === "argentina" ? "Ani calendaristici cu Argentina." : "Sezoane de club pentru " + esc(name) + ".",
-    finishParts: { "Open play": "Acțiune deschisă", "Penalties": "Penalty-uri", "Free kicks": "Lovituri libere" },
-    finishCenter: "goluri carieră",
-    finishCaveat: "Totaluri de carieră combinate pentru toate echipele. Numărătoare oficială verificată.",
-    finishCaveatFiltered: (d) => `Nu există o defalcare pe echipe — vezi totalurile de carieră de mai jos. Din cele ${n(d.totals.goals)} goluri oficiale: ${d.byFinish.openPlay} din acțiune, ${d.byFinish.penalties} penalty-uri și ${d.byFinish.freeKicks} lovituri libere.`,
-    bodyParts: { "Left foot": "Piciorul stâng", "Right foot": "Piciorul drept", "Head": "Cap", "Other": "Altele (piept, etc.)" },
-    bodyCenter: "cu piciorul stâng",
-    bodyCaveat: "Totaluri de carieră combinate pentru toate echipele (numărătoare oficială verificată).",
-    ageName: (r) => `Vârsta ${r.age} · ${r.year}`,
-    ageCaveat: (apeak) => `Fiecare gol oficial în funcție de vârsta la care l-a marcat — cluburi și națională combinate. Vârf: ${apeak.goals} la vârsta de ${apeak.age} ani (${apeak.year}).`,
-    ageFilterNote: "Vârstele combină golurile de club și națională, așa că acest grafic acoperă doar întreaga carieră — ștergeți filtrul pentru a-l vedea.",
-    compCaption: (name) => `Goluri după competiție — ${esc(name)}.`,
-    thComp: "Competiție", thGoals: "Goluri", thShare: "Procent",
-    recAllTime: "Recordul all-time al competiției",
-    finishCaption: "Cum au fost marcate golurile și cu ce parte a corpului — totaluri din carieră, toate echipele.",
-    thFinish: "Finalizare / Partea corpului",
-    finishCaveatTable: "Defalcarea pe tip de finalizare și parte a corpului este o numărătoare oficială verificată.",
-    finishRows: (d) => [
-      ["Acțiune deschisă", d.byFinish.openPlay],
-      ["Penalty-uri", d.byFinish.penalties],
-      ["Lovituri libere directe", d.byFinish.freeKicks],
-      ["Piciorul stâng", d.byBodyPart.left],
-      ["Piciorul drept", d.byBodyPart.right],
-      ["Cap", d.byBodyPart.head],
-      ["Altele (piept etc.)", d.byBodyPart.other]
-    ],
-    teamCardSub: { goals: "goluri", apps: "meciuri", gpg: "pe meci", of: "din" },
-    records: (comp, d) => [
-      ["91", `<b>Goluri în 2012</b> — recordul mondial oficial într-un an calendaristic.`],
-      [n(comp("La Liga")), `<b>Goluri în La Liga</b> — recordul all-time al competiției, toate pentru Barcelona.`],
-      [n(comp("UEFA Champions League")), `<b>Goluri în Champions League</b> — 120 pentru Barcelona, 9 pentru PSG.`],
-      ["8", `<b>Baloane de Aur</b> — recordul all-time în fotbal (2009–12, 2015, 2019, 2021, 2023).`],
-      [n(d.hatTricks), `<b>Hat-trick-uri sau mai mult</b> pentru club și națională.`],
-      [`${LIVE.trophies}`, `<b>Trofee oficiale</b> — cel mai titrat fotbalist din istoria fotbalului.`]
-    ],
-    method: "Golurile din Champions League sunt împărțite în Barcelona 120 și PSG 9 conform documentelor oficiale ale cluburilor."
-  };
+  teamNames: { all: "toate echipele", real_madrid: "Real Madrid", manchester_united: "Manchester United", juventus: "Juventus", al_nassr: "Al Nassr", sporting_cp: "Sporting CP", portugal: "Portugalia" },
+  pills: [["all", "Toate echipele"], ["real_madrid", "Real Madrid"], ["manchester_united", "Manchester United"], ["juventus", "Juventus"], ["al_nassr", "Al Nassr"], ["sporting_cp", "Sporting CP"], ["portugal", "Portugalia"]],
+  head: (name) => `Fiecare gol al lui Ronaldo, tăiat în patru — pe competiție, sezon, tip de finalizare și parte a corpului — filtrat după <b>${esc(name)}</b>. Alege o echipă pentru a reface toate graficele.`,
+  filterNote: (name, goals, apps, T) => `Afișăm ${name}: ${n(goals)} goluri în ${n(apps)} meciuri` + (T === "real_madrid" ? " (Liga Campionilor: 140 de goluri în 183 de apariții și 42 de assisturi — toate trei sunt recorduri ale competiției)." : "."),
+  kpis: { goals: "Goluri", apps: "Apariții", gpg: "Goluri pe meci", forTeam: (name) => `Pentru ${name}.` },
+  chartEmpty: "Nicio linie pentru acest filtru de echipă.",
+  figCap: (T, name) => T === "all" ? "Ani calendaristici, 2002–2026." : ["portugal", "portugal_nt", "country"].includes(T) ? "Ani calendaristici ai Portugaliei." : "Sezoane de club pentru " + esc(name) + ".",
+  finishParts: { "Open play": "Din acțiune", "Penalties": "Penalty-uri", "Free kicks": "Lovituri libere" },
+  finishCenter: "goluri în carieră",
+  finishCaveat: "Totaluri de carieră pentru toate echipele la un loc — nu există o împărțire pe echipe. Cifră compusă, provizorie.",
+  finishCaveatFiltered: (d) => `Nu există o împărțire pe echipe pentru tipul finalizării, așa că acest grafic acoperă doar totalul tuturor echipelor — vezi totalurile de carieră de mai jos. Cei ${n(d.totals.goals)} goluri ai lui Ronaldo se împart în ${d.byFinish.openPlay} din acțiune, ${d.byFinish.penalties} penalty-uri și ${d.byFinish.freeKicks} lovituri libere (cifră compusă, provizorie).`,
+  bodyParts: { "Left foot": "Picior stâng", "Right foot": "Picior drept", "Head": "Cap", "Other": "Altele" },
+  bodyCenter: "goluri cu piciorul drept",
+  bodyCaveat: "Totaluri de carieră pentru toate echipele la un loc — cifră compusă, provizorie, până la terminarea numărării manuale complete.",
+  ageName: (r) => `Vârsta ${r.age} · ${r.year}`,
+  ageCaveat: (apeak) => `Fiecare gol de seniori, după vârsta la care a fost marcat — club și țară la un loc. Vârf: ${apeak.goals} la vârsta de ${apeak.age} (${apeak.year}).`,
+  ageFilterNote: "Vârstele amestecă golurile de club și cele pentru țară, așa că acest grafic acoperă întreaga carieră — golește filtrul de echipă pentru a-l vedea.",
+  compCaption: (name) => `Goluri pe competiție — ${esc(name)}.`,
+  thComp: "Competiție", thGoals: "Goluri", thShare: "Procent",
+  recAllTime: "Record absolut al competiției",
+  finishCaption: "Cum au fost marcate golurile și cu ce — totaluri de carieră, toate echipele.",
+  thFinish: "Finalizare",
+  finishCaveatTable: "Împărțirea pe finalizare și pe partea corpului este o cifră compusă, provizorie.",
+  finishRows: (d) => [
+    ["Din acțiune", d.byFinish.openPlay],
+    ["Penalty-uri", d.byFinish.penalties],
+    ["Lovituri libere", d.byFinish.freeKicks],
+    ["Picior stâng", d.byBodyPart.left],
+    ["Picior drept", d.byBodyPart.right],
+    ["Cap", d.byBodyPart.head],
+    ["Altele (piept etc.)", d.byBodyPart.other]
+  ],
+  teamCardSub: { goals: "goluri", apps: "meciuri", gpg: "pe meci", of: "din" },
+  records: (comp, d) => [
+    ["69", `<b>Goluri în 2013</b> — cele mai multe marcate într-un an calendaristic.`],
+    [n(comp("La Liga")), `<b>Goluri în La Liga</b>, recordul absolut al competiției, toate pentru Real Madrid.`],
+    ["140", `<b>Goluri în Liga Campionilor</b> — recordul din istoria competiției.`],
+    ["5", `<b>Trofee Ballon d'Or</b> (2008, 2013, 2014, 2016, 2017).`],
+    [n(d.hatTricks), `<b>Triplete sau mai multe</b> pentru club și țară (cifră provizorie).`],
+    [`${LIVE.trophies}`, `<b>Trofee de echipă</b> — 32 cu cluburile, 3 cu Portugalia.`]
+  ],
+  method: "Cifrele pentru Liga Campionilor (140 de goluri în 183 de apariții, 42 de assisturi) sunt recorduri ale competiției, preluate din registrele clubului și ale UEFA; celelalte împărțiri pe competiții, filtrate după echipă, urmează maparea competițiilor pe sezoane de club și sunt documentate în fișierul de date."
+};
 
 export const TIMELINE = {
-    head: (t) => `De la debutul la Barcelona în 2004 până la <b>${n(t.goals)} goluri în carieră</b> — nopțile istorice, recordurile și trofeele în ordine.`,
-    keydates: (t, lastUpdated) => [
-      ["16 Oct 2004", "Debutul oficial pentru <b>Barcelona</b> împotriva lui Espanyol, la 17 ani."],
-      ["1 Mai 2005", "Primul gol oficial, împotriva lui Albacete — cel mai tânăr marcator al Barcelonei la acea dată."],
-      ["17 Aug 2005", "Debutul pentru naționala <b>Argentinei</b> împotriva Ungariei."],
-      ["2012", "<b>91 de goluri</b> într-un an calendaristic — recordul mondial all-time al fotbalului."],
-      ["18 Dec 2022", "Câștigă <b>Cupa Mondială</b> cu Argentina în Qatar, marcând de două ori în finală."],
-      [esc(lastUpdated), `<b>${n(t.goals)} goluri oficiale</b> pentru club și națională — ultima verificare.`]
-    ],
-    inProg: "în desfășurare",
-    goals: "goluri",
-    goalsInEra: (goals, share, total) => `<b>${n(goals)} goluri</b> · ${share}% din ${n(total)}`,
-    peakYear: (pk, tr) => `<p class="ch-callout">An de vârf <b>${pk.year} · ${pk.goals} goluri</b>` + (tr ? ` · <b>${tr}</b> ${tr === 1 ? "trofeu colectiv" : "trofee colective"} câștigate în această perioadă` : "") + `</p>`,
-    empty: (val, total) => `Niciun rezultat pentru “${val}” — ștergeți căutarea pentru toate cele ${total} repere.`,
-    tagRecord: "Record", tagWc: "Mondial", tagFirst: "Primul",
-    faq: [
-      ["Când a debutat Messi?", "Pentru Barcelona pe <b>16 octombrie 2004</b> contra lui Espanyol la 17 ani; pentru Argentina pe 17 august 2005."],
-      ["Când a marcat Messi primul său gol?", "Pe <b>1 mai 2005</b> împotriva lui Albacete — cel mai tânăr marcator din istoria clubului la acea vreme."],
-      ["Când a câștigat Messi Cupa Mondială?", "Pe <b>18 decembrie 2022</b>, învingând Franța la loviturile de departajare după o remiză 3–3 la Lusail."],
-      ["Când a plecat Messi de la Barcelona?", "În <b>august 2021</b>, semnând cu Paris Saint-Germain după 21 de ani la club."],
-      ["Când a ajuns Messi la Inter Miami?", "În <b>iulie 2023</b>, câștigând Leagues Cup la câteva săptămâni de la sosire."]
-    ],
-    method: "Cronologia conține repere la nivel de zi și an; barele de goluri însumează exact totalul carierei."
-  };
+  head: (t) => `De la debutul cu Sporting CP în 2002 până la <b>${n(t.goals)} goluri în carieră</b> și tot mai departe — nopțile decisive, recordurile și trofeele, datate și în ordine.`,
+  keydates: (t, lastUpdated) => [
+    ["14 aug. 2002", "Debut la seniori pentru <b>Sporting CP</b> împotriva celor de la Inter, în turul trei de preliminar al Ligii Campionilor, la 17 ani."],
+    ["20 aug. 2003", "Debut pentru <b>Portugalia</b> împotriva Kazahstanului, la câteva săptămâni după ce a preluat la Manchester United legenda numărului 7."],
+    ["2008", "<b>Ballon d'Or</b> la 23 de ani, numit pe toate cele 96 de buletine de vot, cu Liga Campionilor și Campionatul Lumii al Fotbalului FIFA."],
+    ["2013", "<b>69 de goluri</b> în anul calendaristic — recordul său personal, inclusiv un triplet pentru Portugalia în 15 minute."],
+    ["2016", "Ridică <b>Campionatul European</b> ca căpitan al Portugaliei, cu trei goluri și Gantă de argint."],
+    [esc(lastUpdated), `<b>${n(t.goals)} goluri în carieră</b> pentru club și țară — ultima verificare la această dată.`]
+  ],
+  inProg: "în curs",
+  goals: "goluri",
+  goalsInEra: (goals, share, total) => `<b>${n(goals)} goluri</b> · ${share}% din ${n(total)}`,
+  peakYear: (pk, tr) => `<p class="ch-callout">An de vârf <b>${pk.year} · ${pk.goals} goluri</b>` + (tr ? ` · <b>${tr}</b> trofee de echipă câștigate în această perioadă` : "") + `</p>`,
+  empty: (val, total) => `Nimic nu corespunde „${val}” — golește căutarea pentru a vedea toate cele ${total} repere.`,
+  tagRecord: "Record", tagWc: "Campionat Mondial", tagFirst: "Primul",
+  faq: [
+    ["Când a debutat Ronaldo la seniori?", "Pentru <b>Sporting CP</b>, la <b>14 august 2002</b>, împotriva celor de la Inter, în turul trei de preliminar al Ligii Campionilor, la 17 ani; primele sale goluri la seniori au venit două luni mai târziu, împotriva celor de la Moreirense."],
+    ["Când a marcat Ronaldo primul gol?", "Primul gol pentru Portugalia a fost un cap de gol împotriva <b>Greciei, la Euro 2004</b>; primul gol la Manchester United, în același an, a fost o lovitură liberă împotriva celor de la Portsmouth."],
+    ["Când a câștigat Ronaldo prima Ligă a Campionilor?", "Prima oară în <b>2008</b>, cu Manchester United, apoi de patru ori la rând cu Real Madrid, în <b>2014, 2016, 2017 și 2018</b>."],
+    ["Când a semnat Ronaldo pentru Real Madrid?", "În <b>iunie 2009</b>, pentru o sumă care era atunci record mondial — cu 80.000 de spectatori la Bernabéu la prezentare."],
+    ["Când a ajuns Ronaldo la Al Nassr?", "În <b>ianuarie 2023</b>, debutând ca căpitan împotriva lui Al-Ettifaq și marcând de două ori într-un egal de 2–2."]
+  ],
+  method: "Intrările cronologiei sunt repere la nivel de an și de dată; barele de goluri pe etape împart anii calendaristici în intervale care nu se suprapun, astfel încât suma lor să redea totalul carierei."
+};
 
 export const ACH = {
-    head: (teamTotal) => `<b>${teamTotal} trofee colective</b> — cea mai decorată carieră din istoria fotbalului — plus un record de <b>8 Baloane de Aur</b>.`,
-    kpis: (per) => [
-      ["Trofee colective", 46, `Barcelona ${per["Barcelona"] || 0} · Argentina ${per["Argentina"] || 0} · PSG ${per["Paris Saint-Germain"] || 0} · Miami ${per["Inter Miami"] || 0}.`],
-      ["Baloane de Aur", "8", "Record — 2009–12, 2015, 2019, 2021, 2023."],
-      ["Ligi ale Campionilor", "4", "2006, 2009, 2011, 2015 — toate cu Barcelona."],
-      ["Turnee internaționale majore", "3", "Cupa Mondială 2022, Copas América 2021 & 2024."]
-    ],
-    qa: (teamTotal, per) => [
-      ["Câte trofee a câștigat Messi?", `<b>${teamTotal} titluri oficiale la seniori</b>: ${per["Barcelona"] || 0} la Barcelona, ${per["Paris Saint-Germain"] || 0} la PSG, ${per["Inter Miami"] || 0} la Inter Miami și ${per["Argentina"] || 0} la națională.`],
-      ["Câte Baloane de Aur are Messi?", "<b>Opt</b> — mai mult decât orice alt jucător din istorie (2009–12, 2015, 2019, 2021, 2023)."],
-      ["A câștigat Messi Cupa Mondială?", "<b>Da — 2022</b>, marcând de două ori în finala împotriva Franței, plus Copas América în 2021 și 2024."],
-      ["Câte Ligi ale Campionilor are Messi?", "<b>Patru</b>, toate cu Barcelona: 2006, 2009, 2011 și 2015."]
-    ],
-    teamHeader: (team, sub) => `${esc(team)} — ${sub} trofee`,
-    indHeader: (indTotal) => `Distincții individuale — ${indTotal} premii`,
-    faq: [
-      ["Care este cel mai important trofeu al lui Messi?", "<b>Cupa Mondială 2022</b> — cel mai râvnit titlu al carierei sale, cucerit fiind desemnat cel mai bun jucător al turneului."],
-      ["Câte titluri de campion are Messi?", "<b>12 titluri de ligă</b> — 10 La Liga, 2 Ligue 1 — plus Supporters' Shield cu Miami."],
-      ["Câte premii individuale a câștigat Messi?", "8 Baloane de Aur, 6 Ghete de Aur și două Baloane de Aur la Cupa Mondială — fiecare fiind un record."],
-      ["Este Messi cel mai titrat jucător din toate timpurile?", "Prin cumulul titlurilor de echipă și recordurilor individuale — <b>da, fără îndoială</b>."]
-    ]
-  };
+  head: (teamTotal) => `<b>${teamTotal} trofee de echipă</b> — 32 cu cluburile și 3 cu Portugalia — plus <b>5 trofee Ballon d'Or</b>. Fiecare trofeu, pe rând, cu anii în care a fost câștigat.`,
+  kpis: (per) => [
+    ["Trofee de echipă", 35, `Real Madrid ${per["Real Madrid"] || 0} · Manchester United ${per["Manchester United"] || 0} · Juventus ${per["Juventus"] || 0} · Portugalia ${per["Portugal"] || 0}.`],
+    ["Trofee Ballon d'Or", "5", "2008, 2013, 2014, 2016, 2017."],
+    ["Gantele de Aur europene", "4", "2008, 2011, 2014, 2015."],
+    ["Sezoane de golgeter în UCL", "7", "Golgeter în Liga Campionilor în 2008, apoi în fiecare sezon de la 2013 la 2018."]
+  ],
+  qa: (teamTotal, per) => [
+    ["Câte trofee a câștigat Ronaldo?", `<b>${teamTotal} trofee de echipă la seniori</b>: ${per["Real Madrid"] || 0} Real Madrid, ${per["Manchester United"] || 0} Manchester United, ${per["Juventus"] || 0} Juventus, ${per["Al Nassr"] || 0} Al Nassr, ${per["Sporting CP"] || 0} Sporting CP și ${per["Portugal"] || 0} Portugalia.`],
+    ["Câte trofee Ballon d'Or a câștigat Ronaldo?", "<b>Cinci</b> — 2008, 2013, 2014, 2016 și 2017, prima la 23 de ani."],
+    ["A câștigat Ronaldo un trofeu internațional major?", "<b>Da</b> — Euro 2016 la UEFA, în calitate de căpitan, și Liga Națiunilor UEFA în 2019 și 2025."],
+    ["Câte Ligi ale Campionilor a câștigat Ronaldo?", "<b>Cinci</b>: 2008 cu Manchester United, apoi 2014, 2016, 2017 și 2018 cu Real Madrid."]
+  ],
+  teamHeader: (team, sub) => `${esc(team)} — ${sub} trofee`,
+  indHeader: (indTotal) => `Distincții individuale — ${indTotal} premii`,
+  faq: [
+    ["Care este cel mai important trofeu al lui Ronaldo?", "<b>Campionatul European din 2016</b> — trofeul pe care l-a câștigat cu Portugalia la Paris, în calitate de căpitan, fiind al doilea cel mai bun marcator al turneului."],
+    ["Câte titluri de ligă a câștigat Ronaldo?", "<b>Opt</b> — 3 Premier League, 2 La Liga, 2 Serie A și 1 Saudi Pro League, după cum sunt enumerate în lista de palmares din această arhivă."],
+    ["Câte distincții individuale a câștigat Ronaldo?", "Cinci trofee Ballon d'Or, patru Gantele de Aur europene, trei premii UEFA de Jucătorul Anului, FIFA World Player of the Year în 2008, Premiul FIFA Puskás în 2009, Gantă de Aur la Euro 2020 și The Best FIFA Men's Player în 2016 și 2017."],
+    ["Este Ronaldo cel mai decorat jucător din toate timpurile?", "După trofeele de echipă, Messi conduce cu 46, față de 35 ale lui Ronaldo. Ronaldo conduce în ceea ce privește recordurile de goluri — 981 de goluri, dintre care 140 în Liga Campionilor, și 146 de goluri în 234 de selecții pentru Portugalia."]
+  ]
+};
 
 export const BDAY = {
-    months: ["", "Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"],
-    badgeSuccess: "🎉 Da! Messi a marcat de ziua ta de naștere!",
-    badgeMessi: "🎂 Ziua de naștere a lui Leo Messi însuși!",
-    badgeEmpty: "Niciun gol la această dată",
-    headlineSuccess: (g, m, d) => `Lionel Messi a marcat <b>${g} ${g === 1 ? "gol" : "goluri"}</b> în <b>${m} ${m === 1 ? "meci" : "meciuri"}</b> pe ${d} de-a lungul carierei sale de senior!`,
-    headlineMessi: `Îți împarți ziua de naștere cu <b>Lionel Andrés Messi</b> (născut pe 24 iunie 1987 la Rosario)!`,
-    headlineEmpty: (d) => `Lionel Messi nu a marcat pe <b>${d}</b> în timpul carierei sale de senior.`,
+    months: ["", "ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"],
+    badgeSuccess: "🎉 Da! Ronaldo a marcat de ziua ta!",
+    badgeMessi: "🎂 Ziua de naștere a lui CR7!",
+    badgeEmpty: "Niciun gol în această dată",
+    headlineSuccess: (g, m, d) => `Cristiano Ronaldo a marcat <b>${g} ${g === 1 ? "gol" : "goluri"}</b> în <b>${m} ${m === 1 ? "meci" : "meciuri"}</b> pe ${d}, de-a lungul carierei sale de seniori!`,
+    headlineMessi: `Ai aceeași zi de naștere ca <b>Cristiano Ronaldo</b> (născut pe 5 februarie 1985, în Funchal, Madeira)!`,
+    headlineEmpty: (d) => `Cristiano Ronaldo nu a marcat pe <b>${d}</b> în cariera sa de seniori.`,
     whyZeroTitle: "De ce 0 goluri?",
-    whyZeroMessi: "Lionel Messi nu a disputat niciun meci oficial pe 24 iunie, deoarece sfârșitul lunii iunie coincide cu vacanța de vară a cluburilor europene sau cu zile de pauză între meciurile turneelor internaționale.",
-    whyZeroMessiSub: "Îți împarți ziua specială cu cel mai mare fotbalist din istorie!",
-    emptyExpl: "Messi nu a avut meci programat sau nu a marcat în această zi — dar a marcat în <b>292 din cele 366 de zile (79,8%)</b> ale anului!",
-    closestDay: (d, g) => `Cea mai apropiată zi calendaristică în care Messi a marcat este <b>${d}</b> (${g} goluri în carieră).`,
-    closestBtn: (d, g) => `Vezi ${d} (${g} goluri) &rarr;`,
-    watchClip: (cnt) => `Vezi ${cnt > 1 ? cnt + " videoclipuri cu goluri" : "videoclipul golului"}`,
-    searchYt: "🔍 Caută pe YouTube",
-    playInline: "📺 Redă aici",
+    whyZeroMessi: "5 februarie cade la mijlocul sezonului european de club, așa că pentru Ronaldo este de obicei o zi obișnuită de meci: programul și minutele jocate de el decid dacă se marchează un gol în data în care s-a născut.",
+    whyZeroMessiSub: "Împarțiți ziua specială cu Cristiano Ronaldo — CR7, născut pe 5 februarie 1985.",
+    emptyExpl: "Ronaldo nu a avut meci programat sau nu a marcat în această zi calendaristică — dar a marcat în majoritatea zilelor anului, la club și pentru țară.",
+    closestDay: (d, g) => `Ziua calendaristică cea mai apropiată în care Ronaldo a marcat este <b>${d}</b> (${g} goluri în carieră).`,
+    closestBtn: (d, g) => `Verifică ${d} (${g} goluri) &rarr;`,
+    watchClip: (cnt) => `Urmărește ${cnt > 1 ? cnt + " secvențe cu goluri" : "secvența cu golul"}`,
+    searchYt: "🔍 Caută reprizele",
+    playInline: "📺 Redă în pagină",
     closeInline: "✕ Închide videoclipul",
-    ytHighlights: "Rezumat pe YouTube",
+    ytHighlights: "Reprize YouTube",
     goalSummary: (g) => `${g} ${g === 1 ? "gol marcat" : "goluri marcate"}:`,
-    goalTab: (idx, min) => `Gol ${idx}${min ? ` (${min}')` : ""}`,
-    shareSuccess: (d, g, m) => `Lionel Messi a marcat ${g} goluri în ${m} meciuri de ziua mea (${d})! Verifică data ta:`,
-    shareEmpty: (d) => `A marcat Messi de ziua ta de naștere? A marcat în 292 din 366 de zile ale anului! Verifică:`,
+    goalTab: (idx, min) => `Golul ${idx}${min ? ` (${min}')` : ""}`,
+    shareSuccess: (d, g, m) => `Cristiano Ronaldo a marcat ${g} goluri în ${m} meciuri în ziua mea de naștere (${d})! Verifică-ți data:`,
+    shareEmpty: (d) => `A marcat Cristiano Ronaldo de ziua ta de naștere? A marcat în majoritatea zilelor anului, la club și pentru țară. Verifică-zi data:`,
   };
 
 export const LATEST_GOAL = {
-    goalPrefix: "Golul #",
-    scoreline: "Scor",
-    didScoreTodayYes: "DA! Lionel Messi a marcat astăzi: Golul #{goalNum} în minutul {minute} împotriva {opp} ({score})!",
-    didScoreTodayNo: "A marcat Messi azi? Cel mai recent meci oficial al lui Lionel Messi a avut loc pe {date} în {comp}, unde a marcat Golul #{goalNum} al carierei în minutul {minute} pentru victoria cu {score}. Urmăriți reluarea video oficială mai sus.",
-    matchResult: "Rezultatul celui mai recent meci: {title}",
-    goalBadge: "Golul #{goalNum} marcat ({minute})",
-    playHighlight: "Selectați oricare dintre golurile recente ale lui Lionel Messi de mai jos pentru a urmări clipul video în player:",
+    goalPrefix: "Golul nr.",
+    scoreline: "Rezultat",
+    didScoreTodayYes: "DA! Cristiano Ronaldo a marcat azi: golul nr. {goalNum} în minutul {minute}, împotriva celor de la {opp} ({score})!",
+    didScoreTodayNo: "A marcat Ronaldo azi? Ultimul meci oficial al lui Cristiano Ronaldo s-a disputat pe {date}, în {comp}, unde a marcat golul nr. {goalNum} din carieră în minutul {minute}, pentru a închide la {score}. Urmărește mai jos videoclipul oficial al golului.",
+    matchResult: "Rezultatul ultimului meci: {title}",
+    goalBadge: "Golul nr. {goalNum} marcat ({minute})",
+    playHighlight: "Alege oricare dintre cele mai recente goluri ale lui Cristiano Ronaldo de mai jos pentru a încărca instantaneu videoclipul în playerul de deasupra:",
     viewDateGoals: "Vezi golurile din {formattedDate} →",
-    tagHeader: "Lovitură de cap 🔥",
+    tagHeader: "Cap de gol 🔥",
     tagFreekick: "Lovitură liberă directă 🔥",
     tagPenalty: "Penalty",
     tagLeftFoot: "Șut cu piciorul stâng",
-    tagRightFoot: "Piciorul drept",
-    tagOpenPlay: "Acțiune de joc",
-    assist: "Pasă decisivă"
+    tagRightFoot: "Picior drept",
+    tagOpenPlay: "Din acțiune",
+    assist: "Assist"
   };
 
 export const ARG_STREAM = {
-    badge: "🇦🇷 ULTIMUL MECI CU ARGENTINA",
-    title: "Meciul de Adio al lui Lionel Messi",
-    text: "Meciul de adio al lui Lionel Messi pe 6 octombrie 2026! Urmărește transmisiunea LIVE gratuit și FĂRĂ RECLAME.",
+    badge: "🇵🇹 SERA PORTUGALIEI",
+    title: "Cristiano Ronaldo și Portugalia",
+    text: "Sera Portugaliei — urmărește TRANSMISIUNEA LIVE gratuit, FĂRĂ RECLAME.",
     highlight: "Transmisiune live gratuită • Fără reclame",
-    cta: "Vezi Transmisiunea Gratuită ▶",
+    cta: "Urmărește gratuit ▶",
     closeAria: "Închide notificarea",
-    matchCardTitle: "Meci Istoric de Adio • 6 Oct 2026",
-    matchCardDesc: "Urmărește ultimul meci al lui Lionel Messi pentru Argentina în direct pe Koora Live, fără reclame."
+    matchCardTitle: "Naționala Portugaliei • Seara meciului, în direct",
+    matchCardDesc: "Urmărește live pe Koora Live meciul lui Cristiano Ronaldo și al Portugaliei — transmisiune gratuită, zero reclame."
   };
 
 export const EXPLORE_LANGS = [
-    { href: "/ro/birthday", page: "birthday", t: "🎂 A marcat Messi de ziua ta de naștere?", d: (d) => `Caută în toate cele 366 de zile din an cu cele ${n(d.totals.goals)} goluri ale lui Messi.` },
-    { href: "/ro/messi-vs-ronaldo", page: "messi-vs-ronaldo", t: "🐐 Messi vs Messi All-Time", d: () => `Statistici cap la cap: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goluri, ${LIVE.trophies} vs ${LIVE.rTrophies} trofee, 8 Baloane de Aur.` },
-    { href: "/ro/vs-real-madrid", page: "vs-real-madrid", t: "⚔️ Messi vs Real Madrid", d: () => "Toate cele 26 de goluri din El Clásico, 45 de meciuri, 14 pase de gol." },
-    { href: "/ro/champions-league", page: "champions-league", t: "⭐ Recordul în Champions League", d: () => "129 de goluri în UEFA Champions League, 8 hat-trick-uri și 4 trofee europene." },
-    { href: "/ro/latest-goal", page: "latest-goal", t: "⚽ Ultimul gol al lui Messi video", d: () => "Urmărește videoclipul ultimului gol al lui Messi, vezi dacă a marcat azi și cele mai recente goluri." },
-    { href: "/ro", page: "home", t: "Statisticile lui Lionel Messi", d: (d) => `Cifrele cheie: ${n(d.totals.goals)} goluri în ${n(d.totals.apps)} meciuri oficiale.` },
-    { href: "/ro/dashboard", page: "dashboard", t: "Panoul interactiv de statistici", d: () => "Filtrează pe Barcelona, PSG, Inter Miami sau Argentina." },
-    { href: "/ro/timeline", page: "timeline", t: "Cronologia carierei", d: () => "Fiecare moment istoric datat din 2004 până azi." },
-  ];
+  { href: "/ro/birthday", page: "birthday", t: "🎂 A marcat Ronaldo de ziua ta de naștere?", d: (d) => `Caută în toate cele 366 de zile calendaristice, cu secvențe video, din cei ${n(d.totals.goals)} de goluri ai carierei sale de seniori.` },
+  { href: "/ro/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo vs Messi, în toate timpurile", d: () => `Statistici față în față: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goluri, ${LIVE.trophies} vs ${LIVE.rTrophies} trofee, 5 vs 8 trofee Ballon d'Or.` },
+  { href: "/ro/vs-real-madrid", page: "vs-real-madrid", t: "⚔️ Ronaldo vs Real Madrid", d: () => "Fiecare gol al lui Ronaldo în Clásico și fiecare gol marcat împotriva lui Real Madrid în altă echipă." },
+  { href: "/ro/champions-league", page: "champions-league", t: "⭐ Recordul în Liga Campionilor", d: () => "140 de goluri în UEFA Champions League, 42 de assisturi și 5 trofee europene." },
+  { href: "/ro/latest-goal", page: "latest-goal", t: "⚽ Cel mai recent gol al lui Ronaldo, în video", d: () => "Urmărește videoclipul ultimului gol al lui Ronaldo, vezi dacă a marcat azi și vezi secvențele recente." },
+  { href: "/ro", page: "home", t: "Statisticile carierei lui Ronaldo", d: (d) => `Cifrele principale: ${n(d.totals.goals)} goluri în ${n(d.totals.apps)} meciuri de seniori.` },
+  { href: "/ro/dashboard", page: "dashboard", t: "Panoul statisticilor lui Ronaldo", d: () => "Filtrează fiecare grafic după Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP sau Portugalia." },
+  { href: "/ro/timeline", page: "timeline", t: "Ronaldo de-a lungul anilor", d: () => "Fiecare reper al carierei, datat și în ordine, de la 2002 până azi." },
+];
 
+/* Deschiderile capitolelor pe etape. Rendererul caută mai întâi textul după
+   slug-ul etapei (rosario, peak, msn, carry, farewell, paris, miami) și cade
+   înapoi pe numele etapei, așa că ambele chei sunt mapate aici la același
+   text despre Ronaldo — nu trebuie modificat app.js. */
 export const ERA_INTROS = {
-    rosario: `La doar 17 ani, tânărul din Rosario debutează contra lui Espanyol în octombrie 2004. Primul gol oficial vine în mai 2005 împotriva lui Albacete, dintr-o pasă a lui Ronaldinho, iar în 2008 cucerește aurul olimpic.`,
-    peak: `Șase trofee în 2009. Patru Baloane de Aur consecutive. Apoi anul 2012: 91 de goluri într-un singur an calendaristic, doborând un record vechi de 40 de ani.`,
-    msn: `Messi, Suárez și Neymar — tridentul legendar MSN cucerește a doua triplă istorică în 2015 la Berlin. O forță ofensivă de neoprit.`,
-    carry: `Remontada istorică 6–1 cu PSG în 2017, celebrarea legendară cu tricoul ridicat pe Bernabéu și o nouă dublă titlu-cupă în 2018.`,
-    farewell: `Al șaselea Balon de Aur, Cupa Regelui din 2021 și emoționanta despărțire de Camp Nou după 21 de ani legendari la Barcelona.`,
-    paris: `Două titluri de campion la Paris, al șaptelea Balon de Aur și gloria supremă în Qatar pe 18 decembrie 2022: Cupa Mondială ridicată deasupra capului cu o dublă în finală.`,
-    miami: `Câștigarea Leagues Cup chiar din prima lună, al optulea Balon de Aur, o nouă Copa América cu Argentina și marșul istoric spre 1.000 de goluri oficiale.`
-  };
+  "The boy from Rosario":
+    `Cristiano Ronaldo a ajuns la Lisabona din Funchal, în Madeira, ca adolescent, cu o reputație de viteză și obiceiul de a cere mingea. Primul său sezon la seniori la Sporting CP a produs cinci goluri în 31 de apariții, iar în douăsprezece luni i-a fost înmântrânat legenda numărul 7 de la Manchester United, pentru 12.24 milioane de lire. A marcat în finala Cupei Angliei la 19 ani, a câștigat trei titluri de Premier League, Liga Campionilor și Campionatul Lumii al Fotbalului FIFA, iar în 2008 a fost desemnat cel mai bun jucător al lumii la 23 de ani — pe toate cele 96 de buletine de vot.`,
+  "The greatest peak football has seen":
+    `Real Madrid a plătit o sumă-record în 2009 și a primit cel mai scump talent ofensiv din istoria sportului. A răspuns cu un cap de gol în finala Copei del Rey împotriva Barcelonei în primul său sezon, apoi cu un titlu de La Liga câștigat cu un record de 100 de puncte și 46 de goluri în ligă. Până la sfârșitul lui 2012 ajunsese la 60 de goluri într-un an calendaristic și la 100 de goluri în La Liga pentru club, iar identitatea ofensivă a Madridului se reconstruia în jurul lui.`,
+  "MSN and the second treble":
+    `Trei sezoane la Madrid l-au dus pe Ronaldo dincolo de aproape fiecare bornă din carte. A marcat 69 de goluri în 2013, cel mai bun an calendaristic al carierei, inclusiv trei pentru Portugalia în cincisprezece minute împotriva Irlandei de Nord — unul dintre cele zece triplete internaționale, un record mondial. La Décima a venit în 2014, iar până la sfârșitul lui 2015, golul cu numărul 500 din carieră l-a lăsat în urmă pe fiecare marcator din istoria Ligii Campionilor.`,
+  "Carrying Barcelona":
+    `După Campionatul European din 2016, câștigat în Franța, Ronaldo a adăugat Liga Campionilor în 2017 — inclusiv un triplet împotriva celor de la Bayern München, care l-a dus la 100 de goluri în competiție — și un al cincilea Ballon d'Or în același sezon. A depășit-o pe Jimmy Greaves ca principal marcator în cele cinci ligi mari ale Europei, apoi a transferat la Juventus la 33 de ani și a marcat un triplet în primul său meci din Liga Campionilor de acolo.`,
+  "Farewell to Barcelona":
+    `Titlul Ligii Națiunilor și un loc în cartea recordurilor au venit în 2019, când golul cu numărul 700 din carieră a fost marcat împotriva Ucrainei, în octombrie. A 1.000-a apariție la seniori a urmat împotriva celor de la Cagliari, în februarie 2020, iar în 2021 a depășit-o pe Ali Daei și a devenit principalul marcator absolut al fotbalului internațional masculin, cu un al zecelea triplet internațional — un record mondial.`,
+  "Paris and the World Cup":
+    `Revenirea la Manchester United în 2021 i-a adus numărul 7 și o nouă scenă pentru cel mai în vârstă din vestiar, iar în 2022 a depășit-o pe Josef Bican cu un triplet împotriva lui Tottenham. Transferul în Arabia Saudită în ianuarie 2023 l-a făcut căpitanul lui Al Nassr și, la al 197-lea meci al reprezentativei, jucătorul cu cele mai multe selecții din istoria fotbalului internațional masculin.`,
+  "Miami and the road to 1,000":
+    `Al Nassr i-a oferit un început nou și un titlu în Saudi Pro League, dar recordurile au continuat să vină: golul cu numărul 900 în carieră, în Liga Națiunilor, în 2024, golul cu numărul 800 la club și golul cu numărul 100 pentru Al Nassr în 2025 — făcându-l primul jucător care a marcat 100 de goluri pentru patru cluburi — și, în 2026, golul cu numărul 500 marcat după împlinirea vârstei de 30 de ani și a șasea participare la Campionatul Mondial FIFA. Fiecare gol întinde acum curba spre 1.000.`
+};
+/* Chei alias: slug-urile etapelor (și slug-urile mai scurte ale etapelor lui
+   Ronaldo) duc la aceleași șapte paragrafe, astfel încât capitolele
+   cronologiei să se deschidă întotdeauna cu textul despre Ronaldo. */
+Object.assign(ERA_INTROS, {
+  rosario: ERA_INTROS["The boy from Rosario"],
+  peak: ERA_INTROS["The greatest peak football has seen"],
+  msn: ERA_INTROS["MSN and the second treble"],
+  carry: ERA_INTROS["Carrying Barcelona"],
+  farewell: ERA_INTROS["Farewell to Barcelona"],
+  paris: ERA_INTROS["Paris and the World Cup"],
+  miami: ERA_INTROS["Miami and the road to 1,000"],
+  lisbon: ERA_INTROS["The boy from Rosario"],
+  united: ERA_INTROS["The boy from Rosario"],
+  madrid: ERA_INTROS["The greatest peak football has seen"],
+  firstballon: ERA_INTROS["The greatest peak football has seen"],
+  juve: ERA_INTROS["Farewell to Barcelona"],
+  ronaldo2: ERA_INTROS["Paris and the World Cup"],
+  nassr: ERA_INTROS["Miami and the road to 1,000"],
+});
 
 export const CABINET = [
-    { title: "Cupa Mondială — 2022", sub: "Gloria supremă a fotbalului, Lusail 18 dec 2022.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Messi purtat pe brațe sărbătorind Cupa Mondială 2022 la Lusail", cap: "Campioni mondiali, Lusail 2022" },
-    { title: "Balonul de Aur — 8", sub: "Recordul de opt: 2009–12, 2015, 2019, 2021, 2023.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Messi ridicând al optulea Balon de Aur", cap: "Record istoric de 8 Baloane de Aur" },
-    { title: "Liga Campionilor — 4", sub: "2006, 2009, 2011, 2015 — toate cu Barcelona.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi sărbătorind câștigarea Ligii Campionilor", cap: "De patru ori campion al Europei cu Barcelona" },
-    { title: "Copa América — 2", sub: "Dublu campion continental consecutiv, 2021 și 2024.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi sărutând trofeul Copa América pe Maracanã", cap: "Campioni Copa América, Maracanã 2021" },
-    { title: "Titluri La Liga — 10", sub: "Dominație internă cu FC Barcelona 2004–2019.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Messi cu trofeul La Liga", cap: "De 10 ori campion al Spaniei cu Barcelona" }
+    { title: "Portugalia și Campionatul Mondial FIFA", sub: "Șase Campionate Mondiale (2006–2026) și 146 de goluri în 234 de selecții pentru Portugalia.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo în tricoul Portugaliei la un Campionat Mondial FIFA", cap: "Recordmanul de goluri al Portugaliei, la șase Campionate Mondiale" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — primul la 23 de ani.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo ridicând deasupra capului a cincea trofee Ballon d'Or", cap: "Cinci trofee Ballon d'Or" },
+    { title: "Liga Campionilor — 5", sub: "140 de goluri, recordul competiției, în 183 de apariții.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo sărbătorind cu trofeul Ligii Campionilor", cap: "Cinci trofee europene și 140 de goluri în Liga Campionilor" },
+    { title: "Campionatul Lumii al Fotbalului FIFA — 4", sub: "2008, 2014, 2016 și 2017, cu Manchester United și Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo sărutând trofeul Campionatului Lumii al Fotbalului FIFA", cap: "Patru Campionate ale Lumii al Fotbalului FIFA" },
+    { title: "La Liga — 311 goluri", sub: "Recordul absolut al competiției, toate pentru Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo cu trofeul campionatului La Liga", cap: "311 goluri în La Liga pentru Real Madrid" }
   ];

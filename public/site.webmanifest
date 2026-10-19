@@ -1,31 +1,39 @@
 {
-  "name": "MessiStat - Lionel Messi Career Statistics",
-  "short_name": "MessiStat",
-  "description": "Comprehensive Lionel Messi career statistics: 932 goals, 47 trophies, 8 Ballons d'Or.",
-  "start_url": "/en",
+  "name": "RonaldoStats - Cristiano Ronaldo Career Statistics",
+  "short_name": "RonaldoStats",
+  "description": "Cristiano Ronaldo career statistics archive: goals, assists, trophies, Ballons d'Or, Champions League and international records, season by season.",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#16243a",
-  "theme_color": "#16243a",
+  "orientation": "portrait-primary",
+  "background_color": "#f2f3f0",
+  "theme_color": "#b31217",
+  "categories": [
+    "sports",
+    "news",
+    "reference"
+  ],
   "icons": [
     {
-      "src": "/favicon-48x48.png",
+      "src": "/img/favicon-48x48.png",
       "sizes": "48x48",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/favicon-96x96.png",
+      "src": "/img/favicon-96x96.png",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "/favicon-192x192.png",
+      "src": "/img/favicon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-512x512.png",
+      "src": "/img/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

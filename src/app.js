@@ -2089,7 +2089,8 @@ const LIVE = {
   abtReal: 152, abtPortugal: 14, abtAlNassr: 9, abtJuve: 20, abtManUtd: 66,
   compLiga: 311, compCDR: 22, compSuper: 12, compUCLb: 105, compUCLm: 24, compUCLj: 14,
   compPL: 103, compSerieA: 81, compSPL: 106, compPrimeira: 3,
-  compCupMU: 17, compCupJuve: 4, compCupNassr: 3, compACL: 16,
+  compCupMU: 17, compCupJuve: 4, compCupNassr: 3, compCupSporting: 2, compACL: 16,
+  compShield: 1, compSupercoppaIt: 2, compACC: 9,
   compQual: 52, compWC: 52, compNL: 15, compEuro: 55, compConfed: 2, compFriend: 22,
   lgNum: 981, lgOpp: "Al Nassr", lgDate: "12 October 2026",
 };
@@ -2307,6 +2308,10 @@ function normalize(d) {
       compCupMU: compGoals("Manchester United", LIVE.compCupMU, "FA Cup"),
       compCupJuve: compGoals("Juventus", LIVE.compCupJuve, "Coppa Italia"),
       compCupNassr: compGoals("Al Nassr", LIVE.compCupNassr, "King's Cup"),
+      compCupSporting: compGoals("Sporting CP", LIVE.compCupSporting, "Taça de Portugal"),
+      compShield: compGoals("Manchester United", LIVE.compShield, "FA Community Shield"),
+      compSupercoppaIt: compGoals("Juventus", LIVE.compSupercoppaIt, "Supercoppa Italiana"),
+      compACC: compGoals("Al Nassr", LIVE.compACC, "Arab Club Champions Cup"),
       compACL: compGoals("Al Nassr", LIVE.compACL, "AFC Champions League"),
       compQual: compGoals("Portugal", LIVE.compQual, "FIFA World Cup / qualifiers"),
       compWC: compGoals("Portugal", LIVE.compWC, "FIFA World Cup"),
@@ -2699,16 +2704,16 @@ function clubTableCaption() {
 function provisionalNote() {
   const lang = getLang();
   const notes = {
-    es: `<p class="caveat">Penaltis (110), tiros libres (66), hat-tricks (57) y asistencias (400) son cifras recopiladas provisionales hasta completar el conteo manual partido a partido.</p>`,
-    pt: `<p class="caveat">Pênaltis (110), faltas (66), hat-tricks (57) e assistências (400) são números provisórios até a conclusão da contagem manual jogo a jogo.</p>`,
-    fr: `<p class="caveat">Penaltys (110), coups francs (66), triplés (57) et passes décisives (400) sont des totaux provisoires en attente de vérification match par match.</p>`,
-    ar: `<p class="caveat">ضربات الجزاء (110)، الركلات الحرة (66)، الهاتريك (57) والتمريرات الحاسمة (400) هي إحصائيات مجمعة مؤقتة حتى اكتمال التدقيق اليدوي لكل مباراة.</p>`,
-    bn: `<p class="caveat">পেনাল্টি (১০৯), ফ্রি-কিক (৭৬), হ্যাটট্রিক (৫৭) এবং অ্যাসিস্ট (৪০০) ম্যাচভিত্তিক সম্পূর্ণ যাচাইকরণ না হওয়া পর্যন্ত সাময়িক পরিসংখ্যান হিসেবে প্রদর্শিত।</p>`,
-    hi: `<p class="caveat">पेनाल्टी (110), फ्री किक (66), हैट्रिक (57) और असिस्ट (400) मैच-दर-मैच सत्यापन पूरा होने तक अनंतिम आंकड़े हैं।</p>`,
-    ro: `<p class="caveat">Penalty-uri (110), lovituri libere (66), hat-trick-uri (57) și pase decisive (400) sunt cifre provizorii până la finalizarea numărătorii manuale meci cu meci.</p>`,
-    uz: `<p class="caveat">Penaltilar (109), jarima to'plari (66), het-triklar (57) va assistlar (400) o'yinma-o'yin to'liq tekshiruv tugagunga qadar dastlabki hisob-kitoblar sifatida ko'rsatilgan.</p>`
+    es: `<p class="caveat">Los penaltis (184), los tiros libres (66), los hat-tricks (66) y las asistencias (261) son cifras recopiladas provisionales hasta completar el conteo manual partido a partido.</p>`,
+    pt: `<p class="caveat">Os pênaltis (184), os tiros livres (66), os hat-tricks (66) e as assistências (261) são números provisórios até a conclusão da contagem manual jogo a jogo.</p>`,
+    fr: `<p class="caveat">Les penaltys (184), les coups francs (66), les triplés (66) et les passes décisives (261) sont des totaux provisoires en attente de vérification match par match.</p>`,
+    ar: `<p class="caveat">ركلات الجزاء (184) وركلات حرة مباشرة (66) والثلاثيات (66) والصناعة الحاسمة (261) أرقام مجمّعة منشورة على نطاق واسع، وتُعرض كمؤقتة حتى تكتمل المراجعة اليدوية مباراة بمباراة.</p>`,
+    bn: `<p class="caveat">পেনাল্টি (184), সরাসরি ফ্রি-কিক (66), হ্যাট-ট্রিক (66) এবং অ্যাসিস্ট (261) হলো প্রচলিতভাবে প্রকাশিত সংক্ষিপ্ত হিসাব, যা প্রতিটি ম্যাচ আলাদা করে হাতে গণনা সম্পন্ন না হওয়া পর্যন্ত প্রাক্ষণিক হিসেবে দেখানো হয়।</p>`,
+    hi: `<p class="caveat">पेनाल्टी (184), सीधे फ्री-किक (66), हैट-ट्रिक (66) और सहायता (261) व्यापक रूप से प्रकाशित संकलित आँकड़े हैं, जिन्हें प्रत्येक मैच का हाथ से गिनती पूरी होने तक अस्थायी माना जाता है।</p>`,
+    ro: `<p class="caveat">Penalty-urile (184), loviturile libere (66), hat-trick-urile (66) și pasele decisive (261) sunt cifre compilate publicate pe scară largă, afișate ca provizorii până la finalizarea numărării manuale meci cu meci.</p>`,
+    uz: `<p class="caveat">Penalty (184), to'g'ridan-to'g'ri erkin zarbalar (66), het-triklar (66) va assistlar (261) — bular keng tarqalgan yig'ilma hisoblar bo'lib, har bir o'yin bo'yicha qo'lda hisoblash tugagunga qadar vaqtinchalik deb ko'rsatiladi.</p>`,
   };
-  return notes[lang] || `<p class="caveat">Penalties (109), free kicks (66), hat-tricks (57) and assists (400) are widely published compiled tallies, shown as provisional until a true match-by-match hand count is finished.</p>`;
+  return notes[lang] || `<p class="caveat">Penalties (184), direct free kicks (66), hat-tricks (66) and assists (261) are widely published compiled tallies, shown as provisional until a true match-by-match hand count is finished.</p>`;
 }
 function methodColophon(inner) {
   const lang = getLang();
@@ -3579,10 +3584,10 @@ const TEAM_COMPS = null; // retired: buckets now come from teamComps() (LIVE/JSO
 function teamComps() {
   return {
     realmadrid: [["La Liga", LIVE.compLiga], ["UEFA Champions League", LIVE.compUCLb], ["Copa del Rey", LIVE.compCDR], ["Supercopa / UEFA Super Cup / Club World Cup", LIVE.compSuper]],
-    manutd: [["Premier League", LIVE.compPL], ["UEFA Champions League", LIVE.compUCLm], ["FA Cup / Football League Cup", LIVE.compCupMU]],
-    juventus: [["Serie A", LIVE.compSerieA], ["UEFA Champions League", LIVE.compUCLj], ["Coppa Italia", LIVE.compCupJuve], ["Supercoppa Italiana", LIVE.compSuper]],
-    alnassr: [["Saudi Pro League", LIVE.compSPL], ["AFC Champions League Elite / Two", LIVE.compACL], ["King's Cup", LIVE.compCupNassr]],
-    sporting: [["Primeira Liga", LIVE.compPrimeira], ["Taça de Portugal", LIVE.compCupMU]],
+    manutd: [["Premier League", LIVE.compPL], ["UEFA Champions League", LIVE.compUCLm], ["FA Cup / Football League Cup", LIVE.compCupMU], ["FA Community Shield / FIFA Club World Cup", LIVE.compShield]],
+    juventus: [["Serie A", LIVE.compSerieA], ["UEFA Champions League", LIVE.compUCLj], ["Coppa Italia", LIVE.compCupJuve], ["Supercoppa Italiana", LIVE.compSupercoppaIt]],
+    alnassr: [["Saudi Pro League", LIVE.compSPL], ["AFC Champions League Elite / Two", LIVE.compACL], ["King's Cup", LIVE.compCupNassr], ["Arab Club Champions Cup / Saudi Super Cup", LIVE.compACC]],
+    sporting: [["Primeira Liga", LIVE.compPrimeira], ["Taça de Portugal", LIVE.compCupSporting]],
     portugal: [["FIFA World Cup / qualifiers", LIVE.compQual], ["UEFA European Championship / qualifiers", LIVE.compEuro], ["UEFA Nations League", LIVE.compNL], ["International friendlies", LIVE.compFriend], ["FIFA Confederations Cup", LIVE.compConfed]]
   };
 }
