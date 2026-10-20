@@ -11555,3 +11555,12 @@ body.mst-toast-open .back-to-top-btn {
   border-left: 3px solid var(--brand);
   border-radius: 0 8px 8px 0;
 }
+
+/* ---------- birthday: the goal's own description ---------- */
+.bday-media-desc {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-style: italic;
+}

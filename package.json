@@ -26,14 +26,15 @@
     "admin:hash": "node scripts/generate-admin-hash.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "guard:ads": "node scripts/guard-ad-redirects.mjs",
-    "sync:messi": "node scripts/auto-sync-messi.mjs",
     "build:data": "node scripts/build-ronaldo-data.mjs && node scripts/build-latest-goal.mjs",
     "build:i18n": "node scripts/extract-shell-strings.mjs && node scripts/generate-i18n-pages.mjs",
     "build:bday": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs",
     "verify:all": "node scripts/verify-all.mjs",
     "verify:espn": "node scripts/cross-check-espn.mjs",
-    "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/merge-goal-source.mjs",
-    "fetch:goals": "node scripts/fetch-goal-source.mjs"
+    "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/merge-goal-source.mjs && node scripts/merge-season-videos.mjs",
+    "fetch:goals": "node scripts/fetch-goal-source.mjs",
+    "fetch:seasons": "node scripts/fetch-season-videos.mjs",
+    "sync:ronaldo": "node scripts/auto-sync-ronaldo.mjs"
   },
   "devDependencies": {
     "vite": "^6.0.0"

@@ -945,7 +945,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; media-src 'self' https://cdn.ronaldoallgoals.com blob: https:; connect-src 'self' https: wss:; frame-src 'self' https: data: about:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: blob:; font-src 'self' data: https:; media-src 'self' https://www.dailymotion.com https://www.youtube.com https://www.youtube-nocookie.com blob: https:; connect-src 'self' https: wss:; frame-src 'self' https: data: about:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
         }
       ]
     },

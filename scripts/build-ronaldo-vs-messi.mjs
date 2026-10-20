@@ -8,11 +8,11 @@ const rootDir = path.resolve(__dirname, "..");
 
 const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
 
-// Rivalry splits: single source of truth is public/data/messi-data.json
+// Rivalry splits: single source of truth is public/data/messi.json
 // (splits block, verified). Embedded fallback keeps builds working offline.
 let SPLITS = null;
 try {
-  const _md = JSON.parse(fs.readFileSync(path.join(rootDir, "public", "data", "messi-data.json"), "utf8"));
+  const _md = JSON.parse(fs.readFileSync(path.join(rootDir, "public", "data", "messi.json"), "utf8"));
   if (_md && _md.splits) SPLITS = _md.splits;
 } catch (e) { void e; }
 SPLITS = SPLITS || { worldCup: { messi: { goals: 21, assists: 12 }, ronaldo: { goals: 11, assists: 2 } }, trophies: { messi: 47, ronaldo: 37 } };

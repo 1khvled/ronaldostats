@@ -5187,24 +5187,44 @@ async function renderBirthday(d) {
     const m = String(url || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
     return m ? m[1] : null;
   };
+  // ronaldo7.net publishes some of the per-goal clips on Dailymotion
+  const dailymotionId = (url) => {
+    const m = String(url || "").match(/dailymotion\.com\/(?:embed\/)?(?:video\/)?(x[a-z0-9]+)/i);
+    return m ? m[1] : null;
+  };
   const isEmbeddable = (url) => {
     const u = String(url || "");
     if (!u) return false;
     if (youtubeId(u)) return true;
+    if (dailymotionId(u)) return true;
     return /\.(mp4|webm)(\?|$)/i.test(u);
   };
   const mediaHtml = (v) => {
     const url = v && v.videoUrl ? String(v.videoUrl) : "";
     if (!url) return "";
     const id = youtubeId(url);
-    // A compilation is a real video with the goal inside it: play it and say
-    // so, instead of pretending the goal itself is on screen.
-    const note = v.kind === "compilation"
-      ? '<p class="bday-media-note">' + (MEDIA.compilationNote || "") + '</p>'
-      : "";
+    const dmId = dailymotionId(url);
+    // A compilation is a real video with the goal inside it, and a season
+    // video holds every goal of that season: play it and say so, instead of
+    // pretending the goal itself is on screen.
+    let note = "";
+    if (v.kind === "season") {
+      note = '<p class="bday-media-note">' + String(MEDIA.seasonNote || "").replace("{season}", v.seasonLabel || "") + '</p>';
+    } else if (v.kind === "compilation") {
+      note = '<p class="bday-media-note">' + (MEDIA.compilationNote || "") + '</p>';
+    }
+    if (v.description) {
+      note += '<p class="bday-media-desc">' + esc(v.description) + '</p>';
+    }
     if (id) {
       return '<div class="bday-media-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + id +
         '" title="Ronaldo goal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen' +
+        ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>' + note;
+    }
+    if (dmId) {
+      const src = v.embedUrl || ("https://www.dailymotion.com/embed/video/" + dmId);
+      return '<div class="bday-media-frame"><iframe src="' + esc(src) +
+        '" title="Ronaldo goal" loading="lazy" allow="autoplay; fullscreen" allowfullscreen' +
         ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>' + note;
     }
     if (/\.(mp4|webm)(\?|$)/i.test(url)) {

@@ -339,6 +339,7 @@ export const BDAY_MEDIA = {
     "noClip": "No hay clip publicado de este gol.",
     "noClipBody": "El registro del partido de abajo procede de las actas oficiales. Los enlaces abren la página del gol en el archivo y una búsqueda del footage.",
     "clipLabel": "Clip publicado",
+    "seasonNote": "Todos los goles que marcó Ronaldo en la temporada {season}.",
     "compilationNote": "Este gol aparece en una compilación de todos los goles. Usa el enlace del archivo para encontrar su posición exacta.",
     "compilationLabel": "Compilación de todos sus goles",
     "publisher": "Publicado por",

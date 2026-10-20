@@ -9,8 +9,8 @@
  *     If they don't, the page may have changed methodology — stage a review
  *     row and exit 0 without touching anything.
  *   - Ronaldo goals/apps/assists/penalties/FK/HT are compared against
- *     public/data/ronaldo.json. Small deltas (|goals|<=3, |apps|<=6) are
- *     applied to ronaldo.json + propagated into
+ *     public/data/ronaldo-data.json. Small deltas (|goals|<=3, |apps|<=6) are
+ *     applied to ronaldo-data.json + propagated into
  *     scripts/build-ronaldo-vs-messi.mjs (same masking discipline as
  *     reconcile-932: SVG path data, video files and goal refs protected).
  *     Anything bigger stages a review row and exits 1 (loud: never deploy a
@@ -27,8 +27,8 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const ronaldoPath = resolve(root, "public", "data", "ronaldo.json");
 const ronaldoPath = resolve(root, "public", "data", "ronaldo-data.json");
+
 const builderPath = resolve(root, "scripts", "build-ronaldo-vs-messi.mjs");
 const pendingPath = resolve(root, "public", "data", "pending.json");
 
@@ -210,7 +210,7 @@ export async function runRonaldoSync() {
   if (!isCheckOnly) {
     writeFileSync(ronaldoPath, JSON.stringify(next, null, 2), "utf8");
     propagateBuilder(base, next, derived, ronaldoG, ronaldoA);
-    console.log(`[SUCCESS] ronaldo.json -> ${next.goals}/${next.appearances}; builder propagated. Run prebuild to regenerate pages.`);
+    console.log(`[SUCCESS] ronaldo-data.json -> ${next.goals}/${next.appearances}; builder propagated. Run prebuild to regenerate pages.`);
   } else {
     console.log("[CHECK] would update baseline + builder (dry run, nothing written).");
   }

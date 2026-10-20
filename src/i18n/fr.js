@@ -340,6 +340,7 @@ export const BDAY_MEDIA = {
     "noClip": "Aucun clip publié pour ce but.",
     "noClipBody": "La fiche du match ci-dessous provient des feuilles de match officielles. Les liens ouvrent la page du but dans l'archive et une recherche de la séquence.",
     "clipLabel": "Clip publié",
+    "seasonNote": "Tous les buts de Ronaldo lors de la saison {season}.",
     "compilationNote": "Ce but figure dans une compilation de tous les buts. Utilisez le lien de l'archive pour trouver sa position exacte.",
     "compilationLabel": "Compilation de tous ses buts",
     "publisher": "Publié par",
