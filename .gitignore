@@ -15,3 +15,7 @@ src/i18n/shell/*.missing.json
 
 # the local dev server's log
 dev-server.log
+
+# scratch an agent's browser leaves behind
+.playwright-mcp/
+.playwright-cli/

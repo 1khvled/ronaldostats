@@ -70,6 +70,7 @@ Live: **981 goals / 1,340 senior appearances** (835 club + 146 for Portugal), 26
 
 ## Iron rules
 
+0. **Close every browser you open.** When an agent opens a browser — the OpenCode MCP browser, a Playwright one, or one it launches itself — it closes every tab and every browser process it started when the work is done. Nothing is left behind: no tabs, no windows, no profile directories, no scratch output. The user's own browser windows and dev servers are never touched.
 1. **Totals are computed from the rows**, never typed by hand. The four-way checksum (calendarYears = byCompetition = byFinish = byBodyPart = `totals.combined.goals` = 981) is asserted at build time.
 2. After a data edit: run `npm run build:data` and read the assertion output. It must not fail.
 3. Provisional splits always ship with a visible caveat.
