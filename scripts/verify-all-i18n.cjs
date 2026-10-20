@@ -127,6 +127,18 @@ function diff(a, b, pathPrefix, out) {
     return runs;
   };
   const enRuns = new Set(wordRun(enText).map((r) => r.replace(/\s+/g, " ").toLowerCase()));
+  // A run only counts as untranslated English when it is actually English:
+  // four or more unambiguous English function words in it. Short words such
+  // as "a", "in", "de" or "no" are shared with other languages and are
+  // excluded, otherwise a good Romanian or Portuguese sentence reads as a
+  // leak.
+  const EN_WORDS = new Set(["the", "of", "and", "to", "for", "with", "from", "is", "are", "was", "were", "has", "have", "had", "his", "he", "she", "that", "this", "these", "they", "their", "when", "while", "after", "before", "over", "into", "it", "its", "not", "but", "you", "your", "our", "we", "all", "every", "each", "than", "then", "so", "one", "two", "three", "goals", "goal", "career", "club", "team", "season", "years", "matches", "appearances", "trophies", "scored", "player", "career goals"]);
+  const isEnglishRun = (run) => {
+    const words = run.toLowerCase().split(/[^a-z']+/).filter(Boolean);
+    let hits = 0;
+    for (const w of words) if (EN_WORDS.has(w)) hits++;
+    return hits >= 4;
+  };
   const ALLOW = /^(ronaldo|messi|cristiano|real|madrid|manchester|united|juventus|nassr|sporting|portugal|champions|league|liga|saudi|pro|ballon|golden|world|cup|europa|nations|uefa|fifa|premier|serie|troph|primeira)/;
 
   for (const lang of LANGS) {
@@ -139,6 +151,7 @@ function diff(a, b, pathPrefix, out) {
         const key = run.replace(/\s+/g, " ").toLowerCase();
         if (enRuns.has(key)) continue;
         if (ALLOW.test(key)) continue;
+        if (!isEnglishRun(run)) continue;
         if (leaks < 3) console.error("  [" + lang + "/" + file + "] untranslated: " + JSON.stringify(run.slice(0, 90)));
         leaks++;
       }

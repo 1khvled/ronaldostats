@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt" dir="ltr">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -10,107 +11,227 @@
 
   gtag('config', 'G-FERBLJWWWZ');
 </script>
+<!-- Ad-redirect shield. MUST stay a blocking script here, in <head>:
+     it wraps window.open / createElement / location before the ad networks
+     below load. Moving it after them, or making it async, disables the
+     popunder and forced-redirect blocking. -->
+<script src="/js/ad-guard.js"></script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>Painel Interativo de Estatísticas de Cristiano Ronaldo | RonaldoStats</title>
-<meta content="Painel interativo da carreira de Cristiano Ronaldo: 936 gols filtráveis por Barcelona, PSG, Inter Miami e Seleção Argentina." name="description"/>
+<meta content="Cristiano Ronaldo's 981 career goals in 1,340 senior appearances, split by club, competition, finish and body part. Filter by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal." name="description"/>
 <link rel="canonical" href="https://www.ronaldostats.site/pt/dashboard"/>
-<link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard"/>
-<link rel="alternate" hreflang="en-US" href="https://www.ronaldostats.site/en/dashboard"/>
-<link rel="alternate" hreflang="en-NG" href="https://www.ronaldostats.site/en/dashboard"/>
-<link rel="alternate" hreflang="en-IN" href="https://www.ronaldostats.site/en/dashboard"/>
-<link rel="alternate" hreflang="en-PH" href="https://www.ronaldostats.site/en/dashboard"/>
-<link rel="alternate" hreflang="es" href="https://www.ronaldostats.site/es/dashboard"/>
-<link rel="alternate" hreflang="es-AR" href="https://www.ronaldostats.site/es/dashboard"/>
-<link rel="alternate" hreflang="es-ES" href="https://www.ronaldostats.site/es/dashboard"/>
-<link rel="alternate" hreflang="pt" href="https://www.ronaldostats.site/pt/dashboard"/>
-<link rel="alternate" hreflang="pt-BR" href="https://www.ronaldostats.site/pt/dashboard"/>
-<link rel="alternate" hreflang="pt-PT" href="https://www.ronaldostats.site/pt/dashboard"/>
-<link rel="alternate" hreflang="fr" href="https://www.ronaldostats.site/fr/dashboard"/>
-<link rel="alternate" hreflang="fr-FR" href="https://www.ronaldostats.site/fr/dashboard"/>
-<link rel="alternate" hreflang="fr-NE" href="https://www.ronaldostats.site/fr/dashboard"/>
-<link rel="alternate" hreflang="ar" href="https://www.ronaldostats.site/ar/dashboard"/>
-<link rel="alternate" hreflang="ar-EG" href="https://www.ronaldostats.site/ar/dashboard"/>
-<link rel="alternate" hreflang="bn" href="https://www.ronaldostats.site/bn/dashboard"/>
-<link rel="alternate" hreflang="bn-BD" href="https://www.ronaldostats.site/bn/dashboard"/>
-<link rel="alternate" hreflang="bn-IN" href="https://www.ronaldostats.site/bn/dashboard"/>
-<link rel="alternate" hreflang="hi" href="https://www.ronaldostats.site/hi/dashboard"/>
-<link rel="alternate" hreflang="hi-IN" href="https://www.ronaldostats.site/hi/dashboard"/>
-<link rel="alternate" hreflang="ro" href="https://www.ronaldostats.site/ro/dashboard"/>
-<link rel="alternate" hreflang="ro-RO" href="https://www.ronaldostats.site/ro/dashboard"/>
-<link rel="alternate" hreflang="uz" href="https://www.ronaldostats.site/uz/dashboard"/>
-<link rel="alternate" hreflang="uz-UZ" href="https://www.ronaldostats.site/uz/dashboard"/>
-<link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en/dashboard"/>
+<link hreflang="en" rel="alternate" href="https://www.ronaldostats.site/en/dashboard"/>
+<link hreflang="en-US" rel="alternate" href="https://www.ronaldostats.site/en-US/dashboard"/>
+<link hreflang="en-NG" rel="alternate" href="https://www.ronaldostats.site/en-NG/dashboard"/>
+<link hreflang="en-IN" rel="alternate" href="https://www.ronaldostats.site/en-IN/dashboard"/>
+<link hreflang="en-PH" rel="alternate" href="https://www.ronaldostats.site/en-PH/dashboard"/>
+<link hreflang="es" rel="alternate" href="https://www.ronaldostats.site/es/dashboard"/>
+<link hreflang="es-AR" rel="alternate" href="https://www.ronaldostats.site/es-AR/dashboard"/>
+<link hreflang="es-ES" rel="alternate" href="https://www.ronaldostats.site/es-ES/dashboard"/>
+<link hreflang="pt" rel="alternate" href="https://www.ronaldostats.site/pt/dashboard"/>
+<link hreflang="pt-BR" rel="alternate" href="https://www.ronaldostats.site/pt-BR/dashboard"/>
+<link hreflang="pt-PT" rel="alternate" href="https://www.ronaldostats.site/pt-PT/dashboard"/>
+<link hreflang="fr" rel="alternate" href="https://www.ronaldostats.site/fr/dashboard"/>
+<link hreflang="fr-FR" rel="alternate" href="https://www.ronaldostats.site/fr-FR/dashboard"/>
+<link hreflang="fr-CA" rel="alternate" href="https://www.ronaldostats.site/fr-CA/dashboard"/>
+<link hreflang="ar" rel="alternate" href="https://www.ronaldostats.site/ar/dashboard"/>
+<link hreflang="ar-EG" rel="alternate" href="https://www.ronaldostats.site/ar-EG/dashboard"/>
+<link hreflang="bn" rel="alternate" href="https://www.ronaldostats.site/bn/dashboard"/>
+<link hreflang="bn-BD" rel="alternate" href="https://www.ronaldostats.site/bn-BD/dashboard"/>
+<link hreflang="bn-IN" rel="alternate" href="https://www.ronaldostats.site/bn-IN/dashboard"/>
+<link hreflang="hi" rel="alternate" href="https://www.ronaldostats.site/hi/dashboard"/>
+<link hreflang="hi-IN" rel="alternate" href="https://www.ronaldostats.site/hi-IN/dashboard"/>
+<link hreflang="ro" rel="alternate" href="https://www.ronaldostats.site/ro/dashboard"/>
+<link hreflang="ro-RO" rel="alternate" href="https://www.ronaldostats.site/ro-RO/dashboard"/>
+<link hreflang="uz" rel="alternate" href="https://www.ronaldostats.site/uz/dashboard"/>
+<link hreflang="uz-UZ" rel="alternate" href="https://www.ronaldostats.site/uz-UZ/dashboard"/>
+<link hreflang="x-default" rel="alternate" href="https://www.ronaldostats.site/en/dashboard"/>
 
-<meta content="ronaldo, ronaldo stats, cristiano ronaldo, 936 goals, ronaldo goals" name="keywords"/>
-
+<meta content="ronaldo stats dashboard, cristiano ronaldo 981 goals, ronaldo goals by club, ronaldo real madrid goals, ronaldo manchester united goals, ronaldo champions league goals, ronaldo penalty free kick split, ronaldo body part goals, ronaldo career data visualisation, ronaldo analytics, ronaldostats" name="keywords"/>
 <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
 <meta content="#16243a" name="theme-color"/>
 <meta content="RonaldoStats" name="author"/>
 <meta content="website" property="og:type"/>
 <meta content="RonaldoStats" property="og:site_name"/>
-<meta content="pt_BR" property="og:locale"/>
-<meta content="pt_PT" property="og:locale:alternate"/>
-<meta content="Painel Interativo de Estatísticas de Cristiano Ronaldo | RonaldoStats" property="og:title"/>
-<meta content="Painel interativo da carreira de Cristiano Ronaldo: 936 gols filtráveis por Barcelona, PSG, Inter Miami e Seleção Argentina." property="og:description"/>
-<meta content="https://www.ronaldostats.site/pt/dashboard" property="og:url"/>
-<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=936" property="og:image"/>
-<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=936" property="og:image:secure_url"/>
+<meta content="en_US" property="og:locale"/>
+<meta property="og:title" content="Cristiano Ronaldo Stats Dashboard | RonaldoStats"/>
+<meta content="Cristiano Ronaldo's 981 career goals in 1,340 senior appearances, split by club, competition, finish and body part. Filter by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal." property="og:description"/>
+<meta content="https://www.ronaldostats.site/en/dashboard" property="og:url"/>
+<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=981" property="og:image"/>
+<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=981" property="og:image:secure_url"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="Cristiano Ronaldo career statistics: 981 goals in 1,340 senior appearances" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="@ronaldostats1" name="twitter:site"/>
 <meta content="@ronaldostats1" name="twitter:creator"/>
 <meta content="ronaldostats.site" name="twitter:domain"/>
-<meta content="Painel Interativo de Estatísticas de Cristiano Ronaldo | RonaldoStats" name="twitter:title"/>
-<meta content="Painel interativo da carreira de Cristiano Ronaldo: 936 gols filtráveis por Barcelona, PSG, Inter Miami e Seleção Argentina." name="twitter:description"/>
-<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=936" name="twitter:image"/>
+<meta name="twitter:title" content="Cristiano Ronaldo Stats Dashboard | RonaldoStats"/>
+<meta content="Cristiano Ronaldo's 981 career goals in 1,340 senior appearances, split by club, competition, finish and body part. Filter by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal." name="twitter:description"/>
+<meta content="https://www.ronaldostats.site/img/og-ronaldo.jpg?v=981" name="twitter:image"/>
+<meta content="Cristiano Ronaldo career statistics: 981 goals in 1,340 senior appearances" name="twitter:image:alt"/>
 <link rel="icon" href="/favicon.ico" sizes="48x48"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
 
 <link rel="manifest" href="/site.webmanifest"/>
 <link as="font" crossorigin="" href="/fonts/plus-jakarta-sans-latin.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="/fonts/dm-sans-latin.woff2" rel="preload" type="font/woff2"/>
-<script src="/js/ad-guard.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8397501846754760" crossorigin="anonymous"></script>
-<link href="/src/styles.css" rel="stylesheet"/>
+<title>Painel de estatísticas de Cristiano Ronaldo | RonaldoStats</title>
+<link href="src/styles.css" rel="stylesheet"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://www.ronaldostats.site/pt/dashboard#webpage",
+      "@type": "SportsPerson",
+      "@id": "https://www.ronaldostats.site/#ronaldo",
+      "name": "Cristiano Ronaldo",
+      "alternateName": "CR7",
+      "birthDate": "1985-02-05",
+      "birthPlace": "Funchal, Madeira, Portugal",
+      "height": "1.87 m",
+      "position": "Forward",
+      "nationality": "Portugal",
       "url": "https://www.ronaldostats.site/pt/dashboard",
-      "name": "Painel Interativo de Estatísticas de Cristiano Ronaldo | RonaldoStats",
-      "description": "Painel interativo da carreira de Cristiano Ronaldo: 936 gols filtráveis por Barcelona, PSG, Inter Miami e Seleção Argentina.",
-      "dateModified": "2026-09-18",
-      "inLanguage": "pt",
-      "mainEntityOfPage": "https://www.ronaldostats.site/pt/dashboard"
+      "image": "https://www.ronaldostats.site/img/ronaldo.jpg",
+      "jerseyNumber": "7",
+      "affiliation": {
+        "@type": "SportsTeam",
+        "name": "Al Nassr"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://www.ronaldostats.site/en/dashboard#dataset",
+      "name": "Cristiano Ronaldo goals by competition, season, finish and body part",
+      "description": "Cristiano Ronaldo's 981 career goals split by competition, club season, finish type and body part, filterable by team — Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal. Finish and body-part splits are provisional compiled tallies.",
+      "temporalCoverage": "2002/2026",
+      "dateModified": "2026-10-19",
+      "creator": {
+        "@id": "https://www.ronaldostats.site/#org"
+      },
+      "publisher": {
+        "@id": "https://www.ronaldostats.site/#org"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://www.ronaldostats.site/pt/dashboard"
+      },
+      "variableMeasured": "Goals"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.ronaldostats.site/#org",
+      "name": "RonaldoStats",
+      "alternateName": "ronaldostats.site",
+      "url": "https://www.ronaldostats.site/pt/dashboard",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.ronaldostats.site/#logo",
+        "url": "https://www.ronaldostats.site/pt/dashboard",
+        "contentUrl": "https://www.ronaldostats.site/pt/dashboard",
+        "caption": "RonaldoStats Official Logo",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://www.ronaldostats.site/img/logo.png",
+      "sameAs": [
+        "https://x.com/ronaldostats1",
+        "https://twitter.com/ronaldostats1",
+        "https://t.me/ronaldostatsdotcom"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ronaldostats.site/en/dashboard#webpage",
+      "url": "https://www.ronaldostats.site/pt/dashboard",
+      "name": "Cristiano Ronaldo Stats Dashboard — Goals by Team, Foot & Competition | RonaldoStats",
+      "description": "Slice Ronaldo's 981 career goals by competition, season, finish and body part — filter by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal. Charts and full tables included.",
+      "dateModified": "2026-10-19",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://www.ronaldostats.site/#org"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "#kpis",
+          "#dash-records"
+        ]
+      },
+      "about": {
+        "@id": "https://www.ronaldostats.site/#ronaldo"
+      },
+      "mainEntity": {
+        "@id": "https://www.ronaldostats.site/en/dashboard#dataset"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.ronaldostats.site/en/dashboard#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many goals has Cristiano Ronaldo scored in La Liga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "311 goals in 292 La Liga appearances for Real Madrid — the club's record in the competition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many Champions League goals has Cristiano Ronaldo scored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "140 goals in 183 appearances — the all-time Champions League record, with 42 assists also an all-time record."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many goals has Cristiano Ronaldo scored for Portugal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "146 goals in 234 caps — the international record for both goals and appearances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many goals has Cristiano Ronaldo scored for Al Nassr?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "134 goals in 157 appearances since his Al Nassr debut in 2023."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.ronaldostats.site/pt/dashboard#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "Início",
-          "item": "https://www.ronaldostats.site/pt"
+          "name": "Home",
+          "item": "https://www.ronaldostats.site/en"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Painel",
-          "item": "https://www.ronaldostats.site/pt/dashboard"
+          "name": "Dashboard",
+          "item": "https://www.ronaldostats.site/en/dashboard"
         }
       ]
     }
   ]
 }
 </script>
-
 <script>
   (function() {
     try {
@@ -124,35 +245,35 @@
 </script>
 </head>
 <body data-page="dashboard">
-<a class="skip" href="#main">Pular para o conteúdo</a>
-<aside aria-label="Navigation" class="rail">
-<a aria-label="RonaldoStats" class="rail-badge" href="/pt"><svg aria-hidden="true" class="rail-mark" viewbox="0 0 64 64"><defs><lineargradient id="msg-pt-dashboard" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#6d0f2e"></stop><stop offset=".55" stop-color="#1d3fae"></stop><stop offset="1" stop-color="#0e7cc0"></stop></lineargradient></defs><path d="M32 3 55 10v20c0 16-11 26-23 31C20 56 9 46 9 30V10Z" fill="url(#msg-pt-dashboard)" stroke="#e3b93e" stroke-linejoin="round" stroke-width="2.5"></path><path d="M47.5 9.5l1.7 3.5 3.8.6-2.8 2.7.7 3.8-3.4-1.8-3.4 1.8.7-3.8-2.8-2.7 3.8-.6z" fill="#e3b93e"></path><text fill="#fff" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="19" font-weight="800" text-anchor="middle" x="31" y="44">M10</text></svg><span class="rail-word">Ronaldo<b>Stats</b></span></a>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<aside aria-label="Navegação" class="rail">
+<a aria-label="Início do RonaldoStats" class="rail-badge" href="/pt"><svg aria-hidden="true" class="rail-mark" viewbox="0 0 64 64"><defs><lineargradient id="msg-en-dashboard" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#6d0f2e"></stop><stop offset=".55" stop-color="#1d3fae"></stop><stop offset="1" stop-color="#0e7cc0"></stop></lineargradient></defs><path d="M32 3 55 10v20c0 16-11 26-23 31C20 56 9 46 9 30V10Z" fill="url(#msg-en-dashboard)" stroke="#e3b93e" stroke-linejoin="round" stroke-width="2.5"></path><path d="M47.5 9.5l1.7 3.5 3.8.6-2.8 2.7.7 3.8-3.4-1.8-3.4 1.8.7-3.8-2.8-2.7 3.8-.6z" fill="#e3b93e"></path><text fill="#fff" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="19" font-weight="800" text-anchor="middle" x="31" y="44">M10</text></svg><span class="rail-word">Ronaldo<b>Estatísticas</b></span></a>
 <div class="rail-lang-wrap">
-  <button type="button" class="rail-lang-btn" id="rail-lang-btn" aria-label="Selecionar idioma (Português)" title="Selecionar idioma">
+  <button type="button" class="rail-lang-btn" id="rail-lang-btn" aria-label="Selecionar idioma (English)" title="Selecionar idioma">
     <svg class="rail-lang-globe" viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="10"></circle>
       <line x1="2" y1="12" x2="22" y2="12"></line>
       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
     </svg>
-    <span class="rail-lang-label">Português</span>
-    <span class="rail-lang-tag">PT</span>
+    <span class="rail-lang-label">English</span>
+    <span class="rail-lang-tag">EN</span>
   </button>
 </div>
 <nav>
 <a href="/pt" aria-label="Início"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg><span>Início</span></a>
-<a href="/pt/latest-goal" aria-label="Último Gol"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg><span>Último Gol <b class="nav-badge-hot">LIVE ⚡</b></span></a>
-<a class="nav-bday-link" href="/pt/birthday" aria-label="Aniversário"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg><span>Aniversário <b class="nav-badge-hot">HOT 🔥</b></span></a>
-<a href="/pt/ronaldo-vs-messi" aria-label="vs Messi"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg><span>vs Messi</span></a>
-<a href="/pt/vs-real-madrid" aria-label="vs Real Madrid"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>vs Real Madrid</span></a>
-<a href="/pt/champions-league" aria-label="Champions League"><svg aria-hidden="true" viewbox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>Champions League</span></a>
-<a href="/pt/goalsbyyear" aria-label="Gols por Ano"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg><span>Gols por Ano</span></a>
-<a href="/pt/goalsbyseason" aria-label="Temporadas"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg><span>Temporadas</span></a>
+<a href="/pt/latest-goal" aria-label="Último gol"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg><span>Último gol <b class="nav-badge-hot">LIVE ⚡</b></span></a>
+<a class="nav-bday-link" href="/pt/birthday" aria-label="Gols de aniversário"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg><span>Gols de aniversário <b class="nav-badge-hot">HOT 🔥</b></span></a>
+<a href="/pt/ronaldo-vs-messi" aria-label="contra Messi"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg><span>contra Messi</span></a>
+<a href="/pt/vs-real-madrid" aria-label="contra o Real Madrid"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>contra o Real Madrid</span></a>
+<a href="/pt/champions-league" aria-label="Hub da UCL"><svg aria-hidden="true" viewbox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>Hub da UCL</span></a>
+<a href="/pt/goalsbyyear" aria-label="Gols por ano"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg><span>Gols por ano</span></a>
+<a href="/pt/goalsbyseason" aria-label="Gols por temporada"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg><span>Gols por temporada</span></a>
 <a aria-current="page" class="on" href="/pt/dashboard" aria-label="Painel"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3.5 20.5h17"></path><path d="M6.5 20v-7M12 20V5M17.5 20v-10"></path></svg><span>Painel</span></a>
-<a href="/pt/timeline" aria-label="História"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span>História</span></a>
-<a href="/pt/achievements" aria-label="Títulos"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg><span>Títulos</span></a>
-<a href="/pt/gear" aria-label="Loja Ronaldo"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>Loja Ronaldo 🛍️</span></a>
+<a href="/pt/timeline" aria-label="Ao longo dos anos"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span>Ao longo dos anos</span></a>
+<a href="/pt/achievements" aria-label="Conquistas"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg><span>Conquistas</span></a>
+<a href="/pt/gear" aria-label="Produtos do Ronaldo"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>Produtos do Ronaldo 🛍️</span></a>
 </nav>
-<button aria-label="Alternar tema" class="theme-toggle" id="theme-toggle" title="Alternar tema" type="button">
+<button aria-label="Alternar o modo escuro" class="theme-toggle" id="theme-toggle" title="Alternar o modo escuro" type="button">
 <svg aria-hidden="true" class="sun-icon" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
 <svg aria-hidden="true" class="moon-icon" viewbox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
 <span class="theme-label">Modo escuro</span>
@@ -166,56 +287,727 @@
 <aside aria-label="Publicidade" class="ad-banner-wrap ad-banner-top">
   <span class="ad-native-label">Publicidade</span>
   <div class="ad-banner-slot">
-    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
+    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
   </div>
 </aside>
-<p class="eyebrow">Painel <i></i> <span id="upd">18 de Setembro de 2026</span></p>
-<h1>Painel de Estatísticas de Cristiano Ronaldo</h1>
-<p class="lede" id="lede">Análise interativa dos 936 gols na carreira de Cristiano Ronaldo em todas as competições, temporadas, tipos de finalização e partes do corpo — filtrável por equipe.</p>
-<p><a class="btn" href="/pt">← Volver às estatísticas</a></p>
-<div aria-label="Filter" class="dash-team-selector" id="pills" role="group"></div>
-<p class="section-sub" id="filter-note"></p>
-<section aria-label="KPIs" class="dash-kpis-grid" id="kpis"></section>
-<div class="shead"><h2>¿Em quais competições Ronaldo marcou mais gols?</h2></div>
+<p class="eyebrow">Hub de estatísticas &amp; análises <i></i> <span id="upd">Atualizado em 19 de outubro de 2026</span></p>
+<h1>Estatísticas &amp; explorador de carreira de Cristiano Ronaldo</h1>
+<p class="lede" id="lede">Análises interativas unificadas dos 981 gols de carreira de Cristiano Ronaldo: filtre por time, competição, parte do corpo, quebra temporada a temporada e trajetória por ano civil (69 em 2013).</p>
+<p><a class="btn" href="/pt">← Voltar às estatísticas</a></p>
+<div aria-label="Filtrar gráficos por time" class="dash-team-selector" id="pills" role="group">
+    <button class="dash-team-btn active" data-team="all" aria-pressed="true">
+      <span style="font-size:1.1rem" aria-hidden="true">🌍</span>
+      <span>Todos os times</span>
+      <span class="dash-team-goals">981G</span>
+    </button>
+    <button class="dash-team-btn" data-team="real-madrid" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/real-madrid.png" alt="Escudo do Real Madrid" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Real Madrid</span>
+      <span class="dash-team-goals">450G</span>
+    </button>
+    <button class="dash-team-btn" data-team="man-utd" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/man-utd.png" alt="Escudo do Manchester United" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Manchester United</span>
+      <span class="dash-team-goals">145G</span>
+    </button>
+    <button class="dash-team-btn" data-team="juventus" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/juventus.png" alt="Escudo da Juventus" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Juventus</span>
+      <span class="dash-team-goals">101G</span>
+    </button>
+    <button class="dash-team-btn" data-team="al-nassr" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/al-nassr.png" alt="Escudo do Al Nassr" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Al Nassr</span>
+      <span class="dash-team-goals">134G</span>
+    </button>
+    <button class="dash-team-btn" data-team="sporting" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/sporting.png" alt="Escudo do Sporting CP" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Sporting CP</span>
+      <span class="dash-team-goals">5G</span>
+    </button>
+    <button class="dash-team-btn" data-team="portugal" aria-pressed="false">
+      <img class="dash-team-crest" src="img/teams/portugal.png" alt="Escudo de Portugal" width="22" height="22" loading="eager" decoding="async" onerror="this.remove()">
+      <span>Portugal</span>
+      <span class="dash-team-goals">146G</span>
+    </button>
+  </div>
+<p class="section-sub" id="filter-note">Exibindo todos os times: 981 gols em 1,340 jogos. Selecione um clube ou Portugal para refazer todos os gráficos.</p>
+
+<section aria-label="Totais filtrados" class="dash-kpis-grid" id="kpis">
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Total de gols</span>
+        <span class="dash-kpi-icon">⚽</span>
+      </div>
+      <div class="dash-kpi-num">981</div>
+      <div class="dash-kpi-sub">0.73 gols/jogo · 1,340 partidas (todos os times)</div>
+    </article>
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Total de assistências</span>
+        <span class="dash-kpi-icon">👟</span>
+      </div>
+      <div class="dash-kpi-num">261</div>
+      <div class="dash-kpi-sub">0.19 assistências/jogo · 291 sob os critérios do Transfermarkt</div>
+    </article>
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Contribuições para gols</span>
+        <span class="dash-kpi-icon">🔥</span>
+      </div>
+      <div class="dash-kpi-num">1,242</div>
+      <div class="dash-kpi-sub">0.93 participações diretas em gols por partida</div>
+    </article>
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Gols sem pênalti</span>
+        <span class="dash-kpi-icon">⚡</span>
+      </div>
+      <div class="dash-kpi-num">797</div>
+      <div class="dash-kpi-sub">81.2% sem pênalti (bola rolando e faltas)</div>
+    </article>
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Faltas diretas</span>
+        <span class="dash-kpi-icon">🎯</span>
+      </div>
+      <div class="dash-kpi-num">66</div>
+      <div class="dash-kpi-sub">Gols diretos de falta na carreira — contagem compilada provisória</div>
+    </article>
+    <article class="dash-kpi-box">
+      <div class="dash-kpi-header">
+        <span class="dash-kpi-label">Hat-tricks na carreira</span>
+        <span class="dash-kpi-icon">🎩</span>
+      </div>
+      <div class="dash-kpi-num">66</div>
+      <div class="dash-kpi-sub">Hat-tricks da carreira por clubes e seleção — contagem compilada provisória</div>
+    </article>
+  </section>
+
+<div class="shead"><h2>Análises visuais: competições, métodos &amp; partes do corpo</h2></div>
 <div class="dash-sections-grid">
-  <section class="dash-card" id="body-card"></section>
-  <section class="dash-card" id="finish-card"></section>
-  <section class="dash-card" id="comp-card"></section>
-  <section class="dash-card" id="milestones-card"></section>
+  <section class="dash-card" id="body-card">
+    <h3 class="dash-card-title">⚽ Quebra da artilharia por parte do corpo</h3>
+    <div class="dash-bars-wrap">
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Pé esquerdo</span>
+          <span><b>186</b> <small style="color:var(--muted)">(19.0%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:19.0%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Pé direito</span>
+          <span><b>634</b> <small style="color:var(--muted)">(64.6%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-blue" style="width:64.6%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Cabeça</span>
+          <span><b>158</b> <small style="color:var(--muted)">(16.1%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-green" style="width:16.1%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Outro / Peito</span>
+          <span><b>3</b> <small style="color:var(--muted)">(0.3%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-purple" style="width:0.3%"></div>
+        </div>
+      </div>
+    </div>
+    <p class="caveat" style="margin-top:14px;margin-bottom:0">Contagem compilada provisória &mdash; totais da carreira com todos os times somados, aguardando uma contagem manual completa.</p>
+  </section>
+  <section class="dash-card" id="finish-card">
+    <h3 class="dash-card-title">🎯 Quebra da artilharia por método / finalização</h3>
+    <div class="dash-bars-wrap">
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Bola rolando <small style="font-weight:400;color:var(--muted)">&middot; gols de bola rolando</small></span>
+          <span><b>731</b> <small style="color:var(--muted)">(74.5%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-blue" style="width:74.5%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Faltas diretas <small style="font-weight:400;color:var(--muted)">&middot; gols diretos de falta na carreira</small></span>
+          <span><b>66</b> <small style="color:var(--muted)">(6.7%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:6.7%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Pênaltis <small style="font-weight:400;color:var(--muted)">&middot; 184 convertidos em 220 tentativas (83.6%)</small></span>
+          <span><b>184</b> <small style="color:var(--muted)">(18.8%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-red" style="width:18.8%"></div>
+        </div>
+      </div>
+    </div>
+    <p class="caveat" style="margin-top:14px;margin-bottom:0">Contagem compilada provisória &mdash; totais da carreira com todos os times somados, aguardando uma contagem manual completa.</p>
+  </section>
+  <section class="dash-card" id="comp-card">
+    <h3 class="dash-card-title">🏆 Principais competições (todos os times)</h3>
+    <div class="dash-bars-wrap">
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>La Liga</span>
+          <span><b>311</b> <small style="color:var(--muted)">(31.7%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:100.0%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Saudi Pro League</span>
+          <span><b>106</b> <small style="color:var(--muted)">(10.8%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:34.1%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>UEFA Champions League</span>
+          <span><b>105</b> <small style="color:var(--muted)">(10.7%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:33.8%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Premier League</span>
+          <span><b>103</b> <small style="color:var(--muted)">(10.5%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:33.1%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Serie A</span>
+          <span><b>81</b> <small style="color:var(--muted)">(8.3%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:26.0%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>UEFA European Championship / eliminatórias</span>
+          <span><b>55</b> <small style="color:var(--muted)">(5.6%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:17.7%"></div>
+        </div>
+      </div>
+      <div class="dash-bar-row">
+        <div class="dash-bar-meta">
+          <span>Copa do Mundo FIFA / eliminatórias</span>
+          <span><b>52</b> <small style="color:var(--muted)">(5.3%)</small></span>
+        </div>
+        <div class="dash-bar-track">
+          <div class="dash-bar-fill fill-gold" style="width:16.7%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="dash-card" id="milestones-card">
+    <h3 class="dash-card-title">⚡ Rastreador de velocidade dos gols marco</h3>
+    <div class="table-wrap">
+      <table class="milestone-table">
+        <thead>
+          <tr>
+            <th>Marco</th>
+            <th>Adversário</th>
+            <th>Data</th>
+            <th>Idade</th>
+            <th>Partidas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gol nº1</strong> <small style="color:var(--faint)">Estreia profissional pelo Sporting CP</small></td>
+            <td>Inter (classificação da Champions League)</td>
+            <td>14 ago 2002</td>
+            <td>17 anos e 190 dias</td>
+            <td><b>1</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº1 (Portugal)</strong> <small style="color:var(--faint)">Primeiro gol internacional, Euro 2004</small></td>
+            <td>Grécia</td>
+            <td>12 jun 2004</td>
+            <td>19 anos e 128 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº500</strong> <small style="color:var(--faint)">500º gol da carreira</small></td>
+            <td>Malmö</td>
+            <td>30 set 2015</td>
+            <td>30 anos e 237 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº700</strong> <small style="color:var(--faint)">700º gol da carreira</small></td>
+            <td>Ucrânia</td>
+            <td>14 out 2019</td>
+            <td>34 anos e 251 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº1,000 (participação)</strong> <small style="color:var(--faint)">1,000ª participação profissional</small></td>
+            <td>Cagliari</td>
+            <td>22 fev 2020</td>
+            <td>35 anos e 17 dias</td>
+            <td><b>1,000</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº900</strong> <small style="color:var(--faint)">Primeiro jogador a alcançar 900 gols de carreira</small></td>
+            <td>Croácia</td>
+            <td>5 set 2024</td>
+            <td>39 anos e 213 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº800 (clube)</strong> <small style="color:var(--faint)">800º gol de clube</small></td>
+            <td>Al Fateh</td>
+            <td>26 mai 2025</td>
+            <td>40 anos e 110 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº100 (Al Nassr)</strong> <small style="color:var(--faint)">Primeiro a alcançar 100 gols por quatro clubes</small></td>
+            <td>—</td>
+            <td>23 ago 2025</td>
+            <td>40 anos e 199 dias</td>
+            <td><b>—</b></td>
+          </tr>
+          <tr>
+            <td><strong>Gol nº981</strong> <small style="color:var(--faint)">Último gol profissional, Saudi Pro League</small></td>
+            <td>Al Nassr</td>
+            <td>12 out 2026</td>
+            <td>41 anos e 249 dias</td>
+            <td><b>1,340</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caveat" style="margin-top:12px;margin-bottom:0">Inclui todas as participações competitivas e internacionais oficiais de nível profissional. Datas e números de participações são informados onde o registro de carreira os declara.</p>
+  </section>
 </div>
+
+<aside aria-label="Publicidade" class="ad-banner-wrap">
+  <span class="ad-native-label">Publicidade</span>
+  <div class="ad-banner-slot">
+    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
+  </div>
+</aside>
+
+<div class="shead"><h2>Evolução da artilharia: registro de clubes &amp; seleção temporada a temporada</h2></div>
+<section class="card chart-card" id="season-card">
+    <figure style="margin:0"><div class="spark-wrap"><svg class="spark" viewBox="0 0 1000 210" role="img" aria-label="Gols de Cristiano Ronaldo por ano civil, com pico de 69 em 2013"><defs><linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fd0f2"/><stop offset="1" stop-color="#0e7cc0"/></linearGradient><linearGradient id="barPeak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eec22f"/><stop offset="1" stop-color="#8a6300"/></linearGradient><linearGradient id="cumAreaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e7cc0" stop-opacity="0.22"/><stop offset="1" stop-color="#0e7cc0" stop-opacity="0.02"/></linearGradient></defs><line class="baseline" x1="0" y1="175" x2="1000" y2="175"></line><text class="axis" x="4" y="59.0">69</text><text class="axis" x="4" y="171.0">0</text><rect class="bar ybar" data-year="2002" data-val="5" style="--i:0" x="9.6" y="166.3" width="20.8" height="8.7" rx="4"><title>2002: 5 (5)</title></rect><text class="yr" x="20" y="198">2002</text><rect class="bar ybar" data-year="2003" data-val="1" style="--i:1" x="49.6" y="172.0" width="20.8" height="3.0" rx="4"><title>2003: 1 (6)</title></rect><rect class="bar ybar" data-year="2004" data-val="13" style="--i:2" x="89.6" y="152.4" width="20.8" height="22.6" rx="4"><title>2004: 13 (19)</title></rect><text class="yr" x="100" y="198">2004</text><rect class="bar ybar" data-year="2005" data-val="15" style="--i:3" x="129.6" y="148.9" width="20.8" height="26.1" rx="4"><title>2005: 15 (34)</title></rect><rect class="bar ybar" data-year="2006" data-val="25" style="--i:4" x="169.6" y="131.5" width="20.8" height="43.5" rx="4"><title>2006: 25 (59)</title></rect><text class="yr" x="180" y="198">2006</text><rect class="bar ybar" data-year="2007" data-val="34" style="--i:5" x="209.6" y="115.9" width="20.8" height="59.1" rx="4"><title>2007: 34 (93)</title></rect><rect class="bar ybar" data-year="2008" data-val="35" style="--i:6" x="249.6" y="114.1" width="20.8" height="60.9" rx="4"><title>2008: 35 (128)</title></rect><text class="yr" x="260" y="198">2008</text><rect class="bar ybar" data-year="2009" data-val="30" style="--i:7" x="289.6" y="122.8" width="20.8" height="52.2" rx="4"><title>2009: 30 (158)</title></rect><rect class="bar ybar" data-year="2010" data-val="48" style="--i:8" x="329.6" y="91.5" width="20.8" height="83.5" rx="4"><title>2010: 48 (206)</title></rect><text class="yr" x="340" y="198">2010</text><rect class="bar ybar" data-year="2011" data-val="60" style="--i:9" x="369.6" y="70.7" width="20.8" height="104.3" rx="4"><title>2011: 60 (266)</title></rect><rect class="bar ybar" data-year="2012" data-val="63" style="--i:10" x="409.6" y="65.4" width="20.8" height="109.6" rx="4"><title>2012: 63 (329)</title></rect><text class="yr" x="420" y="198">2012</text><rect class="bar ybar peak" data-year="2013" data-val="69" style="--i:11" x="449.6" y="55.0" width="20.8" height="120.0" rx="4"><title>2013: 69 (398)</title></rect><text class="peak-label" x="460" y="47.0">69</text><rect class="bar ybar" data-year="2014" data-val="61" style="--i:12" x="489.6" y="68.9" width="20.8" height="106.1" rx="4"><title>2014: 61 (459)</title></rect><text class="yr" x="500" y="198">2014</text><rect class="bar ybar" data-year="2015" data-val="57" style="--i:13" x="529.6" y="75.9" width="20.8" height="99.1" rx="4"><title>2015: 57 (516)</title></rect><rect class="bar ybar" data-year="2016" data-val="55" style="--i:14" x="569.6" y="79.3" width="20.8" height="95.7" rx="4"><title>2016: 55 (571)</title></rect><text class="yr" x="580" y="198">2016</text><rect class="bar ybar" data-year="2017" data-val="53" style="--i:15" x="609.6" y="82.8" width="20.8" height="92.2" rx="4"><title>2017: 53 (624)</title></rect><rect class="bar ybar" data-year="2018" data-val="49" style="--i:16" x="649.6" y="89.8" width="20.8" height="85.2" rx="4"><title>2018: 49 (673)</title></rect><text class="yr" x="660" y="198">2018</text><rect class="bar ybar" data-year="2019" data-val="39" style="--i:17" x="689.6" y="107.2" width="20.8" height="67.8" rx="4"><title>2019: 39 (712)</title></rect><rect class="bar ybar" data-year="2020" data-val="44" style="--i:18" x="729.6" y="98.5" width="20.8" height="76.5" rx="4"><title>2020: 44 (756)</title></rect><text class="yr" x="740" y="198">2020</text><rect class="bar ybar" data-year="2021" data-val="47" style="--i:19" x="769.6" y="93.3" width="20.8" height="81.7" rx="4"><title>2021: 47 (803)</title></rect><rect class="bar ybar" data-year="2022" data-val="16" style="--i:20" x="809.6" y="147.2" width="20.8" height="27.8" rx="4"><title>2022: 16 (819)</title></rect><text class="yr" x="820" y="198">2022</text><rect class="bar ybar" data-year="2023" data-val="54" style="--i:21" x="849.6" y="81.1" width="20.8" height="93.9" rx="4"><title>2023: 54 (873)</title></rect><rect class="bar ybar" data-year="2024" data-val="43" style="--i:22" x="889.6" y="100.2" width="20.8" height="74.8" rx="4"><title>2024: 43 (916)</title></rect><text class="yr" x="900" y="198">2024</text><rect class="bar ybar" data-year="2025" data-val="41" style="--i:23" x="929.6" y="103.7" width="20.8" height="71.3" rx="4"><title>2025: 41 (957)</title></rect><rect class="bar ybar prov" data-year="2026" data-val="24" style="--i:24" x="969.6" y="133.3" width="20.8" height="41.7" rx="4"><title>2026: 24 (981)</title></rect><text class="prov-label" x="980" y="125.3">24</text><text class="yr" x="980" y="198">2026</text></svg></div><figcaption class="figcap">Barras: gols daquele ano (pico 69, 2013).</figcaption></figure>
+  </section>
+<section class="card" id="season-table">
+    <div class="table-wrap"><table class="data-table"><caption>Todas as 27 temporadas de clube: Sporting CP 2002/03, Manchester United 2003/04&ndash;2008/09 e 2021/22&ndash;2022/23, Real Madrid 2009/10&ndash;2017/18, Juventus 2018/19&ndash;2021/22 e Al Nassr 2022/23&ndash;2026/27.</caption>
+      <thead><tr><th scope="col" class="left">Temporada</th><th scope="col" class="left">Clube</th><th scope="col">Jogos</th><th scope="col">Gols</th><th scope="col">Liga</th><th scope="col">Copa</th><th scope="col">Continental</th><th scope="col">Outro</th></tr></thead><tbody>
+      <tr><th scope="row">2002/03</th>
+        <td class="left">Sporting CP</td><td>31</td><td><b>5</b></td>
+        <td>25/3</td><td>3/2</td>
+        <td>3/0</td><td>0/0</td></tr>
+      <tr><th scope="row">2003/04</th>
+        <td class="left">Manchester United</td><td>40</td><td><b>6</b></td>
+        <td>29/4</td><td>6/2</td>
+        <td>5/0</td><td>0/0</td></tr>
+      <tr><th scope="row">2004/05</th>
+        <td class="left">Manchester United</td><td>50</td><td><b>9</b></td>
+        <td>33/5</td><td>9/4</td>
+        <td>8/0</td><td>0/0</td></tr>
+      <tr><th scope="row">2005/06</th>
+        <td class="left">Manchester United</td><td>47</td><td><b>12</b></td>
+        <td>33/9</td><td>6/2</td>
+        <td>8/1</td><td>0/0</td></tr>
+      <tr><th scope="row">2006/07</th>
+        <td class="left">Manchester United</td><td>53</td><td><b>23</b></td>
+        <td>34/17</td><td>8/3</td>
+        <td>11/3</td><td>0/0</td></tr>
+      <tr><th scope="row">2007/08</th>
+        <td class="left">Manchester United</td><td>49</td><td><b>42</b></td>
+        <td>34/31</td><td>3/3</td>
+        <td>11/8</td><td>1/0</td></tr>
+      <tr><th scope="row">2008/09</th>
+        <td class="left">Manchester United</td><td>53</td><td><b>26</b></td>
+        <td>33/18</td><td>6/3</td>
+        <td>12/4</td><td>2/1</td></tr>
+      <tr><th scope="row">2009/10</th>
+        <td class="left">Real Madrid</td><td>35</td><td><b>33</b></td>
+        <td>29/26</td><td>0/0</td>
+        <td>6/7</td><td>0/0</td></tr>
+      <tr><th scope="row">2010/11</th>
+        <td class="left">Real Madrid</td><td>54</td><td><b>53</b></td>
+        <td>34/40</td><td>8/7</td>
+        <td>12/6</td><td>0/0</td></tr>
+      <tr><th scope="row">2011/12</th>
+        <td class="left">Real Madrid</td><td>55</td><td><b>60</b></td>
+        <td>38/46</td><td>5/3</td>
+        <td>10/10</td><td>2/1</td></tr>
+      <tr><th scope="row">2012/13</th>
+        <td class="left">Real Madrid</td><td>55</td><td><b>55</b></td>
+        <td>34/34</td><td>7/7</td>
+        <td>12/12</td><td>2/2</td></tr>
+      <tr><th scope="row">2013/14</th>
+        <td class="left">Real Madrid</td><td>47</td><td><b>51</b></td>
+        <td>30/31</td><td>6/3</td>
+        <td>11/17</td><td>0/0</td></tr>
+      <tr><th scope="row">2014/15 <span class="yr-note">Recorde 61G</span></th>
+        <td class="left">Real Madrid</td><td>54</td><td><b>61</b></td>
+        <td>35/48</td><td>2/1</td>
+        <td>12/10</td><td>5/2</td></tr>
+      <tr><th scope="row">2015/16</th>
+        <td class="left">Real Madrid</td><td>48</td><td><b>51</b></td>
+        <td>36/35</td><td>0/0</td>
+        <td>12/16</td><td>0/0</td></tr>
+      <tr><th scope="row">2016/17</th>
+        <td class="left">Real Madrid</td><td>46</td><td><b>42</b></td>
+        <td>29/25</td><td>2/1</td>
+        <td>13/12</td><td>2/4</td></tr>
+      <tr><th scope="row">2017/18</th>
+        <td class="left">Real Madrid</td><td>44</td><td><b>44</b></td>
+        <td>27/26</td><td>0/0</td>
+        <td>13/15</td><td>4/3</td></tr>
+      <tr><th scope="row">2018/19</th>
+        <td class="left">Juventus</td><td>43</td><td><b>28</b></td>
+        <td>31/21</td><td>2/0</td>
+        <td>9/6</td><td>1/1</td></tr>
+      <tr><th scope="row">2019/20</th>
+        <td class="left">Juventus</td><td>46</td><td><b>37</b></td>
+        <td>33/31</td><td>4/2</td>
+        <td>8/4</td><td>1/0</td></tr>
+      <tr><th scope="row">2020/21</th>
+        <td class="left">Juventus</td><td>44</td><td><b>36</b></td>
+        <td>33/29</td><td>4/2</td>
+        <td>6/4</td><td>1/1</td></tr>
+      <tr><th scope="row">2021/22</th>
+        <td class="left">Juventus</td><td>1</td><td><b>0</b></td>
+        <td>1/0</td><td>0/0</td>
+        <td>0/0</td><td>0/0</td></tr>
+      <tr><th scope="row">2021/22</th>
+        <td class="left">Manchester United</td><td>38</td><td><b>24</b></td>
+        <td>30/18</td><td>1/0</td>
+        <td>7/6</td><td>0/0</td></tr>
+      <tr><th scope="row">2022/23</th>
+        <td class="left">Manchester United</td><td>16</td><td><b>3</b></td>
+        <td>10/1</td><td>0/0</td>
+        <td>6/2</td><td>0/0</td></tr>
+      <tr><th scope="row">2022/23</th>
+        <td class="left">Al Nassr</td><td>19</td><td><b>14</b></td>
+        <td>16/14</td><td>2/0</td>
+        <td>0/0</td><td>1/0</td></tr>
+      <tr><th scope="row">2023/24</th>
+        <td class="left">Al Nassr</td><td>51</td><td><b>50</b></td>
+        <td>31/35</td><td>4/3</td>
+        <td>9/6</td><td>7/6</td></tr>
+      <tr><th scope="row">2024/25</th>
+        <td class="left">Al Nassr</td><td>41</td><td><b>35</b></td>
+        <td>30/25</td><td>1/0</td>
+        <td>8/8</td><td>2/2</td></tr>
+      <tr><th scope="row">2025/26</th>
+        <td class="left">Al Nassr</td><td>37</td><td><b>30</b></td>
+        <td>30/28</td><td>1/0</td>
+        <td>4/1</td><td>2/1</td></tr>
+      <tr class="total"><th scope="row">2026/27 *</th>
+        <td class="left">Al Nassr</td><td>9</td><td><b>5</b></td>
+        <td>7/4</td><td>0/0</td>
+        <td>2/1</td><td>0/0</td></tr>
+      </tbody></table></div>
+    <p class="table-hint">Clique no cabeçalho de uma coluna para ordenar. Apenas partidas de primeira equipe em nível profissional.</p>
+  </section>
+
+<div class="shead"><h2>Totais anuais de gols &amp; trajetória acumulada (69 gols em 2013)</h2></div>
+<section class="card chart-card" id="combo-card">
+    <figure style="margin:0"><div class="spark-wrap"><svg class="spark" viewBox="0 0 1000 210" role="img" aria-label="Gols por ano, com pico de 69 em 2013"><defs><linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fd0f2"/><stop offset="1" stop-color="#0e7cc0"/></linearGradient><linearGradient id="barPeak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eec22f"/><stop offset="1" stop-color="#8a6300"/></linearGradient><linearGradient id="cumAreaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e7cc0" stop-opacity="0.22"/><stop offset="1" stop-color="#0e7cc0" stop-opacity="0.02"/></linearGradient></defs><line class="baseline" x1="0" y1="175" x2="1000" y2="175"></line><text class="axis" x="4" y="59.0">69 /ano</text><text class="axis" x="4" y="171.0">0</text><a href="#y2002"><rect class="bar ybar" data-year="2002" data-val="5" style="--i:0" x="9.6" y="166.3" width="20.8" height="8.7" rx="4"><title>2002: 5 (5)</title></rect></a><text class="yr" x="20" y="198">2002</text><a href="#y2003"><rect class="bar ybar" data-year="2003" data-val="1" style="--i:1" x="49.6" y="172.0" width="20.8" height="3.0" rx="4"><title>2003: 1 (6)</title></rect></a><a href="#y2004"><rect class="bar ybar" data-year="2004" data-val="13" style="--i:2" x="89.6" y="152.4" width="20.8" height="22.6" rx="4"><title>2004: 13 (19)</title></rect></a><text class="yr" x="100" y="198">2004</text><a href="#y2005"><rect class="bar ybar" data-year="2005" data-val="15" style="--i:3" x="129.6" y="148.9" width="20.8" height="26.1" rx="4"><title>2005: 15 (34)</title></rect></a><a href="#y2006"><rect class="bar ybar" data-year="2006" data-val="25" style="--i:4" x="169.6" y="131.5" width="20.8" height="43.5" rx="4"><title>2006: 25 (59)</title></rect></a><text class="yr" x="180" y="198">2006</text><a href="#y2007"><rect class="bar ybar" data-year="2007" data-val="34" style="--i:5" x="209.6" y="115.9" width="20.8" height="59.1" rx="4"><title>2007: 34 (93)</title></rect></a><a href="#y2008"><rect class="bar ybar" data-year="2008" data-val="35" style="--i:6" x="249.6" y="114.1" width="20.8" height="60.9" rx="4"><title>2008: 35 (128)</title></rect></a><text class="yr" x="260" y="198">2008</text><a href="#y2009"><rect class="bar ybar" data-year="2009" data-val="30" style="--i:7" x="289.6" y="122.8" width="20.8" height="52.2" rx="4"><title>2009: 30 (158)</title></rect></a><a href="#y2010"><rect class="bar ybar" data-year="2010" data-val="48" style="--i:8" x="329.6" y="91.5" width="20.8" height="83.5" rx="4"><title>2010: 48 (206)</title></rect></a><text class="yr" x="340" y="198">2010</text><a href="#y2011"><rect class="bar ybar" data-year="2011" data-val="60" style="--i:9" x="369.6" y="70.7" width="20.8" height="104.3" rx="4"><title>2011: 60 (266)</title></rect></a><a href="#y2012"><rect class="bar ybar" data-year="2012" data-val="63" style="--i:10" x="409.6" y="65.4" width="20.8" height="109.6" rx="4"><title>2012: 63 (329)</title></rect></a><text class="yr" x="420" y="198">2012</text><a href="#y2013"><rect class="bar ybar peak" data-year="2013" data-val="69" style="--i:11" x="449.6" y="55.0" width="20.8" height="120.0" rx="4"><title>2013: 69 (398)</title></rect></a><text class="peak-label" x="460" y="47.0">69</text><a href="#y2014"><rect class="bar ybar" data-year="2014" data-val="61" style="--i:12" x="489.6" y="68.9" width="20.8" height="106.1" rx="4"><title>2014: 61 (459)</title></rect></a><text class="yr" x="500" y="198">2014</text><a href="#y2015"><rect class="bar ybar" data-year="2015" data-val="57" style="--i:13" x="529.6" y="75.9" width="20.8" height="99.1" rx="4"><title>2015: 57 (516)</title></rect></a><a href="#y2016"><rect class="bar ybar" data-year="2016" data-val="55" style="--i:14" x="569.6" y="79.3" width="20.8" height="95.7" rx="4"><title>2016: 55 (571)</title></rect></a><text class="yr" x="580" y="198">2016</text><a href="#y2017"><rect class="bar ybar" data-year="2017" data-val="53" style="--i:15" x="609.6" y="82.8" width="20.8" height="92.2" rx="4"><title>2017: 53 (624)</title></rect></a><a href="#y2018"><rect class="bar ybar" data-year="2018" data-val="49" style="--i:16" x="649.6" y="89.8" width="20.8" height="85.2" rx="4"><title>2018: 49 (673)</title></rect></a><text class="yr" x="660" y="198">2018</text><a href="#y2019"><rect class="bar ybar" data-year="2019" data-val="39" style="--i:17" x="689.6" y="107.2" width="20.8" height="67.8" rx="4"><title>2019: 39 (712)</title></rect></a><a href="#y2020"><rect class="bar ybar" data-year="2020" data-val="44" style="--i:18" x="729.6" y="98.5" width="20.8" height="76.5" rx="4"><title>2020: 44 (756)</title></rect></a><text class="yr" x="740" y="198">2020</text><a href="#y2021"><rect class="bar ybar" data-year="2021" data-val="47" style="--i:19" x="769.6" y="93.3" width="20.8" height="81.7" rx="4"><title>2021: 47 (803)</title></rect></a><a href="#y2022"><rect class="bar ybar" data-year="2022" data-val="16" style="--i:20" x="809.6" y="147.2" width="20.8" height="27.8" rx="4"><title>2022: 16 (819)</title></rect></a><text class="yr" x="820" y="198">2022</text><a href="#y2023"><rect class="bar ybar" data-year="2023" data-val="54" style="--i:21" x="849.6" y="81.1" width="20.8" height="93.9" rx="4"><title>2023: 54 (873)</title></rect></a><a href="#y2024"><rect class="bar ybar" data-year="2024" data-val="43" style="--i:22" x="889.6" y="100.2" width="20.8" height="74.8" rx="4"><title>2024: 43 (916)</title></rect></a><text class="yr" x="900" y="198">2024</text><a href="#y2025"><rect class="bar ybar" data-year="2025" data-val="41" style="--i:23" x="929.6" y="103.7" width="20.8" height="71.3" rx="4"><title>2025: 41 (957)</title></rect></a><a href="#y2026"><rect class="bar ybar prov" data-year="2026" data-val="24" style="--i:24" x="969.6" y="133.3" width="20.8" height="41.7" rx="4"><title>2026: 24 (981)</title></rect></a><text class="prov-label" x="980" y="125.3">24</text><text class="yr" x="980" y="198">2026</text><polygon class="cum-area" points="20.0,175 20.0,174.3 60.0,174.2 100.0,172.5 140.0,170.5 180.0,167.3 220.0,162.8 260.0,158.2 300.0,154.3 340.0,148.0 380.0,140.2 420.0,131.9 460.0,122.9 500.0,114.9 540.0,107.4 580.0,100.2 620.0,93.3 660.0,86.8 700.0,81.7 740.0,76.0 780.0,69.8 820.0,67.7 860.0,60.6 900.0,55.0 940.0,49.6 981.0,46.5 981.0,175" fill="url(#cumAreaGrad)"/><line class="thousand" x1="0" y1="44" x2="1000" y2="44"/><text class="thousand-label" x="990" y="38">meta de 1,000 gols</text><text class="axis right" x="990" y="60.0" text-anchor="end">981 agora</text><polyline class="cum" points="20.0,174.3 60.0,174.2 100.0,172.5 140.0,170.5 180.0,167.3 220.0,162.8 260.0,158.2 300.0,154.3 340.0,148.0 380.0,140.2 420.0,131.9 460.0,122.9 500.0,114.9 540.0,107.4 580.0,100.2 620.0,93.3 660.0,86.8 700.0,81.7 740.0,76.0 780.0,69.8 820.0,67.7 860.0,60.6 900.0,55.0 940.0,49.6 981.0,46.5"/><circle class="cum-dot" cx="980.0" cy="46.5" r="5"><title>Total atual da carreira: 981 gols</title></circle></svg></div><figcaption class="figcap">Barras: gols daquele ano (pico 69, 2013). Linha: subida acumulada da carreira até 981.</figcaption></figure>
+  </section>
+<section class="card" id="year-table">
+    <div class="table-wrap"><table class="data-table"><caption>Gols, total acumulado da carreira e idade para cada ano civil desde a estreia de Ronaldo em 2002.</caption>
+      <thead><tr><th scope="col" class="left">Ano</th><th scope="col">Gols</th><th scope="col">Total da carreira</th><th scope="col">Idade</th></tr></thead><tbody>
+      <tr id="y2026">
+        <th scope="row">2026 *</th>
+        <td><b>24</b></td><td>981</td><td>41</td></tr>
+      <tr id="y2025">
+        <th scope="row">2025</th>
+        <td><b>41</b></td><td>957</td><td>40</td></tr>
+      <tr id="y2024">
+        <th scope="row">2024</th>
+        <td><b>43</b></td><td>916</td><td>39</td></tr>
+      <tr id="y2023">
+        <th scope="row">2023</th>
+        <td><b>54</b></td><td>873</td><td>38</td></tr>
+      <tr id="y2022">
+        <th scope="row">2022</th>
+        <td><b>16</b></td><td>819</td><td>37</td></tr>
+      <tr id="y2021">
+        <th scope="row">2021</th>
+        <td><b>47</b></td><td>803</td><td>36</td></tr>
+      <tr id="y2020">
+        <th scope="row">2020</th>
+        <td><b>44</b></td><td>756</td><td>35</td></tr>
+      <tr id="y2019">
+        <th scope="row">2019</th>
+        <td><b>39</b></td><td>712</td><td>34</td></tr>
+      <tr id="y2018">
+        <th scope="row">2018</th>
+        <td><b>49</b></td><td>673</td><td>33</td></tr>
+      <tr id="y2017">
+        <th scope="row">2017</th>
+        <td><b>53</b></td><td>624</td><td>32</td></tr>
+      <tr id="y2016">
+        <th scope="row">2016</th>
+        <td><b>55</b></td><td>571</td><td>31</td></tr>
+      <tr id="y2015">
+        <th scope="row">2015</th>
+        <td><b>57</b></td><td>516</td><td>30</td></tr>
+      <tr id="y2014">
+        <th scope="row">2014</th>
+        <td><b>61</b></td><td>459</td><td>29</td></tr>
+      <tr id="y2013">
+        <th scope="row">2013 <span class="yr-note">Recorde da carreira 69G</span></th>
+        <td><b>69</b></td><td>398</td><td>28</td></tr>
+      <tr id="y2012">
+        <th scope="row">2012</th>
+        <td><b>63</b></td><td>329</td><td>27</td></tr>
+      <tr id="y2011">
+        <th scope="row">2011</th>
+        <td><b>60</b></td><td>266</td><td>26</td></tr>
+      <tr id="y2010">
+        <th scope="row">2010</th>
+        <td><b>48</b></td><td>206</td><td>25</td></tr>
+      <tr id="y2009">
+        <th scope="row">2009</th>
+        <td><b>30</b></td><td>158</td><td>24</td></tr>
+      <tr id="y2008">
+        <th scope="row">2008</th>
+        <td><b>35</b></td><td>128</td><td>23</td></tr>
+      <tr id="y2007">
+        <th scope="row">2007</th>
+        <td><b>34</b></td><td>93</td><td>22</td></tr>
+      <tr id="y2006">
+        <th scope="row">2006</th>
+        <td><b>25</b></td><td>59</td><td>21</td></tr>
+      <tr id="y2005">
+        <th scope="row">2005</th>
+        <td><b>15</b></td><td>34</td><td>20</td></tr>
+      <tr id="y2004">
+        <th scope="row">2004</th>
+        <td><b>13</b></td><td>19</td><td>19</td></tr>
+      <tr id="y2003">
+        <th scope="row">2003</th>
+        <td><b>1</b></td><td>6</td><td>18</td></tr>
+      <tr id="y2002">
+        <th scope="row">2002</th>
+        <td><b>5</b></td><td>5</td><td>17</td></tr>
+      </tbody></table></div>
+    <p class="table-hint">Clique no cabeçalho de uma coluna para ordenar. Apenas partidas de primeira equipe em nível profissional.</p>
+  </section>
+
+<div class="shead"><h2>Gols em cada idade: da estreia aos 17 anos até hoje</h2></div>
+<section class="card chart-card" id="age-card">
+    <div class="hbars">
+      <div class="hbar-row"><span class="hbar-name">Idade 17 &middot; 2002</span><span class="hbar-track"><span class="hbar-fill" style="width:7.2%"></span></span><span class="hbar-val">5</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 18 &middot; 2003</span><span class="hbar-track"><span class="hbar-fill" style="width:1.4%"></span></span><span class="hbar-val">1</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 19 &middot; 2004</span><span class="hbar-track"><span class="hbar-fill" style="width:18.8%"></span></span><span class="hbar-val">13</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 20 &middot; 2005</span><span class="hbar-track"><span class="hbar-fill" style="width:21.7%"></span></span><span class="hbar-val">15</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 21 &middot; 2006</span><span class="hbar-track"><span class="hbar-fill" style="width:36.2%"></span></span><span class="hbar-val">25</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 22 &middot; 2007</span><span class="hbar-track"><span class="hbar-fill" style="width:49.3%"></span></span><span class="hbar-val">34</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 23 &middot; 2008</span><span class="hbar-track"><span class="hbar-fill" style="width:50.7%"></span></span><span class="hbar-val">35</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 24 &middot; 2009</span><span class="hbar-track"><span class="hbar-fill" style="width:43.5%"></span></span><span class="hbar-val">30</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 25 &middot; 2010</span><span class="hbar-track"><span class="hbar-fill" style="width:69.6%"></span></span><span class="hbar-val">48</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 26 &middot; 2011</span><span class="hbar-track"><span class="hbar-fill" style="width:87.0%"></span></span><span class="hbar-val">60</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 27 &middot; 2012</span><span class="hbar-track"><span class="hbar-fill" style="width:91.3%"></span></span><span class="hbar-val">63</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 28 &middot; 2013</span><span class="hbar-track"><span class="hbar-fill top" style="width:100.0%"></span></span><span class="hbar-val">69</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 29 &middot; 2014</span><span class="hbar-track"><span class="hbar-fill" style="width:88.4%"></span></span><span class="hbar-val">61</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 30 &middot; 2015</span><span class="hbar-track"><span class="hbar-fill" style="width:82.6%"></span></span><span class="hbar-val">57</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 31 &middot; 2016</span><span class="hbar-track"><span class="hbar-fill" style="width:79.7%"></span></span><span class="hbar-val">55</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 32 &middot; 2017</span><span class="hbar-track"><span class="hbar-fill" style="width:76.8%"></span></span><span class="hbar-val">53</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 33 &middot; 2018</span><span class="hbar-track"><span class="hbar-fill" style="width:71.0%"></span></span><span class="hbar-val">49</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 34 &middot; 2019</span><span class="hbar-track"><span class="hbar-fill" style="width:56.5%"></span></span><span class="hbar-val">39</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 35 &middot; 2020</span><span class="hbar-track"><span class="hbar-fill" style="width:63.8%"></span></span><span class="hbar-val">44</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 36 &middot; 2021</span><span class="hbar-track"><span class="hbar-fill" style="width:68.1%"></span></span><span class="hbar-val">47</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 37 &middot; 2022</span><span class="hbar-track"><span class="hbar-fill" style="width:23.2%"></span></span><span class="hbar-val">16</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 38 &middot; 2023</span><span class="hbar-track"><span class="hbar-fill" style="width:78.3%"></span></span><span class="hbar-val">54</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 39 &middot; 2024</span><span class="hbar-track"><span class="hbar-fill" style="width:62.3%"></span></span><span class="hbar-val">43</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 40 &middot; 2025</span><span class="hbar-track"><span class="hbar-fill" style="width:59.4%"></span></span><span class="hbar-val">41</span></div>
+      <div class="hbar-row"><span class="hbar-name">Idade 41 &middot; 2026</span><span class="hbar-track"><span class="hbar-fill" style="width:34.8%"></span></span><span class="hbar-val">24</span></div>
+    </div><p class="caveat">Cada gol profissional pela idade em que foi marcado &mdash; clubes e seleção somados. Pico: 69 aos 28 anos (2013).</p>
+  </section>
+
+<div class="shead"><h2>Gols da carreira em cada time: Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP &amp; Portugal</h2></div>
+<section aria-label="Participações e gols de cada time" class="team-grid" id="team-cards">
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="real-madrid"><span class="club-badge" data-team="real-madrid" aria-hidden="true" style="display:none">RM</span><img class="crest-img" src="img/teams/real-madrid.png" alt="Escudo do Real Madrid" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Real Madrid</strong><span class="sub">2009 a 2018</span></div>
+      <span class="team-share">45.9% de 981</span></div>
+      <div class="team-nums"><div><b>450</b><span>gols</span></div>
+      <div><b>438</b><span>jogos</span></div>
+      <div><b>1.03</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Real Madrid: 450 gols"><span style="width:100.0%"></span></div></article>
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="man-utd"><span class="club-badge" data-team="man-utd" aria-hidden="true" style="display:none">MU</span><img class="crest-img" src="img/teams/man-utd.png" alt="Escudo do Manchester United" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Manchester United</strong><span class="sub">2003 a 2009 e 2021 a 2022</span></div>
+      <span class="team-share">14.8% de 981</span></div>
+      <div class="team-nums"><div><b>145</b><span>gols</span></div>
+      <div><b>346</b><span>jogos</span></div>
+      <div><b>0.42</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Manchester United: 145 gols"><span style="width:32.2%"></span></div></article>
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="juventus"><span class="club-badge" data-team="juventus" aria-hidden="true" style="display:none">JUV</span><img class="crest-img" src="img/teams/juventus.png" alt="Escudo da Juventus" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Juventus</strong><span class="sub">2018 a 2022</span></div>
+      <span class="team-share">10.3% de 981</span></div>
+      <div class="team-nums"><div><b>101</b><span>gols</span></div>
+      <div><b>134</b><span>jogos</span></div>
+      <div><b>0.75</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Juventus: 101 gols"><span style="width:22.4%"></span></div></article>
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="al-nassr"><span class="club-badge" data-team="al-nassr" aria-hidden="true" style="display:none">NAS</span><img class="crest-img" src="img/teams/al-nassr.png" alt="Escudo do Al Nassr" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Al Nassr</strong><span class="sub">2023 até hoje</span></div>
+      <span class="team-share">13.7% de 981</span></div>
+      <div class="team-nums"><div><b>134</b><span>gols</span></div>
+      <div><b>157</b><span>jogos</span></div>
+      <div><b>0.85</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Al Nassr: 134 gols"><span style="width:29.8%"></span></div></article>
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="sporting"><span class="club-badge" data-team="sporting" aria-hidden="true" style="display:none">SCP</span><img class="crest-img" src="img/teams/sporting.png" alt="Escudo do Sporting CP" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Sporting CP</strong><span class="sub">2002 a 2003</span></div>
+      <span class="team-share">0.5% de 981</span></div>
+      <div class="team-nums"><div><b>5</b><span>gols</span></div>
+      <div><b>31</b><span>jogos</span></div>
+      <div><b>0.16</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Sporting CP: 5 gols"><span style="width:1.1%"></span></div></article>
+    <article class="team-card"><div class="team-card-head"><span class="crest" data-team="portugal"><span class="club-badge" data-team="portugal" aria-hidden="true" style="display:none">POR</span><img class="crest-img" src="img/teams/portugal.png" alt="Escudo de Portugal" width="30" height="30" loading="lazy" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>
+      <div><strong>Portugal</strong><span class="sub">2003 até hoje</span></div>
+      <span class="team-share">14.9% de 981</span></div>
+      <div class="team-nums"><div><b>146</b><span>gols</span></div>
+      <div><b>234</b><span>jogos</span></div>
+      <div><b>0.62</b><span>por jogo</span></div></div>
+      <div class="team-bar" role="img" aria-label="Portugal: 146 gols"><span style="width:32.4%"></span></div></article>
+  </section>
+
+<div class="shead"><h2>Totais da carreira &amp; invariantes estatísticos avançados</h2></div>
+<section class="card" id="comp-table">
+    <div class="table-wrap"><table class="data-table"><caption>Gols por competição e clube. As linhas da Champions League são as divisões continentais por clube; o total oficial da competição é de 140 gols.</caption>
+      <thead><tr><th scope="col" class="left">Competição</th><th scope="col">Gols</th><th scope="col">Compartilhar</th></tr></thead><tbody>
+      <tr><th scope="row">La Liga<small class="comp-team">Real Madrid</small></th><td><b>311</b></td><td>31.7%</td></tr>
+      <tr><th scope="row">Saudi Pro League<small class="comp-team">Al Nassr</small></th><td><b>106</b></td><td>10.8%</td></tr>
+      <tr><th scope="row">UEFA Champions League<small class="comp-team">Real Madrid</small></th><td><b>105</b></td><td>10.7%</td></tr>
+      <tr><th scope="row">Premier League<small class="comp-team">Manchester United</small></th><td><b>103</b></td><td>10.5%</td></tr>
+      <tr><th scope="row">Serie A<small class="comp-team">Juventus</small></th><td><b>81</b></td><td>8.3%</td></tr>
+      <tr><th scope="row">UEFA European Championship / eliminatórias<small class="comp-team">Portugal</small></th><td><b>55</b></td><td>5.6%</td></tr>
+      <tr><th scope="row">Copa do Mundo FIFA / eliminatórias<small class="comp-team">Portugal</small></th><td><b>52</b></td><td>5.3%</td></tr>
+      <tr><th scope="row">UEFA Champions League<small class="comp-team">Manchester United</small></th><td><b>24</b></td><td>2.4%</td></tr>
+      <tr><th scope="row">Copa del Rey<small class="comp-team">Real Madrid</small></th><td><b>22</b></td><td>2.2%</td></tr>
+      <tr><th scope="row">Amistosos internacionais<small class="comp-team">Portugal</small></th><td><b>22</b></td><td>2.2%</td></tr>
+      <tr><th scope="row">FA Cup / Football League Cup<small class="comp-team">Manchester United</small></th><td><b>17</b></td><td>1.7%</td></tr>
+      <tr><th scope="row">AFC Champions League Elite / Two<small class="comp-team">Al Nassr</small></th><td><b>16</b></td><td>1.6%</td></tr>
+      <tr><th scope="row">UEFA Nations League<small class="comp-team">Portugal</small></th><td><b>15</b></td><td>1.5%</td></tr>
+      <tr><th scope="row">UEFA Champions League<small class="comp-team">Juventus</small></th><td><b>14</b></td><td>1.4%</td></tr>
+      <tr><th scope="row">Supercopa de España / UEFA Super Cup / FIFA Club World Cup<small class="comp-team">Real Madrid</small></th><td><b>12</b></td><td>1.2%</td></tr>
+      <tr><th scope="row">Arab Club Champions Cup / Saudi Super Cup<small class="comp-team">Al Nassr</small></th><td><b>9</b></td><td>0.9%</td></tr>
+      <tr><th scope="row">Coppa Italia<small class="comp-team">Juventus</small></th><td><b>4</b></td><td>0.4%</td></tr>
+      <tr><th scope="row">Primeira Liga<small class="comp-team">Sporting CP</small></th><td><b>3</b></td><td>0.3%</td></tr>
+      <tr><th scope="row">King's Cup<small class="comp-team">Al Nassr</small></th><td><b>3</b></td><td>0.3%</td></tr>
+      <tr><th scope="row">Taça de Portugal<small class="comp-team">Sporting CP</small></th><td><b>2</b></td><td>0.2%</td></tr>
+      <tr><th scope="row">Supercoppa Italiana<small class="comp-team">Juventus</small></th><td><b>2</b></td><td>0.2%</td></tr>
+      <tr><th scope="row">FIFA Confederations Cup<small class="comp-team">Portugal</small></th><td><b>2</b></td><td>0.2%</td></tr>
+      <tr><th scope="row">FA Community Shield / FIFA Club World Cup<small class="comp-team">Manchester United</small></th><td><b>1</b></td><td>0.1%</td></tr>
+      </tbody></table></div>
+    <p class="table-hint">Clique no cabeçalho de uma coluna para ordenar. Apenas partidas de primeira equipe em nível profissional.</p>
+  </section>
+
+<div class="shead"><h2>Como Cristiano Ronaldo marca seus gols?</h2></div>
+<section class="card" id="finish-table">
+    <div class="table-wrap"><table class="data-table"><caption>Como os gols foram marcados e com que parte do corpo &mdash; totais da carreira, todos os times.</caption>
+      <thead><tr><th scope="col" class="left">Finalização</th><th scope="col">Gols</th><th scope="col">Compartilhar</th></tr></thead><tbody>
+      <tr><th scope="row">Bola rolando</th><td><b>731</b></td><td>74.5%</td></tr>
+      <tr><th scope="row">Pênaltis</th><td><b>184</b></td><td>18.8%</td></tr>
+      <tr><th scope="row">Faltas</th><td><b>66</b></td><td>6.7%</td></tr>
+      <tr><th scope="row">Pé esquerdo</th><td><b>186</b></td><td>19.0%</td></tr>
+      <tr><th scope="row">Pé direito</th><td><b>634</b></td><td>64.6%</td></tr>
+      <tr><th scope="row">Cabeça</th><td><b>158</b></td><td>16.1%</td></tr>
+      <tr><th scope="row">Outro (peito, etc.)</th><td><b>3</b></td><td>0.3%</td></tr>
+      </tbody></table></div><p class="caveat">Provisória até a verificação por contagem manual contra as fichas oficiais de partida. Contagem compilada provisória baseada em relatórios de partida verificados.</p>
+    <p class="table-hint">Clique no cabeçalho de uma coluna para ordenar. Apenas partidas de primeira equipe em nível profissional.</p>
+  </section>
+
+<div class="shead"><h2>Recordes mundiais históricos dentro destes números</h2></div>
+<section aria-label="Recordes por trás dos números do painel" class="records" id="dash-records">
+    <div class="record"><span class="num">69</span><span><b>Gols em 2013</b> &mdash; o ano civil de pico da carreira (59 de clube, 10 de Portugal).</span></div>
+    <div class="record"><span class="num">140</span><span><b>Gols na Champions League</b> &mdash; o recorde histórico, e as 42 assistências também são recorde histórico.</span></div>
+    <div class="record"><span class="num">146</span><span><b>Gols de Portugal em 234 convocações</b> &mdash; o recorde internacional de gols e de participações.</span></div>
+    <div class="record"><span class="num">5</span><span><b>Ballons d'Or</b> &mdash; 2008, 2013, 2014, 2016 e 2017.</span></div>
+    <div class="record"><span class="num">66</span><span><b>Hat-tricks</b> por clubes e seleção (contagem compilada provisória).</span></div>
+    <div class="record"><span class="num">35</span><span><b>Troféus coletivos</b> &mdash; 32 por clubes e 3 por Portugal.</span></div>
+  </section>
+
+<aside aria-label="Publicidade" class="ad-banner-wrap">
+  <span class="ad-native-label">Publicidade</span>
+  <div class="ad-banner-slot">
+    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
+  </div>
+</aside>
+
+<!-- VIRAL MAIN ATTRACTION: Birthday Promo Card -->
+<aside class="bday-promo-card" aria-label="Ronaldo marcou no seu aniversário?">
+  <div class="bday-promo-badge">🎂 FERRAMENTA INTERATIVA ÚNICA</div>
+  <div class="bday-promo-body">
+    <div class="bday-promo-text">
+      <h3>Cristiano Ronaldo marcou no seu aniversário?</h3>
+      <p>Pesquise nos 366 dias do calendário nos 981 gols de carreira de Ronaldo e veja cada partida em que ele marcou naquele dia do ano.</p>
+    </div>
+    <a href="/pt/birthday" class="btn btn-primary bday-promo-btn">Verificar meu aniversário ⚽</a>
+  </div>
+</aside>
+
+<h2>Explore mais estatísticas de Cristiano Ronaldo</h2>
 <aside aria-label="Publicidade" class="ad-native-wrap">
 <span class="ad-native-label">Publicidade</span>
 <div class="ad-native-slot">
-<iframe class="safe-ad-frame safe-ad-native" src="/ads/prc-native-6161.html" style="width:100%;height:320px" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
+<iframe class="safe-ad-frame safe-ad-native" src="/ads/prc-native-6161.html" style="width:100%;height:320px" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
 </div>
-</aside>
-<div class="shead"><h2>¿Como mudou seu ritmo de gols temporada após temporada?</h2></div>
-<section class="card chart-card" id="season-card"></section>
-<div class="shead"><h2>Gols por idade</h2></div>
-<section class="card chart-card" id="age-card"></section>
-<div class="shead"><h2>Gols por equipe</h2></div>
-<section aria-label="Team cards" class="team-grid" id="team-cards">...</section>
-<div class="shead"><h2>Totais da carreira por trás destes gráficos</h2></div>
-<section class="card" id="comp-table">...</section>
-<div class="shead"><h2>¿Como Cristiano Ronaldo marca seus gols?</h2></div>
-<section class="card" id="finish-table">...</section>
-<div class="shead"><h2>Recordes de Ronaldo nestes números</h2></div>
-<section aria-label="Records" class="records" id="dash-records"></section>
-<aside class="bday-promo-card" aria-label="¿Marcou Ronaldo no dia do seu aniversário?">
-  <div class="bday-promo-badge">🎂 FERRAMENTA VIRAL INTERACTIVA</div>
-  <div class="bday-promo-body">
-    <div class="bday-promo-text">
-      <h3>¿Marcou Ronaldo no dia do seu aniversário?</h3>
-      <p>Pesquise todos os 366 dias do ano ao longo dos 936 gols da carreira de Ronaldo. Veja vídeos de cada gol marcado no seu dia especial.</p>
-    </div>
-    <a href="/pt/birthday" class="btn btn-primary bday-promo-btn">Verificar Meu Aniversário ⚽</a>
+</aside><nav aria-label="Mais estatísticas de Cristiano Ronaldo" class="explore" id="explore">
+    <a class="link-card" href="/pt/birthday"><strong>🎂 Ronaldo marcou no seu aniversário?</strong><span>Pesquise nos 366 dias do calendário com vídeos de lances nos 981 gols profissionais da carreira de Ronaldo.</span></a>
+    <a class="link-card" href="/pt/ronaldo-vs-messi"><strong>🐐 Ronaldo vs Messi — histórico</strong><span>Estatísticas de carreira em confrontos diretos: 981 contra 936 gols, 35 contra 46 troféus, 5 contra 8 Ballons d'Or.</span></a>
+    <a class="link-card" href="/pt/vs-real-madrid"><strong>⚔️ Ronaldo vs Real Madrid</strong><span>Todos os gols de Ronaldo no Clássico, e todos os gols que ele marcou contra o Real Madrid com outra camisa.</span></a>
+    <a class="link-card" href="/pt/champions-league"><strong>⭐ Retrospecto na Champions League</strong><span>140 gols na UEFA Champions League, 42 assistências e 5 títulos europeus.</span></a>
+    <a class="link-card" href="/pt/latest-goal"><strong>⚽ Último vídeo de gol do Ronaldo</strong><span>Assista ao vídeo do último gol de Ronaldo, veja se ele marcou hoje e confira os lances recentes.</span></a>
+    <a class="link-card" href="/pt"><strong>Estatísticas de carreira de Ronaldo</strong><span>Os números principais: 981 gols em 1,340 partidas profissionais.</span></a>
+    <a class="link-card" href="/pt/timeline"><strong>Ronaldo ao longo dos anos</strong><span>Cada marco da carreira, datado e em ordem, de 2002 até hoje.</span></a>
+  </nav>
+<section class="card method" id="method">
+  <div class="colophon">
+    <p>Contado à mão e conferido duas vezes contra fontes identificadas.</p>
+    <h2>Como eu levanto esses números</h2>
+    <p>Eu conto uma coisa: partidas profissionais de primeira equipe do Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr e Portugal &mdash; cada jogo de liga, copa doméstica, noite continental e partida internacional, e nada mais. Nada de futebol de base, nada de reservas, nada de amistosos disfarçados de história.</p>
+    <details class="method-more"><summary>Como esses números são conferidos</summary>
+    <p>Os gols de temporada e de ano civil são somados a partir dos registros completos de partidas e conferidos contra os registros de clubes e competições após cada jogo. As divisões de faltas, pênaltis e hat-tricks são uma contagem amplamente publicada, marcada como provisória até a conclusão da contagem manual, jogo a jogo.</p>
+    <p class="colophon">Este é um site de uma pessoa só, mantido à mão. Os totais só mudam quando existe uma fonte identificada e ela foi conferida duas vezes &mdash; nunca por script, nunca por boato. Se você encontrar algo errado, a data no topo mostra exatamente quando foi conferido.</p></details>
+    <p class="caveat">Pênaltis (184), faltas (66), hat-tricks (66) e assistências (261) são contagens compiladas amplamente publicadas, mostradas como provisórias até a conclusão de uma contagem manual real, jogo a jogo.</p>
   </div>
-</aside>
-<h2>Explore todas as estatísticas</h2>
-<nav aria-label="Explore" class="explore" id="explore"></nav>
-<section class="card method" id="method"></section>
+</section>
+<footer><div class="footer-social-bar"><a href="https://x.com/ronaldostats1" target="_blank" rel="noopener noreferrer" class="footer-x-link" aria-label="Siga o RonaldoStats no X (@ronaldostats1)"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>Siga @ronaldostats1 no X</span></a>
+<a href="https://t.me/ronaldostatsdotcom" target="_blank" rel="noopener noreferrer" class="footer-x-link footer-tg-link" aria-label="Entre no RonaldoStats no Telegram"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span>Telegram @ronaldostatsdotcom</span></a></div>
+  <p id="foot-date">Cristiano Ronaldo: 1,340 participações profissionais, 981 gols (1,106 jogos / 835 gols de clube, 234 / 146 por Portugal). Última verificação em 19 de outubro de 2026.</p><p class="crest-note">Escudos de clubes são marcas registradas dos respectivos clubes, exibidos para identificação dos times.</p></footer>
 </main>
 </div>
-<script type="module" src="/src/app.js"></script>
+<script src="/src/app.js" type="module"></script><script src="/src/matchday.js" type="module"></script>
 </body>
 </html>

@@ -16,10 +16,16 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const NODE = process.execPath;
+// On Windows a shell wrapper hides the real exit code, so the commands are
+// spawned directly and the Vite build goes through node_modules.
+const VITE = path.join(ROOT, "node_modules", "vite", "bin", "vite.js");
 const run = (cmd, args, label) => {
   process.stdout.write(`\n=== ${label} ===\n`);
-  const r = spawnSync(cmd, args, { cwd: ROOT, stdio: "inherit", shell: process.platform === "win32" });
-  return r.status === 0;
+  const r = spawnSync(cmd, args, { cwd: ROOT, stdio: "inherit" });
+  const status = r.status === null ? 1 : r.status;
+  if (status !== 0) console.error("--- " + label + " exited with " + status + " ---");
+  return status === 0;
 };
 
 let failed = 0;
@@ -35,14 +41,17 @@ step(run(process.execPath, ["scripts/extract-shell-strings.mjs"], "shell strings
 step(run(process.execPath, ["scripts/generate-i18n-pages.mjs"], "localized pages"), "localized page generation");
 step(run(process.execPath, ["scripts/verify-all-i18n.cjs"], "i18n audit"), "i18n audit");
 step(run(process.execPath, ["scripts/audit-wc-splits.mjs"], "world cup audit"), "world cup splits audit");
-step(run("npx", ["vite", "build"], "vite build"), "production build");
+step(run(NODE, [VITE, "build"], "vite build"), "production build");
 step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audit");
 
 // ---- 6. leftover Messi references in the English shells --------------------
 process.stdout.write("\n=== leftover reference sweep ===\n");
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
   "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
-const TOKENS = ["MessiStats", "messistat", "Inter Miami", "Camp Nou", "Rosario", "Albacete", "24 June", "messi-vs-ronaldo"];
+// "24 June" is NOT in the list: it is a legitimate calendar-day title on the
+// birthday heatmap (Ronaldo scored on 24 June 2017). His birthday is
+// 5 February, and the copy around it is checked by the i18n audit.
+const TOKENS = ["MessiStats", "messistat", "Inter Miami", "Camp Nou", "Rosario", "Albacete", "messi-vs-ronaldo", "Barcelona CF", "PSG"];
 let leaks = 0;
 for (const p of PAGES) {
   const t = fs.readFileSync(path.join(ROOT, p + ".html"), "utf8");

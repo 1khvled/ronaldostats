@@ -29,7 +29,10 @@
     "sync:messi": "node scripts/auto-sync-messi.mjs",
     "build:data": "node scripts/build-ronaldo-data.mjs && node scripts/build-latest-goal.mjs",
     "build:i18n": "node scripts/extract-shell-strings.mjs && node scripts/generate-i18n-pages.mjs",
-    "build:bday": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs"
+    "build:bday": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs",
+    "verify:all": "node scripts/verify-all.mjs",
+    "verify:espn": "node scripts/cross-check-espn.mjs",
+    "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/fill-calendar-gaps.mjs"
   },
   "devDependencies": {
     "vite": "^6.0.0"
