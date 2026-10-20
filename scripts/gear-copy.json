@@ -1,0 +1,99 @@
+{
+  "bullets": [
+    "The photograph is the listing's own image on Amazon",
+    "Amazon prices and stock change, so the listing always shows the live price"
+  ],
+  "priceNote": "Price checked on Amazon",
+  "priceNoteNoPrice": "Check the listing for the price",
+  "reviewWord": "reviews",
+  "cards": [
+    {
+      "file": "ronaldo-home-jersey.jpg",
+      "product": "portugal-home",
+      "category": "jerseys",
+      "categoryLabel": "Official Matchwear",
+      "badge": "🇵🇹 Portugal",
+      "badgeStyle": "bestseller",
+      "title": "Portugal Home Jersey #7 Ronaldo",
+      "alt": "The Portugal home shirt in red with a green collar and the national crest, worn by a model",
+      "keywords": "portugal home jersey ronaldo 7 red shirt puma national team"
+    },
+    {
+      "file": "ronaldo-away-jersey.jpg",
+      "product": "portugal-away",
+      "category": "jerseys",
+      "categoryLabel": "Official Matchwear",
+      "badge": "⭐ Tournament Kit",
+      "badgeStyle": "champion",
+      "title": "Portugal Away Jersey #7 Ronaldo",
+      "alt": "The Portugal away shirt in white with a pale green pattern and the national crest",
+      "keywords": "portugal away jersey ronaldo 7 white mint shirt replica"
+    },
+    {
+      "file": "ronaldo-cape-jersey.jpg",
+      "product": "cr7-cape",
+      "category": "jerseys",
+      "categoryLabel": "Official Matchwear",
+      "badge": "🐐 Iconic Shirt",
+      "badgeStyle": "gold",
+      "title": "Portugal National Team Shirt",
+      "alt": "A red Portugal shirt with a green V-neck, the national crest and PORTUGAL across the chest",
+      "keywords": "portugal national team shirt ronaldo licensed red jersey"
+    },
+    {
+      "file": "ronaldo-boot.jpg",
+      "product": "cr7-boots",
+      "category": "boots",
+      "categoryLabel": "Footwear &amp; Cleats",
+      "badge": "👟 Pro Cleats",
+      "badgeStyle": "bestseller",
+      "title": "CR7 Signature Match Boots",
+      "alt": "The Nike Mercurial Vapor CR7 boot in white with pink and navy details and a gold logo",
+      "keywords": "ronaldo cr7 nike mercurial vapor football boots cleats white pink gold"
+    },
+    {
+      "file": "ronaldo-ball.jpg",
+      "product": "cr7-match-ball",
+      "category": "training",
+      "categoryLabel": "Balls &amp; Equipment",
+      "badge": "⚽ Top Ball",
+      "badgeStyle": "bestseller",
+      "title": "CR7 Match Football, Size 5",
+      "alt": "A size 5 football in gold, white and red with a pump and a carrying net",
+      "keywords": "ronaldo cr7 match football size 5 ball gold pump"
+    },
+    {
+      "file": "ronaldo-hoodie.jpg",
+      "product": "cr7-hoodie",
+      "category": "apparel",
+      "categoryLabel": "Apparel &amp; Fan Wear",
+      "badge": "🔥 Streetwear",
+      "badgeStyle": "hot",
+      "title": "CR7 Heavyweight Fleece Hoodie",
+      "alt": "A black hooded sweatshirt with a CR7 photo collage printed across the chest",
+      "keywords": "ronaldo cr7 hoodie heavyweight fleece sweatshirt black collage"
+    },
+    {
+      "file": "ronaldo-cap.jpg",
+      "product": "cr7-cap",
+      "category": "apparel",
+      "categoryLabel": "Apparel &amp; Fan Wear",
+      "badge": "🧢 Fan Accessory",
+      "badgeStyle": "",
+      "title": "CR7 Baseball Cap",
+      "alt": "A black Portugal baseball cap with the national crest embroidered in red",
+      "keywords": "ronaldo cr7 portugal number 7 baseball cap black licensed"
+    },
+    {
+      "file": "ronaldo-poster.jpg",
+      "product": "cr7-print",
+      "category": "collectibles",
+      "categoryLabel": "Collectibles &amp; Prints",
+      "badge": "🏆 Wall Art",
+      "badgeStyle": "champion",
+      "title": "Cristiano Ronaldo CR7 Number 7 Framed Print",
+      "alt": "A framed poster of Ronaldo in the Portugal number 7 shirt with a signed photograph inset",
+      "keywords": "ronaldo cr7 framed poster signed print wall art number 7"
+    }
+  ]
+}

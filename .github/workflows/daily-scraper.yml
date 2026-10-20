@@ -1,22 +1,28 @@
-name: Daily Ronaldo Stats Sync & Auto-Deploy
+name: Daily Ronaldo Stats Scraper & Auto-Deploy
 
 on:
   schedule:
-    # Every 30 minutes: poll the public scoreboards for a new Ronaldo goal.
-    - cron: '*/30 * * * *'
+    # Every 10 minutes, exactly like the Messi site's pipeline: a goal can be
+    # scored at any moment and the site should know within the quarter hour.
+    - cron: '*/10 * * * *'
   workflow_dispatch: # one-click manual run from the Actions tab
 
 permissions:
   contents: write
 
+concurrency:
+  group: daily-ronaldo-sync
+  cancel-in-progress: true
+
 jobs:
-  sync-and-deploy:
+  scrape-and-sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Node.js 20
         uses: actions/setup-node@v4
@@ -27,37 +33,46 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Refresh the freshness stamp
-        run: node scripts/daily-date-sync.mjs
+      - name: Run Scrapers & Auto-Sync
+        run: |
+          node scripts/daily-date-sync.mjs
+          node scripts/auto-sync-matches.mjs
+          node scripts/auto-sync-latest-goal.mjs
+          node scripts/source-watch.mjs
+          node scripts/auto-sync-ronaldo.mjs --check || true
+          node scripts/fill-calendar-gaps.mjs || true
 
-      - name: Poll the public scoreboards and stage any new match
-        run: node scripts/auto-sync-matches.mjs
+      - name: Refresh the goal video catalogue
+        run: npm run fetch:seasons
 
-      - name: Cross-check the rival's published figures
-        run: node scripts/auto-sync-messi.mjs --check || true
+      - name: Refresh the gear store
+        # the product photographs, prices and ratings come from the listings
+        # themselves, so they are read again on every run
+        run: npm run fetch:gear
 
       - name: Rebuild the dataset and the dated goal calendar
-        run: npm run build:data
+        run: |
+          npm run build:data
+          npm run build:calendar
+          npm run build:i18n
 
-      - name: Regenerate the localized pages
-        run: npm run build:i18n
-
-      - name: Build & run the verification audits
+      - name: Build & Run Verification Audits
         run: |
           npm run build
           npm run audit
           npm run audit:i18n
+          npm run verify:all
 
-      - name: Commit & push
+      - name: Commit & Push New Match Stats
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          # The watcher logs and the staged-review file are ephemeral; they
-          # must never be committed on their own.
-          git checkout -- public/data/source-watch.json public/data/last-check.json 2>/dev/null || true
+          # the watcher logs and the staged-review file are ephemeral; they must
+          # never be committed on their own
+          git checkout -- public/data/source-watch.json public/data/last-check.json public/data/pending.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "chore(stats): daily Ronaldo stats & freshness sync [skip ci]"
+            git commit -m "chore(stats): daily Ronaldo stats, goal video & freshness sync [skip ci]"
             git push origin HEAD:${{ github.ref }}
             echo "Synced and pushed."
           else

@@ -34,7 +34,8 @@
     "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/merge-goal-source.mjs && node scripts/merge-season-videos.mjs",
     "fetch:goals": "node scripts/fetch-goal-source.mjs",
     "fetch:seasons": "node scripts/fetch-season-videos.mjs",
-    "sync:ronaldo": "node scripts/auto-sync-ronaldo.mjs"
+    "sync:ronaldo": "node scripts/auto-sync-ronaldo.mjs",
+    "fetch:gear": "node scripts/fetch-gear-products.mjs && node scripts/apply-gear-products.mjs"
   },
   "devDependencies": {
     "vite": "^6.0.0"

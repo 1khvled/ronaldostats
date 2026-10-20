@@ -1,0 +1,152 @@
+{
+  "🇵🇹 Portugal": {
+    "es": "🇵🇹 Portugal",
+    "pt": "🇵🇹 Portugal",
+    "fr": "🇵🇹 Portugal",
+    "ar": "🇵🇹 البرتغال",
+    "bn": "🇵🇹 পর্তুগাল",
+    "hi": "🇵🇹 पुर्तगाल",
+    "ro": "🇵🇹 Portugalia",
+    "uz": "🇵🇹 Portugaliya"
+  },
+  "reviews": {
+    "es": "reseñas",
+    "pt": "avaliações",
+    "fr": "avis",
+    "ar": "تقييمات",
+    "bn": "রিভিউ",
+    "hi": "समीक्षाएँ",
+    "ro": "recenzii",
+    "uz": "sharhlar"
+  },
+  "Price checked on Amazon": {
+    "es": "Precio comprobado en Amazon",
+    "pt": "Preço verificado na Amazon",
+    "fr": "Prix vérifié sur Amazon",
+    "ar": "السعر مُتحقَّق منه على أمازون",
+    "bn": "অ্যামাজনে দাম যাচাই করা হয়েছে",
+    "hi": "अमेज़न पर कीमत जाँची गई",
+    "ro": "Preț verificat pe Amazon",
+    "uz": "Amazon'da narx tekshirildi"
+  },
+  "Check the listing for the price": {
+    "es": "Consulta el anuncio para ver el precio",
+    "pt": "Veja o anúncio para o preço",
+    "fr": "Consultez l'annonce pour le prix",
+    "ar": "اطّلع على الإعلان لمعرفة السعر",
+    "bn": "দাম দেখতে লিস্টিং দেখুন",
+    "hi": "कीमत के लिए लिस्टिंग देखें",
+    "ro": "Vezi anunțul pentru preț",
+    "uz": "Narx uchun e'loni ko'ring"
+  },
+  "The photograph is the listing's own image on Amazon": {
+    "es": "La fotografía es la imagen del propio anuncio en Amazon",
+    "pt": "A fotografia é a imagem do próprio anúncio na Amazon",
+    "fr": "La photo est l'image de l'annonce elle-même sur Amazon",
+    "ar": "الصورة هي صورة الإعلان نفسه على أمازون",
+    "bn": "ছবিটি অ্যামাজনের লিস্টিং-এর নিজস্ব ছবি",
+    "hi": "तस्वीर अमेज़न पर लिस्टिंग का अपना चित्र है",
+    "ro": "Fotografia este imaginea propriului anunț de pe Amazon",
+    "uz": "Rasm — Amazon'dagi e'lonning o'z rasmi"
+  },
+  "Amazon prices and stock change, so the listing always shows the live price": {
+    "es": "Los precios y el stock de Amazon cambian, por eso el anuncio siempre muestra el precio real",
+    "pt": "Os preços e o estoque da Amazon mudam, por isso o anúncio sempre mostra o preço atual",
+    "fr": "Les prix et les stocks d'Amazon changent, l'annonce affiche donc toujours le prix du moment",
+    "ar": "أسعار ومخزون أمازون يتغيّران، لذلك يعرض الإعلان السعر الحالي دائمًا",
+    "bn": "অ্যামাজনের দাম ও স্টক বদলায়, তাই লিস্টিংয়ে সবসময় বর্তমান দাম দেখা যায়",
+    "hi": "अमेज़न के दाम और स्टॉक बदलते रहते हैं, इसलिए लिस्टिंग में हमेशा मौजूदा कीमत दिखती है",
+    "ro": "Prețurile și stocul de la Amazon se schimbă, așa că anunțul arată întotdeauna prețul actual",
+    "uz": "Amazon narxlari va zaxirasi o'zgaradi, shuning uchun e'lon har doim joriy narxni ko'rsatadi"
+  },
+  "Portugal National Team Shirt": {
+    "es": "Camiseta de la selección portuguesa",
+    "pt": "Camisa da seleção portuguesa",
+    "fr": "Maillot de l'équipe nationale du Portugal",
+    "ar": "قميص منتخب البرتغال الوطني",
+    "bn": "পর্তুগাল জাতীয় দলের জার্সি",
+    "hi": "पुर्तगाल राष्ट्रीय टीम की जर्सी",
+    "ro": "Tricoul naționalei de fotbal a Portugaliei",
+    "uz": "Portugaliya milliy futbol jamoasi futbolkasi"
+  },
+  "The Portugal home shirt in red with a green collar and the national crest, worn by a model": {
+    "es": "La camiseta local de Portugal en rojo con cuello verde y el escudo nacional, worna por un modelo",
+    "pt": "A camisa da seleção portuguesa em vermelho, com gola verde e o emblema nacional, vista por um modelo",
+    "fr": "Le maillot domicile du Portugal en rouge, col vert et blason national, porté par un mannequin",
+    "ar": "قميص منتخب البرتغال بالأحمر، بياقة خضراء وشعارهناعي الوطني، يرتديه عارض",
+    "bn": "লাল রঙের সবুজ কলার পর্তুগালের হোম শার্ট, জাতীয় বোজা সহ, একজন মডেল পরে আছেন",
+    "hi": "लाल रंग में हरा कॉलर और राष्ट्रीय क्रेस्ट वाली पुर्तगाल की होम शर्ट, एक मॉडल ने पहनी है",
+    "ro": "Tricoul de acasă al Portugalului în roșu, cu guler verde și stema națională, purtat de un manechin",
+    "uz": "Portugaliya qizil rangli uy futbolkasi, yashil yoqasi va davlat belgisi bilan, maneken kiygan"
+  },
+  "The Portugal away shirt in white with a pale green pattern and the national crest": {
+    "es": "La camiseta visitante de Portugal en blanco con un estampado verde pálido y el escudo nacional",
+    "pt": "A camisa fora de casa de Portugal em branco, com um padrão verde-claro e o emblema nacional",
+    "fr": "Le maillot extérieur du Portugal en blanc, avec un motif vert clair et le blason national",
+    "ar": "قميص منتخب البرتغال خارج أرضه بالأبيض مع نقش أخضر فاتح والشعار الوطني",
+    "bn": "সাদা রঙের হালকা সবুজ নকশাযুক্ত পর্তুগালের অ্যাওয়ে শার্ট, জাতীয় বোজাসহ",
+    "hi": "सफेद रंग में हल्की हरी पैटर्न और राष्ट्रीय क्रेस्ट वाली पुर्तगाल की अवे शर्ट",
+    "ro": "Tricoul de deplasare al Portugalului în alb, cu un model verde deschis și stema națională",
+    "uz": "Oq rangda, ochil rangli naqsh va davlat belgisi bilan Portugaliyaning mehmonda kiyiladigan futbolkasi"
+  },
+  "A red Portugal shirt with a green V-neck, the national crest and PORTUGAL across the chest": {
+    "es": "Camiseta portuguesa roja con escote en V verde, el escudo nacional y PORTUGAL en el pecho",
+    "pt": "Camisa portuguesa vermelha com gola V verde, o emblema nacional e PORTUGAL no peito",
+    "fr": "Maillot portugais rouge avec col V vert, le blason national et PORTUGAL sur la poitrine",
+    "ar": "قميص برتغالي أحمر بياقة V خضراء، والشعار الوطني وكلمة PORTUGAL على الصدر",
+    "bn": "সবুজ ভি-নেকের লাল পর্তুগাল শার্ট, জাতীয় বোজা এবং বুকে PORTUGAL লেখা",
+    "hi": "हरे वी-नेक वाली लाल पुर्तगाल शर्ट, राष्ट्रीय क्रेस्ट और छाती पर PORTUGAL",
+    "ro": "Tricou portughez roșu cu guler în V verde, stema națională și PORTUGAL pe piept",
+    "uz": "Yashil V yoqali qizil Portugaliya futbolkasi, davlat belgisi va ko'krakda PORTUGAL"
+  },
+  "The Nike Mercurial Vapor CR7 boot in white with pink and navy details and a gold logo": {
+    "es": "La bota Nike Mercurial Vapor CR7 en blanco, con detalles rosa y azul marino y un logo dorado",
+    "pt": "A chuteira Nike Mercurial Vapor CR7 branca, com detalhes em rosa e azul-marinho e logótipo dourado",
+    "fr": "Le crampon Nike Mercurial Vapor CR7 blanc, avec des détails roses et bleu marine et un logo doré",
+    "ar": "حذاء Nike Mercurial Vapor CR7 أبيض بتفاصيل وردية وكحلية وشعار ذهبي",
+    "bn": "সাদা নাইক মার্কেরিয়াল ভেপর CR7 বুট, গোলাপি ও নেভি বিবরণ এবং সোনালি লোগো",
+    "hi": "नाइक मर्क्यूरियल वेपर CR7 बूट, सफेद रंग में गुलाबी और नेवी विवरण तथा सुनहरा लोगो",
+    "ro": "Stivuța Nike Mercurial Vapor CR7 albă, cu detalii roz și albastru marin și logo auriu",
+    "uz": "Nike Mercurial Vapor CR7 oq rangli futbolka, pushti va to'q ko'k detallar va oltin logotip bilan"
+  },
+  "A size 5 football in gold, white and red with a pump and a carrying net": {
+    "es": "Balón de fútbol talla 5 en oro, blanco y rojo, con bomba y red de transporte",
+    "pt": "Bola de futebol tamanho 5 em dourado, branco e vermelho, com bomba e rede de transporte",
+    "fr": "Ballon de foot taille 5 aux couleurs or, blanc et rouge, avec pompe et filet de transport",
+    "ar": "كرة قدم مقاس 5 باللون الذهبي والأبيض والأحمر، مع مضخة وحقيبة حمل",
+    "bn": "সোনালি, সাদা ও লাল রঙের সাইজ ৫ ফুটবল, পাম্প ও বহনের জালসহ",
+    "hi": "सुनहरा, सफेद और लाल रंग का साइज 5 फुटबॉल, पंप और ले जाने के जाले के साथ",
+    "ro": "Minge de fotbal mărimea 5 în auriu, alb și roșu, cu pompă și plasa de transport",
+    "uz": "Oltin, oq va qizil rangli 5-o'lchamli futbol to'pi, nasos va yuklash to'rami bilan"
+  },
+  "A black hooded sweatshirt with a CR7 photo collage printed across the chest": {
+    "es": "Sudadera negra con capucha y un collage de fotos de CR7 impreso en el pecho",
+    "pt": "Moletom preto com capuz e um colagem de fotos do CR7 impresso no peito",
+    "fr": "Sweat à capuche noir avec un collage photo CR7 imprimé sur la poitrine",
+    "ar": "هودie أسود بقبعة وكولاج صور CR7 مطبوع على الصدر",
+    "bn": "কালো হুডডি সোয়েটশার্ট, বুকে CR7-এর ছবির কলাজ",
+    "hi": "काली हुडी स्वेटशर्ट, छाती पर CR7 की तस्वीरों का कोलाज",
+    "ro": "Blouson negru cu glugă, cu un colaj de fotografii CR7 printat pe piept",
+    "uz": "Qora rangli hoodiye svetshirt, ko'krakida CR7 fotolarini kollaj"
+  },
+  "A black Portugal baseball cap with the national crest embroidered in red": {
+    "es": "Gorra de baseball negra de Portugal con el escudo nacional bordado en rojo",
+    "pt": "Boné de baseball preto de Portugal com o emblema nacional bordado a vermelho",
+    "fr": "Casquette de baseball noire du Portugal avec le blason national brodé en rouge",
+    "ar": "قبعة بيسبول سوداء لمنتخب البرتغال مع الشعار الوطني المطرز بالأحمر",
+    "bn": "লাল সূচিবিন্দিত জাতীয় বোজাসহ কালো পর্তুগাল বেসবল ক্যাপ",
+    "hi": "लाल में सिलाई गई राष्ट्रीय क्रेस्ट वाली काली पुर्तगाल बेसबॉल कैप",
+    "ro": "Căciulă de baseball neagră de Portugalia, cu stema națională broșată în roșu",
+    "uz": "Qizil rangda yotilgan davlat belgisi bilan qora Portugaliya beysbol shapkasi"
+  },
+  "A framed poster of Ronaldo in the Portugal number 7 shirt with a signed photograph inset": {
+    "es": "Póster enmarcado de Ronaldo con la camiseta portuguesa número 7 y una fotografía firmada insertada",
+    "pt": "Pôster emoldurado de Ronaldo com a camisa portuguesa número 7 e uma fotografia autografada inserida",
+    "fr": "Affiche encadrée de Ronaldo en maillot portugais numéro 7 avec une photo signée en insert",
+    "ar": "ملصق مؤطر لرونالدو بقميص البرتغال رقم 7 مع صورة موقّعة مدرجة",
+    "bn": "পর্তুগালের ৭ নম্বর জার্সিতে রোনালদোর ফ্রেম করা পোস্টার, ভিতরে স্বাক্ষরিত ছবি",
+    "hi": "पुर्तगाल की 7 नंबर जर्सी में रोनाल्डो का फ्रेम्ड पोस्टर, जिसमें हस्ताक्षरित तस्वीर है",
+    "ro": "Poster înramat cu Ronaldo în tricoul portughez numărul 7, cu o fotografie semnată în interior",
+    "uz": "Portugaliya 7-raqamli futbolkasida Ronaldo ramkali poster, ichida imzolangan surat"
+  }
+}

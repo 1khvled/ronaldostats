@@ -341,7 +341,9 @@
 .gear-card-header {
   position: relative;
   background: #ffffff;
-  height: 250px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  max-height: 430px;
   padding: 16px 16px 12px;
   overflow: hidden;
   display: flex;
@@ -574,7 +576,9 @@
     gap: 18px;
   }
   .gear-card-header {
-    height: 240px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    max-height: 380px;
     padding: 14px 14px 10px;
   }
 }
@@ -661,7 +665,9 @@
     border-radius: 16px;
   }
   .gear-card-header {
-    height: 240px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    max-height: 380px;
     padding: 14px 14px 10px;
   }
   .gear-card-body {
