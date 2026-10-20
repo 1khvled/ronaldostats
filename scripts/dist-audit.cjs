@@ -7,10 +7,17 @@ const must = ["index.html", "goalsbyyear.html", "goalsbyseason.html", "dashboard
   "404.html", "sitemap.xml", "robots.txt", "llms.txt", "18188f5363f745f1bbf821767e0f0daf.txt",
   "data/ronaldo-data.json", "data/birthday-goals.json", "data/messi.json", "data/latest-goal.json",
   "fonts/dm-sans-latin.woff2", "img/og-ronaldo.jpg", "img/og-ronaldo.webp",
-  "img/era/era-2008-ballon1.webp", "img/teams/barcelona.png", "img/teams/real-madrid.png",
+  "img/era/era-2008-ballon1.webp", "img/teams/real-madrid.png",
   "img/teams/man-utd.png", "img/teams/juventus.png", "img/teams/al-nassr.png", "img/teams/sporting.png",
   "img/teams/portugal.png", "favicon.svg", "favicon.ico", "favicon-48x48.png",
-  "apple-touch-icon.png", "site.webmanifest", "img/logo.png", "img/ronaldo.webp", "img/ronaldo-450.webp"];
+  // the Ronaldo photograph set: five cabinet shots, eight product photos and
+  // the head-to-head card, all sourced from Wikimedia Commons
+  "img/cab-ballon.webp", "img/cab-copa.webp", "img/cab-liga.webp", "img/cab-ucl.webp", "img/cab-wc.webp",
+  "img/ronaldo-vs-messi.webp", "img/CREDITS.md",
+  "img/gear/ronaldo-home-jersey.jpg", "img/gear/ronaldo-away-jersey.jpg", "img/gear/ronaldo-cape-jersey.jpg",
+  "img/gear/ronaldo-boot.jpg", "img/gear/ronaldo-ball.jpg", "img/gear/ronaldo-hoodie.jpg",
+  "img/gear/ronaldo-cap.jpg", "img/gear/ronaldo-poster.jpg",
+  "apple-touch-icon.png", "site.webmanifest", "img/logo.png", "img/ronaldo-450.webp"];
 let ok = true;
 for (const f of must) {
   if (!fs.existsSync(dist + "/" + f)) { ok = false; console.log("MISSING " + f); }

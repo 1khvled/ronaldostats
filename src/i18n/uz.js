@@ -342,6 +342,7 @@ export const BDAY_MEDIA = {
     "noClip": "Bu gol uchun nashr qilingan klip yo'q.",
     "noClipBody": "Pastdagi match yozuvi rasmiy match varaqalaridan olingan. Havolalar arxivdagi gol sahifasini va videoni qidirishni ochadi.",
     "clipLabel": "Nashr qilingan klip",
+    "compilationNote": "Bu gol barchi gollar kompilyatsiyasida mavjud. Uni aniq joyini topish uchun arxiv havolasidan foydalaning.",
     "compilationLabel": "Barcha gollar kompilyatsiyasi",
     "publisher": "Nashr qilgan",
     "assist": "Yordam: {name}",

@@ -3904,7 +3904,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "★★★★★  [4.7 (1,430 reviews)] Red six-panel crown with a gold number 7 on the front"
+  "ctx": "★★★★★  [4.7 (1,430 reviews)] Six-panel crown with a curved brim and a structured front"
  },
  "4.8 (1,870 reviews)": {
   "count": 1,
@@ -3918,7 +3918,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "★★★★★  [4.8 (1,940 reviews)] Gold cape with green trim, the look Ronaldo made famous at Juventus"
+  "ctx": "★★★★★  [4.8 (1,940 reviews)] Maroon home shirt from Ronaldo's 2006-07 season in the Portugal colours"
  },
  "4.8 (3,410 reviews)": {
   "count": 1,
@@ -5471,7 +5471,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "Structured front with breathable eyelets and a gold brim  [Adjustable rear strap for a one-size fit] $22.99 – $29.99"
+  "ctx": "Breathable eyelets and a cotton twill finish  [Adjustable rear strap for a one-size fit] $22.99 – $29.99"
  },
  "Advertisement": {
   "count": 114,
@@ -6203,13 +6203,6 @@
   ],
   "ctx": "[attr aria-label]"
  },
- "Black CR7 hoodie with gold drawstrings and a gold chest print": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "[attr alt]"
- },
  "Black football boot with a gold blade and a moulded studded sole": {
   "count": 1,
   "pages": [
@@ -6224,12 +6217,26 @@
   ],
   "ctx": "4.8 (1,870 reviews)  [Black heavyweight hoodie with gold drawstrings and a CR7 chest print] 320 GSM cotton-blend fleece with a kangaroo pocket"
  },
+ "Black hooded sweatshirt in heavyweight fleece": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "[attr alt]"
+ },
  "Black upper with a gold blade and a moulded, studded sole": {
   "count": 1,
   "pages": [
    "gear"
   ],
   "ctx": "4.9 (890 reviews)  [Black upper with a gold blade and a moulded, studded sole] Firm-ground studs for natural grass and hard winter pitches"
+ },
+ "Blue baseball cap with a curved brim": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "[attr alt]"
  },
  "Boots &amp; Shoes (1)": {
   "count": 1,
@@ -6252,6 +6259,13 @@
   ],
   "ctx": ": 66 — the same 981 total.  [Both the body-part split and the open-play figure are aggregators' numbers:] provisional until a hand count"
  },
+ "Breathable eyelets and a cotton twill finish": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "Six-panel crown with a curved brim and a structured front  [Breathable eyelets and a cotton twill finish] Adjustable rear strap for a one-size fit"
+ },
  "CALENDAR DATABASE &bull; 981 SENIOR GOALS": {
   "count": 1,
   "pages": [
@@ -6260,25 +6274,29 @@
   "ctx": "Advertisement  [CALENDAR DATABASE &bull; 981 SENIOR GOALS] Updated October 2026"
  },
  "CR7": {
-  "count": 1,
+  "count": 13,
   "pages": [
-   "index"
+   "achievements",
+   "birthday",
+   "champions-league",
+   "dashboard",
+   "gear",
+   "goalsbyseason",
+   "goalsbyyear",
+   "index",
+   "latest-goal",
+   "ronaldo-vs-messi",
+   "timeline",
+   "vs-real-madrid"
   ],
-  "ctx": "Cristiano Ronaldo · Portugal &amp; Al Nassr  [CR7] 7"
+  "ctx": "Skip to content  [CR7] Ronaldo"
  },
- "CR7 Embroidered Snapback Cap": {
+ "CR7 Baseball Cap": {
   "count": 1,
   "pages": [
    "gear"
   ],
-  "ctx": "Apparel &amp; Fan Wear  [CR7 Embroidered Snapback Cap] ★★★★★"
- },
- "CR7 Gold Celebration Cape": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "Matchday &amp; Celebration  [CR7 Gold Celebration Cape] ★★★★★"
+  "ctx": "Apparel &amp; Fan Wear  [CR7 Baseball Cap] ★★★★★"
  },
  "CR7 Heavyweight Fleece Hoodie": {
   "count": 1,
@@ -7004,7 +7022,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "⚽ OFFICIAL & FAN MERCHANDISE · AMAZON AFFILIATE PICKS  [Cristiano Ronaldo Gear, Match Jerseys & Fan Store] Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, the gold celebration cape, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Ever"
+  "ctx": "⚽ OFFICIAL & FAN MERCHANDISE · AMAZON AFFILIATE PICKS  [Cristiano Ronaldo Gear, Match Jerseys & Fan Store] Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every pur"
  },
  "Cristiano Ronaldo Gear, Match Jerseys & Fan Store | RonaldoStats": {
   "count": 3,
@@ -7159,7 +7177,7 @@
   ],
   "ctx": "[attr content]"
  },
- "Cristiano Ronaldo gear, Ronaldo jerseys, Ronaldo Portugal home jersey 7, Ronaldo Portugal away jersey, Ronaldo celebration cape, CR7 football boots, Ronaldo match ball, CR7 hoodie, Ronaldo cap, Ronaldo poster print, Ronaldo Amazon store, buy Ronaldo shirt": {
+ "Cristiano Ronaldo gear, Ronaldo jerseys, Ronaldo Portugal home jersey 7, Ronaldo Portugal away jersey, Ronaldo 2006-07 home shirt, CR7 football boots, Ronaldo match ball, CR7 hoodie, Ronaldo cap, Ronaldo poster print, Ronaldo Amazon store, buy Ronaldo shirt": {
   "count": 1,
   "pages": [
    "gear"
@@ -7261,6 +7279,13 @@
   "count": 1,
   "pages": [
    "champions-league"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo in the Real Madrid number 7 shirt, from the RonaldoStats career archive": {
+  "count": 1,
+  "pages": [
+   "gear"
   ],
   "ctx": "[attr alt]"
  },
@@ -7919,12 +7944,12 @@
   ],
   "ctx": "International Editions / Idiomas  [English (US, NG, IN, PH)] Español (España)"
  },
- "Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, the gold celebration cape, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStats 100% free, fast, and independently maintained.": {
+ "Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStats 100% free, fast, and independently maintained.": {
   "count": 1,
   "pages": [
    "gear"
   ],
-  "ctx": "Cristiano Ronaldo Gear, Match Jerseys & Fan Store  [Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, the gold celebration cape, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep Ronald"
+  "ctx": "Cristiano Ronaldo Gear, Match Jerseys & Fan Store  [Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStat"
  },
  "Español (Argentina, España)": {
   "count": 4,
@@ -8558,13 +8583,6 @@
   ],
   "ctx": "12  [Fourth title; 100th Champions League goal against Bayern] 2017/18"
  },
- "Framed CR7 number 7 print from the RonaldoStats career archive": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "[attr alt]"
- },
  "France Football (Ballon d'Or)": {
   "count": 2,
   "pages": [
@@ -9076,19 +9094,12 @@
   ],
   "ctx": "Assists  [Goals/Game] Major Honours &amp; Records"
  },
- "Gold cape with green trim, the look Ronaldo made famous at Juventus": {
+ "Gold number 7 on the chest, with the Portugal crest on the breast": {
   "count": 1,
   "pages": [
    "gear"
   ],
-  "ctx": "4.8 (1,940 reviews)  [Gold cape with green trim, the look Ronaldo made famous at Juventus] Hooded, one-size cut that sits over the No. 7 shirt"
- },
- "Gold celebration cape with green trim, worn over the No. 7 shirt": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "[attr alt]"
+  "ctx": "Maroon home shirt from Ronaldo's 2006-07 season in the Portugal colours  [Gold number 7 on the chest, with the Portugal crest on the breast] Lightweight polyester with a stitched collar and a loose match cut"
  },
  "Gold number 7 printed on the chest, name across the back": {
   "count": 1,
@@ -9306,13 +9317,6 @@
    "vs-real-madrid"
   ],
   "ctx": "[attr aria-label]"
- },
- "Hooded, one-size cut that sits over the No. 7 shirt": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "Gold cape with green trim, the look Ronaldo made famous at Juventus  [Hooded, one-size cut that sits over the No. 7 shirt] Soft lining and a light fill for the final whistle"
  },
  "How Does Cristiano Ronaldo Score His Goals?": {
   "count": 1,
@@ -10029,6 +10033,13 @@
   ],
   "ctx": "Gold number 7 printed on the chest, name across the back  [Lightweight match fabric with a breathable mesh panel] $89.99 – $129.99"
  },
+ "Lightweight polyester with a stitched collar and a loose match cut": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "Gold number 7 on the chest, with the Portugal crest on the breast  [Lightweight polyester with a stitched collar and a loose match cut] $79.99 – $109.99"
+ },
  "Lionel Messi": {
   "count": 6,
   "pages": [
@@ -10077,23 +10088,6 @@
    "birthday"
   ],
   "ctx": "1.60  [Liverpool FC (2009), Real Valladolid (2010), CSKA Moscow (2012), Cagliari (2021), Al-Kholood (2025)] View Matches"
- },
- "M10": {
-  "count": 11,
-  "pages": [
-   "achievements",
-   "birthday",
-   "dashboard",
-   "gear",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "latest-goal",
-   "ronaldo-vs-messi",
-   "timeline",
-   "vs-real-madrid"
-  ],
-  "ctx": "Skip to content  [M10] Ronaldo"
  },
  "MATCHDAY TRACKER • 2026 SEASON": {
   "count": 1,
@@ -10197,6 +10191,13 @@
   ],
   "ctx": "February  [March] April"
  },
+ "Maroon home shirt from Ronaldo's 2006-07 season in the Portugal colours": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "4.8 (1,940 reviews)  [Maroon home shirt from Ronaldo's 2006-07 season in the Portugal colours] Gold number 7 on the chest, with the Portugal crest on the breast"
+ },
  "Marseille (2009), Deportivo (2012), Malmö FF (2015), Al-Rayyan (2024)": {
   "count": 1,
   "pages": [
@@ -10245,13 +10246,6 @@
    "gear"
   ],
   "ctx": "Machine-stitched cover with a butyl bladder for shape retention  [Match-grade feel for training sessions and kickabouts] $24.99 – $34.99"
- },
- "Matchday &amp; Celebration": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "🐐 Iconic Cape  [Matchday &amp; Celebration] CR7 Gold Celebration Cape"
  },
  "Matches": {
   "count": 4,
@@ -10610,7 +10604,7 @@
   "ctx": "82  [Off-season &amp; breaks] Most Lethal Day"
  },
  "Official Matchwear": {
-  "count": 2,
+  "count": 3,
   "pages": [
    "gear"
   ],
@@ -10869,6 +10863,13 @@
   ],
   "ctx": ": 134 goals in 157 appearances. Saudi Pro League Golden Boot in 2024 and 2025, and a record 35 league goals in the 2023/24 season.  [Portugal (2003–present)] : 146 goals in 234 caps — both all-time international records. Won EURO 2016 and the Nations League in 2019 and 2025."
  },
+ "Portugal 2006-07 Home Shirt #7 Ronaldo": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "Official Matchwear  [Portugal 2006-07 Home Shirt #7 Ronaldo] ★★★★★"
+ },
  "Portugal Away Jersey #7 Ronaldo": {
   "count": 1,
   "pages": [
@@ -10932,7 +10933,14 @@
   ],
   "ctx": "146  [Portugal goals in 234 caps] &mdash; the international record for goals and for appearances."
  },
- "Portugal home match jersey, red with green trim and a gold number 7": {
+ "Portugal home match jersey, red with a green chest band and the national crest": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Portugal home shirt from the 2006-07 season, maroon with a gold number 7": {
   "count": 1,
   "pages": [
    "gear"
@@ -11274,13 +11282,6 @@
   ],
   "ctx": "International Records &amp; Tournament Honours  [Records on the biggest stages: the FIFA World Cup, senior continental championships and the Champions League. A dash means the figure is not carried in this archive's dataset, so it is shown as missing rather than estimated.] Statistic"
  },
- "Red cap with a gold number 7 embroidered on the front": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "[attr alt]"
- },
  "Red home shirt with green collar, cuffs and hem": {
   "count": 1,
   "pages": [
@@ -11294,13 +11295,6 @@
    "gear"
   ],
   "ctx": "White away shirt with green collar, cuffs and hem  [Red number 7 and the player name printed across the back] Match-grade cut with ventilation for a full 90 minutes"
- },
- "Red six-panel crown with a gold number 7 on the front": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "4.7 (1,430 reviews)  [Red six-panel crown with a gold number 7 on the front] Structured front with breathable eyelets and a gold brim"
  },
  "Remaining for History": {
   "count": 1,
@@ -11389,7 +11383,7 @@
    "timeline",
    "vs-real-madrid"
   ],
-  "ctx": "M10  [Ronaldo] Stats"
+  "ctx": "CR7  [Ronaldo] Stats"
  },
  "Ronaldo &amp; Messi": {
   "count": 1,
@@ -12338,6 +12332,13 @@
   ],
   "ctx": "Portugal &amp; the FIFA World Cup  [Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.] Portugal's record goalscorer, at six World Cups"
  },
+ "Six-panel crown with a curved brim and a structured front": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "4.7 (1,430 reviews)  [Six-panel crown with a curved brim and a structured front] Breathable eyelets and a cotton twill finish"
+ },
  "Size 5 ball with a red ring and a classic panel layout": {
   "count": 1,
   "pages": [
@@ -12345,7 +12346,7 @@
   ],
   "ctx": "4.8 (3,410 reviews)  [Size 5 ball with a red ring and a classic panel layout] Machine-stitched cover with a butyl bladder for shape retention"
  },
- "Size 5 match football, white with black panels and a red ring": {
+ "Size 5 match football, white with dark swooshes and a green ring": {
   "count": 1,
   "pages": [
    "gear"
@@ -12368,14 +12369,7 @@
    "timeline",
    "vs-real-madrid"
   ],
-  "ctx": "Cristiano Ronaldo Stats | RonaldoStats  [Skip to content] M10"
- },
- "Soft lining and a light fill for the final whistle": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "Hooded, one-size cut that sits over the No. 7 shirt  [Soft lining and a light fill for the final whistle] $79.99 – $109.99"
+  "ctx": "Cristiano Ronaldo Stats | RonaldoStats  [Skip to content] CR7"
  },
  "Source": {
   "count": 1,
@@ -12502,13 +12496,6 @@
    "vs-real-madrid"
   ],
   "ctx": "Ronaldo  [Stats] English"
- },
- "Structured front with breathable eyelets and a gold brim": {
-  "count": 1,
-  "pages": [
-   "gear"
-  ],
-  "ctx": "Red six-panel crown with a gold number 7 on the front  [Structured front with breathable eyelets and a gold brim] Adjustable rear strap for a one-size fit"
  },
  "Supercopa de España": {
   "count": 1,
@@ -13257,7 +13244,7 @@
   ],
   "ctx": "Record  [Value] Season"
  },
- "Verified Cristiano Ronaldo match jerseys, Portugal home and away kits, the gold celebration cape, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Affiliate picks supporting RonaldoStats.": {
+ "Verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Affiliate picks supporting RonaldoStats.": {
   "count": 3,
   "pages": [
    "gear"
@@ -15252,12 +15239,12 @@
   ],
   "ctx": "$15  [🐐 GOAT Club] Sponsors new database features &amp; research"
  },
- "🐐 Iconic Cape": {
+ "🐐 Iconic Shirt": {
   "count": 1,
   "pages": [
    "gear"
   ],
-  "ctx": "Check on Amazon ↗  [🐐 Iconic Cape] Matchday &amp; Celebration"
+  "ctx": "Check on Amazon ↗  [🐐 Iconic Shirt] Official Matchwear"
  },
  "🐐 Ronaldo vs Messi All-Time": {
   "count": 11,

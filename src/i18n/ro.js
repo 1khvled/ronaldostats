@@ -341,6 +341,7 @@ export const BDAY_MEDIA = {
     "noClip": "Nu există un clip publicat pentru acest gol.",
     "noClipBody": "Fișa meciului de mai jos provine din foile oficiale de meci. Linkurile deschid pagina golului în arhivă și o căutare a secvenței.",
     "clipLabel": "Clip publicat",
+    "compilationNote": "Acest gol apare într-o compilație cu toate golurile. Folosiți linkul arhivei pentru poziția exactă.",
     "compilationLabel": "Compilație cu toate golurile",
     "publisher": "Publicat de",
     "assist": "Pasă: {name}",

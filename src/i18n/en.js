@@ -340,6 +340,7 @@ export const BDAY_MEDIA = {
     "noClip": "No published clip for this goal.",
     "noClipBody": "The match record below comes from the primary match sheets. The links open the goal's page in the archive and a search for the footage.",
     "clipLabel": "Published clip",
+    "compilationNote": "This goal appears in an all-goals compilation. Use the archive link to find its exact position.",
     "compilationLabel": "All-goals compilation",
     "publisher": "Published by",
     "assist": "Assist: {name}",

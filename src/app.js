@@ -136,15 +136,52 @@ function getLangUrl(targetCode) {
   return `/${targetCode}${search}${location.hash}`;
 }
 
-function centerActiveNav() {
-  if (typeof window === "undefined" || window.innerWidth > 900) return;
-  const activeNav = document.querySelector(".rail nav a.on");
-  if (activeNav) {
-    activeNav.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    setTimeout(() => {
-      activeNav.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    }, 80);
+// The rail's own scroll position decides whether a fade is shown on
+// the top or the bottom edge, so a link below the fold is never silently
+// missing. The stylesheet promised this affordance but never implemented it.
+function updateRailEdges() {
+  const rail = document.querySelector(".rail");
+  const nav = rail && rail.querySelector("nav");
+  if (!rail || !nav) return;
+  // First keep the current page's link in view, then work out which edge
+  // still has content behind it — the fades must describe the state the
+  // visitor is actually looking at.
+  const active = nav.querySelector("a.on");
+  if (active) {
+    const navRect = nav.getBoundingClientRect();
+    const r = active.getBoundingClientRect();
+    if (r.top < navRect.top || r.bottom > navRect.bottom) {
+      nav.scrollTop += r.top - navRect.top - navRect.height / 2 + r.height / 2;
+    }
   }
+  const canScroll = nav.scrollHeight > nav.clientHeight + 2;
+  const atTop = nav.scrollTop <= 2;
+  const atBottom = nav.scrollTop + nav.clientHeight >= nav.scrollHeight - 2;
+  rail.classList.toggle("rail-more-top", canScroll && !atTop);
+  rail.classList.toggle("rail-more-bottom", canScroll && !atBottom);
+}
+
+function centerActiveNav() {
+  if (typeof window === "undefined") return;
+  const activeNav = document.querySelector(".rail nav a.on");
+  if (!activeNav) return;
+  // On a short window the rail scrolls: keep the current page's link inside
+  // the visible area, or the visitor cannot see where they are.
+  const scrollIntoView = () => activeNav.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  if (window.innerWidth > 900) {
+    const rail = document.querySelector(".rail");
+    const nav = rail && rail.querySelector("nav");
+    if (nav && nav.scrollHeight > nav.clientHeight) {
+      const navRect = nav.getBoundingClientRect();
+      const linkRect = activeNav.getBoundingClientRect();
+      if (linkRect.top < navRect.top || linkRect.bottom > navRect.bottom) {
+        nav.scrollTop += linkRect.top - navRect.top - navRect.height / 2 + linkRect.height / 2;
+      }
+    }
+    return;
+  }
+  scrollIntoView();
+  setTimeout(scrollIntoView, 80);
 }
 
 function ensureLangModal() {
@@ -2198,7 +2235,7 @@ const badge = (k, eager) => {
   const label = c.name + " crest";
   const file = CREST_FILE[k] || k;
   return `<span class="crest" data-team="${k}"><span class="club-badge" data-team="${k}" aria-hidden="true" style="display:none">${c.badge}</span>` +
-    `<img class="crest-img" src="img/teams/${file}.png" alt="${label}" width="30" height="30" loading="${eager ? "eager" : "lazy"}" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>`;
+    `<img class="crest-img" src="/img/teams/${file}.png" alt="${label}" width="30" height="30" loading="${eager ? "eager" : "lazy"}" decoding="async" onerror="const b=this.previousElementSibling;if(b)b.style.display='';this.remove()"></span>`;
 };
 const teamName = (k) => (CLUBS[k] ? CLUBS[k].name : k);
 const CLUB_KEY = { "Real Madrid": "realmadrid", "Manchester United": "manutd", "Juventus": "juventus", "Al Nassr": "alnassr", "Sporting CP": "sporting" };
@@ -3626,12 +3663,12 @@ function renderDashboard(d, team) {
   if (pillsEl) {
     const teams = [
       { id: "all", label: "All Teams", goals: d.totals.goals, apps: d.totals.apps, crest: "" },
-      { id: "realmadrid", label: "Real Madrid", goals: 450, apps: 438, crest: "img/teams/real-madrid.png" },
-      { id: "manutd", label: "Manchester United", goals: 145, apps: 346, crest: "img/teams/man-utd.png" },
-      { id: "juventus", label: "Juventus", goals: 101, apps: 134, crest: "img/teams/juventus.png" },
-      { id: "alnassr", label: "Al Nassr", goals: 134, apps: 157, crest: "img/teams/al-nassr.png" },
-      { id: "sporting", label: "Sporting CP", goals: 5, apps: 31, crest: "img/teams/sporting.png" },
-      { id: "portugal", label: "Portugal", goals: 146, apps: 234, crest: "img/teams/portugal.png" }
+      { id: "realmadrid", label: "Real Madrid", goals: 450, apps: 438, crest: "/img/teams/real-madrid.png" },
+      { id: "manutd", label: "Manchester United", goals: 145, apps: 346, crest: "/img/teams/man-utd.png" },
+      { id: "juventus", label: "Juventus", goals: 101, apps: 134, crest: "/img/teams/juventus.png" },
+      { id: "alnassr", label: "Al Nassr", goals: 134, apps: 157, crest: "/img/teams/al-nassr.png" },
+      { id: "sporting", label: "Sporting CP", goals: 5, apps: 31, crest: "/img/teams/sporting.png" },
+      { id: "portugal", label: "Portugal", goals: 146, apps: 234, crest: "/img/teams/portugal.png" }
     ];
     pillsEl.className = "dash-team-selector";
     pillsEl.innerHTML = teams.map((tm) => `
@@ -5118,6 +5155,15 @@ async function renderBirthday(d) {
     });
   }
 
+  try {
+    const railNav = document.querySelector(".rail nav");
+    if (railNav) {
+      railNav.addEventListener("scroll", updateRailEdges, { passive: true });
+      window.addEventListener("resize", updateRailEdges, { passive: true });
+      setTimeout(updateRailEdges, 60);
+    }
+  } catch (_) {}
+
   if (videoClose) videoClose.onclick = closeGoalVideo;
   if (videoModal) {
     videoModal.onclick = (e) => {
@@ -5139,18 +5185,29 @@ async function renderBirthday(d) {
     const m = String(url || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
     return m ? m[1] : null;
   };
+  const isEmbeddable = (url) => {
+    const u = String(url || "");
+    if (!u) return false;
+    if (youtubeId(u)) return true;
+    return /\.(mp4|webm)(\?|$)/i.test(u);
+  };
   const mediaHtml = (v) => {
     const url = v && v.videoUrl ? String(v.videoUrl) : "";
     if (!url) return "";
     const id = youtubeId(url);
+    // A compilation is a real video with the goal inside it: play it and say
+    // so, instead of pretending the goal itself is on screen.
+    const note = v.kind === "compilation"
+      ? '<p class="bday-media-note">' + (MEDIA.compilationNote || "") + '</p>'
+      : "";
     if (id) {
       return '<div class="bday-media-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + id +
         '" title="Ronaldo goal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen' +
-        ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>';
+        ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>' + note;
     }
     if (/\.(mp4|webm)(\?|$)/i.test(url)) {
       return '<video controls playsinline webkit-playsinline preload="metadata" src="' + url +
-        '" style="width:100%;aspect-ratio:16/9;background:#000;display:block;"></video>';
+        '" style="width:100%;aspect-ratio:16/9;background:#000;display:block;"></video>' + note;
     }
     return "";
   };
@@ -5292,6 +5349,15 @@ async function renderBirthday(d) {
         if (match) {
           openGoalVideo(match, 0);
         }
+        return;
+      }
+
+      const goalWatch = e.target.closest(".bday-goal-watch");
+      if (goalWatch && goalWatch.tagName === "BUTTON") {
+        const idx = +goalWatch.dataset.idx;
+        const gidx = +(goalWatch.dataset.gidx || 0);
+        const match = currentMatches[idx];
+        if (match) openGoalVideo(match, gidx);
         return;
       }
 
@@ -5508,6 +5574,33 @@ async function renderBirthday(d) {
             ? `<span class="bday-shot-types">(${match.types.join(", ")})</span>`
             : "";
 
+          // One row per goal. Every goal gets a watch action: the published
+          // clip when the archive has one, otherwise a search for that exact
+          // goal — so every goal on the page is watchable.
+          const goalRows = (match.videos && match.videos.length ? match.videos : []).map((v, gi) => {
+            const min = v.minute ? v.minute + "'" : (gi + 1) + "";
+            const fin = v.finish || (match.types || [])[gi] || "";
+            const q = encodeURIComponent("Cristiano Ronaldo goal vs " + match.opponent + " " + match.date + " " + (match.competition || ""));
+            const watchUrl = "https://www.youtube.com/results?search_query=" + q;
+            const archiveUrl = v.sourcePage || "";
+            // Play it when it can be played: an embeddable clip opens the
+            // player, a clip on the publisher's own site opens there, and a
+            // goal with no published video opens a search for the footage.
+            const watch = isEmbeddable(v.videoUrl)
+              ? `<button type="button" class="bday-goal-watch" data-idx="${matchIdx}" data-gidx="${gi}">${MEDIA.watchGoal || "▶ Watch this goal"}</button>`
+              : v.videoUrl
+                ? `<a class="bday-goal-watch" href="${v.videoUrl}" target="_blank" rel="noopener noreferrer">${MEDIA.watchGoal || "▶ Watch this goal"}</a>`
+                : `<a class="bday-goal-watch" href="${watchUrl}" target="_blank" rel="noopener noreferrer">${MEDIA.watchGoal || "▶ Watch this goal"}</a>`;
+            const archive = archiveUrl
+              ? `<a class="bday-goal-archive" href="${archiveUrl}" target="_blank" rel="noopener noreferrer" title="cr7allgoals.com">↗</a>`
+              : "";
+            return `<div class="bday-goal-row">
+                <span class="bday-goal-min">⚽ ${esc(min)}</span>
+                ${fin ? `<span class="bday-goal-type">${esc(fin)}</span>` : ""}
+                ${watch}${archive}
+              </div>`;
+          }).join("");
+          const goalList = goalRows ? `<div class="bday-goal-list">${goalRows}</div>` : "";
           const hasVideos = match.videos && match.videos.length > 0;
           const videoBtn = hasVideos
             ? `<button type="button" class="bday-watch-video-btn" data-idx="${matchIdx}">
@@ -5534,6 +5627,7 @@ async function renderBirthday(d) {
                 <div class="bday-minute-tags">${minTags}</div>
                 ${typeTags}
               </div>
+              ${goalList}
               <div class="bday-match-actions">
                 ${videoBtn}
                 ${hasVideos ? `<button type="button" class="bday-inline-toggle-btn" data-idx="${matchIdx}">${bDict.playInline}</button>` : ""}
@@ -6146,6 +6240,13 @@ function fixLocaleLinks() {
   const re = /^\/(en|es|pt|fr|ar|bn|hi|ro|uz)(?=\/|$)/;
   const anchors = document.querySelectorAll("a[href]");
   for (const a of anchors) {
+    // The language switcher's own links point at the OTHER languages by
+    // definition — rewriting them would send the visitor back where they
+    // came from, which is exactly what broke the switcher.
+    if (a.hasAttribute("data-code")) continue;
+    if (a.closest("#lang-modal")) continue;
+    if (a.id === "lang-suggest-switch") continue;
+    if (a.classList.contains("lang-suggest-btn-primary")) continue;
     const href = a.getAttribute("href") || "";
     if (!re.test(href)) continue;
     a.setAttribute("href", href.replace(re, "/" + lang));
@@ -6172,6 +6273,7 @@ load().then((d) => {
     console.error(e);
   }
   fixLocaleLinks();
+  updateRailEdges();
   reveal();
   /* Chart entrance: bars grow, donuts sweep, KPIs tick on visibility — one shared
      boot observer, same pattern as the timeline .tl-reveal wiring. */

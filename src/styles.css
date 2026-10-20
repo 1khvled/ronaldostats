@@ -11513,3 +11513,45 @@ body.mst-toast-open .back-to-top-btn {
   color: var(--faint);
 }
 .bday-source-note a { color: var(--brand); }
+
+/* ================= rail: edge fades when there is more to scroll ============= */
+@media (min-width: 901px) {
+  .rail::before,
+  .rail::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 22px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.16s ease;
+    z-index: 4;
+  }
+  /* the top fade */
+  .rail::before {
+    top: 2px;
+    background: linear-gradient(to bottom, var(--surface), transparent);
+    border-radius: 22px 22px 0 0;
+  }
+  /* the bottom fade */
+  .rail::after {
+    bottom: 2px;
+    background: linear-gradient(to top, var(--surface), transparent);
+    border-radius: 0 0 22px 22px;
+  }
+  .rail.rail-more-top::before,
+  .rail.rail-more-bottom::after { opacity: 1; }
+}
+
+/* ---------- birthday: the note under a compilation ---------- */
+.bday-media-note {
+  margin: 10px 0 0;
+  padding: 9px 12px;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--brand-soft);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 8px 8px 0;
+}

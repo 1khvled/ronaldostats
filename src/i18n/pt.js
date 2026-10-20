@@ -340,6 +340,7 @@ export const BDAY_MEDIA = {
     "noClip": "Não há clipe publicado deste gol.",
     "noClipBody": "O registro da partida abaixo vem das atas oficiais. Os links abrem a página do gol no arquivo e uma busca pelo vídeo.",
     "clipLabel": "Clipe publicado",
+    "compilationNote": "Este golo aparece numa compilação de todos os golos. Use o link do arquivo para encontrar a posição exata.",
     "compilationLabel": "Compilação de todos os gols",
     "publisher": "Publicado por",
     "assist": "Assistência: {name}",
