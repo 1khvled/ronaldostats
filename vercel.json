@@ -1080,7 +1080,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; media-src 'self' https://cdn.ronaldoallgoals.com blob:; connect-src 'self' https://cdn.ronaldoallgoals.com https://www.ronaldostats.site; frame-ancestors *;"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; media-src 'self' https://www.dailymotion.com https://www.youtube-nocookie.com blob:; connect-src 'self' https://www.dailymotion.com https://www.youtube-nocookie.com https://www.ronaldostats.site; frame-ancestors *;"
         }
       ]
     }

@@ -22,8 +22,8 @@ const latestGoalJsonPath = resolve(root, "public", "data", "latest-goal.json");
 const ronaldoDataJsonPath = resolve(root, "public", "data", "ronaldo-data.json");
 const distLatestGoalPath = resolve(root, "dist", "data", "latest-goal.json");
 
-const ESPN_ATHLETE_OVERVIEW = "https://site.web.api.espn.com/apis/common/v3/sports/soccer/athletes/45843/overview";
-const ESPN_MLS_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=2026&limit=1000";
+const ESPN_ATHLETE_OVERVIEW = "https://site.web.api.espn.com/apis/common/v3/sports/soccer/athletes/22774/overview";
+const ESPN_SAUDI_SCOREBOARD = `https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/scoreboard?dates=${new Date().getFullYear()}&limit=1000`;
 const ESPN_FIFA_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=1000";
 const ESPN_SUMMARY_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer/all/summary?event=";
 
@@ -87,7 +87,7 @@ export async function autoPullLatestGoal() {
   // Fetch overview from ESPN and MLS Scoreboard in parallel
   const [ovData, mlsData, fifaData] = await Promise.all([
     fetchJson(ESPN_ATHLETE_OVERVIEW),
-    fetchJson(ESPN_MLS_SCOREBOARD),
+    fetchJson(ESPN_SAUDI_SCOREBOARD),
     fetchJson(ESPN_FIFA_SCOREBOARD)
   ]);
 
@@ -104,7 +104,7 @@ export async function autoPullLatestGoal() {
         id: String(id),
         gameDate: ev.gameDate,
         opponent: ev.opponent,
-        leagueName: ev.leagueName || "Major League Soccer",
+        leagueName: ev.leagueName || "Saudi Pro League",
         score: ev.score
       });
     }
@@ -113,13 +113,13 @@ export async function autoPullLatestGoal() {
   if (fifaData?.events) {
     for (const ev of fifaData.events) {
       const isCompleted = ev.status?.type?.completed === true;
-      const isArgentina = ev.competitions?.[0]?.competitors?.some((c) => {
+      const isPortugal = ev.competitions?.[0]?.competitors?.some((c) => {
         const t = c.team || {};
-        return /argentina/i.test(t.displayName || "") || String(t.abbreviation || "").toUpperCase() === "ARG";
+        return /portugal/i.test(t.displayName || "") || String(t.abbreviation || "").toUpperCase() === "POR";
       });
-      if (isCompleted && isArgentina) {
+      if (isCompleted && isPortugal) {
         const id = String(ev.id);
-        const oppComp = ev.competitions?.[0]?.competitors?.find((c) => !/argentina/i.test(c.team?.displayName || ""));
+        const oppComp = ev.competitions?.[0]?.competitors?.find((c) => !/portugal/i.test(c.team?.displayName || ""));
         if (!candidateMap.has(id)) {
           candidateMap.set(id, {
             id,
@@ -127,7 +127,7 @@ export async function autoPullLatestGoal() {
             opponent: { displayName: oppComp?.team?.displayName || "Opponent" },
             leagueName: "International Friendly",
             score: ev.name || "Final",
-            isArgentina: true
+            isPortugal: true
           });
         }
       }
@@ -137,19 +137,19 @@ export async function autoPullLatestGoal() {
   if (mlsData?.events) {
     for (const ev of mlsData.events) {
       const isCompleted = ev.status?.type?.completed === true;
-      const isMiami = ev.competitions?.[0]?.competitors?.some(c => /miami/i.test(c.team?.displayName || ""));
-      if (isCompleted && isMiami) {
+      const isAlNassr = ev.competitions?.[0]?.competitors?.some(c => /nassr/i.test(c.team?.displayName || ""));
+      if (isCompleted && isAlNassr) {
         const id = String(ev.id);
         const comp = ev.competitions?.[0];
-        const miamiComp = comp?.competitors?.find(c => /miami/i.test(c.team?.displayName || ""));
-        const oppComp = comp?.competitors?.find(c => !/miami/i.test(c.team?.displayName || ""));
-        const scoreStr = `${miamiComp?.score || 0}-${oppComp?.score || 0}`;
+        const nassrComp = comp?.competitors?.find(c => /nassr/i.test(c.team?.displayName || ""));
+        const oppComp = comp?.competitors?.find(c => !/nassr/i.test(c.team?.displayName || ""));
+        const scoreStr = `${nassrComp?.score || 0}-${oppComp?.score || 0}`;
         if (!candidateMap.has(id)) {
           candidateMap.set(id, {
             id,
             gameDate: ev.date,
             opponent: { displayName: oppComp?.team?.displayName || "Opponent" },
-            leagueName: "Major League Soccer",
+            leagueName: "Saudi Pro League",
             score: scoreStr
           });
         }
@@ -224,7 +224,7 @@ export async function autoPullLatestGoal() {
       }
 
       const opp = ev.opponent?.displayName || "Opponent";
-      const comp = ev.leagueName || "Major League Soccer";
+      const comp = ev.leagueName || "Saudi Pro League";
       const score = ev.score || "Final";
       const dObj = new Date(ev.gameDate);
       const formattedDate = dObj.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
@@ -250,7 +250,7 @@ export async function autoPullLatestGoal() {
         assist: goalDetail?.assist || "",
         type: `${goalDetail?.finish || "Open play"}${goalDetail?.assist ? ` (Assist: ${goalDetail.assist})` : ""}`,
         isToday,
-        isArgentina: !!ev.isArgentina
+        isPortugal: !!ev.isPortugal
       };
       newGoalsCount = ronaldoGoals;
       break; // Only latest goal needed
@@ -295,16 +295,16 @@ export async function autoPullLatestGoal() {
         const finish = gd.finish || "Open play";
         const minute = gd.clock || newlyFoundGoal.minute;
         const type = `${finish}${gd.assist ? ` (Assist: ${gd.assist})` : ""}`;
-        const title = newlyFoundGoal.isArgentina
-          ? `Argentina ${newlyFoundGoal.score} ${newlyFoundGoal.opponent}`
-          : `Inter Miami ${newlyFoundGoal.score} ${newlyFoundGoal.opponent}`;
-        const videoUrl = `https://cdn.ronaldoallgoals.com/Goal${num}.mp4`;
+        const title = newlyFoundGoal.isPortugal
+          ? `Portugal ${newlyFoundGoal.score} ${newlyFoundGoal.opponent}`
+          : `Al Nassr ${newlyFoundGoal.score} ${newlyFoundGoal.opponent}`;
+        const videoUrl = `https://cr7allgoals.com/goal/${num}/`;
         const youtubeUrl = `https://www.youtube.com/results?search_query=Ronaldo+goal+vs+${encodeURIComponent(newlyFoundGoal.opponent)}+${encodeURIComponent(newlyFoundGoal.competition)}`;
         const bdayUrl = `/en/birthday/${newlyFoundGoal.bdayKey}`;
 
         newObjs.push({
           goalNumber: num,
-          team: newlyFoundGoal.isArgentina ? "Argentina" : "Inter Miami CF",
+          team: newlyFoundGoal.isPortugal ? "Argentina" : "Al Nassr",
           opponent: newlyFoundGoal.opponent,
           competition: newlyFoundGoal.competition,
           competitionSlug: newlyFoundGoal.competition.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
@@ -354,7 +354,7 @@ export async function autoPullLatestGoal() {
       if (latestData.totals) {
         latestData.totals.seniorGoals = newGoalNum;
         latestData.totals.appearances = (latestData.totals.appearances || 1178) + 1;
-        if (!newlyFoundGoal.isArgentina) latestData.totals.miamiGoals = (latestData.totals.miamiGoals || 102) + matchGoals;
+        if (!newlyFoundGoal.isPortugal) latestData.totals.miamiGoals = (latestData.totals.miamiGoals || 102) + matchGoals;
         latestData.totals.season2026Goals = (latestData.totals.season2026Goals || 26) + matchGoals;
         if (newlyFoundGoal.finish.includes("Free Kick")) {
           latestData.totals.freeKicks = (latestData.totals.freeKicks || 76) + 1;

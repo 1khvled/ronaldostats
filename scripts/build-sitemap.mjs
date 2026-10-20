@@ -28,7 +28,7 @@ const LG_MIN = (LG?.minute || "").replace(/'/g, "").trim();
 const LG_FINISH = (LG?.finish || "left-foot").trim();
 const LG_COMP = (LG?.competition || "Major League Soccer").trim();
 const LG_DATE = (LG?.formattedDate || todayIso).trim();
-const LG_VIDEO = LG?.videoUrl || `https://cdn.ronaldoallgoals.com/Goal${LG_NUM}.mp4`;
+const LG_VIDEO = LG?.videoUrl || `https://cr7allgoals.com/goal/${LG_NUM}/`;
 // URL-safe slug fragments for title/tags
 const LG_OPP_TAG = (LG_OPP || "Opponent").replace(/[^A-Za-z0-9]+/g, " ").trim();
 

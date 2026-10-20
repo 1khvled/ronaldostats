@@ -65,7 +65,9 @@ const HREFLANGS = [
   ["uz", "uz-UZ"],
 ];
 
-const TRANSLATABLE_ATTRS = ["title", "alt", "placeholder", "aria-label", "label", "value", "aria-description", "data-label"];
+// "content" is the meta description, the Open Graph card and the Twitter card:
+  // the MessiStat site translates them, and so does this one.
+  const TRANSLATABLE_ATTRS = ["title", "alt", "placeholder", "aria-label", "label", "value", "aria-description", "data-label", "content"];
 
 function localeBase(code) {
   return code.split("-")[0];

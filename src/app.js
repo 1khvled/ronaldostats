@@ -637,13 +637,13 @@ function ensureMobileMenuDrawer() {
           </button>
         </div>
         <div class="mobile-drawer-social">
-          <a href="https://x.com/ronaldostat1" target="_blank" rel="noopener noreferrer" class="mobile-drawer-x-btn" aria-label="Follow @ronaldostat1 on X">
+          <a href="https://x.com/messistat1" target="_blank" rel="noopener noreferrer" class="mobile-drawer-x-btn" aria-label="Follow @messistat1 on X">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            <span>Follow @ronaldostat1 on X</span>
+            <span>Follow @messistat1 on X</span>
           </a>
-          <a href="https://t.me/ronaldostatdotcom" target="_blank" rel="noopener noreferrer" class="mobile-drawer-x-btn mobile-drawer-tg-btn" aria-label="Join RonaldoStats on Telegram">
+          <a href="https://t.me/messistatdotcom" target="_blank" rel="noopener noreferrer" class="mobile-drawer-x-btn mobile-drawer-tg-btn" aria-label="Join RonaldoStats on Telegram">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            <span>Telegram @ronaldostatdotcom</span>
+            <span>Telegram @messistatdotcom</span>
           </a>
         </div>
       </div>
@@ -1618,18 +1618,18 @@ function initDedicatedRoulette() {
   spinBtn.dataset.rouletteInit = "true";
 
   const LEGENDARY_ROULETTE_GOALS = [
-    { num: 1, date: "2002-10-07", year: 2002, team: "Sporting CP", opp: "Moreirense", comp: "Primeira Liga", type: "Right Foot", score: "2 – 1", min: "—", note: "First senior goal for Sporting CP, aged 17.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal1.mp4" },
-    { num: 8, date: "2004-06-12", videoUrl: "https://www.uefa.com/uefaeuro/history/video/028e-1b0fdd6660c4-371f1d1129d5-1000--watch-all-14-of-cristiano-ronaldo-s-euro-goals/", year: 2004, team: "Portugal", opp: "Greece", comp: "European Championship", type: "Header", score: "2 – 1", min: "—", note: "His first Portugal goal — a towering header at Euro 2004.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal8.mp4" },
-    { num: 50, date: "2021-09-11", videoUrl: "https://www.manutd.com/en/mutv/videos/detail/cristiano-ronaldo-first-goal-v-newcastle-11-september", year: 2007, team: "Manchester United", opp: "Newcastle United", comp: "Premier League", type: "Left Foot", score: "3 – 2", min: "—", note: "His first Manchester United hat-trick, in the January 2007 win over Newcastle.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal50.mp4" },
-    { num: 200, date: "2011-04-16", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2011, team: "Real Madrid", opp: "Barcelona", comp: "Copa del Rey", type: "Header", score: "1 – 0", min: "90+1", note: "The stoppage-time header that won the Copa del Rey final — his first Spanish trophy.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal200.mp4" },
-    { num: 300, date: "2013-09-06", year: 2013, team: "Portugal", opp: "Northern Ireland", comp: "European Championship Qualifier", type: "Left Foot", score: "4 – 2", min: "27", note: "Three goals in 15 minutes — the fastest international hat-trick of his career.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal300.mp4" },
-    { num: 400, date: "2014-02-11", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2014, team: "Real Madrid", opp: "Atlético Madrid", comp: "Champions League", type: "Penalty", score: "4 – 2", min: "93", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal400.mp4" },
-    { num: 500, date: "2015-09-30", videoUrl: "https://www.youtube.com/watch?v=BMzp4Ob2OK8", year: 2015, team: "Real Madrid", opp: "Malmö", comp: "Champions League", type: "Left Foot", score: "2 – 1", min: "—", note: "His 500th career goal, in the season he became the all-time Champions League top scorer.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal500.mp4" },
-    { num: 640, date: "2018-04-03", videoUrl: "https://www.youtube.com/watch?v=Nt8198a0acA", year: 2018, team: "Real Madrid", opp: "Juventus", comp: "Champions League", type: "Left Foot", score: "4 – 1", min: "28", note: "His first-leg brace in a Champions League final — Real Madrid's fourth European crown.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal640.mp4" },
-    { num: 700, date: "2019-10-14", year: 2019, team: "Portugal", opp: "Ukraine", comp: "Nations League", type: "Left Foot", score: "3 – 1", min: "—", note: "His 700th career goal, in the Nations League campaign he won and topped.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal700.mp4" },
-    { num: 900, date: "2024-09-05", year: 2024, team: "Portugal", opp: "Croatia", comp: "Nations League", type: "Penalty", score: "2 – 1", min: "69", note: "His 900th career goal, converted from the spot in Lisbon.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal900.mp4" },
-    { num: 981, year: 2026, team: "Al Nassr", opp: "Al Nassr", comp: "Saudi Pro League", type: "Left Foot", score: "—", min: "—", note: "His 981st and most recent senior goal — the last of a record 981-goal career, scored for Al Nassr.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal981.mp4" },
-    { num: 1000, year: 2020, team: "Juventus", opp: "Cagliari", comp: "Serie A", type: "Right Foot", score: "1 – 1", min: "—", note: "His 1,000th senior appearance, in a Serie A draw with Cagliari.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal1000.mp4" }
+    { num: 1, date: "2002-10-07", year: 2002, team: "Sporting CP", opp: "Moreirense FC", comp: "Primeira Liga", type: "Solo run", score: "3–0", min: "34", note: "First senior goal for Sporting CP, aged 17." },
+    { num: 12, date: "2004-06-12", year: 2004, team: "Portugal", opp: "Greece", comp: "UEFA Euro 2004", type: "Header", score: "1–2", min: "90+3", note: "His first Portugal goal — a towering header at Euro 2004.", videoUrl: "https://www.uefa.com/uefaeuro/history/video/028e-1b0fdd6660c4-371f1d1129d5-1000--watch-all-14-of-cristiano-ronaldo-s-euro-goals/" },
+    { num: 60, date: "2007-01-13", year: 2007, team: "Manchester United", opp: "Aston Villa", comp: "Premier League", type: "Header", score: "3–1", min: "35", note: "His 60th goal, in a 3-1 win over Aston Villa in January 2007.", videoUrl: "https://www.youtube.com/watch?v=JC90NBGC_bA" },
+    { num: 224, date: "2011-04-20", year: 2011, team: "Real Madrid", opp: "FC Barcelona", comp: "Copa del Rey", type: "Header", score: "1–0", min: "103", note: "The stoppage-time header that won the Copa del Rey final — his first Spanish trophy.", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc" },
+    { num: 366, date: "2013-09-06", year: 2013, team: "Portugal", opp: "N. Ireland", comp: "FIFA World Cup qualifying", type: "Right Foot", score: "4–2", min: "—", note: "Three goals in 15 minutes — the fastest international hat-trick of his career." },
+    { num: 424, date: "2014-05-24", year: 2014, team: "Real Madrid", opp: "Atletico de Madrid", comp: "UEFA Champions League", type: "Penalty", score: "4–1", min: "120", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima.", videoUrl: "https://www.dailymotion.com/video/x24jfj3" },
+    { num: 500, date: "2015-09-30", year: 2015, team: "Real Madrid", opp: "MalmÃ¶ FF", comp: "UEFA Champions League", type: "Right-footed shot", score: "0–2", min: "29", note: "His 500th career goal, in the season he became the all-time Champions League top scorer." },
+    { num: 648, date: "2018-04-03", year: 2018, team: "Real Madrid", opp: "Juventus FC", comp: "UEFA Champions League", type: "Right-footed shot", score: "3–0", min: "3", note: "His brace in the 3-0 win at Juventus in the 2018 quarter-final.", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc" },
+    { num: 700, date: "2019-10-14", year: 2019, team: "Portugal", opp: "Ukraine", comp: "UEFA Euro 2020 qualifying", type: "Right Foot", score: "1–2", min: "—", note: "His 700th career goal, in the Nations League campaign he won and topped." },
+    { num: 900, date: "2024-09-05", year: 2024, team: "Portugal", opp: "Croatia", comp: "UEFA Nations League", type: "Right foot", score: "2–1", min: "34", note: "His 900th career goal, converted from the spot in Lisbon." },
+    { num: 690, date: "2019-08-31", year: 2019, team: "Juventus FC", opp: "SSC Napoli", comp: "Serie A", type: "Left-footed shot", score: "4–3", min: "62", note: "His first goal for Juventus, on his Serie A debut.", videoUrl: "https://www.youtube.com/watch?v=KbiE2M8jAak" },
+    { num: 981, date: "2026-10-09", year: 2026, team: "Al-Nassr", opp: "Al-Diriyah FC", comp: "Al Nassr", type: "Right-footed shot", score: "", min: "42", note: "His 981st and most recent senior goal — the last of a record 981-goal career, scored for Al Nassr." },
   ];
 
   let currentGoal = null;
@@ -2523,13 +2523,13 @@ function setHead(d, ledeHTML) {
     const socialDiv = document.createElement("div");
     socialDiv.className = "footer-social-bar";
     socialDiv.innerHTML = `
-      <a href="https://x.com/ronaldostat1" target="_blank" rel="noopener noreferrer" class="footer-x-link" aria-label="Follow RonaldoStats on X (@ronaldostat1)">
+      <a href="https://x.com/messistat1" target="_blank" rel="noopener noreferrer" class="footer-x-link" aria-label="Follow RonaldoStats on X (@messistat1)">
         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        <span>Follow @ronaldostat1 on X</span>
+        <span>Follow @messistat1 on X</span>
       </a>
-      <a href="https://t.me/ronaldostatdotcom" target="_blank" rel="noopener noreferrer" class="footer-x-link footer-tg-link" aria-label="Join RonaldoStats on Telegram">
+      <a href="https://t.me/messistatdotcom" target="_blank" rel="noopener noreferrer" class="footer-x-link footer-tg-link" aria-label="Join RonaldoStats on Telegram">
         <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-        <span>Telegram @ronaldostatdotcom</span>
+        <span>Telegram @messistatdotcom</span>
       </a>
     `;
     const crestNote = footEl.querySelector(".crest-note");

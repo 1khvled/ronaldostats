@@ -280,7 +280,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": "4 May 2015  [, against Malmö, in the season he passed Gerd Müller to become the all-time Champions League top scorer.] When did Ronaldo score his 900th career goal?"
+  "ctx": "30 Sep 2015  [, against Malmö, in the season he passed Gerd Müller to become the all-time Champions League top scorer.] When did Ronaldo score his 900th career goal?"
  },
  ", for Juventus against Cagliari.": {
   "count": 1,
@@ -524,13 +524,6 @@
   ],
   "ctx": "[attr title]"
  },
- "1 Jul 2009": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "Real Madrid paid a world-record €94m in June 2009 and 80,000 packed the Bernabéu for the presentation. He answered with a Copa del Rey final header in a Clásico in his first season, a La Liga title won with a record 100 points and 46 league goals, and 63 goals in the 2012 calendar year — with 450 go"
- },
  "1 July: 0 goals": {
   "count": 1,
   "pages": [
@@ -742,7 +735,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "— against Northern Ireland in a Euro 2012 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.  [10 Jul 2016] EURO 2016 champion as Portugal's captain"
+  "ctx": "— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.  [10 Jul 2016] EURO 2016 champion as Portugal's captain"
  },
  "10 Jul 2018": {
   "count": 1,
@@ -757,6 +750,13 @@
    "birthday"
   ],
   "ctx": "[attr title]"
+ },
+ "10 Jun 2009": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "Real Madrid paid a world-record €94m in June 2009 and 80,000 packed the Bernabéu for the presentation. He answered with a Copa del Rey final header in a Clásico in his first season, a La Liga title won with a record 100 points and 46 league goals, and 63 goals in the 2012 calendar year — with 450 go"
  },
  "10 June: 1 goal": {
   "count": 1,
@@ -1122,14 +1122,6 @@
   ],
   "ctx": "[attr title]"
  },
- "12 Oct 2026": {
-  "count": 2,
-  "pages": [
-   "dashboard",
-   "timeline"
-  ],
-  "ctx": "Al Nassr  [12 Oct 2026] 41y 249d"
- },
  "12 October 2026": {
   "count": 1,
   "pages": [
@@ -1276,14 +1268,6 @@
    "birthday"
   ],
   "ctx": "[attr title]"
- },
- "14 Aug 2002": {
-  "count": 3,
-  "pages": [
-   "dashboard",
-   "timeline"
-  ],
-  "ctx": "Inter (Champions League qualifying)  [14 Aug 2002] 17y 190d"
  },
  "14 August 2002": {
   "count": 1,
@@ -1612,6 +1596,14 @@
   ],
   "ctx": "[attr title]"
  },
+ "16 Aug 2002": {
+  "count": 3,
+  "pages": [
+   "dashboard",
+   "timeline"
+  ],
+  "ctx": "PSV Eindhoven (Champions League qualifying)  [16 Aug 2002] 17y 192d"
+ },
  "16 Aug 2003": {
   "count": 1,
   "pages": [
@@ -1653,13 +1645,6 @@
    "birthday"
   ],
   "ctx": "[attr title]"
- },
- "16 Jun 2013": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "Five Ballons d'Or: 2008, 2013, 2014, 2016 and 2017. Between them sit a 69-goal calendar year, the European Championship won as captain in Paris, four consecutive Champions League titles and the 500th career goal — the record that took him past every scorer in the competition's history.  [16 Jun 2013"
  },
  "16 June: 0 goals": {
   "count": 1,
@@ -1787,12 +1772,12 @@
   ],
   "ctx": "[attr title]"
  },
- "17y 190d": {
+ "17y 192d": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
-  "ctx": "14 Aug 2002  [17y 190d] 1"
+  "ctx": "16 Aug 2002  [17y 192d] 1"
  },
  "18 April: 6 goals": {
   "count": 1,
@@ -2366,7 +2351,7 @@
   "pages": [
    "real-madrid"
   ],
-  "ctx": "Watch the Header ⚽  [2014 · Champions League Final] La Décima"
+  "ctx": "Watch the 2010-11 Goals ⚽  [2014 · Champions League Final] La Décima"
  },
  "2014 · La Liga": {
   "count": 1,
@@ -2535,13 +2520,6 @@
    "birthday"
   ],
   "ctx": "[attr title]"
- },
- "21 Oct 2002": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.  [21 Oct 2002] First senior career goal vs Moreirense"
  },
  "21 October: 1 goal": {
   "count": 1,
@@ -3575,9 +3553,11 @@
   "ctx": "💯 500th Career Goal  [30 Sep] Goal 500"
  },
  "30 Sep 2015": {
-  "count": 1,
+  "count": 3,
   "pages": [
-   "dashboard"
+   "achievements",
+   "dashboard",
+   "timeline"
   ],
   "ctx": "Malmö  [30 Sep 2015] 30y 237d"
  },
@@ -3705,7 +3685,7 @@
   "pages": [
    "birthday"
   ],
-  "ctx": "Through the Years  [35 Trophies & 5 Ballons d'Or] International Editions / Idiomas"
+  "ctx": "Through the Years  [35 Trophies & 5 Ballons d'Or] 🐐 MessiStat — Lionel Messi Stats"
  },
  "35 Trophies &amp; 5 Ballons d'Or": {
   "count": 2,
@@ -3835,14 +3815,6 @@
   ],
   "ctx": "[attr title]"
  },
- "4 May 2015": {
-  "count": 2,
-  "pages": [
-   "achievements",
-   "timeline"
-  ],
-  "ctx": "— Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.  [4 May 2015] 500th career goal and Champions League top scorer"
- },
  "4 May: 6 goals": {
   "count": 1,
   "pages": [
@@ -3906,12 +3878,12 @@
   ],
   "ctx": "23 Aug 2025  [40y 199d] —"
  },
- "41y 249d": {
+ "41y 246d": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
-  "ctx": "12 Oct 2026  [41y 249d] 1,340"
+  "ctx": "9 Oct 2026  [41y 246d] 1,340"
  },
  "42 assists": {
   "count": 1,
@@ -4173,7 +4145,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "4 May 2015  [500th career goal and Champions League top scorer] — his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds."
+  "ctx": "30 Sep 2015  [500th career goal and Champions League top scorer] — his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds."
  },
  "5G": {
   "count": 1,
@@ -4258,6 +4230,13 @@
    "birthday"
   ],
   "ctx": "[attr title]"
+ },
+ "6 Sep 2013": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "Five Ballons d'Or: 2008, 2013, 2014, 2016 and 2017. Between them sit a 69-goal calendar year, the European Championship won as captain in Paris, four consecutive Champions League titles and the 500th career goal — the record that took him past every scorer in the competition's history.  [6 Sep 2013]"
  },
  "6 September: 5 goals": {
   "count": 1,
@@ -4448,6 +4427,13 @@
    "birthday"
   ],
   "ctx": "🏆 Debut Brace  [7 Oct] Sporting CP Brace"
+ },
+ "7 Oct 2002": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.  [7 Oct 2002] First senior career goal vs Moreirense"
  },
  "7 October": {
   "count": 1,
@@ -4742,6 +4728,14 @@
    "birthday"
   ],
   "ctx": "[attr title]"
+ },
+ "9 Oct 2026": {
+  "count": 2,
+  "pages": [
+   "dashboard",
+   "timeline"
+  ],
+  "ctx": "Al Nassr  [9 Oct 2026] 41y 246d"
  },
  "9 October 2026": {
   "count": 3,
@@ -5249,15 +5243,8 @@
   ],
   "ctx": "Greece at Euro 2004  [; his first Manchester United goal that same year was a free kick against Portsmouth.] When did Ronaldo win the Champions League?"
  },
- "@ronaldostat1": {
-  "count": 2,
-  "pages": [
-   "index"
-  ],
-  "ctx": "[attr content]"
- },
- "@ronaldostats1": {
-  "count": 22,
+ "@messistat1": {
+  "count": 24,
   "pages": [
    "achievements",
    "birthday",
@@ -5266,6 +5253,7 @@
    "gear",
    "goalsbyseason",
    "goalsbyyear",
+   "index",
    "latest-goal",
    "real-madrid",
    "ronaldo-vs-messi",
@@ -5292,7 +5280,7 @@
   "pages": [
    "real-madrid"
   ],
-  "ctx": "The Fourth European Crown  [A brace in the first leg of the final in Rome, Real Madrid's fourth Champions League of his Madrid years and the last of the four.] Watch the Brace ⚽"
+  "ctx": "The Fourth European Crown  [A brace in the first leg of the final in Rome, Real Madrid's fourth Champions League of his Madrid years and the last of the four.] Watch the 2017-18 Goals ⚽"
  },
  "A framed poster of Ronaldo in the Portugal number 7 shirt with a signed photograph inset": {
   "count": 1,
@@ -5373,14 +5361,14 @@
   "pages": [
    "champions-league"
   ],
-  "ctx": "Through the Years  [Achievements &amp; 35 Trophies] International Editions / Idiomas"
+  "ctx": "Through the Years  [Achievements &amp; 35 Trophies] 🐐 MessiStat — Lionel Messi Stats"
  },
  "Achievements &amp; Trophies": {
   "count": 1,
   "pages": [
    "latest-goal"
   ],
-  "ctx": "Through the Years  [Achievements &amp; Trophies] International Editions / Idiomas"
+  "ctx": "Through the Years  [Achievements &amp; Trophies] 🐐 MessiStat — Lionel Messi Stats"
  },
  "Across all official senior matches,": {
   "count": 1,
@@ -6624,14 +6612,14 @@
   "pages": [
    "gear"
   ],
-  "ctx": "Telegram @ronaldostatsdotcom  [Club crests and league logos are trademarks of their respective owners, displayed for gear identification purposes.] "
+  "ctx": "Telegram @messistatdotcom  [Club crests and league logos are trademarks of their respective owners, displayed for gear identification purposes.] "
  },
  "Club crests are trademarks of their respective clubs, shown for identification purposes.": {
   "count": 1,
   "pages": [
    "ronaldo-vs-messi"
   ],
-  "ctx": "Telegram @ronaldostatsdotcom  [Club crests are trademarks of their respective clubs, shown for identification purposes.] "
+  "ctx": "Telegram @messistatdotcom  [Club crests are trademarks of their respective clubs, shown for identification purposes.] "
  },
  "Club crests are trademarks of their respective clubs, shown for team identification.": {
   "count": 9,
@@ -6882,7 +6870,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "⚽ OFFICIAL & FAN MERCHANDISE · AMAZON AFFILIATE PICKS  [Cristiano Ronaldo Gear, Match Jerseys & Fan Store] Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every pur"
+  "ctx": "⚽ OFFICIAL & FAN MERCHANDISE · AMAZON AFFILIATE PICKS  [Cristiano Ronaldo Gear, Match Jerseys & Fan Store] Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a Portugal national team shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print."
  },
  "Cristiano Ronaldo Gear, Match Jerseys & Fan Store | RonaldoStats": {
   "count": 3,
@@ -7041,13 +7029,6 @@
    "goalsbyyear",
    "index",
    "timeline"
-  ],
-  "ctx": "[attr content]"
- },
- "Cristiano Ronaldo gear, Ronaldo jerseys, Ronaldo Portugal home jersey 7, Ronaldo Portugal away jersey, Ronaldo 2006-07 home shirt, CR7 football boots, Ronaldo match ball, CR7 hoodie, Ronaldo cap, Ronaldo poster print, Ronaldo Amazon store, buy Ronaldo shirt": {
-  "count": 1,
-  "pages": [
-   "gear"
   ],
   "ctx": "[attr content]"
  },
@@ -7324,14 +7305,14 @@
    "goalsbyseason",
    "goalsbyyear"
   ],
-  "ctx": "Telegram @ronaldostatsdotcom  [Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals club, 234 / 146 Portugal). Last checked 19 October 2026.] Club crests are trademarks of their respective clubs, shown for team identification."
+  "ctx": "Telegram @messistatdotcom  [Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals club, 234 / 146 Portugal). Last checked 19 October 2026.] Club crests are trademarks of their respective clubs, shown for team identification."
  },
  "Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026.": {
   "count": 1,
   "pages": [
    "index"
   ],
-  "ctx": "Telegram @ronaldostatdotcom  [Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026.] Club crests are trademarks of their respective clubs, shown for team identification."
+  "ctx": "Telegram @messistatdotcom  [Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026.] Club crests are trademarks of their respective clubs, shown for team identification."
  },
  "Croatia": {
   "count": 1,
@@ -7797,12 +7778,12 @@
   ],
   "ctx": "International Editions / Idiomas  [English (US, NG, IN, PH)] Español (España)"
  },
- "Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStats 100% free, fast, and independently maintained.": {
+ "Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a Portugal national team shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStats 100% free, fast, and independently maintained.": {
   "count": 1,
   "pages": [
    "gear"
   ],
-  "ctx": "Cristiano Ronaldo Gear, Match Jerseys & Fan Store  [Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep RonaldoStat"
+  "ctx": "Cristiano Ronaldo Gear, Match Jerseys & Fan Store  [Equip yourself with verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a Portugal national team shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Every purchase through our verified links helps keep R"
  },
  "Español (Argentina, España)": {
   "count": 4,
@@ -8256,7 +8237,7 @@
   "pages": [
    "dashboard"
   ],
-  "ctx": "Goal #1 (Portugal)  [First international goal, Euro 2004] Greece"
+  "ctx": "Goal #12  [First international goal, Euro 2004] Greece"
  },
  "First player to 900 career goals": {
   "count": 1,
@@ -8277,7 +8258,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "21 Oct 2002  [First senior career goal vs Moreirense] — two months after his debut, Ronaldo opens his senior account in the Primeira Liga: the first of 981."
+  "ctx": "7 Oct 2002  [First senior career goal vs Moreirense] — two months after his debut, Ronaldo opens his senior account in the Primeira Liga: the first of 981."
  },
  "First to 100 goals for four clubs": {
   "count": 1,
@@ -8335,15 +8316,8 @@
   ],
   "ctx": "▾  [Five times] : 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on all 96 ballots."
  },
- "Follow @ronaldostat1 on X": {
-  "count": 1,
-  "pages": [
-   "index"
-  ],
-  "ctx": "Oʻzbekcha (Oʻzbekiston)  [Follow @ronaldostat1 on X] Telegram @ronaldostatdotcom"
- },
- "Follow @ronaldostats1 on X": {
-  "count": 11,
+ "Follow @messistat1 on X": {
+  "count": 12,
   "pages": [
    "achievements",
    "birthday",
@@ -8352,22 +8326,16 @@
    "gear",
    "goalsbyseason",
    "goalsbyyear",
+   "index",
    "latest-goal",
    "real-madrid",
    "ronaldo-vs-messi",
    "timeline"
   ],
-  "ctx": "Penalties (184), free kicks (66), hat-tricks (66) and assists (261) are widely published compiled tallies, shown as provisional until a true match-by-match hand count is finished.  [Follow @ronaldostats1 on X] Telegram @ronaldostatsdotcom"
+  "ctx": "Oʻzbekcha (Oʻzbekiston)  [Follow @messistat1 on X] Telegram @messistatdotcom"
  },
- "Follow RonaldoStats on X (@ronaldostat1)": {
-  "count": 1,
-  "pages": [
-   "index"
-  ],
-  "ctx": "[attr aria-label]"
- },
- "Follow RonaldoStats on X (@ronaldostats1)": {
-  "count": 11,
+ "Follow RonaldoStats on X (@messistat1)": {
+  "count": 12,
   "pages": [
    "achievements",
    "birthday",
@@ -8376,6 +8344,7 @@
    "gear",
    "goalsbyseason",
    "goalsbyyear",
+   "index",
    "latest-goal",
    "real-madrid",
    "ronaldo-vs-messi",
@@ -8602,13 +8571,6 @@
   ],
   "ctx": "Matches  [Goal #1] Senior debut for Sporting CP"
  },
- "Goal #1 (Portugal)": {
-  "count": 1,
-  "pages": [
-   "dashboard"
-  ],
-  "ctx": "1  [Goal #1 (Portugal)] First international goal, Euro 2004"
- },
  "Goal #1,000 (appearance)": {
   "count": 1,
   "pages": [
@@ -8622,6 +8584,13 @@
    "dashboard"
   ],
   "ctx": "—  [Goal #100 (Al Nassr)] First to 100 goals for four clubs"
+ },
+ "Goal #12": {
+  "count": 1,
+  "pages": [
+   "dashboard"
+  ],
+  "ctx": "1  [Goal #12] First international goal, Euro 2004"
  },
  "Goal #500": {
   "count": 1,
@@ -8699,7 +8668,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "12 Oct 2026  [Goal #981 — the last of a record career] — Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances."
+  "ctx": "9 Oct 2026  [Goal #981 — the last of a record career] — Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances."
  },
  "Goal #981: Al Nassr v Al-Diriyah FC": {
   "count": 1,
@@ -9456,13 +9425,6 @@
   ],
   "ctx": "2019, 2025  [Individual honours — 17 award types] Ballon d'Or"
  },
- "Inter (Champions League qualifying)": {
-  "count": 1,
-  "pages": [
-   "dashboard"
-  ],
-  "ctx": "Senior debut for Sporting CP  [Inter (Champions League qualifying)] 14 Aug 2002"
- },
  "Interactive Dashboard": {
   "count": 3,
   "pages": [
@@ -9681,7 +9643,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "Golden Shoes  [Key Career Milestone Dates (2002–2026)] 14 Aug 2002"
+  "ctx": "Golden Shoes  [Key Career Milestone Dates (2002–2026)] 16 Aug 2002"
  },
  "King's Cup": {
   "count": 1,
@@ -10028,7 +9990,7 @@
   "pages": [
    "birthday"
   ],
-  "ctx": "Telegram @ronaldostatsdotcom  [Match Record] Ronaldo Match Record"
+  "ctx": "Telegram @messistatdotcom  [Match Record] Ronaldo Match Record"
  },
  "Match Score": {
   "count": 1,
@@ -10413,7 +10375,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": "▾  [On] 4 May 2015"
+  "ctx": "▾  [On] 30 Sep 2015"
  },
  "On 7 March 2012, Ronaldo scored 5 goals in a single Champions League match against Bayer Leverkusen in a 7–1 win, the only five-goal haul in the modern Champions League.": {
   "count": 1,
@@ -10506,7 +10468,14 @@
    "real-madrid",
    "ronaldo-vs-messi"
   ],
-  "ctx": "Română (România)  [Oʻzbekcha (Oʻzbekiston)] Follow @ronaldostat1 on X"
+  "ctx": "Română (România)  [Oʻzbekcha (Oʻzbekiston)] Follow @messistat1 on X"
+ },
+ "PSV Eindhoven (Champions League qualifying)": {
+  "count": 1,
+  "pages": [
+   "dashboard"
+  ],
+  "ctx": "Senior debut for Sporting CP  [PSV Eindhoven (Champions League qualifying)] 16 Aug 2002"
  },
  "PT-11": {
   "count": 1,
@@ -11083,7 +11052,7 @@
   "pages": [
    "index"
   ],
-  "ctx": ".  [Road to 1,000 goals] 981"
+  "ctx": "🐐 MessiStat — Lionel Messi Stats  [Road to 1,000 goals] 981"
  },
  "Role": {
   "count": 1,
@@ -11934,7 +11903,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "14 Aug 2002  [Senior debut for] Sporting CP"
+  "ctx": "16 Aug 2002  [Senior debut for] Sporting CP"
  },
  "Senior debut for Sporting CP": {
   "count": 2,
@@ -11942,7 +11911,7 @@
    "dashboard",
    "timeline"
   ],
-  "ctx": "Goal #1  [Senior debut for Sporting CP] Inter (Champions League qualifying)"
+  "ctx": "Goal #1  [Senior debut for Sporting CP] PSV Eindhoven (Champions League qualifying)"
  },
  "Senior team trophies": {
   "count": 1,
@@ -12084,7 +12053,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "1 Jul 2009  [Signs for Real Madrid for a world-record fee] — Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018."
+  "ctx": "10 Jun 2009  [Signs for Real Madrid for a world-record fee] — Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018."
  },
  "Site directory": {
   "count": 7,
@@ -12352,15 +12321,8 @@
   ],
   "ctx": "Minute  [Technique &amp; Assist] Source"
  },
- "Telegram @ronaldostatdotcom": {
-  "count": 1,
-  "pages": [
-   "index"
-  ],
-  "ctx": "Follow @ronaldostat1 on X  [Telegram @ronaldostatdotcom] Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026."
- },
- "Telegram @ronaldostatsdotcom": {
-  "count": 11,
+ "Telegram @messistatdotcom": {
+  "count": 12,
   "pages": [
    "achievements",
    "birthday",
@@ -12369,12 +12331,13 @@
    "gear",
    "goalsbyseason",
    "goalsbyyear",
+   "index",
    "latest-goal",
    "real-madrid",
    "ronaldo-vs-messi",
    "timeline"
   ],
-  "ctx": "Follow @ronaldostats1 on X  [Telegram @ronaldostatsdotcom] Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals club, 234 / 146 Portugal). Last checked 19 October 2026."
+  "ctx": "Follow @messistat1 on X  [Telegram @messistatdotcom] Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026."
  },
  "Test Your Cristiano Ronaldo Trophy & Records IQ": {
   "count": 1,
@@ -12611,7 +12574,7 @@
   "pages": [
    "real-madrid"
   ],
-  "ctx": "First Spanish Trophy  [The stoppage-time header against Barcelona in the Copa del Rey final, his first trophy in Spain. A year later he reached 100 La Liga goals for the club.] Watch the Header ⚽"
+  "ctx": "First Spanish Trophy  [The stoppage-time header against Barcelona in the Copa del Rey final, his first trophy in Spain. A year later he reached 100 La Liga goals for the club.] Watch the 2010-11 Goals ⚽"
  },
  "The verified": {
   "count": 1,
@@ -12670,7 +12633,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "16 Jun 2013  [Three goals in 15 minutes for Portugal] — against Northern Ireland in a Euro 2012 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record."
+  "ctx": "6 Sep 2013  [Three goals in 15 minutes for Portugal] — against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record."
  },
  "Through the Years": {
   "count": 33,
@@ -12998,7 +12961,7 @@
   ],
   "ctx": "Record  [Value] Season"
  },
- "Verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a 2006-07 home shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Affiliate picks supporting RonaldoStats.": {
+ "Verified Cristiano Ronaldo match jerseys, Portugal home and away kits, a Portugal national team shirt, signature CR7 boots, a match ball, a hoodie, a cap and a framed print. Affiliate picks supporting RonaldoStats.": {
   "count": 3,
   "pages": [
    "gear"
@@ -13086,19 +13049,19 @@
   ],
   "ctx": "⚽ Latest Ronaldo Goal Video  [Watch Ronaldo's latest goal video, see if he scored today, and view recent goal clips.] Ronaldo career stats"
  },
- "Watch the Brace ⚽": {
+ "Watch the 2010-11 Goals ⚽": {
   "count": 1,
   "pages": [
    "real-madrid"
   ],
-  "ctx": "A brace in the first leg of the final in Rome, Real Madrid's fourth Champions League of his Madrid years and the last of the four.  [Watch the Brace ⚽] 🎂 UNIQUE INTERACTIVE TOOL"
+  "ctx": "The stoppage-time header against Barcelona in the Copa del Rey final, his first trophy in Spain. A year later he reached 100 La Liga goals for the club.  [Watch the 2010-11 Goals ⚽] 2014 · Champions League Final"
  },
- "Watch the Header ⚽": {
+ "Watch the 2017-18 Goals ⚽": {
   "count": 1,
   "pages": [
    "real-madrid"
   ],
-  "ctx": "The stoppage-time header against Barcelona in the Copa del Rey final, his first trophy in Spain. A year later he reached 100 La Liga goals for the club.  [Watch the Header ⚽] 2014 · Champions League Final"
+  "ctx": "A brace in the first leg of the final in Rome, Real Madrid's fourth Champions League of his Madrid years and the last of the four.  [Watch the 2017-18 Goals ⚽] 🎂 UNIQUE INTERACTIVE TOOL"
  },
  "Watch the Penalty ⚽": {
   "count": 1,
@@ -13582,7 +13545,7 @@
   ],
   "ctx": ",  [did ronaldo score last night] , or tracking his chase toward 1,000 career goals, RonaldoStats delivers verified match data: exact scoring minutes, finish types, assists and the competition each goal was scored in. Figures are compiled from official match records and cross-checked after every fix"
  },
- "did ronaldo score on my birthday, did ronaldo score on this day, ronaldo birthday goals, ronaldo goals today, ronaldo 366 days goals, ronaldo goals calendar, ronaldo birthday finder, ronaldo goals by date, ronaldo birthday match log, cristiano ronaldo goal log, ronaldo on this day, ronaldo birthday stats": {
+ "did ronaldo score on your birthday, ronaldo birthday goals, ronaldo 365 days goals, ronaldo goals by birthday, ronaldo birthday goal video, ronaldo goal clips, watch ronaldo goals, ronaldo birthday match video, ronaldo birthday goal calendar, ronaldo goals every day of the year, ronaldostat": {
   "count": 1,
   "pages": [
    "birthday"
@@ -13882,13 +13845,6 @@
   ],
   "ctx": "provisional until a hand count  [is finished.] 📜 Certified World Records &amp; Historic Milestones"
  },
- "last ronaldo goal, ronaldo last goal, latest ronaldo goal, ronaldo goal today, did ronaldo score today, when did ronaldo last score, ronaldo recent goals, ronaldo goal 981, al nassr ronaldo goals, ronaldo 981 career goals, ronaldo goals by year, ronaldo goal record, ronaldo birthday goals": {
-  "count": 1,
-  "pages": [
-   "latest-goal"
-  ],
-  "ctx": "[attr content]"
- },
  "latest goal page": {
   "count": 1,
   "pages": [
@@ -13953,17 +13909,17 @@
   ],
   "ctx": "15  [reviews] The photograph is the listing's own image on Amazon"
  },
- "ronaldo career timeline, ronaldo history, cristiano ronaldo career stages, ronaldo sporting cp to real madrid to al nassr, ronaldo milestones timeline, ronaldo 981 goal career, ronaldo career path, ronaldo champions league record, ronaldostats, ronaldostatss": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr content]"
- },
- "ronaldo champions league stats, ronaldo ucl goals, ronaldo ucl assists, ronaldo champions league appearances, ronaldo ucl records, ronaldo champions league titles, ronaldo champions league season goals, ronaldo champions league penalties, ronaldo champions league free kicks, ronaldo 140 goals, ronaldo ucl top scorer, ronaldostats": {
+ "ronaldo champions league, ronaldo ucl stats, ronaldo champions league goals, ronaldo champions league hat tricks, ronaldo champions league knockout goals, ronaldo ucl titles, ronaldo champions league appearances, ronaldo 140 champions league goals, ronaldo top scorer ucl, ronaldo champions league season by season, ronaldostat": {
   "count": 1,
   "pages": [
    "champions-league"
+  ],
+  "ctx": "[attr content]"
+ },
+ "ronaldo gear, ronaldo jerseys, ronaldo home jersey 7, ronaldo away jersey, ronaldo portugal national team shirt, ronaldo football boots, ronaldo match ball size 5, ronaldo hoodie, ronaldo cap, ronaldo framed print, ronaldo amazon store, buy ronaldo shirt, authentic ronaldo merchandise": {
+  "count": 1,
+  "pages": [
+   "gear"
   ],
   "ctx": "[attr content]"
  },
@@ -13974,45 +13930,66 @@
   ],
   "ctx": "Whether you are searching for  [ronaldo goal today] ,"
  },
- "ronaldo goals by season, ronaldo season by season stats, ronaldo real madrid seasons, ronaldo manchester united seasons, ronaldo al nassr seasons, ronaldo 2014-15 season 61 goals, ronaldo club stats by season, ronaldo portugal goals by year, cristiano ronaldo season breakdown, ronaldostats": {
+ "ronaldo goal today, watch ronaldo last goal, ronaldo last goal, ronaldo last goal video, did ronaldo score last night, ronaldo goal highlights, ronaldo goal 981, ronaldo latest goal video, ronaldo goal video player, ronaldo free kick today, ronaldo next match, ronaldo goals this week, ronaldo recent goals, ronaldostat": {
+  "count": 1,
+  "pages": [
+   "latest-goal"
+  ],
+  "ctx": "[attr content]"
+ },
+ "ronaldo goals by season, ronaldo season by season goals, ronaldo real madrid seasons, ronaldo manchester united seasons, ronaldo 2014-15 season 61 goals, ronaldo career season stats, ronaldo season breakdown, ronaldo club goals by season, ronaldo portugal goals by season, ronaldo season stats, ronaldostat": {
   "count": 1,
   "pages": [
    "goalsbyseason"
   ],
   "ctx": "[attr content]"
  },
- "ronaldo goals by year, ronaldo 2013 69 goals, ronaldo calendar year goals, ronaldo year by year goals, ronaldo goals per year, ronaldo all time goals by year, ronaldo scoring record 2013, ronaldo annual goal breakdown, cristiano ronaldo calendar year record, ronaldo stats by year, ronaldostats": {
+ "ronaldo goals by year, ronaldo yearly goals, ronaldo goals per year, ronaldo 2013 stats, ronaldo 69 goals in 2013, ronaldo scoring record 2013, ronaldo calendar year record, ronaldo career goals by year, ronaldo annual totals, ronaldo goals per season comparison, ronaldo year by year log, ronaldostat, ronaldo goals by year 2002 2026": {
   "count": 1,
   "pages": [
    "goalsbyyear"
   ],
   "ctx": "[attr content]"
  },
- "ronaldo stats dashboard, cristiano ronaldo 981 goals, ronaldo goals by club, ronaldo real madrid goals, ronaldo manchester united goals, ronaldo champions league goals, ronaldo penalty free kick split, ronaldo body part goals, ronaldo career data visualisation, ronaldo analytics, ronaldostats": {
+ "ronaldo real madrid, ronaldo at real madrid, ronaldo real madrid goals, ronaldo real madrid stats, ronaldo all time el clasico top scorer, ronaldo vs real madrid, ronaldo clasico goals, ronaldo madrid years, ronaldo 450 goals real madrid, ronaldo real madrid trophy count, ronaldostat": {
+  "count": 1,
+  "pages": [
+   "real-madrid"
+  ],
+  "ctx": "[attr content]"
+ },
+ "ronaldo stats, cristiano ronaldo stats, ronaldo career stats, ronaldo all time stats, ronaldo total goals, ronaldo assists, ronaldo stats 2026, ronaldo vs messi stats, ronaldo career goals, how many goals has ronaldo scored, ronaldo all time goals, ronaldo free kicks, ronaldo free kick goals, ronaldo direct free kick goal, how many free kicks ronaldo has, ronaldo hat tricks, ronaldo penalties, ronaldo trophies, ronaldo ballons d or, ronaldo champions league stats, ronaldo world cup stats, ronaldo el clasico stats, ronaldo real madrid stats, ronaldo manchester united stats, ronaldo portugal stats, ronaldo non penalty goals, ronaldo goals today, ronaldo stats hub, ronaldostat, ronaldostats, messistat, messistats, ronaldo goal tracker, ronaldo total career goals, ronaldo assists all time, ronaldo vs messi all time goals, who has more goals ronaldo or messi, ronaldo 69 goals in 2013, ronaldo minutes per goal, ronaldo goals per game ratio, ronaldo golden boot, ronaldo trophies list, ronaldo international goals, ronaldo 1000 goals tracker, ronaldo scoring record, cr7 stats, ronaldo records all time, ronaldo stats database": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "[attr content]"
+ },
+ "ronaldo stats, ronaldo interactive stats, ronaldo goals chart, ronaldo stats breakdown, ronaldo shot map, ronaldo career data visualization, ronaldo statistical tracker, ronaldo live stats, ronaldo dashboard, ronaldo goal explorer, ronaldostat": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
   "ctx": "[attr content]"
  },
- "ronaldo trophies, ronaldo achievements, ronaldo awards, ronaldo 5 ballon d or, ronaldo 35 trophies, ronaldo european golden shoe, ronaldo champions league titles, ronaldo all trophies list, ronaldo individual awards, ronaldo 981 goals, cristiano ronaldo honours, ronaldostats, ronaldostatss": {
+ "ronaldo timeline, ronaldo career timeline, ronaldo career stages, ronaldo youth to senior career, ronaldo story, ronaldo through the years, ronaldo career milestones, ronaldo career history, ronaldostat": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr content]"
+ },
+ "ronaldo trophies, ronaldo honours, ronaldo titles, ronaldo ballons d or, ronaldo 35 trophies, ronaldo champions league titles, ronaldo la liga titles, ronaldo world cup trophy, most decorated football player in history, ronaldo honours list, ronaldo awards and records, ronaldo trophy cabinet, ronaldostat": {
   "count": 1,
   "pages": [
    "achievements"
   ],
   "ctx": "[attr content]"
  },
- "ronaldo vs messi, ronaldo vs messi stats, ronaldo vs messi free kicks, ronaldo vs messi penalties, ronaldo vs messi non penalty goals, ronaldo vs messi assists, ronaldo vs messi hat tricks, ronaldo vs messi all time goals, who is the goat ronaldo or messi, who has more goals ronaldo or messi, ronaldo vs messi head to head, ronaldo vs messi world cup, ronaldo messi trophies, messi ronaldo ballons d or": {
+ "ronaldo vs messi, ronaldo vs messi stats, ronaldo vs messi all time goals, ronaldo vs messi free kicks, ronaldo vs messi penalties, ronaldo vs messi non penalty goals, ronaldo vs messi assists, ronaldo vs messi hat tricks, ronaldo vs messi head to head, ronaldo vs messi world cup, ronaldo vs messi trophies, ronaldo vs messi ballons d or, who is the goat ronaldo or messi, who has more goals ronaldo or messi, messistat": {
   "count": 1,
   "pages": [
    "ronaldo-vs-messi"
-  ],
-  "ctx": "[attr content]"
- },
- "ronaldo vs real madrid, ronaldo el clasico stats, ronaldo el clasico goals, ronaldo el clasico assists, ronaldo santiago bernabeu goals, ronaldo real madrid record, ronaldo el clasico hat tricks, ronaldo all time el clasico goals vs barcelona, cristiano ronaldo el clasico record, cristiano ronaldo real madrid years, ronaldostats, ronaldostatss": {
-  "count": 1,
-  "pages": [
-   "real-madrid"
   ],
   "ctx": "[attr content]"
  },
@@ -14309,7 +14286,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "La Décima — the last-gasp penalty in Lisbon  [— Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.] 4 May 2015"
+  "ctx": "La Décima — the last-gasp penalty in Lisbon  [— Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.] 30 Sep 2015"
  },
  "— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.": {
   "count": 1,
@@ -14358,7 +14335,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "800th club goal and the 100th for Al Nassr  [— Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40.] 12 Oct 2026"
+  "ctx": "800th club goal and the 100th for Al Nassr  [— Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40.] 9 Oct 2026"
  },
  "— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.": {
   "count": 1,
@@ -14409,19 +14386,19 @@
   ],
   "ctx": "10 for Portugal  [— a world record for an international player.] How many penalty goals has Ronaldo scored?"
  },
- "— against Northern Ireland in a Euro 2012 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.": {
+ "— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Three goals in 15 minutes for Portugal  [— against Northern Ireland in a Euro 2012 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.] 10 Jul 2016"
+  "ctx": "Three goals in 15 minutes for Portugal  [— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.] 10 Jul 2016"
  },
  "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Senior debut for Sporting CP  [— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.] 21 Oct 2002"
+  "ctx": "Senior debut for Sporting CP  [— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.] 7 Oct 2002"
  },
  "— all-time records in the competition. He won the tournament": {
   "count": 1,
@@ -14990,6 +14967,18 @@
    "gear"
   ],
   "ctx": "Check on Amazon ↗  [🐐 Iconic Shirt] Official Matchwear"
+ },
+ "🐐 MessiStat — Lionel Messi Stats": {
+  "count": 6,
+  "pages": [
+   "birthday",
+   "champions-league",
+   "gear",
+   "index",
+   "latest-goal",
+   "ronaldo-vs-messi"
+  ],
+  "ctx": ".  [🐐 MessiStat — Lionel Messi Stats] Road to 1,000 goals"
  },
  "🐐 Ronaldo vs Messi All-Time": {
   "count": 11,

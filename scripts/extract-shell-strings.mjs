@@ -62,7 +62,9 @@ for (const page of PAGES) {
     if (tok.type === "tag") {
       for (const a of tok.attrs) {
         if (!TRANSLATABLE_ATTRS.has(a.name)) continue;
-        if (a.name === "content" && a.value.length > 600) continue;
+        // a long content attribute is still prose: the keyword list of the home
+        // page is over a thousand characters and has to be translated too
+        if (a.name === "content" && a.value.length > 2000) continue;
         record(a.value, page, "[attr " + a.name + "]");
       }
     }

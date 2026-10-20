@@ -46,6 +46,7 @@ step(run(process.execPath, ["scripts/check-runtime-i18n.mjs"], "runtime i18n"), 
 step(run(process.execPath, ["scripts/smoke-i18n.mjs"], "i18n runtime smoke test"), "i18n runtime smoke test");
 step(run(process.execPath, ["scripts/audit-adsense.mjs"], "adsense audit"), "adsense audit");
 step(run(process.execPath, ["scripts/audit-wc-splits.mjs"], "world cup audit"), "world cup splits audit");
+step(run(process.execPath, ["scripts/check-orphans.mjs"], "orphan pages"), "orphan page audit");
 step(run(NODE, [VITE, "build"], "vite build"), "production build");
 step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audit");
 
@@ -57,11 +58,27 @@ const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline",
 // birthday heatmap (Ronaldo scored on 24 June 2017). His birthday is
 // 5 February, and the copy around it is checked by the i18n audit.
 const TOKENS = ["MessiStats", "messistat", "Inter Miami", "Camp Nou", "Rosario", "Albacete", "messi-vs-ronaldo", "Barcelona CF", "PSG"];
+// The sister site is part of the site now: the footer links to MessiStat, the
+// accounts the site points at are the ones MessiStat runs, and the keyword
+// list names the sister brand. Those are the only allowed references;
+// everything else from the Messi project is a leak.
+const ALLOWED = [
+  "https://www.messistat.com",
+  "https://x.com/messistat1",
+  "https://twitter.com/messistat1",
+  "https://t.me/messistatdotcom",
+  "@messistat1",
+  "@messistatdotcom",
+  "messistat, messistats",
+  ", messistat",
+];
 let leaks = 0;
 for (const p of PAGES) {
   const t = fs.readFileSync(path.join(ROOT, p + ".html"), "utf8");
   for (const tok of TOKENS) {
-    if (t.includes(tok)) { console.log("  " + p + ".html still contains " + JSON.stringify(tok)); leaks++; }
+    let probe = t;
+    for (const ok of ALLOWED) probe = probe.split(ok).join(" ");
+    if (probe.includes(tok)) { console.log("  " + p + ".html still contains " + JSON.stringify(tok)); leaks++; }
   }
 }
 step(leaks === 0, "no Messi-era tokens in the English shells (" + leaks + " found)");
