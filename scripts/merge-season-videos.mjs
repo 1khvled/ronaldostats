@@ -108,7 +108,7 @@ for (const key of Object.keys(cal.calendar)) {
       slot.embedUrl = g.embedUrl;
       slot.provider = g.provider;
       slot.kind = "clip";
-      slot.publisher = "ronaldo7.net";
+      slot.publisher = g.provider === "dailymotion" ? "Dailymotion" : "ronaldo7.net";
       slot.sourcePage = s.sourcePage;
       slot.sourceName = "ronaldo7.net";
       slot.exactFrom = "ronaldo7.net";

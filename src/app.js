@@ -5196,7 +5196,9 @@ async function renderBirthday(d) {
     const u = String(url || "");
     if (!u) return false;
     if (youtubeId(u)) return true;
-    if (dailymotionId(u)) return true;
+    // Dailymotion refuses to be framed — it answers an embed with
+    // "Forbidden" — so those clips open on dailymotion.com instead.
+    if (dailymotionId(u)) return false;
     return /\.(mp4|webm)(\?|$)/i.test(u);
   };
   const mediaHtml = (v) => {
@@ -5222,10 +5224,8 @@ async function renderBirthday(d) {
         ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>' + note;
     }
     if (dmId) {
-      const src = v.embedUrl || ("https://www.dailymotion.com/embed/video/" + dmId);
-      return '<div class="bday-media-frame"><iframe src="' + esc(src) +
-        '" title="Ronaldo goal" loading="lazy" allow="autoplay; fullscreen" allowfullscreen' +
-        ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>' + note;
+      // it cannot be framed: offer the page it plays on
+      return '<p class="bday-media-note">' + esc(note.replace(/<[^>]+>/g, " ")) + '</p>';
     }
     if (/\.(mp4|webm)(\?|$)/i.test(url)) {
       return '<video controls playsinline webkit-playsinline preload="metadata" src="' + url +
@@ -5254,7 +5254,10 @@ async function renderBirthday(d) {
       }
       if (videoFallback) videoFallback.hidden = !!mHtml;
       if (videoBigPlayBtn) videoBigPlayBtn.hidden = true;
-      if (noClipTitle) noClipTitle.textContent = MEDIA.noClip || "";
+      // a goal whose clip cannot be framed (Dailymotion) still has one:
+      // say "published clip", not "no published clip"
+      const hasClip = !!(v.videoUrl || v.archiveUrl || v.seasonVideoUrl);
+      if (noClipTitle) noClipTitle.textContent = hasClip ? (MEDIA.clipLabel || MEDIA.noClip || "") : (MEDIA.noClip || "");
       if (noClipBody) noClipBody.textContent = MEDIA.noClipBody || "";
       if (videoTitle) {
         const numStr = v.goalNumber ? `Goal #${v.goalNumber}: ` : "Goal: ";
