@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-  "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
+  "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 // ---------------------------------------------------------------------------
 // 1. the club crests used a page-relative path, so on /en/dashboard the

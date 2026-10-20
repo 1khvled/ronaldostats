@@ -261,7 +261,7 @@ Cristiano Ronaldo vs Real Madrid: The All-Time Top Scorer in El Clásico History
 From the 2007 hat-trick at age 19 to holding up #10 in Madrid.
 
 Relive all 26 El Clásico goals:
-👉 https://www.ronaldostats.site/en/vs-real-madrid
+👉 https://www.ronaldostats.site/en/real-madrid
 
 #ElClasico #FCBarcelona #RealMadrid
 ```

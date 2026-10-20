@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-  "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
+  "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 let added = 0;
 for (const p of PAGES) {
   const f = path.join(ROOT, p + ".html");

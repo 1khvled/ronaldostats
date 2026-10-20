@@ -231,7 +231,7 @@ function generateRailHtml(lang, activeSlug) {
 <a${onAria("home")} href="/${lang}" aria-label="${L.home}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg><span>${L.home}</span></a>${latestGoalItem}
 <a${onBday("birthday")} href="/${lang}/birthday" aria-label="${L.bday}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg><span>${L.bday} <b class="nav-badge-hot">HOT 🔥</b></span></a>
 <a${onAria("ronaldo-vs-messi")} href="/${lang}/ronaldo-vs-messi" aria-label="${L.ronaldo}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg><span>${L.ronaldo}</span></a>
-<a${onAria("vs-real-madrid")} href="/${lang}/vs-real-madrid" aria-label="${L.madrid}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>${L.madrid}</span></a>${uclItem}
+<a${onAria("real-madrid")} href="/${lang}/real-madrid" aria-label="${L.madrid}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>${L.madrid}</span></a>${uclItem}
 <a${onAria("byyear")} href="/${lang}/goalsbyyear" aria-label="${L.byyear}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg><span>${L.byyear}</span></a>
 <a${onAria("byseason")} href="/${lang}/goalsbyseason" aria-label="${L.byseason}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg><span>${L.byseason}</span></a>
 <a${onAria("dashboard")} href="/${lang}/dashboard" aria-label="${L.dashboard}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3.5 20.5h17"></path><path d="M6.5 20v-7M12 20V5M17.5 20v-10"></path></svg><span>${L.dashboard}</span></a>
@@ -267,7 +267,7 @@ const PAGES_MAP = {
   "latest-goal.html": "latest-goal",
   "birthday.html": "birthday",
   "ronaldo-vs-messi.html": "ronaldo-vs-messi",
-  "vs-real-madrid.html": "vs-real-madrid",
+  "real-madrid.html": "real-madrid",
   "champions-league.html": "champions-league",
   "goalsbyyear.html": "byyear",
   "goalsbyseason.html": "byseason",

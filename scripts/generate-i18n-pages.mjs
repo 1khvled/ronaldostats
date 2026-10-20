@@ -29,7 +29,7 @@ const PAGES = {
   "latest-goal": "latest-goal",
   "champions-league": "champions-league",
   gear: "gear",
-  "vs-real-madrid": "vs-real-madrid",
+  "real-madrid": "real-madrid",
   "ronaldo-vs-messi": "ronaldo-vs-messi",
 };
 

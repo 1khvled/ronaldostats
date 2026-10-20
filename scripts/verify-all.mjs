@@ -50,7 +50,7 @@ step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audi
 // ---- 6. leftover Messi references in the English shells --------------------
 process.stdout.write("\n=== leftover reference sweep ===\n");
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-  "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
+  "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 // "24 June" is NOT in the list: it is a legitimate calendar-day title on the
 // birthday heatmap (Ronaldo scored on 24 June 2017). His birthday is
 // 5 February, and the copy around it is checked by the i18n audit.

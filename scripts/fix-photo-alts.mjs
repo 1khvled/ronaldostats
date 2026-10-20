@@ -105,7 +105,7 @@ const T = {
 // the English shells
 {
   const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-    "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
+    "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
   let n = 0;
   for (const p of PAGES) {
     const f = path.join(ROOT, p + ".html");

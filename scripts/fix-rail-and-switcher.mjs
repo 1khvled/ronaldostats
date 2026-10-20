@@ -54,7 +54,7 @@ const ROOT = "D:/Projects/ronaldo-stats/";
 //    "M10" on it. Replace it with the CR7 monogram in the site's palette.
 // ---------------------------------------------------------------------------
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-  "birthday", "latest-goal", "champions-league", "gear", "vs-real-madrid", "ronaldo-vs-messi"];
+  "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 const CR7_MARK = `<svg class="rail-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 9h46v33L32 55 9 42Z" fill="none" stroke="#f2ce6b" stroke-width="3" stroke-linejoin="round"></path><text fill="#ffffff" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="21" font-weight="800" text-anchor="middle" x="32" y="37">CR7</text></svg>`;
 

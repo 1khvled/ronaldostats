@@ -35,7 +35,7 @@ Build check: `npm run build` then `npm run preview` (http://localhost:4173/).
 | Birthday | `/birthday` | Every dated goal laid across the 366 calendar days |
 | Latest goal | `/latest-goal` | The most recent goal, with its match record |
 | Champions League | `/champions-league` | 140 goals, 183 appearances, 42 assists, 5 titles |
-| El Clásico | `/vs-real-madrid` | 18 goals against Barcelona across nine years at Real Madrid |
+| Real Madrid years | `/real-madrid` | 18 goals against Barcelona across nine years at Real Madrid |
 | Ronaldo vs Messi | `/ronaldo-vs-messi` | The full head-to-head, by the numbers |
 | Gear | `/gear` | The merchandise store |
 

@@ -17,7 +17,7 @@ for (const lang of langs) {
   const pages = [
     "birthday",
     "ronaldo-vs-messi",
-    "vs-real-madrid",
+    "real-madrid",
     "goalsbyyear",
     "goalsbyseason",
     "dashboard",

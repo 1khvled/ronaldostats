@@ -28,7 +28,7 @@ const SUBPAGES = [
   "latest-goal.html",
   "ronaldo-vs-messi.html",
   "timeline.html",
-  "vs-real-madrid.html",
+  "real-madrid.html",
   "gear.html"
 ];
 

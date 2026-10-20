@@ -2052,7 +2052,7 @@ ${JSON.stringify(jsonLd, null, 2)}
 <a href="${slugPath}/latest-goal" aria-label="${t.latestGoalName}"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg><span>${t.latestGoalName} <b class="nav-badge-hot">LIVE ⚡</b></span></a>
 <a class="nav-bday-link" href="${slugPath}/birthday" aria-label="${t.bdayName}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg><span>${t.bdayName} <b class="nav-badge-hot">HOT 🔥</b></span></a>
 <a aria-current="page" class="on" href="${slugPath}/messi-vs-ronaldo" aria-label="${t.vsRonaldoName}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg><span>${t.vsRonaldoName}</span></a>
-<a href="${slugPath}/vs-real-madrid" aria-label="${t.vsRealMadridName}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>${t.vsRealMadridName}</span></a>
+<a href="${slugPath}/real-madrid" aria-label="${t.vsRealMadridName}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>${t.vsRealMadridName}</span></a>
 <a href="${slugPath}/champions-league" aria-label="${t.uclName}"><svg aria-hidden="true" viewbox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>${t.uclName}</span></a>
 <a href="${slugPath}/goalsbyyear" aria-label="${t.goalsByYearName}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg><span>${t.goalsByYearName}</span></a>
 <a href="${slugPath}/goalsbyseason" aria-label="${t.goalsBySeasonName}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg><span>${t.goalsBySeasonName}</span></a>
@@ -2603,7 +2603,7 @@ ${faqItemsHtml}
             <a href="${slugPath}/latest-goal">⚽ ${t.latestGoalName}</a>
             <a href="${slugPath}/birthday">🎂 ${t.bdayName}</a>
             <a href="${slugPath}/messi-vs-ronaldo">🐐 ${t.vsRonaldoName}</a>
-            <a href="${slugPath}/vs-real-madrid">⚔️ ${t.vsRealMadridName}</a>
+            <a href="${slugPath}/real-madrid">⚔️ ${t.vsRealMadridName}</a>
             <a href="${slugPath}/champions-league">⭐ ${t.uclName}</a>
             <a href="${slugPath}/goalsbyyear">${t.goalsByYearName}</a>
             <a href="${slugPath}/goalsbyseason">${t.goalsBySeasonName}</a>

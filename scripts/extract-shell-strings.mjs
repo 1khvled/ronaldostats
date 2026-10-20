@@ -17,7 +17,7 @@ const OUT_DIR = path.join(ROOT, "src", "i18n", "shell");
 const PAGES = [
   "index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline",
   "achievements", "birthday", "latest-goal", "champions-league", "gear",
-  "vs-real-madrid", "ronaldo-vs-messi",
+  "real-madrid", "ronaldo-vs-messi",
 ];
 
 // Attributes whose values are prose and must be translated.

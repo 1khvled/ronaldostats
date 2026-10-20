@@ -41,7 +41,7 @@ const SUBPAGES = [
   { slug: "goalsbyseason", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "goalsbyyear", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "ronaldo-vs-messi", changefreq: "weekly", priority: "0.95", lastmod: todayIso },
-  { slug: "vs-real-madrid", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
+  { slug: "real-madrid", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "champions-league", changefreq: "monthly", priority: "0.9", lastmod: todayIso },
   { slug: "latest-goal", changefreq: "daily", priority: "0.95", lastmod: todayIso },
   { slug: "timeline", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
@@ -187,7 +187,7 @@ const enImages = {
       <image:caption>Interactive visual map and video player showing all goals Cristiano Ronaldo scored across 366 calendar days.</image:caption>
       <image:geo_location>Miami, Florida, United States / Barcelona, Spain / Buenos Aires, Argentina</image:geo_location>
     </image:image>`,
-  "vs-real-madrid": `    <image:image>
+  "real-madrid": `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
       <image:title>Cristiano Ronaldo vs Real Madrid El Clasico Goals</image:title>
       <image:caption>All 26 goals and 14 assists scored by Cristiano Ronaldo against Real Madrid in El Clasico.</image:caption>

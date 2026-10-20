@@ -33,7 +33,7 @@ Language codes: `en es pt fr ar bn hi ro uz`. `ar` is RTL (`dir="rtl"`).
 | latest goal | `latest-goal.html` | `latest-goal` | |
 | champions league | `champions-league.html` | `champions-league` | |
 | gear | `gear.html` | `gear` | |
-| vs Real Madrid | `vs-real-madrid.html` | `vs-real-madrid` | |
+| Real Madrid years | `real-madrid.html` | `real-madrid` | |
 | Ronaldo vs Messi | `ronaldo-vs-messi.html` | `vs-ronaldo` | the rivalry page. The slug is `ronaldo-vs-messi`, **never** `messi-vs-ronaldo` |
 
 English URLs are `/<slug>`; localized are `/<lang>/<slug>`. The English pages

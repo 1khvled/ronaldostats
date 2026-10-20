@@ -98,7 +98,7 @@ function getLangUrl(targetCode) {
     "timeline",
     "achievements",
     "ronaldo-vs-messi",
-    "vs-real-madrid",
+    "real-madrid",
     "champions-league",
     "latest-goal"
   ];
@@ -283,7 +283,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Goals by Calendar Year",
       goalsBySeason: "Goals by Season",
       dashboard: "Deep Stats & Analytics",
-      vsRealMadrid: "vs Real Madrid (El Clásico)",
+      vsRealMadrid: "Real Madrid years",
       championsLeague: "Champions League Hub",
       toggleTheme: "🌓 Toggle Dark Mode"
     },
@@ -306,7 +306,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Goles por Año Calendario",
       goalsBySeason: "Goles por Temporada",
       dashboard: "Panel de Análisis Avanzado",
-      vsRealMadrid: "vs Real Madrid (El Clásico)",
+      vsRealMadrid: "Real Madrid years",
       championsLeague: "Champions League Hub",
       toggleTheme: "🌓 Cambiar Modo Oscuro"
     },
@@ -329,7 +329,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Gols por Ano",
       goalsBySeason: "Gols por Temporada",
       dashboard: "Painel de Análise",
-      vsRealMadrid: "vs Real Madrid (El Clásico)",
+      vsRealMadrid: "Real Madrid years",
       championsLeague: "Champions League Hub",
       toggleTheme: "🌓 Alternar Modo Escuro"
     },
@@ -352,7 +352,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Buts par Année Civile",
       goalsBySeason: "Buts par Saison",
       dashboard: "Tableau de Bord & Analyses",
-      vsRealMadrid: "vs Real Madrid (El Clásico)",
+      vsRealMadrid: "Real Madrid years",
       championsLeague: "Hub Ligue des Champions",
       toggleTheme: "🌓 Basculer Mode Sombre"
     },
@@ -375,7 +375,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "الأهداف حسب السنة",
       goalsBySeason: "الأهداف حسب الموسم",
       dashboard: "لوحة الإحصائيات الشاملة",
-      vsRealMadrid: "ضد ريال مدريد (الكلاسيكو)",
+      vsRealMadrid: "سنواته في ريال مدريد",
       championsLeague: "دوري أبطال أوروبا",
       toggleTheme: "🌓 تبديل الوضع الليلي"
     },
@@ -398,7 +398,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "ক্যালেন্ডার বছরভিত্তিক গোল",
       goalsBySeason: "মৌসুমভিত্তিক গোল",
       dashboard: "অ্যানালিটিক্স ড্যাশবোর্ড",
-      vsRealMadrid: "বনাম রিয়াল মাদ্রিদ (এল ক্লাসিকো)",
+      vsRealMadrid: "রিয়াল মাদ্রিদের বছরগুলো",
       championsLeague: "চ্যাম্পিয়ন্স লিগ হাব",
       toggleTheme: "🌓 ডার্ক মোড পরিবর্তন"
     },
@@ -421,7 +421,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "कैलेंडर वर्ष अनुसार गोल",
       goalsBySeason: "सीज़न अनुसार गोल",
       dashboard: "विश्लेषण डैशबोर्ड",
-      vsRealMadrid: "बनाम रियल मैड्रिड (एल क्लासिको)",
+      vsRealMadrid: "रियल मैड्रिड के वर्ष",
       championsLeague: "चैंपियंस लीग हब",
       toggleTheme: "🌓 डार्क मोड बदलें"
     },
@@ -444,7 +444,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Goluri pe An Calendaristic",
       goalsBySeason: "Goluri pe Sezon",
       dashboard: "Panou de Analiză Avansată",
-      vsRealMadrid: "vs Real Madrid (El Clásico)",
+      vsRealMadrid: "Real Madrid years",
       championsLeague: "Hub Champions League",
       toggleTheme: "🌓 Comutare Mod Întunecat"
     },
@@ -467,7 +467,7 @@ function ensureMobileMenuDrawer() {
       goalsByYear: "Yillar Bo'yicha Gollar",
       goalsBySeason: "Mavsumlar Bo'yicha Gollar",
       dashboard: "Tahliliy Panel",
-      vsRealMadrid: "Real Madridga Qarshi (El Klasiko)",
+      vsRealMadrid: "Real Madridga yillari",
       championsLeague: "Chempionlar Ligasi Xabi",
       toggleTheme: "🌓 Tungi Rejimni O'zgartirish"
     }
@@ -504,7 +504,7 @@ function ensureMobileMenuDrawer() {
       title: txt.catStats,
       items: [
         { href: `/${curLangCode}/dashboard`, label: txt.dashboard, badge: "Hub", icon: `<svg viewBox="0 0 24 24"><path d="M3.5 20.5h17"></path><path d="M6.5 20v-7M12 20V5M17.5 20v-10"></path></svg>` },
-        { href: `/${curLangCode}/vs-real-madrid`, label: txt.vsRealMadrid, badge: "26 Goals", icon: `<svg viewBox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg>` },
+        { href: `/${curLangCode}/real-madrid`, label: txt.vsRealMadrid, badge: "450 Goals", icon: `<svg viewBox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg>` },
         { href: `/${curLangCode}/champions-league`, label: txt.championsLeague, badge: "140 Goals", icon: `<svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>` }
       ]
     }

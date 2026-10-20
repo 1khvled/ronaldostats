@@ -158,13 +158,13 @@
       "permanent": true
     },
     {
-      "source": "/vs-real-madrid",
-      "destination": "/en/vs-real-madrid",
+      "source": "/real-madrid",
+      "destination": "/en/real-madrid",
       "permanent": true
     },
     {
-      "source": "/vs-real-madrid.html",
-      "destination": "/en/vs-real-madrid",
+      "source": "/real-madrid.html",
+      "destination": "/en/real-madrid",
       "permanent": true
     },
     {
@@ -210,6 +210,26 @@
     {
       "source": "/en/:page.html",
       "destination": "/en/:page",
+      "permanent": true
+    },
+    {
+      "source": "/vs-real-madrid",
+      "destination": "/en/real-madrid",
+      "permanent": true
+    },
+    {
+      "source": "/vs-real-madrid.html",
+      "destination": "/en/real-madrid",
+      "permanent": true
+    },
+    {
+      "source": "/:lang/vs-real-madrid",
+      "destination": "/:lang/real-madrid",
+      "permanent": true
+    },
+    {
+      "source": "/:lang/vs-real-madrid.html",
+      "destination": "/:lang/real-madrid",
       "permanent": true
     }
   ],
@@ -276,11 +296,11 @@
     },
     {
       "source": "/en/vs/real-madrid",
-      "destination": "/vs-real-madrid.html"
+      "destination": "/real-madrid.html"
     },
     {
-      "source": "/en/vs-real-madrid",
-      "destination": "/vs-real-madrid.html"
+      "source": "/en/real-madrid",
+      "destination": "/real-madrid.html"
     },
     {
       "source": "/en/vs/ronaldo",
@@ -372,11 +392,11 @@
     },
     {
       "source": "/es/vs/real-madrid",
-      "destination": "/es/vs-real-madrid.html"
+      "destination": "/es/real-madrid.html"
     },
     {
-      "source": "/es/vs-real-madrid",
-      "destination": "/es/vs-real-madrid.html"
+      "source": "/es/real-madrid",
+      "destination": "/es/real-madrid.html"
     },
     {
       "source": "/es/champions-league",
@@ -444,11 +464,11 @@
     },
     {
       "source": "/pt/vs/real-madrid",
-      "destination": "/pt/vs-real-madrid.html"
+      "destination": "/pt/real-madrid.html"
     },
     {
-      "source": "/pt/vs-real-madrid",
-      "destination": "/pt/vs-real-madrid.html"
+      "source": "/pt/real-madrid",
+      "destination": "/pt/real-madrid.html"
     },
     {
       "source": "/pt/champions-league",
@@ -516,11 +536,11 @@
     },
     {
       "source": "/fr/vs/real-madrid",
-      "destination": "/fr/vs-real-madrid.html"
+      "destination": "/fr/real-madrid.html"
     },
     {
-      "source": "/fr/vs-real-madrid",
-      "destination": "/fr/vs-real-madrid.html"
+      "source": "/fr/real-madrid",
+      "destination": "/fr/real-madrid.html"
     },
     {
       "source": "/fr/champions-league",
@@ -588,11 +608,11 @@
     },
     {
       "source": "/ar/vs/real-madrid",
-      "destination": "/ar/vs-real-madrid.html"
+      "destination": "/ar/real-madrid.html"
     },
     {
-      "source": "/ar/vs-real-madrid",
-      "destination": "/ar/vs-real-madrid.html"
+      "source": "/ar/real-madrid",
+      "destination": "/ar/real-madrid.html"
     },
     {
       "source": "/ar/champions-league",
@@ -660,11 +680,11 @@
     },
     {
       "source": "/bn/vs/real-madrid",
-      "destination": "/bn/vs-real-madrid.html"
+      "destination": "/bn/real-madrid.html"
     },
     {
-      "source": "/bn/vs-real-madrid",
-      "destination": "/bn/vs-real-madrid.html"
+      "source": "/bn/real-madrid",
+      "destination": "/bn/real-madrid.html"
     },
     {
       "source": "/bn/champions-league",
@@ -732,11 +752,11 @@
     },
     {
       "source": "/hi/vs/real-madrid",
-      "destination": "/hi/vs-real-madrid.html"
+      "destination": "/hi/real-madrid.html"
     },
     {
-      "source": "/hi/vs-real-madrid",
-      "destination": "/hi/vs-real-madrid.html"
+      "source": "/hi/real-madrid",
+      "destination": "/hi/real-madrid.html"
     },
     {
       "source": "/hi/champions-league",
@@ -804,11 +824,11 @@
     },
     {
       "source": "/ro/vs/real-madrid",
-      "destination": "/ro/vs-real-madrid.html"
+      "destination": "/ro/real-madrid.html"
     },
     {
-      "source": "/ro/vs-real-madrid",
-      "destination": "/ro/vs-real-madrid.html"
+      "source": "/ro/real-madrid",
+      "destination": "/ro/real-madrid.html"
     },
     {
       "source": "/ro/champions-league",
@@ -876,11 +896,11 @@
     },
     {
       "source": "/uz/vs/real-madrid",
-      "destination": "/uz/vs-real-madrid.html"
+      "destination": "/uz/real-madrid.html"
     },
     {
-      "source": "/uz/vs-real-madrid",
-      "destination": "/uz/vs-real-madrid.html"
+      "source": "/uz/real-madrid",
+      "destination": "/uz/real-madrid.html"
     },
     {
       "source": "/uz/champions-league",

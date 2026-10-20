@@ -23,7 +23,7 @@
 - [Birthday & On This Day Goal Explorer](https://www.ronaldostats.site/en/birthday): Every dated Ronaldo goal laid out across the 366 calendar days, with the heatmap, the top days and the month-by-month split.
 - [Ronaldo vs Messi Head-to-Head](https://www.ronaldostats.site/en/ronaldo-vs-messi): Complete career comparison (981 vs 936 goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or) and the 36 head-to-head meetings.
 - [Champions League Record](https://www.ronaldostats.site/en/champions-league): 140 UCL goals in 183 matches, 42 assists, 5 titles — both all-time records.
-- [Ronaldo's El Clásico Record](https://www.ronaldostats.site/en/vs-real-madrid): 18 goals against Barcelona, nine years at Real Madrid and 311 La Liga goals.
+- [Ronaldo's El Clásico Record](https://www.ronaldostats.site/en/real-madrid): 18 goals against Barcelona, nine years at Real Madrid and 311 La Liga goals.
 - [Latest Goal](https://www.ronaldostats.site/en/latest-goal): The most recent Ronaldo goal with its match, minute and finish type.
 - [Goals by Year](https://www.ronaldostats.site/en/goalsbyyear): Every calendar year from 2002 to 2026 with the running career total.
 - [Goals by Season](https://www.ronaldostats.site/en/goalsbyseason): All 27 club seasons split into league, domestic cup, continental and other, plus Portugal year by year.

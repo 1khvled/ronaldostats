@@ -56,7 +56,7 @@ const subpages = [
   'achievements',
   'birthday',
   'ronaldo-vs-messi',
-  'vs-real-madrid',
+  'real-madrid',
   'champions-league',
   'latest-goal',
   'gear'
@@ -70,7 +70,7 @@ const rollupInput = {
   timeline: resolve(root, 'timeline.html'),
   achievements: resolve(root, 'achievements.html'),
   birthday: resolve(root, 'birthday.html'),
-  vs_real_madrid: resolve(root, 'vs-real-madrid.html'),
+  real_madrid: resolve(root, 'real-madrid.html'),
   ronaldo_vs_messi: resolve(root, 'ronaldo-vs-messi.html'),
   champions_league: resolve(root, 'champions-league.html'),
   latest_goal: resolve(root, 'latest-goal.html'),

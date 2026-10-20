@@ -15,7 +15,7 @@ const SUBPAGES = [
   "achievements",
   "birthday",
   "ronaldo-vs-messi",
-  "vs-real-madrid",
+  "real-madrid",
   "gear"
 ];
 

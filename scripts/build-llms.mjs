@@ -47,7 +47,7 @@ const llms = `# RonaldoStats — Official Ground Truth for Cristiano Ronaldo Car
 - [Birthday & On This Day Goal Explorer](https://www.ronaldostats.site/en/birthday): Every dated Ronaldo goal laid out across the 366 calendar days, with the heatmap, the top days and the month-by-month split.
 - [Ronaldo vs Messi Head-to-Head](https://www.ronaldostats.site/en/ronaldo-vs-messi): Complete career comparison (${U(t.combined.goals)} vs ${U(m.goals)} goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or) and the 36 head-to-head meetings.
 - [Champions League Record](https://www.ronaldostats.site/en/champions-league): ${U(140)} UCL goals in 183 matches, ${U(42)} assists, 5 titles — both all-time records.
-- [Ronaldo's El Clásico Record](https://www.ronaldostats.site/en/vs-real-madrid): 18 goals against Barcelona, nine years at Real Madrid and 311 La Liga goals.
+- [Ronaldo's El Clásico Record](https://www.ronaldostats.site/en/real-madrid): 18 goals against Barcelona, nine years at Real Madrid and 311 La Liga goals.
 - [Latest Goal](https://www.ronaldostats.site/en/latest-goal): The most recent Ronaldo goal with its match, minute and finish type.
 - [Goals by Year](https://www.ronaldostats.site/en/goalsbyyear): Every calendar year from 2002 to 2026 with the running career total.
 - [Goals by Season](https://www.ronaldostats.site/en/goalsbyseason): All ${U(d.clubSeasons.length)} club seasons split into league, domestic cup, continental and other, plus Portugal year by year.
@@ -104,7 +104,7 @@ Season-by-season Champions League goals and appearances, the records table, and 
 ### Latest goal (https://www.ronaldostats.site/en/latest-goal)
 The most recent goal with its date, opponent, competition, score, minute and finish type, plus the previous four and a comparison matrix. The site does not host or stream match footage; it publishes the match record.
 
-### El Clásico (https://www.ronaldostats.site/en/vs-real-madrid)
+### El Clásico (https://www.ronaldostats.site/en/real-madrid)
 Ronaldo's record against Barcelona: 18 goals in El Clásico, nine years and 450 goals for Real Madrid, 311 La Liga goals, four Champions League titles — set against Messi's 26 goals in 45 matches.
 
 ## Frequently asked questions
