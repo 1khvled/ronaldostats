@@ -4129,7 +4129,7 @@ const ERA_PHOTOS = {
     { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season", cap: "The Sporting CP years — senior debut in 2002" },
   ],
   peak: [
-    { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Manchester United shirt at Old Trafford", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },
+    { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Manchester United number 7 shirt against Chelsea", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },
   ],
   msn: [
     { src: "/img/era/era-2009-real.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Kaka and Ronaldo celebrating together for Real Madrid", cap: "The Real Madrid presentation, Bernabéu, 2009" },
@@ -4211,7 +4211,7 @@ const TIMELINE_MILESTONES = [
     stat: "£12.24m",
     badge: "Manchester United 🔴",
     img: "/img/era/era-2004-manutd.webp",
-    alt: "Cristiano Ronaldo posing with the Manchester United shirt in 2003"
+    alt: "Cristiano Ronaldo in the Manchester United number 7 shirt against Chelsea"
   },
   {
     date: "17 Jun 2004",
@@ -4233,7 +4233,7 @@ const TIMELINE_MILESTONES = [
     stat: "Ballon d'Or #1",
     badge: "1st Ballon d'Or 🌟",
     img: "/img/era/era-2008-ballon1.webp",
-    alt: "Cristiano Ronaldo holding his first Ballon d'Or trophy in 2008"
+    alt: "Cristiano Ronaldo in 2008, the year of his first Ballon d'Or"
   },
   {
     date: "1 Jul 2009",
@@ -4245,7 +4245,7 @@ const TIMELINE_MILESTONES = [
     stat: "€94m",
     badge: "Real Madrid ⚪",
     img: "/img/era/era-2009-real.webp",
-    alt: "Cristiano Ronaldo presented as a Real Madrid player in 2009"
+    alt: "Kaka and Ronaldo together for Real Madrid"
   },
   {
     date: "16 Jun 2013",
@@ -4367,7 +4367,7 @@ const TIMELINE_MILESTONES = [
     stat: "800 club goals",
     badge: "800 Club Goals ⚡",
     img: "/img/era/era-2023-alnassr.webp",
-    alt: "Cristiano Ronaldo celebrating a goal for Al Nassr in 2025"
+    alt: "Cristiano Ronaldo in the Al Nassr number 7 shirt"
   },
   {
     date: "12 Oct 2026",
@@ -4379,7 +4379,7 @@ const TIMELINE_MILESTONES = [
     stat: "Goal #981",
     badge: "981 Career Goals ⚽",
     img: "/img/era/era-2026-record.webp",
-    alt: "Cristiano Ronaldo celebrating his 981st career goal in 2026"
+    alt: "Cristiano Ronaldo in the Portugal number 7 shirt at the 2026 World Cup"
   }
 ];
 

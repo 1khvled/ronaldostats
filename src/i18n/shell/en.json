@@ -11626,13 +11626,6 @@
   ],
   "ctx": "[attr alt]"
  },
- "Ronaldo in the Al Nassr shirt, celebrating his all-time record": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
  "Ronaldo in the Juventus shirt during his Serie A title season": {
   "count": 1,
   "pages": [
@@ -11640,7 +11633,7 @@
   ],
   "ctx": "[attr alt]"
  },
- "Ronaldo in the Manchester United number 7 shirt at Old Trafford": {
+ "Ronaldo in the Manchester United number 7 shirt against Chelsea": {
   "count": 1,
   "pages": [
    "timeline"
@@ -11655,6 +11648,13 @@
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Manchester United shirt during his second spell": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Ronaldo in the Portugal number 7 shirt at the 2026 World Cup": {
   "count": 1,
   "pages": [
    "timeline"
