@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>¿Cómo se verifica este conjunto de datos de goles?</h3>
       <p>Cada entrada es un partido de senior de primer equipo fechado, con rival, competición y marcador. La lista internacional sigue el registro de partidos de RSSSF (146 goles en 234 partidos con Portugal); la lista de clubes es la exportación abierta del CR7-Goals-Project, completada con el rastreador de goles en vivo.</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>Registro de partido, no un clip.</b></p>
-        <p>Fecha, competición, rival, marcador, minutos y tipo de definición, tomados de las actas de partido oficiales.</p>
+        <p><b id="bday-noclip-title">Registro de partido, no un clip.</b></p>
+        <p id="bday-noclip-body">Fecha, competición, rival, marcador, minutos y tipo de definición, tomados de las actas de partido oficiales.</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>Tipo de definición: —</span>
         <span class="vpill" id="vpill-xg" hidden>Minuto(s): —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

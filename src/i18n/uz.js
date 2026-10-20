@@ -335,3 +335,19 @@ export const CABINET = [
     { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 va 2017-yillarda Manchester United va Real Madrid bilan.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "FIFA Club World Cup kubigini oʻpib qoʻyayotgan Kristiano Ronaldo", cap: "Toʻrtta FIFA Club World Cup" },
     { title: "La Liga — 311 ta gol", sub: "Musobaqaning barcha davrlardagi rekordi — barchasi Real Madrid uchun.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "La Liga chempionligi kubigi bilan Kristiano Ronaldo", cap: "Real Madrid uchun 311 ta La Liga goli" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 Harakatlarni qidiring",
+    "openArchive": "CR7 gol arxivida ochish",
+    "noClip": "Bu gol uchun nashr qilingan klip yo'q.",
+    "noClipBody": "Pastdagi match yozuvi rasmiy match varaqalaridan olingan. Havolalar arxivdagi gol sahifasini va videoni qidirishni ochadi.",
+    "clipLabel": "Nashr qilingan klip",
+    "compilationLabel": "Barcha gollar kompilyatsiyasi",
+    "publisher": "Nashr qilgan",
+    "assist": "Yordam: {name}",
+    "finish": "Yakunlash: {type}",
+    "goalNumber": "{n}-gol",
+    "watchOn": "{publisher} da ko'ring",
+    "sourceLine": "Gol yozuvi: {source} — arxiv o'z ro'yxatini Vikipediyaning 'List of senior career goals by Cristiano Ronaldo' (CC BY-SA 4.0, FBref gol jurnaliga asoslangan) va StatsBomb ochiq ma'lumotlaridan oladi. Kliplar huquq egalari tomonidan nashr qilinadi.",
+    "sourceNote": "Ushbu sahifadagi sanalar, musobaqalar, hisoblar, daqiqalar, yakunlash turlari va yordamlar cr7allgoals.com dan olinadi, uning har bir gol ro'yxati Vikipediyaning 'List of senior career goals by Cristiano Ronaldo' (CC BY-SA 4.0, FBref gol jurnaliga asoslangan) bo'lib, ko'rib chiqilgan match tafsilotlari uchun StatsBomb ochiq ma'lumotlari ishlatiladi. Xalqaro ro'yxat RSSSFning chiqishlar yozuvi — Portugaliya uchun 234 ta o'yinda 146 ta gol. Daqiqa hech qachon nashr qilinmagan joylarda uni o'ylab topish o'rniga bo'sh qoldiriladi."
+  };

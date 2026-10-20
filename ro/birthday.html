@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>Cum este verificată această bază de date de goluri?</h3>
       <p>Fiecare înregistrare este un meci oficial de prima echipă, datat, cu adversar, competiție și scor. Lista internațională urmează evidența de apariții a RSSSF (146 de goluri în 234 de apariții pentru Portugalia); lista de club este exportul deschis al CR7-Goals-Project, completat cu trackerul de goluri live.</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>Evidență de meci, nu clip.</b></p>
-        <p>Data, competiția, adversarul, scorul, minutele și tipul de finalizare, preluate din fișele oficiale ale meciurilor.</p>
+        <p><b id="bday-noclip-title">Evidență de meci, nu clip.</b></p>
+        <p id="bday-noclip-body">Data, competiția, adversarul, scorul, minutele și tipul de finalizare, preluate din fișele oficiale ale meciurilor.</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>Tip finalizare: —</span>
         <span class="vpill" id="vpill-xg" hidden>Minut(e): —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

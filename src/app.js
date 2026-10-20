@@ -2078,6 +2078,7 @@ const bn = (v) => String(v).replace(/[0-9]/g, (dd) => BN_D[+dd]);
  * trophy ordinals of won events, per-team NPG/FK/HT splits absent from the
  * JSON) intentionally stays literal — see CONTEXT.md.
  */
+
 const LIVE = {
   goals: 981, apps: 1340, clubGoals: 835, argGoals: 146, argCaps: 234,
   assists: 261, tmAssists: 291, ga: 1242, tmGa: 1272,
@@ -2094,6 +2095,15 @@ const LIVE = {
   compQual: 52, compWC: 52, compNL: 15, compEuro: 55, compConfed: 2, compFriend: 22,
   lgNum: 981, lgOpp: "Al Nassr", lgDate: "12 October 2026",
 };
+
+// The nine dictionary modules are separate files, so the helpers
+// they call have to be reachable from their scope. Publishing them on the
+// global object keeps the dictionaries self-contained: they format numbers
+// with n(), escape with esc() and read the live registry with LIVE.
+globalThis.n = n;
+globalThis.esc = esc;
+globalThis.bn = bn;
+globalThis.LIVE = LIVE;
 
 /* Click a column header to sort. Rows with class "total" stay pinned at the bottom. */
 function sortable(table) {
@@ -5064,6 +5074,12 @@ async function renderBirthday(d) {
   const vpillScore = el("vpill-score");
   const vpillAssist = el("vpill-assist");
   const vpillXg = el("vpill-xg");
+  const mediaSlot = el("bday-media-slot");
+  const sourceLink = el("video-source-link");
+  const clipLink = el("video-clip-link");
+  const sourceLine = el("video-modal-source");
+  const noClipTitle = el("bday-noclip-title");
+  const noClipBody = el("bday-noclip-body");
 
   const closeGoalVideo = () => {
     if (!videoModal) return;
@@ -5114,6 +5130,31 @@ async function renderBirthday(d) {
     }
   });
 
+  // The sourced archive links each goal to the media that shows it: an exact
+  // clip, the match highlights, or the compilation the goal appears in. A
+  // YouTube link is embedded; anything else is offered as a link out, because
+  // the clip itself belongs to its rights holder.
+  const MEDIA = DICT.BDAY_MEDIA || {};
+  const youtubeId = (url) => {
+    const m = String(url || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+    return m ? m[1] : null;
+  };
+  const mediaHtml = (v) => {
+    const url = v && v.videoUrl ? String(v.videoUrl) : "";
+    if (!url) return "";
+    const id = youtubeId(url);
+    if (id) {
+      return '<div class="bday-media-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + id +
+        '" title="Ronaldo goal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen' +
+        ' referrerpolicy="strict-origin-when-cross-origin" style="width:100%;aspect-ratio:16/9;border:0;background:#000;display:block;"></iframe></div>';
+    }
+    if (/\.(mp4|webm)(\?|$)/i.test(url)) {
+      return '<video controls playsinline webkit-playsinline preload="metadata" src="' + url +
+        '" style="width:100%;aspect-ratio:16/9;background:#000;display:block;"></video>';
+    }
+    return "";
+  };
+
   const openGoalVideo = (match, initialIndex = 0) => {
     if (!videoModal || !match) return;
     const videos = match.videos || [];
@@ -5127,8 +5168,15 @@ async function renderBirthday(d) {
       const v = videos[idx];
       if (!v) return;
 
-      if (videoFallback) videoFallback.hidden = true;
+      const mHtml = mediaHtml(v);
+      if (mediaSlot) {
+        mediaSlot.innerHTML = mHtml;
+        mediaSlot.hidden = !mHtml;
+      }
+      if (videoFallback) videoFallback.hidden = !!mHtml;
       if (videoBigPlayBtn) videoBigPlayBtn.hidden = true;
+      if (noClipTitle) noClipTitle.textContent = MEDIA.noClip || "";
+      if (noClipBody) noClipBody.textContent = MEDIA.noClipBody || "";
       if (videoTitle) {
         const numStr = v.goalNumber ? `Goal #${v.goalNumber}: ` : "Goal: ";
         videoTitle.textContent = `${numStr}Ronaldo vs ${match.opponent}`;
@@ -5143,15 +5191,16 @@ async function renderBirthday(d) {
       if (vpillAssist) {
         if (v.assist) {
           vpillAssist.hidden = false;
-          vpillAssist.textContent = `Assist: ${v.assist}`;
+          vpillAssist.textContent = (MEDIA.assist || "Assist: {name}").replace("{name}", v.assist);
         } else {
           vpillAssist.hidden = true;
         }
       }
       if (vpillXg) {
-        if (v.xg != null) {
+        const finish = v.finish || (v.types && v.types[idx]) || "";
+        if (finish) {
           vpillXg.hidden = false;
-          vpillXg.textContent = `xG: ${v.xg}`;
+          vpillXg.textContent = (MEDIA.finish || "Finish: {type}").replace("{type}", finish);
         } else {
           vpillXg.hidden = true;
         }
@@ -5159,6 +5208,24 @@ async function renderBirthday(d) {
 
       if (videoYtLink) {
         videoYtLink.href = `https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal+vs+${encodeURIComponent(match.opponent)}+${match.date}`;
+        videoYtLink.textContent = MEDIA.searchHighlights || videoYtLink.textContent;
+      }
+      if (sourceLink) {
+        sourceLink.href = v.sourcePage || "https://cr7allgoals.com/";
+        sourceLink.textContent = MEDIA.openArchive || sourceLink.textContent;
+        sourceLink.hidden = !v.sourcePage;
+      }
+      if (clipLink) {
+        const embeddable = !!mediaHtml(v);
+        const clipUrl = v.videoUrl || "";
+        clipLink.hidden = !clipUrl || embeddable;
+        if (!clipLink.hidden) {
+          clipLink.href = clipUrl;
+          clipLink.textContent = (MEDIA.watchOn || "Watch on {publisher}").replace("{publisher}", v.publisher || "the publisher");
+        }
+      }
+      if (sourceLine) {
+        sourceLine.textContent = (MEDIA.sourceLine || "").replace("{source}", "cr7allgoals.com");
       }
 
       if (videoPlayer) {
@@ -5208,6 +5275,14 @@ async function renderBirthday(d) {
     document.body.style.overflow = "hidden";
   };
 
+  // The page states the source of every figure it shows.
+  {
+    const note = el("bday-source-note");
+    if (note && MEDIA.sourceNote) {
+      note.innerHTML = '<span class="bday-source-note-text">' + MEDIA.sourceNote + "</span>";
+    }
+  }
+
   if (matchListEl) {
     matchListEl.addEventListener("click", (e) => {
       const watchBtn = e.target.closest(".bday-watch-video-btn");
@@ -5254,9 +5329,7 @@ async function renderBirthday(d) {
             }
             container.innerHTML = `
               ${navHtml}
-              <video controls playsinline webkit-playsinline preload="metadata" src="${v.videoUrl}" style="width:100%;aspect-ratio:16/9;background:#000;display:block;">
-                Your browser does not support video.
-              </video>
+              ${mediaHtml(v) || '<p class="bday-inline-noclip">' + (MEDIA.noClip || "") + "</p>"}
             `;
             const inVid = container.querySelector("video");
             if (inVid) inVid.play().catch(() => {});

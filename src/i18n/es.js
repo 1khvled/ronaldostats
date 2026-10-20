@@ -332,3 +332,19 @@ export const CABINET = [
     { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 y 2017 con el Manchester United y el Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo besando el trofeo de la FIFA Club World Cup", cap: "Cuatro FIFA Club World Cup" },
     { title: "La Liga — 311 goles", sub: "El récord histórico de la competición, todos con el Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo con el trofeo de la Liga", cap: "311 goles en La Liga para el Real Madrid" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 Buscar jugadas",
+    "openArchive": "Abrir en el archivo de goles de CR7",
+    "noClip": "No hay clip publicado de este gol.",
+    "noClipBody": "El registro del partido de abajo procede de las actas oficiales. Los enlaces abren la página del gol en el archivo y una búsqueda del footage.",
+    "clipLabel": "Clip publicado",
+    "compilationLabel": "Compilación de todos sus goles",
+    "publisher": "Publicado por",
+    "assist": "Asistencia: {name}",
+    "finish": "Finalización: {type}",
+    "goalNumber": "Gol n.º {n}",
+    "watchOn": "Ver en {publisher}",
+    "sourceLine": "Registro del gol: {source} — el archivo toma su lista de la Wikipedia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, sobre el registro de goles de FBref), y de StatsBomb open data. Los clips los publican sus titulares de derechos.",
+    "sourceNote": "Las fechas, competiciones, marcadores, minutos, finalizaciones y asistencias de esta página proceden de cr7allgoals.com, cuya lista de goles es la de Wikipedia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, sobre el registro de FBref), con StatsBomb open data para los detalles de los partidos revisados. La lista internacional es el registro de apariciones de RSSSF: 146 goles en 234 partidos con Portugal. Cuando el minuto nunca se publicó, se deja vacío en lugar de inventarlo."
+  };

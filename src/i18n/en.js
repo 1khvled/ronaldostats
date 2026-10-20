@@ -333,3 +333,19 @@ export const CABINET = [
     { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo kissing the FIFA Club World Cup trophy", cap: "Four FIFA Club World Cups" },
     { title: "La Liga — 311 goals", sub: "The competition's all-time record, all of them for Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo with the La Liga championship trophy", cap: "311 La Liga goals for Real Madrid" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 Search Highlights",
+    "openArchive": "Open in the CR7 goal archive",
+    "noClip": "No published clip for this goal.",
+    "noClipBody": "The match record below comes from the primary match sheets. The links open the goal's page in the archive and a search for the footage.",
+    "clipLabel": "Published clip",
+    "compilationLabel": "All-goals compilation",
+    "publisher": "Published by",
+    "assist": "Assist: {name}",
+    "finish": "Finish: {type}",
+    "goalNumber": "Goal #{n}",
+    "watchOn": "Watch on {publisher}",
+    "sourceLine": "Goal record: {source} — the archive sources its list from Wikipedia's List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, built on FBref's goal log) and StatsBomb open data. Clips are published by their rights holders.",
+    "sourceNote": "The dates, competitions, scorelines, minutes, finishes and assists on this page come from cr7allgoals.com, whose per-goal list is Wikipedia's List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, built on FBref's goal log), with StatsBomb open data for the reviewed event details. The international list is RSSSF's appearance record — 146 goals in 234 caps for Portugal. Where a minute was never published it is left empty rather than invented."
+  };

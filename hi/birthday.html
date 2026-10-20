@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>यह गोल डेटासेट कैसे सत्यापित है?</h3>
       <p>हर प्रविष्टि एक तारीख़ वाला सीनियर फ़र्स्ट-टीम मैच है, जिसमें प्रतिद्वंद्वी, प्रतियोगिता और स्कोर है। अंतरराष्ट्रीय सूची RSSSF की उपस्थिति रिकॉर्ड पर आधारित है (पुर्तगाल के लिए 234 कैप में 146 गोल); क्लब सूची CR7-Goals-Project का खुला एक्सपोर्ट है, जिसे लाइव गोल ट्रैकर से पूरा किया गया है।</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>मैच रिकॉर्ड, कोई क्लिप नहीं।</b></p>
-        <p>तारीख़, प्रतियोगिता, प्रतिद्वंद्वी, स्कोर, मिनट और फ़िनिश का प्रकार — प्राथमिक मैच शीट से लिया गया।</p>
+        <p><b id="bday-noclip-title">मैच रिकॉर्ड, कोई क्लिप नहीं।</b></p>
+        <p id="bday-noclip-body">तारीख़, प्रतियोगिता, प्रतिद्वंद्वी, स्कोर, मिनट और फ़िनिश का प्रकार — प्राथमिक मैच शीट से लिया गया।</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>फ़िनिश का प्रकार: —</span>
         <span class="vpill" id="vpill-xg" hidden>मिनट: —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

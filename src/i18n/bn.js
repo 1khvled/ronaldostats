@@ -335,3 +335,19 @@ export const CABINET = [
     { title: "FIFA Club World Cup — 4", sub: "ম্যানচেস্টার ইউনাইটেড ও রিয়াল মাদ্রিদের হয়ে 2008, 2014, 2016 ও 2017।", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "FIFA Club World Cup ট্রফি চুম্বন করছেন ক্রিস্টিয়ানো রোনালদো", cap: "চারটি FIFA Club World Cup" },
     { title: "La Liga — 311টি গোল", sub: "প্রতিযোগিতার সর্বকালের রেকর্ড, সবই রিয়াল মাদ্রিদের হয়ে।", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "La Liga চ্যাম্পিয়নশিপ ট্রফি হাতে ক্রিস্টিয়ানো রোনালদো", cap: "রিয়াল মাদ্রিদের হয়ে 311টি La Liga গোল" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 হাইলাইট খুঁজুন",
+    "openArchive": "CR7 গোল আর্কাইভে খুলুন",
+    "noClip": "এই গোলের কোনো প্রকাশিত ক্লিপ নেই।",
+    "noClipBody": "নিচের ম্যাচ রেকর্ড প্রাথমিক ম্যাচ শিট থেকে নেওয়া। লিংকগুলো আর্কাইভে গোলের পাতা এবং ফুটেজের অনুসন্ধান খোলে।",
+    "clipLabel": "প্রকাশিত ক্লিপ",
+    "compilationLabel": "সব গোলের সংকলন",
+    "publisher": "প্রকাশক",
+    "assist": "সহায়তা: {name}",
+    "finish": "শেষ করার ধরন: {type}",
+    "goalNumber": "গোল নং {n}",
+    "watchOn": "{publisher}-এ দেখুন",
+    "sourceLine": "গোলের রেকর্ড: {source} — আর্কাইভ তার তালিকা নেয় উইকিপিডিয়ার ‘List of senior career goals by Cristiano Ronaldo’ (CC BY-SA 4.0, যা FBref-এর গোল লগের ভিত্তিতে তৈরি) এবং StatsBomb ওপেন ডেটা থেকে। ক্লিপগুলো প্রকাশ করেছেন তাদের অধিকারধারকরা।",
+    "sourceNote": "এই পাতার তারিখ, প্রতিযোগিতা, স্কোর, মিনিট, শেষ করার ধরন ও সহায়তা আসে cr7allgoals.com থেকে, যার গোলের তালিকা উইকিপিডিয়ার ‘List of senior career goals by Cristiano Ronaldo’ (CC BY-SA 4.0, FBref-এর গোল লগের ভিত্তিতে তৈরি); পর্যালোচিত ম্যাচের বিবরণে StatsBomb ওপেন ডেটা। আন্তর্জাতিক তালিকা RSSSF-এর অ্যাপিয়ারেন্স রেকর্ড — পর্তুগালের হয়ে ২৩৪ ম্যাচে ১৪৬ গোল। যে মিনিট কখনো প্রকাশিত হয়নি, সেখানে অনুমান না করে ফাঁকা রাখা হয়েছে।"
+  };

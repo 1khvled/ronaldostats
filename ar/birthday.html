@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>كيف تُتحقَّق مجموعة بيانات الأهداف هذه؟</h3>
       <p>كل مُدخل هو مباراة للفريق الأول في المحترفين مؤرَّخة، مع منافس ومسابقة ونتيجة. ويتبع السجل الدولي سجل الظهورات في RSSSF (146 هدفاً في 234 ظهوراً مع البرتغال)؛ بينما تتبع قائمة الأندية التصدير المفتوح لمشروع CR7-Goals-Project، مع إكماله عبر متتبع الأهداف المباشر.</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>سجل مباراة، لا مقطع فيديو.</b></p>
-        <p>التاريخ والمسابقة والمنافس ونتيجة المباراة والدقائق وطريقة إنهاء اللعب، من صحائف المباريات الأصلية.</p>
+        <p><b id="bday-noclip-title">سجل مباراة، لا مقطع فيديو.</b></p>
+        <p id="bday-noclip-body">التاريخ والمسابقة والمنافس ونتيجة المباراة والدقائق وطريقة إنهاء اللعب، من صحائف المباريات الأصلية.</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>نوع الإنهاء: —</span>
         <span class="vpill" id="vpill-xg" hidden>الدقيقة (الدقائق): —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

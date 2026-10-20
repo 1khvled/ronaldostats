@@ -334,3 +334,19 @@ export const CABINET = [
     { title: "Campionatul Lumii al Fotbalului FIFA — 4", sub: "2008, 2014, 2016 și 2017, cu Manchester United și Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo sărutând trofeul Campionatului Lumii al Fotbalului FIFA", cap: "Patru Campionate ale Lumii al Fotbalului FIFA" },
     { title: "La Liga — 311 goluri", sub: "Recordul absolut al competiției, toate pentru Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo cu trofeul campionatului La Liga", cap: "311 goluri în La Liga pentru Real Madrid" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 Caută reprizele",
+    "openArchive": "Deschide în arhiva golurilor CR7",
+    "noClip": "Nu există un clip publicat pentru acest gol.",
+    "noClipBody": "Fișa meciului de mai jos provine din foile oficiale de meci. Linkurile deschid pagina golului în arhivă și o căutare a secvenței.",
+    "clipLabel": "Clip publicat",
+    "compilationLabel": "Compilație cu toate golurile",
+    "publisher": "Publicat de",
+    "assist": "Pasă: {name}",
+    "finish": "Finalizare: {type}",
+    "goalNumber": "Golul nr. {n}",
+    "watchOn": "Vizionează pe {publisher}",
+    "sourceLine": "Fișa golului: {source} — arhiva își ia lista din Wikipedia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, construită pe jurnalul de goluri al FBref), și din StatsBomb open data. Clipurile sunt publicate de deținătorii drepturilor.",
+    "sourceNote": "Datele, competițiile, scorurile, minutele, finalizările și pasele de pe această pagină provin din cr7allgoals.com, a cărui listă de goluri este cea din Wikipedia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, construită pe jurnalul FBref), cu StatsBomb open data pentru detaliile meciurilor revizuite. Lista internațională este jurnalul de selecții al RSSSF: 146 goluri în 234 de selecții cu Portugalia. Unde minutul nu a fost publicat niciodată, acolo rămâne gol, nu inventat."
+  };

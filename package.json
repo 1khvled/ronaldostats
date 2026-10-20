@@ -6,7 +6,7 @@
   "description": "Cristiano Ronaldo career stats clone (messistat.app structure) - static, free data only",
   "scripts": {
     "dev": "vite --port 5173 --host",
-    "prebuild": "node scripts/daily-date-sync.mjs && node scripts/prebuild-check.mjs && node scripts/build-ronaldo-data.mjs && node scripts/build-latest-goal.mjs && node scripts/extract-shell-strings.mjs && node scripts/generate-i18n-pages.mjs && node scripts/sync-all-rails.mjs && node scripts/inject-latest-goal-nav.mjs && node scripts/generate-og.mjs",
+    "prebuild": "node scripts/daily-date-sync.mjs && node scripts/prebuild-check.mjs && node scripts/build-ronaldo-data.mjs && node scripts/build-latest-goal.mjs && node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/merge-goal-source.mjs && node scripts/extract-shell-strings.mjs && node scripts/generate-i18n-pages.mjs && node scripts/sync-all-rails.mjs && node scripts/inject-latest-goal-nav.mjs && node scripts/generate-og.mjs",
     "build:og": "node scripts/generate-og.mjs",
     "build": "node scripts/build-sitemap.mjs && vite build && node scripts/copy-en.mjs && node scripts/generate-programmatic-pages.mjs && node scripts/generate-days-hub.mjs && node scripts/inject-yandex-verification.mjs && node scripts/guard-ad-redirects.mjs",
     "preview": "vite preview --port 4173",
@@ -32,7 +32,8 @@
     "build:bday": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs",
     "verify:all": "node scripts/verify-all.mjs",
     "verify:espn": "node scripts/cross-check-espn.mjs",
-    "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/fill-calendar-gaps.mjs"
+    "build:calendar": "node scripts/extract-goal-calendar.mjs && node scripts/build-birthday-goals.mjs && node scripts/merge-goal-source.mjs",
+    "fetch:goals": "node scripts/fetch-goal-source.mjs"
   },
   "devDependencies": {
     "vite": "^6.0.0"

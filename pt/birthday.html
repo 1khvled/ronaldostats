@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>Como este conjunto de dados de gols é verificado?</h3>
       <p>Cada entrada é uma partida profissional de primeira equipe, datada, com adversário, competição e placar. A lista internacional segue o registro de participações da RSSSF (146 gols em 234 convocações por Portugal); a lista de clubes é a exportação aberta do CR7-Goals-Project, completada com o rastreador de gols ao vivo.</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>Registro da partida, não um vídeo.</b></p>
-        <p>Data, competição, adversário, placar, minutos e tipo de finalização, tirados das fichas oficiais de partida.</p>
+        <p><b id="bday-noclip-title">Registro da partida, não um vídeo.</b></p>
+        <p id="bday-noclip-body">Data, competição, adversário, placar, minutos e tipo de finalização, tirados das fichas oficiais de partida.</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>Tipo de finalização: —</span>
         <span class="vpill" id="vpill-xg" hidden>Minuto(s): —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

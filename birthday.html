@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>How is this goal dataset verified?</h3>
       <p>Every entry is a dated senior first-team match with an opponent, a competition and a scoreline. The international list follows RSSSF's appearance record (146 goals in 234 caps for Portugal); the club list is the open CR7-Goals-Project export, completed with the live goal tracker.</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>Match record, not a clip.</b></p>
-        <p>Date, competition, opponent, scoreline, minutes and finish type, taken from primary match sheets.</p>
+        <p><b id="bday-noclip-title">Match record, not a clip.</b></p>
+        <p id="bday-noclip-body">Date, competition, opponent, scoreline, minutes and finish type, taken from primary match sheets.</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>Finish type: —</span>
         <span class="vpill" id="vpill-xg" hidden>Minute(s): —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

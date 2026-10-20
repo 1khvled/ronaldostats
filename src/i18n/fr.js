@@ -333,3 +333,19 @@ export const CABINET = [
     { title: "Coupe du monde des clubs de la FIFA — 4", sub: "2008, 2014, 2016 et 2017 avec Manchester United et le Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo embrassant le trophée de la Coupe du monde des clubs", cap: "Quatre Coupes du monde des clubs" },
     { title: "La Liga — 311 buts", sub: "Le record absolu de la compétition, tous marqués avec le Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo avec le trophée du championnat de La Liga", cap: "311 buts en La Liga avec le Real Madrid" }
   ];
+
+export const BDAY_MEDIA = {
+    "searchHighlights": "🔍 Rechercher les séquences",
+    "openArchive": "Ouvrir dans l'archive des buts de CR7",
+    "noClip": "Aucun clip publié pour ce but.",
+    "noClipBody": "La fiche du match ci-dessous provient des feuilles de match officielles. Les liens ouvrent la page du but dans l'archive et une recherche de la séquence.",
+    "clipLabel": "Clip publié",
+    "compilationLabel": "Compilation de tous ses buts",
+    "publisher": "Publié par",
+    "assist": "Passe : {name}",
+    "finish": "Conclusion : {type}",
+    "goalNumber": "But n° {n}",
+    "watchOn": "Voir sur {publisher}",
+    "sourceLine": "Fiche du but : {source} — l'archive tire sa liste de Wikipédia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, d'après le relevé de buts de FBref), et de StatsBomb open data. Les clips sont publiés par leurs ayants droit.",
+    "sourceNote": "Les dates, compétitions, scores, minutes, conclusions et passes de cette page proviennent de cr7allgoals.com, dont la liste de buts est celle de Wikipédia, List of senior career goals by Cristiano Ronaldo (CC BY-SA 4.0, d'après le relevé de FBref), avec StatsBomb open data pour les détails révisés des matchs. La liste internationale est le relevé de sélections de la RSSSF : 146 buts en 234 sélections avec le Portugal. Quand la minute n'a jamais été publiée, elle reste vide plutôt qu'inventée."
+  };

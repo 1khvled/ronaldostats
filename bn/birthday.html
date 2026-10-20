@@ -50,7 +50,7 @@
 <link hreflang="uz-UZ" rel="alternate" href="https://www.ronaldostats.site/uz-UZ/birthday"/>
 <link hreflang="x-default" rel="alternate" href="https://www.ronaldostats.site/en/birthday"/>
 
-<meta name="keywords" content="রোনালদো কি আমার জন্মদিনে গোল করেছিলেন, রোনালদো কি এই দিনে গোল করেছিলেন, রোনালদো জন্মদিনের গোল, রোনালদো আজকের গোল, রোনালদো 366 দিনের গোল, রোনালদো গোলের ক্যালেন্ডার, রোনালদো জন্মদিন খুঁজে বের করা, রোনালদো তারিখভিত্তিক গোল, রোনালদো জন্মদিনের ম্যাচ লগ, ক্রিস্টিয়ানো রোনালদো গোল লগ, রোনালদো এই দিনে, রোনালদো জন্মদিনের পরিসংখ্যান" />
+<meta name="keywords" content="ronaldo কি আমার জন্মদিনে গোল করেছিলেন, ronaldo কি এই দিনে গোল করেছিলেন, ronaldo জন্মদিনের গোল, ronaldo আজকের গোল, ronaldo 366 দিনের গোল, ronaldo গোলের ক্যালেন্ডার, ronaldo জন্মদিন খুঁজে বের করা, ronaldo তারিখভিত্তিক গোল, ronaldo জন্মদিনের ম্যাচ লগ, cristiano ronaldo গোল লগ, ronaldo এই দিনে, ronaldo জন্মদিনের পরিসংখ্যান" />
 <script src="/js/ad-guard.js"></script>
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Did Ronaldo Score on Your Birthday? | RonaldoStats" />
@@ -1276,6 +1276,7 @@
     <div class="qa">
       <h3>এই গোল ডেটাসেট যাচাই করা হয় কীভাবে?</h3>
       <p>প্রতিটি এন্ট্রি একটি তারিখযুক্ত সিনিয়র প্রথম দলের ম্যাচ — প্রতিপক্ষ, প্রতিযোগিতা ও স্কোরসহ। আন্তর্জাতিক তালিকা RSSSF-এর উপস্থিতি রেকর্ড অনুসরণ করে (পর্তুগাল-এর জন্য 234 উপস্থিতিতে 146 গোল); ক্লাব তালিকা হলো উন্মুক্ত CR7-Goals-Project এক্সপোর্ট, যা লাইভ গোল ট্র্যাকার দিয়ে পূরণ করা।</p>
+  <p id="bday-source-note" class="bday-source-note"></p>
     </div>
   </div>
 </section>
@@ -1385,9 +1386,10 @@
     </div>
     
     <div class="video-player-box" id="video-player-box">
+      <div class="bday-media-slot" id="bday-media-slot"></div>
       <div class="video-fallback-banner" id="video-fallback">
-        <p><b>ম্যাচ রেকর্ড, ক্লিপ নয়.</b></p>
-        <p>তারিখ, প্রতিযোগিতা, প্রতিপক্ষ, স্কোর, মিনিট ও শেষ করার ধরন — প্রাথমিক ম্যাচ শিট থেকে নেওয়া।</p>
+        <p><b id="bday-noclip-title">ম্যাচ রেকর্ড, ক্লিপ নয়.</b></p>
+        <p id="bday-noclip-body">তারিখ, প্রতিযোগিতা, প্রতিপক্ষ, স্কোর, মিনিট ও শেষ করার ধরন — প্রাথমিক ম্যাচ শিট থেকে নেওয়া।</p>
       </div>
     </div>
     
@@ -1403,6 +1405,12 @@
         <span class="vpill" id="vpill-assist" hidden>শেষ করার ধরন: —</span>
         <span class="vpill" id="vpill-xg" hidden>মিনিট: —</span>
       </div>
+      <div class="video-modal-links" id="video-modal-links">
+        <a class="btn btn-sm" id="video-yt-link" href="https://www.youtube.com/results?search_query=Cristiano+Ronaldo+goal" target="_blank" rel="noopener noreferrer"></a>
+        <a class="btn btn-sm" id="video-clip-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer" hidden></a>
+        <a class="btn btn-sm btn-primary" id="video-source-link" href="https://cr7allgoals.com/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="video-modal-source" id="video-modal-source"></p>
     </div>
   </div>
 </div>

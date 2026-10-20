@@ -73,6 +73,13 @@ Free, public, named sources — no paid feeds, no keys, no logins:
   assist record.
 - **The Saudi Pro League** — its own goal announcements.
 - **Transfermarkt / worldfootball.net** — the season-by-season cross-check.
+- **cr7allgoals.com** — the per-goal archive behind the birthday explorer: every
+  goal with its date, competition, scoreline, minute, finish and assist, plus
+  the media that shows it. Its own list is Wikipedia's *List of senior career
+  goals by Cristiano Ronaldo* (CC BY-SA 4.0, built on FBref's goal log) and its
+  reviewed event data comes from StatsBomb open data. `npm run fetch:goals`
+  refreshes the vendored, attributed snapshot in
+  `public/data/ronaldo-goals.json`.
 
 The verification trail lives in `meta.verification` inside the JSON.
 

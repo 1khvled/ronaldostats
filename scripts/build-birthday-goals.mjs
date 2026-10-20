@@ -13,6 +13,17 @@ import path from "node:path";
 const OUT = path.resolve("D:/Projects/ronaldo-stats/public/data/birthday-goals.json");
 const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
 
+// The open export writes the scoreline zero-padded ("3:02" for 3-2).
+// Normalise it to the same shape the source archive uses ("3-2").
+const fixScore = (s) => {
+  const t = String(s || "").trim();
+  let m = t.match(/^(\d{1,2})[-:](\d{2})$/);
+  if (m) return m[1] + "\u2013" + String(Number(m[2]));
+  m = t.match(/^(\d{1,2})[-:](\d{1})$/);
+  if (m) return m[1] + "\u2013" + m[2];
+  return t;
+};
+
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const CLUB_NAME = {
@@ -82,7 +93,7 @@ for (const m of rsssf) {
     team: "Portugal",
     opponent: m.opponent,
     competition: RSS_COMP[m.competition] || m.competition,
-    score: m.score ? m.score.replace("-", " - ") : "",
+    score: m.score ? m.score.replace("-", "–") : "",
     venue: c && c.venue ? (c.venue === "H" ? "Home" : c.venue === "A" ? "Away" : "Neutral") : "Home",
     goals: m.goals,
     minutes: [],
@@ -101,7 +112,7 @@ for (const g of clubCsv) {
     team: CLUB_NAME[g.team] || g.team,
     opponent: g.opponent,
     competition: COMP_NAME[g.competition] || g.competition,
-    score: g.score,
+    score: fixScore(g.score),
     venue: g.venue === "H" ? "Home" : g.venue === "A" ? "Away" : "Neutral",
     goals: 1,
     minutes: g.minute ? [g.minute] : [],
