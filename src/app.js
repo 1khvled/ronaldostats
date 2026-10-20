@@ -4126,16 +4126,16 @@ function eraOf(y) {
    Keyed by eraOf() name; eras without an entry render no figure. */
 const ERA_PHOTOS = {
   rosario: [
-    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "Cristiano Ronaldo in the Sporting CP shirt during his debut season", cap: "The Sporting CP years — senior debut in 2002" },
+    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season", cap: "The Sporting CP years — senior debut in 2002" },
   ],
   peak: [
     { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Manchester United shirt at Old Trafford", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },
   ],
   msn: [
-    { src: "/img/era/era-2009-real.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo holding up the Real Madrid shirt at the Santiago Bernabéu", cap: "The Real Madrid presentation, Bernabéu, 2009" },
+    { src: "/img/era/era-2009-real.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Kaka and Ronaldo celebrating together for Real Madrid", cap: "The Real Madrid presentation, Bernabéu, 2009" },
   ],
   carry: [
-    { src: "/img/era/era-2008-ballon1.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo holding the Ballon d'Or trophy he won in 2008", cap: "The Ballon d'Or years — five of them, from 2008 to 2017" },
+    { src: "/img/era/era-2008-ballon1.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Manchester United number 7 shirt in 2008, the year of his first Ballon d'Or", cap: "The Ballon d'Or years — five of them, from 2008 to 2017" },
   ],
   farewell: [
     { src: "/img/era/era-2018-juve.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Juventus shirt during his Serie A title season", cap: "The Juventus years — two Serie A titles, 2018 to 2022" },
@@ -4144,8 +4144,8 @@ const ERA_PHOTOS = {
     { src: "/img/era/era-2021-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo returning to Manchester United in September 2021", cap: "The Manchester United return, 2021 to 2022" },
   ],
   miami: [
-    { src: "/img/era/era-2023-alnassr.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo presented as an Al Nassr player in Riyadh", cap: "The Al Nassr years — captain of the Saudi Pro League, 2023 to now" },
-    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating a record milestone for Al Nassr", cap: "Records & milestones — 981 goals in 1,340 senior appearances" },
+    { src: "/img/era/era-2023-alnassr.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Al Nassr number 7 shirt", cap: "The Al Nassr years — captain of the Saudi Pro League, 2023 to now" },
+    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Al Nassr shirt, celebrating his all-time record", cap: "Records & milestones — 981 goals in 1,340 senior appearances" },
   ],
 };
 ERA_PHOTOS.rosario = ERA_PHOTOS["Sporting CP 2002-2003"];
@@ -4189,7 +4189,7 @@ const TIMELINE_MILESTONES = [
     stat: "Age 17y 190d",
     badge: "Official Debut",
     img: "/img/era/era-2002-sporting.webp",
-    alt: "Cristiano Ronaldo making his senior debut for Sporting CP in 2002"
+    alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season"
   },
   {
     date: "21 Oct 2002",
@@ -4277,7 +4277,7 @@ const TIMELINE_MILESTONES = [
     stat: "Goal #500",
     badge: "500 Goals ⚡",
     img: "/img/era/era-2013-ballon3.webp",
-    alt: "Cristiano Ronaldo celebrating a goal for Real Madrid in 2015"
+    alt: "Cristiano Ronaldo in the Portugal number 7 shirt"
   },
   {
     date: "10 Jul 2016",
@@ -4301,7 +4301,7 @@ const TIMELINE_MILESTONES = [
     stat: "Ballon d'Or #5",
     badge: "5th Ballon d'Or 🌟",
     img: "/img/era/era-2016-ballon5.webp",
-    alt: "Cristiano Ronaldo with his fifth Ballon d'Or in 2017"
+    alt: "Cristiano Ronaldo in the Portugal number 7 shirt, celebrating"
   },
   {
     date: "10 Jul 2018",
