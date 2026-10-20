@@ -36,7 +36,8 @@ const step = (ok, label) => {
 
 step(run(process.execPath, ["scripts/build-ronaldo-data.mjs"], "data build"), "data build and its 20 assertions");
 step(run(process.execPath, ["scripts/build-latest-goal.mjs"], "latest-goal feed"), "latest-goal feed");
-step(run(process.execPath, ["scripts/build-birthday-goals.mjs"], "dated goal calendar"), "dated goal calendar");
+step(run(process.execPath, ["scripts/extract-goal-calendar.mjs"], "goal calendar extract"), "goal calendar extract");
+step(run(process.execPath, ["scripts/check-dated-calendar.mjs"], "dated goal calendar"), "dated goal calendar");
 step(run(process.execPath, ["scripts/merge-goal-source.mjs"], "goal source reconciliation"), "goal source reconciliation");
 step(run(process.execPath, ["scripts/extract-shell-strings.mjs"], "shell strings"), "shell string extraction");
 step(run(process.execPath, ["scripts/generate-i18n-pages.mjs"], "localized pages"), "localized page generation");

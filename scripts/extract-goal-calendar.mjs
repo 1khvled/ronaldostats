@@ -3,8 +3,11 @@
 //   tmp/cr-club-goals.json      - every dated club goal
 //   tmp/cr-intl-goals.json      - every dated Portugal goal
 import fs, { existsSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..") + "/";
 
 // ---------- CSV ----------
 function parseCSV(text, sep) {
@@ -67,6 +70,14 @@ for (const [name, url] of Object.entries(GH)) {
   if (!r.ok) { console.error("could not fetch " + name + " (" + r.status + ")"); process.exit(1); }
   writeFileSync(p, await r.text(), "utf8");
   console.log("fetched " + name);
+}
+
+// ---------- 0b. RSSSF: fetch it when it is not cached ----------
+if (!existsSync(TMP + "cr-rsssf.html")) {
+  const r = await fetch("https://www.rsssf.org/miscellaneous/cronaldo-intlg.html", { headers: { "User-Agent": "ronaldostats/1.0 (data build)" } });
+  if (!r.ok) { console.error("could not fetch RSSSF (" + r.status + ")"); process.exit(1); }
+  writeFileSync(TMP + "cr-rsssf.html", await r.text(), "utf8");
+  console.log("fetched cr-rsssf.html");
 }
 
 // ---------- 1. RSSSF Portugal matches ----------
@@ -204,7 +215,9 @@ function parseUSDate(s) {
 }
 
 // ---------- 4. Recent goals from the live tracker ----------
-const rtRaw = JSON.parse(fs.readFileSync(TMP + "rt1000-parsed.json", "utf8"));
+// the live tracker's rows are kept in the repository: the career goals the
+// CR7 goal archive has not published yet
+const rtRaw = JSON.parse(fs.readFileSync(ROOT + "public/data/tracker-goals.json", "utf8"));
 const rtGoals = [];
 for (const r of rtRaw) {
   if (r.num === "N.O") continue;

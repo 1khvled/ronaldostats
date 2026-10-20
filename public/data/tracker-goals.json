@@ -1,0 +1,335 @@
+[
+ {
+  "num": "62",
+  "date": "2/4/2007",
+  "home": "Manchester United",
+  "opp": "Tottenham Hotspur",
+  "venue": "White Hart Lane, London, England",
+  "minute": "45'",
+  "type": "Penalty"
+ },
+ {
+  "num": "209",
+  "date": "1/8/2011",
+  "home": "Real Madrid",
+  "opp": "Villarreal CF",
+  "venue": "Santiago Bernabéu, Madrid, Spain",
+  "minute": "10",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "210",
+  "date": "1/8/2011",
+  "home": "Real Madrid",
+  "opp": "Villarreal CF",
+  "venue": "Santiago Bernabéu, Madrid, Spain",
+  "minute": "45",
+  "type": "Header"
+ },
+ {
+  "num": "211",
+  "date": "1/8/2011",
+  "home": "Real Madrid",
+  "opp": "Villarreal CF",
+  "venue": "Santiago Bernabéu, Madrid, Spain",
+  "minute": "79",
+  "type": "Left-footed shot"
+ },
+ {
+  "num": "305",
+  "date": "8/15/2012",
+  "home": "Portugal",
+  "opp": "Panama",
+  "venue": "Estádio Algarve, Faro/Loulé, Portugal",
+  "minute": "51'",
+  "type": "Right foot"
+ },
+ {
+  "num": "676",
+  "date": "2/3/2019",
+  "home": "Juventus FC",
+  "opp": "Parma Calcio 1913",
+  "venue": "Juventus Stadium, Turin, Italy",
+  "minute": "36",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "677",
+  "date": "2/3/2019",
+  "home": "Juventus FC",
+  "opp": "Parma Calcio 1913",
+  "venue": "Juventus Stadium, Turin, Italy",
+  "minute": "66",
+  "type": "Header"
+ },
+ {
+  "num": "834",
+  "date": "4/4/2023",
+  "home": "Al Nassr",
+  "opp": "Al-Adalah FC",
+  "venue": "Prince Abdullah bin Jalawi Stadium, Al-Hassa, Saudi Arabia",
+  "minute": "66'",
+  "type": "Left foot"
+ },
+ {
+  "num": "913",
+  "date": "11/25/2024",
+  "home": "Al Nassr",
+  "opp": "Al-Gharafa SC",
+  "venue": "Al Bayt Stadium, Al Khor, Qatar",
+  "minute": "64",
+  "type": "Counter attack goal"
+ },
+ {
+  "num": "915",
+  "date": "11/29/2024",
+  "home": "Al Nassr",
+  "opp": "Damac FC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "79'",
+  "type": "Left foot"
+ },
+ {
+  "num": "919",
+  "date": "1/21/2025",
+  "home": "Al Nassr",
+  "opp": "Al-Khaleej FC",
+  "venue": "Prince Mohamed bin Fahd Stadium, Dammam, Saudi Arabia",
+  "minute": "90'+8'",
+  "type": "Left foot"
+ },
+ {
+  "num": "955",
+  "date": "12/27/2025",
+  "home": "Al-Nassr",
+  "opp": "Al-Okhdood",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "31'",
+  "type": "Right foot"
+ },
+ {
+  "num": "957",
+  "date": "12/30/2025",
+  "home": "Al-Nassr",
+  "opp": "Al-Ettifaq",
+  "venue": "Al-Ettifaq Club Stadium, Dammam, Saudi Arabia",
+  "minute": "67'",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "958",
+  "date": "1/8/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Qadsiah",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "81'",
+  "type": "Right foot penalty"
+ },
+ {
+  "num": "959",
+  "date": "1/12/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Hilal",
+  "venue": "Kingdom Arena, Riyadh, Saudi Arabia",
+  "minute": "42'",
+  "type": "Right foot"
+ },
+ {
+  "num": "960",
+  "date": "1/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Damac-FC",
+  "venue": "Prince Sultan bin Abdulaziz Sports City Stadium, Abha, Saudi Arabia",
+  "minute": "50'",
+  "type": "Right foot"
+ },
+ {
+  "num": "961",
+  "date": "1/30/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Kholood Club",
+  "venue": "King Abdullah Sports City, Buraydah, Saudi Arabia",
+  "minute": "47'",
+  "type": "Right foot"
+ },
+ {
+  "num": "962",
+  "date": "2/14/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Fateh SC",
+  "venue": "Al-Fateh Stadium, Al-Mubarraz, Saudi Arabia",
+  "minute": "18'",
+  "type": "Right foot"
+ },
+ {
+  "num": "963",
+  "date": "2/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Hazem SC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "13'",
+  "type": "Left foot"
+ },
+ {
+  "num": "964",
+  "date": "2/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Hazem SC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "79'",
+  "type": "Left foot"
+ },
+ {
+  "num": "965",
+  "date": "2/25/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Najma SC",
+  "venue": "Al-Najma Club Stadium, Unaizah, Saudi Arabia",
+  "minute": "7'",
+  "type": "Right foot penalty"
+ },
+ {
+  "num": "966",
+  "date": "4/3/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Najma SC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "56'",
+  "type": "Right foot penalty"
+ },
+ {
+  "num": "967",
+  "date": "4/3/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Najma SC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "73'",
+  "type": "Right foot"
+ },
+ {
+  "num": "968",
+  "date": "4/11/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Okhdood Club",
+  "venue": "Prince Hathloul bin Abdulaziz Sports City Stadium, Najran, Saudi Arabia",
+  "minute": "15'",
+  "type": "Right foot"
+ },
+ {
+  "num": "980",
+  "date": "4/11/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Okhdood Club",
+  "venue": "Prince Hathloul bin Abdulaziz Sports City Stadium, Najran, Saudi Arabia",
+  "minute": "15'",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "970",
+  "date": "4/29/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Ahli SFC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "76'",
+  "type": "Header"
+ },
+ {
+  "num": "971",
+  "date": "5/7/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Shabab FC",
+  "venue": "Al-Shabab Club Stadium, Riyadh, Saudi Arabia",
+  "minute": "75'",
+  "type": "Left foot"
+ },
+ {
+  "num": "972",
+  "date": "5/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Damac FC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "63'",
+  "type": "Right foot free kick"
+ },
+ {
+  "num": "973",
+  "date": "5/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Damac FC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "81'",
+  "type": "Right foot"
+ },
+ {
+  "num": "975",
+  "date": "6/23/2026",
+  "home": "Portugal",
+  "opp": "Uzbekistan",
+  "venue": "Houston Stadium, Houston, United States",
+  "minute": "39'",
+  "type": "Right foot"
+ },
+ {
+  "num": "974",
+  "date": "6/23/2026",
+  "home": "Portugal",
+  "opp": "Uzbekistan",
+  "venue": "Houston Stadium, Houston, United States",
+  "minute": "6'",
+  "type": "Right foot"
+ },
+ {
+  "num": "976",
+  "date": "7/2/2026",
+  "home": "Portugal",
+  "opp": "Croatia",
+  "venue": "Toronto Stadium, Toronto, Canada",
+  "minute": "68'",
+  "type": "Penalty"
+ },
+ {
+  "num": "977",
+  "date": "8/21/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Riyadh SC",
+  "venue": "Prince Faisal bin Fahd Sports City Stadium, Riyadh, Saudi Arabia",
+  "minute": "83'",
+  "type": "Left foot"
+ },
+ {
+  "num": "978",
+  "date": "8/28/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Taawoun FC",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "50'",
+  "type": "Right foot"
+ },
+ {
+  "num": "979",
+  "date": "9/9/2026",
+  "home": "Al-Nassr",
+  "opp": "Abha Club",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "22'",
+  "type": "Header"
+ },
+ {
+  "num": "981",
+  "date": "10/9/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Diriyah FC",
+  "venue": "Home",
+  "minute": "23'",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "982",
+  "date": "10/9/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Diriyah FC",
+  "venue": "Home",
+  "minute": "42'",
+  "type": "Right-footed shot"
+ }
+]

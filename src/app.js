@@ -1225,16 +1225,16 @@ function initFanArcade() {
   const rouletteDisplay = document.getElementById("arcade-roulette-display");
 
   const LEGENDARY_GOALS = [
-    { num: 1, year: 2002, opp: "Moreirense", comp: "Primeira Liga", note: "His first senior goal for Sporting CP, aged 17." },
-    { num: 8, year: 2004, opp: "Greece", comp: "European Championship", note: "His first Portugal goal — a towering header at Euro 2004." },
-    { num: 100, year: 2017, opp: "Bayern Munich", comp: "Champions League", note: "His 100th Champions League goal, in a hat-trick at the Bernabéu." },
-    { num: 200, year: 2011, opp: "Barcelona", comp: "Copa del Rey", note: "The header that won the Copa del Rey final — his first Spanish trophy." },
-    { num: 300, year: 2013, opp: "Northern Ireland", comp: "European Championship Qualifier", note: "Three goals in 15 minutes for Portugal — his first international hat-trick." },
-    { num: 400, year: 2014, opp: "Atlético Madrid", comp: "Champions League", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima." },
-    { num: 500, year: 2015, opp: "Malmö", comp: "Champions League", note: "His 500th career goal, in the season he became the all-time Champions League top scorer." },
-    { num: 700, year: 2019, opp: "Ukraine", comp: "Nations League", note: "His 700th career goal, in the Nations League campaign he won and topped." },
+    { num: 1, date: "2002-10-07", year: 2002, opp: "Moreirense", comp: "Primeira Liga", note: "His first senior goal for Sporting CP, aged 17." },
+    { num: 8, date: "2004-06-12", videoUrl: "https://www.uefa.com/uefaeuro/history/video/028e-1b0fdd6660c4-371f1d1129d5-1000--watch-all-14-of-cristiano-ronaldo-s-euro-goals/", year: 2004, opp: "Greece", comp: "European Championship", note: "His first Portugal goal — a towering header at Euro 2004." },
+    { num: 100, date: "2017-04-12", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2017, opp: "Bayern Munich", comp: "Champions League", note: "His 100th Champions League goal, in a hat-trick at the Bernabéu." },
+    { num: 200, date: "2011-04-16", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2011, opp: "Barcelona", comp: "Copa del Rey", note: "The header that won the Copa del Rey final — his first Spanish trophy." },
+    { num: 300, date: "2013-09-06", year: 2013, opp: "Northern Ireland", comp: "European Championship Qualifier", note: "Three goals in 15 minutes for Portugal — his first international hat-trick." },
+    { num: 400, date: "2014-02-11", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2014, opp: "Atlético Madrid", comp: "Champions League", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima." },
+    { num: 500, date: "2015-09-30", videoUrl: "https://www.youtube.com/watch?v=BMzp4Ob2OK8", year: 2015, opp: "Malmö", comp: "Champions League", note: "His 500th career goal, in the season he became the all-time Champions League top scorer." },
+    { num: 700, date: "2019-10-14", year: 2019, opp: "Ukraine", comp: "Nations League", note: "His 700th career goal, in the Nations League campaign he won and topped." },
     { num: 800, year: 2025, opp: "Al Fateh", comp: "Saudi Pro League", note: "His 800th club goal, for Al Nassr." },
-    { num: 900, year: 2024, opp: "Croatia", comp: "Nations League", note: "His 900th career goal, converted from the spot in Lisbon." }
+    { num: 900, date: "2024-09-05", year: 2024, opp: "Croatia", comp: "Nations League", note: "His 900th career goal, converted from the spot in Lisbon." }
   ];
 
   if (spinBtn && rouletteDisplay) {
@@ -1244,6 +1244,7 @@ function initFanArcade() {
       setTimeout(() => {
         spinBtn.disabled = false;
         const g = LEGENDARY_GOALS[Math.floor(Math.random() * LEGENDARY_GOALS.length)];
+    const gBday = g.date ? `/${getCurrentLangCode()}/birthday/${g.date.slice(5)}` : "";
         rouletteDisplay.innerHTML = `
           <div class="roulette-card-content">
             <div>
@@ -1251,12 +1252,16 @@ function initFanArcade() {
               <div class="roulette-goal-meta"><b>vs ${g.opp}</b> · ${g.comp}</div>
               <div class="roulette-goal-sub">${g.note}</div>
             </div>
-            <a href="/en/latest-goal" class="btn-roulette-watch">
+            <a href="#" class="btn-roulette-watch">
               <span>🎬 Watch Video</span>
             </a>
           </div>
         `;
-        spinBtn.textContent = "🎲 Spin Another Goal";
+        const watchLink = rouletteDisplay.querySelector(".btn-roulette-watch");
+    if (watchLink) {
+      watchLink.setAttribute(`href`, gBday || `/${getCurrentLangCode()}/birthday`);
+    }
+    spinBtn.textContent = "🎲 Spin Another Goal";
       }, 300);
     });
   }
@@ -1536,16 +1541,16 @@ function initDedicatedRoulette() {
   spinBtn.dataset.rouletteInit = "true";
 
   const LEGENDARY_ROULETTE_GOALS = [
-    { num: 1, year: 2002, team: "Sporting CP", opp: "Moreirense", comp: "Primeira Liga", type: "Right Foot", score: "2 – 1", min: "—", note: "First senior goal for Sporting CP, aged 17.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal1.mp4" },
-    { num: 8, year: 2004, team: "Portugal", opp: "Greece", comp: "European Championship", type: "Header", score: "2 – 1", min: "—", note: "His first Portugal goal — a towering header at Euro 2004.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal8.mp4" },
-    { num: 50, year: 2007, team: "Manchester United", opp: "Newcastle United", comp: "Premier League", type: "Left Foot", score: "3 – 2", min: "—", note: "His first Manchester United hat-trick, in the January 2007 win over Newcastle.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal50.mp4" },
-    { num: 200, year: 2011, team: "Real Madrid", opp: "Barcelona", comp: "Copa del Rey", type: "Header", score: "1 – 0", min: "90+1", note: "The stoppage-time header that won the Copa del Rey final — his first Spanish trophy.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal200.mp4" },
-    { num: 300, year: 2013, team: "Portugal", opp: "Northern Ireland", comp: "European Championship Qualifier", type: "Left Foot", score: "4 – 2", min: "27", note: "Three goals in 15 minutes — the fastest international hat-trick of his career.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal300.mp4" },
-    { num: 400, year: 2014, team: "Real Madrid", opp: "Atlético Madrid", comp: "Champions League", type: "Penalty", score: "4 – 2", min: "93", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal400.mp4" },
-    { num: 500, year: 2015, team: "Real Madrid", opp: "Malmö", comp: "Champions League", type: "Left Foot", score: "2 – 1", min: "—", note: "His 500th career goal, in the season he became the all-time Champions League top scorer.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal500.mp4" },
-    { num: 640, year: 2018, team: "Real Madrid", opp: "Juventus", comp: "Champions League", type: "Left Foot", score: "4 – 1", min: "28", note: "His first-leg brace in a Champions League final — Real Madrid's fourth European crown.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal640.mp4" },
-    { num: 700, year: 2019, team: "Portugal", opp: "Ukraine", comp: "Nations League", type: "Left Foot", score: "3 – 1", min: "—", note: "His 700th career goal, in the Nations League campaign he won and topped.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal700.mp4" },
-    { num: 900, year: 2024, team: "Portugal", opp: "Croatia", comp: "Nations League", type: "Penalty", score: "2 – 1", min: "69", note: "His 900th career goal, converted from the spot in Lisbon.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal900.mp4" },
+    { num: 1, date: "2002-10-07", year: 2002, team: "Sporting CP", opp: "Moreirense", comp: "Primeira Liga", type: "Right Foot", score: "2 – 1", min: "—", note: "First senior goal for Sporting CP, aged 17.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal1.mp4" },
+    { num: 8, date: "2004-06-12", videoUrl: "https://www.uefa.com/uefaeuro/history/video/028e-1b0fdd6660c4-371f1d1129d5-1000--watch-all-14-of-cristiano-ronaldo-s-euro-goals/", year: 2004, team: "Portugal", opp: "Greece", comp: "European Championship", type: "Header", score: "2 – 1", min: "—", note: "His first Portugal goal — a towering header at Euro 2004.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal8.mp4" },
+    { num: 50, date: "2021-09-11", videoUrl: "https://www.manutd.com/en/mutv/videos/detail/cristiano-ronaldo-first-goal-v-newcastle-11-september", year: 2007, team: "Manchester United", opp: "Newcastle United", comp: "Premier League", type: "Left Foot", score: "3 – 2", min: "—", note: "His first Manchester United hat-trick, in the January 2007 win over Newcastle.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal50.mp4" },
+    { num: 200, date: "2011-04-16", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2011, team: "Real Madrid", opp: "Barcelona", comp: "Copa del Rey", type: "Header", score: "1 – 0", min: "90+1", note: "The stoppage-time header that won the Copa del Rey final — his first Spanish trophy.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal200.mp4" },
+    { num: 300, date: "2013-09-06", year: 2013, team: "Portugal", opp: "Northern Ireland", comp: "European Championship Qualifier", type: "Left Foot", score: "4 – 2", min: "27", note: "Three goals in 15 minutes — the fastest international hat-trick of his career.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal300.mp4" },
+    { num: 400, date: "2014-02-11", videoUrl: "https://www.youtube.com/watch?v=aeapZzsujqc", year: 2014, team: "Real Madrid", opp: "Atlético Madrid", comp: "Champions League", type: "Penalty", score: "4 – 2", min: "93", note: "The last-gasp extra-time penalty in Lisbon that sealed La Décima.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal400.mp4" },
+    { num: 500, date: "2015-09-30", videoUrl: "https://www.youtube.com/watch?v=BMzp4Ob2OK8", year: 2015, team: "Real Madrid", opp: "Malmö", comp: "Champions League", type: "Left Foot", score: "2 – 1", min: "—", note: "His 500th career goal, in the season he became the all-time Champions League top scorer.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal500.mp4" },
+    { num: 640, date: "2018-04-03", videoUrl: "https://www.youtube.com/watch?v=Nt8198a0acA", year: 2018, team: "Real Madrid", opp: "Juventus", comp: "Champions League", type: "Left Foot", score: "4 – 1", min: "28", note: "His first-leg brace in a Champions League final — Real Madrid's fourth European crown.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal640.mp4" },
+    { num: 700, date: "2019-10-14", year: 2019, team: "Portugal", opp: "Ukraine", comp: "Nations League", type: "Left Foot", score: "3 – 1", min: "—", note: "His 700th career goal, in the Nations League campaign he won and topped.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal700.mp4" },
+    { num: 900, date: "2024-09-05", year: 2024, team: "Portugal", opp: "Croatia", comp: "Nations League", type: "Penalty", score: "2 – 1", min: "69", note: "His 900th career goal, converted from the spot in Lisbon.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal900.mp4" },
     { num: 981, year: 2026, team: "Al Nassr", opp: "Al Nassr", comp: "Saudi Pro League", type: "Left Foot", score: "—", min: "—", note: "His 981st and most recent senior goal — the last of a record 981-goal career, scored for Al Nassr.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal981.mp4" },
     { num: 1000, year: 2020, team: "Juventus", opp: "Cagliari", comp: "Serie A", type: "Right Foot", score: "1 – 1", min: "—", note: "His 1,000th senior appearance, in a Serie A draw with Cagliari.", videoUrl: "https://cdn.ronaldoallgoals.com/Goal1000.mp4" }
   ];
@@ -1576,6 +1581,11 @@ function initDedicatedRoulette() {
       video.load();
       video.play().catch(() => {});
       video.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else if (g.date) {
+      // the archive carries no clip of this goal: open its date in the
+      // Birthday Explorer, where that date's video plays
+      window.location.href = `/${getCurrentLangCode()}/birthday/${g.date.slice(5)}`;
+      return;
     }
     if (ytBtn) ytBtn.href = `https://www.youtube.com/results?search_query=Ronaldo+goal+${g.num}+vs+${encodeURIComponent(g.opp)}`;
   };

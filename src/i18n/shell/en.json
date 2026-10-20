@@ -7154,7 +7154,7 @@
   "pages": [
    "latest-goal"
   ],
-  "ctx": "How close is Cristiano Ronaldo to 1,000 career goals?  [Cristiano Ronaldo has 981 official senior career goals, so he is 19 short of 1,000.] Does RonaldoStats host Cristiano Ronaldo goal video?"
+  "ctx": "How close is Cristiano Ronaldo to 1,000 career goals?  [Cristiano Ronaldo has 981 official senior career goals, so he is 19 short of 1,000.] Where can I watch Cristiano Ronaldo's goals?"
  },
  "Cristiano Ronaldo has recorded": {
   "count": 1,
@@ -7773,13 +7773,6 @@
   ],
   "ctx": "Zero Extra Cost: Amazon pays us a small referral fee from their margin  [Directly funds matchday goal video CDN &amp; high-speed cloud hosting] Keeps the database clean, ad-shielded, and accurate"
  },
- "Does RonaldoStats host Cristiano Ronaldo goal video?": {
-  "count": 1,
-  "pages": [
-   "latest-goal"
-  ],
-  "ctx": "Cristiano Ronaldo has 981 official senior career goals, so he is 19 short of 1,000.  [Does RonaldoStats host Cristiano Ronaldo goal video?] No. RonaldoStats is a statistical archive: it does not host, embed or stream match footage. Every goal is published in text with its date, opponent, competition"
- },
  "Donate $15 →": {
   "count": 1,
   "pages": [
@@ -8013,6 +8006,13 @@
    "birthday"
   ],
   "ctx": "How is this goal dataset verified?  [Every entry is a dated senior first-team match with an opponent, a competition and a scoreline. The international list follows RSSSF's appearance record (146 goals in 234 caps for Portugal); the club list is the open CR7-Goals-Project export, completed with the l"
+ },
+ "Every goal has a video: pick a date below, then tap ▶ Watch this goal on any goal.": {
+  "count": 1,
+  "pages": [
+   "birthday"
+  ],
+  "ctx": "Search all 366 calendar days across Cristiano Ronaldo's career, from his first senior brace for Sporting CP in 2002 to his 900th career goal for Portugal in 2024. Match logs, exact minutes, scorelines and finish types for every goal.  [Every goal has a video: pick a date below, then tap ▶ Watch this"
  },
  "Every meeting with Real Madrid, the goal log and video clips.": {
   "count": 1,
@@ -10353,7 +10353,7 @@
   "pages": [
    "latest-goal"
   ],
-  "ctx": "RonaldoStats does not host, embed or stream match footage. The panel below is the published record of the goal: number, date, opponent, competition, score, minute, finish type and career total. Where a scoreline is not published it is shown as an em dash.  [Minute] 42'"
+  "ctx": "RonaldoStats does not host the footage, but it links to it: the clip the CR7 goal archive publishes for this goal, the video of every goal of that season, and a search for the goal itself — and it plays the clips it can, in the player above. The panel below is the published record: number, date, opp"
  },
  "Minute(s): —": {
   "count": 1,
@@ -10496,13 +10496,6 @@
    "birthday"
   ],
   "ctx": "Has Ronaldo ever scored on his own birthday?  [No.] Born 5 February 1985 in Funchal, Madeira. The archive holds no Ronaldo goal on 5 February in any season — the closest are a brace against Fulham on 4 February 2006 and two goals against Real Sociedad on 6 February 2011."
- },
- "No. RonaldoStats is a statistical archive: it does not host, embed or stream match footage. Every goal is published in text with its date, opponent, competition, minute and finish type, and the 366-day Birthday Explorer lists the dates on which he scored.": {
-  "count": 1,
-  "pages": [
-   "latest-goal"
-  ],
-  "ctx": "Does RonaldoStats host Cristiano Ronaldo goal video?  [No. RonaldoStats is a statistical archive: it does not host, embed or stream match footage. Every goal is published in text with its date, opponent, competition, minute and finish type, and the 366-day Birthday Explorer lists the dates on which "
  },
  "Non-Penalty Goals": {
   "count": 2,
@@ -11821,12 +11814,19 @@
   ],
   "ctx": "[attr alt]"
  },
- "RonaldoStats does not host, embed or stream match footage. The panel below is the published record of the goal: number, date, opponent, competition, score, minute, finish type and career total. Where a scoreline is not published it is shown as an em dash.": {
+ "RonaldoStats does not host the footage — it links to it, and plays what it can. The CR7 goal archive publishes a page for every one of the 981 goals with the clip it carries for that goal; ronaldo7.net publishes a video of every goal of each season; and the 366-day Birthday Explorer plays the clip for any date he scored. Where the clip is a YouTube video it plays here in the player above.": {
   "count": 1,
   "pages": [
    "latest-goal"
   ],
-  "ctx": "Text record, not a video.  [RonaldoStats does not host, embed or stream match footage. The panel below is the published record of the goal: number, date, opponent, competition, score, minute, finish type and career total. Where a scoreline is not published it is shown as an em dash.] Minute"
+  "ctx": "Where can I watch Cristiano Ronaldo's goals?  [RonaldoStats does not host the footage — it links to it, and plays what it can. The CR7 goal archive publishes a page for every one of the 981 goals with the clip it carries for that goal; ronaldo7.net publishes a video of every goal of each season; and"
+ },
+ "RonaldoStats does not host the footage, but it links to it: the clip the CR7 goal archive publishes for this goal, the video of every goal of that season, and a search for the goal itself — and it plays the clips it can, in the player above. The panel below is the published record: number, date, opponent, competition, score, minute, finish type and career total. Where a scoreline is not published it is shown as an em dash.": {
+  "count": 1,
+  "pages": [
+   "latest-goal"
+  ],
+  "ctx": "Watch the goal.  [RonaldoStats does not host the footage, but it links to it: the clip the CR7 goal archive publishes for this goal, the video of every goal of that season, and a search for the goal itself — and it plays the clips it can, in the player above. The panel below is the published record:"
  },
  "RonaldoStats home": {
   "count": 12,
@@ -11903,7 +11903,7 @@
   "pages": [
    "latest-goal"
   ],
-  "ctx": "Goal #981: Al Nassr v Al-Diriyah FC  [Saudi Pro League • 9 October 2026 • Al Nassr, Riyadh] Text record, not a video."
+  "ctx": "Goal #981: Al Nassr v Al-Diriyah FC  [Saudi Pro League • 9 October 2026 • Al Nassr, Riyadh] Watch the goal."
  },
  "Scoreline": {
   "count": 1,
@@ -11952,7 +11952,7 @@
   "pages": [
    "birthday"
   ],
-  "ctx": "Did Ronaldo Score on Your Birthday?  [Search all 366 calendar days across Cristiano Ronaldo's career, from his first senior brace for Sporting CP in 2002 to his 900th career goal for Portugal in 2024. Match logs, exact minutes, scorelines and finish types for every goal.] Senior Goals"
+  "ctx": "Did Ronaldo Score on Your Birthday?  [Search all 366 calendar days across Cristiano Ronaldo's career, from his first senior brace for Sporting CP in 2002 to his 900th career goal for Portugal in 2024. Match logs, exact minutes, scorelines and finish types for every goal.] Every goal has a video: pic"
  },
  "Search all 366 calendar days across Ronaldo's 981 career goals and see every match he scored on that day of the year.": {
   "count": 5,
@@ -12648,13 +12648,6 @@
    "achievements"
   ],
   "ctx": "🎯 TROPHY & RECORDS TRIVIA  [Test Your Cristiano Ronaldo Trophy & Records IQ] Think you know everything about Ronaldo's 35 trophies, 5 Ballons d'Or and world records? Answer 5 trivia questions below:"
- },
- "Text record, not a video.": {
-  "count": 1,
-  "pages": [
-   "latest-goal"
-  ],
-  "ctx": "Saudi Pro League • 9 October 2026 • Al Nassr, Riyadh  [Text record, not a video.] RonaldoStats does not host, embed or stream match footage. The panel below is the published record of the goal: number, date, opponent, competition, score, minute, finish type and career total. Where a scoreline is not"
  },
  "The": {
   "count": 1,
@@ -13359,6 +13352,13 @@
   ],
   "ctx": "The last-gasp extra-time penalty against Atlético in Lisbon, a record 17 Champions League goals in that season, and the first of the four European crowns he won at Real Madrid.  [Watch the Penalty ⚽] 2014 · La Liga"
  },
+ "Watch the goal.": {
+  "count": 1,
+  "pages": [
+   "latest-goal"
+  ],
+  "ctx": "Saudi Pro League • 9 October 2026 • Al Nassr, Riyadh  [Watch the goal.] RonaldoStats does not host the footage, but it links to it: the clip the CR7 goal archive publishes for this goal, the video of every goal of that season, and a search for the goal itself — and it plays the clips it can, in the "
+ },
  "What Was Cristiano Ronaldo's Best Season? (61 Goals in 2014/15)": {
   "count": 1,
   "pages": [
@@ -13498,6 +13498,13 @@
    "timeline"
   ],
   "ctx": "; his first Manchester United goal that same year was a free kick against Portsmouth.  [When did Ronaldo win the Champions League?] ▾"
+ },
+ "Where can I watch Cristiano Ronaldo's goals?": {
+  "count": 1,
+  "pages": [
+   "latest-goal"
+  ],
+  "ctx": "Cristiano Ronaldo has 981 official senior career goals, so he is 19 short of 1,000.  [Where can I watch Cristiano Ronaldo's goals?] RonaldoStats does not host the footage — it links to it, and plays what it can. The CR7 goal archive publishes a page for every one of the 981 goals with the clip it ca"
  },
  "Whether you are searching for": {
   "count": 1,

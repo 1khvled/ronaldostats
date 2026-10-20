@@ -846,7 +846,7 @@ body[data-page="timeline"] .ch-photo .photo-credit { padding: 6px 2px 4px; }
   }
   .ad-native-slot [class*="__title"],
   [id^="container-f4bcf68dc7a4accd4a4c773aa7965161"] [class*="__title"] {
-    font-size: 0.72rem !important;
+    font-size: 0.75rem !important;
     line-height: 1.25 !important;
     min-height: 2.2rem !important;
     max-height: 2.2rem !important;
@@ -1406,13 +1406,13 @@ body[data-page="timeline"] .ch-photo .photo-credit { padding: 6px 2px 4px; }
   /* Truly localized mobile bottom rail labels */
   .rail nav a span {
     display: block !important;
-    font-size: 0.62rem !important;
+    font-size: 0.75rem !important;
     font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.01em;
+    line-height: 1.2;
+    letter-spacing: 0;
     text-align: center;
     white-space: nowrap;
-    max-width: 64px;
+    max-width: 84px;
     overflow: hidden;
     text-overflow: ellipsis;
     opacity: 0.95;
@@ -5274,7 +5274,7 @@ p a, .kpi-note a, .figcap a, .qa-answer a, article p a, .card p a {
     left: -18px !important;
     width: 18px !important;
     height: 18px !important;
-    font-size: 9px !important;
+    font-size: 12px !important;
   }
   .tl-card {
     padding: 12px 14px !important;
@@ -5345,7 +5345,7 @@ p a, .kpi-note a, .figcap a, .qa-answer a, article p a, .card p a {
     margin-bottom: 4px !important;
   }
   .id-chip {
-    font-size: 0.72rem !important;
+    font-size: 0.75rem !important;
     padding: 2px 7px !important;
   }
   .identity-facts {
@@ -9974,7 +9974,7 @@ html[dir="rtl"] .back-to-top-btn {
     border-radius: 14px !important;
   }
   .kpi-label {
-    font-size: 0.72rem !important;
+    font-size: 0.75rem !important;
   }
   .kpi-value {
     font-size: 1.7rem !important;
@@ -11563,4 +11563,117 @@ body.mst-toast-open .back-to-top-btn {
   line-height: 1.55;
   color: var(--ink-soft);
   font-style: italic;
+}
+
+
+/* ================= mobile: touch targets =================
+   Every control a finger has to hit is at least 40px tall. The footer
+   links and the small chips were 18-22px, which is a miss on a phone. */
+@media (max-width: 900px) {
+  .footer-links a,
+  .footer-group a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 2px 2px;
+  }
+  .mobile-topbar-brand {
+    min-height: 44px;
+  }
+  .mobile-lang-btn {
+    min-height: 40px;
+    padding: 8px 14px;
+  }
+  .btn-copy-crypto {
+    min-height: 40px;
+    padding: 8px 14px;
+  }
+  .bday-explore-actions .btn-primary,
+  .bday-explore-actions .btn-secondary {
+    min-height: 44px;
+  }
+  .rail nav a span {
+    max-width: 78px;
+    line-height: 1.2;
+  }
+  .bday-goal-watch,
+  .bday-watch-video-btn,
+  .bday-yt-search-btn {
+    min-height: 40px;
+  }
+}
+
+/* ---------- mobile: nothing smaller than 12px, ever ---------- */
+@media (max-width: 900px) {
+  .kpi small,
+  .kpi-card small,
+  .qa small,
+  .qa-grid small,
+  .legend small,
+  .table-card small,
+  .card small {
+    font-size: max(0.78rem, 12px);
+  }
+}
+
+/* ---------- mobile: the link beside a section heading is a real button ---------- */
+@media (max-width: 900px) {
+  .section-head a,
+  .shead a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 2px;
+  }
+  .dash-bar-meta,
+  .dash-bar-meta span {
+    font-size: max(0.8rem, 12px);
+  }
+}
+
+/* ---------- mobile: the 12px floor, everywhere ----------
+   A <small> is "smaller" than its parent by default, which quietly took the
+   metadata below the floor. And a link inside a sentence is only as tall as
+   the line, so its hit area is grown without moving the text. */
+@media (max-width: 900px) {
+  small {
+    font-size: max(0.78rem, 12px) !important;
+  }
+  .kpi-note a,
+  .kpi-card a,
+  .footer-links a,
+  .footer-group a,
+  p a,
+  li a,
+  td a {
+    display: inline-block;
+    padding: 8px 2px;
+    margin: -8px -2px;
+    min-height: 40px;
+  }
+  .kpi-note a,
+  .kpi-card a,
+  p a,
+  li a,
+  td a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    min-height: 0;
+  }
+}
+
+/* ---------- birthday: the video note under the lead ---------- */
+.bday-video-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0.6rem 0 0;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--brand-ink);
+  background: var(--brand-soft);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand);
+  border-radius: 10px;
 }
