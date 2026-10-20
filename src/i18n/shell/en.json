@@ -13877,15 +13877,20 @@
   "ctx": "[attr content]"
  },
  "en_US": {
-  "count": 7,
+  "count": 12,
   "pages": [
    "achievements",
+   "birthday",
+   "champions-league",
    "dashboard",
    "gear",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "latest-goal",
+   "ronaldo-vs-messi",
+   "timeline",
+   "vs-real-madrid"
   ],
   "ctx": "[attr content]"
  },

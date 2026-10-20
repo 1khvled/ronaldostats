@@ -71,6 +71,15 @@ function localeBase(code) {
   return code.split("-")[0];
 }
 
+// Set an attribute's value inside a tag, whatever the attribute order is.
+function setTagAttr(html, tagRe, attr, value) {
+  return html.replace(tagRe, (tag) => {
+    const re = new RegExp("(\\s" + attr + "\\s*=\\s*)(\"[^\"]*\"|'[^']*'|[^\\s>]+)", "i");
+    if (!re.test(tag)) return tag;
+    return tag.replace(re, (m, pre) => pre + '"' + String(value).replace(/"/g, "&quot;") + '"');
+  });
+}
+
 function localizeHtml(html, lang, slug, dict) {
   const path = pagePath(slug);
   // 1. copy substitution
@@ -85,7 +94,7 @@ function localizeHtml(html, lang, slug, dict) {
   });
 
   // 3. canonical
-  out = out.replace(/<link\b[^>]*rel="canonical"[^>]*>/i, `<link rel="canonical" href="${ORIGIN}/${lang}${path}"/>`);
+  out = setTagAttr(out, /<link\b[^>]*rel="canonical"[^>]*>/i, "href", `${ORIGIN}/${lang}${path}`);
 
   // 4. hreflang block — rebuild it wholesale so it is identical everywhere
   const altLinks = [];
@@ -99,13 +108,25 @@ function localizeHtml(html, lang, slug, dict) {
   const altBlock = altLinks.join("\n");
   out = out.replace(/<link\b[^>]*rel="alternate"[^>]*>(\s*<link\b[^>]*rel="alternate"[^>]*>)*/i, altBlock);
 
-  // 5. og:url / twitter:url / og:locale
-  out = out.replace(/<meta\b[^>]*property="og:url"[^>]*content="[^"]*"[^>]*>/i, `<meta property="og:url" content="${ORIGIN}/${lang}${path}"/>`);
-  out = out.replace(/<meta\b[^>]*name="twitter:url"[^>]*content="[^"]*"[^>]*>/i, `<meta name="twitter:url" content="${ORIGIN}/${lang}${path}"/>`);
-  out = out.replace(/<meta\b[^>]*property="og:locale"[^>]*content="[^"]*"[^>]*>/i, `<meta property="og:locale" content="${LANGS[lang].locale}"/>`);
-  out = out.replace(/<meta\b[^>]*property="og:locale:alternate"[^>]*content="[^"]*"[^>]*>/i, "");
+  // 5. the URL and locale meta tags — attribute order varies, so set the
+  //    value inside the tag rather than replacing the tag
+  out = setTagAttr(out, /<meta\b[^>]*property="og:url"[^>]*>/i, "content", `${ORIGIN}/${lang}${path}`);
+  out = setTagAttr(out, /<meta\b[^>]*name="twitter:url"[^>]*>/i, "content", `${ORIGIN}/${lang}${path}`);
+  out = setTagAttr(out, /<meta\b(?![^>]*og:locale:alternate)[^>]*property="og:locale"[^>]*>/i, "content", LANGS[lang].locale);
+  out = out.replace(/<meta\b[^>]*property="og:locale:alternate"[^>]*>\s*/gi, "");
 
-  // 6. schema.org url inside the JSON-LD blocks
+  // 6. the meta description and keywords, in every language
+  for (const [name, key] of [["description", "description"], ["keywords", "keywords"], ["twitter:description", "description"], ["twitter:title", "title"]]) {
+    const re = new RegExp("<meta\\b[^>]*(?:name|property)=\"" + name + "\"[^>]*>", "i");
+    const tag = (out.match(re) || [])[0];
+    if (!tag) continue;
+    const cm = tag.match(/content="([^"]*)"/);
+    if (!cm) continue;
+    const src = cm[1];
+    if (map[src]) out = setTagAttr(out, re, "content", map[src]);
+  }
+
+  // 7. schema.org url inside the JSON-LD blocks
   out = out.replace(/"url"\s*:\s*"https:\/\/www\.ronaldostats\.site\/[^"]*"/g, `"url": "${ORIGIN}/${lang}${path}"`);
   out = out.replace(/"contentUrl"\s*:\s*"https:\/\/www\.ronaldostats\.site\/[^"]*"/g, `"contentUrl": "${ORIGIN}/${lang}${path}"`);
 
