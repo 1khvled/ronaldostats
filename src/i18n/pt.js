@@ -327,11 +327,11 @@ Object.assign(ERA_INTROS, {
 });
 
 export const CABINET = [
-    { title: "Portugal & Copa do Mundo FIFA", sub: "Seis Copas do Mundo (2006–2026) e 146 gols em 234 jogos pela Seleção Portuguesa.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo na camisa de Portugal em uma Copa do Mundo FIFA", cap: "O maior artilheiro de Portugal, em seis Copas do Mundo" },
-    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — o primeiro aos 23 anos.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo erguendo o seu quinto troféu Ballon d'Or", cap: "Cinco Ballons d'Or" },
-    { title: "Champions League — 5", sub: "140 gols, o recorde da competição, em 183 jogos.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo comemorando com o troféu da Champions League", cap: "Cinco títulos europeus e 140 gols na Champions League" },
-    { title: "Copa do Mundo de Clubes FIFA — 4", sub: "2008, 2014, 2016 e 2017 com Manchester United e Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo beijando o troféu da Copa do Mundo de Clubes da FIFA", cap: "Quatro Copas do Mundo de Clubes da FIFA" },
-    { title: "La Liga — 311 gols", sub: "O recorde histórico da competição, todos pelo Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo com o troféu do campeonato da La Liga", cap: "311 gols na La Liga pelo Real Madrid" }
+    { title: "Portugal & Copa do Mundo FIFA", sub: "Seis Copas do Mundo (2006–2026) e 146 gols em 234 jogos pela Seleção Portuguesa.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo com a camisa número 7 de Portugal na Copa do Mundo da FIFA de 2018", cap: "O maior artilheiro de Portugal, em seis Copas do Mundo" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — o primeiro aos 23 anos.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo com o Ballon d'Or que ganhou um recorde de cinco vezes", cap: "Cinco Ballons d'Or" },
+    { title: "Champions League — 5", sub: "140 gols, o recorde da competição, em 183 jogos.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "As taças da Taça Europeia e da UEFA Champions League, ganhas cinco vezes por Cristiano Ronaldo", cap: "Cinco títulos europeus e 140 gols na Champions League" },
+    { title: "Copa do Mundo de Clubes FIFA — 4", sub: "2008, 2014, 2016 e 2017 com Manchester United e Real Madrid.", src: "/img/cab-cwc.webp", w: 800, h: 600, pos: "50% 25%", alt: "Os troféus Golden Ball da FIFA Club World Cup no museu CR7 da Madeira", cap: "Quatro Copas do Mundo de Clubes da FIFA" },
+    { title: "La Liga — 311 gols", sub: "O recorde histórico da competição, todos pelo Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo com a camisa número 7 do Real Madrid, numa La Liga que ganhou duas vezes", cap: "311 gols na La Liga pelo Real Madrid" }
   ];
 
 export const BDAY_MEDIA = {

@@ -6,6 +6,14 @@ CC BY or CC BY-SA). Attribution and licence links are given per file.
 
 Images were cropped and resized for the site; cropping does not alter the original work.
 
+### `public/img/cab-cwc.webp`
+
+- **Source file page:** [File:FIFA Club World Cup Silver and Golden Ball Trophies CR7Museum.jpg](https://commons.wikimedia.org/wiki/File:FIFA_Club_World_Cup_Silver_and_Golden_Ball_Trophies_CR7Museum.jpg)
+- **Author / photographer:** Tkotw12
+- **Credit:** Own work
+- **Licence:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+- **Licence URL:** https://creativecommons.org/licenses/by-sa/4.0
+
 ---
 
 ### `public/img/cab-ballon.webp`

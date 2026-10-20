@@ -4287,7 +4287,9 @@ const TIMELINE_MILESTONES = [
     title: "EURO 2016 Champion as Portugal's Captain",
     desc: "Ronaldo lifts the European Championship in Paris as captain, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.",
     stat: "Euro 2016 🏆",
-    badge: "European Champion"
+    badge: "European Champion",
+    img: "/img/cab-copa.webp",
+    alt: "Cristiano Ronaldo in the Portugal number 7 shirt, captaining"
   },
   {
     date: "30 Oct 2017",

@@ -327,11 +327,11 @@ Object.assign(ERA_INTROS, {
 });
 
 export const CABINET = [
-    { title: "Portugal & Coupe du monde de la FIFA", sub: "Six Coupes du monde (2006–2026) et 146 buts en 234 sélections avec le Portugal.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo en maillot du Portugal lors d'une Coupe du monde", cap: "Le meilleur buteur de l'histoire du Portugal, sur six Coupes du monde" },
-    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — le premier à 23 ans.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo brandissant son cinquième Ballon d'Or", cap: "Cinq Ballons d'Or" },
-    { title: "Ligue des champions — 5", sub: "140 buts, le record de la compétition, en 183 apparitions.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo célébrant avec le trophée de la Ligue des champions", cap: "Cinq titres européens et 140 buts en Ligue des champions" },
-    { title: "Coupe du monde des clubs de la FIFA — 4", sub: "2008, 2014, 2016 et 2017 avec Manchester United et le Real Madrid.", src: "/img/cab-copa.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo embrassant le trophée de la Coupe du monde des clubs", cap: "Quatre Coupes du monde des clubs" },
-    { title: "La Liga — 311 buts", sub: "Le record absolu de la compétition, tous marqués avec le Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo avec le trophée du championnat de La Liga", cap: "311 buts en La Liga avec le Real Madrid" }
+    { title: "Portugal & Coupe du monde de la FIFA", sub: "Six Coupes du monde (2006–2026) et 146 buts en 234 sélections avec le Portugal.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo en maillot numéro 7 du Portugal lors de la Coupe du monde 2018", cap: "Le meilleur buteur de l'histoire du Portugal, sur six Coupes du monde" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — le premier à 23 ans.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo tenant le Ballon d'Or qu'il a remporté un record de cinq fois", cap: "Cinq Ballons d'Or" },
+    { title: "Ligue des champions — 5", sub: "140 buts, le record de la compétition, en 183 apparitions.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Les coupes de la Coupe d'Europe et de la UEFA Champions League, remportées cinq fois par Cristiano Ronaldo", cap: "Cinq titres européens et 140 buts en Ligue des champions" },
+    { title: "Coupe du monde des clubs de la FIFA — 4", sub: "2008, 2014, 2016 et 2017 avec Manchester United et le Real Madrid.", src: "/img/cab-cwc.webp", w: 800, h: 600, pos: "50% 25%", alt: "Les trophées Golden Ball de la FIFA Club World Cup au musée CR7 de Madère", cap: "Quatre Coupes du monde des clubs" },
+    { title: "La Liga — 311 buts", sub: "Le record absolu de la compétition, tous marqués avec le Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo en maillot numéro 7 du Real Madrid, dans une Liga qu'il a remportée deux fois", cap: "311 buts en La Liga avec le Real Madrid" }
   ];
 
 export const BDAY_MEDIA = {
