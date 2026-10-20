@@ -7,6 +7,7 @@ import "./ad-guard.js";
 import { inject } from "@vercel/analytics";
 import { injectSpeedInsights } from "@vercel/speed-insights";
 import { getDict } from "./i18n/index.js";
+import { getShellDict } from "./i18n/shell/index.js";
 inject(); // page-view counting; no-ops off Vercel (script 404s silently in local preview)
 injectSpeedInsights(); // Core Web Vitals; same deal — production only, silent locally
 /* Theme manager (Dark / Light mode) with localStorage persistence and OS sync */
@@ -63,6 +64,82 @@ function initTheme() {
 initTheme();
 
 /* ================= REDESIGNED LANGUAGE SELECTOR & MOBILE TOPBAR ================= */
+/* ---------- the runtime translation pass ---------- */
+// The copy that JavaScript renders is written in English in the source: it is
+// data, not markup, so the page build cannot translate it. The shell
+// dictionaries hold the translations of the same strings, so they are used
+// here: every text node the runtime writes is looked up and replaced.
+const RUNTIME_SKIP = new Set(["SCRIPT", "STYLE", "CODE", "PRE", "TEXTAREA", "INPUT", "OPTION"]);
+const runtimeDictCache = new Map();
+const normRuntime = (s) => s.replace(/\s+/g, " ").trim().replace(/[0-9][0-9,.]*/g, "#");
+function runtimeLookup(lang) {
+  if (runtimeDictCache.has(lang)) return runtimeDictCache.get(lang);
+  const dict = getShellDict(lang) || {};
+  const exact = new Map();
+  const patterns = new Map();
+  for (const [k, v] of Object.entries(dict)) {
+    if (typeof v !== "string") continue;
+    exact.set(k, v);
+    const n = normRuntime(k);
+    if (n !== k && !patterns.has(n)) patterns.set(n, v);
+  }
+  const out = { exact, patterns };
+  runtimeDictCache.set(lang, out);
+  return out;
+}
+function translateNode(node) {
+  const lang = getCurrentLangCode();
+  if (!lang || lang === "en") return;
+  const el = node && node.parentElement;
+  if (!el) return;
+  if (RUNTIME_SKIP.has(el.tagName)) return;
+  if (el.closest("script, style, code, pre, textarea, [contenteditable]")) return;
+  const raw = node.nodeValue;
+  if (!raw) return;
+  const text = raw.trim();
+  if (!text) return;
+  const dict = runtimeLookup(lang);
+  if (!dict) return;
+  let out = dict.exact.get(text);
+  if (out === undefined) out = dict.patterns.get(normRuntime(text));
+  if (out === undefined || out === text) return;
+  const at = raw.indexOf(text);
+  node.nodeValue = raw.slice(0, at) + out + raw.slice(at + text.length);
+}
+function translateRuntime(root) {
+  const lang = getCurrentLangCode();
+  if (!lang || lang === "en") return;
+  const dict = runtimeLookup(lang);
+  if (!dict) return;
+  const scope = root || document.body;
+  if (!scope) return;
+  const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+    acceptNode: (node) => {
+      const el = node.parentElement;
+      if (!el) return NodeFilter.FILTER_REJECT;
+      if (RUNTIME_SKIP.has(el.tagName)) return NodeFilter.FILTER_REJECT;
+      if (el.closest("script, style, code, pre, textarea, [contenteditable]")) return NodeFilter.FILTER_REJECT;
+      if (el.closest(".ad-native-slot, .ad-native-wrap, .ad-banner-slot, .ad-banner-wrap")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+  const nodes = [];
+  let n;
+  while ((n = walker.nextNode())) nodes.push(n);
+  for (const node of nodes) {
+    const raw = node.nodeValue;
+    if (!raw) continue;
+    const text = raw.trim();
+    if (!text) continue;
+    const lead = raw.slice(0, raw.indexOf(text));
+    const tail = raw.slice(raw.indexOf(text) + text.length);
+    let out = dict.exact.get(text);
+    if (out === undefined) out = dict.patterns.get(normRuntime(text));
+    if (out === undefined) continue;
+    if (out === text) continue;
+    node.nodeValue = lead + out + tail;
+  }
+}
 const LANGUAGES = [
   { code: "en", flag: "🇺🇸", name: "English", native: "English", note: "US, NG, IN, PH" },
   { code: "es", flag: "🇪🇸", name: "Spanish", native: "Español", note: "España" },
@@ -6309,6 +6386,8 @@ load().then((d) => {
   }
   fixLocaleLinks();
   updateRailEdges();
+  try { translateRuntime(); } catch (_) {}
+  try { startRuntimeTranslation(); } catch (_) {}
   reveal();
   /* Chart entrance: bars grow, donuts sweep, KPIs tick on visibility — one shared
      boot observer, same pattern as the timeline .tl-reveal wiring. */

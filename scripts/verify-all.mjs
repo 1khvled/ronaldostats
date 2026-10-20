@@ -42,6 +42,7 @@ step(run(process.execPath, ["scripts/merge-goal-source.mjs"], "goal source recon
 step(run(process.execPath, ["scripts/extract-shell-strings.mjs"], "shell strings"), "shell string extraction");
 step(run(process.execPath, ["scripts/generate-i18n-pages.mjs"], "localized pages"), "localized page generation");
 step(run(process.execPath, ["scripts/verify-all-i18n.cjs"], "i18n audit"), "i18n audit");
+step(run(process.execPath, ["scripts/check-runtime-i18n.mjs"], "runtime i18n"), "runtime i18n");
 step(run(process.execPath, ["scripts/smoke-i18n.mjs"], "i18n runtime smoke test"), "i18n runtime smoke test");
 step(run(process.execPath, ["scripts/audit-adsense.mjs"], "adsense audit"), "adsense audit");
 step(run(process.execPath, ["scripts/audit-wc-splits.mjs"], "world cup audit"), "world cup splits audit");
