@@ -188,7 +188,7 @@ export const TIMELINE = {
   empty: (val, total) => `Nothing matches “${val}” — clear the search to see all ${total} milestones.`,
   tagRecord: "Record", tagWc: "World Cup", tagFirst: "First",
   faq: [
-    ["When did Ronaldo make his senior debut?", "For <b>Sporting CP</b> on <b>14 August 2002</b> against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense."],
+    ["When did Ronaldo make his senior debut?", "For <b>Sporting CP</b> on <b>14 August 2002</b> against Inter in the Champions League third qualifying round, aged 17; his first senior goals came seven weeks later against Moreirense."],
     ["When did Ronaldo score his first goal?", "His first Portugal goal was a header against <b>Greece at Euro 2004</b>; his first Manchester United goal that same year was a free kick against Portsmouth."],
     ["When did Ronaldo win the Champions League?", "First in <b>2008</b> with Manchester United, then four times in a row with Real Madrid in <b>2014, 2016, 2017 and 2018</b>."],
     ["When did Ronaldo move to Real Madrid?", "In <b>June 2009</b>, for a then world-record fee — with 80,000 in the Bernabéu for the presentation."],

@@ -135,7 +135,16 @@ function localizeHtml(html, lang, slug, dict) {
   out = out.replace(/"contentUrl"\s*:\s*"https:\/\/www\.ronaldostats\.site\/[^"]*"/g, `"contentUrl": "${ORIGIN}/${lang}${path}"`);
 
   // 7. internal links
-  out = out.replace(/href="\/(?:en|es|pt|fr|ar|bn|hi|ro|uz)(\/[^"]*)?"/g, (m, rest) => `href="/${lang}${rest || ""}"`);
+  // The programmatic date pages exist in English only: one canonical URL per
+  // date (the same rule the language switcher and the ?date= redirect in
+  // vercel.json follow), so their links keep pointing at /en/birthday/MM-DD.
+  // Rewriting them to /es/birthday/MM-DD produced thousands of links to
+  // pages the build never writes - every one of them a 404.
+  const isDatePage = /^\/birthday\/\d{1,2}-\d{1,2}$/;
+  out = out.replace(/href="\/(?:en|es|pt|fr|ar|bn|hi|ro|uz)(\/[^"]*)?"/g, (m, rest) => {
+    if (rest && isDatePage.test(rest)) return m;
+    return `href="/${lang}${rest || ""}"`;
+  });
   out = out.replace(/\/en\/([a-z0-9-]+)\.html/g, `/${lang}/$1.html`);
 
   // 8. the renderer is served from the site root, so the localized pages

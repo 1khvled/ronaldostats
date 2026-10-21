@@ -1321,7 +1321,9 @@ function initFanArcade() {
       setTimeout(() => {
         spinBtn.disabled = false;
         const g = LEGENDARY_GOALS[Math.floor(Math.random() * LEGENDARY_GOALS.length)];
-    const gBday = g.date ? `/${getCurrentLangCode()}/birthday/${g.date.slice(5)}` : "";
+    // The programmatic date pages exist in English only (one canonical URL per
+    // date), so the link must not carry the reader's language code.
+    const gBday = g.date ? `/en/birthday/${g.date.slice(5)}` : "";
         rouletteDisplay.innerHTML = `
           <div class="roulette-card-content">
             <div>
@@ -1661,7 +1663,8 @@ function initDedicatedRoulette() {
     } else if (g.date) {
       // the archive carries no clip of this goal: open its date in the
       // Birthday Explorer, where that date's video plays
-      window.location.href = `/${getCurrentLangCode()}/birthday/${g.date.slice(5)}`;
+      // (the date pages exist in English only - one canonical URL per date)
+      window.location.href = `/en/birthday/${g.date.slice(5)}`;
       return;
     }
     if (ytBtn) ytBtn.href = `https://www.youtube.com/results?search_query=Ronaldo+goal+${g.num}+vs+${encodeURIComponent(g.opp)}`;
@@ -4265,210 +4268,39 @@ const eraPhotos = (key, era) => {
 };
 
 
-const TIMELINE_MILESTONES = [
-  {
-    date: "14 Aug 2002",
-    year: 2002,
-    cat: "debut",
-    team: "sporting",
-    title: "Senior Debut for Sporting CP",
-    desc: "Aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade — the start of the most decorated career in modern football.",
-    stat: "Age 17y 190d",
-    badge: "Official Debut",
-    img: "/img/era/era-2002-sporting.webp",
-    alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season"
-  },
-  {
-    date: "21 Oct 2002",
-    year: 2002,
-    cat: "goal",
-    team: "sporting",
-    title: "First Senior Career Goal vs Moreirense",
-    desc: "Two months after his debut, Ronaldo opens his senior account with a goal against Moreirense in the Primeira Liga — the first of 981.",
-    stat: "Goal #1",
-    badge: "First Senior Goal ⚽"
-  },
-  {
-    date: "16 Aug 2003",
-    year: 2003,
-    cat: "transfer",
-    team: "manutd",
-    title: "Signs for Manchester United and Takes the No. 7 Shirt",
-    desc: "Ronaldo signs for £12.24m and inherits the legendary United number 7 — the shirt he has worn for the rest of his career.",
-    stat: "£12.24m",
-    badge: "Manchester United 🔴",
-    img: "/img/era/era-2004-manutd.webp",
-    alt: "Cristiano Ronaldo in the Manchester United number 7 shirt against Chelsea"
-  },
-  {
-    date: "17 Jun 2004",
-    year: 2004,
-    cat: "goal",
-    team: "portugal",
-    title: "First Portugal Goal — Header vs Greece",
-    desc: "A powerful header against Greece at Euro 2004 opens his international account, a record he extends to 146 goals in 234 caps.",
-    stat: "First Portugal goal",
-    badge: "International Goal ⚽"
-  },
-  {
-    date: "10 Dec 2008",
-    year: 2008,
-    cat: "award",
-    team: "manutd",
-    title: "Ballon d'Or at 23, Named on All 96 Ballots",
-    desc: "The first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight World Cup goals.",
-    stat: "Ballon d'Or #1",
-    badge: "1st Ballon d'Or 🌟",
-    img: "/img/era/era-2008-ballon1.webp",
-    alt: "Cristiano Ronaldo in 2008, the year of his first Ballon d'Or"
-  },
-  {
-    date: "1 Jul 2009",
-    year: 2009,
-    cat: "transfer",
-    team: "realmadrid",
-    title: "Signs for Real Madrid for a World-Record Fee",
-    desc: "Ronaldo joins Real Madrid for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He never leaves the Spanish stage until 2018.",
-    stat: "€94m",
-    badge: "Real Madrid ⚪",
-    img: "/img/era/era-2009-real.webp",
-    alt: "Kaka and Ronaldo together for Real Madrid"
-  },
-  {
-    date: "16 Jun 2013",
-    year: 2013,
-    cat: "record",
-    team: "portugal",
-    title: "Three Goals in 15 Minutes for Portugal",
-    desc: "Against Northern Ireland in a Euro 2012 qualifier, Ronaldo scores three times inside 15 minutes — the fastest international hat-trick of his career — in the season he sets his 69-goal calendar-year record.",
-    stat: "Hat-trick in 15 minutes",
-    badge: "Record Hat-trick ⚡"
-  },
-  {
-    date: "24 May 2014",
-    year: 2014,
-    cat: "trophy",
-    team: "realmadrid",
-    title: "La Décima — The Last-Gasp Penalty in Lisbon",
-    desc: "Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.",
-    stat: "La Décima 🏆",
-    badge: "10th European Cup"
-  },
-  {
-    date: "4 May 2015",
-    year: 2015,
-    cat: "record",
-    team: "realmadrid",
-    title: "500th Career Goal and Champions League Top Scorer",
-    desc: "His 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer — a record he still holds.",
-    stat: "Goal #500",
-    badge: "500 Goals ⚡",
-    img: "/img/era/era-2013-ballon3.webp",
-    alt: "Cristiano Ronaldo in the Portugal number 7 shirt"
-  },
-  {
-    date: "10 Jul 2016",
-    year: 2016,
-    cat: "trophy",
-    team: "portugal",
-    title: "EURO 2016 Champion as Portugal's Captain",
-    desc: "Ronaldo lifts the European Championship in Paris as captain, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.",
-    stat: "Euro 2016 🏆",
-    badge: "European Champion",
-    img: "/img/cab-copa.webp",
-    alt: "Cristiano Ronaldo in the Portugal number 7 shirt, captaining"
-  },
-  {
-    date: "30 Oct 2017",
-    year: 2017,
-    cat: "award",
-    team: "realmadrid",
-    title: "Fifth Ballon d'Or and a 100th Champions League Goal",
-    desc: "A hat-trick against Bayern Munich takes him past 100 Champions League goals; a month later he collects his fifth Ballon d'Or in Paris.",
-    stat: "Ballon d'Or #5",
-    badge: "5th Ballon d'Or 🌟",
-    img: "/img/era/era-2016-ballon5.webp",
-    alt: "Cristiano Ronaldo in the Portugal number 7 shirt, celebrating"
-  },
-  {
-    date: "10 Jul 2018",
-    year: 2018,
-    cat: "transfer",
-    team: "juventus",
-    title: "Signs for Juventus at 33",
-    desc: "Ronaldo joins Juventus for €100m and wins two Serie A titles in three seasons, becoming the first player to win the top-scorer award in three different leagues.",
-    stat: "€100m",
-    badge: "Juventus 🐂",
-    img: "/img/era/era-2018-juve.webp",
-    alt: "Cristiano Ronaldo presented as a Juventus player in 2018"
-  },
-  {
-    date: "14 Oct 2019",
-    year: 2019,
-    cat: "goal",
-    team: "portugal",
-    title: "The 700th Goal of His Career",
-    desc: "Ronaldo reaches 700 senior goals against Ukraine, having already topped the Nations League scoring charts at the Finals — and finishes the year as Portugal's all-time top scorer.",
-    stat: "Goal #700",
-    badge: "700 Goals ⚽"
-  },
-  {
-    date: "22 Feb 2020",
-    year: 2020,
-    cat: "record",
-    team: "juventus",
-    title: "1,000th Senior Appearance",
-    desc: "Ronaldo plays his 1,000th senior match for Juventus against Cagliari, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.",
-    stat: "1,000 appearances",
-    badge: "1,000th Appearance 📜"
-  },
-  {
-    date: "11 Sep 2021",
-    year: 2021,
-    cat: "transfer",
-    team: "manutd",
-    title: "The Return to Manchester United",
-    desc: "Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 27 goals in a single season.",
-    stat: "2nd spell",
-    badge: "Man United Return 🔴",
-    img: "/img/era/era-2021-manutd.webp",
-    alt: "Cristiano Ronaldo returning to Manchester United in 2021"
-  },
-  {
-    date: "5 Sep 2024",
-    year: 2024,
-    cat: "goal",
-    team: "portugal",
-    title: "The 900th Goal of His Career",
-    desc: "A converted penalty against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals — the first player to score 40 or more goals in 13 different calendar years.",
-    stat: "Goal #900",
-    badge: "900 Goals ⚽"
-  },
-  {
-    date: "26 May 2025",
-    year: 2025,
-    cat: "record",
-    team: "alnassr",
-    title: "800th Club Goal and the 100th for Al Nassr",
-    desc: "Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40.",
-    stat: "800 club goals",
-    badge: "800 Club Goals ⚡",
-    img: "/img/era/era-2023-alnassr.webp",
-    alt: "Cristiano Ronaldo in the Al Nassr number 7 shirt"
-  },
-  {
-    date: "12 Oct 2026",
-    year: 2026,
-    cat: "goal",
-    team: "alnassr",
-    title: "Goal #981 — The Last of a Record Career",
-    desc: "Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances.",
-    stat: "Goal #981",
-    badge: "981 Career Goals ⚽",
-    img: "/img/era/era-2026-record.webp",
-    alt: "Cristiano Ronaldo in the Portugal number 7 shirt at the 2026 World Cup"
+/**
+ * The milestone copy lives in the page shell, not here.
+ *
+ * The shell (timeline.html) is the i18n source: its copy is translated at
+ * build time into every language, so reading it back here gives the stream
+ * the same localised copy the reader sees without JavaScript. One copy of
+ * the facts, and the timeline can never drift away from the chapters.
+ */
+function readMilestones() {
+  const text = (n) => (n ? n.textContent.replace(/\s+/g, " ").trim() : "");
+  const list = [];
+  for (const li of document.querySelectorAll("#chapters .tl-milestone")) {
+    const descNode = [...li.childNodes].find((n) => n.nodeType === 3 && text(n));
+    const badgeEl = li.querySelector(".tl-badge");
+    list.push({
+      key: li.dataset.key || "",
+      date: text(li.querySelector(".tl-date")),
+      iso: li.dataset.date || "",
+      year: Number(li.dataset.year) || 0,
+      cat: li.dataset.cat || "goal",
+      team: li.dataset.team || "",
+      title: text(li.querySelector("b")),
+      desc: text(descNode),
+      stat: text(li.querySelector(".tl-stat")),
+      badge: badgeEl ? badgeEl.innerHTML.trim() : "",
+      badgeText: text(badgeEl),
+      img: li.dataset.img || "",
+      alt: li.dataset.label || "",
+    });
   }
-];
+  list.sort((a, b) => a.iso.localeCompare(b.iso));
+  return list;
+};
 
 function renderTimeline(d) {
   const lang = getLang();
@@ -4523,18 +4355,20 @@ function renderTimeline(d) {
     }
   };
 
+  const MILESTONES = readMilestones();
+
   const catCounts = {
-    all: TIMELINE_MILESTONES.length,
-    trophy: TIMELINE_MILESTONES.filter(m => m.cat === "trophy").length,
-    award: TIMELINE_MILESTONES.filter(m => m.cat === "award").length,
-    goal: TIMELINE_MILESTONES.filter(m => m.cat === "goal").length,
-    record: TIMELINE_MILESTONES.filter(m => m.cat === "record").length,
-    sporting: TIMELINE_MILESTONES.filter(m => m.team === "sporting").length,
-    manutd: TIMELINE_MILESTONES.filter(m => m.team === "manutd").length,
-    realmadrid: TIMELINE_MILESTONES.filter(m => m.team === "realmadrid").length,
-    juventus: TIMELINE_MILESTONES.filter(m => m.team === "juventus").length,
-    alnassr: TIMELINE_MILESTONES.filter(m => m.team === "alnassr").length,
-    portugal: TIMELINE_MILESTONES.filter(m => m.team === "portugal").length
+    all: MILESTONES.length,
+    trophy: MILESTONES.filter(m => m.cat === "trophy").length,
+    award: MILESTONES.filter(m => m.cat === "award").length,
+    goal: MILESTONES.filter(m => m.cat === "goal").length,
+    record: MILESTONES.filter(m => m.cat === "record").length,
+    sporting: MILESTONES.filter(m => m.team === "sporting").length,
+    manutd: MILESTONES.filter(m => m.team === "manutd").length,
+    realmadrid: MILESTONES.filter(m => m.team === "realmadrid").length,
+    juventus: MILESTONES.filter(m => m.team === "juventus").length,
+    alnassr: MILESTONES.filter(m => m.team === "alnassr").length,
+    portugal: MILESTONES.filter(m => m.team === "portugal").length
   };
 
   const filterLabels = {
@@ -4593,8 +4427,8 @@ function renderTimeline(d) {
   if (chaptersEl) {
     chaptersEl.innerHTML = `
       <div class="tl-stream" id="tl-stream">
-        ${TIMELINE_MILESTONES.map((m) => `
-          <article class="tl-card tl-reveal in" data-cat="${m.cat}" data-team="${m.team}" data-text="${esc((m.year + " " + m.date + " " + m.title + " " + m.desc + " " + m.stat + " " + m.badge + " " + m.team).toLowerCase())}">
+        ${MILESTONES.map((m) => `
+          <article class="tl-card tl-reveal in" data-cat="${m.cat}" data-team="${m.team}" data-text="${esc((m.year + " " + m.date + " " + m.title + " " + m.desc + " " + m.stat + " " + m.badgeText + " " + m.team).toLowerCase())}">
             <div class="tl-node" aria-hidden="true">${nodeIcon(m.cat)}</div>
             ${m.img ? `
             <figure class="tl-card-media">
@@ -4602,12 +4436,12 @@ function renderTimeline(d) {
             </figure>` : ""}
             <div class="tl-card-top">
               <span class="tl-date-badge">${esc(m.date)}</span>
-              <span class="tl-cat-badge tl-cat-${m.cat}">${esc(m.badge || m.cat)}</span>
+              <span class="tl-cat-badge tl-cat-${m.cat}">${m.badge || esc(m.cat)}</span>
             </div>
             <h3 class="tl-card-title">${esc(m.title)}</h3>
             <p class="tl-card-desc">${esc(m.desc)}</p>
             <div class="tl-card-footer">
-              <span class="tl-pill-stat">⭐ ${esc(m.stat)}</span>
+              <span class="tl-pill-stat"><span class="pill-ico" aria-hidden="true">⭐</span>${esc(m.stat)}</span>
               <span class="tl-pill-stat">${teamLabel(m.team)}</span>
             </div>
           </article>
@@ -4617,7 +4451,7 @@ function renderTimeline(d) {
   }
 
   // 5. Search & Category Filtering Wiring
-  const totalEvents = TIMELINE_MILESTONES.length;
+  const totalEvents = MILESTONES.length;
   const inp = el("tl-filter");
   const countEl = el("tl-count");
 

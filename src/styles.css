@@ -639,6 +639,9 @@ svg.donut circle:hover { stroke-width: 30; }
 .chapter li { padding: 10px 0; border-bottom: 1px solid var(--line-soft); font-size: 0.94rem; color: var(--ink-soft); }
 .chapter li:last-child { border-bottom: 0; }
 .chapter li b { color: var(--ink); }
+/* the milestone stream reads the stat and the badge out of these: they are
+   part of the copy, translated with it, and only shown by the card */
+.chapter li .tl-stat, .chapter li .tl-badge { display: none; }
 /* Era photos: real CC-licensed match photos. Inline object-position per photo
    keeps faces in frame; solo shots get a taller banner, pairs stay side by side. */
 body[data-page="timeline"] .ch-photos { display: flex; gap: 14px; margin: 12px 0 4px; }
@@ -7118,6 +7121,9 @@ html[dir="rtl"] .goat-verdict-box {
   line-height: 1.55;
   margin: 0 0 10px;
 }
+.tl-card-desc::first-letter { text-transform: uppercase; }
+.tl-emoji { margin-right: 3px; }
+.pill-ico { margin-right: 4px; }
 .tl-card-footer {
   display: flex;
   align-items: center;

@@ -189,7 +189,7 @@ export const TIMELINE = {
   empty: (val, total) => `Nimic nu corespunde „${val}” — golește căutarea pentru a vedea toate cele ${total} repere.`,
   tagRecord: "Record", tagWc: "Campionat Mondial", tagFirst: "Primul",
   faq: [
-    ["Când a debutat Ronaldo la seniori?", "Pentru <b>Sporting CP</b>, la <b>14 august 2002</b>, împotriva celor de la Inter, în turul trei de preliminar al Ligii Campionilor, la 17 ani; primele sale goluri la seniori au venit două luni mai târziu, împotriva celor de la Moreirense."],
+    ["Când a debutat Ronaldo la seniori?", "Pentru <b>Sporting CP</b>, la <b>14 august 2002</b>, împotriva celor de la Inter, în turul trei de preliminar al Ligii Campionilor, la 17 ani; primele sale goluri la seniori au venit șapte săptămâni mai târziu, împotriva celor de la Moreirense."],
     ["Când a marcat Ronaldo primul gol?", "Primul gol pentru Portugalia a fost un cap de gol împotriva <b>Greciei, la Euro 2004</b>; primul gol la Manchester United, în același an, a fost o lovitură liberă împotriva celor de la Portsmouth."],
     ["Când a câștigat Ronaldo prima Ligă a Campionilor?", "Prima oară în <b>2008</b>, cu Manchester United, apoi de patru ori la rând cu Real Madrid, în <b>2014, 2016, 2017 și 2018</b>."],
     ["Când a semnat Ronaldo pentru Real Madrid?", "În <b>iunie 2009</b>, pentru o sumă care era atunci record mondial — cu 80.000 de spectatori la Bernabéu la prezentare."],

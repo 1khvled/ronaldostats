@@ -275,19 +275,19 @@
   ],
   "ctx": "12 goals on 2 May  [, across six matches — the treble at Sevilla (2015), the Champions League hat-trick against Atlético Madrid (2017) and one or two goals in each of the other four.] How many days of the year has Ronaldo scored a goal?"
  },
- ", against Malmö, in the season he passed Gerd Müller to become the all-time Champions League top scorer.": {
+ ", against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.": {
   "count": 1,
   "pages": [
    "achievements"
   ],
-  "ctx": "30 Sep 2015  [, against Malmö, in the season he passed Gerd Müller to become the all-time Champions League top scorer.] When did Ronaldo score his 900th career goal?"
+  "ctx": "30 Sep 2015  [, against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.] When did Ronaldo score his 900th career goal?"
  },
- ", for Juventus against Cagliari.": {
+ ", for Juventus against SPAL.": {
   "count": 1,
   "pages": [
    "achievements"
   ],
-  "ctx": "22 February 2020  [, for Juventus against Cagliari.] Frequently Asked Questions: Cristiano Ronaldo Trophies"
+  "ctx": "22 February 2020  [, for Juventus against SPAL.] Frequently Asked Questions: Cristiano Ronaldo Trophies"
  },
  ", for a then world-record fee — with 80,000 in the Bernabéu for the presentation.": {
   "count": 1,
@@ -616,13 +616,20 @@
   ],
   "ctx": "2026  [1,000 goal target] 981 now"
  },
+ "1,000th Appearance": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "📜  [1,000th Appearance] The Manchester United return"
+ },
  "1,000th senior appearance": {
-  "count": 2,
+  "count": 3,
   "pages": [
    "dashboard",
    "timeline"
   ],
-  "ctx": "Goal #1,000 (appearance)  [1,000th senior appearance] Cagliari"
+  "ctx": "Goal #1,000 (appearance)  [1,000th senior appearance] SPAL"
  },
  "1,106 club, 234 Portugal.": {
   "count": 1,
@@ -702,13 +709,6 @@
   ],
   "ctx": "[attr title]"
  },
- "10 Dec 2008": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.  [10 Dec 2008] Ballon d'Or at 23, named on all 96 ballots"
- },
  "10 December: 1 goal": {
   "count": 1,
   "pages": [
@@ -735,7 +735,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.  [10 Jul 2016] EURO 2016 champion as Portugal's captain"
+  "ctx": "Record Hat-trick  [10 Jul 2016] EURO 2016 champion as Portugal's captain"
  },
  "10 Jul 2018": {
   "count": 1,
@@ -912,6 +912,13 @@
   ],
   "ctx": "October  [109 goals] 1"
  },
+ "10th European Cup": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "🏆  [10th European Cup] 30 Sep 2015"
+ },
  "11 April: 7 goals": {
   "count": 1,
   "pages": [
@@ -1038,6 +1045,13 @@
   ],
   "ctx": "[attr title]"
  },
+ "12 Aug 2003": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named the world's best player at 23 — on 77 of 96 ballots.  [12 Aug 2003] Sign"
+ },
  "12 August: 2 goals": {
   "count": 1,
   "pages": [
@@ -1081,9 +1095,10 @@
   "ctx": "🇥🇹 First Portugal Goal  [12 Jun] Portugal’s First"
  },
  "12 Jun 2004": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "dashboard"
+   "dashboard",
+   "timeline"
   ],
   "ctx": "Greece  [12 Jun 2004] 19y 128d"
  },
@@ -1121,6 +1136,14 @@
    "birthday"
   ],
   "ctx": "[attr title]"
+ },
+ "12 Oct 2026": {
+  "count": 2,
+  "pages": [
+   "dashboard",
+   "timeline"
+  ],
+  "ctx": "Al Nassr  [12 Oct 2026] 41y 249d"
  },
  "12 October 2026": {
   "count": 1,
@@ -1269,12 +1292,20 @@
   ],
   "ctx": "[attr title]"
  },
+ "14 Aug 2002": {
+  "count": 3,
+  "pages": [
+   "dashboard",
+   "timeline"
+  ],
+  "ctx": "Inter (Champions League third qualifying round)  [14 Aug 2002] 17y 190d"
+ },
  "14 August 2002": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "on  [14 August 2002] against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense."
+  "ctx": "on  [14 August 2002] against Inter in the Champions League third qualifying round, aged 17; his first senior goals came seven weeks later against Moreirense."
  },
  "14 August: 2 goals": {
   "count": 1,
@@ -1596,21 +1627,6 @@
   ],
   "ctx": "[attr title]"
  },
- "16 Aug 2002": {
-  "count": 3,
-  "pages": [
-   "dashboard",
-   "timeline"
-  ],
-  "ctx": "PSV Eindhoven (Champions League qualifying)  [16 Aug 2002] 17y 192d"
- },
- "16 Aug 2003": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named the world's best player at 23 — on all 96 ballots.  [16 Aug 2003] Signs "
- },
  "16 August: 0 goals": {
   "count": 1,
   "pages": [
@@ -1772,12 +1788,19 @@
   ],
   "ctx": "[attr title]"
  },
- "17y 192d": {
+ "17y 190d": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
-  "ctx": "16 Aug 2002  [17y 192d] 1"
+  "ctx": "14 Aug 2002  [17y 190d] 1"
+ },
+ "18 Apr 2017": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "500 Goals  [18 Apr 2017] Fifth Ballon d'Or and a 100th Champions League goal"
  },
  "18 April: 6 goals": {
   "count": 1,
@@ -2003,6 +2026,13 @@
   ],
   "ctx": "12 Jun 2004  [19y 128d] —"
  },
+ "1st Ballon d'Or": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "🌟  [1st Ballon d'Or] Real Madrid"
+ },
  "1–2 goals": {
   "count": 1,
   "pages": [
@@ -2023,6 +2053,13 @@
    "birthday"
   ],
   "ctx": "[attr title]"
+ },
+ "2 Dec 2008": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "International Goal  [2 Dec 2008] Ballon d'Or at 23, named on 77 of 96 ballots"
  },
  "2 December: 3 goals": {
   "count": 1,
@@ -2562,14 +2599,14 @@
    "dashboard",
    "timeline"
   ],
-  "ctx": "Cagliari  [22 Feb 2020] 35y 17d"
+  "ctx": "SPAL  [22 Feb 2020] 35y 17d"
  },
  "22 February 2020": {
   "count": 1,
   "pages": [
    "achievements"
   ],
-  "ctx": "On  [22 February 2020] , for Juventus against Cagliari."
+  "ctx": "On  [22 February 2020] , for Juventus against SPAL."
  },
  "22 February: 5 goals": {
   "count": 1,
@@ -2807,7 +2844,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.  [24 May 2014] La Décima — the last-gasp penalty in Lisbon"
+  "ctx": "Real Madrid  [24 May 2014] La Décima — the last-gasp penalty in Lisbon"
  },
  "24 May: 1 goal": {
   "count": 1,
@@ -3363,6 +3400,13 @@
   ],
   "ctx": "[attr title]"
  },
+ "2nd spell": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 24 goals in all competitions that season.  [2nd spell] 🔴"
+ },
  "3 April: 6 goals": {
   "count": 1,
   "pages": [
@@ -3530,13 +3574,6 @@
    "birthday"
   ],
   "ctx": "[attr title]"
- },
- "30 Oct 2017": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "— his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds.  [30 Oct 2017] Fifth Ballon d'Or and a 100th Champions League goal"
  },
  "30 October: 7 goals": {
   "count": 1,
@@ -3878,12 +3915,12 @@
   ],
   "ctx": "23 Aug 2025  [40y 199d] —"
  },
- "41y 246d": {
+ "41y 249d": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
-  "ctx": "9 Oct 2026  [41y 246d] 1,340"
+  "ctx": "12 Oct 2026  [41y 249d] 1,340"
  },
  "42 assists": {
   "count": 1,
@@ -4133,6 +4170,13 @@
   ],
   "ctx": "June  [50 goals] 1"
  },
+ "500 Goals": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚡  [500 Goals] 18 Apr 2017"
+ },
  "500th career goal": {
   "count": 1,
   "pages": [
@@ -4145,7 +4189,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "30 Sep 2015  [500th career goal and Champions League top scorer] — his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds."
+  "ctx": "30 Sep 2015  [500th career goal and Champions League top scorer] — his 500th goal arrives against Malmö in the season he passes Messi to become the all-time Champions League top scorer, a record he still holds."
  },
  "5G": {
   "count": 1,
@@ -4153,6 +4197,13 @@
    "dashboard"
   ],
   "ctx": "Sporting CP  [5G] Portugal"
+ },
+ "5th Ballon d'Or": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "🌟  [5th Ballon d'Or] The Ballon d'Or years"
  },
  "6 April: 2 goals": {
   "count": 1,
@@ -4433,7 +4484,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.  [7 Oct 2002] First senior career goal vs Moreirense"
+  "ctx": "Official Debut  [7 Oct 2002] First senior career goal vs Moreirense"
  },
  "7 October": {
   "count": 1,
@@ -4469,6 +4520,13 @@
    "goalsbyseason"
   ],
   "ctx": "2  [7 apps, 2 goals &middot; 4 apps, 0 goals] 2004"
+ },
+ "700 Goals": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚽  [700 Goals] 22 Feb 2020"
  },
  "700th career goal": {
   "count": 1,
@@ -4596,19 +4654,27 @@
   ],
   "ctx": "[attr title]"
  },
- "800th club goal": {
-  "count": 1,
-  "pages": [
-   "dashboard"
-  ],
-  "ctx": "Goal #800 (club)  [800th club goal] Al Fateh"
- },
- "800th club goal and the 100th for Al Nassr": {
+ "800 Club Goals": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "26 May 2025  [800th club goal and the 100th for Al Nassr] — Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40."
+  "ctx": "⚡  [800 Club Goals] 12 Oct 2026"
+ },
+ "800th club goal": {
+  "count": 2,
+  "pages": [
+   "dashboard",
+   "timeline"
+  ],
+  "ctx": "Goal #800 (club)  [800th club goal] Al Fateh"
+ },
+ "800th club goal for Al Nassr": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "26 May 2025  [800th club goal for Al Nassr] — Ronaldo scores his 800th goal for a club against Al Fateh; two months later he becomes the first player to reach 100 goals for four different clubs, aged 40."
  },
  "81.2% non-penalty ratio (open play & free kicks)": {
   "count": 1,
@@ -4729,14 +4795,6 @@
   ],
   "ctx": "[attr title]"
  },
- "9 Oct 2026": {
-  "count": 2,
-  "pages": [
-   "dashboard",
-   "timeline"
-  ],
-  "ctx": "Al Nassr  [9 Oct 2026] 41y 246d"
- },
  "9 October 2026": {
   "count": 3,
   "pages": [
@@ -4856,6 +4914,13 @@
   ],
   "ctx": "📜 Certified World Records &amp; Historic Milestones  [900 Career Goals] (5 September 2024): the first player to reach 900 in official senior football. Track the"
  },
+ "900 Goals": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚽  [900 Goals] 26 May 2025"
+ },
  "900th career goal": {
   "count": 1,
   "pages": [
@@ -4904,6 +4969,13 @@
    "latest-goal"
   ],
   "ctx": "[attr aria-label]"
+ },
+ "981 Career Goals": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚽  [981 Career Goals] Advertisement"
  },
  "981 Goals · 35 Trophies · 5 Ballons d'Or · 140 Champions League Goals": {
   "count": 1,
@@ -5103,12 +5175,12 @@
   ],
   "ctx": "Five  [: 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid.] Visual Trophy Cabinet"
  },
- ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on all 96 ballots.": {
+ ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.": {
   "count": 1,
   "pages": [
    "achievements"
   ],
-  "ctx": "Five times  [: 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on all 96 ballots.] How many Champions League titles has Ronaldo won?"
+  "ctx": "Five times  [: 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.] How many Champions League titles has Ronaldo won?"
  },
  ": 3 goals for Sporting CP.": {
   "count": 1,
@@ -5503,6 +5575,13 @@
    "dashboard"
   ],
   "ctx": "Goals at Every Age: From Age 17 Debut to Present Day  [Age 17 &middot; 2002] 5"
+ },
+ "Age 17y 190d": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.  [Age 17y 190d] Official Debut"
  },
  "Age 18 &middot; 2003": {
   "count": 1,
@@ -6001,7 +6080,21 @@
    "achievements",
    "timeline"
   ],
-  "ctx": "2008  [Ballon d'Or] at 23, named on all 96 ballots, with the Champions League and the FIFA Club World Cup."
+  "ctx": "2008  [Ballon d'Or] at 23, named on 77 of 96 ballots, with the Champions League and the FIFA Club World Cup."
+ },
+ "Ballon d'Or #1": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight goals in Euro 2008 qualifying.  [Ballon d'Or #1] 🌟"
+ },
+ "Ballon d'Or #5": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— a hat-trick against Bayern Munich takes him past 100 Champions League goals; in December he collects his fifth Ballon d'Or in Paris.  [Ballon d'Or #5] 🌟"
  },
  "Ballon d'Or Awards": {
   "count": 1,
@@ -6010,12 +6103,12 @@
   ],
   "ctx": "Messi (+11 trophies)  [Ballon d'Or Awards] 5"
  },
- "Ballon d'Or at 23, named on all 96 ballots": {
+ "Ballon d'Or at 23, named on 77 of 96 ballots": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "10 Dec 2008  [Ballon d'Or at 23, named on all 96 ballots] — the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight World Cup goals."
+  "ctx": "2 Dec 2008  [Ballon d'Or at 23, named on 77 of 96 ballots] — the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight goals in Euro 2008 qualifying."
  },
  "Ballon d'Or — 5": {
   "count": 1,
@@ -6222,13 +6315,6 @@
    "gear"
   ],
   "ctx": "Footwear &amp; Cleats  [CR7 Signature Match Boots] The photograph is the listing's own image on Amazon"
- },
- "Cagliari": {
-  "count": 1,
-  "pages": [
-   "dashboard"
-  ],
-  "ctx": "1,000th senior appearance  [Cagliari] 22 Feb 2020"
  },
  "Career Assists": {
   "count": 1,
@@ -7137,6 +7223,27 @@
   ],
   "ctx": "[attr alt]"
  },
+ "Cristiano Ronaldo in the Portugal number 7 shirt, captaining his country": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo in the Portugal number 7 shirt, celebrating": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo in the Portugal number 7 shirt, in the year of his third Ballon d'Or": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo in the Real Madrid number 7 shirt, in a La Liga he won twice": {
   "count": 1,
   "pages": [
@@ -7817,6 +7924,20 @@
   ],
   "ctx": "Advertisement  [Essential Trophy &amp; Award Facts] How many trophies has Ronaldo won?"
  },
+ "Euro 2016": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— Ronaldo lifts the European Championship in Paris, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.  [Euro 2016] 🏆"
+ },
+ "European Champion": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "🏆  [European Champion] Juventus"
+ },
  "European Championship": {
   "count": 1,
   "pages": [
@@ -8107,7 +8228,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "30 Oct 2017  [Fifth Ballon d'Or and a 100th Champions League goal] — a hat-trick against Bayern Munich takes him past 100 Champions League goals; a month later he collects his fifth Ballon d'Or in Paris."
+  "ctx": "18 Apr 2017  [Fifth Ballon d'Or and a 100th Champions League goal] — a hat-trick against Bayern Munich takes him past 100 Champions League goals; in December he collects his fifth Ballon d'Or in Paris."
  },
  "Fifth title, won by a record 3-1 margin over Liverpool": {
   "count": 1,
@@ -8211,6 +8332,27 @@
   ],
   "ctx": "8  [First European title and the competition's top scorer] 2008/09"
  },
+ "First Portugal goal": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— a stoppage-time header against Greece in the Euro 2004 group stage opens his international account, a record he extends to 146 goals in 234 caps.  [First Portugal goal] ⚽"
+ },
+ "First Portugal goal — header against Greece": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "12 Jun 2004  [First Portugal goal — header against Greece] — a stoppage-time header against Greece in the Euro 2004 group stage opens his international account, a record he extends to 146 goals in 234 caps."
+ },
+ "First Senior Goal": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚽  [First Senior Goal] Manchester United"
+ },
  "First Spanish Trophy": {
   "count": 1,
   "pages": [
@@ -8258,7 +8400,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "7 Oct 2002  [First senior career goal vs Moreirense] — two months after his debut, Ronaldo opens his senior account in the Primeira Liga: the first of 981."
+  "ctx": "7 Oct 2002  [First senior career goal vs Moreirense] — seven weeks after his debut, Ronaldo opens his senior account with two goals against Moreirense in the Primeira Liga: the first of 981."
  },
  "First to 100 goals for four clubs": {
   "count": 1,
@@ -8314,7 +8456,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": "▾  [Five times] : 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on all 96 ballots."
+  "ctx": "▾  [Five times] : 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots."
  },
  "Follow @messistat1 on X": {
   "count": 12,
@@ -8468,7 +8610,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": ", for Juventus against Cagliari.  [Frequently Asked Questions: Cristiano Ronaldo Trophies] What is Ronaldo's most important trophy?"
+  "ctx": ", for Juventus against SPAL.  [Frequently Asked Questions: Cristiano Ronaldo Trophies] What is Ronaldo's most important trophy?"
  },
  "Frequently Asked Questions: Ronaldo Birthday Goals": {
   "count": 1,
@@ -8565,9 +8707,10 @@
   "ctx": "Detailed breakdown of Cristiano Ronaldo's most recent 5 official goals with exact date, scoring minute, opponent, competition and finish type:  [Goal #] Date"
  },
  "Goal #1": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "dashboard"
+   "dashboard",
+   "timeline"
   ],
   "ctx": "Matches  [Goal #1] Senior debut for Sporting CP"
  },
@@ -8593,16 +8736,18 @@
   "ctx": "1  [Goal #12] First international goal, Euro 2004"
  },
  "Goal #500": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "dashboard"
+   "dashboard",
+   "timeline"
   ],
   "ctx": "—  [Goal #500] 500th career goal"
  },
  "Goal #700": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "dashboard"
+   "dashboard",
+   "timeline"
   ],
   "ctx": "—  [Goal #700] 700th career goal"
  },
@@ -8614,9 +8759,10 @@
   "ctx": "—  [Goal #800 (club)] 800th club goal"
  },
  "Goal #900": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "dashboard"
+   "dashboard",
+   "timeline"
   ],
   "ctx": "1,000  [Goal #900] First player to 900 career goals"
  },
@@ -8649,12 +8795,13 @@
   "ctx": "Right Foot  [Goal #980] vs Al-Diriyah FC"
  },
  "Goal #981": {
-  "count": 4,
+  "count": 5,
   "pages": [
    "dashboard",
-   "latest-goal"
+   "latest-goal",
+   "timeline"
   ],
-  "ctx": "—  [Goal #981] Last senior goal, Saudi Pro League"
+  "ctx": "—  [Goal #981] Last senior goal, AFC Champions League Elite"
  },
  "Goal #981 (42')": {
   "count": 1,
@@ -8668,7 +8815,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "9 Oct 2026  [Goal #981 — the last of a record career] — Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances."
+  "ctx": "12 Oct 2026  [Goal #981 — the last of a record career] — Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the AFC Champions League Elite against Neftchi Fergana, closing a career of 981 goals in 1,340 appearances."
  },
  "Goal #981: Al Nassr v Al-Diriyah FC": {
   "count": 1,
@@ -8972,6 +9119,13 @@
   ],
   "ctx": "1,242 G+A (0.93 / match)  [Hat-Tricks:] 66"
  },
+ "Hat-trick in 15 minutes": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.  [Hat-trick in 15 minutes] ⚡"
+ },
  "Hat-tricks": {
   "count": 1,
   "pages": [
@@ -8979,7 +9133,7 @@
   ],
   "ctx": "66  [Hat-tricks] for club and country (provisional compiled tally)."
  },
- "He joined Juventus at 33 for €100m, scored a hat-trick in his first Champions League game there and took two Serie A titles in three seasons. The Nations League title came in June 2019 and the 700th goal of his career followed against Ukraine in October; in February 2020 he played his 1,000th senior appearance against Cagliari.": {
+ "He joined Juventus at 33 for €100m, scored a hat-trick in his first Champions League game there and took two Serie A titles in three seasons. The Nations League title came in June 2019 and the 700th goal of his career followed against Ukraine in October; in February 2020 he played his 1,000th senior appearance against SPAL.": {
   "count": 1,
   "pages": [
    "timeline"
@@ -9220,7 +9374,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on all 96 ballots.  [How many Champions League titles has Ronaldo won?] ▾"
+  "ctx": ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.  [How many Champions League titles has Ronaldo won?] ▾"
  },
  "How many Champions Leagues has Ronaldo won?": {
   "count": 1,
@@ -9425,6 +9579,13 @@
   ],
   "ctx": "2019, 2025  [Individual honours — 17 award types] Ballon d'Or"
  },
+ "Inter (Champions League third qualifying round)": {
+  "count": 1,
+  "pages": [
+   "dashboard"
+  ],
+  "ctx": "Senior debut for Sporting CP  [Inter (Champions League third qualifying round)] 14 Aug 2002"
+ },
  "Interactive Dashboard": {
   "count": 3,
   "pages": [
@@ -9460,6 +9621,13 @@
    "ronaldo-vs-messi"
   ],
   "ctx": "— Free Live Football Streams  [International Editions / Idiomas] English (US, NG, IN, PH)"
+ },
+ "International Goal": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚽  [International Goal] 2 Dec 2008"
  },
  "International Goals": {
   "count": 1,
@@ -9579,7 +9747,7 @@
   "ctx": "In  [June 2009] , for a then world-record fee — with 80,000 in the Bernabéu for the presentation."
  },
  "Juventus": {
-  "count": 22,
+  "count": 23,
   "pages": [
    "champions-league",
    "dashboard",
@@ -9625,7 +9793,7 @@
   "ctx": "[attr aria-label]"
  },
  "Kaka and Ronaldo celebrating together for Real Madrid": {
-  "count": 1,
+  "count": 3,
   "pages": [
    "timeline"
   ],
@@ -9643,7 +9811,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "Golden Shoes  [Key Career Milestone Dates (2002–2026)] 16 Aug 2002"
+  "ctx": "Golden Shoes  [Key Career Milestone Dates (2002–2026)] 14 Aug 2002"
  },
  "King's Cup": {
   "count": 1,
@@ -9678,18 +9846,19 @@
   "ctx": "Latest Goal  [LIVE ⚡] Birthday Goals"
  },
  "La Décima": {
-  "count": 1,
+  "count": 2,
   "pages": [
-   "real-madrid"
+   "real-madrid",
+   "timeline"
   ],
-  "ctx": "2014 · Champions League Final  [La Décima] The last-gasp extra-time penalty against Atlético in Lisbon, a record 17 Champions League goals in that season, and the first of the four European crowns he won at Real Madrid."
+  "ctx": "— Ronaldo converts the extra-time penalty at the Estádio da Luz to win a 4–1 Champions League final after extra time, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.  [La Décima] 🏆"
  },
  "La Décima — the last-gasp penalty in Lisbon": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "24 May 2014  [La Décima — the last-gasp penalty in Lisbon] — Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season."
+  "ctx": "24 May 2014  [La Décima — the last-gasp penalty in Lisbon] — Ronaldo converts the extra-time penalty at the Estádio da Luz to win a 4–1 Champions League final after extra time, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season."
  },
  "La Liga": {
   "count": 5,
@@ -9736,12 +9905,12 @@
   ],
   "ctx": "Advertisement  [Landmarks of the Real Madrid Years] 2011 · Copa del Rey Final"
  },
- "Last senior goal, Saudi Pro League": {
+ "Last senior goal, AFC Champions League Elite": {
   "count": 1,
   "pages": [
    "dashboard"
   ],
-  "ctx": "Goal #981  [Last senior goal, Saudi Pro League] Al Nassr"
+  "ctx": "Goal #981  [Last senior goal, AFC Champions League Elite] Al Nassr"
  },
  "Latest Goal": {
   "count": 24,
@@ -9904,6 +10073,13 @@
   ],
   "ctx": "500th career goal  [Malmö] 30 Sep 2015"
  },
+ "Man United Return": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "🔴  [Man United Return] Al Nassr"
+ },
  "Manchester City (2007), Arsenal (2009), Mallorca (2010), Granada (2012), Juventus (2015)": {
   "count": 1,
   "pages": [
@@ -9912,7 +10088,7 @@
   "ctx": "1.60  [Manchester City (2007), Arsenal (2009), Mallorca (2010), Granada (2012), Juventus (2015)] View Matches"
  },
  "Manchester United": {
-  "count": 39,
+  "count": 40,
   "pages": [
    "champions-league",
    "dashboard",
@@ -10348,6 +10524,13 @@
   ],
   "ctx": "82  [Off-season &amp; breaks] Most Lethal Day"
  },
+ "Official Debut": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "Age 17y 190d  [Official Debut] 7 Oct 2002"
+ },
  "Official Matchwear": {
   "count": 3,
   "pages": [
@@ -10469,13 +10652,6 @@
    "ronaldo-vs-messi"
   ],
   "ctx": "Română (România)  [Oʻzbekcha (Oʻzbekiston)] Follow @messistat1 on X"
- },
- "PSV Eindhoven (Champions League qualifying)": {
-  "count": 1,
-  "pages": [
-   "dashboard"
-  ],
-  "ctx": "Senior debut for Sporting CP  [PSV Eindhoven (Champions League qualifying)] 16 Aug 2002"
  },
  "PT-11": {
   "count": 1,
@@ -10856,7 +11032,7 @@
   "ctx": "1.60  [Reading (2006), Middlesbrough (2008), Villarreal (2009), Elche (2014), Frosinone (2018)] View Matches"
  },
  "Real Madrid": {
-  "count": 45,
+  "count": 46,
   "pages": [
    "champions-league",
    "dashboard",
@@ -10974,6 +11150,13 @@
    "dashboard"
   ],
   "ctx": "2014/15  [Record 61G] Real Madrid"
+ },
+ "Record Hat-trick": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "⚡  [Record Hat-trick] 10 Jul 2016"
  },
  "Record single-season haul; La Décima": {
   "count": 1,
@@ -11344,42 +11527,42 @@
   "ctx": "▾  [Ronaldo holds both all-time international records with] 146 goals in 234 caps"
  },
  "Ronaldo in the Al Nassr number 7 shirt": {
-  "count": 1,
+  "count": 3,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Juventus shirt during his Serie A title season": {
-  "count": 1,
+  "count": 4,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Manchester United number 7 shirt against Chelsea": {
-  "count": 1,
+  "count": 3,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Manchester United number 7 shirt in 2008, the year of his first Ballon d'Or": {
-  "count": 1,
+  "count": 3,
   "pages": [
    "timeline"
   ],
-  "ctx": "[attr alt]"
+  "ctx": "[attr data-label]"
  },
  "Ronaldo in the Manchester United shirt during his second spell": {
-  "count": 1,
+  "count": 2,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Portugal number 7 shirt at the 2026 World Cup": {
-  "count": 1,
+  "count": 2,
   "pages": [
    "timeline"
   ],
@@ -11903,7 +12086,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "16 Aug 2002  [Senior debut for] Sporting CP"
+  "ctx": "14 Aug 2002  [Senior debut for] Sporting CP"
  },
  "Senior debut for Sporting CP": {
   "count": 2,
@@ -11911,7 +12094,7 @@
    "dashboard",
    "timeline"
   ],
-  "ctx": "Goal #1  [Senior debut for Sporting CP] PSV Eindhoven (Champions League qualifying)"
+  "ctx": "Goal #1  [Senior debut for Sporting CP] Inter (Champions League third qualifying round)"
  },
  "Senior team trophies": {
   "count": 1,
@@ -12046,7 +12229,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "16 Aug 2003  [Signs for Manchester United and takes the No. 7 shirt] — Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career."
+  "ctx": "12 Aug 2003  [Signs for Manchester United and takes the No. 7 shirt] — Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career."
  },
  "Signs for Real Madrid for a world-record fee": {
   "count": 1,
@@ -12365,14 +12548,14 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "5 Sep 2024  [The 900th goal of his career] — a converted penalty against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 13 different calendar years."
+  "ctx": "5 Sep 2024  [The 900th goal of his career] — a close-range finish against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 14 different calendar years."
  },
  "The Ballon d'Or years": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "— a hat-trick against Bayern Munich takes him past 100 Champions League goals; a month later he collects his fifth Ballon d'Or in Paris.  [The Ballon d'Or years] 2008–2017"
+  "ctx": "5th Ballon d'Or  [The Ballon d'Or years] 2008–2017"
  },
  "The Ballon d'Or years — five of them, from 2008 to 2017": {
   "count": 1,
@@ -12421,7 +12604,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "— Ronaldo plays his 1,000th senior match for Juventus against Cagliari, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.  [The Manchester United return] 2021–2022"
+  "ctx": "1,000th Appearance  [The Manchester United return] 2021–2022"
  },
  "The Manchester United return, 2021–22 — the second spell": {
   "count": 1,
@@ -12452,7 +12635,7 @@
   "ctx": "[attr alt]"
  },
  "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season": {
-  "count": 1,
+  "count": 3,
   "pages": [
    "timeline"
   ],
@@ -12546,7 +12729,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "11 Sep 2021  [The return to Manchester United] — Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 27 goals in a single season."
+  "ctx": "11 Sep 2021  [The return to Manchester United] — Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 24 goals in all competitions that season."
  },
  "The return to Old Trafford in September 2021 brought back the No. 7 shirt and 24 goals in 38 appearances in his first season back. On the international stage he passed Ali Daei to become the outright leading scorer in men's international football, with a tenth international hat-trick — a world record — and in 2022 a hat-trick against Tottenham took him past Josef Bican.": {
   "count": 1,
@@ -12928,7 +13111,7 @@
   ],
   "ctx": "Cristiano Ronaldo Stats &amp; Career Explorer  [Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013).] ← Back to stats"
  },
- "United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named the world's best player at 23 — on all 96 ballots.": {
+ "United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named the world's best player at 23 — on 77 of 96 ballots.": {
   "count": 1,
   "pages": [
    "timeline"
@@ -13201,14 +13384,14 @@
   "pages": [
    "achievements"
   ],
-  "ctx": ", against Malmö, in the season he passed Gerd Müller to become the all-time Champions League top scorer.  [When did Ronaldo score his 900th career goal?] ▾"
+  "ctx": ", against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.  [When did Ronaldo score his 900th career goal?] ▾"
  },
  "When did Ronaldo score his first goal?": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense.  [When did Ronaldo score his first goal?] ▾"
+  "ctx": "against Inter in the Champions League third qualifying round, aged 17; his first senior goals came seven weeks later against Moreirense.  [When did Ronaldo score his first goal?] ▾"
  },
  "When did Ronaldo win the Champions League?": {
   "count": 1,
@@ -13450,12 +13633,12 @@
   ],
   "ctx": "Sporting CP  [against Inter in the Champions League third qualifying round, aged 17.] 20 Aug 2003"
  },
- "against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense.": {
+ "against Inter in the Champions League third qualifying round, aged 17; his first senior goals came seven weeks later against Moreirense.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "14 August 2002  [against Inter in the Champions League third qualifying round, aged 17; his first senior goals came two months later against Moreirense.] When did Ronaldo score his first goal?"
+  "ctx": "14 August 2002  [against Inter in the Champions League third qualifying round, aged 17; his first senior goals came seven weeks later against Moreirense.] When did Ronaldo score his first goal?"
  },
  "and": {
   "count": 6,
@@ -13510,12 +13693,12 @@
   ],
   "ctx": "). Messi leads in  [assists (408 vs 261)] ,"
  },
- "at 23, named on all 96 ballots, with the Champions League and the FIFA Club World Cup.": {
+ "at 23, named on 77 of 96 ballots, with the Champions League and the FIFA Club World Cup.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Ballon d'Or  [at 23, named on all 96 ballots, with the Champions League and the FIFA Club World Cup.] 2013"
+  "ctx": "Ballon d'Or  [at 23, named on 77 of 96 ballots, with the Champions League and the FIFA Club World Cup.] 2013"
  },
  "came on": {
   "count": 1,
@@ -14197,6 +14380,13 @@
   ],
   "ctx": "in 1,340 senior appearances for club and country (0.73 goals per game). Explore his full  [year-by-year scoring breakdown] ."
  },
+ "£12.24m": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.  [£12.24m] 🔴"
+ },
  "© 2026 RonaldoStats. Not affiliated with or endorsed by Cristiano Ronaldo, Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr or the FPF.": {
   "count": 1,
   "pages": [
@@ -14281,75 +14471,75 @@
   ],
   "ctx": "Koora Live  [— Free Live Football Streams] International Editions / Idiomas"
  },
- "— Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.": {
+ "— Ronaldo converts the extra-time penalty at the Estádio da Luz to win a 4–1 Champions League final after extra time, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "La Décima — the last-gasp penalty in Lisbon  [— Ronaldo converts the stoppage-time penalty at the Estádio da Luz to win a 4–2 Champions League final, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.] 30 Sep 2015"
+  "ctx": "La Décima — the last-gasp penalty in Lisbon  [— Ronaldo converts the extra-time penalty at the Estádio da Luz to win a 4–1 Champions League final after extra time, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.] La Décima"
  },
  "— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Signs for Real Madrid for a world-record fee  [— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.] 24 May 2014"
+  "ctx": "Signs for Real Madrid for a world-record fee  [— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.] €94m"
  },
  "— Ronaldo joins for €100m and wins two Serie A titles in three seasons, becoming the first player to win the top-scorer award in three different leagues.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Signs for Juventus at 33  [— Ronaldo joins for €100m and wins two Serie A titles in three seasons, becoming the first player to win the top-scorer award in three different leagues.] 14 Oct 2019"
+  "ctx": "Signs for Juventus at 33  [— Ronaldo joins for €100m and wins two Serie A titles in three seasons, becoming the first player to win the top-scorer award in three different leagues.] €100m"
  },
  "— Ronaldo lifts the European Championship in Paris, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "EURO 2016 champion as Portugal's captain  [— Ronaldo lifts the European Championship in Paris, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.] Juventus"
+  "ctx": "EURO 2016 champion as Portugal's captain  [— Ronaldo lifts the European Championship in Paris, finishing as the tournament's second-highest scorer with three goals and taking the Silver Boot.] Euro 2016"
  },
- "— Ronaldo plays his 1,000th senior match for Juventus against Cagliari, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.": {
+ "— Ronaldo plays his 1,000th senior match for Juventus against SPAL, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "1,000th senior appearance  [— Ronaldo plays his 1,000th senior match for Juventus against Cagliari, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.] The Manchester United return"
+  "ctx": "1,000th senior appearance  [— Ronaldo plays his 1,000th senior match for Juventus against SPAL, and later in the year scores his 100th and 101st goals for Portugal in a single match against Sweden.] 1,000th senior appearance"
  },
  "— Ronaldo reaches 700 senior goals against Ukraine, having already topped the Nations League scoring charts at the Finals.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "The 700th goal of his career  [— Ronaldo reaches 700 senior goals against Ukraine, having already topped the Nations League scoring charts at the Finals.] 22 Feb 2020"
+  "ctx": "The 700th goal of his career  [— Ronaldo reaches 700 senior goals against Ukraine, having already topped the Nations League scoring charts at the Finals.] Goal #700"
  },
- "— Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 27 goals in a single season.": {
+ "— Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 24 goals in all competitions that season.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "The return to Manchester United  [— Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 27 goals in a single season.] Al Nassr"
+  "ctx": "The return to Manchester United  [— Ronaldo returns to Old Trafford on a two-year deal, scoring twice on his debut against Newcastle and adding 24 goals in all competitions that season.] 2nd spell"
  },
- "— Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40.": {
+ "— Ronaldo scores his 800th goal for a club against Al Fateh; two months later he becomes the first player to reach 100 goals for four different clubs, aged 40.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "800th club goal and the 100th for Al Nassr  [— Ronaldo scores his 800th goal for a club against Al Fateh, then becomes the first player to reach 100 goals for four different clubs, aged 40.] 9 Oct 2026"
+  "ctx": "800th club goal for Al Nassr  [— Ronaldo scores his 800th goal for a club against Al Fateh; two months later he becomes the first player to reach 100 goals for four different clubs, aged 40.] 800th club goal"
  },
  "— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Signs for Manchester United and takes the No. 7 shirt  [— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.] 10 Dec 2008"
+  "ctx": "Signs for Manchester United and takes the No. 7 shirt  [— Ronaldo signs for £12.24m and inherits the legendary United number 7, the shirt he has worn for the rest of his career.] £12.24m"
  },
- "— Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances.": {
+ "— Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the AFC Champions League Elite against Neftchi Fergana, closing a career of 981 goals in 1,340 appearances.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Goal #981 — the last of a record career  [— Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the Saudi Pro League, closing a career of 981 goals in 1,340 appearances.] Advertisement"
+  "ctx": "Goal #981 — the last of a record career  [— Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the AFC Champions League Elite against Neftchi Fergana, closing a career of 981 goals in 1,340 appearances.] Goal #981"
  },
  "— UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025.": {
   "count": 1,
@@ -14358,19 +14548,26 @@
   ],
   "ctx": "Yes  [— UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025.] How many Champions Leagues has Ronaldo won?"
  },
- "— a converted penalty against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 13 different calendar years.": {
+ "— a close-range finish against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 14 different calendar years.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "The 900th goal of his career  [— a converted penalty against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 13 different calendar years.] 26 May 2025"
+  "ctx": "The 900th goal of his career  [— a close-range finish against Croatia in the UEFA Nations League takes Ronaldo past 900 senior goals, the first player to score 40 or more goals in 14 different calendar years.] Goal #900"
  },
- "— a hat-trick against Bayern Munich takes him past 100 Champions League goals; a month later he collects his fifth Ballon d'Or in Paris.": {
+ "— a hat-trick against Bayern Munich takes him past 100 Champions League goals; in December he collects his fifth Ballon d'Or in Paris.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Fifth Ballon d'Or and a 100th Champions League goal  [— a hat-trick against Bayern Munich takes him past 100 Champions League goals; a month later he collects his fifth Ballon d'Or in Paris.] The Ballon d'Or years"
+  "ctx": "Fifth Ballon d'Or and a 100th Champions League goal  [— a hat-trick against Bayern Munich takes him past 100 Champions League goals; in December he collects his fifth Ballon d'Or in Paris.] Ballon d'Or #5"
+ },
+ "— a stoppage-time header against Greece in the Euro 2004 group stage opens his international account, a record he extends to 146 goals in 234 caps.": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "First Portugal goal — header against Greece  [— a stoppage-time header against Greece in the Euro 2004 group stage opens his international account, a record he extends to 146 goals in 234 caps.] First Portugal goal"
  },
  "— a widely published compiled tally, provisional until a match-by-match hand count is finished.": {
   "count": 1,
@@ -14391,14 +14588,14 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "Three goals in 15 minutes for Portugal  [— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.] 10 Jul 2016"
+  "ctx": "Three goals in 15 minutes for Portugal  [— against Northern Ireland in a World Cup 2014 qualifier, Ronaldo scores three times inside 15 minutes, the fastest international hat-trick of his career, in the season he sets his 69-goal calendar-year record.] Hat-trick in 15 minutes"
  },
  "— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Senior debut for Sporting CP  [— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.] 7 Oct 2002"
+  "ctx": "Senior debut for Sporting CP  [— aged 17 years and 190 days, Ronaldo comes on against Inter in the UEFA Champions League third qualifying round at the Estádio José Alvalade, the start of the most decorated career in modern football.] Age 17y 190d"
  },
  "— all-time records in the competition. He won the tournament": {
   "count": 1,
@@ -14421,12 +14618,12 @@
   ],
   "ctx": "12 October 2026  [— his 134th for the club. Match reports and video clips sit on our] latest goal page"
  },
- "— his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds.": {
+ "— his 500th goal arrives against Malmö in the season he passes Messi to become the all-time Champions League top scorer, a record he still holds.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "500th career goal and Champions League top scorer  [— his 500th goal arrives against Malmö in the season he passes Gerd Müller to become the all-time Champions League top scorer, a record he still holds.] 30 Oct 2017"
+  "ctx": "500th career goal and Champions League top scorer  [— his 500th goal arrives against Malmö in the season he passes Messi to become the all-time Champions League top scorer, a record he still holds.] Goal #500"
  },
  "— independent statistical archive. Career total reconciled to exactly 981 senior goals (835 club + 146 for Portugal) as of 21 October 2026. Free open data, updated after every fixture.": {
   "count": 1,
@@ -14435,12 +14632,19 @@
   ],
   "ctx": "RonaldoStats  [— independent statistical archive. Career total reconciled to exactly 981 senior goals (835 club + 146 for Portugal) as of 21 October 2026. Free open data, updated after every fixture.] © 2026 RonaldoStats. Not affiliated with or endorsed by Cristiano Ronaldo, Sporting CP, Manchester "
  },
- "— the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight World Cup goals.": {
+ "— seven weeks after his debut, Ronaldo opens his senior account with two goals against Moreirense in the Primeira Liga: the first of 981.": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Ballon d'Or at 23, named on all 96 ballots  [— the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight World Cup goals.] Real Madrid"
+  "ctx": "First senior career goal vs Moreirense  [— seven weeks after his debut, Ronaldo opens his senior account with two goals against Moreirense in the Primeira Liga: the first of 981.] Goal #1"
+ },
+ "— the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight goals in Euro 2008 qualifying.": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "Ballon d'Or at 23, named on 77 of 96 ballots  [— the first Ballon d'Or ever won by a Portuguese player, in a season that also delivered the Champions League, the FIFA Club World Cup and eight goals in Euro 2008 qualifying.] Ballon d'Or #1"
  },
  "— the first in 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid. He is also the competition's all-time top scorer with 140 goals.": {
   "count": 1,
@@ -14456,12 +14660,19 @@
   ],
   "ctx": "2016 European Championship  [— the title he captained Portugal to in Paris, as the tournament's second-highest scorer.] How many league titles has Ronaldo won?"
  },
- "— two months after his debut, Ronaldo opens his senior account in the Primeira Liga: the first of 981.": {
+ "€100m": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "First senior career goal vs Moreirense  [— two months after his debut, Ronaldo opens his senior account in the Primeira Liga: the first of 981.] Manchester United"
+  "ctx": "— Ronaldo joins for €100m and wins two Serie A titles in three seasons, becoming the first player to win the top-scorer award in three different leagues.  [€100m] 🐂"
+ },
+ "€94m": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "— Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018.  [€94m] ⚪"
  },
  "← Back to stats": {
   "count": 5,

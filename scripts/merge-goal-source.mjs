@@ -119,6 +119,11 @@ for (const day of Object.values(cal.calendar)) {
     const minutes = m.minutes || [];
     const types = m.types || [];
     for (let i = 0; i < m.goalsCount; i++) {
+      const minute = minutes[i] || "";
+      // the goal number the calendar already carries: the published one when
+      // the source has numbered it, the curated one for the goals that are
+      // newer than the source's last entry
+      const vid = (m.videos || []).find((v) => v.minute === minute) || (m.videos || [])[i] || {};
       records.push({
         date: m.date,
         team: m.team,
@@ -126,8 +131,9 @@ for (const day of Object.values(cal.calendar)) {
         competition: m.competition,
         score: m.score,
         venue: m.venue,
-        minute: minutes[i] || "",
+        minute,
         type: types[i] || "",
+        curatedNumber: vid.goalNumber != null ? vid.goalNumber : null,
       });
     }
   }
@@ -138,8 +144,7 @@ console.log("calendar goals before reconciliation:", records.length);
 let matched = 0, moved = 0, withMedia = 0, withDetail = 0;
 for (const rec of records) {
   const hit = findSource(rec);
-  if (!hit) { rec.sourceNumber = null; rec.sourcePage = null; rec.media = []; continue; }
-  matched++;
+  if (!hit) { rec.sourceNumber = null; rec.sourcePage = null; rec.media = []; continue; }  matched++;
   const g = hit.goal;
   if (g.date !== rec.date) moved++;
   rec.date = g.date;
@@ -191,7 +196,7 @@ for (const rec of records) {
     || (rec.media || []).find((x) => x.relation === "compilation-member")
     || null;
   m.videos.push({
-    goalNumber: rec.sourceNumber,
+    goalNumber: rec.sourceNumber != null ? rec.sourceNumber : rec.curatedNumber,
     videoUrl: pick ? pick.url : "",
     minute: rec.minute || "",
     opponent: rec.opponent,
@@ -209,6 +214,16 @@ for (const rec of records) {
 }
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// a goal number belongs to one goal: the published number always wins, a
+// curated number that would repeat one is dropped rather than shown twice
+const takenNumbers = new Set();
+for (const m of matches.values()) {
+  for (const v of m.videos) {
+    if (v.goalNumber == null) continue;
+    if (takenNumbers.has(v.goalNumber)) { v.goalNumber = null; continue; }
+    takenNumbers.add(v.goalNumber);
+  }
+}
 const calendar = {};
 let totalGoals = 0;
 for (let mo = 1; mo <= 12; mo++) {

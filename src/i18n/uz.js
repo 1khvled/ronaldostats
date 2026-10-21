@@ -188,7 +188,7 @@ export const TIMELINE = {
   empty: (val, total) => `“${val}” ga hech narsa mos kelmadi — barcha ${total} ta bosqichni koʻrish uchun qidiruvni tozalang.`,
   tagRecord: "Rekord", tagWc: "Jahon kubogi", tagFirst: "Birinchi",
   faq: [
-    ["Ronaldo rasmiy debyutini qachon qildi?", "<b>Sporting CP</b> uchun <b>14 August 2002</b>da, Chempionlar Ligasi uchinchi saralash bosqichida Inter ga qarshi, 17 yoshda; birinchi rasmiy gollaridan ikki oy keyin Moreirense ga qarshi keldi."],
+    ["Ronaldo rasmiy debyutini qachon qildi?", "<b>Sporting CP</b> uchun <b>14 August 2002</b>da, Chempionlar Ligasi uchinchi saralash bosqichida Inter ga qarshi, 17 yoshda; birinchi rasmiy gollaridan yetti hafta keyin Moreirense ga qarshi keldi."],
     ["Ronaldo birinchi golini qachon urgan?", "Portugaliya uchun birinchi goli — <b>Euro 2004 da Gretsiyaga</b> qarshi boshdan urgan gol boʻldi; oʻsha yili Manchester United uchun birinchi goli esa Portsmouthga qarshi jarima toʻpidan boʻldi."],
     ["Ronaldo Chempionlar Ligasi qachon yutgan?", "Birinchi marta <b>2008</b>da Manchester United bilan, keyin Real Madrid bilan ketma-ket toʻrt marta — <b>2014, 2016, 2017 va 2018</b>-yillarda."],
     ["Ronaldo Real Madrid ga qachon oʻtdi?", "<b>June 2009</b>da — oʻsha vaqtning jahon rekori boʻlgan haq uchun — taqdimotda Bernabéu stadioni da 80,000 kishi tomoshabin qilgan."],

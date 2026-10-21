@@ -19,6 +19,11 @@ const all = [];
 for (const day of Object.values(bday.calendar || {})) {
   for (const m of day.matches || []) {
     for (let i = 0; i < m.goalsCount; i++) {
+      const minute = (m.minutes || [])[i] || (m.minutes || [])[0] || "";
+      // the goal number the calendar carries: the published one for the goals
+      // the source has numbered, null for the goals it has not
+      const vids = m.videos || [];
+      const vid = vids.find((v) => v.minute === minute && v.opponent === m.opponent) || vids[i] || {};
       all.push({
         date: m.date,
         year: m.year,
@@ -27,13 +32,22 @@ for (const day of Object.values(bday.calendar || {})) {
         competition: m.competition,
         score: m.score,
         venue: m.venue,
-        minute: (m.minutes || [])[i] || (m.minutes || [])[0] || "",
+        minute,
         type: (m.types || [])[i] || (m.types || [])[0] || "",
+        goalNumber: vid.goalNumber != null ? vid.goalNumber : null,
       });
     }
   }
 }
 all.sort((a, b) => b.date.localeCompare(a.date) || (b.minute || "").localeCompare(a.minute || ""));
+
+// the goals the source has not numbered yet carry on from the last published
+// number, oldest first, so the newest goal is the last one
+const published = all.map((g) => g.goalNumber).filter((n) => n != null);
+let counter = published.length ? Math.max(...published) : 0;
+for (const g of all.slice().sort((a, b) => a.date.localeCompare(b.date) || (a.minute || "").localeCompare(b.minute || ""))) {
+  if (g.goalNumber == null) { counter++; g.goalNumber = counter; }
+}
 
 const fmtDate = (iso) => {
   const d = new Date(iso + "T00:00:00");
@@ -46,8 +60,8 @@ const shortDate = (iso) => {
 const bdayKey = (iso) => iso.slice(5);
 const title = (g) => (g.team === "Portugal" ? "Portugal" : g.team) + " " + (g.score || "") + " " + g.opponent;
 
-const toCard = (g, n) => ({
-  goalNumber: n,
+const toCard = (g) => ({
+  goalNumber: g.goalNumber,
   title: title(g),
   meta: g.competition + " • " + shortDate(g.date),
   match: "vs " + g.opponent + (g.score ? " (" + g.score + ")" : ""),
@@ -62,13 +76,15 @@ const toCard = (g, n) => ({
 
 // the five most recent goals, newest first
 const recent = all.slice(0, 5);
-const recentGoals = recent.map((g, i) => toCard(g, 981 - i));
+const recentGoals = recent.map((g) => toCard(g));
 const lg = recent[0];
+const LAST_GOAL = lg.goalNumber;
+const TOTAL_GOALS = bday.meta?.totalGoals ?? LAST_GOAL;
 
 const feed = {
   syncedAt: new Date().toISOString(),
   latestGoal: {
-    goalNumber: 981,
+    goalNumber: LAST_GOAL,
     team: lg.team,
     opponent: lg.opponent,
     competition: lg.competition,
@@ -93,12 +109,12 @@ const feed = {
     lastMatchDate: lg.date,
     lastMatchOpponent: lg.opponent,
     lastMatchResult: title(lg),
-    lastGoalNumber: 981,
+    lastGoalNumber: LAST_GOAL,
     lastGoalMinute: lg.minute,
   },
   recentGoals,
   totals: {
-    goals: 981,
+    goals: TOTAL_GOALS,
     alnassrGoals: 134,
     alnassrApps: 157,
     season2026Goals: 24,

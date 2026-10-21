@@ -47,10 +47,14 @@ step(run(process.execPath, ["scripts/smoke-i18n.mjs"], "i18n runtime smoke test"
 step(run(process.execPath, ["scripts/audit-adsense.mjs"], "adsense audit"), "adsense audit");
 step(run(process.execPath, ["scripts/audit-wc-splits.mjs"], "world cup audit"), "world cup splits audit");
 step(run(process.execPath, ["scripts/check-orphans.mjs"], "orphan pages"), "orphan page audit");
+step(run(process.execPath, ["scripts/clean-runtime-copy.mjs"], "clean the runtime source"), "the runtime source does not shadow the bundle");
 step(run(NODE, [VITE, "build"], "vite build"), "production build");
 step(run(process.execPath, ["scripts/copy-en.mjs"], "copy the English pages"), "the English pages in the deployment");
-step(run(process.execPath, ["scripts/copy-runtime-assets.mjs"], "copy the runtime source"), "the runtime assets in the deployment");
+step(run(process.execPath, ["scripts/generate-programmatic-pages.mjs"], "the day pages"), "the birthday day pages in the deployment");
+step(run(process.execPath, ["scripts/generate-days-hub.mjs"], "the days hub"), "the days hub in the deployment");
+step(run(process.execPath, ["scripts/check-runtime-bundle.mjs"], "the runtime bundle"), "every page runs the bundled runtime");
 step(run(process.execPath, ["scripts/check-deploy-assets.mjs"], "the deployment's assets"), "every page points at a file the deployment has");
+step(run(process.execPath, ["scripts/check-internal-links.mjs"], "the deployment's links"), "every internal link points at a page the deployment has");
 step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audit");
 
 // ---- 6. leftover Messi references in the English shells --------------------

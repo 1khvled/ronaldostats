@@ -187,7 +187,7 @@ export const TIMELINE = {
   empty: (val, total) => `Nada corresponde a “${val}” — limpe a busca para ver todos os ${total} marcos.`,
   tagRecord: "Recorde", tagWc: "Copa do Mundo", tagFirst: "Primeiro",
   faq: [
-    ["Quando Ronaldo fez a estreia profissional?", "Pelo <b>Sporting CP</b> em <b>14 de agosto de 2002</b> contra o Inter na terceira rodada de classificação da Champions League, aos 17 anos; seus primeiros gols profissionais vieram dois meses depois, contra o Moreirense."],
+    ["Quando Ronaldo fez a estreia profissional?", "Pelo <b>Sporting CP</b> em <b>14 de agosto de 2002</b> contra o Inter na terceira rodada de classificação da Champions League, aos 17 anos; seus primeiros gols profissionais vieram sete semanas depois, contra o Moreirense."],
     ["Quando Ronaldo marcou seu primeiro gol?", "Seu primeiro gol por Portugal foi um cabeceio contra a <b>Grécia na Euro 2004</b>; seu primeiro gol pelo Manchester United, no mesmo ano, foi uma cobrança de falta contra o Portsmouth."],
     ["Quando Ronaldo venceu a Champions League?", "Pela primeira vez em <b>2008</b> com o Manchester United e depois quatro vezes seguidas com o Real Madrid, em <b>2014, 2016, 2017 e 2018</b>."],
     ["Quando Ronaldo foi para o Real Madrid?", "Em <b>junho de 2009</b>, por uma então recorde mundial de negociação — com 80.000 pessoas no Bernabéu para a apresentação."],

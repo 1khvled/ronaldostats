@@ -188,7 +188,7 @@ export const TIMELINE = {
   empty: (val, total) => `Aucun résultat pour « ${val} » — effacez la recherche pour voir les ${total} jalons.`,
   tagRecord: "Record", tagWc: "Coupe du monde", tagFirst: "Premier",
   faq: [
-    ["Quand Ronaldo a-t-il fait ses débuts en équipe première ?", "Avec le <b>Sporting CP</b> le <b>14 août 2002</b> contre l'Inter au troisième tour de qualification de la Ligue des champions, à 17 ans ; ses premiers buts en équipe première sont tombés deux mois plus tard contre Moreirense."],
+    ["Quand Ronaldo a-t-il fait ses débuts en équipe première ?", "Avec le <b>Sporting CP</b> le <b>14 août 2002</b> contre l'Inter au troisième tour de qualification de la Ligue des champions, à 17 ans ; ses premiers buts en équipe première sont tombés sept semaines plus tard contre Moreirense."],
     ["Quand Ronaldo a-t-il marqué son premier but ?", "Son premier but pour le Portugal a été un coup de tête contre la <b>Grèce à l'Euro 2004</b> ; son premier but pour Manchester United cette même année a été un coup franc contre Portsmouth."],
     ["Quand Ronaldo a-t-il remporté la Ligue des champions ?", "Une première fois en <b>2008</b> avec Manchester United, puis quatre fois d'affilée avec le Real Madrid en <b>2014, 2016, 2017 et 2018</b>."],
     ["Quand Ronaldo a-t-il rejoint le Real Madrid ?", "En <b>juin 2009</b>, contre un montant record mondial — avec 80 000 personnes au Bernabéu pour la présentation."],
