@@ -201,6 +201,17 @@
   ]
 }
 </script>
+<script>
+  (function() {
+    try {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch(e) {}
+  })();
+</script>
 </head>
 <body data-page="real-madrid">
 <a class="skip" href="#main">सामग्री पर जाएँ</a>

@@ -425,7 +425,7 @@
   (function() {
     try {
       if (/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) return;
-      var saved = localStorage.getItem('ronaldostatss_lang_choice');
+      var saved = localStorage.getItem('ronaldostats_lang_choice');
       var isRoot = location.pathname === '/' || location.pathname === '/en' || location.pathname === '/en/';
       if (saved && saved !== 'en' && isRoot) {
         location.replace('/' + saved);

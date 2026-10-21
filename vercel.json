@@ -7,6 +7,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:lang(en|es|pt|fr|ar|bn|hi|ro|uz)/index",
+      "destination": "/:lang",
+      "permanent": true
+    },
+    {
       "source": "/:lang(es|pt|fr|ar|bn|hi|ro|uz)/birthday/:key",
       "destination": "/en/birthday/:key",
       "permanent": true

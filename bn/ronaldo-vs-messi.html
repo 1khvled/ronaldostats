@@ -241,6 +241,17 @@
   ]
 }
 </script>
+<script>
+  (function() {
+    try {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch(e) {}
+  })();
+</script>
 </head>
 <body data-page="vs-ronaldo">
 <a class="skip" href="#main">মূল বিষয়বস্তুতে যান</a>
