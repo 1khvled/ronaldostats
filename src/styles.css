@@ -1412,7 +1412,7 @@ body[data-page="timeline"] .ch-photo .photo-credit { padding: 6px 2px 4px; }
     letter-spacing: 0;
     text-align: center;
     white-space: nowrap;
-    max-width: 84px;
+    max-width: 116px;
     overflow: hidden;
     text-overflow: ellipsis;
     opacity: 0.95;
@@ -11593,7 +11593,7 @@ body.mst-toast-open .back-to-top-btn {
     min-height: 44px;
   }
   .rail nav a span {
-    max-width: 78px;
+    max-width: 116px;
     line-height: 1.2;
   }
   .bday-goal-watch,
