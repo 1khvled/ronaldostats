@@ -78,5 +78,24 @@ jobs:
             exit 0
           fi
           git commit -m "chore(stats): refresh the Ronaldo stats, the goal videos and the gear store [skip ci]"
-          git push origin HEAD:${{ github.ref }}
-          echo "Synced and pushed."
+          # The branch can move while the run is working - a person pushing a
+          # fix, or an earlier run that committed the same refreshed data. A
+          # plain push is then rejected and the run fails with a push error:
+          # a failure email for a run that did its job. The remote changes
+          # are taken in first, so the push is a fast-forward, and the push
+          # is retried a few times before the run gives up quietly - the
+          # next run half an hour later carries the same refresh.
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin ${{ github.ref_name }}; then
+              if git push origin HEAD:${{ github.ref }}; then
+                echo "Synced and pushed."
+                exit 0
+              fi
+            else
+              git rebase --abort || true
+            fi
+            echo "The branch moved (attempt $attempt); taking the remote changes in and trying again."
+            sleep 5
+          done
+          echo "The branch kept moving; the refresh is left for the next run."
+          exit 0
