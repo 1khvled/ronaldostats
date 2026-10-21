@@ -290,11 +290,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/ar/birthday", page: "birthday", t: "🎂 هل سجّل رونالدو في عيد ميلادك؟", d: (d) => `ابحث في أيام السنة الميلادية الـ 366 مع مقاطع فيديو لأهداف رونالدو البالغة ${n(d.totals.goals)} في مسيرته الاحترافية.` },
   { href: "/ar/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 رونالدو ضد ميسي على مدار التاريخ", d: () => `إحصائيات المواجهة المباشرة: ${n(LIVE.goals)} مقابل ${n(LIVE.rGoals)} هدفاً، و${LIVE.trophies} مقابل ${LIVE.rTrophies} لقباً، و5 مقابل 8 Ballons d'Or.` },
   { href: "/ar/real-madrid", page: "real-madrid", t: "🏟️ رونالدو في ريال مدريد", d: () => "تسع سنوات في ريال مدريد: 450 هدفاً، 311 في الليغا، أربعة أبطال أوروبا و18 في الكلاسيكو." },
   { href: "/ar/champions-league", page: "champions-league", t: "⭐ الرقم القياسي في UEFA Champions League", d: () => "140 هدفاً في UEFA Champions League، و42 تمريرة حاسمة، و5 ألقاب أوروبية." },
-  { href: "/ar/latest-goal", page: "latest-goal", t: "⚽ فيديو أحدث هدف لرونالدو", d: () => "شاهد فيديو أحدث أهداف رونالدو، وتعرّف ما إذا سجّل اليوم، وتصفّح أحدث مقاطع الأهداف." },
   { href: "/ar", page: "home", t: "إحصائيات مسيرة رونالدو", d: (d) => `الأرقام الأساسية: ${n(d.totals.goals)} هدفاً في ${n(d.totals.apps)} مباراة للمحترفين.` },
   { href: "/ar/dashboard", page: "dashboard", t: "لوحة إحصائيات رونالدو", d: () => "صفِّ كل رسم بياني حسب ريال مدريد أو مانشستر يونايتد أو يوفنتوس أو النصر أو سبورتينغ أو البرتغال." },
   { href: "/ar/timeline", page: "timeline", t: "رونالدو عبر السنين", d: () => "كل محطة في المسيرة، مؤرخة ومرتبة، من 2002 حتى اليوم." },

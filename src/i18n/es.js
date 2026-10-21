@@ -274,11 +274,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/en/birthday", page: "birthday", t: "🎂 ¿Marcó Ronaldo en tu cumpleaños?", d: (d) => `Busca entre los 366 días del año con vídeos de los ${n(d.totals.goals)} goles de la carrera profesional de Ronaldo.` },
   { href: "/en/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo vs Messi de la historia", d: () => `Estadísticas cara a cara: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goles, ${LIVE.trophies} vs ${LIVE.rTrophies} títulos, 5 vs 8 Ballons d'Or.` },
   { href: "/en/real-madrid", page: "real-madrid", t: "🏟️ Ronaldo en el Real Madrid", d: () => "Sus nueve años en el Real Madrid: 450 goles, 311 en La Liga, cuatro Champions League y 18 en el Clásico." },
   { href: "/en/champions-league", page: "champions-league", t: "⭐ Récord en la Champions League", d: () => "140 goles en la UEFA Champions League, 42 asistencias y 5 títulos europeos." },
-  { href: "/en/latest-goal", page: "latest-goal", t: "⚽ Último gol de Ronaldo en vídeo", d: () => "Mira el vídeo de su último gol, comprueba si ha marcado hoy y revisa los vídeos recientes." },
   { href: "/en", page: "home", t: "Estadísticas de la carrera de Ronaldo", d: (d) => `Las cifras clave: ${n(d.totals.goals)} goles en ${n(d.totals.apps)} partidos oficiales.` },
   { href: "/en/dashboard", page: "dashboard", t: "Panel de estadísticas de Ronaldo", d: () => "Filtra todos los gráficos por Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP o Portugal." },
   { href: "/en/timeline", page: "timeline", t: "Ronaldo a lo largo de los años", d: () => "Cada hito de su carrera, fechado y en orden, de 2002 hasta hoy." },

@@ -167,8 +167,9 @@ function getCurrentLangCode() {
 
 function getLangUrl(targetCode) {
   if (typeof location === "undefined") return `/${targetCode}`;
+  // the pages that are off the site are not in the list, so the switcher
+  // never builds a link to a page that is not there
   const validSubpages = [
-    "birthday",
     "goalsbyyear",
     "goalsbyseason",
     "dashboard",
@@ -176,17 +177,9 @@ function getLangUrl(targetCode) {
     "achievements",
     "ronaldo-vs-messi",
     "real-madrid",
-    "champions-league",
-    "latest-goal"
+    "champions-league"
   ];
   const pathParts = location.pathname.split("/").filter(Boolean);
-  // Clean programmatic date pages exist in English only: keep every language
-  // switch on the single canonical date URL instead of forking ?date= copies
-  // (one per language) that Google indexes as separate duplicate pages.
-  if (pathParts.length > 2 && pathParts[1] === "birthday" && /^\d{1,2}-\d{1,2}$/.test(pathParts[2])) {
-    const cleanKey = pathParts[2].split("-").map((n) => String(parseInt(n, 10)).padStart(2, "0")).join("-");
-    return `/en/birthday/${cleanKey}${location.hash}`;
-  }
   let subpage = "";
   if (pathParts.length > 1) {
     subpage = pathParts[1].replace(/\.html$/, "");
@@ -561,11 +554,6 @@ function ensureMobileMenuDrawer() {
       items: [
         { href: getLangUrl(curLangCode), label: txt.home, badge: "981 Goals", icon: `<svg viewBox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg>` },
         { href: `/${curLangCode}/ronaldo-vs-messi`, label: txt.vsRonaldo, badge: "GOAT", icon: `<svg viewBox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg>` },
-        { href: `/${curLangCode}/latest-goal`, label: txt.latestGoal, badge: "LIVE ⚡", icon: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg>` },
-        { href: `/${curLangCode}/birthday`, label: txt.birthday, badge: "HOT 🔥", icon: `<svg viewBox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>` },
-    // Always /en/days: the 366 day pages (and this hub) are English-only by design,
-    // so this must NOT be built from curLangCode or 8 locales would 404.
-    { href: "/en/days", label: txt.days, badge: "366 Days", icon: `<svg viewBox="0 0 24 24"><rect height="17.5" rx="2" width="17.5" x="3.25" y="3.25"></rect><path d="M3.25 8.5h17.5M8 3.25v17.5M16 3.25v17.5"></path></svg>` }
       ]
     },
     {
@@ -1286,7 +1274,7 @@ function initFanArcade() {
           } else {
             bdayResult.innerHTML = `
               <div style="color:var(--muted);">
-                Ronaldo hasn't played on ${m}/${d} in his senior career! Explore all 366 days on our <a href="/en/birthday" style="color:var(--brand);font-weight:700;">Birthday Goals Explorer</a> or try a friend's birthday!
+                Ronaldo hasn't played on ${m}/${d} in his senior career - not every day of the year has a match in it.
               </div>
             `;
           }
@@ -1321,9 +1309,9 @@ function initFanArcade() {
       setTimeout(() => {
         spinBtn.disabled = false;
         const g = LEGENDARY_GOALS[Math.floor(Math.random() * LEGENDARY_GOALS.length)];
-    // The programmatic date pages exist in English only (one canonical URL per
-    // date), so the link must not carry the reader's language code.
-    const gBday = g.date ? `/en/birthday/${g.date.slice(5)}` : "";
+        // the card offers the clip itself when there is one: the day pages
+        // are off the site, so a goal without a published clip shows no button
+        const gBday = g.videoUrl || "";
         rouletteDisplay.innerHTML = `
           <div class="roulette-card-content">
             <div>
@@ -1331,16 +1319,12 @@ function initFanArcade() {
               <div class="roulette-goal-meta"><b>vs ${g.opp}</b> · ${g.comp}</div>
               <div class="roulette-goal-sub">${g.note}</div>
             </div>
-            <a href="#" class="btn-roulette-watch">
+            ${gBday ? `<a href="${gBday}" class="btn-roulette-watch" target="_blank" rel="noopener">
               <span>🎬 Watch Video</span>
-            </a>
+            </a>` : ""}
           </div>
         `;
-        const watchLink = rouletteDisplay.querySelector(".btn-roulette-watch");
-    if (watchLink) {
-      watchLink.setAttribute(`href`, gBday || `/${getCurrentLangCode()}/birthday`);
-    }
-    spinBtn.textContent = "🎲 Spin Another Goal";
+        spinBtn.textContent = "🎲 Spin Another Goal";
       }, 300);
     });
   }
@@ -3202,8 +3186,8 @@ async function renderOnThisDay() {
 
   const otdDict = {
     en: {
-      error: `Could not load today's match history. <a href="/en/birthday">Check birthday explorer &rarr;</a>`,
-      empty: `No match data on record for today. <a href="/en/birthday">Explore all 366 days &rarr;</a>`,
+      error: `Could not load today's match history.`,
+      empty: `No match data on record for today.`,
       closestBadge: (d) => `📅 CLOSEST SCORING DAY • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>ON THIS DAY • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `No senior match scheduled today (${nowD} ${nowM} UTC). Closest scoring day: <b>${g} goals</b> on ${d}!`,
@@ -3219,8 +3203,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `Goal ${n}${min ? ` (${min}')` : ""}`
     },
     es: {
-      error: `No se pudo cargar el historial de hoy. <a href="/es/birthday">Explorar cumpleaños &rarr;</a>`,
-      empty: `Sin registros de partidos en esta fecha. <a href="/es/birthday">Ver los 366 días &rarr;</a>`,
+      error: `No se pudo cargar el historial de hoy.`,
+      empty: `Sin registros de partidos en esta fecha.`,
       closestBadge: (d) => `📅 DÍA MÁS CERCANO CON GOLES • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>UN DÍA COMO HOY • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `Sin partidos oficiales disputados hoy (${nowD} ${nowM} UTC). Día más cercano con goles: <b>${g} goles</b> el ${d}.`,
@@ -3236,8 +3220,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `Gol ${n}${min ? ` (${min}')` : ""}`
     },
     pt: {
-      error: `Não foi possível carregar o histórico de hoje. <a href="/pt/birthday">Ver aniversários &rarr;</a>`,
-      empty: `Sem dados de jogos nesta data. <a href="/pt/birthday">Explorar os 366 dias &rarr;</a>`,
+      error: `Não foi possível carregar o histórico de hoje.`,
+      empty: `Sem dados de jogos nesta data.`,
       closestBadge: (d) => `📅 DIA MAIS PRÓXIMO COM GOLS • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>NESTE DIA NA HISTÓRIA • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `Nenhum jogo sênior disputado hoje (${nowD} ${nowM} UTC). Dia mais próximo com gols: <b>${g} gols</b> em ${d}!`,
@@ -3253,8 +3237,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `Gol ${n}${min ? ` (${min}')` : ""}`
     },
     fr: {
-      error: `Impossible de charger l'historique du jour. <a href="/fr/birthday">Explorateur d'anniversaires &rarr;</a>`,
-      empty: `Aucun match enregistré à cette date. <a href="/fr/birthday">Explorer les 366 jours &rarr;</a>`,
+      error: `Impossible de charger l'historique du jour.`,
+      empty: `Aucun match enregistré à cette date.`,
       closestBadge: (d) => `📅 JOUR LE PLUS PROCHE AVEC BUTS • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>CE JOUR-LÀ DANS L'HISTOIRE • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `Pas de match senior aujourd'hui (${nowD} ${nowM} UTC). Date la plus proche : <b>${g} buts</b> le ${d} !`,
@@ -3270,8 +3254,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `But ${n}${min ? ` (${min}')` : ""}`
     },
     ar: {
-      error: `تعذر تحميل سجل مباريات اليوم. <a href="/ar/birthday">مستكشف أعياد الميلاد &rarr;</a>`,
-      empty: `لا توجد مباريات مسجلة في مثل هذا اليوم. <a href="/ar/birthday">استكشف كافة أيام السنة &rarr;</a>`,
+      error: `تعذر تحميل سجل مباريات اليوم.`,
+      empty: `لا توجد مباريات مسجلة في مثل هذا اليوم.`,
       closestBadge: (d) => `📅 أقرب يوم شهد أهدافاً • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>في مثل هذا اليوم • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `لم تُلعب مباريات رسمية في هذا اليوم (${nowD} ${nowM} UTC). أقرب يوم تهديفي: <b>${g} أهداف</b> يوم ${d}!`,
@@ -3287,8 +3271,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `الهدف ${n}${min ? ` (${min}')` : ""}`
     },
     bn: {
-      error: `আজকের ম্যাচের রেকর্ড লোড করা যায়নি। <a href="/bn/birthday">জন্মদিনের গোল এক্সপ্লোরার &rarr;</a>`,
-      empty: `আজকের তারিখে কোনো ম্যাচের তথ্য নেই। <a href="/bn/birthday">৩৬৬ দিনের সব গোল দেখুন &rarr;</a>`,
+      error: `আজকের ম্যাচের রেকর্ড লোড করা যায়নি।`,
+      empty: `আজকের তারিখে কোনো ম্যাচের তথ্য নেই।`,
       closestBadge: (d) => `📅 নিকটতম গোলের দিন • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>ইতিহাসে আজকের দিনে • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `আজকের দিনে কোনো ম্যাচ নেই (${nowD} ${nowM} UTC)। নিকটতম গোলের দিন: ${d}-এ <b>${g}টি গোল</b>!`,
@@ -3304,8 +3288,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `গোল ${n}${min ? ` (${min}')` : ""}`
     },
     hi: {
-      error: `आज का मैच इतिहास लोड नहीं हो सका। <a href="/hi/birthday">बर्थडे एक्सप्लोरर &rarr;</a>`,
-      empty: `आज की तारीख में कोई मैच रिकॉर्ड नहीं है। <a href="/hi/birthday">सभी 366 दिन देखें &rarr;</a>`,
+      error: `आज का मैच इतिहास लोड नहीं हो सका।`,
+      empty: `आज की तारीख में कोई मैच रिकॉर्ड नहीं है।`,
       closestBadge: (d) => `📅 निकटतम गोल का दिन • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>इतिहास में आज के दिन • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `आज कोई आधिकारिक मैच निर्धारित नहीं था (${nowD} ${nowM} UTC)। निकटतम गोल दिवस: ${d} को <b>${g} गोल</b>!`,
@@ -3321,8 +3305,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `गोल ${n}${min ? ` (${min}')` : ""}`
     },
     ro: {
-      error: `Nu s-a putut încărca istoricul zilei. <a href="/ro/birthday">Explorator de zile &rarr;</a>`,
-      empty: `Nu există meciuri înregistrate pentru această dată. <a href="/ro/birthday">Explorează toate cele 366 de zile &rarr;</a>`,
+      error: `Nu s-a putut încărca istoricul zilei.`,
+      empty: `Nu există meciuri înregistrate pentru această dată.`,
       closestBadge: (d) => `📅 CEA MAI APROPIATĂ ZI CU GOLURI • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>ÎN ACEASTĂ ZI ÎN ISTORIE • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `Niciun meci de seniori programat azi (${nowD} ${nowM} UTC). Ziua cea mai apropiată: <b>${g} goluri</b> pe ${d}!`,
@@ -3338,8 +3322,8 @@ async function renderOnThisDay() {
       goalTab: (n, min) => `Gol ${n}${min ? ` (${min}')` : ""}`
     },
     uz: {
-      error: `Bugungi o'yinlar tarixini yuklab bo'lmadi. <a href="/uz/birthday">Tug'ilgan kunlar &rarr;</a>`,
-      empty: `Bugungi sana uchun o'yinlar qayd etilmagan. <a href="/uz/birthday">366 kunni o'rganish &rarr;</a>`,
+      error: `Bugungi o'yinlar tarixini yuklab bo'lmadi.`,
+      empty: `Bugungi sana uchun o'yinlar qayd etilmagan.`,
       closestBadge: (d) => `📅 GOLLAR URILGAN ENG YAQIN KUN • ${d} (UTC)`,
       liveBadge: (d) => `<span class="live-dot pulse"></span> <b>TARIXDA BUGUNGI KUN • ${d} (UTC)</b>`,
       headlineClosest: (d, g, nowD, nowM) => `Bugungi kunda rasmiy o'yin o'tkazilmagan (${nowD} ${nowM} UTC). Eng yaqin golli kun: ${d} da <b>${g} ta gol</b>!`,
@@ -3491,9 +3475,6 @@ async function renderOnThisDay() {
           <h3 class="otd-headline">${headlineText}</h3>
         </div>
         <div class="otd-header-right">
-          <a href="/en/birthday/${todayKey}" class="btn btn-secondary btn-sm otd-bday-link">
-            ${o.btnBday}
-          </a>
         </div>
       </div>
 
@@ -3539,9 +3520,6 @@ async function renderOnThisDay() {
           </div>
 
           <div class="otd-cta-row">
-            <a href="/en/birthday/${todayKey}" class="btn btn-primary btn-sm">
-              ${o.btnExplore}
-            </a>
           </div>
         </div>
       </div>

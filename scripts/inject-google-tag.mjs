@@ -20,12 +20,10 @@ const TAG_ID = "G-FERBLJWWWZ";
 const SUBPAGES = [
   "index.html",
   "achievements.html",
-  "birthday.html",
   "champions-league.html",
   "dashboard.html",
   "goalsbyseason.html",
   "goalsbyyear.html",
-  "latest-goal.html",
   "ronaldo-vs-messi.html",
   "timeline.html",
   "real-madrid.html",

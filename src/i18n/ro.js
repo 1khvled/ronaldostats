@@ -277,11 +277,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/ro/birthday", page: "birthday", t: "🎂 A marcat Ronaldo de ziua ta de naștere?", d: (d) => `Caută în toate cele 366 de zile calendaristice, cu secvențe video, din cei ${n(d.totals.goals)} de goluri ai carierei sale de seniori.` },
   { href: "/ro/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo vs Messi, în toate timpurile", d: () => `Statistici față în față: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goluri, ${LIVE.trophies} vs ${LIVE.rTrophies} trofee, 5 vs 8 trofee Ballon d'Or.` },
   { href: "/ro/real-madrid", page: "real-madrid", t: "🏟️ Ronaldo la Real Madrid", d: () => "Cei nouă ani la Real Madrid: 450 de goluri, 311 în La Liga, patru Ligi ale Campionilor și 18 în Clásico." },
   { href: "/ro/champions-league", page: "champions-league", t: "⭐ Recordul în Liga Campionilor", d: () => "140 de goluri în UEFA Champions League, 42 de assisturi și 5 trofee europene." },
-  { href: "/ro/latest-goal", page: "latest-goal", t: "⚽ Cel mai recent gol al lui Ronaldo, în video", d: () => "Urmărește videoclipul ultimului gol al lui Ronaldo, vezi dacă a marcat azi și vezi secvențele recente." },
   { href: "/ro", page: "home", t: "Statisticile carierei lui Ronaldo", d: (d) => `Cifrele principale: ${n(d.totals.goals)} goluri în ${n(d.totals.apps)} meciuri de seniori.` },
   { href: "/ro/dashboard", page: "dashboard", t: "Panoul statisticilor lui Ronaldo", d: () => "Filtrează fiecare grafic după Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP sau Portugalia." },
   { href: "/ro/timeline", page: "timeline", t: "Ronaldo de-a lungul anilor", d: () => "Fiecare reper al carierei, datat și în ordine, de la 2002 până azi." },

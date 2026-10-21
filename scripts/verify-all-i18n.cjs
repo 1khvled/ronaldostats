@@ -119,7 +119,7 @@ function diff(a, b, pathPrefix, out) {
   }
 
   // ---- 3. generated pages -------------------------------------------------
-  const EN_PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
+  const EN_PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
   const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ");
   const enText = strip(EN_PAGES.map((p) => fs.readFileSync(path.join(ROOT, p + ".html"), "utf8")).join(" "));
   const wordRun = (t) => {

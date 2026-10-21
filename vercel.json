@@ -12,52 +12,6 @@
       "permanent": true
     },
     {
-      "source": "/:lang(es|pt|fr|ar|bn|hi|ro|uz)/birthday/:key",
-      "destination": "/en/birthday/:key",
-      "permanent": true
-    },
-    {
-      "source": "/:lang/birthday",
-      "has": [
-        {
-          "type": "query",
-          "key": "date",
-          "value": "(?<date>.+)"
-        }
-      ],
-      "destination": "/en/birthday/$date",
-      "permanent": true
-    },
-    {
-      "source": "/:lang",
-      "has": [
-        {
-          "type": "query",
-          "key": "date",
-          "value": "(?<date>.+)"
-        }
-      ],
-      "destination": "/en/birthday/$date",
-      "permanent": true
-    },
-    {
-      "source": "/:lang/birthday",
-      "has": [
-        {
-          "type": "query",
-          "key": "month",
-          "value": "(?<month>.+)"
-        },
-        {
-          "type": "query",
-          "key": "day",
-          "value": "(?<day>.+)"
-        }
-      ],
-      "destination": "/en/birthday/$month-$day",
-      "permanent": true
-    },
-    {
       "source": "/admin",
       "destination": "/en",
       "permanent": true
@@ -148,16 +102,6 @@
       "permanent": true
     },
     {
-      "source": "/birthday",
-      "destination": "/en/birthday",
-      "permanent": true
-    },
-    {
-      "source": "/birthday.html",
-      "destination": "/en/birthday",
-      "permanent": true
-    },
-    {
       "source": "/champions-league",
       "destination": "/en/champions-league",
       "permanent": true
@@ -185,36 +129,6 @@
     {
       "source": "/ronaldo-vs-messi.html",
       "destination": "/en/ronaldo-vs-messi",
-      "permanent": true
-    },
-    {
-      "source": "/latest-goal",
-      "destination": "/en/latest-goal",
-      "permanent": true
-    },
-    {
-      "source": "/latest-goal.html",
-      "destination": "/en/latest-goal",
-      "permanent": true
-    },
-    {
-      "source": "/last-goal",
-      "destination": "/en/latest-goal",
-      "permanent": true
-    },
-    {
-      "source": "/last-goal.html",
-      "destination": "/en/latest-goal",
-      "permanent": true
-    },
-    {
-      "source": "/ronaldo-goal-today",
-      "destination": "/en/latest-goal",
-      "permanent": true
-    },
-    {
-      "source": "/did-ronaldo-score-today",
-      "destination": "/en/latest-goal",
       "permanent": true
     },
     {
@@ -297,14 +211,6 @@
       "destination": "/gear.html"
     },
     {
-      "source": "/en/birthday",
-      "destination": "/birthday.html"
-    },
-    {
-      "source": "/en/days",
-      "destination": "/days.html"
-    },
-    {
       "source": "/en/vs/real-madrid",
       "destination": "/real-madrid.html"
     },
@@ -323,22 +229,6 @@
     {
       "source": "/en/champions-league",
       "destination": "/champions-league.html"
-    },
-    {
-      "source": "/en/latest-goal",
-      "destination": "/latest-goal.html"
-    },
-    {
-      "source": "/en/last-goal",
-      "destination": "/latest-goal.html"
-    },
-    {
-      "source": "/en/ronaldo-goal-today",
-      "destination": "/latest-goal.html"
-    },
-    {
-      "source": "/en/did-ronaldo-score-today",
-      "destination": "/latest-goal.html"
     },
     {
       "source": "/embed/on-this-day",
@@ -389,10 +279,6 @@
       "destination": "/es/gear.html"
     },
     {
-      "source": "/es/birthday",
-      "destination": "/es/birthday.html"
-    },
-    {
       "source": "/es/vs/ronaldo",
       "destination": "/es/ronaldo-vs-messi.html"
     },
@@ -411,10 +297,6 @@
     {
       "source": "/es/champions-league",
       "destination": "/es/champions-league.html"
-    },
-    {
-      "source": "/es/latest-goal",
-      "destination": "/es/latest-goal.html"
     },
     {
       "source": "/pt/data/:path*",
@@ -461,10 +343,6 @@
       "destination": "/pt/gear.html"
     },
     {
-      "source": "/pt/birthday",
-      "destination": "/pt/birthday.html"
-    },
-    {
       "source": "/pt/vs/ronaldo",
       "destination": "/pt/ronaldo-vs-messi.html"
     },
@@ -483,10 +361,6 @@
     {
       "source": "/pt/champions-league",
       "destination": "/pt/champions-league.html"
-    },
-    {
-      "source": "/pt/latest-goal",
-      "destination": "/pt/latest-goal.html"
     },
     {
       "source": "/fr/data/:path*",
@@ -533,10 +407,6 @@
       "destination": "/fr/gear.html"
     },
     {
-      "source": "/fr/birthday",
-      "destination": "/fr/birthday.html"
-    },
-    {
       "source": "/fr/vs/ronaldo",
       "destination": "/fr/ronaldo-vs-messi.html"
     },
@@ -555,10 +425,6 @@
     {
       "source": "/fr/champions-league",
       "destination": "/fr/champions-league.html"
-    },
-    {
-      "source": "/fr/latest-goal",
-      "destination": "/fr/latest-goal.html"
     },
     {
       "source": "/ar/data/:path*",
@@ -605,10 +471,6 @@
       "destination": "/ar/gear.html"
     },
     {
-      "source": "/ar/birthday",
-      "destination": "/ar/birthday.html"
-    },
-    {
       "source": "/ar/vs/ronaldo",
       "destination": "/ar/ronaldo-vs-messi.html"
     },
@@ -627,10 +489,6 @@
     {
       "source": "/ar/champions-league",
       "destination": "/ar/champions-league.html"
-    },
-    {
-      "source": "/ar/latest-goal",
-      "destination": "/ar/latest-goal.html"
     },
     {
       "source": "/bn/data/:path*",
@@ -677,10 +535,6 @@
       "destination": "/bn/gear.html"
     },
     {
-      "source": "/bn/birthday",
-      "destination": "/bn/birthday.html"
-    },
-    {
       "source": "/bn/vs/ronaldo",
       "destination": "/bn/ronaldo-vs-messi.html"
     },
@@ -699,10 +553,6 @@
     {
       "source": "/bn/champions-league",
       "destination": "/bn/champions-league.html"
-    },
-    {
-      "source": "/bn/latest-goal",
-      "destination": "/bn/latest-goal.html"
     },
     {
       "source": "/hi/data/:path*",
@@ -749,10 +599,6 @@
       "destination": "/hi/gear.html"
     },
     {
-      "source": "/hi/birthday",
-      "destination": "/hi/birthday.html"
-    },
-    {
       "source": "/hi/vs/ronaldo",
       "destination": "/hi/ronaldo-vs-messi.html"
     },
@@ -771,10 +617,6 @@
     {
       "source": "/hi/champions-league",
       "destination": "/hi/champions-league.html"
-    },
-    {
-      "source": "/hi/latest-goal",
-      "destination": "/hi/latest-goal.html"
     },
     {
       "source": "/ro/data/:path*",
@@ -821,10 +663,6 @@
       "destination": "/ro/gear.html"
     },
     {
-      "source": "/ro/birthday",
-      "destination": "/ro/birthday.html"
-    },
-    {
       "source": "/ro/vs/ronaldo",
       "destination": "/ro/ronaldo-vs-messi.html"
     },
@@ -843,10 +681,6 @@
     {
       "source": "/ro/champions-league",
       "destination": "/ro/champions-league.html"
-    },
-    {
-      "source": "/ro/latest-goal",
-      "destination": "/ro/latest-goal.html"
     },
     {
       "source": "/uz/data/:path*",
@@ -893,10 +727,6 @@
       "destination": "/uz/gear.html"
     },
     {
-      "source": "/uz/birthday",
-      "destination": "/uz/birthday.html"
-    },
-    {
       "source": "/uz/vs/ronaldo",
       "destination": "/uz/ronaldo-vs-messi.html"
     },
@@ -915,10 +745,6 @@
     {
       "source": "/uz/champions-league",
       "destination": "/uz/champions-league.html"
-    },
-    {
-      "source": "/uz/latest-goal",
-      "destination": "/uz/latest-goal.html"
     }
   ],
   "headers": [

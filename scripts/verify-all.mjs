@@ -51,8 +51,6 @@ step(run(process.execPath, ["scripts/check-orphans.mjs"], "orphan pages"), "orph
 step(run(process.execPath, ["scripts/clean-runtime-copy.mjs"], "clean the runtime source"), "the runtime source does not shadow the bundle");
 step(run(NODE, [VITE, "build"], "vite build"), "production build");
 step(run(process.execPath, ["scripts/copy-en.mjs"], "copy the English pages"), "the English pages in the deployment");
-step(run(process.execPath, ["scripts/generate-programmatic-pages.mjs"], "the day pages"), "the birthday day pages in the deployment");
-step(run(process.execPath, ["scripts/generate-days-hub.mjs"], "the days hub"), "the days hub in the deployment");
 step(run(process.execPath, ["scripts/check-runtime-bundle.mjs"], "the runtime bundle"), "every page runs the bundled runtime");
 step(run(process.execPath, ["scripts/check-deploy-assets.mjs"], "the deployment's assets"), "every page points at a file the deployment has");
 step(run(process.execPath, ["scripts/check-internal-links.mjs"], "the deployment's links"), "every internal link points at a page the deployment has");
@@ -61,7 +59,7 @@ step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audi
 // ---- 6. leftover Messi references in the English shells --------------------
 process.stdout.write("\n=== leftover reference sweep ===\n");
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
-  "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
+  "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 // "24 June" is NOT in the list: it is a legitimate calendar-day title on the
 // birthday heatmap (Ronaldo scored on 24 June 2017). His birthday is
 // 5 February, and the copy around it is checked by the i18n audit.

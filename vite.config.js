@@ -54,11 +54,9 @@ const subpages = [
   'goalsbyyear',
   'timeline',
   'achievements',
-  'birthday',
   'ronaldo-vs-messi',
   'real-madrid',
   'champions-league',
-  'latest-goal',
   'gear'
 ];
 
@@ -69,11 +67,9 @@ const rollupInput = {
   dashboard: resolve(root, 'dashboard.html'),
   timeline: resolve(root, 'timeline.html'),
   achievements: resolve(root, 'achievements.html'),
-  birthday: resolve(root, 'birthday.html'),
   real_madrid: resolve(root, 'real-madrid.html'),
   ronaldo_vs_messi: resolve(root, 'ronaldo-vs-messi.html'),
   champions_league: resolve(root, 'champions-league.html'),
-  latest_goal: resolve(root, 'latest-goal.html'),
   gear: resolve(root, 'gear.html')
 };
 

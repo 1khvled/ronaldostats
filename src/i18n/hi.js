@@ -310,11 +310,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/hi/birthday", page: "birthday", t: "🎂 क्या रोनाल्डो ने आपके जन्मदिन पर गोल दागा?", d: (d) => `वीडियो क्लिप के साथ साल के सभी 366 कैलेंडर दिनों में खोजें — रोनाल्डो के ${n(d.totals.goals)} सीनियर करियर गोल।` },
   { href: "/hi/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 रोनाल्डो बनाम मेसी — सर्वकालिक", d: () => `आमने-सामने करियर आंकड़े: ${n(LIVE.goals)} बनाम ${n(LIVE.rGoals)} गोल, ${LIVE.trophies} बनाम ${LIVE.rTrophies} खिताब, 5 बनाम 8 Ballons d'Or।` },
   { href: "/hi/real-madrid", page: "real-madrid", t: "🏟️ रियल मैड्रिड में रोनाल्डो", d: () => "रियल मैड्रिड में नौ साल: 450 गोल, ला लीगा में 311, चार चैंपियंस लीग और क्लासिको में 18।" },
   { href: "/hi/champions-league", page: "champions-league", t: "⭐ Champions League रिकॉर्ड", d: () => "140 UEFA Champions League गोल, 42 सहायक गोल, और 5 यूरोपीय खिताब।" },
-  { href: "/hi/latest-goal", page: "latest-goal", t: "⚽ रोनाल्डो का नवीनतम गोल वीडियो", d: () => "रोनाल्डो का नवीनतम गोल वीडियो देखें, जानें कि उन्होंने आज गोल दागा या नहीं, और हालिया गोल क्लिप देखें।" },
   { href: "/hi", page: "home", t: "रोनाल्डो के करियर आंकड़े", d: (d) => `मुख्य आंकड़े: ${n(d.totals.apps)} सीनियर मैचों में ${n(d.totals.goals)} गोल।` },
   { href: "/hi/dashboard", page: "dashboard", t: "रोनाल्डो आंकड़ों का डैशबोर्ड", d: () => "हर चार्ट को रियल मैड्रिड, मैनचेस्टर यूनाइटेड, युवेंतस, अल नस्र, स्पोर्टिंग या पुर्तगाल के अनुसार छाँटें।" },
   { href: "/hi/timeline", page: "timeline", t: "रोनाल्डो सालों के साथ", d: () => "2002 से आज तक का हर करियर पड़ाव, तारीख़ और क्रम के साथ।" },

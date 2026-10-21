@@ -278,11 +278,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/en/birthday", page: "birthday", t: "🎂 Ronaldo sizning tugʻilgan kuningizda gol urganmi?", d: (d) => `366 ta taqvim kunining barchasini — Ronaldo ning ${n(d.totals.goals)} ta rasmiy kariera goli boʻylab — video materiallar bilan qidiring.` },
   { href: "/en/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo va Messi — barcha davrlar", d: () => `Yuzma-yuz kariera statistikasi: ${n(LIVE.goals)} va ${n(LIVE.rGoals)} gol, ${LIVE.trophies} va ${LIVE.rTrophies} sovrin, 5 va 8 ta Ballon d'Or.` },
   { href: "/en/real-madrid", page: "real-madrid", t: "🏟️ Real Madridda Ronaldo", d: () => "Real Madridda to'qqiz yil: 450 gol, La Ligada 311, to'rtta Chempionlar Ligasi va Klassikoda 18." },
   { href: "/en/champions-league", page: "champions-league", t: "⭐ Chempionlar Ligasi rekordi", d: () => "UEFA Chempionlar Ligasiida 140 ta gol, 42 ta assist va 5 ta yevropa tituli." },
-  { href: "/en/latest-goal", page: "latest-goal", t: "⚽ Ronaldo ning soʻnggi goli videosi", d: () => "Ronaldo ning soʻnggi gol videosini koʻring, u bugun gol urganini aniqlang va yaqin gol videolarini koʻrib chiqing." },
   { href: "/en", page: "home", t: "Ronaldo kariera statistikasi", d: (d) => `Asosiy koʻrsatkichlar: ${n(d.totals.goals)} ta gol — ${n(d.totals.apps)} ta rasmiy oʻyinda.` },
   { href: "/en/dashboard", page: "dashboard", t: "Ronaldo statistikasi boshqaruv paneli", d: () => "Har bir grafigi Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP yoki Portugaliya boʻyicha filtrlang." },
   { href: "/en/timeline", page: "timeline", t: "Ronaldo yillar davomida", d: () => "Karyeraning har bir bosqichi, sana va tartib bilan, 2002-yildan bugungi kungacha." },

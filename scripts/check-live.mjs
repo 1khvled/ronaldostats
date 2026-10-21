@@ -11,7 +11,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const BASE = "https://ronaldomstats-app.vercel.app";
 const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
-const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
+const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 const get = async (url) => {
   // the deployment redirects a few forms to their canonical URL, so the

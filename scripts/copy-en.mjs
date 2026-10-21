@@ -10,7 +10,6 @@ if (!fs.existsSync(enDir)) {
 
 const htmlPages = [
   "index.html",
-  "birthday.html",
   "goalsbyyear.html",
   "goalsbyseason.html",
   "dashboard.html",
@@ -19,7 +18,6 @@ const htmlPages = [
   "real-madrid.html",
   "ronaldo-vs-messi.html",
   "champions-league.html",
-  "latest-goal.html",
   "gear.html",
 ];
 

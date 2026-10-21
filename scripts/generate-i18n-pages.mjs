@@ -27,8 +27,6 @@ const PAGES = {
   goalsbyseason: "goalsbyseason",
   timeline: "timeline",
   achievements: "achievements",
-  birthday: "birthday",
-  "latest-goal": "latest-goal",
   "champions-league": "champions-league",
   gear: "gear",
   "real-madrid": "real-madrid",

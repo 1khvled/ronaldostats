@@ -276,11 +276,9 @@ export const ARG_STREAM = {
   };
 
 export const EXPLORE_LANGS = [
-  { href: "/en/birthday", page: "birthday", t: "🎂 Did Ronaldo score on your birthday?", d: (d) => `Search all 366 calendar days with video clips across Ronaldo's ${n(d.totals.goals)} senior career goals.` },
   { href: "/en/ronaldo-vs-messi", page: "ronaldo-vs-messi", t: "🐐 Ronaldo vs Messi All-Time", d: () => `Head-to-head career stats: ${n(LIVE.goals)} vs ${n(LIVE.rGoals)} goals, ${LIVE.trophies} vs ${LIVE.rTrophies} trophies, 5 vs 8 Ballons d'Or.` },
   { href: "/en/real-madrid", page: "real-madrid", t: "🏟️ Ronaldo at Real Madrid", d: () => "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico." },
   { href: "/en/champions-league", page: "champions-league", t: "⭐ Champions League Record", d: () => "140 UEFA Champions League goals, 42 assists, and 5 European titles." },
-  { href: "/en/latest-goal", page: "latest-goal", t: "⚽ Latest Ronaldo Goal Video", d: () => "Watch Ronaldo's latest goal video, see if he scored today, and view recent goal clips." },
   { href: "/en", page: "home", t: "Ronaldo career stats", d: (d) => `The headline numbers: ${n(d.totals.goals)} goals in ${n(d.totals.apps)} senior games.` },
   { href: "/en/dashboard", page: "dashboard", t: "Ronaldo stats dashboard", d: () => "Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal." },
   { href: "/en/timeline", page: "timeline", t: "Ronaldo through the years", d: () => "Every career milestone, dated and in order, from 2002 to today." },

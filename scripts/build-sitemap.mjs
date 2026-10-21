@@ -37,13 +37,11 @@ const LG_OPP_TAG = (LG_OPP || "Opponent").replace(/[^A-Za-z0-9]+/g, " ").trim();
 
 const SUBPAGES = [
   { slug: "dashboard", changefreq: "daily", priority: "0.9", lastmod: todayIso },
-  { slug: "birthday", changefreq: "daily", priority: "0.95", lastmod: todayIso },
   { slug: "goalsbyseason", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "goalsbyyear", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "ronaldo-vs-messi", changefreq: "weekly", priority: "0.95", lastmod: todayIso },
   { slug: "real-madrid", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "champions-league", changefreq: "monthly", priority: "0.9", lastmod: todayIso },
-  { slug: "latest-goal", changefreq: "daily", priority: "0.95", lastmod: todayIso },
   { slug: "timeline", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "achievements", changefreq: "monthly", priority: "0.85", lastmod: todayIso },
   { slug: "gear", changefreq: "weekly", priority: "0.85", lastmod: todayIso }
@@ -180,12 +178,6 @@ const enImages = {
       <image:caption>The Club World Cup Silver and Golden Ball trophies in Ronaldo's own museum in Madeira.</image:caption>
       <image:geo_location>Funchal, Madeira, Portugal</image:geo_location>
     </image:image>`,
-  birthday: `    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo Birthday Goal Explorer: ${CAREER_GOALS} Career Goals Across 366 Days</image:title>
-      <image:caption>Interactive visual map and video player showing all goals Cristiano Ronaldo scored across 366 calendar days.</image:caption>
-      <image:geo_location>Lisbon, Portugal / Madrid, Spain / Riyadh, Saudi Arabia</image:geo_location>
-    </image:image>`,
   "real-madrid": `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
       <image:title>Ronaldo at Real Madrid: 450 goals in 438 appearances</image:title>
@@ -201,12 +193,6 @@ const enImages = {
       <image:title>Cristiano Ronaldo and the UEFA Champions League</image:title>
       <image:caption>Ronaldo's Champions League record: 140 goals in 173 appearances and five European crowns.</image:caption>
     </image:image>`,
-  "latest-goal": `    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo Last Goal Video and Highlights (Goal #${LG_NUM} vs ${LG_OPP})</image:title>
-      <image:caption>Watch Cristiano Ronaldo score Goal #${LG_NUM} of his career for ${LG_TEAM} against ${LG_OPP} in ${LG_COMP} on ${LG_DATE}.</image:caption>
-      <image:geo_location>${(LG?.venue || "Riyadh, Saudi Arabia").replace(/&/g, "&amp;")}</image:geo_location>
-    </image:image>`
 };
 
 const videoMeta = {
@@ -287,16 +273,6 @@ ${getHreflangsXml("/" + sub.slug)}${imgXml}${vidXml}
   </url>`);
 }
 
-// 2b. English-only hub for all 366 day pages.
-// Deliberately NOT in SUBPAGES: that array is reused for the other 8
-// languages, and /es/days, /ar/days etc. do not exist. The day pages
-// themselves are English-only too, so their hreflangs stay x-default+en.
-urlBlocks.push(`  <url>
-    <loc>https://www.ronaldostats.site/en/days</loc>
-    <lastmod>${todayIso}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>`);
 
 // 3. Other languages: Homepage + Subpages
 // Number rendering per locale (Bengali sitemap strings keep native digits,
@@ -384,34 +360,6 @@ ${getHreflangsXml("")}
     <priority>${sub.priority}</priority>
 ${getHreflangsXml("/" + sub.slug)}${vidXml}
   </url>`);
-  }
-}
-
-// 5. Programmatic Birthday Pages (high-value only: days with goals + Ronaldo's birthday)
-const dataPath = path.join(rootDir, "public", "data", "birthday-goals.json");
-if (fs.existsSync(dataPath)) {
-  const bdayData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
-  const days = bdayData.calendar || bdayData.days || {};
-  const keys = Object.keys(days);
-  for (const key of keys) {
-    const day = days[key];
-    const hasGoals = (day.goalsCount || 0) > 0;
-    const isRonaldoBday = day.month === 6 && day.day === 24;
-    if (hasGoals || isRonaldoBday) {
-      let dayLastmod = "2026-09-18";
-      if (day.matches && day.matches.length) {
-        const dates = day.matches.map(m => m.date).filter(Boolean).sort();
-        if (dates.length) {
-          dayLastmod = dates[dates.length - 1];
-        }
-      }
-      urlBlocks.push(`  <url>
-    <loc>https://www.ronaldostats.site/en/birthday/${key}</loc>
-    <lastmod>${dayLastmod}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>`);
-    }
   }
 }
 
