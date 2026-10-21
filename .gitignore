@@ -22,3 +22,5 @@ dev-server.log
 public/__scratch-*.html
 .vercel
 .env*
+public/src/
+preview.log

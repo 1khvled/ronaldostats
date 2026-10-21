@@ -48,6 +48,9 @@ step(run(process.execPath, ["scripts/audit-adsense.mjs"], "adsense audit"), "ads
 step(run(process.execPath, ["scripts/audit-wc-splits.mjs"], "world cup audit"), "world cup splits audit");
 step(run(process.execPath, ["scripts/check-orphans.mjs"], "orphan pages"), "orphan page audit");
 step(run(NODE, [VITE, "build"], "vite build"), "production build");
+step(run(process.execPath, ["scripts/copy-en.mjs"], "copy the English pages"), "the English pages in the deployment");
+step(run(process.execPath, ["scripts/copy-runtime-assets.mjs"], "copy the runtime source"), "the runtime assets in the deployment");
+step(run(process.execPath, ["scripts/check-deploy-assets.mjs"], "the deployment's assets"), "every page points at a file the deployment has");
 step(run(process.execPath, ["scripts/dist-audit.cjs"], "dist audit"), "dist audit");
 
 // ---- 6. leftover Messi references in the English shells --------------------

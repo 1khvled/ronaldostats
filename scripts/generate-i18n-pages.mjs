@@ -140,7 +140,10 @@ function localizeHtml(html, lang, slug, dict) {
 
   // 8. the renderer is served from the site root, so the localized pages
   //    must reference it absolutely
-  out = out.replace(/src="(src\/[a-z0-9.-]+\.js)"/g, 'src="/$1"');
+  // the renderer and the stylesheet are served from the root: a relative
+  // reference on /ar/index.html would ask for /ar/src/..., which the build does
+  // not contain, and the page would ship with no stylesheet and no script
+  out = out.replace(/(src|href)="(src\/[a-z0-9.\/-]+\.(?:js|css))"/g, '$1="/$2"');
 
   return out;
 }
