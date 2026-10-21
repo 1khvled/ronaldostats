@@ -1,8 +1,348 @@
 {
-  "updated": "2026-10-19T22:40:24.089Z",
+  "updated": "2026-10-21T11:29:47.507Z",
   "generator": "scripts/smart-check.mjs (local) + worker/smart-check.js (cron); never writes ronaldo-data.json",
   "cutoff": "Only matches dated after VERIFIED_THROUGH are staged. Everything earlier is already folded into ronaldo-data.json.",
   "provisional": [],
-  "needs_review": [],
+  "needs_review": [
+    {
+      "match_id": "756036",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-01-12",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "42'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756036"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756049",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-01-21",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "50'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756049"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756067",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-01-30",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "47'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756067"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756100",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-02-14",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "18'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756100"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756107",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-02-21",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 2,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "13'",
+        "79'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756107"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756138",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-04-03",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "73'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756138"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756147",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-04-11",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "15'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756147"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756173",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-04-29",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "76'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756173"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756196",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-05-07",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "75'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756196"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "756205",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-05-21",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 2,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "63'",
+        "81'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=756205"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "401900400",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-08-21",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "83'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=401900400"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "401900381",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-08-28",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "50'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=401900381"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "401900357",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-09-09",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "22'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=401900357"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "401900907",
+      "competition": "Saudi Pro League",
+      "match_date": "2026-10-09",
+      "home": "Al Nassr",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "23'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/ksa.1/summary?event=401900907"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "760461",
+      "competition": "FIFA World Cup",
+      "match_date": "2026-06-23",
+      "home": "Portugal",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 2,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "6'",
+        "39'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760461"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    },
+    {
+      "match_id": "760496",
+      "competition": "FIFA World Cup",
+      "match_date": "2026-07-02",
+      "home": "Portugal",
+      "away": "",
+      "score_espn": "",
+      "score_openfootball": "",
+      "sources_agree": false,
+      "ronaldo_goals": 1,
+      "ronaldo_assists": 0,
+      "ronaldo_named": true,
+      "minutes": [
+        "68'"
+      ],
+      "status": "needs_review",
+      "sources": [
+        "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+      ],
+      "note": "Staged from ESPN's public scoreboard. A human confirms it before any total changes."
+    }
+  ],
   "note": "Rows here are UNVERIFIED and never rendered. A human confirms them with `npm run pending` before any total changes."
 }
