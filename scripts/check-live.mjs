@@ -14,9 +14,11 @@ const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 const get = async (url) => {
-  const r = await fetch(url, { redirect: "manual", headers: { "user-agent": "Mozilla/5.0 (compatible; RonaldoStatsCheck/1.0)" } });
+  // the deployment redirects a few forms to their canonical URL, so the
+  // redirect is followed and the page that answers is the one that counts
+  const r = await fetch(url, { redirect: "follow", headers: { "user-agent": "Mozilla/5.0 (compatible; RonaldoStatsCheck/1.0)" } });
   const text = await r.text();
-  return { status: r.status, location: r.headers.get("location"), text };
+  return { status: r.status, location: r.url, text };
 };
 
 let bad = 0;

@@ -84,7 +84,7 @@ export const HOME = {
       ["Quantos gols sem pênalti Cristiano Ronaldo marcou?", `Ronaldo marcou <b>${n(t.goals - (m?.penalties || 184))} gols sem pênalti</b> em ${n(t.apps)} partidas (${((t.goals - (m?.penalties || 184)) / t.apps).toFixed(2)} gols sem pênalti por partida) — 81% de tudo o que ele já marcou.`],
       ["Quantos gols Ronaldo marcou em 2013?", `<b>69 gols oficiais em 2013</b> (59 pelo Real Madrid e 10 por Portugal) — o maior ano civil da carreira, e um ano que trouxe um hat-trick pela Seleção Portuguesa em 15 minutos contra a Irlanda do Norte. Confira nosso <a href="/${lang}/goalsbyyear">rastreador de estatísticas de 2013</a>.`],
       ["Quantos troféus Cristiano Ronaldo conquistou?", `<b>${n(LIVE.trophies)} títulos de equipe em nível sênior</b> — 32 por clubes (Real Madrid 15, Manchester United 9, Juventus 5, Al Nassr 2, Sporting CP 1) e 3 por Portugal (Euro 2016, Nations League 2019 e 2025), mais 5 Ballons d'Or. Alguns veículos citam 36–37 porque contam a Supercopa da UEFA e as supercopas domésticas de forma diferente. Veja a <a href="/${lang}/achievements">lista completa de troféus</a>.`],
-      ["Quantos Ballons d'Or Cristiano Ronaldo conquistou?", `Cristiano Ronaldo conquistou <b>5 Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — o primeiro em 2008, aos 23 anos, quando foi nomeado em todos os 96 votos.`],
+      ["Quantos Ballons d'Or Cristiano Ronaldo conquistou?", `Cristiano Ronaldo conquistou <b>5 Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — o primeiro em 2008, aos 23 anos, quando foi nomeado em 77 dos 96 votos.`],
       ["Qual é o retrospecto de Ronaldo no Real Madrid?", `O retrospecto de Ronaldo nos El Clássicos pelo Real Madrid — e cada gol que ele marcou contra o Real Madrid com outra camisa — está reunido na nossa <a href="/${lang}/real-madrid">página de Ronaldo no Real Madrid</a>.`],
       ["Quais são as estatísticas de Ronaldo na UEFA Champions League?", `Ronaldo marcou <b>140 gols em 183 jogos na Champions League</b> — o recorde histórico da competição — com <b>42 assistências</b>, também recorde, e conquistou 5 títulos (2008, 2014, 2016, 2017, 2018). Veja os dados completos no nosso <a href="/${lang}/champions-league">hub da Champions League</a>.`],
       ["Quais são as estatísticas de Ronaldo na FIFA World Cup?", `Ronaldo jogou em <b>seis Copas do Mundo FIFA</b> (2006, 2010, 2014, 2018, 2022 e 2026) e permanece o maior artilheiro de Portugal, com <b>146 gols em 234 jogos</b> — o recorde histórico de seleções nos dois quesitos.`],
@@ -175,7 +175,7 @@ export const TIMELINE = {
   keydates: (t, lastUpdated) => [
     ["14 Ago 2002", "Estreia profissional pelo <b>Sporting CP</b> contra o Inter na terceira rodada de classificação da Champions League, aos 17 anos."],
     ["20 Ago 2003", "Estreia por <b>Portugal</b> contra o Cazaquistão, semanas depois de vestir a lendérica camisa 7 no Manchester United."],
-    ["2008", "<b>Ballon d'Or</b> aos 23 anos, nomeado em todos os 96 votos, com a Champions League e a Copa do Mundo de Clubes da FIFA."],
+    ["2008", "<b>Ballon d'Or</b> aos 23 anos, nomeado em 77 dos 96 votos, com a Champions League e a Copa do Mundo de Clubes da FIFA."],
     ["2013", "<b>69 gols</b> no ano civil — o seu melhor ano, incluindo um hat-trick por Portugal em 15 minutos."],
     ["2016", "Levanta o <b>Campeonato Europeu</b> como capitão de Portugal, com três gols e a Chuteira de Prata."],
     [esc(lastUpdated), `<b>${n(t.goals)} gols na carreira</b> por clubes e seleção — última verificação nesta data.`]
@@ -291,7 +291,7 @@ export const EXPLORE_LANGS = [
    sem qualquer alteração em app.js. */
 export const ERA_INTROS = {
   "The boy from Rosario":
-    `Cristiano Ronaldo chegou a Lisboa vindo de Funchal, na Madeira, ainda adolescente, com fama de veloz e o hábito de exigir a bola. Sua primeira temporada profissional no Sporting CP rendeu cinco gols em 31 partidas e, em doze meses, recebeu a lendérica camisa 7 do Manchester United por £12.24m. Marcou na final da FA Cup aos 19 anos, conquistou três títulos da Premier League, a Champions League e a Copa do Mundo de Clubes da FIFA e, em 2008, foi eleito o melhor jogador do mundo aos 23 — com os 96 votos.`,
+    `Cristiano Ronaldo chegou a Lisboa vindo de Funchal, na Madeira, ainda adolescente, com fama de veloz e o hábito de exigir a bola. Sua primeira temporada profissional no Sporting CP rendeu cinco gols em 31 partidas e, em doze meses, recebeu a lendérica camisa 7 do Manchester United por £12.24m. Marcou na final da FA Cup aos 19 anos, conquistou três títulos da Premier League, a Champions League e a Copa do Mundo de Clubes da FIFA e, em 2008, foi eleito o melhor jogador do mundo aos 23 — com 77 dos 96 votos.`,
   "The greatest peak football has seen":
     `O Real Madrid pagou uma negociação recorde mundial em 2009 e ficou com o talento ofensivo mais caro da história do esporte. Ele respondeu com um cabeceiro na final da Copa del Rey contra o Barcelona em sua primeira temporada e, em seguida, com um título da La Liga conquistado com 100 pontos recorde e 46 gols na liga. Até o fim de 2012 tinha alcançado 60 gols em um ano civil e 100 gols na La Liga para o clube, e a identidade ofensiva do Madrid estava sendo reconstruída em torno dele.`,
   "MSN and the second treble":
@@ -299,7 +299,7 @@ export const ERA_INTROS = {
   "Carrying Barcelona":
     `Depois do Campeonato Europeu de 2016 conquistado na França, Ronaldo somou a Champions League em 2017 — incluindo um hat-trick contra o Bayern de Munique que o levou a 100 gols na competição — e um quinto Ballon d'Or na mesma temporada. Superou Jimmy Greaves como maior artilheiro das cinco grandes ligas europeias e, aos 33 anos, foi para a Juventus, onde marcou um hat-trick em seu primeiro jogo na Champions League.`,
   "Farewell to Barcelona":
-    `O título da Nations League e um lugar nos livros de recordes chegaram em 2019, quando o gol 700 da carreira saiu contra a Ucrânia, em outubro. Sua 1.000ª partida profissional veio contra o Cagliari, em fevereiro de 2020, e, em 2021, passou Ali Daei e se tornou o maior artilheiro do futebol internacional masculino, com um décimo hat-trick internacional — um recorde mundial.`,
+    `O título da Nations League e um lugar nos livros de recordes chegaram em 2019, quando o gol 700 da carreira saiu contra a Ucrânia, em outubro. Sua 1.000ª partida profissional veio contra o SPAL, em fevereiro de 2020, e, em 2021, passou Ali Daei e se tornou o maior artilheiro do futebol internacional masculino, com um décimo hat-trick internacional — um recorde mundial.`,
   "Paris and the World Cup":
     `O retorno ao Manchester United em 2021 trouxe a camisa 7 e um novo palco para o mais velho da sala e, em 2022, passou Josef Bican com um hat-trick contra o Tottenham. A ida para a Arábia Saudita em janeiro de 2023 o tornou capitão do Al Nassr e, com sua 197ª convocação, o jogador com mais jogos pela seleção no futebol internacional masculino.`,
   "Miami and the road to 1,000":

@@ -85,7 +85,7 @@ export const HOME = {
       ["How many non-penalty goals has Cristiano Ronaldo scored?", `Ronaldo has scored <b>${n(t.goals - (m?.penalties || 184))} non-penalty goals</b> in ${n(t.apps)} appearances (${((t.goals - (m?.penalties || 184)) / t.apps).toFixed(2)} non-penalty goals per game) — 81% of everything he has ever scored.`],
       ["How many goals did Ronaldo score in 2013?", `<b>69 official goals in 2013</b> (59 for Real Madrid and 10 for Portugal) — the biggest calendar year of his career, and a year that brought a hat-trick for Portugal inside 15 minutes against Northern Ireland. Check our <a href="/${lang}/goalsbyyear">2013 stats tracker</a>.`],
       ["How many trophies has Cristiano Ronaldo won?", `<b>${n(LIVE.trophies)} senior team titles</b> — 32 with clubs (Real Madrid 15, Manchester United 9, Juventus 5, Al Nassr 2, Sporting CP 1) and 3 with Portugal (Euro 2016, Nations League 2019 and 2025), plus 5 Ballons d'Or. Some outlets quote 36–37 because they count the UEFA Super Cup and the domestic supercups differently. See <a href="/${lang}/achievements">the full trophy list</a>.`],
-      ["How many Ballons d'Or has Cristiano Ronaldo won?", `Cristiano Ronaldo has won <b>5 Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — the first in 2008, at 23 years old, when he was named on all 96 ballots.`],
+      ["How many Ballons d'Or has Cristiano Ronaldo won?", `Cristiano Ronaldo has won <b>5 Ballons d'Or</b> (2008, 2013, 2014, 2016, 2017) — the first in 2008, at 23 years old, when he was named on 77 of 96 ballots.`],
       ["What is Ronaldo's record at Real Madrid?", `Ronaldo's El Clásico record for Real Madrid — and every goal he has scored against Real Madrid in a different shirt — is collected on our <a href="/${lang}/real-madrid">Ronaldo at Real Madrid page</a>.`],
       ["What are Ronaldo's UEFA Champions League statistics?", `Ronaldo has scored <b>140 goals in 183 Champions League appearances</b> — the all-time record in the competition — with <b>42 assists</b>, also the record, and won 5 titles (2008, 2014, 2016, 2017, 2018). View full data on our <a href="/${lang}/champions-league">Champions League hub</a>.`],
       ["What are Ronaldo's FIFA World Cup statistics?", `Ronaldo has played at <b>six FIFA World Cups</b> (2006, 2010, 2014, 2018, 2022 and 2026) and remains the record scorer for Portugal, with <b>146 goals in 234 caps</b> — the all-time international record for both.`],
@@ -176,7 +176,7 @@ export const TIMELINE = {
   keydates: (t, lastUpdated) => [
     ["14 Aug 2002", "Senior debut for <b>Sporting CP</b> against Inter in the Champions League third qualifying round, aged 17."],
     ["20 Aug 2003", "<b>Portugal</b> debut against Kazakhstan, weeks after taking the legendary No. 7 shirt at Manchester United."],
-    ["2008", "<b>Ballon d'Or</b> at 23, named on all 96 ballots, with the Champions League and the FIFA Club World Cup."],
+    ["2008", "<b>Ballon d'Or</b> at 23, named on 77 of 96 ballots, with the Champions League and the FIFA Club World Cup."],
     ["2013", "<b>69 goals</b> in the calendar year — his best, including a hat-trick for Portugal inside 15 minutes."],
     ["2016", "Lifts the <b>European Championship</b> as Portugal's captain, with three goals and the Silver Boot."],
     [esc(lastUpdated), `<b>${n(t.goals)} career goals</b> for club and country — last checked this date.`]
@@ -292,7 +292,7 @@ export const EXPLORE_LANGS = [
    change to app.js is needed. */
 export const ERA_INTROS = {
   "The boy from Rosario":
-    `Cristiano Ronaldo arrived in Lisbon from Funchal on Madeira as a teenager with a reputation for speed and a habit of demanding the ball. His first senior season at Sporting CP produced five goals in 31 appearances, and within twelve months he had been handed Manchester United's legendary No. 7 shirt for £12.24m. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in 2008 was named the world's best player at 23 — on all 96 ballots.`,
+    `Cristiano Ronaldo arrived in Lisbon from Funchal on Madeira as a teenager with a reputation for speed and a habit of demanding the ball. His first senior season at Sporting CP produced five goals in 31 appearances, and within twelve months he had been handed Manchester United's legendary No. 7 shirt for £12.24m. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in 2008 was named the world's best player at 23 — on 77 of 96 ballots.`,
   "The greatest peak football has seen":
     `Real Madrid paid a world-record fee in 2009 and were handed the most expensive attacking talent in the history of the sport. He answered with a Copa del Rey final header against Barcelona in his first season, then a La Liga title won with a record 100 points and 46 league goals. By the end of 2012 he had reached 60 goals in a calendar year and 100 goals in La Liga for the club, and Madrid's attacking identity was being rebuilt around him.`,
   "MSN and the second treble":
@@ -300,7 +300,7 @@ export const ERA_INTROS = {
   "Carrying Barcelona":
     `After the 2016 European Championship won in France, Ronaldo added the Champions League in 2017 — including a hat-trick against Bayern Munich that carried him to 100 goals in the competition — and a fifth Ballon d'Or in the same season. He passed Jimmy Greaves as the leading scorer in Europe's big five leagues, then moved to Juventus at 33 and scored a hat-trick in his first Champions League game there.`,
   "Farewell to Barcelona":
-    `The Nations League title and a place in the record books came in 2019, when the 700th goal of his career arrived against Ukraine in October. His 1,000th senior appearance followed against Cagliari in February 2020, and in 2021 he passed Ali Daei to become the outright leading scorer in men's international football, with a tenth international hat-trick — a world record.`,
+    `The Nations League title and a place in the record books came in 2019, when the 700th goal of his career arrived against Ukraine in October. His 1,000th senior appearance followed against SPAL in February 2020, and in 2021 he passed Ali Daei to become the outright leading scorer in men's international football, with a tenth international hat-trick — a world record.`,
   "Paris and the World Cup":
     `A return to Manchester United in 2021 brought the No. 7 shirt and a new stage for the oldest man in the room, and in 2022 he passed Josef Bican with a hat-trick against Tottenham. The move to Saudi Arabia in January 2023 made him Al Nassr's captain and, with his 197th cap, the most-capped player in men's international football.`,
   "Miami and the road to 1,000":
