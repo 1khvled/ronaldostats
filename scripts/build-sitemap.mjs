@@ -23,7 +23,7 @@ const BALLONS_DOR = 8;
 const LG = S.latestGoal;
 const LG_NUM = LG?.goalNumber ?? CAREER_GOALS;
 const LG_OPP = (LG?.opponent || "").trim();
-const LG_TEAM = (LG?.team || "Inter Miami CF").replace(/\s+CF$/, "").trim();
+const LG_TEAM = (LG?.team || "Al Nassr").replace(/\s+CF$/, "").trim();
 const LG_MIN = (LG?.minute || "").replace(/'/g, "").trim();
 const LG_FINISH = (LG?.finish || "left-foot").trim();
 const LG_COMP = (LG?.competition || "Major League Soccer").trim();
@@ -96,9 +96,8 @@ ${getHreflangsXml("")}
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo Inter Miami CF 2026</image:title>
-      <image:caption>Cristiano Ronaldo wearing the captain's armband for Inter Miami CF during the 2026 season.</image:caption>
-      <image:geo_location>Miami, Florida, United States</image:geo_location>
+      <image:title>Cristiano Ronaldo, RonaldoStats</image:title>
+      <image:caption>Cristiano Ronaldo, the captain of Portugal, in the RonaldoStats career archive.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
@@ -110,103 +109,103 @@ ${getHreflangsXml("")}
 // 2. English Subpages
 const enImages = {
   timeline: `    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2008-olympic.webp</image:loc>
-      <image:title>Cristiano Ronaldo Olympic Gold &amp; Barcelona Breakthrough (2004–2008)</image:title>
-      <image:caption>Cristiano Ronaldo celebrating his breakthrough years and Olympic Gold medal with Argentina.</image:caption>
-      <image:geo_location>Beijing, China / Barcelona, Spain</image:geo_location>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2002-sporting.webp</image:loc>
+      <image:title>Cristiano Ronaldo at the Sporting CP Museum (2002)</image:title>
+      <image:caption>The Sporting CP museum in Lisbon, with the number 28 shirt from Ronaldo's debut season.</image:caption>
+      <image:geo_location>Lisbon, Portugal</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2011-wembley.webp</image:loc>
-      <image:title>Cristiano Ronaldo Champions League Final at Wembley (2011)</image:title>
-      <image:caption>Ronaldo holding the European Cup after the 2011 Champions League final win at Wembley.</image:caption>
-      <image:geo_location>London, United Kingdom</image:geo_location>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2004-manutd.webp</image:loc>
+      <image:title>Cristiano Ronaldo in the Manchester United number 7 shirt (2004)</image:title>
+      <image:caption>Ronaldo in the Manchester United number 7 shirt against Chelsea.</image:caption>
+      <image:geo_location>Manchester, England</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2012-ballon.webp</image:loc>
-      <image:title>Cristiano Ronaldo World-Record 91 Goals in 2012</image:title>
-      <image:caption>Cristiano Ronaldo holding his fourth consecutive Ballon d'Or trophy after his 91-goal world record in 2012.</image:caption>
-      <image:geo_location>Zurich, Switzerland</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2016.webp</image:loc>
-      <image:title>Cristiano Ronaldo 500th Goal Celebration at Santiago Bernabéu (2017)</image:title>
-      <image:caption>Cristiano Ronaldo holding up his number 10 shirt after scoring his 500th Barcelona goal in El Clásico.</image:caption>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2009-real.webp</image:loc>
+      <image:title>Cristiano Ronaldo at Real Madrid (2009)</image:title>
+      <image:caption>Kaka and Ronaldo celebrating together for Real Madrid.</image:caption>
       <image:geo_location>Madrid, Spain</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2021-psg-signing.webp</image:loc>
-      <image:title>Cristiano Ronaldo Paris Saint-Germain (2021–2023)</image:title>
-      <image:caption>Cristiano Ronaldo signing for Paris Saint-Germain at Parc des Princes.</image:caption>
-      <image:geo_location>Paris, France</image:geo_location>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2017-ucl.webp</image:loc>
+      <image:title>Cristiano Ronaldo and the UEFA Champions League (2017)</image:title>
+      <image:caption>Ronaldo with the Champions League trophy in Madrid.</image:caption>
+      <image:geo_location>Madrid, Spain</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2022.webp</image:loc>
-      <image:title>Cristiano Ronaldo FIFA World Cup Champion Lusail 2022</image:title>
-      <image:caption>Cristiano Ronaldo lifted on Agüero's shoulders celebrating the 2022 World Cup win at Lusail.</image:caption>
-      <image:geo_location>Lusail, Qatar</image:geo_location>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2018-juve.webp</image:loc>
+      <image:title>Cristiano Ronaldo in the Juventus shirt (2018)</image:title>
+      <image:caption>Ronaldo in the Juventus shirt during his Serie A title season.</image:caption>
+      <image:geo_location>Turin, Italy</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2023-miami.webp</image:loc>
-      <image:title>Cristiano Ronaldo Inter Miami CF (2023–2026)</image:title>
-      <image:caption>Cristiano Ronaldo unveiled as Inter Miami number 10 alongside David Beckham.</image:caption>
-      <image:geo_location>Fort Lauderdale, Florida, United States</image:geo_location>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2023-alnassr.webp</image:loc>
+      <image:title>Cristiano Ronaldo in the Al Nassr number 7 shirt (2023)</image:title>
+      <image:caption>Ronaldo in the Al Nassr number 7 shirt.</image:caption>
+      <image:geo_location>Riyadh, Saudi Arabia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2026-record.webp</image:loc>
+      <image:title>Cristiano Ronaldo in the Portugal number 7 shirt (2026)</image:title>
+      <image:caption>Ronaldo in the Portugal number 7 shirt at the 2026 World Cup.</image:caption>
+      <image:geo_location>United States</image:geo_location>
     </image:image>`,
   achievements: `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-ballon.webp</image:loc>
-      <image:title>Cristiano Ronaldo Record 8 Ballons d'Or</image:title>
-      <image:caption>Cristiano Ronaldo celebrating his record 8th Ballon d'Or award (2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023).</image:caption>
+      <image:title>Cristiano Ronaldo and his 5 Ballons d'Or</image:title>
+      <image:caption>Ronaldo holding his Ballon d'Or, the first Portuguese player to win the award.</image:caption>
       <image:geo_location>Paris, France</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/cab-wc.webp</image:loc>
-      <image:title>Cristiano Ronaldo FIFA World Cup Trophy 2022</image:title>
-      <image:caption>Cristiano Ronaldo lifting the FIFA World Cup trophy after Argentina's final victory against France in Qatar.</image:caption>
-      <image:geo_location>Lusail, Qatar</image:geo_location>
-    </image:image>
-    <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-ucl.webp</image:loc>
-      <image:title>Cristiano Ronaldo UEFA Champions League Trophies</image:title>
-      <image:caption>Cristiano Ronaldo celebrating one of his 4 UEFA Champions League titles with FC Barcelona (2006, 2009, 2011, 2015).</image:caption>
-      <image:geo_location>Rome, Italy / London, UK / Berlin, Germany</image:geo_location>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/cab-copa.webp</image:loc>
-      <image:title>Cristiano Ronaldo Copa América Champion</image:title>
-      <image:caption>Cristiano Ronaldo celebrating continental championship with Argentina at Copa América (2021 and 2024).</image:caption>
-      <image:geo_location>Rio de Janeiro, Brazil / Miami, USA</image:geo_location>
+      <image:title>Cristiano Ronaldo and the UEFA Champions League</image:title>
+      <image:caption>The European Cup and the Champions League trophies Ronaldo won.</image:caption>
+      <image:geo_location>Madrid, Spain</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-liga.webp</image:loc>
-      <image:title>Cristiano Ronaldo 10 La Liga Championships</image:title>
-      <image:caption>Cristiano Ronaldo celebrating domestic league supremacy with 10 La Liga titles at FC Barcelona.</image:caption>
-      <image:geo_location>Barcelona, Spain</image:geo_location>
+      <image:title>Cristiano Ronaldo in the Real Madrid number 7 shirt</image:title>
+      <image:caption>Ronaldo in the Real Madrid number 7 shirt, the club where he won two La Liga titles.</image:caption>
+      <image:geo_location>Madrid, Spain</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ronaldostats.site/img/cab-wc.webp</image:loc>
+      <image:title>Cristiano Ronaldo in the Portugal shirt at the 2018 World Cup</image:title>
+      <image:caption>Ronaldo in the Portugal shirt at the 2018 World Cup, where he scored four goals.</image:caption>
+      <image:geo_location>Russia</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ronaldostats.site/img/cab-cwc.webp</image:loc>
+      <image:title>The FIFA Club World Cup trophies in the CR7 Museum</image:title>
+      <image:caption>The Club World Cup Silver and Golden Ball trophies in Ronaldo's own museum in Madeira.</image:caption>
+      <image:geo_location>Funchal, Madeira, Portugal</image:geo_location>
     </image:image>`,
   birthday: `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
       <image:title>Cristiano Ronaldo Birthday Goal Explorer: ${CAREER_GOALS} Career Goals Across 366 Days</image:title>
       <image:caption>Interactive visual map and video player showing all goals Cristiano Ronaldo scored across 366 calendar days.</image:caption>
-      <image:geo_location>Miami, Florida, United States / Barcelona, Spain / Buenos Aires, Argentina</image:geo_location>
+      <image:geo_location>Lisbon, Portugal / Madrid, Spain / Riyadh, Saudi Arabia</image:geo_location>
     </image:image>`,
   "real-madrid": `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo vs Real Madrid El Clasico Goals</image:title>
-      <image:caption>All 26 goals and 14 assists scored by Cristiano Ronaldo against Real Madrid in El Clasico.</image:caption>
+      <image:title>Ronaldo at Real Madrid: 450 goals in 438 appearances</image:title>
+      <image:caption>Ronaldo's nine years at Real Madrid: 450 goals, 311 in La Liga, five European crowns and 18 goals in El Clasico.</image:caption>
     </image:image>`,
   "ronaldo-vs-messi": `    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
-      <image:title>Cristiano Ronaldo vs Cristiano Ronaldo Career Comparison</image:title>
-      <image:caption>Complete statistical head-to-head comparison between Cristiano Ronaldo and Cristiano Ronaldo.</image:caption>
+      <image:loc>https://www.ronaldostats.site/img/ronaldo-vs-messi.webp</image:loc>
+      <image:title>Cristiano Ronaldo vs Lionel Messi: the career comparison</image:title>
+      <image:caption>Goals, assists, trophies, hat-tricks and Ballons d'Or: the verified career comparison of Cristiano Ronaldo and Lionel Messi.</image:caption>
     </image:image>`,
   "champions-league": `    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/era-2011-wembley.webp</image:loc>
-      <image:title>Cristiano Ronaldo Champions League Goals</image:title>
-      <image:caption>Cristiano Ronaldo UEFA Champions League statistics: 129 goals in 163 matches and 4 European titles.</image:caption>
+      <image:loc>https://www.ronaldostats.site/img/era/era-2017-ucl.webp</image:loc>
+      <image:title>Cristiano Ronaldo and the UEFA Champions League</image:title>
+      <image:caption>Ronaldo's Champions League record: 140 goals in 173 appearances and five European crowns.</image:caption>
     </image:image>`,
   "latest-goal": `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>
       <image:title>Cristiano Ronaldo Last Goal Video and Highlights (Goal #${LG_NUM} vs ${LG_OPP})</image:title>
       <image:caption>Watch Cristiano Ronaldo score Goal #${LG_NUM} of his career for ${LG_TEAM} against ${LG_OPP} in ${LG_COMP} on ${LG_DATE}.</image:caption>
-      <image:geo_location>Miami, Florida, United States</image:geo_location>
+      <image:geo_location>${(LG?.venue || "Riyadh, Saudi Arabia").replace(/&/g, "&amp;")}</image:geo_location>
     </image:image>`
 };
 
@@ -232,19 +231,19 @@ const videoMeta = {
     tags: ["Cristiano Ronaldo", `But ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "Dernier but de Ronaldo"]
   },
   ar: {
-    title: `فيديو آخر هدف لليونيل ميسي: الهدف ${LG_NUM} ضد ${LG_OPP}`,
-    desc: `شاهد هدف ليونيل ميسي رقم ${LG_NUM}: هدف بقدم ${LG_FINISH === "Left Foot" ? "اليسرى" : LG_FINISH === "Right Foot" ? "اليمنى" : "رأسية"} لصالح ${LG_TEAM} ضد ${LG_OPP} في ${LG_COMP} يوم ${LG_DATE}.`,
-    tags: ["ليونيل ميسي", `الهدف ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "آخر هدف لميسي"]
+    title: `فيديو آخر هدف لكريستيانو رونالدو: الهدف ${LG_NUM} ضد ${LG_OPP}`,
+    desc: `شاهد هدف كريستيانو رونالدو رقم ${LG_NUM}: هدف بقدم ${LG_FINISH === "Left Foot" ? "اليسرى" : LG_FINISH === "Right Foot" ? "اليمنى" : "رأسية"} لصالح ${LG_TEAM} ضد ${LG_OPP} في ${LG_COMP} يوم ${LG_DATE}.`,
+    tags: ["كريستيانو رونالدو", `الهدف ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "آخر هدف لميسي"]
   },
   bn: {
-    title: `লিওনেল মেসির সর্বশেষ গোল ভিডিও: ${LG_OPP}-এর বিরুদ্ধে ${LG_NUM}তম গোল`,
-    desc: `লিওনেল মেসির ${LG_NUM}তম গোলটি দেখুন: ${LG_DATE}-এ ${LG_COMP}-এ ${LG_OPP}-এর বিরুদ্ধে ${LG_TEAM}-এর হয়ে।`,
-    tags: ["লিওনেল মেসি", `গোল ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "মেসির শেষ গোল"]
+    title: `ক্রিস্টিয়ানো রোনালদোর সর্বশেষ গোল ভিডিও: ${LG_OPP}-এর বিরুদ্ধে ${LG_NUM}তম গোল`,
+    desc: `ক্রিস্টিয়ানো রোনালদোর ${LG_NUM}তম গোলটি দেখুন: ${LG_DATE}-এ ${LG_COMP}-এ ${LG_OPP}-এর বিরুদ্ধে ${LG_TEAM}-এর হয়ে।`,
+    tags: ["ক্রিস্টিয়ানো রোনালদো", `গোল ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "মেসির শেষ গোল"]
   },
   hi: {
-    title: `लियोनेल मेसी का आखिरी गोल वीडियो: ${LG_OPP} के खिलाफ ${LG_NUM}वां गोल`,
-    desc: `लियोनेल मेसी का ${LG_NUM}वां करियर गोल देखें: ${LG_DATE} को ${LG_COMP} में ${LG_OPP} के खिलाफ ${LG_TEAM} के लिए।`,
-    tags: ["लियोनेल मेसी", `गोल ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "मेसी का आखिरी गोल"]
+    title: `क्रिस्तियानो रोनाल्डो का आखिरी गोल वीडियो: ${LG_OPP} के खिलाफ ${LG_NUM}वां गोल`,
+    desc: `क्रिस्तियानो रोनाल्डो का ${LG_NUM}वां करियर गोल देखें: ${LG_DATE} को ${LG_COMP} में ${LG_OPP} के खिलाफ ${LG_TEAM} के लिए।`,
+    tags: ["क्रिस्तियानो रोनाल्डो", `गोल ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "मेसी का आखिरी गोल"]
   },
   ro: {
     title: `Ultimul Gol al lui Cristiano Ronaldo: Golul #${LG_NUM} împotriva ${LG_OPP}`,
@@ -335,7 +334,7 @@ const langHomeMeta = {
   bn: {
     priority: "0.95",
     title: `মেসির মোট গোল: ${num("bn", CAREER_GOALS)} গোল লাইভ ট্র্যাকার`,
-    caption: `লিওনেল মেসির অফিসিয়াল ক্যারিয়ার পরিসংখ্যান: ${appsNum("bn")} ম্যাচে ${num("bn", CAREER_GOALS)} গোল, ${trophyNum("bn")}টি শিরোপা এবং ${ballonNum("bn")}টি ব্যালন ডি'অর।`
+    caption: `ক্রিস্টিয়ানো রোনালদোর অফিসিয়াল ক্যারিয়ার পরিসংখ্যান: ${appsNum("bn")} ম্যাচে ${num("bn", CAREER_GOALS)} গোল, ${trophyNum("bn")}টি শিরোপা এবং ${ballonNum("bn")}টি ব্যালন ডি'অর।`
   },
   hi: {
     priority: "0.95",
