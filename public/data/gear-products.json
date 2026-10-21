@@ -4,34 +4,34 @@
  "note": "Prices and ratings are read from the listing on the retrieval date and change; the card says so.",
  "products": [
   {
-   "file": "ronaldo-cape-jersey.jpg",
-   "asin": "B0H31LDWM9",
-   "amazonTitle": "Portugal National Team Soccer Jersey - Official Licensed Red Adult Football Shirt with Number 7, Fan Tee",
-   "price": "31.95",
-   "rating": "4.9",
-   "reviews": "12",
-   "image": "https://m.media-amazon.com/images/I/71DW19tI2JL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H31LDWM9?tag=ronaldostats-20"
+   "file": "ronaldo-home-jersey.jpg",
+   "asin": "B0D5LXBBMQ",
+   "amazonTitle": "Macbook Pro Blouses Men (Pack of 1)",
+   "price": "65.46",
+   "rating": "4.6",
+   "reviews": "340",
+   "image": "https://m.media-amazon.com/images/I/716f7H917ZL._AC_SL1200_.jpg",
+   "url": "https://www.amazon.com/dp/B0D5LXBBMQ?tag=ronaldostats-20"
   },
   {
-   "file": "ronaldo-boot.jpg",
-   "asin": "B0H916G811",
-   "amazonTitle": "Nike Zoom Mercurial Vapor 16 Elite AG MDS CR7 Ronaldo HQ2681-300 Size 7.5 US Men's Soccer Cleats",
-   "price": "249.99",
-   "rating": "",
-   "reviews": "",
-   "image": "https://m.media-amazon.com/images/I/51EiNC49FNL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H916G811?tag=ronaldostats-20"
-  },
-  {
-   "file": "ronaldo-ball.jpg",
-   "asin": "B0H8PBD6WV",
-   "amazonTitle": "Soccer Ball Size 5, Waterproof PU Leather, Official Match Ball, with Pump & Needles",
+   "file": "ronaldo-away-jersey.jpg",
+   "asin": "B0GQJ35S6Y",
+   "amazonTitle": "Puma FA Portugal Away Jersey Replica Réplica de Camiseta FA Portugal Away Hombre (Pack de 1)",
    "price": "",
    "rating": "",
    "reviews": "",
-   "image": "https://m.media-amazon.com/images/I/81RVncqgDaL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H8PBD6WV?tag=ronaldostats-20"
+   "image": "https://m.media-amazon.com/images/I/71C2oOaWBzL._AC_SL1200_.jpg",
+   "url": "https://www.amazon.com/dp/B0GQJ35S6Y?tag=ronaldostats-20"
+  },
+  {
+   "file": "ronaldo-hoodie.jpg",
+   "asin": "B0F76CKMMZ",
+   "amazonTitle": "Collage Ronaldo Tribute - Soccer GOAT Unisex Hooded Sweatshirt",
+   "price": "34.89",
+   "rating": "4.6",
+   "reviews": "24",
+   "image": "https://m.media-amazon.com/images/I/61KAmBbIsCL._AC_SL1200_.jpg",
+   "url": "https://www.amazon.com/dp/B0F76CKMMZ?tag=ronaldostats-20"
   }
  ]
 }
