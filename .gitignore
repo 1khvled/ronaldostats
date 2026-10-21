@@ -19,3 +19,4 @@ dev-server.log
 # scratch an agent's browser leaves behind
 .playwright-mcp/
 .playwright-cli/
+public/__scratch-*.html

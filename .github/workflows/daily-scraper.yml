@@ -72,7 +72,7 @@ jobs:
           git add -A
           # the watcher logs and the staged-review file are ephemeral: they must
           # never be committed on their own
-          git checkout -- public/data/source-watch.json public/data/last-check.json public/data/pending.json 2>/dev/null || true
+          git reset -q -- public/data/source-watch.json public/data/last-check.json public/data/pending.json
           if git diff --cached --quiet; then
             echo "Nothing changed. No commit, no deployment."
             exit 0
