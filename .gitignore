@@ -20,3 +20,5 @@ dev-server.log
 .playwright-mcp/
 .playwright-cli/
 public/__scratch-*.html
+.vercel
+.env*
