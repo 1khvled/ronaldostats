@@ -20,8 +20,11 @@
 //   RS     https://ronaldostats.app
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 
-const OUT = path.resolve("D:/Projects/ronaldo-stats/public/data/ronaldo-data.json");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const OUT = path.join(ROOT, "public", "data", "ronaldo-data.json");
 
 // ---------------------------------------------------------------------------
 // CLUB SEASONS — all competitions.

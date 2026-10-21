@@ -16,7 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
-const SKIP_DIRS = new Set(["dist", "node_modules", ".git", "public/ads", "public/embed", ".vercel", "scripts"]);
+const SKIP_DIRS = new Set(["dist", "node_modules", ".git", "public/ads", "public/embed", ".vercel", "scripts", "build-cache"]);
 
 function walk(dir, out = []) {
   for (const item of fs.readdirSync(dir)) {

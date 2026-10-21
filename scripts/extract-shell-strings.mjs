@@ -9,9 +9,11 @@
 // Run: node scripts/extract-shell-strings.mjs
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 import { tokenize, isMachineText } from "./lib/html-tokenizer.mjs";
 
-const ROOT = path.resolve("D:/Projects/ronaldo-stats");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "src", "i18n", "shell");
 
 const PAGES = [

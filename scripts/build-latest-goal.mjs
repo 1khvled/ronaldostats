@@ -6,8 +6,10 @@
 // the pages render a match card instead of a player.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "D:/Projects/ronaldo-stats";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const bday = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/birthday-goals.json"), "utf8"));
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -105,5 +107,21 @@ const feed = {
   },
 };
 
-fs.writeFileSync(path.join(ROOT, "public/data/latest-goal.json"), JSON.stringify(feed, null, 1), "utf8");
+// The feed carries a "syncedAt" stamp. Writing it on every run would
+  // change the file every time, and a changed file is a commit, and a commit
+  // is a deployment. The stamp is only refreshed when the goal itself changed.
+  const out = path.join(ROOT, "public/data/latest-goal.json");
+  const material = (f) => {
+    const c = { ...f };
+    delete c.syncedAt;
+    return JSON.stringify(c);
+  };
+  let previous = null;
+  try { previous = JSON.parse(fs.readFileSync(out, "utf8")); } catch (e) { previous = null; }
+  if (!previous || material(previous) !== material(feed)) {
+    fs.writeFileSync(out, JSON.stringify(feed, null, 1), "utf8");
+    console.log("  the latest goal changed: the feed is written");
+  } else {
+    console.log("  the latest goal is unchanged: the feed is left alone");
+  }
 console.log("latest-goal.json written — latest:", lg.date, "vs", lg.opponent, "| recent:", recentGoals.length);

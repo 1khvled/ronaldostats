@@ -4,9 +4,14 @@
 //   tmp/cr-intl-goals.json      - every dated Portugal goal
 import fs, { existsSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { fileURLToPath } from "node:url";
 
-const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
+const TMP = path.join(os.tmpdir(), "ronaldostats-build") + path.sep;
+// the fetched inputs are kept in the repository: a build that cannot reach
+// the network (a Vercel deploy, a rate-limited source) still works
+const CACHE = path.join(path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), "build-cache") + path.sep;
+fs.mkdirSync(TMP, { recursive: true });
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..") + "/";
 
 // ---------- CSV ----------

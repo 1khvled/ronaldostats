@@ -22,8 +22,10 @@
 // the dates and the media.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "D:/Projects/ronaldo-stats";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CAL = path.join(ROOT, "public", "data", "birthday-goals.json");
 const SRC = path.join(ROOT, "public", "data", "ronaldo-goals.json");
 

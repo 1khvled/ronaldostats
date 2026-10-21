@@ -9,9 +9,13 @@
 // The output is the calendar the birthday / "on this day" explorer renders.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 
-const OUT = path.resolve("D:/Projects/ronaldo-stats/public/data/birthday-goals.json");
-const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+const OUT = path.join(ROOT, "public", "data", "birthday-goals.json");
+const TMP = path.join(os.tmpdir(), "ronaldostats-build") + path.sep;
 
 // The open export writes the scoreline zero-padded ("3:02" for 3-2).
 // Normalise it to the same shape the source archive uses ("3-2").
@@ -221,7 +225,7 @@ const clubGoals = matches.filter(x => x.team !== "Portugal").reduce((a, x) => a 
 const intlGoals = matches.filter(x => x.team === "Portugal").reduce((a, x) => a + x.goals, 0);
 
 // per-year coverage against the canonical calendar-year series
-const CANON = JSON.parse(fs.readFileSync("D:/Projects/ronaldo-stats/public/data/ronaldo-data.json", "utf8"));
+const CANON = JSON.parse(fs.readFileSync(path.join(ROOT, "public", "data", "ronaldo-data.json"), "utf8"));
 const canonYear = {};
 for (const r of CANON.calendarYears) canonYear[r.year] = r.goals;
 const datedYear = {};

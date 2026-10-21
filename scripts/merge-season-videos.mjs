@@ -174,7 +174,7 @@ cal.meta.seasonVideos = {
   seasons: Object.keys(seasons.seasons).length,
 };
 
-fs.writeFileSync(CAL, JSON.stringify(cal, null, 1), "utf8");
+fs.writeFileSync(CAL, JSON.stringify(cal), "utf8");
 console.log("exact per-goal clips attached: " + exact);
 console.log("goals given a season video:   " + seasonLinked);
 console.log("harvested records unmatched:   " + unmatched.length);

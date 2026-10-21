@@ -12,9 +12,11 @@
 // It never touches the English shells and never edits a data file.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 import { substitute } from "./lib/html-tokenizer.mjs";
 
-const ROOT = path.resolve("D:/Projects/ronaldo-stats");
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SHELL_DIR = path.join(ROOT, "src", "i18n", "shell");
 const ORIGIN = "https://www.ronaldostats.site";
 

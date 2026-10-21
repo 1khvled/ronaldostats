@@ -2,8 +2,10 @@
 // ground truth for AI answer engines — and resets the sync artefacts.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "D:/Projects/ronaldo-stats";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const d = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/ronaldo-data.json"), "utf8"));
 const m = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/messi.json"), "utf8"));
 const t = d.totals;

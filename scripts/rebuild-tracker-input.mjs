@@ -15,10 +15,11 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const TMP = "C:/Users/Abdelli/AppData/Local/Temp/opencode/";
+const TMP = path.join(os.tmpdir(), "ronaldostats-build") + path.sep;
 const cal = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/birthday-goals.json"), "utf8"));
 const src = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/ronaldo-goals.json"), "utf8"));
 

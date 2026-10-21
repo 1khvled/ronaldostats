@@ -108,8 +108,11 @@ function diff(a, b, pathPrefix, out) {
     try { dict = JSON.parse(fs.readFileSync(file, "utf8")); }
     catch (e) { fail(lang + " shell dictionary is not valid JSON: " + e.message); continue; }
     const keys = Object.keys(dict);
-    const missing = enShellKeys.filter((k) => !(k in dict));
-    const extra = keys.filter((k) => !(k in enShell));
+    // a date stamp is a timestamp, not prose: it changes every day and no
+    // dictionary can hold every day's sentence, so it is not compared
+    const isDate = (k) => /\b\d{1,2} [A-Z][a-z]+ \d{4}\b/.test(k);
+    const missing = enShellKeys.filter((k) => !(k in dict) && !isDate(k));
+    const extra = keys.filter((k) => !(k in enShell) && !isDate(k));
     if (missing.length) fail(lang + " shell dictionary is missing " + missing.length + " keys, e.g. " + missing.slice(0, 3).map((k) => JSON.stringify(k)).join(", "));
     if (extra.length) fail(lang + " shell dictionary has " + extra.length + " keys the English source does not have, e.g. " + extra.slice(0, 3).map((k) => JSON.stringify(k)).join(", "));
     if (!missing.length && !extra.length) pass(lang + " shell dictionary — " + keys.length + " keys, exact match");
