@@ -11,7 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { fileURLToPath } from "node:url";
-import { tokenize, isMachineText } from "./lib/html-tokenizer.mjs";
+import { tokenize, isMachineText, noTranslateTokens } from "./lib/html-tokenizer.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(ROOT, "src", "i18n", "shell");
@@ -50,12 +50,16 @@ for (const page of PAGES) {
   if (!fs.existsSync(file)) { console.error("missing shell: " + page + ".html"); process.exit(1); }
   const html = fs.readFileSync(file, "utf8");
   const tokens = tokenize(html);
+  const skipText = noTranslateTokens(tokens, html);
   const texts = tokens.filter((t) => t.type === "text").map((t) => t.value.trim()).filter(Boolean);
   let ti = -1;
-  for (const tok of tokens) {
+  for (let tk = 0; tk < tokens.length; tk++) {
+    const tok = tokens[tk];
     if (tok.type === "text") {
       const core = tok.value.trim();
       if (core) ti++;
+      // the text of an element marked data-no-translate is never translated
+      if (skipText.has(tk)) continue;
       const prev = ti > 0 ? texts[ti - 1] : "";
       const next = ti >= 0 && ti + 1 < texts.length ? texts[ti + 1] : "";
       record(tok.value, page, (prev ? prev + " " : "") + " [" + core + "] " + (next ? next : ""));

@@ -13,6 +13,34 @@ injectSpeedInsights(); // Core Web Vitals; same deal — production only, silent
 /* Theme manager (Dark / Light mode) with localStorage persistence and OS sync */
 let DICT = getDict("en");
 
+/**
+ * The date in the reader's own language.
+ *
+ * The copy carries the date in English, in its own element, and the browser
+ * renders it here: a date changes every night, and a translation key that
+ * changed every night would break the translation audit every midnight.
+ */
+function paintDates(root) {
+  const scope = root || document;
+  const nodes = scope.querySelectorAll("[data-date]");
+  nodes.forEach((el) => {
+    const iso = el.getAttribute("data-date");
+    if (!iso) return;
+    const d = new Date(iso + "T00:00:00");
+    if (isNaN(d.getTime())) return;
+    try {
+      el.textContent = new Intl.DateTimeFormat(getCurrentLangCode() || "en", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        numberingSystem: "latn",
+      }).format(d);
+    } catch (e) {
+      /* the browser has no locale data for this language: keep the copy */
+    }
+  });
+}
+
 function initTheme() {
   const getPreferred = () => {
     try {
@@ -6199,6 +6227,7 @@ load().then((d) => {
   fixLocaleLinks();
   updateRailEdges();
   try { translateRuntime(); } catch (_) {}
+  try { paintDates(); } catch (_) {}
   try { startRuntimeTranslation(); } catch (_) {}
   reveal();
   /* Chart entrance: bars grow, donuts sweep, KPIs tick on visibility — one shared

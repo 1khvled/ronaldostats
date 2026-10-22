@@ -110,6 +110,35 @@ function parseAttrs(raw, from) {
 }
 
 /**
+ * The text inside an element marked `data-no-translate` is never translated.
+ *
+ * The date in the copy changes every night, and a dictionary key that
+ * changed every night would break the translation audit every midnight. The
+ * date is rendered by the script instead, in the reader's own language.
+ *
+ * Returns the indexes of the text tokens to leave alone.
+ */
+export function noTranslateTokens(tokens, html) {
+  const skip = new Set();
+  let depth = 0;
+  for (let i = 0; i < tokens.length; i++) {
+    const tok = tokens[i];
+    if (tok.type === "tag") {
+      const raw = html.slice(tok.start, tok.end);
+      if (depth === 0) {
+        if (tok.name && !tok.selfClosing && tok.attrs.some((a) => a.name === "data-no-translate")) depth = 1;
+        continue;
+      }
+      if (raw.startsWith("</")) depth--;
+      else if (!tok.selfClosing && tok.name) depth++;
+      continue;
+    }
+    if (depth > 0) skip.add(i);
+  }
+  return skip;
+}
+
+/**
  * Apply a substitution map to a document.
  * `map` maps a plain string to its replacement.
  * `opts.text`  — also replace text nodes
@@ -120,17 +149,20 @@ export function substitute(html, map, opts = {}) {
   const doText = opts.text !== false;
   const attrNames = new Set((opts.attrs || []).map((a) => a.toLowerCase()));
   const tokens = tokenize(html);
+  const skipText = noTranslateTokens(tokens, html);
   let out = "";
   let cursor = 0;
   const changed = [];
   const missing = new Set();
 
-  for (const tok of tokens) {
+  for (let ti = 0; ti < tokens.length; ti++) {
+    const tok = tokens[ti];
     out += html.slice(cursor, tok.start);
     cursor = tok.end;
 
     if (tok.type === "text") {
       const raw = tok.value;
+      if (skipText.has(ti)) { out += raw; continue; }
       const lead = raw.match(/^\s*/)[0];
       const trail = raw.match(/\s*$/)[0];
       const core = raw.slice(lead.length, raw.length - trail.length);

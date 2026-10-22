@@ -90,7 +90,13 @@ for (const filePath of htmlFiles) {
   const original = content;
 
   // Update <span id="upd">Updated [Date]</span>
-  content = content.replace(/<span id="upd">Updated [^<]+<\/span>/g, `<span id="upd">Updated ${formattedDateEn}</span>`);
+  // The date is its own element: the translation dictionary must not carry a
+  // key that changes every night, or the i18n audit would fail every midnight.
+  content = content.replace(
+    /<span id="upd">Updated <span class="upd-date" data-date="[^"]*">[^<]+<\/span><\/span>/g,
+    `<span id="upd">Updated <span class="upd-date" data-date="${isoDate}">${formattedDateEn}</span></span>`
+  );
+  content = content.replace(/<span id="upd">Updated [^<]+<\/span>/g, `<span id="upd">Updated <span class="upd-date" data-date="${isoDate}">${formattedDateEn}</span></span>`);
 
   // Update <span class="updated-badge"><span class="dot"></span>Updated [Month] [Year]</span>
   content = content.replace(/(<span class="updated-badge"><span class="dot"><\/span>Updated\s+)[A-Za-z]+\s+[0-9]{4}(<\/span>)/g, `$1${monthYearEn}$2`);

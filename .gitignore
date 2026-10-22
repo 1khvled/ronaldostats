@@ -24,3 +24,4 @@ public/__scratch-*.html
 .env*
 public/src/
 preview.log
+photos/

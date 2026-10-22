@@ -3054,7 +3054,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "Advertisement  [Career statistics] Updated 22 October 2026"
+  "ctx": "Advertisement  [Career statistics] Updated"
  },
  "Career totals": {
   "count": 1,
@@ -3442,7 +3442,7 @@
   "pages": [
    "goalsbyseason"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Goals by Season] Cristiano Ronaldo's complete club record for every season from 2002/03 to 2026/27 &mdash; 835 goals in 1,106 appearances, split by league, domestic cup and continental competition &mdash; plus his Portugal scoring year by year."
+  "ctx": "22 October 2026  [Cristiano Ronaldo Goals by Season] Cristiano Ronaldo's complete club record for every season from 2002/03 to 2026/27 &mdash; 835 goals in 1,106 appearances, split by league, domestic cup and continental competition &mdash; plus his Portugal scoring year by year."
  },
  "Cristiano Ronaldo Goals by Season | RonaldoStats": {
   "count": 3,
@@ -3456,7 +3456,7 @@
   "pages": [
    "goalsbyyear"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Goals by Year] Every Cristiano Ronaldo calendar-year goal tally from 2002 to 2026 with running career totals &mdash; peaking at 69 goals in 2013."
+  "ctx": "22 October 2026  [Cristiano Ronaldo Goals by Year] Every Cristiano Ronaldo calendar-year goal tally from 2002 to 2026 with running career totals &mdash; peaking at 69 goals in 2013."
  },
  "Cristiano Ronaldo Goals by Year 2002–2026 | RonaldoStats": {
   "count": 1,
@@ -3484,7 +3484,7 @@
   "pages": [
    "dashboard"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Stats &amp; Career Explorer] Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013)."
+  "ctx": "22 October 2026  [Cristiano Ronaldo Stats &amp; Career Explorer] Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013)."
  },
  "Cristiano Ronaldo Stats Dashboard | RonaldoStats": {
   "count": 3,
@@ -3505,14 +3505,14 @@
   "pages": [
    "index"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies] The verified"
+  "ctx": "22 October 2026  [Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies] The verified"
  },
  "Cristiano Ronaldo Through the Years (2002–2026)": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Through the Years (2002–2026)] Cristiano Ronaldo's definitive career timeline: every landmark match, historic record, debut and night of glory from Sporting CP in 2002 to Al Nassr in 2026, in chronological order."
+  "ctx": "22 October 2026  [Cristiano Ronaldo Through the Years (2002–2026)] Cristiano Ronaldo's definitive career timeline: every landmark match, historic record, debut and night of glory from Sporting CP in 2002 to Al Nassr in 2026, in chronological order."
  },
  "Cristiano Ronaldo Total Goals and Assists Official Record": {
   "count": 1,
@@ -3529,9 +3529,8 @@
   "ctx": "[attr content]"
  },
  "Cristiano Ronaldo and Lionel Messi with their player-of-the-match medals after Portugal v Argentina in 2011": {
-  "count": 2,
+  "count": 1,
   "pages": [
-   "real-madrid",
    "ronaldo-vs-messi"
   ],
   "ctx": "[attr alt]"
@@ -3653,13 +3652,6 @@
   ],
   "ctx": "▾  [Cristiano Ronaldo has won] 5 Ballons d'Or"
  },
- "Cristiano Ronaldo holding the Ballon d'Or he has won a record five times": {
-  "count": 1,
-  "pages": [
-   "achievements"
-  ],
-  "ctx": "[attr alt]"
- },
  "Cristiano Ronaldo in the Portugal number 7 shirt at the 2018 FIFA World Cup": {
   "count": 1,
   "pages": [
@@ -3688,7 +3680,42 @@
   ],
   "ctx": "[attr data-label]"
  },
+ "Cristiano Ronaldo in the Portugal number 7 shirt, lifting the FIFA Club World Cup": {
+  "count": 1,
+  "pages": [
+   "achievements"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo in the Real Madrid number 7 shirt in the Champions League": {
+  "count": 1,
+  "pages": [
+   "champions-league"
+  ],
+  "ctx": "[attr alt]"
+ },
  "Cristiano Ronaldo in the Real Madrid number 7 shirt, in a La Liga he won twice": {
+  "count": 1,
+  "pages": [
+   "achievements"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo in the Real Madrid number 7 shirt, in the Champions League he won four times": {
+  "count": 1,
+  "pages": [
+   "achievements"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo in the Real Madrid number 7 shirt, in the season of the tenth European Cup": {
+  "count": 1,
+  "pages": [
+   "real-madrid"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo in the number 7 shirt in 2008, the year of his first Ballon d'Or": {
   "count": 1,
   "pages": [
    "achievements"
@@ -3784,7 +3811,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo's Trophies &amp; Honours] 35 team trophies"
+  "ctx": "22 October 2026  [Cristiano Ronaldo's Trophies &amp; Honours] 35 team trophies"
  },
  "Cristiano Ronaldo's UEFA Champions League record: 140 goals in 183 appearances (0.77 per game), 42 assists and 5 titles, with the full season-by-season breakdown and the records he holds.": {
   "count": 3,
@@ -3913,7 +3940,7 @@
    "dashboard",
    "real-madrid"
   ],
-  "ctx": "Advertisement  [Deep Stats &amp; Analytics Hub] Updated 22 October 2026"
+  "ctx": "Advertisement  [Deep Stats &amp; Analytics Hub] Updated"
  },
  "Defining Milestones &amp; Historic Photo Stream": {
   "count": 1,
@@ -4975,14 +5002,14 @@
   "pages": [
    "goalsbyseason"
   ],
-  "ctx": "Advertisement  [Goals by season] Updated 22 October 2026"
+  "ctx": "Advertisement  [Goals by season] Updated"
  },
  "Goals by year": {
   "count": 1,
   "pages": [
    "goalsbyyear"
   ],
-  "ctx": "Advertisement  [Goals by year] Updated 22 October 2026"
+  "ctx": "Advertisement  [Goals by year] Updated"
  },
  "Goals by year peaking at 69 in 2013": {
   "count": 1,
@@ -7842,13 +7869,6 @@
   ],
   "ctx": "⚔️ 36 DIRECT HEAD-TO-HEAD MATCHES · 13 BALLONS D'OR BETWEEN THEM  [The Eternal Duel:] Cristiano Ronaldo &amp; Lionel Messi — two overlapping careers, 36 direct club meetings, and a statistical archive that records the results without ruling on them."
  },
- "The FIFA Club World Cup Golden Ball trophies in the CR7 Museum in Madeira": {
-  "count": 1,
-  "pages": [
-   "achievements"
-  ],
-  "ctx": "[attr alt]"
- },
  "The Fourth European Crown": {
   "count": 1,
   "pages": [
@@ -7895,14 +7915,6 @@
   "count": 3,
   "pages": [
    "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
- "The UEFA Champions League trophy, won five times by Cristiano Ronaldo": {
-  "count": 2,
-  "pages": [
-   "achievements",
-   "champions-league"
   ],
   "ctx": "[attr alt]"
  },
@@ -8325,7 +8337,7 @@
   ],
   "ctx": "Manchester United 2004–09 — the No. 7 shirt and the first golden era  [United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named t"
  },
- "Updated 22 October 2026": {
+ "Updated": {
   "count": 6,
   "pages": [
    "achievements",
@@ -8335,7 +8347,7 @@
    "index",
    "timeline"
   ],
-  "ctx": "Career statistics  [Updated 22 October 2026] Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies"
+  "ctx": "Career statistics  [Updated] 22 October 2026"
  },
  "Value": {
   "count": 1,

@@ -12,7 +12,7 @@ const must = ["index.html", "goalsbyyear.html", "goalsbyseason.html", "dashboard
   "img/teams/portugal.png", "favicon.svg", "favicon.ico", "favicon-48x48.png",
   // the Ronaldo photograph set: five cabinet shots, eight product photos and
   // the head-to-head card, all sourced from Wikimedia Commons
-  "img/cab-ballon.webp", "img/cab-copa.webp", "img/cab-cwc.webp", "img/cab-liga.webp", "img/cab-ucl.webp", "img/cab-wc.webp",
+  "img/cab-copa.webp", "img/cab-liga.webp", "img/cab-wc.webp",
   "img/ronaldo-vs-messi.webp", "img/CREDITS.md",
   "img/gear/ronaldo-home-jersey.jpg", "img/gear/ronaldo-away-jersey.jpg", "img/gear/ronaldo-cape-jersey.jpg",
   "img/gear/ronaldo-boot.jpg", "img/gear/ronaldo-ball.jpg", "img/gear/ronaldo-hoodie.jpg",
