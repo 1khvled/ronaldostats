@@ -600,7 +600,7 @@ function ensureMobileMenuDrawer() {
     <div class="mobile-drawer-sheet" role="dialog" aria-modal="true" aria-label="Navigation Menu">
       <div class="mobile-drawer-header">
         <div class="mobile-drawer-brand">
-          <img src="/img/logo.png" alt="RonaldoStats Logo" width="28" height="28" style="object-fit:contain;border-radius:4px;flex:0 0 28px;"/>
+          <img src="/img/logo-cr7.webp" alt="RonaldoStats Logo" width="28" height="28" style="object-fit:contain;border-radius:4px;flex:0 0 28px;"/>
           <span>${txt.menuTitle}</span>
         </div>
         <button type="button" class="mobile-drawer-close" id="mobile-drawer-close-btn" aria-label="Close menu">
@@ -718,7 +718,7 @@ function ensureDesktopBrandHeader() {
   brandHeader.className = "desktop-brand-header";
   brandHeader.innerHTML = `
     <a href="${getLangUrl(curLang)}" class="desktop-brand-logo-link" aria-label="RonaldoStats Home">
-      <img src="/img/logo.png" alt="RonaldoStats Logo" class="desktop-brand-logo" width="48" height="48" />
+      <img src="/img/logo-cr7.webp" alt="RonaldoStats Logo" class="desktop-brand-logo" width="48" height="48" />
     </a>
     <div class="desktop-brand-titles">
       <div class="desktop-brand-name">Ronaldo<span>Stats</span></div>
@@ -1833,7 +1833,7 @@ function initLanguageAndMobileTopBar() {
           const mark = railBadge.querySelector(".rail-mark");
           if (mark) {
             const logoImg = document.createElement("img");
-            logoImg.src = "/img/logo.png";
+            logoImg.src = "/img/logo-cr7.webp";
             logoImg.alt = "RonaldoStats";
             logoImg.className = "rail-mark-logo";
             logoImg.width = 36;
@@ -1859,7 +1859,7 @@ function initLanguageAndMobileTopBar() {
       mobileTopBar.setAttribute("aria-label", "Mobile navigation header");
       mobileTopBar.innerHTML = `
         <a href="${getLangUrl(curLangCode)}" class="mobile-topbar-brand" aria-label="RonaldoStats">
-          <img src="/img/logo.png" alt="RonaldoStats Logo" width="28" height="28" style="object-fit:contain;border-radius:4px;flex:0 0 28px;"/>
+          <img src="/img/logo-cr7.webp" alt="RonaldoStats Logo" width="28" height="28" style="object-fit:contain;border-radius:4px;flex:0 0 28px;"/>
           <span class="mobile-topbar-title">Ronaldo<b>Stats</b></span>
         </a>
         <div class="mobile-topbar-actions">

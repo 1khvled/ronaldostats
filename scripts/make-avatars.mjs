@@ -21,6 +21,6 @@ const P = "D:/Projects/ronaldo-stats/ronaldo-vs-messi.html";
 let t = fs.readFileSync(P, "utf8");
 const before = t;
 t = t.replace(/src="\/img\/messi\.webp" alt="Lionel Messi"/g, 'src="/img/avatar-messi.svg" alt="Lionel Messi"');
-t = t.replace(/src="\/img\/ronaldo\.webp" alt="Cristiano Ronaldo"/g, 'src="/img/avatar-ronaldo.svg" alt="Cristiano Ronaldo"');
+t = t.replace(/src="\/img\/ronaldo\.webp" alt="Cristiano Ronaldo"/g, 'src="/img/logo-cr7.webp" alt="Cristiano Ronaldo"');
 if (t !== before) { fs.writeFileSync(P, t, "utf8"); console.log("ronaldo-vs-messi.html avatars repointed"); }
 else console.log("no avatar reference changed");

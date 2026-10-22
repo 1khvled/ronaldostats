@@ -6,6 +6,13 @@ CC BY or CC BY-SA). Attribution and licence links are given per file.
 
 Images were cropped and resized for the site; cropping does not alter the original work.
 
+### The brand artwork
+
+- `public/img/logo-cr7.png`, `public/img/logo-cr7.webp`, `public/img/logo-192.png`, `public/img/logo.png`,
+  `public/img/favicon-*.png`, `public/img/favicon.ico`, `public/img/favicon.svg`, `public/img/apple-touch-icon.png`
+  and `public/img/banner-ronaldostats.png` / `.webp` are the site's own artwork: the gold CR7 crown emblem on
+  the Portuguese ring, and the RonaldoStats banner. Drawn for RonaldoStats; no third-party rights.
+
 ### `public/img/cab-cwc.webp`
 
 - **Source file page:** [File:FIFA Club World Cup Silver and Golden Ball Trophies CR7Museum.jpg](https://commons.wikimedia.org/wiki/File:FIFA_Club_World_Cup_Silver_and_Golden_Ball_Trophies_CR7Museum.jpg)

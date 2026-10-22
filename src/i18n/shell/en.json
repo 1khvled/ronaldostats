@@ -2893,20 +2893,11 @@
   "ctx": ": 66 — the same 981 total.  [Both the body-part split and the open-play figure are aggregators' numbers:] provisional until a hand count"
  },
  "CR7": {
-  "count": 11,
+  "count": 1,
   "pages": [
-   "achievements",
-   "champions-league",
-   "dashboard",
-   "gear",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "real-madrid",
-   "ronaldo-vs-messi",
-   "timeline"
+   "index"
   ],
-  "ctx": "Skip to content  [CR7] Ronaldo"
+  "ctx": "Cristiano Ronaldo · Portugal &amp; Al Nassr  [CR7] 7"
  },
  "CR7 Baseball Cap": {
   "count": 1,
@@ -3063,7 +3054,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "Advertisement  [Career statistics] Updated 21 October 2026"
+  "ctx": "Advertisement  [Career statistics] Updated 22 October 2026"
  },
  "Career totals": {
   "count": 1,
@@ -3451,7 +3442,7 @@
   "pages": [
    "goalsbyseason"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo Goals by Season] Cristiano Ronaldo's complete club record for every season from 2002/03 to 2026/27 &mdash; 835 goals in 1,106 appearances, split by league, domestic cup and continental competition &mdash; plus his Portugal scoring year by year."
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Goals by Season] Cristiano Ronaldo's complete club record for every season from 2002/03 to 2026/27 &mdash; 835 goals in 1,106 appearances, split by league, domestic cup and continental competition &mdash; plus his Portugal scoring year by year."
  },
  "Cristiano Ronaldo Goals by Season | RonaldoStats": {
   "count": 3,
@@ -3465,7 +3456,7 @@
   "pages": [
    "goalsbyyear"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo Goals by Year] Every Cristiano Ronaldo calendar-year goal tally from 2002 to 2026 with running career totals &mdash; peaking at 69 goals in 2013."
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Goals by Year] Every Cristiano Ronaldo calendar-year goal tally from 2002 to 2026 with running career totals &mdash; peaking at 69 goals in 2013."
  },
  "Cristiano Ronaldo Goals by Year 2002–2026 | RonaldoStats": {
   "count": 1,
@@ -3493,7 +3484,7 @@
   "pages": [
    "dashboard"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo Stats &amp; Career Explorer] Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013)."
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Stats &amp; Career Explorer] Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013)."
  },
  "Cristiano Ronaldo Stats Dashboard | RonaldoStats": {
   "count": 3,
@@ -3514,14 +3505,14 @@
   "pages": [
    "index"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies] The verified"
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies] The verified"
  },
  "Cristiano Ronaldo Through the Years (2002–2026)": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo Through the Years (2002–2026)] Cristiano Ronaldo's definitive career timeline: every landmark match, historic record, debut and night of glory from Sporting CP in 2002 to Al Nassr in 2026, in chronological order."
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo Through the Years (2002–2026)] Cristiano Ronaldo's definitive career timeline: every landmark match, historic record, debut and night of glory from Sporting CP in 2002 to Al Nassr in 2026, in chronological order."
  },
  "Cristiano Ronaldo Total Goals and Assists Official Record": {
   "count": 1,
@@ -3793,7 +3784,7 @@
   "pages": [
    "achievements"
   ],
-  "ctx": "Updated 21 October 2026  [Cristiano Ronaldo's Trophies &amp; Honours] 35 team trophies"
+  "ctx": "Updated 22 October 2026  [Cristiano Ronaldo's Trophies &amp; Honours] 35 team trophies"
  },
  "Cristiano Ronaldo's UEFA Champions League record: 140 goals in 183 appearances (0.77 per game), 42 assists and 5 titles, with the full season-by-season breakdown and the records he holds.": {
   "count": 3,
@@ -3922,7 +3913,7 @@
    "dashboard",
    "real-madrid"
   ],
-  "ctx": "Advertisement  [Deep Stats &amp; Analytics Hub] Updated 21 October 2026"
+  "ctx": "Advertisement  [Deep Stats &amp; Analytics Hub] Updated 22 October 2026"
  },
  "Defining Milestones &amp; Historic Photo Stream": {
   "count": 1,
@@ -4984,14 +4975,14 @@
   "pages": [
    "goalsbyseason"
   ],
-  "ctx": "Advertisement  [Goals by season] Updated 21 October 2026"
+  "ctx": "Advertisement  [Goals by season] Updated 22 October 2026"
  },
  "Goals by year": {
   "count": 1,
   "pages": [
    "goalsbyyear"
   ],
-  "ctx": "Advertisement  [Goals by year] Updated 21 October 2026"
+  "ctx": "Advertisement  [Goals by year] Updated 22 October 2026"
  },
  "Goals by year peaking at 69 in 2013": {
   "count": 1,
@@ -6796,7 +6787,7 @@
    "ronaldo-vs-messi",
    "timeline"
   ],
-  "ctx": "CR7  [Ronaldo] Stats"
+  "ctx": "Skip to content  [Ronaldo] Stats"
  },
  "Ronaldo &amp; Messi": {
   "count": 1,
@@ -7600,7 +7591,7 @@
    "ronaldo-vs-messi",
    "timeline"
   ],
-  "ctx": "Cristiano Ronaldo Stats | RonaldoStats  [Skip to content] CR7"
+  "ctx": "Cristiano Ronaldo Stats | RonaldoStats  [Skip to content] Ronaldo"
  },
  "Sponsors new database features &amp; research": {
   "count": 1,
@@ -8334,7 +8325,7 @@
   ],
   "ctx": "Manchester United 2004–09 — the No. 7 shirt and the first golden era  [United paid £12.24m in August 2003 and handed him the legendary No. 7 shirt. He scored in the FA Cup final at 19, won three Premier League titles, the Champions League and the FIFA Club World Cup, and in December 2008 was named t"
  },
- "Updated 21 October 2026": {
+ "Updated 22 October 2026": {
   "count": 6,
   "pages": [
    "achievements",
@@ -8344,7 +8335,7 @@
    "index",
    "timeline"
   ],
-  "ctx": "Career statistics  [Updated 21 October 2026] Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies"
+  "ctx": "Career statistics  [Updated 22 October 2026] Cristiano Ronaldo Stats: 981 Goals, 1,340 Matches &amp; 35 Trophies"
  },
  "Value": {
   "count": 1,
