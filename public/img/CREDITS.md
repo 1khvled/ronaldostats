@@ -8,37 +8,10 @@ Images were cropped and resized for the site; cropping does not alter the origin
 
 ### The brand artwork
 
-- `public/img/logo-cr7.png`, `public/img/logo-cr7.webp`, `public/img/logo-192.png`, `public/img/logo.png`,
+- `public/img/logo-cr7.webp`, `public/img/logo-192.png`, `public/img/logo.png`,
   `public/img/favicon-*.png`, `public/img/favicon.ico`, `public/img/favicon.svg`, `public/img/apple-touch-icon.png`
   and `public/img/banner-ronaldostats.png` / `.webp` are the site's own artwork: the gold CR7 crown emblem on
   the Portuguese ring, and the RonaldoStats banner. Drawn for RonaldoStats; no third-party rights.
-
-### `public/img/cab-cwc.webp`
-
-- **Source file page:** [File:FIFA Club World Cup Silver and Golden Ball Trophies CR7Museum.jpg](https://commons.wikimedia.org/wiki/File:FIFA_Club_World_Cup_Silver_and_Golden_Ball_Trophies_CR7Museum.jpg)
-- **Author / photographer:** Tkotw12
-- **Credit:** Own work
-- **Licence:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
-- **Licence URL:** https://creativecommons.org/licenses/by-sa/4.0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### `public/img/era/era-2002-sporting.webp`
 
@@ -46,6 +19,7 @@ Images were cropped and resized for the site; cropping does not alter the origin
 - **Author / photographer:** Threeohsix
 - **Credit:** Own work
 - **Licence:** CC BY-SA 4.0
+- **Change:** cropped to the mural of Ronaldo in the display case; the green cast of the case removed
 
 ### `public/img/era/era-2004-manutd.webp`
 
@@ -126,22 +100,6 @@ Images were cropped and resized for the site; cropping does not alter the origin
 
 ---
 
-### `public/img/cab-ballon.webp`
-
-- **Source file page:** [File:Cristiano Ronaldo - Ballon d'Or.jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_-_Ballon_d%27Or.jpg)
-- **Author / photographer:** Anish Morarji from St Albans, England
-- **Credit:** Ballon d'Or
-- **Licence:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-- **Licence URL:** https://creativecommons.org/licenses/by/2.0
-
-### `public/img/cab-ucl.webp`
-
-- **Source file page:** [File:European Cup-Champions League trophies (611610385).jpg](https://commons.wikimedia.org/wiki/File:European_Cup-Champions_League_trophies_(611610385).jpg)
-- **Author / photographer:** Ian Dick from Glasgow, UK
-- **Credit:** European Cup/Champions League trophies
-- **Licence:** [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-- **Licence URL:** https://creativecommons.org/licenses/by/2.0
-
 ### `public/img/cab-liga.webp`
 
 - **Source file page:** [File:Cristiano Ronaldo 2275.jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2275.jpg)
@@ -163,6 +121,14 @@ Images were cropped and resized for the site; cropping does not alter the origin
 - **Source file page:** [File:Argentine - Portugal - Cristiano Ronaldo.jpg](https://commons.wikimedia.org/wiki/File:Argentine_-_Portugal_-_Cristiano_Ronaldo.jpg)
 - **Author / photographer:** Ludovic Péron
 - **Credit:** Own work
+- **Licence:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+- **Licence URL:** https://creativecommons.org/licenses/by-sa/3.0
+
+### `public/img/ronaldo.jpg`, `public/img/ronaldo.webp`, `public/img/ronaldo-450.webp`
+
+- **Source file page:** [File:Cristiano Ronaldo 2018.jpg](https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2018.jpg)
+- **Author / photographer:** Анна Нэсси
+- **Credit:** soccer.ru
 - **Licence:** [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 - **Licence URL:** https://creativecommons.org/licenses/by-sa/3.0
 

@@ -4222,7 +4222,7 @@ function eraOf(y) {
    Keyed by eraOf() name; eras without an entry render no figure. */
 const ERA_PHOTOS = {
   rosario: [
-    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season", cap: "The Sporting CP years — senior debut in 2002" },
+    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "A mural of Ronaldo in the Sporting CP museum in Lisbon, where his debut-season shirt is kept", cap: "The Sporting CP years — senior debut in 2002" },
   ],
   peak: [
     { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Manchester United number 7 shirt against Chelsea", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },

@@ -2121,6 +2121,13 @@
   ],
   "ctx": "[attr alt]"
  },
+ "A mural of Ronaldo in the Sporting CP museum in Lisbon, where his debut-season shirt is kept": {
+  "count": 3,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
  "A ninth consecutive league title for the club": {
   "count": 1,
   "pages": [
@@ -7908,13 +7915,6 @@
   "count": 1,
   "pages": [
    "gear"
-  ],
-  "ctx": "[attr alt]"
- },
- "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season": {
-  "count": 3,
-  "pages": [
-   "timeline"
   ],
   "ctx": "[attr alt]"
  },

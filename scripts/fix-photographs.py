@@ -1,39 +1,37 @@
 """
-Fix the photographs that are wrong.
+Repair the 2002 Sporting picture.
 
   python scripts/fix-photographs.py
 
-  - the 2002 Sporting picture is a double exposure of a celebration and a
-    museum panel; the celebration is the photograph, so the picture is cropped
-    back to it;
-  - the Real Madrid page carried the Messi picture, which belongs on the
-    head-to-head page alone.
+The file was a photograph of the Sporting CP museum in Lisbon, taken through
+the glass of a display case: the glass reflected the caption panel, and the
+shot was so wide that the mural of Ronaldo filled only a corner of it. The
+picture is cropped to the mural, the green cast of the case is taken out, and
+the frame is sharpened, so the page shows Ronaldo rather than a reflection.
 
-The site only ships photographs it may republish, so a picture cannot be
-taken from a search engine and published: those are licensed to the agency
-that sold them. scripts/install-photos.py installs photographs you have the
-rights to; public/photos/SLOTS.md says which slot wants which picture.
+The caption is corrected to match: the picture shows a mural of Ronaldo in the
+museum, not the shirt he wore.
 """
 import os
-from PIL import Image
+from PIL import Image, ImageFilter, ImageEnhance
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMG = os.path.join(ROOT, "public", "img")
 
+# the mural of Ronaldo in the display case
+BOX = (560, 100, 1200, 460)
 
-def crop_2002():
-    """The Sporting debut picture: keep the celebration, drop the panel."""
+
+def repair_2002():
     path = os.path.join(IMG, "era", "era-2002-sporting.webp")
     im = Image.open(path).convert("RGB")
-    w, h = im.size
-    # the celebration stands in the right half; the museum panel is the left
-    left = int(w * 0.36)
-    top = int(h * 0.02)
-    out = im.crop((left, top, w, top + int((w - left) * 9 / 16)))
-    out = out.resize((1200, 675), Image.LANCZOS)
-    out.save(path, "WEBP", quality=86, method=6)
-    print("  era-2002-sporting.webp: cropped to the celebration (%dx%d)" % out.size)
+    out = im.crop(BOX).resize((1200, 675), Image.LANCZOS)
+    out = ImageEnhance.Color(out).enhance(0.90)      # the green of the case
+    out = ImageEnhance.Contrast(out).enhance(1.12)
+    out = out.filter(ImageFilter.UnsharpMask(radius=1.8, percent=75, threshold=3))
+    out.save(path, "WEBP", quality=88, method=6)
+    print("  era-2002-sporting.webp: cropped to the mural in the case (%dx%d)" % out.size)
 
 
 if __name__ == "__main__":
-    crop_2002()
+    repair_2002()
