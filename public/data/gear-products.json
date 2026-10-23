@@ -1,47 +1,27 @@
 {
- "retrieved": "2026-10-22",
+ "retrieved": "2026-10-23",
  "source": "amazon.com",
  "note": "Prices and ratings are read from the listing on the retrieval date and change; the card says so.",
  "products": [
   {
    "file": "ronaldo-home-jersey.jpg",
    "asin": "B0D5LXBBMQ",
-   "amazonTitle": "PUMA Portugal 2025/26 Men's Home Jersey",
-   "price": "49.99",
-   "rating": "",
-   "reviews": "",
-   "image": "https://m.media-amazon.com/images/I/51gK1Z7mK8L._AC_SL1200_.jpg",
+   "amazonTitle": "Macbook Pro Blouses Men (Pack of 1)",
+   "price": "65.46",
+   "rating": "4.6",
+   "reviews": "340",
+   "image": "https://m.media-amazon.com/images/I/716f7H917ZL._AC_SL1200_.jpg",
    "url": "https://www.amazon.com/dp/B0D5LXBBMQ?tag=ronaldostats-20"
   },
   {
    "file": "ronaldo-cape-jersey.jpg",
    "asin": "B0H31LDWM9",
-   "amazonTitle": "Portugal National Team Soccer Jersey - Official Licensed Red Adult Football Shirt with Number 7, Fan Tee",
-   "price": "31.95",
-   "rating": "4.9",
-   "reviews": "12",
-   "image": "https://m.media-amazon.com/images/I/71DW19tI2JL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H31LDWM9?tag=ronaldostats-20"
-  },
-  {
-   "file": "ronaldo-boot.jpg",
-   "asin": "B0H916G811",
-   "amazonTitle": "Nike Zoom Mercurial Vapor 16 Elite AG MDS CR7 Ronaldo HQ2681-300 Size 7.5 US Men's Soccer Cleats",
-   "price": "249.99",
+   "amazonTitle": "Icon Sports Camiseta de fútbol de la selección nacional de Portugal, camiseta oficial de fútbol para adultos, color rojo, número 7, camiseta para fanáticos",
+   "price": "",
    "rating": "",
    "reviews": "",
-   "image": "https://m.media-amazon.com/images/I/51EiNC49FNL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H916G811?tag=ronaldostats-20"
-  },
-  {
-   "file": "ronaldo-cap.jpg",
-   "asin": "B0H3XP4V8F",
-   "amazonTitle": "Officially Licensed Portugal National Football Team #7 Adjustable Cap - Unisex Adult - FPF111CP Black",
-   "price": "24.99",
-   "rating": "4.8",
-   "reviews": "19",
-   "image": "https://m.media-amazon.com/images/I/71NzWUo-kcL._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0H3XP4V8F?tag=ronaldostats-20"
+   "image": "https://m.media-amazon.com/images/I/71DW19tI2JL._AC_SL1200_.jpg",
+   "url": "https://www.amazon.com/dp/B0H31LDWM9?tag=ronaldostats-20"
   }
  ]
 }
