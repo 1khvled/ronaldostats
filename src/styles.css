@@ -11070,8 +11070,16 @@ input::placeholder, textarea::placeholder { font-size: 0.9em; }
 }
 
 /* ---------- 9. Keyboard users can reach the rail without a mouse ---------- */
-.rail:focus-within { width: var(--rail-open); }
+@media (min-width: 901px) {
+  .rail:focus-within { width: var(--rail-open); }
+}
 .rail nav:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px; }
+
+/* On phones the rail is the bottom nav: focusing a tab must never shrink it. */
+@media (max-width: 900px) {
+  .rail, .rail:hover, .rail:focus-within { width: auto; }
+  .rail nav { padding: 4px 4px 7px; }
+}
 /* ---------- Responsive SVG chart type ----------
    The compact chart uses a 360x300 viewBox (vs 1000x210), so at ~340px wide
    the scale is ~0.94 instead of ~0.34. These user-unit sizes land at a
