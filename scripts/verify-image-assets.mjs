@@ -29,8 +29,8 @@ const STALE_ERA = [
 ];
 
 const CABINET = [
-  { file: 'cab-ucl.webp', w: 800, h: 600 },
-  { file: 'cab-ballon.webp', w: 800, h: 600 },
+  { file: 'cab-ucl-2026.webp', w: 800, h: 600 },
+  { file: 'cab-ballon-2026.webp', w: 800, h: 600 },
   { file: 'cab-liga.webp', w: 800, h: 600 },
   { file: 'cab-wc.webp', w: 800, h: 600 },
   { file: 'cab-copa.webp', w: 800, h: 600 },

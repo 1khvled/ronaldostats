@@ -328,9 +328,9 @@ Object.assign(ERA_INTROS, {
 
 export const CABINET = [
     { title: "Portugaliya va FIFA Jahon Kubogi", sub: "Oltita Jahon kubogi (2006–2026) va Portugaliya uchun 146 ta gol — 234 ta milliy oʻyinda.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "2018 FIFA Jahon Kupida Portugaliyaning 7-raqamli futbolkasida Kristiano Ronaldo", cap: "Portugaliyaning eng koʻp gol uruvchisi, oltita Jahon kubogida" },
-    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — birinchisi 23 yoshida.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Kristiano Ronaldo rekord daraja bes marta qozgani Balon d'orni ushlab turibdi", cap: "Besh ta Ballon d'Or" },
-    { title: "Chempionlar Ligasi — 5", sub: "140 ta gol — musobaqa rekordi — 183 ta oʻyinda.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "Kristiano Ronaldo bes marta yutgan Yevropa kubogi va UEFA Champions League kuboklari", cap: "Besh ta yevropa tituli va 140 ta Chempionlar Ligasi goli" },
-    { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 va 2017-yillarda Manchester United va Real Madrid bilan.", src: "/img/cab-cwc.webp", w: 800, h: 600, pos: "50% 25%", alt: "Maderadagi CR7 muzeyida FIFA Klub Jahon Kubogi Golden Ball kuboklari", cap: "Toʻrtta FIFA Club World Cup" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — birinchisi 23 yoshida.", src: "/img/cab-ballon-2026.webp", w: 800, h: 600, pos: "50% 30%", alt: "Kristiano Ronaldo rekord daraja bes marta qozgani Balon d'orni ushlab turibdi", cap: "Besh ta Ballon d'Or" },
+    { title: "Chempionlar Ligasi — 5", sub: "140 ta gol — musobaqa rekordi — 183 ta oʻyinda.", src: "/img/cab-ucl-2026.webp", w: 800, h: 600, pos: "50% 25%", alt: "Kristiano Ronaldo bes marta yutgan Yevropa kubogi va UEFA Champions League kuboklari", cap: "Besh ta yevropa tituli va 140 ta Chempionlar Ligasi goli" },
+    { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 va 2017-yillarda Manchester United va Real Madrid bilan.", src: "/img/cab-cwc-2026.webp", w: 800, h: 600, pos: "50% 25%", alt: "Maderadagi CR7 muzeyida FIFA Klub Jahon Kubogi Golden Ball kuboklari", cap: "Toʻrtta FIFA Club World Cup" },
     { title: "La Liga — 311 ta gol", sub: "Musobaqaning barcha davrlardagi rekordi — barchasi Real Madrid uchun.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Real Madridning 7-raqamli futbolkasida Kristiano Ronaldo, ikki marta yutgan La Liga'da", cap: "Real Madrid uchun 311 ta La Liga goli" }
   ];
 

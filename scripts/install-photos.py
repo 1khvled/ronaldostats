@@ -8,7 +8,7 @@ slot it fills, and run this. The picture is cropped to the slot, resized and
 written as WebP into public/img, exactly where the site expects it.
 
     photos/era-2002-sporting.jpg     ->  public/img/era/era-2002-sporting.webp
-    photos/cab-ucl.jpg               ->  public/img/cab-ucl.webp
+    photos/cab-ucl.jpg               ->  public/img/cab-ucl-2026.webp
 
 PHOTOS.md says what each slot wants and where it is used.
 
@@ -42,9 +42,9 @@ SLOTS = {
     "cab-copa": ("cab-copa.webp", 800, 600),
     "cab-liga": ("cab-liga.webp", 800, 600),
     "cab-wc": ("cab-wc.webp", 800, 600),
-    "cab-ballon": ("cab-ballon.webp", 800, 600),
-    "cab-ucl": ("cab-ucl.webp", 800, 600),
-    "cab-cwc": ("cab-cwc.webp", 800, 600),
+    "cab-ballon": ("cab-ballon-2026.webp", 800, 600),
+    "cab-ucl": ("cab-ucl-2026.webp", 800, 600),
+    "cab-cwc": ("cab-cwc-2026.webp", 800, 600),
     "ronaldo-vs-messi": ("ronaldo-vs-messi.webp", 1107, 800),
 }
 

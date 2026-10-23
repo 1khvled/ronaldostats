@@ -69,13 +69,13 @@ t = t.replace(/  timeline: `    <image:image>[\s\S]*?<\/image:image>`,\n  achiev
 // 3. the achievements cabinet
 t = t.replace(/  achievements: `    <image:image>[\s\S]*?<\/image:image>`,\n  birthday:/,
   `  achievements: \`    <image:image>
-      <image:loc>https://www.ronaldostats.site/img/cab-ballon.webp</image:loc>
+      <image:loc>https://www.ronaldostats.site/img/cab-ballon-2026.webp</image:loc>
       <image:title>Cristiano Ronaldo and his 5 Ballons d'Or</image:title>
       <image:caption>Ronaldo holding his Ballon d'Or, the first Portuguese player to win the award.</image:caption>
       <image:geo_location>Paris, France</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/cab-ucl.webp</image:loc>
+      <image:loc>https://www.ronaldostats.site/img/cab-ucl-2026.webp</image:loc>
       <image:title>Cristiano Ronaldo and the UEFA Champions League</image:title>
       <image:caption>The European Cup and the Champions League trophies Ronaldo won.</image:caption>
       <image:geo_location>Madrid, Spain</image:geo_location>
@@ -93,7 +93,7 @@ t = t.replace(/  achievements: `    <image:image>[\s\S]*?<\/image:image>`,\n  bi
       <image:geo_location>Russia</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://www.ronaldostats.site/img/cab-cwc.webp</image:loc>
+      <image:loc>https://www.ronaldostats.site/img/cab-cwc-2026.webp</image:loc>
       <image:title>The FIFA Club World Cup trophies in the CR7 Museum</image:title>
       <image:caption>The Club World Cup Silver and Golden Ball trophies in Ronaldo's own museum in Madeira.</image:caption>
       <image:geo_location>Funchal, Madeira, Portugal</image:geo_location>

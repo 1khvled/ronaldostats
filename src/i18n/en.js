@@ -326,9 +326,9 @@ Object.assign(ERA_INTROS, {
 
 export const CABINET = [
     { title: "Portugal & the FIFA World Cup", sub: "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.", src: "/img/cab-wc.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo in the Portugal number 7 shirt at the 2018 FIFA World Cup", cap: "Portugal's record goalscorer, at six World Cups" },
-    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.", src: "/img/cab-ballon.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo holding the Ballon d'Or he has won a record five times", cap: "Five Ballons d'Or" },
-    { title: "Champions League — 5", sub: "140 goals, the competition record, in 183 appearances.", src: "/img/cab-ucl.webp", w: 800, h: 600, pos: "50% 25%", alt: "The European Cup and UEFA Champions League trophies, won five times by Cristiano Ronaldo", cap: "Five European titles and 140 Champions League goals" },
-    { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.", src: "/img/cab-cwc.webp", w: 800, h: 600, pos: "50% 25%", alt: "The FIFA Club World Cup Golden Ball trophies in the CR7 Museum in Madeira", cap: "Four FIFA Club World Cups" },
+    { title: "Ballon d'Or — 5", sub: "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.", src: "/img/cab-ballon-2026.webp", w: 800, h: 600, pos: "50% 30%", alt: "Cristiano Ronaldo holding the Ballon d'Or he has won a record five times", cap: "Five Ballons d'Or" },
+    { title: "Champions League — 5", sub: "140 goals, the competition record, in 183 appearances.", src: "/img/cab-ucl-2026.webp", w: 800, h: 600, pos: "50% 25%", alt: "The European Cup and UEFA Champions League trophies, won five times by Cristiano Ronaldo", cap: "Five European titles and 140 Champions League goals" },
+    { title: "FIFA Club World Cup — 4", sub: "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.", src: "/img/cab-cwc-2026.webp", w: 800, h: 600, pos: "50% 25%", alt: "The FIFA Club World Cup Golden Ball trophies in the CR7 Museum in Madeira", cap: "Four FIFA Club World Cups" },
     { title: "La Liga — 311 goals", sub: "The competition's all-time record, all of them for Real Madrid.", src: "/img/cab-liga.webp", w: 800, h: 600, pos: "50% 25%", alt: "Cristiano Ronaldo in the Real Madrid number 7 shirt, in a La Liga he won twice", cap: "311 La Liga goals for Real Madrid" }
   ];
 

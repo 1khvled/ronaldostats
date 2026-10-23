@@ -12,14 +12,14 @@ const SRC = "C:/Users/Abdelli/AppData/Local/Temp/opencode/cwc/fifa-club-world-cu
   const { createRequire } = await import("node:module");
   const require = createRequire(import.meta.url);
   const sharp = require(SHARP);
-  const out = path.join(ROOT, "public/img/cab-cwc.webp");
+  const out = path.join(ROOT, "public/img/cab-cwc-2026.webp");
   await sharp(SRC)
     .resize(800, 600, { fit: "cover", position: "centre" })
     .webp({ quality: 82 })
     .toFile(out);
   const st = fs.statSync(out);
   const meta = await sharp(out).metadata();
-  console.log("ok  cab-cwc.webp: " + st.size + " bytes, " + meta.width + "x" + meta.height + " " + meta.format);
+  console.log("ok  cab-cwc-2026.webp: " + st.size + " bytes, " + meta.width + "x" + meta.height + " " + meta.format);
 }
 
 // ---------------------------------------------------------------------------
@@ -113,7 +113,7 @@ const T = {
     const before = t;
     for (const [oldS, newS] of CHANGES) t = t.split(oldS).join(newS);
     // the Club World Cup card now shows the Club World Cup Golden Balls
-    t = t.replace(/(<img[^>]*src=")\/img\/cab-copa\.webp(")/, "$1/img/cab-cwc.webp$2");
+    t = t.replace(/(<img[^>]*src=")\/img\/cab-copa\.webp(")/, "$1/img/cab-cwc-2026.webp$2");
     if (t !== before) { fs.writeFileSync(f, t, "utf8"); n++; }
   }
   console.log("ok  " + n + " shells: the alt texts now describe the photographs");

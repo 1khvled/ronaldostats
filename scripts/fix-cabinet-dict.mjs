@@ -91,7 +91,7 @@ for (const lang of Object.keys(T)) {
   }
   // the Club World Cup card now shows the Golden Ball trophies
   if (t.includes('src: "/img/cab-copa.webp"')) {
-    t = t.replace('src: "/img/cab-copa.webp"', 'src: "/img/cab-cwc.webp"');
+    t = t.replace('src: "/img/cab-copa.webp"', 'src: "/img/cab-cwc-2026.webp"');
     n++;
   }
   fs.writeFileSync(f, t, "utf8");
