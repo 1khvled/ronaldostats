@@ -202,7 +202,7 @@ function getLangUrl(targetCode) {
     "goalsbyseason",
     "dashboard",
     "timeline",
-    "achievements",
+    "trophies",
     "ronaldo-vs-messi",
     "real-madrid",
     "champions-league"
@@ -587,7 +587,7 @@ function ensureMobileMenuDrawer() {
     {
       title: txt.catHistory,
       items: [
-        { href: `/${curLangCode}/achievements`, label: txt.achievements, badge: "35 Cups", icon: `<svg viewBox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg>` },
+        { href: `/${curLangCode}/trophies`, label: txt.achievements, badge: "35 Cups", icon: `<svg viewBox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg>` },
         { href: `/${curLangCode}/timeline`, label: txt.timeline, badge: "2002-2026", icon: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg>` },
         { href: `/${curLangCode}/goalsbyyear`, label: txt.goalsByYear, badge: "69 in 2013", icon: `<svg viewBox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg>` },
         { href: `/${curLangCode}/goalsbyseason`, label: txt.goalsBySeason, badge: "25 Yrs", icon: `<svg viewBox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg>` }

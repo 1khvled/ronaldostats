@@ -55,7 +55,7 @@ const llms = `# RonaldoStats — Official Ground Truth for Cristiano Ronaldo Car
 - [Goals by Season](https://www.ronaldostats.site/en/goalsbyseason): All ${U(d.clubSeasons.length)} club seasons split into league, domestic cup, continental and other, plus Portugal year by year.
 - [Stats Dashboard](https://www.ronaldostats.site/en/dashboard): Interactive breakdown by club, finish type, body part and competition.
 - [Career Timeline](https://www.ronaldostats.site/en/timeline): Seven eras and every dated milestone from 2002 to 2026.
-- [Trophies & Achievements](https://www.ronaldostats.site/en/achievements): The itemised honours list, the trophy cabinet and the individual awards.
+- [Trophies & Honours](https://www.ronaldostats.site/en/trophies): The itemised honours list, the trophy cabinet and the individual awards.
 - [Gear](https://www.ronaldostats.site/en/gear): The RonaldoStats merchandise store.
 
 ## Data Method
@@ -94,7 +94,7 @@ A team selector over Real Madrid, Manchester United, Juventus, Al Nassr, Sportin
 ### Timeline (https://www.ronaldostats.site/en/timeline)
 Seven eras — Sporting CP 2002-03, Manchester United 2003-09, Real Madrid 2009-18, the Ballon d'Or years, Juventus 2018-22, the Manchester United return 2021-22 and Al Nassr 2023-present — each with a chapter introduction, a photo card and the dated milestones inside it.
 
-### Achievements (https://www.ronaldostats.site/en/achievements)
+### Trophies (https://www.ronaldostats.site/en/trophies)
 The itemised honours list: 35 senior team trophies (Real Madrid 15, Manchester United 9, Juventus 5, Portugal 3, Al Nassr 2, Sporting CP 1) and 17 individual honours, with the trophy cabinet and a five-question quiz.
 
 ### Birthday explorer (https://www.ronaldostats.site/en/birthday)

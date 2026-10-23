@@ -42,6 +42,9 @@ SLOTS = {
     "cab-copa": ("cab-copa.webp", 800, 600),
     "cab-liga": ("cab-liga.webp", 800, 600),
     "cab-wc": ("cab-wc.webp", 800, 600),
+    "cab-ballon": ("cab-ballon.webp", 800, 600),
+    "cab-ucl": ("cab-ucl.webp", 800, 600),
+    "cab-cwc": ("cab-cwc.webp", 800, 600),
     "ronaldo-vs-messi": ("ronaldo-vs-messi.webp", 1107, 800),
 }
 

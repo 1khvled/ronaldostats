@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
+const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "trophies",
   "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 let added = 0;
 for (const p of PAGES) {

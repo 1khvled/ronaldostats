@@ -18,7 +18,7 @@ const OUT_DIR = path.join(ROOT, "src", "i18n", "shell");
 
 const PAGES = [
   "index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline",
-  "achievements", "champions-league", "gear",
+  "trophies", "champions-league", "gear",
   "real-madrid", "ronaldo-vs-messi",
 ];
 

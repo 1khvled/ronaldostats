@@ -44,6 +44,9 @@ infringement. That is why every file in `public/img` carries a licence line in
 | `cab-copa` | timeline: the European Championship chapter | Ronaldo in the Portugal number 7 shirt, 2016 |
 | `cab-liga` | achievements: the La Liga card | Ronaldo in the Real Madrid number 7 shirt |
 | `cab-wc` | achievements: the World Cup card | Ronaldo in the Portugal number 7 shirt at the 2018 World Cup |
+| `cab-ballon` | trophies: the Ballon d'Or card | Ronaldo holding the Ballon d'Or trophy |
+| `cab-ucl` | trophies: the Champions League card | Ronaldo holding the Champions League trophy |
+| `cab-cwc` | trophies: the Club World Cup card | Ronaldo and Real Madrid celebrating the FIFA Club World Cup |
 | `ronaldo-vs-messi` | the head-to-head page | Ronaldo and Messi together |
 
 The product photographs on the shop page are not in this list: they come from

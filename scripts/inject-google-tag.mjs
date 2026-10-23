@@ -19,7 +19,7 @@ const TAG_ID = "G-FERBLJWWWZ";
 
 const SUBPAGES = [
   "index.html",
-  "achievements.html",
+  "trophies.html",
   "champions-league.html",
   "dashboard.html",
   "goalsbyseason.html",

@@ -2,7 +2,9 @@
 
 Every photograph under `public/img/` that was sourced from Wikimedia Commons is listed below.
 All files are reproduced under a licence that permits commercial reuse (CC0, Public domain,
-CC BY or CC BY-SA). Attribution and licence links are given per file.
+CC BY or CC BY-SA). Attribution and licence links are given per file. Three trophy
+photographs (`cab-ballon`, `cab-ucl`, `cab-cwc`) are editorial images and are flagged as
+such in their entries.
 
 Images were cropped and resized for the site; cropping does not alter the original work.
 
@@ -324,7 +326,26 @@ The badges in `public/img/teams/` are the clubs' real crests, not drawings.
 - `public/img/teams/barcelona.png` — FC Barcelona, already in the repository before
   this update and left unchanged
 
+### `public/img/cab-ballon.webp`
+
+- **Source:** [The National — Cristiano Ronaldo shows his Ballon d'Or](https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/RK64G3OJMWJJD57MUMSYQOM6II.jpg)
+- **Subject:** Cristiano Ronaldo holding the Ballon d'Or trophy
+- **Licence:** Editorial use only — rights remain with the publisher and photographer.
+
+### `public/img/cab-ucl.webp`
+
+- **Source:** [UEFA — Cristiano Ronaldo shows off the trophy he has won for a fourth time](https://editorial.uefa.com/resources/0250-0c5117b2f757-e1369d88c06c-1000/cristiano_ronaldo_shows_off_the_trophy_he_has_won_for_a_fourth_time.jpeg)
+- **Subject:** Cristiano Ronaldo holding the Champions League trophy
+- **Licence:** Editorial use only — rights remain with UEFA and the photographer.
+
+### `public/img/cab-cwc.webp`
+
+- **Source:** [UEFA — Real Madrid celebrate their 2016 FIFA Club World Cup triumph](https://editorial.uefa.com/resources/0234-0e95ed288f84-92dfccabded4-1000/real_madrid_celebrate_their_2016_fifa_club_world_cup_triumph.jpeg)
+- **Subject:** Cristiano Ronaldo and Real Madrid team-mates celebrating the FIFA Club World Cup
+- **Licence:** Editorial use only — rights remain with UEFA and the photographer.
+
 Club crests and badges are trademarks of their owners. They are reproduced here for
 descriptive purposes only, to identify the team a statistic refers to; no
 endorsement, affiliation or commercial partnership is implied. Every other image on
-this site is freely licensed.
+this site is freely licensed; the three editorial trophy photographs above remain the
+property of their publishers and are reproduced for descriptive, editorial purposes only.

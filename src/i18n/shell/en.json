@@ -2,7 +2,6 @@
  "#16243a": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -11,7 +10,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -235,7 +235,7 @@
  ", a converted penalty against Croatia in the UEFA Nations League — the first player to reach 900 senior goals.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "5 September 2024  [, a converted penalty against Croatia in the UEFA Nations League — the first player to reach 900 senior goals.] When did Ronaldo make his 1,000th senior appearance?"
  },
@@ -249,14 +249,14 @@
  ", against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "30 Sep 2015  [, against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.] When did Ronaldo score his 900th career goal?"
  },
  ", for Juventus against SPAL.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "22 February 2020  [, for Juventus against SPAL.] Frequently Asked Questions: Cristiano Ronaldo Trophies"
  },
@@ -305,7 +305,7 @@
  ". Every title, club by club, with the years won.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "5 Ballons d'Or  [. Every title, club by club, with the years won.] ← Back to stats"
  },
@@ -754,11 +754,11 @@
  "140 UEFA Champions League goals, 42 assists, and 5 European titles.": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "⭐ Champions League Record  [140 UEFA Champions League goals, 42 assists, and 5 European titles.] Ronaldo career stats"
  },
@@ -772,7 +772,7 @@
  "140 goals, the competition record, in 183 appearances.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Champions League — 5  [140 goals, the competition record, in 183 appearances.] Five European titles and 140 Champions League goals"
  },
@@ -968,14 +968,14 @@
  "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Ballon d'Or — 5  [2008, 2013, 2014, 2016, 2017 — the first at 23 years old.] Five Ballons d'Or"
  },
  "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "FIFA Club World Cup — 4  [2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.] Four FIFA Club World Cups"
  },
@@ -1059,7 +1059,7 @@
  "2016 European Championship": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "The  [2016 European Championship] — the title he captained Portugal to in Paris, as the tournament's second-highest scorer."
  },
@@ -1109,7 +1109,7 @@
  "22 February 2020": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "On  [22 February 2020] , for Juventus against SPAL."
  },
@@ -1215,9 +1215,9 @@
  "30 Sep 2015": {
   "count": 3,
   "pages": [
-   "achievements",
    "dashboard",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Malmö  [30 Sep 2015] 30y 237d"
  },
@@ -1231,7 +1231,7 @@
  "311 La Liga goals for Real Madrid": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "The competition's all-time record, all of them for Real Madrid.  [311 La Liga goals for Real Madrid] FIFA Club World Cup — 4"
  },
@@ -1281,8 +1281,8 @@
  "35 senior team titles": {
   "count": 2,
   "pages": [
-   "achievements",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": "▾  [35 senior team titles] — 32 with clubs and 3 with Portugal. Popular counts of 36 or 37 over-count the UEFA Super Cup and the domestic supercups; 35 is the itemised figure. Individual honours include"
  },
@@ -1296,7 +1296,7 @@
  "35 team trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Cristiano Ronaldo's Trophies &amp; Honours  [35 team trophies] — 32 with clubs and 3 with Portugal — plus"
  },
@@ -1401,8 +1401,8 @@
  "5 Ballons d'Or": {
   "count": 4,
   "pages": [
-   "achievements",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": "and  [5 Ballons d'Or] ."
  },
@@ -1417,8 +1417,8 @@
  "5 September 2024": {
   "count": 2,
   "pages": [
-   "achievements",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": "came on  [5 September 2024] , the first player to reach 900. The 500th followed on 30 September 2015, the 700th on 14 October 2019 and the 800th club goal on 26 May 2025; his 1,000th senior appearance was on 22 February 2020, his 100th Al Nassr goal on 23 August 2025 — making him the first player to"
  },
@@ -1912,7 +1912,7 @@
  ": 15 Real Madrid, 9 Manchester United, 5 Juventus, 2 Al Nassr, 1 Sporting CP and 3 Portugal.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "35 senior team titles  [: 15 Real Madrid, 9 Manchester United, 5 Juventus, 2 Al Nassr, 1 Sporting CP and 3 Portugal.] How many Ballons d'Or has Ronaldo won?"
  },
@@ -1933,14 +1933,14 @@
  ": 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five  [: 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid.] Visual Trophy Cabinet"
  },
  ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five times  [: 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.] How many Champions League titles has Ronaldo won?"
  },
@@ -2080,7 +2080,6 @@
  "@messistat1": {
   "count": 20,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -2089,7 +2088,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -2171,20 +2171,11 @@
   "ctx": "1.7%  [AFC Champions League Elite / Two] Al Nassr"
  },
  "Achievements": {
-  "count": 22,
+  "count": 1,
   "pages": [
-   "achievements",
-   "champions-league",
-   "dashboard",
-   "gear",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "real-madrid",
-   "ronaldo-vs-messi",
-   "timeline"
+   "ronaldo-vs-messi"
   ],
-  "ctx": "[attr aria-label]"
+  "ctx": "Through the Years  [Achievements] 🐐 MessiStat — Lionel Messi Stats"
  },
  "Achievements &amp; 35 Trophies": {
   "count": 1,
@@ -2231,7 +2222,6 @@
  "Advertisement": {
   "count": 93,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "goalsbyseason",
@@ -2239,43 +2229,44 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Advertisement 1": {
   "count": 7,
   "pages": [
-   "achievements",
    "champions-league",
    "goalsbyseason",
    "goalsbyyear",
    "index",
    "real-madrid",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Advertisement 2": {
   "count": 6,
   "pages": [
-   "achievements",
    "champions-league",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "real-madrid"
+   "real-madrid",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Advertisement 3": {
   "count": 5,
   "pages": [
-   "achievements",
    "champions-league",
    "goalsbyseason",
    "goalsbyyear",
-   "real-madrid"
+   "real-madrid",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -2538,7 +2529,7 @@
  "Al Nassr — 2 trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2018, 2020  [Al Nassr — 2 trophies] Arab Club Champions Cup"
  },
@@ -2567,7 +2558,7 @@
  "All 35 senior team trophies, 5 Ballons d'Or, 4 European Golden Shoes and 5 Champions League titles. The full verified record of Cristiano Ronaldo's career honours.": {
   "count": 3,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -2717,7 +2708,7 @@
  "Arab Club Champions Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Al Nassr — 2 trophies  [Arab Club Champions Cup] ×1"
  },
@@ -2752,8 +2743,8 @@
  "Ballon d'Or": {
   "count": 2,
   "pages": [
-   "achievements",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "2008  [Ballon d'Or] at 23, named on 77 of 96 ballots, with the Champions League and the FIFA Club World Cup."
  },
@@ -2788,16 +2779,16 @@
  "Ballon d'Or — 5": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Visual Trophy Cabinet  [Ballon d'Or — 5] 2008, 2013, 2014, 2016, 2017 — the first at 23 years old."
  },
  "Ballons d'Or": {
   "count": 3,
   "pages": [
-   "achievements",
    "dashboard",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "5  [Ballons d'Or] &mdash; 2008, 2013, 2014, 2016 and 2017."
  },
@@ -3023,7 +3014,7 @@
  "Career Trophies &amp; Major Honours at a Glance": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "← Back to stats  [Career Trophies &amp; Major Honours at a Glance] Team trophies"
  },
@@ -3144,14 +3135,14 @@
  "Champions League top scorer in 2008, then every season from 2013 to 2018.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "7  [Champions League top scorer in 2008, then every season from 2013 to 2018.] Advertisement"
  },
  "Champions League — 5": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five Ballons d'Or  [Champions League — 5] 140 goals, the competition record, in 183 appearances."
  },
@@ -3234,14 +3225,14 @@
  "Club crests are trademarks of their respective clubs, shown for team identification.": {
   "count": 8,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
    "real-madrid",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026.  [Club crests are trademarks of their respective clubs, shown for team identification.] "
  },
@@ -3334,9 +3325,9 @@
  "Copa del Rey": {
   "count": 3,
   "pages": [
-   "achievements",
    "dashboard",
-   "real-madrid"
+   "real-madrid",
+   "trophies"
   ],
   "ctx": "2.4%  [Copa del Rey] Real Madrid"
  },
@@ -3350,8 +3341,8 @@
  "Coppa Italia": {
   "count": 2,
   "pages": [
-   "achievements",
-   "dashboard"
+   "dashboard",
+   "trophies"
   ],
   "ctx": "0.9%  [Coppa Italia] Juventus"
  },
@@ -3531,7 +3522,7 @@
  "Cristiano Ronaldo Trophies & Honours | RonaldoStats": {
   "count": 3,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -3548,6 +3539,13 @@
    "ronaldo-vs-messi"
   ],
   "ctx": "Ronaldo vs Messi  [Cristiano Ronaldo and Lionel Messi, side by side: all-time goals, appearances, assists, set pieces, trophies, international records and every one of the 36 direct club meetings. The numbers are sourced; the verdict is the reader's.] ⚔️ 36 DIRECT HEAD-TO-HEAD MATCHES · 13 BALLONS D"
+ },
+ "Cristiano Ronaldo and his Real Madrid team-mates celebrating the FIFA Club World Cup": {
+  "count": 1,
+  "pages": [
+   "trophies"
+  ],
+  "ctx": "[attr alt]"
  },
  "Cristiano Ronaldo arrived in Lisbon from Funchal as a teenager with a reputation for speed and a habit of demanding the ball. His first senior season at Sporting CP produced five goals in 31 appearances, the first senior goal came against Moreirense in October 2002, and the Supertaça Cândido de Oliveira closed out a single season that had already changed the market.": {
   "count": 1,
@@ -3573,12 +3571,12 @@
  "Cristiano Ronaldo career statistics: 981 goals in 1,340 senior appearances": {
   "count": 12,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -3659,10 +3657,24 @@
   ],
   "ctx": "▾  [Cristiano Ronaldo has won] 5 Ballons d'Or"
  },
+ "Cristiano Ronaldo holding the Ballon d'Or trophy he has won a record five times": {
+  "count": 1,
+  "pages": [
+   "trophies"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo holding the Champions League trophy, which he won five times": {
+  "count": 1,
+  "pages": [
+   "trophies"
+  ],
+  "ctx": "[attr alt]"
+ },
  "Cristiano Ronaldo in the Portugal number 7 shirt at the 2018 FIFA World Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr alt]"
  },
@@ -3687,13 +3699,6 @@
   ],
   "ctx": "[attr data-label]"
  },
- "Cristiano Ronaldo in the Portugal number 7 shirt, lifting the FIFA Club World Cup": {
-  "count": 1,
-  "pages": [
-   "achievements"
-  ],
-  "ctx": "[attr alt]"
- },
  "Cristiano Ronaldo in the Real Madrid number 7 shirt in the Champions League": {
   "count": 1,
   "pages": [
@@ -3704,14 +3709,7 @@
  "Cristiano Ronaldo in the Real Madrid number 7 shirt, in a La Liga he won twice": {
   "count": 1,
   "pages": [
-   "achievements"
-  ],
-  "ctx": "[attr alt]"
- },
- "Cristiano Ronaldo in the Real Madrid number 7 shirt, in the Champions League he won four times": {
-  "count": 1,
-  "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr alt]"
  },
@@ -3719,13 +3717,6 @@
   "count": 1,
   "pages": [
    "real-madrid"
-  ],
-  "ctx": "[attr alt]"
- },
- "Cristiano Ronaldo in the number 7 shirt in 2008, the year of his first Ballon d'Or": {
-  "count": 1,
-  "pages": [
-   "achievements"
   ],
   "ctx": "[attr alt]"
  },
@@ -3816,7 +3807,7 @@
  "Cristiano Ronaldo's Trophies &amp; Honours": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "22 October 2026  [Cristiano Ronaldo's Trophies &amp; Honours] 35 team trophies"
  },
@@ -3904,7 +3895,6 @@
  "Dark mode": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -3913,14 +3903,14 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Ronaldo Gear 🛍️  [Dark mode] Ronaldo"
  },
  "Dashboard": {
   "count": 21,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -3929,7 +3919,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -4058,7 +4049,7 @@
  "Eight": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [Eight] — 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list."
  },
@@ -4079,7 +4070,6 @@
  "English": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -4088,7 +4078,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Stats  [English] EN"
  },
@@ -4136,7 +4127,7 @@
  "Essential Trophy &amp; Award Facts": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Advertisement  [Essential Trophy &amp; Award Facts] How many trophies has Ronaldo won?"
  },
@@ -4164,14 +4155,14 @@
  "European Golden Shoe": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2013, 2014, 2016, 2017  [European Golden Shoe] ×4"
  },
  "European Golden Shoes": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2013, 2014, 2016, 2017.  [European Golden Shoes] 4"
  },
@@ -4199,17 +4190,17 @@
  "Every Trophy Won by Club &amp; Country": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Portugal's record goalscorer, at six World Cups  [Every Trophy Won by Club &amp; Country] Real Madrid — 15 trophies"
  },
  "Every career milestone, dated and in order, from 2002 to today.": {
   "count": 4,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
-   "goalsbyyear"
+   "goalsbyyear",
+   "trophies"
   ],
   "ctx": "Ronaldo through the years  [Every career milestone, dated and in order, from 2002 to today.] Counted by hand and checked twice against named sources."
  },
@@ -4272,13 +4263,13 @@
  "Explore More Cristiano Ronaldo Statistics": {
   "count": 7,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "real-madrid",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Advertisement  [Explore More Cristiano Ronaldo Statistics] Advertisement"
  },
@@ -4299,7 +4290,7 @@
  "FA Community Shield": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2007, 2008, 2009  [FA Community Shield] ×1"
  },
@@ -4313,7 +4304,7 @@
  "FA Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Manchester United — 9 trophies  [FA Cup] ×1"
  },
@@ -4327,14 +4318,14 @@
  "FIFA Club World Cup": {
   "count": 2,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2014, 2017  [FIFA Club World Cup] ×3"
  },
  "FIFA Club World Cup — 4": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "311 La Liga goals for Real Madrid  [FIFA Club World Cup — 4] 2008, 2014, 2016 and 2017 with Manchester United and Real Madrid."
  },
@@ -4348,7 +4339,7 @@
  "FIFA FIFPro World XI": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2019, 2025  [FIFA FIFPro World XI] ×15"
  },
@@ -4363,7 +4354,7 @@
  "FIFA Puskás Award": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008  [FIFA Puskás Award] ×1"
  },
@@ -4384,21 +4375,21 @@
  "FIFA World Cup Golden Ball": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2009  [FIFA World Cup Golden Ball] ×1"
  },
  "FIFA World Cup Golden Boot": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008  [FIFA World Cup Golden Boot] ×1"
  },
  "FIFA World Player of the Year": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2011, 2014, 2015  [FIFA World Player of the Year] ×1"
  },
@@ -4433,10 +4424,10 @@
  "Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal.": {
   "count": 4,
   "pages": [
-   "achievements",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Ronaldo stats dashboard  [Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal.] Ronaldo through the years"
  },
@@ -4576,21 +4567,21 @@
  "Five": {
   "count": 3,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [Five] — 2008, 2013, 2014, 2016 and 2017, the first at 23 years old."
  },
  "Five Ballons d'Or": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.  [Five Ballons d'Or] Champions League — 5"
  },
  "Five Ballons d'Or, four European Golden Shoes, three UEFA Men's Player of the Year awards, the FIFA World Player of the Year in 2008, the FIFA Puskás Award in 2009, the Euro 2020 Golden Boot and The Best FIFA Men's Player in 2016 and 2017.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [Five Ballons d'Or, four European Golden Shoes, three UEFA Men's Player of the Year awards, the FIFA World Player of the Year in 2008, the FIFA Puskás Award in 2009, the Euro 2020 Golden Boot and The Best FIFA Men's Player in 2016 and 2017.] Is Ronaldo the most decorated player ever?"
  },
@@ -4604,7 +4595,7 @@
  "Five European titles and 140 Champions League goals": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "140 goals, the competition record, in 183 appearances.  [Five European titles and 140 Champions League goals] La Liga — 311 goals"
  },
@@ -4618,14 +4609,13 @@
  "Five times": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [Five times] : 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots."
  },
  "Follow @messistat1 on X": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -4634,14 +4624,14 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Oʻzbekcha (Oʻzbekiston)  [Follow @messistat1 on X] Telegram @messistatdotcom"
  },
  "Follow RonaldoStats on X (@messistat1)": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -4650,14 +4640,15 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Football League Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2004  [Football League Cup] ×2"
  },
@@ -4685,7 +4676,7 @@
  "Four FIFA Club World Cups": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2014, 2016 and 2017 with Manchester United and Real Madrid.  [Four FIFA Club World Cups] Portugal &amp; the FIFA World Cup"
  },
@@ -4745,7 +4736,7 @@
  "Frequently Asked Questions: Cristiano Ronaldo Trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ", for Juventus against SPAL.  [Frequently Asked Questions: Cristiano Ronaldo Trophies] What is Ronaldo's most important trophy?"
  },
@@ -4773,9 +4764,9 @@
  "Frequently asked questions": {
   "count": 3,
   "pages": [
-   "achievements",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -4953,7 +4944,6 @@
  "Goals by Season": {
   "count": 25,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -4962,14 +4952,14 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Goals by Year": {
   "count": 23,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -4978,7 +4968,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -5113,7 +5104,7 @@
  "Has Ronaldo won a major international title?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "— 2008, 2013, 2014, 2016 and 2017, the first at 23 years old.  [Has Ronaldo won a major international title?] ▾"
  },
@@ -5163,12 +5154,12 @@
  "Head-to-head career stats: 981 vs 936 goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or.": {
   "count": 6,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "🐐 Ronaldo vs Messi All-Time  [Head-to-head career stats: 981 vs 936 goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or.] 🏟️ Ronaldo at Real Madrid"
  },
@@ -5210,18 +5201,17 @@
  "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "🏟️ Ronaldo at Real Madrid  [His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.] ⭐ Champions League Record"
  },
  "Home": {
   "count": 22,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -5230,7 +5220,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -5244,19 +5235,19 @@
  "How I put these numbers together": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Counted by hand and checked twice against named sources.  [How I put these numbers together] I count one thing: official senior first-team matches for Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr and Portugal &mdash; every league game, domestic cup, continental night and internati"
  },
  "How I put these numbers together — counted by hand and checked twice against named sources.": {
   "count": 2,
   "pages": [
-   "achievements",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal.  [How I put these numbers together — counted by hand and checked twice against named sources.] How I put these numbers together"
  },
@@ -5291,7 +5282,7 @@
  "How many Ballons d'Or has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ": 15 Real Madrid, 9 Manchester United, 5 Juventus, 2 Al Nassr, 1 Sporting CP and 3 Portugal.  [How many Ballons d'Or has Ronaldo won?] ▾"
  },
@@ -5312,14 +5303,14 @@
  "How many Champions League titles has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ": 2008, 2013, 2014, 2016 and 2017. The first came at 23, with the vote on 77 of 96 ballots.  [How many Champions League titles has Ronaldo won?] ▾"
  },
  "How many Champions Leagues has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "— UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025.  [How many Champions Leagues has Ronaldo won?] ▾"
  },
@@ -5375,14 +5366,14 @@
  "How many individual awards has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "— 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list.  [How many individual awards has Ronaldo won?] ▾"
  },
  "How many league titles has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "— the title he captained Portugal to in Paris, as the tournament's second-highest scorer.  [How many league titles has Ronaldo won?] ▾"
  },
@@ -5417,7 +5408,7 @@
  "How many trophies has Ronaldo won?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Essential Trophy &amp; Award Facts  [How many trophies has Ronaldo won?] ▾"
  },
@@ -5438,19 +5429,19 @@
  "How these numbers are checked": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "I count one thing: official senior first-team matches for Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr and Portugal &mdash; every league game, domestic cup, continental night and international, and nothing else. No youth football, no reserves, no friendlies dressed up as history. "
  },
  "I count one thing: official senior first-team matches for Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal — every league game, domestic cup, continental night and international, and nothing else. No youth football, no reserves, no friendlies dressed up as history.": {
   "count": 2,
   "pages": [
-   "achievements",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "How I put these numbers together  [I count one thing: official senior first-team matches for Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal — every league game, domestic cup, continental night and international, and nothing else. No youth football, no reserves, no frien"
  },
@@ -5501,7 +5492,7 @@
  "Individual honours — 17 award types": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2019, 2025  [Individual honours — 17 award types] Ballon d'Or"
  },
@@ -5591,7 +5582,7 @@
  "Is Ronaldo the most decorated player ever?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five Ballons d'Or, four European Golden Shoes, three UEFA Men's Player of the Year awards, the FIFA World Player of the Year in 2008, the FIFA Puskás Award in 2009, the Euro 2020 Golden Boot and The Best FIFA Men's Player in 2016 and 2017.  [Is Ronaldo the most decorated player ever?] ▾"
  },
@@ -5612,7 +5603,6 @@
  "Join RonaldoStats on Telegram": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -5621,7 +5611,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -5682,7 +5673,7 @@
  "Juventus — 5 trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008  [Juventus — 5 trophies] Serie A"
  },
@@ -5746,10 +5737,10 @@
  "La Liga": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "index",
-   "real-madrid"
+   "real-madrid",
+   "trophies"
   ],
   "ctx": ": 140 goals in 183 appearances and 42 assists — all-time records in the competition. Five titles: 2008, 2014, 2016, 2017 and 2018.  [La Liga] : 311 goals for Real Madrid, the competition's all-time record."
  },
@@ -5770,14 +5761,14 @@
  "La Liga top scorer (Pichichi)": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2013, 2014, 2015, 2016, 2017, 2018  [La Liga top scorer (Pichichi)] ×3"
  },
  "La Liga — 311 goals": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five European titles and 140 Champions League goals  [La Liga — 311 goals] The competition's all-time record, all of them for Real Madrid."
  },
@@ -5944,7 +5935,7 @@
  "Manchester United — 9 trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2014, 2016, 2017  [Manchester United — 9 trophies] FA Cup"
  },
@@ -6079,11 +6070,11 @@
  "More Cristiano Ronaldo statistics": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -6111,7 +6102,6 @@
  "Navigation": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -6120,7 +6110,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -6220,7 +6211,7 @@
  "On": {
   "count": 3,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [On] 30 Sep 2015"
  },
@@ -6234,7 +6225,7 @@
  "On team titles alone Messi leads with 46 to Ronaldo's 35. Ronaldo leads the scoring records — 981 goals, 140 of them in the Champions League, and 146 goals in 234 caps for Portugal.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [On team titles alone Messi leads with 46 to Ronaldo's 35. Ronaldo leads the scoring records — 981 goals, 140 of them in the Champions League, and 146 goals in 234 caps for Portugal.] Explore More Cristiano Ronaldo Statistics"
  },
@@ -6318,11 +6309,11 @@
  "Penalties (184), free kicks (66), hat-tricks (66) and assists (261) are widely published compiled tallies, shown as provisional until a true match-by-match hand count is finished.": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "This is a one-person site, kept by hand. Totals only ever change when there is a named source and it has been checked twice &mdash; never by a script, never on a rumour. If you spot something wrong, the date stamp at the top tells you exactly when it was last checked.  [Penalties (184), free kicks ("
  },
@@ -6350,7 +6341,7 @@
  "Photographs of Ronaldo lifting trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -6393,7 +6384,7 @@
  "Portugal &amp; the FIFA World Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Four FIFA Club World Cups  [Portugal &amp; the FIFA World Cup] Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal."
  },
@@ -6477,14 +6468,14 @@
  "Portugal — 3 trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2002  [Portugal — 3 trophies] UEFA European Championship"
  },
  "Portugal's record goalscorer, at six World Cups": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.  [Portugal's record goalscorer, at six World Cups] Every Trophy Won by Club &amp; Country"
  },
@@ -6530,16 +6521,16 @@
  "Premier League": {
   "count": 4,
   "pages": [
-   "achievements",
    "dashboard",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": ": 106 goals for Al Nassr, including a record 35 in the 2023/24 season.  [Premier League] : 103 goals for Manchester United."
  },
  "Premier League Golden Boot": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2011, 2014, 2015  [Premier League Golden Boot] ×1"
  },
@@ -6589,7 +6580,7 @@
  "Quick answers about trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -6621,7 +6612,7 @@
  "Real Madrid 15 · Manchester United 9 · Juventus 5 · Portugal 3.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "35  [Real Madrid 15 · Manchester United 9 · Juventus 5 · Portugal 3.] Ballons d'Or"
  },
@@ -6660,26 +6651,10 @@
   ],
   "ctx": "Real Madrid 2009–18 — the Bernabéu presentation and nine years of titles  [Real Madrid paid a world-record €94m in June 2009 and 80,000 packed the Bernabéu for the presentation. He answered with a Copa del Rey final header in a Clásico in his first season, a La Liga title won with a record 100 point"
  },
- "Real Madrid years": {
-  "count": 20,
-  "pages": [
-   "achievements",
-   "champions-league",
-   "dashboard",
-   "gear",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "real-madrid",
-   "ronaldo-vs-messi",
-   "timeline"
-  ],
-  "ctx": "[attr aria-label]"
- },
  "Real Madrid — 15 trophies": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Every Trophy Won by Club &amp; Country  [Real Madrid — 15 trophies] La Liga"
  },
@@ -6810,7 +6785,6 @@
  "Ronaldo": {
   "count": 12,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -6819,7 +6793,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Skip to content  [Ronaldo] Stats"
  },
@@ -6959,7 +6934,6 @@
  "Ronaldo Gear": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -6968,14 +6942,14 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "Ronaldo Gear 🛍️": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -6984,14 +6958,15 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
-  "ctx": "Achievements  [Ronaldo Gear 🛍️] Dark mode"
+  "ctx": "Trophies  [Ronaldo Gear 🛍️] Dark mode"
  },
  "Ronaldo Trophies & Honours Trivia Quiz": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -7019,11 +6994,11 @@
  "Ronaldo career stats": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "140 UEFA Champions League goals, 42 assists, and 5 European titles.  [Ronaldo career stats] The headline numbers: 981 goals in 1,340 senior games."
  },
@@ -7121,22 +7096,22 @@
  "Ronaldo stats dashboard": {
   "count": 5,
   "pages": [
-   "achievements",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "140 UEFA Champions League goals, 183 appearances, 42 assists and 5 titles.  [Ronaldo stats dashboard] Filter every chart by Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr or Portugal."
  },
  "Ronaldo through the years": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": "Filter every chart by Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr or Portugal.  [Ronaldo through the years] Every career milestone, dated and in order, from his 2002 debut to today."
  },
@@ -7185,7 +7160,6 @@
  "RonaldoStats": {
   "count": 21,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7194,7 +7168,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -7223,7 +7198,6 @@
  "RonaldoStats home": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7232,7 +7206,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -7267,16 +7242,16 @@
  "Saudi Pro League": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": ": 311 goals for Real Madrid, the competition's all-time record.  [Saudi Pro League] : 106 goals for Al Nassr, including a record 35 in the 2023/24 season."
  },
  "Saudi Pro League Golden Boot": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2021  [Saudi Pro League Golden Boot] ×2"
  },
@@ -7344,7 +7319,7 @@
  "Season and calendar-year goals are tallied from full match records and checked against club and competition records plus free match-data feeds after every game. The trophy list is itemised from the published honours record: 32 club titles and 3 with Portugal, 35 in all.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "How these numbers are checked  [Season and calendar-year goals are tallied from full match records and checked against club and competition records plus free match-data feeds after every game. The trophy list is itemised from the published honours record: 32 club titles and 3 with Portugal, 35 in al"
  },
@@ -7386,7 +7361,6 @@
  "Select Language": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7395,14 +7369,14 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr title]"
  },
  "Select Language (English)": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7411,7 +7385,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -7503,9 +7478,9 @@
  "Serie A": {
   "count": 4,
   "pages": [
-   "achievements",
    "dashboard",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": ": 103 goals for Manchester United.  [Serie A] : 81 goals for Juventus."
  },
@@ -7526,7 +7501,7 @@
  "Serie A top scorer (Capocannoniere)": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008  [Serie A top scorer (Capocannoniere)] ×1"
  },
@@ -7607,14 +7582,13 @@
  "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Portugal &amp; the FIFA World Cup  [Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.] Portugal's record goalscorer, at six World Cups"
  },
  "Skip to content": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7623,7 +7597,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Cristiano Ronaldo Stats | RonaldoStats  [Skip to content] Ronaldo"
  },
@@ -7675,7 +7650,7 @@
  "Sporting CP — 1 trophy": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2026  [Sporting CP — 1 trophy] Supertaça Cândido de Oliveira"
  },
@@ -7703,7 +7678,6 @@
  "Stats": {
   "count": 11,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7712,14 +7686,15 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Ronaldo  [Stats] English"
  },
  "Supercopa de España": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2011, 2014  [Supercopa de España] ×2"
  },
@@ -7740,15 +7715,15 @@
  "Supercoppa Italiana": {
   "count": 2,
   "pages": [
-   "achievements",
-   "dashboard"
+   "dashboard",
+   "trophies"
   ],
   "ctx": "0.2%  [Supercoppa Italiana] Juventus"
  },
  "Supertaça Cândido de Oliveira": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Sporting CP — 1 trophy  [Supertaça Cândido de Oliveira] ×1"
  },
@@ -7785,8 +7760,8 @@
  "Team trophies": {
   "count": 2,
   "pages": [
-   "achievements",
-   "index"
+   "index",
+   "trophies"
   ],
   "ctx": "0.62 per cap across 234 caps.  [Team trophies] 35"
  },
@@ -7800,7 +7775,6 @@
  "Telegram @messistatdotcom": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -7809,21 +7783,22 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Follow @messistat1 on X  [Telegram @messistatdotcom] Cristiano Ronaldo: 1,340 senior appearances, 981 goals (1,106 apps / 835 goals for clubs, 234 / 146 with Portugal). Last checked 19 October 2026."
  },
  "Test Your Cristiano Ronaldo Trophy & Records IQ": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "🎯 TROPHY & RECORDS TRIVIA  [Test Your Cristiano Ronaldo Trophy & Records IQ] Think you know everything about Ronaldo's 35 trophies, 5 Ballons d'Or and world records? Answer 5 trivia questions below:"
  },
  "The": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [The] 2016 European Championship"
  },
@@ -7858,7 +7833,7 @@
  "The Best FIFA Men's Player": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2020  [The Best FIFA Men's Player] ×2"
  },
@@ -7950,7 +7925,7 @@
  "The competition's all-time record, all of them for Real Madrid.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "La Liga — 311 goals  [The competition's all-time record, all of them for Real Madrid.] 311 La Liga goals for Real Madrid"
  },
@@ -7964,11 +7939,11 @@
  "The headline numbers: 981 goals in 1,340 senior games.": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Ronaldo career stats  [The headline numbers: 981 goals in 1,340 senior games.] Ronaldo through the years"
  },
@@ -8045,7 +8020,7 @@
  "Think you know everything about Ronaldo's 35 trophies, 5 Ballons d'Or and world records? Answer 5 trivia questions below:": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Test Your Cristiano Ronaldo Trophy & Records IQ  [Think you know everything about Ronaldo's 35 trophies, 5 Ballons d'Or and world records? Answer 5 trivia questions below:] Which years did Ronaldo win the Ballon d'Or?"
  },
@@ -8059,8 +8034,8 @@
  "This is a one-person site, kept by hand. Totals only ever change when I have a named source and have checked it twice — never by a script, never on a rumour. If you spot something wrong, that date stamp at the top tells you exactly when I last looked.": {
   "count": 2,
   "pages": [
-   "achievements",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Season and calendar-year goals are tallied from full match records and checked against club and competition records plus free match-data feeds after every game. Timeline entries are year- and date-granular milestones; era goal bars split calendar years into non-overlapping spans so they add back up "
  },
@@ -8090,7 +8065,6 @@
  "Through the Years": {
   "count": 26,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -8099,7 +8073,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -8120,7 +8095,6 @@
  "Toggle dark mode": {
   "count": 20,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -8129,7 +8103,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -8175,6 +8150,22 @@
   ],
   "ctx": "12  [Total for Real Madrid] 438"
  },
+ "Trophies": {
+  "count": 21,
+  "pages": [
+   "champions-league",
+   "dashboard",
+   "gear",
+   "goalsbyseason",
+   "goalsbyyear",
+   "index",
+   "real-madrid",
+   "ronaldo-vs-messi",
+   "timeline",
+   "trophies"
+  ],
+  "ctx": "[attr aria-label]"
+ },
  "Trophies Won": {
   "count": 1,
   "pages": [
@@ -8185,7 +8176,7 @@
  "Trophy summary": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
@@ -8206,7 +8197,6 @@
  "UCL Hub": {
   "count": 20,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -8215,25 +8205,26 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "UCL top-scorer seasons": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008, 2011, 2014, 2015.  [UCL top-scorer seasons] 7"
  },
  "UEFA Champions League": {
   "count": 10,
   "pages": [
-   "achievements",
    "dashboard",
    "gear",
    "index",
-   "real-madrid"
+   "real-madrid",
+   "trophies"
   ],
   "ctx": "🏆 Major Competitions &amp; Tournament Records  [UEFA Champions League] : 140 goals in 183 appearances and 42 assists — all-time records in the competition. Five titles: 2008, 2014, 2016, 2017 and 2018."
  },
@@ -8247,7 +8238,7 @@
  "UEFA Champions League top scorer": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2014, 2016, 2017  [UEFA Champions League top scorer] ×7"
  },
@@ -8261,8 +8252,8 @@
  "UEFA European Championship": {
   "count": 2,
   "pages": [
-   "achievements",
-   "gear"
+   "gear",
+   "trophies"
   ],
   "ctx": "Portugal — 3 trophies  [UEFA European Championship] ×1"
  },
@@ -8276,43 +8267,43 @@
  "UEFA European Championship Golden Boot": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2008  [UEFA European Championship Golden Boot] ×1"
  },
  "UEFA Men's Player of the Year": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2016, 2017  [UEFA Men's Player of the Year] ×3"
  },
  "UEFA Nations League": {
   "count": 2,
   "pages": [
-   "achievements",
-   "dashboard"
+   "dashboard",
+   "trophies"
   ],
   "ctx": "1.6%  [UEFA Nations League] Portugal"
  },
  "UEFA Nations League Finals top scorer": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2024, 2025  [UEFA Nations League Finals top scorer] ×2"
  },
  "UEFA Super Cup": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2014, 2016, 2017, 2018  [UEFA Super Cup] ×2"
  },
  "UEFA Team of the Year": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2007–2021  [UEFA Team of the Year] ×15"
  },
@@ -8340,12 +8331,12 @@
  "Updated": {
   "count": 6,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Career statistics  [Updated] 22 October 2026"
  },
@@ -8380,7 +8371,7 @@
  "Visual Trophy Cabinet": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ": 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid.  [Visual Trophy Cabinet] Ballon d'Or — 5"
  },
@@ -8492,7 +8483,7 @@
  "What is Ronaldo's most important trophy?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Frequently Asked Questions: Cristiano Ronaldo Trophies  [What is Ronaldo's most important trophy?] ▾"
  },
@@ -8506,7 +8497,7 @@
  "When did Ronaldo make his 1,000th senior appearance?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ", a converted penalty against Croatia in the UEFA Nations League — the first player to reach 900 senior goals.  [When did Ronaldo make his 1,000th senior appearance?] ▾"
  },
@@ -8527,14 +8518,14 @@
  "When did Ronaldo score his 500th career goal?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "— the first in 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid. He is also the competition's all-time top scorer with 140 goals.  [When did Ronaldo score his 500th career goal?] ▾"
  },
  "When did Ronaldo score his 900th career goal?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": ", against Malmö, in the season he passed Messi to become the all-time Champions League top scorer.  [When did Ronaldo score his 900th career goal?] ▾"
  },
@@ -8562,7 +8553,7 @@
  "Which years did Ronaldo win the Ballon d'Or?": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Think you know everything about Ronaldo's 35 trophies, 5 Ballons d'Or and world records? Answer 5 trivia questions below:  [Which years did Ronaldo win the Ballon d'Or?] ▾"
  },
@@ -8718,7 +8709,7 @@
  "Yes": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "▾  [Yes] — UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025."
  },
@@ -8868,7 +8859,6 @@
  "en_US": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -8877,7 +8867,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -8984,13 +8975,13 @@
  "image/jpeg": {
   "count": 7,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9081,7 +9072,6 @@
  "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1": {
   "count": 12,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9090,7 +9080,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9210,7 +9201,7 @@
  "ronaldo trophies, ronaldo honours, ronaldo titles, ronaldo ballons d or, ronaldo 35 trophies, ronaldo champions league titles, ronaldo la liga titles, ronaldo world cup trophy, most decorated football player in history, ronaldo honours list, ronaldo awards and records, ronaldo trophy cabinet, ronaldostat": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9224,7 +9215,6 @@
  "ronaldostats.site": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9233,7 +9223,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9268,7 +9259,6 @@
  "summary_large_image": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9277,7 +9267,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9319,7 +9310,6 @@
  "vs Messi": {
   "count": 20,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9328,27 +9318,43 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
+  ],
+  "ctx": "[attr aria-label]"
+ },
+ "vs Real Madrid": {
+  "count": 20,
+  "pages": [
+   "champions-league",
+   "dashboard",
+   "gear",
+   "goalsbyseason",
+   "goalsbyyear",
+   "index",
+   "real-madrid",
+   "ronaldo-vs-messi",
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr aria-label]"
  },
  "website": {
   "count": 7,
   "pages": [
-   "achievements",
    "dashboard",
    "gear",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
  "width=device-width, initial-scale=1, viewport-fit=cover": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9357,7 +9363,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "[attr content]"
  },
@@ -9406,7 +9413,7 @@
  "— 2008, 2013, 2014, 2016 and 2017, the first at 23 years old.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five  [— 2008, 2013, 2014, 2016 and 2017, the first at 23 years old.] Has Ronaldo won a major international title?"
  },
@@ -9420,7 +9427,7 @@
  "— 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Eight  [— 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list.] How many individual awards has Ronaldo won?"
  },
@@ -9434,7 +9441,7 @@
  "— 32 with clubs and 3 with Portugal — plus": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "35 team trophies  [— 32 with clubs and 3 with Portugal — plus] 5 Ballons d'Or"
  },
@@ -9532,7 +9539,7 @@
  "— UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Yes  [— UEFA Euro 2016 as captain, and the UEFA Nations League in 2019 and 2025.] How many Champions Leagues has Ronaldo won?"
  },
@@ -9630,14 +9637,14 @@
  "— the first in 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid. He is also the competition's all-time top scorer with 140 goals.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Five  [— the first in 2008 with Manchester United, then 2014, 2016, 2017 and 2018 with Real Madrid. He is also the competition's all-time top scorer with 140 goals.] When did Ronaldo score his 500th career goal?"
  },
  "— the title he captained Portugal to in Paris, as the tournament's second-highest scorer.": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "2016 European Championship  [— the title he captained Portugal to in Paris, as the tournament's second-highest scorer.] How many league titles has Ronaldo won?"
  },
@@ -9658,11 +9665,11 @@
  "← Back to stats": {
   "count": 5,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Unified interactive analytics of Cristiano Ronaldo's 981 career goals: filter by team, competition, body part, season-by-season breakdown, and calendar-year trajectory (69 in 2013).  [← Back to stats] 🌍"
  },
@@ -9824,12 +9831,12 @@
  "⭐ Champions League Record": {
   "count": 6,
   "pages": [
-   "achievements",
    "dashboard",
    "goalsbyseason",
    "goalsbyyear",
    "index",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Every meeting with Real Madrid, the goal log and video clips.  [⭐ Champions League Record] 140 UEFA Champions League goals, 183 appearances, 42 assists and 5 titles."
  },
@@ -9923,7 +9930,7 @@
  "🎯 TROPHY & RECORDS TRIVIA": {
   "count": 1,
   "pages": [
-   "achievements"
+   "trophies"
   ],
   "ctx": "Advertisement  [🎯 TROPHY & RECORDS TRIVIA] Test Your Cristiano Ronaldo Trophy & Records IQ"
  },
@@ -9979,7 +9986,6 @@
  "🏟️ Ronaldo at Real Madrid": {
   "count": 11,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -9988,7 +9994,8 @@
    "index",
    "real-madrid",
    "ronaldo-vs-messi",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Head-to-head career stats: 981 vs 936 goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or.  [🏟️ Ronaldo at Real Madrid] Every meeting with Real Madrid, the goal log and video clips."
  },
@@ -10033,7 +10040,6 @@
  "🐐 Ronaldo vs Messi All-Time": {
   "count": 10,
   "pages": [
-   "achievements",
    "champions-league",
    "dashboard",
    "gear",
@@ -10041,7 +10047,8 @@
    "goalsbyyear",
    "index",
    "real-madrid",
-   "timeline"
+   "timeline",
+   "trophies"
   ],
   "ctx": "Choose a category to explore deep statistics, match video replays and career milestones — from 27 club seasons to a best calendar year of 69 goals in 2013:  [🐐 Ronaldo vs Messi All-Time] Head-to-head career stats: 981 vs 936 goals, 35 vs 46 trophies, 5 vs 8 Ballons d'Or."
  },

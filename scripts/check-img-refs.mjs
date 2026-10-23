@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
 const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
-const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
+const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "trophies",
   "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 const files = [];

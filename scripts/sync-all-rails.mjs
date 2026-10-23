@@ -22,7 +22,7 @@ const NAV_LABELS = {
     byseason: "Goals by Season",
     dashboard: "Dashboard",
     timeline: "Through the Years",
-    achievements: "Achievements",
+    achievements: "Trophies",
     gear: "Ronaldo Gear",
     themeToggle: "Toggle dark mode",
     darkMode: "Dark mode"
@@ -43,7 +43,7 @@ const NAV_LABELS = {
     byseason: "Temporadas",
     dashboard: "Panel",
     timeline: "Historia",
-    achievements: "Títulos",
+    achievements: "Trofeos",
     gear: "Tienda Ronaldo",
     themeToggle: "Cambiar tema",
     darkMode: "Modo oscuro"
@@ -64,7 +64,7 @@ const NAV_LABELS = {
     byseason: "Temporadas",
     dashboard: "Painel",
     timeline: "História",
-    achievements: "Títulos",
+    achievements: "Troféus",
     gear: "Loja Ronaldo",
     themeToggle: "Alternar tema",
     darkMode: "Modo escuro"
@@ -85,7 +85,7 @@ const NAV_LABELS = {
     byseason: "Saisons",
     dashboard: "Tableau de bord",
     timeline: "Histoire",
-    achievements: "Palmarès",
+    achievements: "Trophées",
     gear: "Boutique Ronaldo",
     themeToggle: "Basculer le thème",
     darkMode: "Mode sombre"
@@ -99,15 +99,15 @@ const NAV_LABELS = {
     home: "الرئيسية",
     latestGoal: "آخر هدف",
     bday: "عيد الميلاد",
-    ronaldo: "ضد رونالدو",
+    ronaldo: "ضد ميسي",
     madrid: "ضد ريال مدريد",
     ucl: "دوري الأبطال",
     byyear: "الأهداف سنوياً",
     byseason: "المواسم",
     dashboard: "لوحة البيانات",
     timeline: "التاريخ",
-    achievements: "البطولات",
-    gear: "متجر ميسي",
+    achievements: "الكؤوس",
+    gear: "متجر رونالدو",
     themeToggle: "تبديل الوضع",
     darkMode: "الوضع الداكن"
   },
@@ -120,15 +120,15 @@ const NAV_LABELS = {
     home: "হোম",
     latestGoal: "সাম্প্রতিক গোল",
     bday: "জন্মদিন",
-    ronaldo: "বনাম রোনালদো",
+    ronaldo: "বনাম মেসি",
     madrid: "বনাম রিয়াল মাদ্রিদ",
     ucl: "চ্যাম্পিয়ন্স লিগ",
     byyear: "বছর অনুযায়ী",
     byseason: "মৌসুম",
     dashboard: "ড্যাশবোর্ড",
     timeline: "টাইমলাইন",
-    achievements: "অর্জন",
-    gear: "মেসির গিয়ার",
+    achievements: "ট্রফি",
+    gear: "রোনালদোর গিয়ার",
     themeToggle: "থিম পরিবর্তন",
     darkMode: "ডার্ক মোড"
   },
@@ -141,15 +141,15 @@ const NAV_LABELS = {
     home: "होम",
     latestGoal: "ताजा गोल",
     bday: "जन्मदिन",
-    ronaldo: "बनाम रोनाल्डो",
+    ronaldo: "बनाम मेसी",
     madrid: "बनाम रियल मैड्रिड",
     ucl: "चैंपियंस लीग",
     byyear: "वर्षवार गोल",
     byseason: "सीज़न",
     dashboard: "डैशबोर्ड",
     timeline: "इतिहास",
-    achievements: "उपलब्धियां",
-    gear: "मेसी स्टोर",
+    achievements: "ट्रॉफ़ी",
+    gear: "रोनाल्डो स्टोर",
     themeToggle: "थीम बदलें",
     darkMode: "डार्क मोड"
   },
@@ -183,14 +183,14 @@ const NAV_LABELS = {
     home: "Asosiy",
     latestGoal: "Soʻnggi gol",
     bday: "Tug'ilgan kun",
-    ronaldo: "vs Ronaldu",
+    ronaldo: "vs Messi",
     madrid: "vs Real Madrid",
     ucl: "Chempionlar Ligasi",
     byyear: "Yillar bo'yicha",
     byseason: "Mavsumlar",
     dashboard: "Boshqaruv paneli",
     timeline: "Tarix",
-    achievements: "Sovrinlar",
+    achievements: "Kuboklar",
     gear: "Ronaldo do'koni",
     themeToggle: "Mavzuni o'zgartirish",
     darkMode: "Qorong'i rejim"
@@ -201,13 +201,9 @@ function generateRailHtml(lang, activeSlug) {
   const L = NAV_LABELS[lang] || NAV_LABELS.en;
   const isAct = (slug) => activeSlug === slug;
   const onAria = (slug) => isAct(slug) ? ' aria-current="page" class="on"' : '';
-  const onBday = (slug) => isAct(slug) ? ' aria-current="page" class="on nav-bday-link"' : ' class="nav-bday-link"';
 
   const uclLink = lang === "en" ? "/en/champions-league" : `/${lang}/champions-league`;
   const uclItem = `\n<a${onAria("champions-league")} href="${uclLink}" aria-label="${L.ucl}"><svg aria-hidden="true" viewbox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span>${L.ucl}</span></a>`;
-
-  const latestGoalLink = lang === "en" ? "/en/latest-goal" : `/${lang}/latest-goal`;
-  const latestGoalItem = `\n<a${onAria("latest-goal")} href="${latestGoalLink}" aria-label="${L.latestGoal}"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"></polygon></svg><span>${L.latestGoal} <b class="nav-badge-hot">LIVE ⚡</b></span></a>`;
 
   const gearLink = lang === "en" ? "/en/gear" : `/${lang}/gear`;
   const gearItem = `\n<a${onAria("gear")} href="${gearLink}" aria-label="${L.gear}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>${L.gear} 🛍️</span></a>`;
@@ -215,7 +211,7 @@ function generateRailHtml(lang, activeSlug) {
   const adminLink = "";
 
   return `<aside aria-label="Navigation" class="rail">
-<a aria-label="${L.badgeAria}" class="rail-badge" href="/${lang}"><svg class="rail-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M9 9h46v33L32 55 9 42Z" fill="none" stroke="#f2ce6b" stroke-width="3" stroke-linejoin="round"></path><text fill="#ffffff" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="21" font-weight="800" text-anchor="middle" x="32" y="37">CR7</text></svg><span class="rail-word">Ronaldo<b>Stats</b></span></a>
+<a aria-label="${L.badgeAria}" class="rail-badge" href="/${lang}"><img class="rail-mark" src="/img/logo-cr7.webp" alt="" width="36" height="36" /><img class="rail-banner" src="/img/banner-ronaldostats.webp" alt="" width="1200" height="400" /><span class="rail-word">Ronaldo<b>Stats</b></span></a>
 <div class="rail-lang-wrap">
   <button type="button" class="rail-lang-btn" id="rail-lang-btn" aria-label="${L.langSelectAria}" title="${L.langSelectTitle}">
     <svg class="rail-lang-globe" viewBox="0 0 24 24" aria-hidden="true">
@@ -228,15 +224,14 @@ function generateRailHtml(lang, activeSlug) {
   </button>
 </div>
 <nav>
-<a${onAria("home")} href="/${lang}" aria-label="${L.home}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg><span>${L.home}</span></a>${latestGoalItem}
-<a${onBday("birthday")} href="/${lang}/birthday" aria-label="${L.bday}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="4" rx="1" width="18" x="3" y="8"></rect><path d="M12 8v13M19 12v9H5v-9M7.5 8a2.5 2.5 0 0 1 0-5A4.8 4.8 0 0 1 12 8a4.8 4.8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg><span>${L.bday} <b class="nav-badge-hot">HOT 🔥</b></span></a>
+<a${onAria("home")} href="/${lang}" aria-label="${L.home}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg><span>${L.home}</span></a>
 <a${onAria("ronaldo-vs-messi")} href="/${lang}/ronaldo-vs-messi" aria-label="${L.ronaldo}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg><span>${L.ronaldo}</span></a>
 <a${onAria("real-madrid")} href="/${lang}/real-madrid" aria-label="${L.madrid}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"></path><path d="m13 19 6-6"></path><path d="m16 16 4 4"></path><path d="m19 21 2-2"></path></svg><span>${L.madrid}</span></a>${uclItem}
 <a${onAria("byyear")} href="/${lang}/goalsbyyear" aria-label="${L.byyear}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="15.5" rx="2.5" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 2.8V6.5M16 2.8V6.5"></path></svg><span>${L.byyear}</span></a>
 <a${onAria("byseason")} href="/${lang}/goalsbyseason" aria-label="${L.byseason}"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="3.5"></rect><rect height="7.5" rx="1.5" width="7.5" x="3.5" y="13"></rect><rect height="7.5" rx="1.5" width="7.5" x="13" y="13"></rect></svg><span>${L.byseason}</span></a>
 <a${onAria("dashboard")} href="/${lang}/dashboard" aria-label="${L.dashboard}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3.5 20.5h17"></path><path d="M6.5 20v-7M12 20V5M17.5 20v-10"></path></svg><span>${L.dashboard}</span></a>
 <a${onAria("timeline")} href="/${lang}/timeline" aria-label="${L.timeline}"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg><span>${L.timeline}</span></a>
-<a${onAria("achievements")} href="/${lang}/achievements" aria-label="${L.achievements}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg><span>${L.achievements}</span></a>${gearItem}
+<a${onAria("achievements")} href="/${lang}/trophies" aria-label="${L.achievements}"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M8 3.5h8V9a4 4 0 0 1-8 0V3.5Z"></path><path d="M8 5H4.5A1.5 1.5 0 0 0 6 10H8M16 5h3.5A1.5 1.5 0 0 1 18 10h-2M12 13v3.5M8.5 20.5h7M10 16.5h4V20h-4z"></path></svg><span>${L.achievements}</span></a>${gearItem}
 </nav>
 <button aria-label="${L.themeToggle}" class="theme-toggle" id="theme-toggle" title="${L.themeToggle}" type="button">
 <svg aria-hidden="true" class="sun-icon" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
@@ -273,7 +268,7 @@ const PAGES_MAP = {
   "goalsbyseason.html": "byseason",
   "dashboard.html": "dashboard",
   "timeline.html": "timeline",
-  "achievements.html": "achievements",
+  "trophies.html": "achievements",
   "gear.html": "gear",
   "admin.html": "admin"
 };

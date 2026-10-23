@@ -43,7 +43,7 @@ const SUBPAGES = [
   { slug: "real-madrid", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
   { slug: "champions-league", changefreq: "monthly", priority: "0.9", lastmod: todayIso },
   { slug: "timeline", changefreq: "weekly", priority: "0.9", lastmod: todayIso },
-  { slug: "achievements", changefreq: "monthly", priority: "0.85", lastmod: todayIso },
+  { slug: "trophies", changefreq: "monthly", priority: "0.85", lastmod: todayIso },
   { slug: "gear", changefreq: "weekly", priority: "0.85", lastmod: todayIso }
 ];
 
@@ -148,16 +148,16 @@ const enImages = {
       <image:caption>Ronaldo in the Portugal number 7 shirt at the 2026 World Cup.</image:caption>
       <image:geo_location>United States</image:geo_location>
     </image:image>`,
-  achievements: `    <image:image>
+  trophies: `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-ballon.webp</image:loc>
       <image:title>Cristiano Ronaldo and his 5 Ballons d'Or</image:title>
-      <image:caption>Ronaldo holding his Ballon d'Or, the first Portuguese player to win the award.</image:caption>
+      <image:caption>Ronaldo holding the Ballon d'Or, an award he has won a record five times.</image:caption>
       <image:geo_location>Paris, France</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-ucl.webp</image:loc>
       <image:title>Cristiano Ronaldo and the UEFA Champions League</image:title>
-      <image:caption>The European Cup and the Champions League trophies Ronaldo won.</image:caption>
+      <image:caption>Ronaldo holding the Champions League trophy, which he won five times.</image:caption>
       <image:geo_location>Madrid, Spain</image:geo_location>
     </image:image>
     <image:image>
@@ -174,9 +174,9 @@ const enImages = {
     </image:image>
     <image:image>
       <image:loc>https://www.ronaldostats.site/img/cab-cwc.webp</image:loc>
-      <image:title>The FIFA Club World Cup trophies in the CR7 Museum</image:title>
-      <image:caption>The Club World Cup Silver and Golden Ball trophies in Ronaldo's own museum in Madeira.</image:caption>
-      <image:geo_location>Funchal, Madeira, Portugal</image:geo_location>
+      <image:title>Cristiano Ronaldo and Real Madrid celebrate the FIFA Club World Cup</image:title>
+      <image:caption>Ronaldo and his Real Madrid team-mates celebrate the 2016 FIFA Club World Cup in Yokohama.</image:caption>
+      <image:geo_location>Yokohama, Japan</image:geo_location>
     </image:image>`,
   "real-madrid": `    <image:image>
       <image:loc>https://www.ronaldostats.site/img/og-ronaldo.jpg</image:loc>

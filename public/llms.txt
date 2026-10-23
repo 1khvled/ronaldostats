@@ -29,7 +29,7 @@
 - [Goals by Season](https://www.ronaldostats.site/en/goalsbyseason): All 27 club seasons split into league, domestic cup, continental and other, plus Portugal year by year.
 - [Stats Dashboard](https://www.ronaldostats.site/en/dashboard): Interactive breakdown by club, finish type, body part and competition.
 - [Career Timeline](https://www.ronaldostats.site/en/timeline): Seven eras and every dated milestone from 2002 to 2026.
-- [Trophies & Achievements](https://www.ronaldostats.site/en/achievements): The itemised honours list, the trophy cabinet and the individual awards.
+- [Trophies & Honours](https://www.ronaldostats.site/en/trophies): The itemised honours list, the trophy cabinet and the individual awards.
 - [Gear](https://www.ronaldostats.site/en/gear): The RonaldoStats merchandise store.
 
 ## Data Method

@@ -83,12 +83,22 @@
     },
     {
       "source": "/achievements",
-      "destination": "/en/achievements",
+      "destination": "/en/trophies",
       "permanent": true
     },
     {
       "source": "/achievements.html",
-      "destination": "/en/achievements",
+      "destination": "/en/trophies",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|es|pt|fr|ar|bn|hi|ro|uz)/achievements",
+      "destination": "/:lang/trophies",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|es|pt|fr|ar|bn|hi|ro|uz)/achievements.html",
+      "destination": "/:lang/trophies",
       "permanent": true
     },
     {
@@ -203,8 +213,8 @@
       "destination": "/timeline.html"
     },
     {
-      "source": "/en/achievements",
-      "destination": "/achievements.html"
+      "source": "/en/trophies",
+      "destination": "/trophies.html"
     },
     {
       "source": "/en/gear",
@@ -271,8 +281,8 @@
       "destination": "/es/timeline.html"
     },
     {
-      "source": "/es/achievements",
-      "destination": "/es/achievements.html"
+      "source": "/es/trophies",
+      "destination": "/es/trophies.html"
     },
     {
       "source": "/es/gear",
@@ -335,8 +345,8 @@
       "destination": "/pt/timeline.html"
     },
     {
-      "source": "/pt/achievements",
-      "destination": "/pt/achievements.html"
+      "source": "/pt/trophies",
+      "destination": "/pt/trophies.html"
     },
     {
       "source": "/pt/gear",
@@ -399,8 +409,8 @@
       "destination": "/fr/timeline.html"
     },
     {
-      "source": "/fr/achievements",
-      "destination": "/fr/achievements.html"
+      "source": "/fr/trophies",
+      "destination": "/fr/trophies.html"
     },
     {
       "source": "/fr/gear",
@@ -463,8 +473,8 @@
       "destination": "/ar/timeline.html"
     },
     {
-      "source": "/ar/achievements",
-      "destination": "/ar/achievements.html"
+      "source": "/ar/trophies",
+      "destination": "/ar/trophies.html"
     },
     {
       "source": "/ar/gear",
@@ -527,8 +537,8 @@
       "destination": "/bn/timeline.html"
     },
     {
-      "source": "/bn/achievements",
-      "destination": "/bn/achievements.html"
+      "source": "/bn/trophies",
+      "destination": "/bn/trophies.html"
     },
     {
       "source": "/bn/gear",
@@ -591,8 +601,8 @@
       "destination": "/hi/timeline.html"
     },
     {
-      "source": "/hi/achievements",
-      "destination": "/hi/achievements.html"
+      "source": "/hi/trophies",
+      "destination": "/hi/trophies.html"
     },
     {
       "source": "/hi/gear",
@@ -655,8 +665,8 @@
       "destination": "/ro/timeline.html"
     },
     {
-      "source": "/ro/achievements",
-      "destination": "/ro/achievements.html"
+      "source": "/ro/trophies",
+      "destination": "/ro/trophies.html"
     },
     {
       "source": "/ro/gear",
@@ -719,8 +729,8 @@
       "destination": "/uz/timeline.html"
     },
     {
-      "source": "/uz/achievements",
-      "destination": "/uz/achievements.html"
+      "source": "/uz/trophies",
+      "destination": "/uz/trophies.html"
     },
     {
       "source": "/uz/gear",
