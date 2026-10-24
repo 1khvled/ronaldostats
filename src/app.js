@@ -3804,26 +3804,26 @@ function eraOf(y) {
    Keyed by eraOf() name; eras without an entry render no figure. */
 const ERA_PHOTOS = {
   rosario: [
-    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "A mural of Ronaldo in the Sporting CP museum in Lisbon, where his debut-season shirt is kept", cap: "The Sporting CP years — senior debut in 2002" },
+    { src: "/img/era/era-2002-sporting.webp", w: 1200, h: 675, pos: "50% 30%", alt: "Cristiano Ronaldo playing for Sporting CP in his 2002-03 debut season", cap: "The Sporting CP years — senior debut in 2002" },
   ],
   peak: [
-    { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Manchester United number 7 shirt against Chelsea", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },
+    { src: "/img/era/era-2004-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating for Manchester United in the iconic number 7 shirt", cap: "The Manchester United years — the No. 7 shirt, 2003 to 2009" },
   ],
   msn: [
-    { src: "/img/era/era-2009-real.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Kaka and Ronaldo celebrating together for Real Madrid", cap: "The Real Madrid presentation, Bernabéu, 2009" },
+    { src: "/img/era/era-2009-real.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo presented to 80,000 fans at the Santiago Bernabéu in 2009", cap: "The Real Madrid presentation, Bernabéu, 2009" },
   ],
   carry: [
-    { src: "/img/era/era-2008-ballon1.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Manchester United number 7 shirt in 2008, the year of his first Ballon d'Or", cap: "The Ballon d'Or years — five of them, from 2008 to 2017" },
+    { src: "/img/era/era-2008-ballon1.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo showcasing five Ballon d'Or trophies at the Santiago Bernabéu", cap: "The Ballon d'Or years — five of them, from 2008 to 2017" },
   ],
   farewell: [
-    { src: "/img/era/era-2018-juve.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo in the Juventus shirt during his Serie A title season", cap: "The Juventus years — two Serie A titles, 2018 to 2022" },
+    { src: "/img/era/era-2018-juve.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating in the Juventus shirt during his Serie A title season", cap: "The Juventus years — two Serie A titles, 2018 to 2022" },
   ],
   paris: [
-    { src: "/img/era/era-2021-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo returning to Manchester United in September 2021", cap: "The Manchester United return, 2021 to 2022" },
+    { src: "/img/era/era-2021-manutd.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating his return brace for Manchester United at Old Trafford", cap: "The Manchester United return, 2021 to 2022" },
   ],
   miami: [
     { src: "/img/era/era-2023-alnassr.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Al Nassr number 7 shirt", cap: "The Al Nassr years — captain of the Saudi Pro League, 2023 to now" },
-    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Al Nassr shirt, celebrating his all-time record", cap: "Records & milestones — 983 goals in 1,342 senior appearances" },
+    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating as the all-time leading goalscorer in international football", cap: "Records & milestones — 983 goals in 1,342 senior appearances" },
   ],
 };
 ERA_PHOTOS.rosario = ERA_PHOTOS["Sporting CP 2002-2003"];

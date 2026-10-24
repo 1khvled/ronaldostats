@@ -2120,13 +2120,6 @@
   ],
   "ctx": "[attr alt]"
  },
- "A mural of Ronaldo in the Sporting CP museum in Lisbon, where his debut-season shirt is kept": {
-  "count": 3,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
  "A ninth consecutive league title for the club": {
   "count": 1,
   "pages": [
@@ -3579,6 +3572,27 @@
   ],
   "ctx": "[attr content]"
  },
+ "Cristiano Ronaldo celebrating as the all-time leading goalscorer in international football": {
+  "count": 2,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo celebrating for Manchester United in the iconic number 7 shirt": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo celebrating his return brace for Manchester United at Old Trafford": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
  "Cristiano Ronaldo goals by calendar year, peaking at 69 in 2013": {
   "count": 1,
   "pages": [
@@ -3670,19 +3684,26 @@
   ],
   "ctx": "[attr alt]"
  },
+ "Cristiano Ronaldo in action for Sporting CP": {
+  "count": 2,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo in the Manchester United number 7 shirt": {
+  "count": 2,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo in the Portugal number 7 shirt at the 2018 FIFA World Cup": {
   "count": 1,
   "pages": [
    "trophies"
   ],
   "ctx": "[attr alt]"
- },
- "Cristiano Ronaldo in the Portugal number 7 shirt, captaining his country": {
-  "count": 1,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr data-label]"
  },
  "Cristiano Ronaldo in the Portugal number 7 shirt, celebrating": {
   "count": 1,
@@ -3719,12 +3740,40 @@
   ],
   "ctx": "[attr alt]"
  },
+ "Cristiano Ronaldo lifts the UEFA Euro 2016 trophy in Paris as Portugal captain": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo played for Real Madrid from 2009 to 2018: 438 appearances and 450 goals, 311 of them in La Liga and four Champions League titles. Against Barcelona he scored 18 El Clásico goals. Lionel Messi, on the other side of that fixture for almost all of it, has 26 El Clásico goals in 45 matches.": {
   "count": 1,
   "pages": [
    "real-madrid"
   ],
   "ctx": "Ronaldo at Real Madrid  [Cristiano Ronaldo played for Real Madrid from 2009 to 2018: 438 appearances and 450 goals, 311 of them in La Liga and four Champions League titles. Against Barcelona he scored 18 El Clásico goals. Lionel Messi, on the other side of that fixture for almost all of it, has 26 E"
+ },
+ "Cristiano Ronaldo playing for Sporting CP in his 2002-03 debut season": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
+ },
+ "Cristiano Ronaldo presented at the Santiago Bernabéu": {
+  "count": 2,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo presented to 80,000 fans at the Santiago Bernabéu in 2009": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
  },
  "Cristiano Ronaldo recorded 42 assists in the UEFA Champions League, also an all-time record in the competition.": {
   "count": 1,
@@ -3753,6 +3802,20 @@
    "real-madrid"
   ],
   "ctx": "Nine years in Madrid:  [Cristiano Ronaldo scored 18 goals against Barcelona for Real Madrid, alongside 311 La Liga goals, four Champions League titles and 66 career hat-tricks.] El Clásico Goals"
+ },
+ "Cristiano Ronaldo scores twice on his return debut for Manchester United at Old Trafford": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo showcasing five Ballon d'Or trophies at the Santiago Bernabéu": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr alt]"
  },
  "Cristiano Ronaldo stats": {
   "count": 1,
@@ -5696,13 +5759,6 @@
   ],
   "ctx": "[attr aria-label]"
  },
- "Kaka and Ronaldo celebrating together for Real Madrid": {
-  "count": 3,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
  "Keeps the database clean, ad-shielded, and accurate": {
   "count": 1,
   "pages": [
@@ -7034,33 +7090,12 @@
   ],
   "ctx": "[attr alt]"
  },
- "Ronaldo in the Manchester United number 7 shirt against Chelsea": {
-  "count": 3,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
  "Ronaldo in the Manchester United number 7 shirt in 2008, the year of his first Ballon d'Or": {
-  "count": 3,
+  "count": 2,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr data-label]"
- },
- "Ronaldo in the Manchester United shirt during his second spell": {
-  "count": 2,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
- "Ronaldo in the Portugal number 7 shirt at the 2026 World Cup": {
-  "count": 2,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
  },
  "Ronaldo or Messi? Cast Your Vote": {
   "count": 1,
