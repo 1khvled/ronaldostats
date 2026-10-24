@@ -19,17 +19,12 @@ const ROOT = "D:/Projects/ronaldo-stats/";
 // --- 2. the gear copy that still names a shirt that is not sold -------------
 {
   const P = ROOT + "/src/i18n/shell";
-  const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+  const LANGS = ["es","pt","fr"];
   // the phrase that named the 2006-07 shirt, in each language
   const PHRASE = {
     es: ["la camiseta local de 2006-07", "la camiseta de la selección portuguesa"],
     pt: ["a camisa de 2006-07", "a camisa da seleção portuguesa"],
     fr: ["maillot 2006-07", "maillot de la sélection portugaise"],
-    ar: ["وقميص 2006-07", "وقميص منتخب البرتغال"],
-    bn: ["২০০৬-০৭ জার্সি", "পর্তুগাল জাতীয় দলের জার্সি"],
-    hi: ["2006-07 जर्सी", "पुर्तगाल राष्ट्रीय टीम की जर्सी"],
-    ro: ["tricoul din 2006-07", "tricoul selecției portugheze"],
-    uz: ["2006-07 futbolkasi", "Portugaliya milliy jamoasi futbolkasi"],
   };
   const en = JSON.parse(fs.readFileSync(P + "/en.json", "utf8"));
   for (const lang of LANGS) {

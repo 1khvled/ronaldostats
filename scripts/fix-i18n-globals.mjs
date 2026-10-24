@@ -8,19 +8,18 @@ const ROOT = "D:/Projects/ronaldo-stats/";
   const EOL = t.includes("\r\n") ? "\r\n" : "\n";
   const find = `const LIVE = {`;
   if (!t.includes(find)) { console.error("LIVE not found"); process.exit(1); }
-  const inject = `// The nine dictionary modules are separate files, so the helpers
+  const inject = `// The dictionary modules are separate files, so the helpers
 // they call have to be reachable from their scope. Publishing them on the
 // global object keeps the dictionaries self-contained: they format numbers
 // with n(), escape with esc() and read the live registry with LIVE.
 globalThis.n = n;
 globalThis.esc = esc;
-globalThis.bn = bn;
 globalThis.LIVE = LIVE;
 
 const LIVE = {`;
   t = t.replace(find, inject.split("\n").join(EOL));
   fs.writeFileSync(P, t, "utf8");
-  console.log("ok  app.js publishes n / esc / bn / LIVE for the dictionaries");
+  console.log("ok  app.js publishes n / esc / LIVE for the dictionaries");
 }
 
 // --- 2. a runtime smoke test: call every dictionary function --------------
@@ -39,12 +38,11 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\\//, ""), "..");
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en","es","pt","fr"];
 
 // the helpers app.js publishes
 globalThis.n = (v) => Number(v).toLocaleString("en-US");
 globalThis.esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-globalThis.bn = (v) => String(v).replace(/[0-9]/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
 globalThis.LIVE = {
   goals: 981, apps: 1340, clubGoals: 835, argGoals: 146, argCaps: 234,
   assists: 261, tmAssists: 291, ga: 1242, tmGa: 1272,

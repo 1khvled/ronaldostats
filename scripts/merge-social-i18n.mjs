@@ -13,7 +13,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 // the old account strings, and the strings that replace them
 const SWAPS = [
@@ -33,31 +33,16 @@ const NEW = {
     es: "🐐 MessiStat — Estadísticas de Lionel Messi",
     pt: "🐐 MessiStat — Estatísticas de Lionel Messi",
     fr: "🐐 MessiStat — Statistiques de Lionel Messi",
-    ar: "🐐 ميسيستات — إحصائيات ليونيل ميسي",
-    bn: "🐐 মেসিস্ট্যাট — লিওনেল মেসির পরিসংখ্যান",
-    hi: "🐐 मेसीस्टैट — लियोनेल मेसी के आँकड़े",
-    ro: "🐐 MessiStat — Statisticile lui Lionel Messi",
-    uz: "🐐 MessiStat — Lionel Messi statistikasi",
   },
   "Watch the 2010-11 Goals ⚽": {
     es: "Mira los goles de 2010-11 ⚽",
     pt: "Assista aos gols de 2010-11 ⚽",
     fr: "Voir les buts de 2010-11 ⚽",
-    ar: "شاهد أهداف 2010-11 ⚽",
-    bn: "২০১০-১১ সালের গোল দেখুন ⚽",
-    hi: "2010-11 के गोल देखें ⚽",
-    ro: "Vezi golurile din 2010-11 ⚽",
-    uz: "2010-11-yil gollarini ko'ring ⚽",
   },
   "Watch the 2017-18 Goals ⚽": {
     es: "Mira los goles de 2017-18 ⚽",
     pt: "Assista aos gols de 2017-18 ⚽",
     fr: "Voir les buts de 2017-18 ⚽",
-    ar: "شاهد أهداف 2017-18 ⚽",
-    bn: "২০১৭-১৮ সালের গোল দেখুন ⚽",
-    hi: "2017-18 के गोल देखें ⚽",
-    ro: "Vezi golurile din 2017-18 ⚽",
-    uz: "2017-18-yil gollarini ko'ring ⚽",
   },
 };
 

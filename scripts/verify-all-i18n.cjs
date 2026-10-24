@@ -15,7 +15,7 @@ const path = require("path");
 const { pathToFileURL } = require("url");
 
 const ROOT = path.join(__dirname, "..");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 let issues = 0;
 const fail = (m) => { console.error("[FAIL] " + m); issues++; };
@@ -133,7 +133,7 @@ function diff(a, b, pathPrefix, out) {
   // A run only counts as untranslated English when it is actually English:
   // four or more unambiguous English function words in it. Short words such
   // as "a", "in", "de" or "no" are shared with other languages and are
-  // excluded, otherwise a good Romanian or Portuguese sentence reads as a
+  // excluded, otherwise a good Portuguese or French sentence reads as a
   // leak.
   const EN_WORDS = new Set(["the", "of", "and", "to", "for", "with", "from", "is", "are", "was", "were", "has", "have", "had", "his", "he", "she", "that", "this", "these", "they", "their", "when", "while", "after", "before", "over", "into", "it", "its", "not", "but", "you", "your", "our", "we", "all", "every", "each", "than", "then", "so", "one", "two", "three", "goals", "goal", "career", "club", "team", "season", "years", "matches", "appearances", "trophies", "scored", "player", "career goals"]);
   const isEnglishRun = (run) => {

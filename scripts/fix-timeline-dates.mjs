@@ -26,7 +26,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 // the old date, the new date, and the date whose month name the new one uses
 const DATES = [
@@ -44,11 +44,6 @@ const QUALIFIER = {
   es: ["clasificatorio de la Euro 2012", "clasificatorio del Mundial 2014"],
   pt: ["eliminatória da Euro 2012", "eliminatória da Copa do Mundo 2014"],
   fr: ["éliminatoire de l'Euro 2012", "éliminatoire de la Coupe du monde 2014"],
-  ar: ["تصفيات كأس أمم أوروبا 2012", "تصفيات كأس العالم 2014"],
-  bn: ["Euro 2012", "বিশ্বকাপ 2014"],
-  hi: ["Euro 2012", "विश्व कप 2014"],
-  ro: ["preliminariă a Euro 2012", "preliminariă a Campionatului Mondial 2014"],
-  uz: ["Euro 2012", "Jahon ko'pi 2014"],
 };
 
 // --- the English shell -------------------------------------------------------

@@ -13,7 +13,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 const en = JSON.parse(fs.readFileSync(path.join(SHELL, "en.json"), "utf8"));
 const keywordLists = Object.keys(en).filter((k) => k.includes("ronaldo stats, ") || k.includes("ronaldo goals by year") || k.includes("ronaldo timeline") || k.includes("ronaldo trophies") || k.includes("did ronaldo score") || k.includes("ronaldo goal today") || k.includes("ronaldo champions league,") || k.includes("ronaldo gear") || k.includes("ronaldo real madrid,") || k.includes("ronaldo vs messi,"));

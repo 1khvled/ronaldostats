@@ -1,7 +1,7 @@
 // Extract every translatable string from the English page shells into
 // src/i18n/shell/en.json.
 //
-// The generator then rewrites the eight localized pages by looking each
+// The generator then rewrites the three localized pages by looking each
 // string up in src/i18n/shell/<lang>.json. A string that appears on several
 // pages is one dictionary entry, so the translators work on a single flat
 // list instead of eight copies of every page.

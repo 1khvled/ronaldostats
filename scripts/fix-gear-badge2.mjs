@@ -21,8 +21,8 @@ const CAT_NEW = "Official Matchwear";           // already a key, used by the ot
   const dir = path.join(ROOT, "src", "i18n", "shell");
   const badge = {
     es: "🐐 Camiseta icónica", pt: "🐐 Camisa icónica", fr: "🐐 Maillot emblématique",
-    ar: "🐐 قميص أيقوني", bn: "🐐 আইকনিক জার্সি", hi: "🐐 आइकॉनिक जर्सी",
-    ro: "🐐 Tricou iconic", uz: "🐐 Ikony futbolka",
+
+
   };
   for (const lang of Object.keys(badge)) {
     const f = path.join(dir, lang + ".json");

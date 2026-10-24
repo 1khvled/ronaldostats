@@ -4,7 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const DIR = "D:/Projects/ronaldo-stats/src/i18n/shell";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 const en = JSON.parse(fs.readFileSync(path.join(DIR, "en.json"), "utf8"));
 const enKeys = Object.keys(en);
 for (const lang of LANGS) {

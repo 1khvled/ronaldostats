@@ -33,41 +33,6 @@ const NEW = {
     "Les trophées Golden Ball de la FIFA Club World Cup au musée CR7 de Madère",
     "Cristiano Ronaldo en maillot numéro 7 du Real Madrid, dans une Liga qu'il a remportée deux fois",
   ],
-  ar: [
-    "كريستيانو رونالدو بقميص البرتغال رقم 7 في كأس العالم 2018",
-    "كريستيانو رونالدو يحمل الكرة الذهبية التي فاز بها خمسة مرات وهو رقم قياسي",
-    "كؤوس دوري أبطال أوروبا وكأس دوري أبطال أوروبا التي فاز بها كريستيانو رونالدو خمس مرات",
-    "كؤوس الكرة الذهبية لبطولة كأس العالم للأندية في متحف CR7 بماديرا",
-    "كريستيانو رونالدو بقميص ريال مدريد رقم 7، في دوري ليجا فاز به مرتين",
-  ],
-  bn: [
-    "২০১৮ FIFA বিশ্বকাপে পর্তুগালের ৭ নম্বর জার্সিতে ক্রিস্টিয়ানো রোনালদো",
-    "ক্রিস্টিয়ানো রোনালদো রেকর্ড পাঁচবার জেতা বলন ডি'অর তুলে ধরে আছেন",
-    "ক্রিস্টিয়ানো রোনালদো পাঁচবার জেতা ইউরোপীয় কাপ ও ইউএফএ চ্যাম্পিয়ন্স লিগের কাপ",
-    "মাদেরার CR7 জাদুঘরে FIFA ক্লাব ওয়ার্ল্ড কাপের গোল্ডেন বল ট্রফি",
-    "রিয়েল মাদ্রিদের ৭ নম্বর জার্সিতে ক্রিস্টিয়ানো রোনালদো, দুবার জেতা লা লিগায়",
-  ],
-  hi: [
-    "2018 FIFA विश्व कप में पुर्तगाल की 7 नंबर की जर्सी में क्रिस्टियानो रोनाल्डो",
-    "क्रिस्टियानो रोनाल्डो रिकॉर्ड पाँच बार जीतने वाला बलन डी'ऑर पकड़े हुए",
-    "यूरोपीय कप और UEFA चैंपियंस लीग के कप, जो क्रिस्टियानो रोनाल्डो ने पाँच बार जीते",
-    "मदेरा के CR7 संग्रहालय में FIFA क्लब वर्ल्ड कप के गोल्डन बॉल ट्रॉफी",
-    "रियल मैड्रिड की 7 नंबर की जर्सी में क्रिस्टियानो रोनाल्डो, दो बार जीती गई ला लीगा में",
-  ],
-  ro: [
-    "Cristiano Ronaldo în tricoul cu numărul 7 al Portugaliei la Cupa Mondială FIFA din 2018",
-    "Cristiano Ronaldo ținând Balonul de Aur câștigat de un record de cinci ori",
-    "Cupele Cuppei Europei și UEFA Champions League, câștigate de cinci ori de Cristiano Ronaldo",
-    "Trofee Golden Ball ale FIFA Club World Cup din muzeul CR7 din Madeira",
-    "Cristiano Ronaldo în tricoul cu numărul 7 al Real Madrid, într-o La Liga câștigată de două ori",
-  ],
-  uz: [
-    "2018 FIFA Jahon Kupida Portugaliyaning 7-raqamli futbolkasida Kristiano Ronaldo",
-    "Kristiano Ronaldo rekord daraja bes marta qozgani Balon d'orni ushlab turibdi",
-    "Kristiano Ronaldo bes marta yutgan Yevropa kubogi va UEFA Champions League kuboklari",
-    "Maderadagi CR7 muzeyida FIFA Klub Jahon Kubogi Golden Ball kuboklari",
-    "Real Madridning 7-raqamli futbolkasida Kristiano Ronaldo, ikki marta yutgan La Liga'da",
-  ],
 };
 
 const dir = path.join(ROOT, "src", "i18n");

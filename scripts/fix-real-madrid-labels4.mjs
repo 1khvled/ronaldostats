@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
   "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
@@ -14,11 +14,6 @@ const T = {
   es: { "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo en el Real Madrid", "Ronaldo at Real Madrid": "Ronaldo en el Real Madrid" },
   pt: { "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo no Real Madrid", "Ronaldo at Real Madrid": "Ronaldo no Real Madrid" },
   fr: { "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo au Real Madrid", "Ronaldo at Real Madrid": "Ronaldo au Real Madrid" },
-  ar: { "🏟️ Ronaldo at Real Madrid": "🏟️ رونالدو في ريال مدريد", "Ronaldo at Real Madrid": "رونالدو في ريال مدريد" },
-  bn: { "🏟️ Ronaldo at Real Madrid": "🏟️ রিয়াল মাদ্রিদে রোনালদো", "Ronaldo at Real Madrid": "রিয়াল মাদ্রিদে রোনালদো" },
-  hi: { "🏟️ Ronaldo at Real Madrid": "🏟️ रियल मैड्रिड में रोनाल्डो", "Ronaldo at Real Madrid": "रियल मैड्रिड में रोनाल्डो" },
-  ro: { "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo la Real Madrid", "Ronaldo at Real Madrid": "Ronaldo la Real Madrid" },
-  uz: { "🏟️ Ronaldo at Real Madrid": "🏟️ Real Madridda Ronaldo", "Ronaldo at Real Madrid": "Real Madridda Ronaldo" },
 };
 
 let n = 0;

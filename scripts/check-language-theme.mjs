@@ -19,7 +19,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en","es","pt","fr"];
 const SHELLS = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
 const problems = [];

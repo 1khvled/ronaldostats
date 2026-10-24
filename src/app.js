@@ -173,11 +173,6 @@ const LANGUAGES = [
   { code: "es", flag: "🇪🇸", name: "Spanish", native: "Español", note: "España" },
   { code: "pt", flag: "🇧🇷", name: "Portuguese", native: "Português", note: "Brasil, Portugal" },
   { code: "fr", flag: "🇫🇷", name: "French", native: "Français", note: "France, Niger" },
-  { code: "ar", flag: "🇪🇬", name: "Arabic", native: "العربية", note: "مصر والوطن العربي", rtl: true },
-  { code: "bn", flag: "🇧🇩", name: "Bengali", native: "বাংলা", note: "বাংলাদেশ ও ভারত" },
-  { code: "hi", flag: "🇮🇳", name: "Hindi", native: "हिन्दी", note: "भारत" },
-  { code: "ro", flag: "🇷🇴", name: "Romanian", native: "Română", note: "România" },
-  { code: "uz", flag: "🇺🇿", name: "Uzbek", native: "Oʻzbekcha", note: "Oʻzbekiston" }
 ];
 
 function getCurrentLangCode() {
@@ -454,121 +449,6 @@ function ensureMobileMenuDrawer() {
       championsLeague: "Hub Ligue des Champions",
       toggleTheme: "🌓 Basculer Mode Sombre"
     },
-    ar: {
-      menuTitle: "قائمة Ronaldo<b>Stats</b>",
-      statGoals: "إجمالي الأهداف",
-      statApps: "المباريات الرسمية",
-      statTrophies: "الألقاب",
-      statBallons: "الكرة الذهبية",
-      catFeatured: "المميز ⚡",
-      catHistory: "التاريخ والألقاب 🏆",
-      catStats: "المباريات الكبرى والأرقام 📊",
-      home: "الرئيسية والإحصائيات",
-      vsRonaldo: "رونالدو ضد ميسي",
-      latestGoal: "إعادة الهدف الأخير",
-      birthday: "أهداف يوم ميلادك",
-    days: "الأيام المائية 366",
-      achievements: "جميع البطولات الـ 35",
-      timeline: "المسيرة والصور",
-      goalsByYear: "الأهداف حسب السنة",
-      goalsBySeason: "الأهداف حسب الموسم",
-      dashboard: "لوحة الإحصائيات الشاملة",
-      vsRealMadrid: "سنواته في ريال مدريد",
-      championsLeague: "دوري أبطال أوروبا",
-      toggleTheme: "🌓 تبديل الوضع الليلي"
-    },
-    bn: {
-      menuTitle: "Ronaldo<b>Stats</b> মেনু",
-      statGoals: "মোট গোল",
-      statApps: "অফিসিয়াল ম্যাচ",
-      statTrophies: "শিরোপা",
-      statBallons: "ব্যালন ডি'অর",
-      catFeatured: "বিশেষ ⚡",
-      catHistory: "ইতিহাস ও শিরোপা 🏆",
-      catStats: "বড় ম্যাচ ও পরিসংখ্যান 📊",
-      home: "মূল পাতা ও পরিসংখ্যান",
-      vsRonaldo: "রোনালদো বনাম মেসি",
-      latestGoal: "সর্বশেষ গোলের রিপ্লে",
-      birthday: "জন্মদিনের গোল এক্সপ্লোরার",
-    days: "সবৈ তারিখ দিন",
-      achievements: "সব ৩৫টি শিরোপা ও ট্রফি",
-      timeline: "ক্যারিয়ার টাইমলাইন ও ছবি",
-      goalsByYear: "ক্যালেন্ডার বছরভিত্তিক গোল",
-      goalsBySeason: "মৌসুমভিত্তিক গোল",
-      dashboard: "অ্যানালিটিক্স ড্যাশবোর্ড",
-      vsRealMadrid: "রিয়াল মাদ্রিদের বছরগুলো",
-      championsLeague: "চ্যাম্পিয়ন্স লিগ হাব",
-      toggleTheme: "🌓 ডার্ক মোড পরিবর্তন"
-    },
-    hi: {
-      menuTitle: "Ronaldo<b>Stats</b> मेन्यू",
-      statGoals: "कुल गोल",
-      statApps: "कुल मैच",
-      statTrophies: "ट्रॉफियां",
-      statBallons: "बैलोन डी'ओर",
-      catFeatured: "विशेष ⚡",
-      catHistory: "इतिहास व ट्रॉफियां 🏆",
-      catStats: "प्रमुख मैच व आंकड़े 📊",
-      home: "होम व करियर आंकड़े",
-      vsRonaldo: "रोनाल्डो बनाम मेसी",
-      latestGoal: "नवीनतम गोल रीप्ले",
-      birthday: "जन्मदिन गोल एक्सप्लोरर",
-    days: "सभी 366 दিন",
-      achievements: "सभी 35 ट्रॉफियां व खिताब",
-      timeline: "करियर टाइमलाइन व फोटो",
-      goalsByYear: "कैलेंडर वर्ष अनुसार गोल",
-      goalsBySeason: "सीज़न अनुसार गोल",
-      dashboard: "विश्लेषण डैशबोर्ड",
-      vsRealMadrid: "रियल मैड्रिड के वर्ष",
-      championsLeague: "चैंपियंस लीग हब",
-      toggleTheme: "🌓 डार्क मोड बदलें"
-    },
-    ro: {
-      menuTitle: "Meniu Ronaldo<b>Stats</b>",
-      statGoals: "Total Goluri",
-      statApps: "Meciuri",
-      statTrophies: "Trofee",
-      statBallons: "Baloane de Aur",
-      catFeatured: "Recomandate ⚡",
-      catHistory: "Istorie & Trofee 🏆",
-      catStats: "Meciuri Mari & Date 📊",
-      home: "Acasă & Statistici Carieră",
-      vsRonaldo: "Ronaldo vs Messi",
-      latestGoal: "Revederea Ultimului Gol",
-      birthday: "Goluri de Ziua Ta",
-    days: "Toate cele 366 de zile",
-      achievements: "Toate cele 35 de Trofee",
-      timeline: "Cronologie & Fotografii",
-      goalsByYear: "Goluri pe An Calendaristic",
-      goalsBySeason: "Goluri pe Sezon",
-      dashboard: "Panou de Analiză Avansată",
-      vsRealMadrid: "Real Madrid years",
-      championsLeague: "Hub Champions League",
-      toggleTheme: "🌓 Comutare Mod Întunecat"
-    },
-    uz: {
-      menuTitle: "Ronaldo<b>Stats</b> Menyu",
-      statGoals: "Jami Gollar",
-      statApps: "O'yinlar",
-      statTrophies: "Sovrinlar",
-      statBallons: "Oltin To'plar",
-      catFeatured: "Tanlangan ⚡",
-      catHistory: "Tarix va Sovrinlar 🏆",
-      catStats: "Muhim O'yinlar & Tahlil 📊",
-      home: "Asosiy & Statistika",
-      vsRonaldo: "Ronaldo vs Messi",
-      latestGoal: "So'nggi Gol Takrori",
-      birthday: "Tug'ilgan Kundagi Gollar",
-    days: "366 kunlik",
-      achievements: "Barcha 35 ta Sovrin",
-      timeline: "Xronologiya va Suratlar",
-      goalsByYear: "Yillar Bo'yicha Gollar",
-      goalsBySeason: "Mavsumlar Bo'yicha Gollar",
-      dashboard: "Tahliliy Panel",
-      vsRealMadrid: "Real Madridga yillari",
-      championsLeague: "Chempionlar Ligasi Xabi",
-      toggleTheme: "🌓 Tungi Rejimni O'zgartirish"
-    }
   };
 
   const curLangCode = getCurrentLangCode();
@@ -697,7 +577,6 @@ function closeMobileMenuDrawer() {
   if (document.body) document.body.style.overflow = "";
 }
 
-
 // ---------- Mobile 'More' Button in Bottom Rail ----------
 function ensureMobileMoreNavBtn() {
   if (typeof document === 'undefined') return;
@@ -709,11 +588,6 @@ function ensureMobileMoreNavBtn() {
     es: "Más",
     pt: "Mais",
     fr: "Plus",
-    ar: "المزيد",
-    bn: "আরও",
-    hi: "अधिक",
-    ro: "Mai mult",
-    uz: "Ko'proq"
   };
   const label = moreLabels[curLang] || "More";
   const moreBtn = document.createElement("button");
@@ -898,7 +772,7 @@ function showDonationPopup() {
       </div>
       <div class="donation-modal-body">
         <h3 id="donation-modal-title">Thank you for visiting RonaldoStats!</h3>
-        
+
         <div class="donation-apology-box">
           <p><strong>🙏 Sincere Apology for the Advertisements:</strong></p>
           <p>We know ads can sometimes be distracting, and we sincerely apologize for displaying them on the site. To keep <b>RonaldoStats completely free</b>, blazing fast, and updated after every match with high-definition goal video streaming and zero paywalls, ads are currently necessary to cover our high monthly hosting and video CDN servers.</p>
@@ -971,7 +845,6 @@ function showDonationPopup() {
     });
   }
 }
-
 
 /* ================= PORTUGAL MATCH STREAM NOTIFICATION ================= */
 
@@ -1058,7 +931,6 @@ function initPortugalStreamNotification() {
     console.warn("Stream tracker sync warning:", err);
   }
 }
-
 
 function initFanArcade() {
   const card = document.getElementById("fan-zone");
@@ -1964,56 +1836,6 @@ function initLanguageAndMobileTopBar() {
       autoNotice: "Affiché en français selon votre appareil.",
       changeBtn: "Changer"
     },
-    ar: {
-      name: "العربية",
-      flag: "🇪🇬",
-      detected: "تم اكتشاف أن لغة جهازك هي العربية.",
-      suggest: "هل ترغب في تصفح رونالدو ستاتس باللغة العربية؟",
-      switchBtn: "التصفح بالعربية",
-      stayBtn: "المتابعة بالإنجليزية",
-      autoNotice: "يتم العرض بالعربية بناءً على إعدادات جهازك.",
-      changeBtn: "تغيير"
-    },
-    bn: {
-      name: "বাংলা",
-      flag: "🇧🇩",
-      detected: "আপনার ডিভাইসের ভাষা বাংলা হিসেবে শনাক্ত হয়েছে।",
-      suggest: "আপনি কি বাংলায় রোনালদো পরিসংখ্যান দেখতে চান?",
-      switchBtn: "বাংলায় দেখুন",
-      stayBtn: "English এ থাকুন",
-      autoNotice: "আপনার ডিভাইস অনুযায়ী বাংলায় দেখানো হচ্ছে।",
-      changeBtn: "পরিবর্তন"
-    },
-    hi: {
-      name: "हिन्दी",
-      flag: "🇮🇳",
-      detected: "आपकी डिवाइस की भाषा हिन्दी पहचानी गई है।",
-      suggest: "क्या आप रोनाल्डो के आंकड़े हिन्दी में देखना चाहते हैं?",
-      switchBtn: "हिन्दी में देखें",
-      stayBtn: "English में जारी रखें",
-      autoNotice: "आपके डिवाइस के अनुसार हिन्दी में प्रदर्शित।",
-      changeBtn: "बदलें"
-    },
-    ro: {
-      name: "Română",
-      flag: "🇷🇴",
-      detected: "Am detectat că limba dispozitivului tău este română.",
-      suggest: "Dorești să vezi RonaldoStats în limba română?",
-      switchBtn: "Vezi în Română",
-      stayBtn: "Rămâi pe English",
-      autoNotice: "Afișat în română conform dispozitivului tău.",
-      changeBtn: "Schimbă"
-    },
-    uz: {
-      name: "Oʻzbekcha",
-      flag: "🇺🇿",
-      detected: "Qurilmangiz tili oʻzbekcha ekanligi aniqlandi.",
-      suggest: "RonaldoStatsni oʻzbek tilida koʻrishni xohlaysizmi?",
-      switchBtn: "Oʻzbekcha koʻrish",
-      stayBtn: "Englishda davom etish",
-      autoNotice: "Qurilmangizga mos ravishda oʻzbek tilida koʻrsatilmoqda.",
-      changeBtn: "Oʻzgartirish"
-    },
     en: {
       name: "English",
       flag: "🇺🇸",
@@ -2038,11 +1860,7 @@ function initLanguageAndMobileTopBar() {
       if (lower.startsWith("es")) return "es";
       if (lower.startsWith("pt")) return "pt";
       if (lower.startsWith("fr")) return "fr";
-      if (lower.startsWith("ar")) return "ar";
-      if (lower.startsWith("bn")) return "bn";
-      if (lower.startsWith("hi")) return "hi";
-      if (lower.startsWith("ro")) return "ro";
-      if (lower.startsWith("uz")) return "uz";
+
       if (lower.startsWith("en")) return "en";
     }
 
@@ -2058,20 +1876,9 @@ function initLanguageAndMobileTopBar() {
     if (/Paris|Niamey|Dakar|Abidjan|Douala|Kinshasa|Bamako|Ouagadougou|Brussels|Geneva/i.test(tz)) {
       return "fr";
     }
-    if (/Cairo|Riyadh|Dubai|Baghdad|Kuwait|Qatar|Casablanca|Algiers|Tunis|Amman|Beirut|Muscat|Bahrain|Tripoli|Khartoum/i.test(tz)) {
-      return "ar";
-    }
+
     if (/Munich|Turin|Milan|Rome|Oslo|Copenhagen|Stockholm|Helsinki|Zurich|Vienna|Amsterdam|Berlin|Lisbon|Lisboa/i.test(tz)) {
       return "en";
-    }
-    if (/Dhaka/i.test(tz)) {
-      return "bn";
-    }
-    if (/Bucharest|Chisinau/i.test(tz)) {
-      return "ro";
-    }
-    if (/Tashkent|Samarkand/i.test(tz)) {
-      return "uz";
     }
 
     return "en";
@@ -2205,8 +2012,6 @@ const esc = (s) => {
 };
 const n = (v) => Number(v).toLocaleString("en-US");
 const gpg = (g, a) => (a ? (g / a).toFixed(2) : "—");
-const BN_D = "০১২৩৪৫৬৭৮৯";
-const bn = (v) => String(v).replace(/[0-9]/g, (dd) => BN_D[+dd]);
 
 /* ================= LIVE STAT REGISTRY (runtime variables) =================
  * Every number templates display lives here — same names and derivation as
@@ -2235,13 +2040,12 @@ const LIVE = {
   lgNum: 981, lgOpp: "Al Nassr", lgDate: "12 October 2026",
 };
 
-// The nine dictionary modules are separate files, so the helpers
+// The dictionary modules are separate files, so the helpers
 // they call have to be reachable from their scope. Publishing them on the
 // global object keeps the dictionaries self-contained: they format numbers
 // with n(), escape with esc() and read the live registry with LIVE.
 globalThis.n = n;
 globalThis.esc = esc;
-globalThis.bn = bn;
 globalThis.LIVE = LIVE;
 
 /* Click a column header to sort. Rows with class "total" stay pinned at the bottom. */
@@ -2512,21 +2316,6 @@ function setHead(d, ledeHTML) {
       fr: `Cristiano Ronaldo : ${n(d.totals.apps)} matchs officiels en senior, ${n(d.totals.goals)} buts ` +
         `(${n(d.totals.clubs.apps)} matchs / ${n(d.totals.clubs.goals)} buts en club, ` +
         `${n(d.totals.country.apps)} / ${n(d.totals.country.goals)} avec le Portugal). Mis à jour le ${d.lastUpdated}.`,
-      ar: `كريستيانو رونالدو: ${n(d.totals.apps)} مباراة رسمية مع الفريق الأول، ${n(d.totals.goals)} هدفاً ` +
-        `(${n(d.totals.clubs.apps)} مباراة / ${n(d.totals.clubs.goals)} هدفاً مع الأندية، ` +
-        `${n(d.totals.country.apps)} / ${n(d.totals.country.goals)} مع البرتغال). آخر تحديث ${d.lastUpdated}.`,
-      bn: `ক্রিস্টিয়ানো রোনালদো: ${n(d.totals.apps)}টি সিনিয়র ম্যাচ, ${n(d.totals.goals)}টি গোল ` +
-        `(${n(d.totals.clubs.apps)} ম্যাচে ${n(d.totals.clubs.goals)} ক্লাব গোল, ` +
-        `পর্তুগালের হয়ে ${n(d.totals.country.apps)} ম্যাচে ${n(d.totals.country.goals)} গোল)। সর্বশেষ আপডেট ${d.lastUpdated}।`,
-      hi: `क्रिस्टियानो रोनाल्डो: ${n(d.totals.apps)} सीनियर मैच, ${n(d.totals.goals)} गोल ` +
-        `(${n(d.totals.clubs.apps)} क्लब मैच / ${n(d.totals.clubs.goals)} क्लब गोल, ` +
-        `${n(d.totals.country.apps)} / ${n(d.totals.country.goals)} पुर्तगाल)। अंतिम अद्यतन ${d.lastUpdated}।`,
-      ro: `Cristiano Ronaldo: ${n(d.totals.apps)} meciuri oficiale la seniori, ${n(d.totals.goals)} goluri ` +
-        `(${n(d.totals.clubs.apps)} meciuri / ${n(d.totals.clubs.goals)} goluri la cluburi, ` +
-        `${n(d.totals.country.apps)} / ${n(d.totals.country.goals)} cu Portugalia). Actualizat la ${d.lastUpdated}.`,
-      uz: `Kristiano Ronaldo: ${n(d.totals.apps)} ta rasmiy o'yin, ${n(d.totals.goals)} ta gol ` +
-        `(${n(d.totals.clubs.apps)} ta klub o'yini / ${n(d.totals.clubs.goals)} ta gol, ` +
-        `Portugal bilan ${n(d.totals.country.apps)} / ${n(d.totals.country.goals)}). Oxirgi yangilanish: ${d.lastUpdated}.`
     };
     el("foot-date").textContent = footDates[lang] ||
       `Cristiano Ronaldo: ${n(d.totals.apps)} senior appearances, ${n(d.totals.goals)} goals ` +
@@ -2564,14 +2353,13 @@ function reveal() {
 
 function getLang() {
   const l = (document.documentElement.lang || "en").toLowerCase();
-  for (const c of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+  for (const c of ["es","pt","fr"]) {
     if (l.startsWith(c)) return c;
   }
   return "en";
   DICT = getDict(getLangCode());
   return getLangCode();
 }
-
 
 function renderExplore(d, page) {
   const e = el("explore");
@@ -2581,7 +2369,7 @@ function renderExplore(d, page) {
   const skip = Array.isArray(page) ? page : [page];
   // The dictionaries carry the route for one language; force the current
   // language's prefix so a card never links out of the locale.
-  const localize = (href) => String(href || "").replace(/^\/(en|es|pt|fr|ar|bn|hi|ro|uz)(?=\/|$)/, "/" + lang);
+  const localize = (href) => String(href || "").replace(/^\/(en|es|pt|fr)(?=\/|$)/, "/" + lang);
   e.innerHTML = list.filter((x) => !skip.includes(x.page))
     .slice(0, 9)
     .map((x) => `<a class="link-card" href="${localize(x.href)}"><strong>${esc(x.t)}</strong><span>${esc(x.d(d))}</span></a>`)
@@ -2617,50 +2405,8 @@ function methodHTML(d, extra) {
       `<p>Chaque but est vérifié selon les feuilles de match officielles après chaque rencontre. Données 100% certifiées. ${extra || ""}</p>` +
       `<p class="colophon">Base de données indépendante mise à jour avec rigueur après chaque rencontre.</p></details>`);
   }
-  if (lang === "ar") {
-    const teams = "ريال مدريد ومانشستر united ويوفنتوس والنصر وسبورتينغ ومنتخب البرتغال";
-    return methodColophon(`<h2>كيف نجمع هذه الإحصائيات</h2>` +
-      `<p>نحن نحتسب أمراً واحداً: المباريات الرسمية لفرق الدرجة الأولى الكبرى لكل من ${teams} — ` +
-      `الدوري، الكؤوس المحلية، الليالي القارية والمنتخب الأول. لا تشمل المباريات الودية للأندية أو فرق الشباب.</p>` +
-      `<details class="method-more"><summary>طريقة التحقق من الأرقام</summary>` +
-      `<p>تُسجل الأهداف من تقارير المباريات الرسمية وتتم مراجعتها بعد كل مباراة. جميع الأرقام موثقة بنسبة 100%. ${extra || ""}</p>` +
-      `<p class="colophon">موقع مستقل يتم تحديثه ومراجعته بمصادر أولية رسمية بعد كل مباراة.</p></details>`);
-  }
-  if (lang === "bn") {
-    const teams = "রিয়াল মাদ্রিদ, ম্যানচেস্টার ইউনাইটেড, জুভেন্তুস, আল নাসর, স্পোর্টিং এবং পর্তুগাল জাতীয় দল";
-    return methodColophon(`<h2>আমরা কীভাবে এই পরিসংখ্যান সংগ্রহ করি</h2>` +
-      `<p>আমরা কেবল একটি বিষয় গণনা করি: ${teams}-এর হয়ে সিনিয়র অফিসিয়াল প্রথম দলের ম্যাচ। কোনো প্রীতি ম্যাচ বা যুব পর্যায়ের খেলা অন্তর্ভুক্ত নয়।</p>` +
-      `<details class="method-more"><summary>পরিসংখ্যান যাচাইকরণ</summary>` +
-      `<p>প্রতিটি ম্যাচের অফিশিয়াল ম্যাচ রিপোর্ট থেকে গোলের তথ্য সংকলিত এবং যাচাই করা হয়েছে। সকল ডেটা ১০০% সত্য। ${extra || ""}</p>` +
-      `<p class="colophon">স্বতন্ত্র ওয়েবসাইট যা প্রতিটি ম্যাচের পর প্রাথমিক অফিসিয়াল সূত্র থেকে সরাসরি হালনাগাদ করা হয়।</p></details>`);
-  }
-  if (lang === "hi") {
-    const teams = "रियल मैड्रिड, मैनचेस्टर यूनाइटेड, जुवेंतस, अल नस्र, स्पोर्टिंग और पुर्तगाल";
-    return methodColophon(`<h2>हम ये आँकड़े कैसे तैयार करते हैं</h2>` +
-      `<p>हम केवल आधिकारिक सीनियर प्रथम-टीम मैचों की गणना करते हैं: ${teams} के लिए सभी लीग, कप, महाद्वीपीय और अंतरराष्ट्रीय मैच।</p>` +
-      `<details class="method-more"><summary>आंकड़ों का सत्यापन</summary>` +
-      `<p>प्रत्येक मैच के आधिकारिक रिकॉर्ड से आंकड़े संकलित किए जाते हैं। 100% सत्यापित डेटा। ${extra || ""}</p>` +
-      `<p class="colophon">स्वतंत्र सांख्यिकी डेटाबेस जिसे प्रत्येक मैच के बाद आधिकारिक स्रोतों से अपडेट किया जाता है।</p></details>`);
-  }
-  if (lang === "ro") {
-    const teams = "Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP și Naționala Portugaliei";
-    return methodColophon(`<h2>Cum compilăm aceste statistici</h2>` +
-      `<p>Numărăm doar meciurile oficiale la nivel de seniori pentru ${teams} — ` +
-      `campionat, cupe naționale, cupe continentale și meciuri internaționale oficiale.</p>` +
-      `<details class="method-more"><summary>Verificarea cifrelor</summary>` +
-      `<p>Datele sunt verificate manual din rapoartele oficiale după fiecare partidă. ${extra || ""}</p>` +
-      `<p class="colophon">Site independent actualizat cu surse oficiale de prim rang.</p></details>`);
-  }
-  if (lang === "uz") {
-    const teams = "Real Madrid, Manchester United, Juventus, Al Nassr, Sporting va Portugaliya terma jamoasi";
-    return methodColophon(`<h2>Biz bu statistikalarni qanday yig'amiz</h2>` +
-      `<p>Biz faqat ${teams} uchun asosiy tarkibdagi rasmiy uchrashuvlarni hisoblaymiz — ` +
-      `barcha liga, milliy kubok, qit'a musobaqalari va terma jamoa o'yinlari.</p>` +
-      `<details class="method-more"><summary>Raqamlarni tekshirish</summary>` +
-      `<p>Gollar har bir o'yindan so'ng rasmiy protokollar asosida to'liq tekshiriladi. ${extra || ""}</p>` +
-      `<p class="colophon">Har bir o'yindan so'ng rasmiy manbalar bilan yangilanadigan mustaqil statistika.</p></details>`);
-  }
-  const teams = "Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal";
+
+const teams = "Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal";
   return methodColophon(`<h2>How I put these numbers together</h2>` +
     `<p>I count one thing: official senior first-team matches for ${teams} — ` +
     `every league game, domestic cup, continental night and international, and nothing else. No youth football, no reserves, no friendlies dressed up as history.</p>` +
@@ -2721,7 +2467,7 @@ function sparkSVG(rows, opts) {
 
   const lang = getLang();
   const yrSuffix = {
-    es: " /año", pt: " /ano", fr: " /an", ar: " /سنة", bn: " /বছর", hi: " /वर्ष", ro: " /an", uz: " /yil"
+    es: " /año", pt: " /ano", fr: " /an",
   }[lang] || " /yr";
   s += `<line class="baseline" x1="0" y1="${base}" x2="${W}" y2="${base}"></line>`;
   s += `<text class="axis" x="4" y="${(base - maxH + (compact ? 14 : 4)).toFixed(1)}">${max}${opts.cumulative ? yrSuffix : ""}</text><text class="axis" x="4" y="${(base - 4).toFixed(1)}">0</text>`;
@@ -2790,11 +2536,6 @@ function sparkSVG(rows, opts) {
       es: { target: "Meta de 1.000 goles", now: `${n(tot)} actual`, tip: `Total en su carrera: ${n(tot)} goles` },
       pt: { target: "Meta de 1.000 gols", now: `${n(tot)} atual`, tip: `Total na carreira: ${n(tot)} gols` },
       fr: { target: "Objectif 1 000 buts", now: `${n(tot)} actuel`, tip: `Total en carrière : ${n(tot)} buts` },
-      ar: { target: "هدف الـ 1,000 هدف", now: `${n(tot)} الآن`, tip: `إجمالي المسيرة: ${n(tot)} هدفاً` },
-      bn: { target: "১,০০০ গোলের লক্ষ্য", now: `${n(tot)} বর্তমানে`, tip: `ক্যারিয়ার মোট: ${n(tot)} গোল` },
-      hi: { target: "1,000 गोल का लक्ष्य", now: `${n(tot)} वर्तमान`, tip: `करियर कुल: ${n(tot)} गोल` },
-      ro: { target: "Ținta de 1.000 de goluri", now: `${n(tot)} în prezent`, tip: `Total carieră: ${n(tot)} goluri` },
-      uz: { target: "1 000 ta gol maqsadi", now: `${n(tot)} hozir`, tip: `Faoliyatidagi jami: ${n(tot)} ta gol` }
     };
     const cLabels = chartI18n[lang] || { target: "1,000 goal target", now: `${n(tot)} now`, tip: `Current career total: ${n(tot)} goals` };
 
@@ -2844,11 +2585,6 @@ function clubTableCaption() {
     es: "Haz clic en el encabezado de una columna para ordenar. Solo partidos oficiales del primer equipo.",
     pt: "Clique no cabeçalho de uma coluna para ordenar. Apenas partidas oficiais da equipe principal.",
     fr: "Cliquez sur l'en-tête d'une colonne pour trier. Matchs officiels en équipe première uniquement.",
-    ar: "انقر على رأس العمود للترتيب. مباريات الفريق الأول الرسمية فقط.",
-    bn: "সাজাতে কলামের শিরোনামে ক্লিক করুন। শুধুমাত্র সিনিয়র প্রথম দলের ম্যাচ।",
-    hi: "सॉर्ट करने के लिए कॉलम हेडर पर क्लिक करें। केवल सीनियर प्रथम-टीम मैच।",
-    ro: "Faceți clic pe antetul unei coloane pentru a sorta. Doar meciuri oficiale de seniori.",
-    uz: "Saralash uchun ustun sarlavhasiga bosing. Faqat rasmiy asosiy jamoa o'yinlari."
   };
   const hint = hints[lang] || "Click a column header to sort. Senior first-team matches only.";
   return `<p class="table-hint">${hint}</p>`;
@@ -2859,11 +2595,6 @@ function provisionalNote() {
     es: `<p class="caveat">Los penaltis (184), los tiros libres (66), los hat-tricks (66) y las asistencias (261) son cifras recopiladas provisionales hasta completar el conteo manual partido a partido.</p>`,
     pt: `<p class="caveat">Os pênaltis (184), os tiros livres (66), os hat-tricks (66) e as assistências (261) são números provisórios até a conclusão da contagem manual jogo a jogo.</p>`,
     fr: `<p class="caveat">Les penaltys (184), les coups francs (66), les triplés (66) et les passes décisives (261) sont des totaux provisoires en attente de vérification match par match.</p>`,
-    ar: `<p class="caveat">ركلات الجزاء (184) وركلات حرة مباشرة (66) والثلاثيات (66) والصناعة الحاسمة (261) أرقام مجمّعة منشورة على نطاق واسع، وتُعرض كمؤقتة حتى تكتمل المراجعة اليدوية مباراة بمباراة.</p>`,
-    bn: `<p class="caveat">পেনাল্টি (184), সরাসরি ফ্রি-কিক (66), হ্যাট-ট্রিক (66) এবং অ্যাসিস্ট (261) হলো প্রচলিতভাবে প্রকাশিত সংক্ষিপ্ত হিসাব, যা প্রতিটি ম্যাচ আলাদা করে হাতে গণনা সম্পন্ন না হওয়া পর্যন্ত প্রাক্ষণিক হিসেবে দেখানো হয়।</p>`,
-    hi: `<p class="caveat">पेनाल्टी (184), सीधे फ्री-किक (66), हैट-ट्रिक (66) और सहायता (261) व्यापक रूप से प्रकाशित संकलित आँकड़े हैं, जिन्हें प्रत्येक मैच का हाथ से गिनती पूरी होने तक अस्थायी माना जाता है।</p>`,
-    ro: `<p class="caveat">Penalty-urile (184), loviturile libere (66), hat-trick-urile (66) și pasele decisive (261) sunt cifre compilate publicate pe scară largă, afișate ca provizorii până la finalizarea numărării manuale meci cu meci.</p>`,
-    uz: `<p class="caveat">Penalty (184), to'g'ridan-to'g'ri erkin zarbalar (66), het-triklar (66) va assistlar (261) — bular keng tarqalgan yig'ilma hisoblar bo'lib, har bir o'yin bo'yicha qo'lda hisoblash tugagunga qadar vaqtinchalik deb ko'rsatiladi.</p>`,
   };
   return notes[lang] || `<p class="caveat">Penalties (184), direct free kicks (66), hat-tricks (66) and assists (261) are widely published compiled tallies, shown as provisional until a true match-by-match hand count is finished.</p>`;
 }
@@ -2873,11 +2604,6 @@ function methodColophon(inner) {
     es: "Cómo recopilamos estas cifras — verificadas manualmente y contrastadas dos veces con fuentes oficiales.",
     pt: "Como reunimos esses números — verificados manualmente e conferidos com fontes oficiais.",
     fr: "Comment nous compilons ces chiffres — vérifiés manuellement et recoupés avec les sources officielles.",
-    ar: "طريقة جمع هذه الأرقام — تم التحقق منها يدوياً ومطابقتها مرتين مع المصادر الرسمية.",
-    bn: "আমরা কীভাবে এই সংখ্যা সংগ্রহ করি — প্রতিটি ম্যাচ রিপোর্ট থেকে যাচাইকৃত এবং অফিসিয়াল সূত্রের সাথে পরীক্ষিত।",
-    hi: "हम ये आंकड़े कैसे तैयार करते हैं — आधिकारिक स्रोतों से दो बार सत्यापित और हाथ से गिने गए।",
-    ro: "Cum am adunat aceste cifre — numărate manual și verificate de două ori cu surse oficiale.",
-    uz: "Bu raqamlarni qanday to'plaganimiz — qo'lda tekshirilgan va rasmiy manbalar bilan ikki marta tasdiqlangan."
   };
   const intro = intros[lang] || "How I put these numbers together — counted by hand and checked twice against named sources.";
   return `<div class="colophon"><p>${intro}</p>${inner}${provisionalNote()}</div>`;
@@ -2911,11 +2637,6 @@ function renderHome(d) {
         es: { goals: "Registro Oficial", kpis: "Métricas Clave", clubs: "Por Clubes", faq: "Preguntas" },
         pt: { goals: "Registro Oficial", kpis: "Métricas", clubs: "Por Clubes", faq: "Perguntas" },
         fr: { goals: "Bilan Officiel", kpis: "Chiffres Clés", clubs: "Par Clubs", faq: "FAQ" },
-        ar: { goals: "السجل الرسمي", kpis: "المؤشرات الكبرى", clubs: "حسب النادي", faq: "الأسئلة الشائعة" },
-        bn: { goals: "অফিশিয়াল রেকর্ড", kpis: "মূল পরিসংখ্যান", clubs: "ক্লাব অনুযায়ী", faq: "প্রশ্নোত্তর" },
-        hi: { goals: "आधिकारिक रिकॉर्ड", kpis: "मुख्य आंकड़े", clubs: "क्लब अनुसार", faq: "सवाल-जवाब" },
-        ro: { goals: "Bilanț Oficial", kpis: "Indicatori", clubs: "Pe Cluburi", faq: "Întrebări" },
-        uz: { goals: "Rasmiy Rekord", kpis: "Asosiy Ko'rsatkich", clubs: "Klublar", faq: "Savol-Javob" }
       };
       const qj = quickJumpI18n[lang] || quickJumpI18n.en;
       const qjBar = document.createElement("nav");
@@ -3137,14 +2858,13 @@ function renderHome(d) {
     nums.forEach((span, i) => { if (i < want.length) span.textContent = String(want[i]); });
     const pinLabel = r1000.querySelector(".pin-label");
     if (pinLabel) pinLabel.textContent = swapInt(pinLabel.textContent, goals);
-    const BN_D = "০১২৩৪৫৬৭৮৯";
     r1000.querySelectorAll(".r1000-pace b").forEach((b) => {
       const txt = b.textContent;
       if (/\d{4}\/\d{4}/.test(txt)) { b.textContent = txt.replace(/\d{4}\/\d{4}/, estStr); return; }
       const m = txt.match(/\d+([.,])\d+/);
       if (m) {
         let v = pace.toFixed(2).replace(".", m[1]);
-        if (/[০-৯]/.test(txt)) v = v.replace(/[0-9]/g, (dd) => BN_D[+dd]);
+
         b.innerHTML = b.innerHTML.replace(/\d+([.,])\d+/, v);
       }
     });
@@ -3281,91 +3001,6 @@ async function renderOnThisDay() {
       searchYt: "🔍 Chercher le but sur YouTube &rarr;",
       goalTab: (n, min) => `But ${n}${min ? ` (${min}')` : ""}`
     },
-    ar: {
-      error: `تعذر تحميل سجل مباريات اليوم.`,
-      empty: `لا توجد مباريات مسجلة في مثل هذا اليوم.`,
-      closestBadge: (d) => `📅 أقرب يوم شهد أهدافاً • ${d} (UTC)`,
-      liveBadge: (d) => `<span class="live-dot pulse"></span> <b>في مثل هذا اليوم • ${d} (UTC)</b>`,
-      headlineClosest: (d, g, nowD, nowM) => `لم تُلعب مباريات رسمية في هذا اليوم (${nowD} ${nowM} UTC). أقرب يوم تهديفي: <b>${g} أهداف</b> يوم ${d}!`,
-      headlineLive: (g, m) => `في مثل هذا اليوم تاريخياً، سجل كريستيانو رونالدو <b>${g} أهداف</b> في <b>${m} مباراة</b>!`,
-      btnBday: "🎂 هل سجل رونالدو في يوم ميلادك؟",
-      btnExplore: "استكشف جميع أيام السنة الـ 366 &rarr;",
-      lblMinute: "الدقيقة",
-      lblShotType: "نوع الهدف",
-      lblAssist: "صناعة الهدف",
-      lblXg: "الأهداف المتوقعة (xG)",
-      noVideo: "📺 يجري التحقق من مقطع الفيديو لهذا الهدف.",
-      searchYt: "🔍 ابحث عن الهدف على YouTube &rarr;",
-      goalTab: (n, min) => `الهدف ${n}${min ? ` (${min}')` : ""}`
-    },
-    bn: {
-      error: `আজকের ম্যাচের রেকর্ড লোড করা যায়নি।`,
-      empty: `আজকের তারিখে কোনো ম্যাচের তথ্য নেই।`,
-      closestBadge: (d) => `📅 নিকটতম গোলের দিন • ${d} (UTC)`,
-      liveBadge: (d) => `<span class="live-dot pulse"></span> <b>ইতিহাসে আজকের দিনে • ${d} (UTC)</b>`,
-      headlineClosest: (d, g, nowD, nowM) => `আজকের দিনে কোনো ম্যাচ নেই (${nowD} ${nowM} UTC)। নিকটতম গোলের দিন: ${d}-এ <b>${g}টি গোল</b>!`,
-      headlineLive: (g, m) => `ইতিহাসে আজকের দিনে ক্রিস্টিয়ানো রোনালদো <b>${m} ম্যাচে</b> <b>${g}টি গোল</b> করেছেন!`,
-      btnBday: "🎂 রোনালদো কি আপনার জন্মদিনে গোল করেছিলেন?",
-      btnExplore: "৩৬৬ দিনের পূর্ণ বিবরণ দেখুন &rarr;",
-      lblMinute: "মিনিট",
-      lblShotType: "গোলের ধরন",
-      lblAssist: "অ্যাসিস্ট",
-      lblXg: "এক্সপেক্টেড গোল (xG)",
-      noVideo: "📺 এই গোলের ভিডিও ক্লিপ যাচাই করা হচ্ছে।",
-      searchYt: "🔍 YouTube-এ ভিডিও খুঁজুন &rarr;",
-      goalTab: (n, min) => `গোল ${n}${min ? ` (${min}')` : ""}`
-    },
-    hi: {
-      error: `आज का मैच इतिहास लोड नहीं हो सका।`,
-      empty: `आज की तारीख में कोई मैच रिकॉर्ड नहीं है।`,
-      closestBadge: (d) => `📅 निकटतम गोल का दिन • ${d} (UTC)`,
-      liveBadge: (d) => `<span class="live-dot pulse"></span> <b>इतिहास में आज के दिन • ${d} (UTC)</b>`,
-      headlineClosest: (d, g, nowD, nowM) => `आज कोई आधिकारिक मैच निर्धारित नहीं था (${nowD} ${nowM} UTC)। निकटतम गोल दिवस: ${d} को <b>${g} गोल</b>!`,
-      headlineLive: (g, m) => `इतिहास में आज के दिन, क्रिस्टियानो रोनाल्डो ने <b>${m} मैचों</b> में <b>${g} गोल</b> किए थे!`,
-      btnBday: "🎂 क्या रोनाल्डो ने आपके जन्मदिन पर गोल किया था?",
-      btnExplore: "सभी 366 दिनों का अन्वेषण करें &rarr;",
-      lblMinute: "मिनट",
-      lblShotType: "गोल का प्रकार",
-      lblAssist: "असिस्ट",
-      lblXg: "अपेक्षित गोल (xG)",
-      noVideo: "📺 इस गोल का वीडियो सत्यापित किया जा रहा है।",
-      searchYt: "🔍 YouTube पर वीडियो खोजें &rarr;",
-      goalTab: (n, min) => `गोल ${n}${min ? ` (${min}')` : ""}`
-    },
-    ro: {
-      error: `Nu s-a putut încărca istoricul zilei.`,
-      empty: `Nu există meciuri înregistrate pentru această dată.`,
-      closestBadge: (d) => `📅 CEA MAI APROPIATĂ ZI CU GOLURI • ${d} (UTC)`,
-      liveBadge: (d) => `<span class="live-dot pulse"></span> <b>ÎN ACEASTĂ ZI ÎN ISTORIE • ${d} (UTC)</b>`,
-      headlineClosest: (d, g, nowD, nowM) => `Niciun meci de seniori programat azi (${nowD} ${nowM} UTC). Ziua cea mai apropiată: <b>${g} goluri</b> pe ${d}!`,
-      headlineLive: (g, m) => `În această zi în istorie, Cristiano Ronaldo a marcat <b>${g} goluri</b> în <b>${m} meci${m > 1 ? "uri" : ""}</b>!`,
-      btnBday: "🎂 A marcat Ronaldo de ziua ta de naștere?",
-      btnExplore: "Explorează toate cele 366 de zile &rarr;",
-      lblMinute: "Minut",
-      lblShotType: "Tipul golului",
-      lblAssist: "Pază de gol",
-      lblXg: "Gol așteptat (xG)",
-      noVideo: "📺 Clipul video pentru acest gol este în curs de verificare.",
-      searchYt: "🔍 Caută golul pe YouTube &rarr;",
-      goalTab: (n, min) => `Gol ${n}${min ? ` (${min}')` : ""}`
-    },
-    uz: {
-      error: `Bugungi o'yinlar tarixini yuklab bo'lmadi.`,
-      empty: `Bugungi sana uchun o'yinlar qayd etilmagan.`,
-      closestBadge: (d) => `📅 GOLLAR URILGAN ENG YAQIN KUN • ${d} (UTC)`,
-      liveBadge: (d) => `<span class="live-dot pulse"></span> <b>TARIXDA BUGUNGI KUN • ${d} (UTC)</b>`,
-      headlineClosest: (d, g, nowD, nowM) => `Bugungi kunda rasmiy o'yin o'tkazilmagan (${nowD} ${nowM} UTC). Eng yaqin golli kun: ${d} da <b>${g} ta gol</b>!`,
-      headlineLive: (g, m) => `Tarixda aynan bugungi kunda Kristiano Ronaldo <b>${m} ta o'yinda</b> <b>${g} ta gol</b> urgan!`,
-      btnBday: "🎂 Ronaldo tug'ilgan kuningizda gol urganmi?",
-      btnExplore: "Barcha 366 kunni o'rganish &rarr;",
-      lblMinute: "Daqiqa",
-      lblShotType: "Gol turi",
-      lblAssist: "Golli uzatma",
-      lblXg: "Kutilgan gol (xG)",
-      noVideo: "📺 Ushbu golning video lavhasi tekshirilmoqda.",
-      searchYt: "🔍 Videoni YouTubedan qidirish &rarr;",
-      goalTab: (n, min) => `Gol ${n}${min ? ` (${min}')` : ""}`
-    }
   };
 
   const o = otdDict[lang] || otdDict.en;
@@ -3573,7 +3208,6 @@ async function renderOnThisDay() {
   renderContent();
 }
 
-
 function renderByYear(d) {
   const lang = getLang();
   const ys = d.calendarYears, t = d.totals;
@@ -3651,7 +3285,6 @@ function renderByYear(d) {
   renderMethod(d, "");
 }
 function kpi4(l, v, s) { return `<div class="kpi"><span class="kpi-label">${l}</span><span class="kpi-value">${v}</span><span class="kpi-note">${s}</span></div>`; }
-
 
 function renderBySeason(d) {
   const lang = getLang();
@@ -3739,7 +3372,6 @@ function teamComps() {
 }
 const FINISH_COLORS = { "Open play": "#0e7cc0", Penalties: "#7cc4ea", "Free kicks": "#132c52" };
 const BODY_COLORS = { "Left foot": "#0e7cc0", "Right foot": "#55a8dc", Head: "#a9d3ee", Other: "#132c52" };
-
 
 function renderDashboard(d, team) {
   const lang = getLang();
@@ -4116,11 +3748,6 @@ function eraOf(y) {
       es: "2023–presente",
       pt: "2023–presente",
       fr: "2023–présent",
-      ar: "2023–الآن",
-      bn: "২০২৩–বর্তমান",
-      hi: "2023–वर्तमान",
-      ro: "2023–prezent",
-      uz: "2023–hozir"
     }[lang] || "2023–present"
   };
   const eraNames = {
@@ -4149,51 +3776,6 @@ function eraOf(y) {
       carry: "Les années Ballon d'Or",
       farewell: "Juventus",
       paris: "Le retour à Manchester United",
-      miami: "Al Nassr"
-    },
-    ar: {
-      rosario: "سبورتينغ",
-      peak: "مانشستر يونايتد",
-      msn: "ريال مدريد",
-      carry: "سنوات الكرة الذهبية",
-      farewell: "يوفنتوس",
-      paris: "العودة إلى مانشستر يونايتد",
-      miami: "النصر"
-    },
-    bn: {
-      rosario: "স্পোর্টিং",
-      peak: "ম্যানচেস্টার ইউনাইটেড",
-      msn: "রিয়াল মাদ্রিদ",
-      carry: "ব্যালন ডি'অরের বছর",
-      farewell: "জুভেন্তুস",
-      paris: "ম্যানচেস্টার ইউনাইটেডে ফিরে আসা",
-      miami: "আল নাসর"
-    },
-    hi: {
-      rosario: "स्पोर्टिंग",
-      peak: "मैनचेस्टर यूनाइटेड",
-      msn: "रियल मैड्रिड",
-      carry: "बैलन डी'ओर के साल",
-      farewell: "जुवेंतस",
-      paris: "मैनचेस्टर यूनाइटेड में वापसी",
-      miami: "अल नस्र"
-    },
-    ro: {
-      rosario: "Sporting CP",
-      peak: "Manchester United",
-      msn: "Real Madrid",
-      carry: "Anii Balonului de Aur",
-      farewell: "Juventus",
-      paris: "Întoarcerea la Manchester United",
-      miami: "Al Nassr"
-    },
-    uz: {
-      rosario: "Sporting",
-      peak: "Manchester United",
-      msn: "Real Madrid",
-      carry: "Oltin to'y yillari",
-      farewell: "Juventus",
-      paris: "Manchester Unitedga qaytish",
       miami: "Al Nassr"
     },
     en: {
@@ -4252,7 +3834,6 @@ ERA_PHOTOS.farewell = ERA_PHOTOS["Juventus 2018-2022"];
 ERA_PHOTOS.paris = ERA_PHOTOS["Manchester United return"];
 ERA_PHOTOS.miami = ERA_PHOTOS["Al Nassr 2023-present"];
 
-
 /* Era openers: short fan-editor intros, one per chapter. Plain prose about
    famous nights — no new numbers, every figure here already lives on this
    site or in the trophy list. */
@@ -4272,7 +3853,6 @@ const eraPhotos = (key, era) => {
       `</picture><figcaption class="photo-credit">${esc(p.cap)}</figcaption></figure>`;
   }).join("") + `</div>`;
 };
-
 
 /**
  * The milestone copy lives in the page shell, not here.
@@ -4381,11 +3961,6 @@ function renderTimeline(d) {
     es: { all: "Todos", trophy: "🏆 Títulos", award: "⭐ Balones de Oro", goal: "⚽ Goles Hito", record: "📜 Récords Mundiales", sporting: "💚 Sporting CP", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugal" },
     pt: { all: "Todos", trophy: "🏆 Títulos", award: "⭐ Bolas de Ouro", goal: "⚽ Gols Históricos", record: "📜 Recordes Mundiais", sporting: "💚 Sporting CP", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugal" },
     fr: { all: "Tous", trophy: "🏆 Trophées", award: "⭐ Ballons d'Or", goal: "⚽ Buts Marquants", record: "📜 Records Mondiaux", sporting: "💚 Sporting CP", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugal" },
-    ar: { all: "الكل", trophy: "🏆 البطولات", award: "⭐ الكرات الذهبية", goal: "⚽ أهداف تاريخية", record: "📜 أرقام قياسية", sporting: "💚 سبورتينغ", manutd: "🔴 مانشستر يونايتد", realmadrid: "⚪ ريال مدريد", juventus: "🐂 يوفنتوس", alnassr: "💛 النصر", portugal: "🇵🇹 البرتغال" },
-    bn: { all: "সব", trophy: "🏆 ট্রফি", award: "⭐ ব্যালন ডি'অর", goal: "⚽ স্মরণীয় গোল", record: "📜 বিশ্বরেকর্ড", sporting: "💚 স্পোর্টিং", manutd: "🔴 ম্যানচেস্টার ইউনাইটেড", realmadrid: "⚪ রিয়াল মাদ্রিদ", juventus: "🐂 জুভেন্তুস", alnassr: "💛 আল নাসর", portugal: "🇵🇹 পর্তুগাল" },
-    hi: { all: "सभी", trophy: "🏆 ट्रॉफियां", award: "⭐ बैलन डी'ओर", goal: "⚽ ऐतिहासिक गोल", record: "📜 विश्व रिकॉर्ड", sporting: "💚 स्पोर्टिंग", manutd: "🔴 मैनचेस्टर यूनाइटेड", realmadrid: "⚪ रियल मैड्रिड", juventus: "🐂 जुवेंतस", alnassr: "💛 अल नस्र", portugal: "🇵🇹 पुर्तगाल" },
-    ro: { all: "Toate", trophy: "🏆 Trofee", award: "⭐ Baloane de Aur", goal: "⚽ Goluri Reper", record: "📜 Recorduri Mondiale", sporting: "💚 Sporting CP", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugalia" },
-    uz: { all: "Barchasi", trophy: "🏆 Sovrinlar", award: "⭐ Oltin to'p", goal: "⚽ Tarixiy gollar", record: "📜 Jahon rekordlari", sporting: "💚 Sporting", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugal" }
   };
   const fl = filterLabels[lang] || { all: "All", trophy: "🏆 Trophies", award: "⭐ Ballons d'Or", goal: "⚽ Landmark Goals", record: "📜 World Records", sporting: "💚 Sporting CP", manutd: "🔴 Manchester United", realmadrid: "⚪ Real Madrid", juventus: "🐂 Juventus", alnassr: "💛 Al Nassr", portugal: "🇵🇹 Portugal" };
 
@@ -4471,11 +4046,6 @@ function renderTimeline(d) {
       es: `${matched} de ${totalEvents} hitos`,
       pt: `${matched} de ${totalEvents} marcos`,
       fr: `${matched} sur ${totalEvents} jalons`,
-      ar: `${matched} من أصل ${totalEvents} محطة`,
-      bn: `${totalEvents}টির মধ্যে ${matched}টি মাইলফলক`,
-      hi: `${totalEvents} में से ${matched} मील के पत्थर`,
-      ro: `${matched} din ${totalEvents} repere`,
-      uz: `${totalEvents} tadan ${matched} ta muhim voqea`
     };
     countEl.textContent = fmt[lang] || `Showing ${matched} of ${totalEvents} milestones`;
   };
@@ -4569,7 +4139,6 @@ const cabinetPhotos = () => {
     `<figcaption class="photo-credit">${esc(p.cap)}</figcaption></figure></article>`
   ).join("");
 };
-
 
 function renderAch(d) {
   const lang = getLang();
@@ -4680,11 +4249,6 @@ async function copyToClipboard(text, msgEl, successMsg) {
     es: "¡Copiado al portapapeles!",
     pt: "Copiado para a área de transferência!",
     fr: "Copié dans le presse-papier !",
-    ar: "تم النسخ إلى الحافظة!",
-    bn: "ক্লিপবোর্ডে কপি করা হয়েছে!",
-    hi: "क्लिपबोर्ड पर कॉपी किया गया!",
-    ro: "Copiat în clipboard!",
-    uz: "Vaqtinchalik xotiraga nusxalandi!"
   };
   const finalMsg = successMsg || defaultMsgs[lang] || "Copied to clipboard!";
   let ok = false;
@@ -4745,47 +4309,6 @@ function updateBirthdaySocialShare(dayData, key) {
       shareText = `Je partage mon anniversaire avec Cristiano Ronaldo (5 février) ! 🐐🎂 A-t-il marqué le vôtre ?`;
     } else {
       shareText = `Cristiano Ronaldo a-t-il marqué le jour de votre anniversaire ? Découvrez les 366 jours :`;
-    }
-  } else if (lang === "ar") {
-    if (dayData.goalsCount > 0) {
-      shareText = `كريستيانو رونالدو سجل ${dayData.goalsCount} هدفاً في يوم ميلادي (${dayData.formatted})! ⚽🎂 هل سجل في يوم ميلادك؟`;
-    } else if (isRonaldoBday) {
-      shareText = `عيد ميلادي نفس يوم ميلاد كريستيانو رونالدو (5 فبراير)! 🐐🎂 هل سجل في يوم ميلادك؟`;
-    } else {
-      shareText = `هل سجل كريستيانو رونالدو في يوم ميلادك؟ تحقق من جميع أيام السنة:`;
-    }
-  } else if (lang === "bn") {
-    if (dayData.goalsCount > 0) {
-      shareText = `ক্রিস্টিয়ানো রোনালদো আমার জন্মদিনে (${dayData.formatted}) ${dayData.goalsCount}টি গোল করেছেন! ⚽🎂 আপনার জন্মদিনে কি গোল করেছেন?`;
-    } else if (isRonaldoBday) {
-      shareText = `আমার জন্মদিন ক্রিস্টিয়ানো রোনালদোর জন্মদিনের একই দিনে (৫ ফেব্রুয়ারি)! 🐐🎂 আপনার জন্মদিনে কি গোল করেছেন?`;
-    } else {
-      shareText = `ক্রিস্টিয়ানো রোনালদো কি আপনার জন্মদিনে গোল করেছিলেন? ৩৬৬ দিনের তালিকা দেখুন:`;
-    }
-  } else if (lang === "hi") {
-    if (dayData.goalsCount > 0) {
-      shareText = `क्रिस्टियानो रोनाल्डो ने मेरे जन्मदिन (${dayData.formatted}) पर ${dayData.goalsCount} गोल किए! ⚽🎂 क्या आपके जन्मदिन पर गोल किया?`;
-    } else if (isRonaldoBday) {
-      shareText = `मेरा जन्मदिन क्रिस्टियानो रोनाल्डो के जन्मदिन के दिन (5 फ़रवरी) है! 🐐🎂 क्या आपके जन्मदिन पर गोल किया?`;
-    } else {
-      shareText = `क्या क्रिस्टियानो रोनाल्डो ने आपके जन्मदिन पर गोल किया? 366 दिनों की जांच करें:`;
-    }
-  } else if (lang === "ro") {
-    if (dayData.goalsCount > 0) {
-      const gWord = dayData.goalsCount === 1 ? "gol" : "goluri";
-      shareText = `Cristiano Ronaldo a marcat ${dayData.goalsCount} ${gWord} de ziua mea (${dayData.formatted})! ⚽🎂 A marcat și de a ta?`;
-    } else if (isRonaldoBday) {
-      shareText = `Sunt născut în aceeași zi cu Cristiano Ronaldo (5 februarie)! 🐐🎂 A marcat de ziua ta?`;
-    } else {
-      shareText = `A marcat Cristiano Ronaldo de ziua ta? Verifică toate cele 366 de zile:`;
-    }
-  } else if (lang === "uz") {
-    if (dayData.goalsCount > 0) {
-      shareText = `Kristiano Ronaldo mening tug'ilgan kunimda (${dayData.formatted}) ${dayData.goalsCount} ta gol urgan! ⚽🎂 Sizning tug'ilgan kuningizdachi?`;
-    } else if (isRonaldoBday) {
-      shareText = `Men Kristiano Ronaldo bilan bir kunda tug'ilganman (5-fevral)! 🐐🎂 Sizning tug'ilgan kuningizdachi?`;
-    } else {
-      shareText = `Kristiano Ronaldo sizning tug'ilgan kuningizda gol urganmi? 366 kunlik natijalarni tekshiring:`;
     }
   } else {
     if (dayData.goalsCount > 0) {
@@ -5196,7 +4719,7 @@ async function renderBirthday(d) {
       if (vpillMin) vpillMin.textContent = `⚽ ${v.minute || match.minutes?.[idx] || ""}'`;
       if (vpillComp) vpillComp.textContent = match.competition || "Match";
       if (vpillScore) vpillScore.textContent = `${match.team} ${match.score} ${match.opponent}`;
-      
+
       if (vpillAssist) {
         if (v.assist) {
           vpillAssist.hidden = false;
@@ -5382,11 +4905,6 @@ async function renderBirthday(d) {
                 es: "¡Copiado!",
                 pt: "Copiado!",
                 fr: "Copié !",
-                ar: "تم النسخ!",
-                bn: "কপি করা হয়েছে!",
-                hi: "कॉपी किया गया!",
-                ro: "Copiat!",
-                uz: "Nusxalandi!"
               };
               shareMsg.textContent = copiedMsgs[lang] || "Copied!";
               setTimeout(() => { shareMsg.textContent = ""; }, 3000);
@@ -5406,11 +4924,6 @@ async function renderBirthday(d) {
               es: "¡Enlace copiado!",
               pt: "Link copiado!",
               fr: "Lien copié !",
-              ar: "تم نسخ الرابط!",
-              bn: "লিংক কপি করা হয়েছে!",
-              hi: "लिंक कॉपी किया गया!",
-              ro: "Link copiat!",
-              uz: "Havola nusxalandi!"
             };
             shareMsg.textContent = urlCopiedMsgs[lang] || "URL Copied!";
             setTimeout(() => { shareMsg.textContent = ""; }, 3000);
@@ -5494,7 +5007,6 @@ async function renderBirthday(d) {
       const url = new URL(location.href);
       history.replaceState(null, "", `/en/birthday/${key}${url.hash}`);
     } catch (_) {}
-
 
     const formatScore = (str) => {
       if (!str) return "—";
@@ -5893,7 +5405,6 @@ async function renderBirthday(d) {
   renderMethod(d, `Every single one of the ${n(d.totals.goals)} senior goals is cross-referenced with exact date, opponent, competition, minute, and scoreline.`);
 }
 
-
 function bindGoalCards(video, activeNum, activeTitle, activeMeta, activeMin, activeType, activeScore, activeComp, ytBtn, bdayLink) {
   const goalCards = document.querySelectorAll(".recent-goal-card");
   goalCards.forEach((card) => {
@@ -5927,7 +5438,6 @@ function bindGoalCards(video, activeNum, activeTitle, activeMeta, activeMin, act
       if (activeComp && comp) activeComp.textContent = comp;
       if (ytBtn && ytUrl) ytBtn.href = ytUrl;
       if (bdayLink && bdayUrl) bdayLink.href = bdayUrl;
-
 
       if (window.innerWidth < 768 && video) {
         video.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -5978,7 +5488,7 @@ async function autoPullLatestGoalLive(d) {
       (activeTitle && !activeTitle.textContent.toLowerCase().includes((g.opponent || "").toLowerCase()));
 
     if (isDesynced || g.goalNumber >= currentNum) {
-      if (activeNum) activeNum.textContent = lang === "uz" ? `${g.goalNumber}-gol` : `${t.goalPrefix}${g.goalNumber}`;
+      if (activeNum) activeNum.textContent = `${t.goalPrefix}${g.goalNumber}`;
       if (activeTitle && g.title) activeTitle.textContent = `${t.goalPrefix}${g.goalNumber} ${t.matchHighlights || "Match Highlights"}: ${g.title}`;
       if (activeMeta && g.venue) activeMeta.textContent = `${g.competition} • ${g.formattedDate} • ${g.venue}`;
       if (activeMin && g.minute) activeMin.textContent = g.minute;
@@ -6025,7 +5535,7 @@ async function autoPullLatestGoalLive(d) {
         if (gridNeedsSync || targetLatest.goalNumber >= firstCardId) {
           grid.innerHTML = payload.recentGoals.map((rg, idx) => {
             const isActive = idx === 0 ? " active" : "";
-            const goalLabel = lang === "uz" ? `${rg.goalNumber}-gol` : `${t.goalPrefix}${rg.goalNumber}`;
+            const goalLabel = `${t.goalPrefix}${rg.goalNumber}`;
             // Date pages exist in English only — never link non-EN date forks (404s).
             const bdayPath = rg.bdayUrl || `/en/birthday/${rg.bdayKey || "02-05"}`;
             return `
@@ -6106,7 +5616,6 @@ function renderLatestGoal(d) {
   initPortugalStreamNotification();
   renderExplore(d, "latest-goal");
 }
-
 
 // ---------- Back to Top Floating Button ----------
 function initUXEnhancements() {
@@ -6189,7 +5698,7 @@ function initBackToTop() {
 function fixLocaleLinks() {
   const lang = getLang();
   if (!lang) return;
-  const re = /^\/(en|es|pt|fr|ar|bn|hi|ro|uz)(?=\/|$)/;
+  const re = /^\/(en|es|pt|fr)(?=\/|$)/;
   const anchors = document.querySelectorAll("a[href]");
   for (const a of anchors) {
     // The language switcher's own links point at the OTHER languages by
@@ -6241,11 +5750,6 @@ load().then((d) => {
     es: "Error al cargar las estadísticas. Comprueba tu conexión y recarga la página.",
     pt: "Falha ao carregar as estatísticas. Verifique sua conexão e recarregue.",
     fr: "Échec du chargement des statistiques. Vérifiez votre connexion et actualisez la page.",
-    ar: "فشل تحميل الإحصائيات. يرجى التحقق من اتصالك بالإنترنت وإعادة تحديث الصفحة.",
-    bn: "পরিসংখ্যান লোড করা যায়নি। ইন্টারনেট সংযোগ পরীক্ষা করে পেজ রিফ্রেশ করুন।",
-    hi: "आंकड़े लोड करने में विफल। अपना इंटरनेट कनेक्शन जांचें और पेज रीफ्रेश करें।",
-    ro: "Eroare la încărcarea statisticilor. Verificați conexiunea și reîmprospătați pagina.",
-    uz: "Statistikalarni yuklab bo'lmadi. Internet aloqangizni tekshiring va sahifani yangilang."
   };
   const msgText = errorMsgs[lang] || "Stats failed to load. Check your connection and refresh.";
   document.querySelectorAll("main.wrap").forEach((m) => {
@@ -6279,11 +5783,6 @@ load().then((d) => {
       es: { t: "¿Mantener RonaldoStats en marcha?", b: "El hosting y el streaming de vídeo los pagamos de nuestro bolsillo — un café mantiene el sitio gratis.", c: "Apoyar en Ko-fi", l: "Quizás más tarde", x: "Cerrar" },
       pt: { t: "Manter o RonaldoStats no ar?", b: "Hospedagem e streaming de vídeo saem do nosso bolso — um café mantém o site grátis.", c: "Apoiar no Ko-fi", l: "Talvez mais tarde", x: "Fechar" },
       fr: { t: "Garder RonaldoStats en ligne ?", b: "L'hébergement et le streaming vidéo sortent de notre poche — un café garde le site gratuit.", c: "Soutenir sur Ko-fi", l: "Peut-être plus tard", x: "Fermer" },
-      ar: { t: "أبقِ RonaldoStats يعملًا", b: "الاستضافة وبث الفيديو من جيبنا — فنجان قهوة يُبقي الموقع مجانيًا للجميع.", c: "ادعمنا على Ko-fi", l: "لاحقًا", x: "إغلاق" },
-      bn: { t: "RonaldoStats চালু রাখুন", b: "হোস্টিং ও ভিডিও স্ট্রিমিং আমরা নিজের জেব থেকে চালাই — এক কাপ চা সাইটটি ফ্রি রাখতে সাহায্য করে।", c: "Ko-fi-তে সাপোর্ট করুন", l: "পরে হয়তো", x: "বন্ধ করুন" },
-      hi: { t: "RonaldoStats को चलता रखें", b: "होस्टिंग और वीडियो स्ट्रीमिंग हम अपनी जेब से चलाते हैं — एक कॉफ़ी साइट को मुफ़्त रखने में मदद करती है।", c: "Ko-fi पर सपोर्ट करें", l: "शायद बाद में", x: "बंद करें" },
-      ro: { t: "Ține RonaldoStats în viață", b: "Găzduirea și streamingul video vin din buzunarul nostru — o cafea ține site-ul gratuit.", c: "Susține pe Ko-fi", l: "Mai târziu", x: "Închide" },
-      uz: { t: "RonaldoStats ishlashda qolsin", b: "Hosting va video streaming bizning cho'mizdan ketadi — bir piyola sayt bepul qolishiga yordam beradi.", c: "Ko-fi orqali qo'llab-quvvatlash", l: "Keyinroq", x: "Yopish" }
     };
 
     const lang = (typeof getLang === "function" ? getLang() : "en");

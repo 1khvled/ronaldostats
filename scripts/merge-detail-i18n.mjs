@@ -15,18 +15,13 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 // the opponent of the debut, in each language
 const DEBUT = {
   es: "PSV Eindhoven (clasificación de la Champions League)",
   pt: "PSV Eindhoven (classificação da Champions League)",
   fr: "PSV Eindhoven (qualifications de la Ligue des champions)",
-  ar: "PSV (تصفيات UEFA Champions League)",
-  bn: "PSV (Champions League বাছাই পর্ব)",
-  hi: "PSV (Champions League क्वालिफ़ाइंग)",
-  ro: "PSV Eindhoven (preliminariile Ligii Campionilor)",
-  uz: "PSV Eindhoven (Chempionlar Ligasi saralash bosqichi)",
 };
 
 // the FAQ sentence: the old key, the new key, and the date phrase inside it

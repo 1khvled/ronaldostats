@@ -3,7 +3,7 @@ import path from "node:path";
 import os from "node:os";
 import { fileURLToPath } from "node:url";
 const dir = path.join(path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), "src", "i18n");
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en","es","pt","fr"];
 const EXPORTS = ["HOME", "BY_YEAR", "BY_SEASON", "DASH", "TIMELINE", "ACH", "BDAY", "LATEST_GOAL", "ARG_STREAM", "EXPLORE_LANGS", "ERA_INTROS", "CABINET"];
 let bad = 0;
 for (const lang of LANGS) {

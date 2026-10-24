@@ -17,7 +17,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 const app = fs.readFileSync(path.join(ROOT, "src", "app.js"), "utf8");
 const en = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "i18n", "shell", "en.json"), "utf8"));

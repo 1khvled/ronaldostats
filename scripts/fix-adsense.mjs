@@ -6,7 +6,7 @@ const WRONG = "ca-pub-8397501846854760";
 
 const files = [];
 for (const f of fs.readdirSync(ROOT)) if (f.endsWith(".html")) files.push(f);
-for (const d of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+for (const d of ["es","pt","fr"]) {
   for (const f of fs.readdirSync(path.join(ROOT, d))) if (f.endsWith(".html")) files.push(d + "/" + f);
 }
 let fixed = 0;
@@ -33,7 +33,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
   "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 

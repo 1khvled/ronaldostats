@@ -7,7 +7,7 @@ const rootDir = path.resolve(__dirname, "..");
 const publicSitemap = path.join(rootDir, "public", "sitemap.xml");
 const distSitemap = path.join(rootDir, "dist", "sitemap.xml");
 
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en","es","pt","fr"];
 
 const todayIso = new Date().toISOString().split("T")[0];
 
@@ -32,7 +32,7 @@ const LG_VIDEO = LG?.videoUrl || `https://cr7allgoals.com/goal/${LG_NUM}/`;
 // URL-safe slug fragments for title/tags
 const LG_OPP_TAG = (LG_OPP || "Opponent").replace(/[^A-Za-z0-9]+/g, " ").trim();
 
-// 934 → "934th" / "934e" / "934e" / "٩٣٤" style helpers are avoided; templates
+// 934 → "934th" / "934e" / "934e" style helpers are avoided; templates
 // interpolate the raw number and let the locale wording carry the grammar.
 
 const SUBPAGES = [
@@ -63,17 +63,6 @@ function getHreflangsXml(slugPath) {
     `    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ronaldostats.site/fr${slugPath}" />`,
     `    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://www.ronaldostats.site/fr${slugPath}" />`,
     `    <xhtml:link rel="alternate" hreflang="fr-NE" href="https://www.ronaldostats.site/fr${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="ar" href="https://www.ronaldostats.site/ar${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="ar-EG" href="https://www.ronaldostats.site/ar${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="bn" href="https://www.ronaldostats.site/bn${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://www.ronaldostats.site/bn${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="bn-IN" href="https://www.ronaldostats.site/bn${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="hi" href="https://www.ronaldostats.site/hi${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.ronaldostats.site/hi${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ronaldostats.site/ro${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="ro-RO" href="https://www.ronaldostats.site/ro${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="uz" href="https://www.ronaldostats.site/uz${slugPath}" />`,
-    `    <xhtml:link rel="alternate" hreflang="uz-UZ" href="https://www.ronaldostats.site/uz${slugPath}" />`,
     `    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en${slugPath}" />`
   ].join("\n");
 }
@@ -216,31 +205,6 @@ const videoMeta = {
     desc: `Regardez le but #${LG_NUM} de Cristiano Ronaldo : une frappe ${LG_FINISH.toLowerCase()} pour ${LG_TEAM} contre ${LG_OPP} en ${LG_COMP} le ${LG_DATE}.`,
     tags: ["Cristiano Ronaldo", `But ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "Dernier but de Ronaldo"]
   },
-  ar: {
-    title: `فيديو آخر هدف لكريستيانو رونالدو: الهدف ${LG_NUM} ضد ${LG_OPP}`,
-    desc: `شاهد هدف كريستيانو رونالدو رقم ${LG_NUM}: هدف بقدم ${LG_FINISH === "Left Foot" ? "اليسرى" : LG_FINISH === "Right Foot" ? "اليمنى" : "رأسية"} لصالح ${LG_TEAM} ضد ${LG_OPP} في ${LG_COMP} يوم ${LG_DATE}.`,
-    tags: ["كريستيانو رونالدو", `الهدف ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "آخر هدف لميسي"]
-  },
-  bn: {
-    title: `ক্রিস্টিয়ানো রোনালদোর সর্বশেষ গোল ভিডিও: ${LG_OPP}-এর বিরুদ্ধে ${LG_NUM}তম গোল`,
-    desc: `ক্রিস্টিয়ানো রোনালদোর ${LG_NUM}তম গোলটি দেখুন: ${LG_DATE}-এ ${LG_COMP}-এ ${LG_OPP}-এর বিরুদ্ধে ${LG_TEAM}-এর হয়ে।`,
-    tags: ["ক্রিস্টিয়ানো রোনালদো", `গোল ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "মেসির শেষ গোল"]
-  },
-  hi: {
-    title: `क्रिस्तियानो रोनाल्डो का आखिरी गोल वीडियो: ${LG_OPP} के खिलाफ ${LG_NUM}वां गोल`,
-    desc: `क्रिस्तियानो रोनाल्डो का ${LG_NUM}वां करियर गोल देखें: ${LG_DATE} को ${LG_COMP} में ${LG_OPP} के खिलाफ ${LG_TEAM} के लिए।`,
-    tags: ["क्रिस्तियानो रोनाल्डो", `गोल ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "मेसी का आखिरी गोल"]
-  },
-  ro: {
-    title: `Ultimul Gol al lui Cristiano Ronaldo: Golul #${LG_NUM} împotriva ${LG_OPP}`,
-    desc: `Urmărește golul #${LG_NUM} al lui Cristiano Ronaldo: gol ${LG_FINISH.toLowerCase()} pentru ${LG_TEAM} împotriva ${LG_OPP} în ${LG_COMP} pe ${LG_DATE}.`,
-    tags: ["Cristiano Ronaldo", `Gol ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "Ultimul gol Ronaldo"]
-  },
-  uz: {
-    title: `Cristiano Ronaldoning so'nggi goli: ${LG_OPP} ga qarshi ${LG_NUM}-gol`,
-    desc: `Cristiano Ronaldoning ${LG_NUM}-golini tomosha qiling: ${LG_DATE} kuni ${LG_COMP} doirasida ${LG_OPP} ga qarshi ${LG_TEAM} safida.`,
-    tags: ["Cristiano Ronaldo", `Gol ${LG_NUM}`, LG_OPP_TAG, LG_COMP, "Ronaldoning oxirgi goli"]
-  }
 };
 
 function getVideoXml(lang) {
@@ -275,14 +239,11 @@ ${getHreflangsXml("/" + sub.slug)}${imgXml}${vidXml}
 
 
 // 3. Other languages: Homepage + Subpages
-// Number rendering per locale (Bengali sitemap strings keep native digits,
-// matching the original copy; other locales use their group separator).
-const bnDigits = (s) => String(s).replace(/[0-9]/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
+// Number rendering per locale (group separator).
 const groupNum = (n, sep) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep);
-const APPS_SEP = { en: ",", es: ".", pt: ".", fr: " ", ar: ",", bn: ",", hi: ",", ro: ".", uz: " " };
-const num = (l, n) => (l === "bn" ? bnDigits(n) : String(n));
-const appsNum = (l) =>
-  l === "bn" ? bnDigits(groupNum(CAREER_APPS, ",")) : groupNum(CAREER_APPS, APPS_SEP[l] || ",");
+const APPS_SEP = { en: ",", es: ".", pt: ".", fr: " " };
+const num = (l, n) => String(n);
+const appsNum = (l) => groupNum(CAREER_APPS, APPS_SEP[l] || ",");
 const trophyNum = (l) => num(l, CAREER_TROPHIES);
 const ballonNum = (l) => num(l, BALLONS_DOR);
 
@@ -302,34 +263,9 @@ const langHomeMeta = {
     title: `Buts de Ronaldo : ${num("fr", CAREER_GOALS)} Buts Officiels en Direct`,
     caption: `Statistiques complètes de la carrière de Cristiano Ronaldo : ${num("fr", CAREER_GOALS)} buts en ${appsNum("fr")} matchs officiels, ${trophyNum("fr")} trophées collectifs et ${ballonNum("fr")} Ballons d'Or.`
   },
-  ar: {
-    priority: "0.95",
-    title: `أهداف ميسي: ${num("ar", CAREER_GOALS)} هدفاً رسمياً مباشر`,
-    caption: `إحصائيات مسيرة ليونيل ميسي الرسمية: ${num("ar", CAREER_GOALS)} هدفاً في ${appsNum("ar")} مباراة، ${trophyNum("ar")} بطولة و${ballonNum("ar")} كرات ذهبية.`
-  },
-  bn: {
-    priority: "0.95",
-    title: `মেসির মোট গোল: ${num("bn", CAREER_GOALS)} গোল লাইভ ট্র্যাকার`,
-    caption: `ক্রিস্টিয়ানো রোনালদোর অফিসিয়াল ক্যারিয়ার পরিসংখ্যান: ${appsNum("bn")} ম্যাচে ${num("bn", CAREER_GOALS)} গোল, ${trophyNum("bn")}টি শিরোপা এবং ${ballonNum("bn")}টি ব্যালন ডি'অর।`
-  },
-  hi: {
-    priority: "0.95",
-    title: `मेसी के कुल गोल: ${num("hi", CAREER_GOALS)} आधिकारिक गोल लाइव`,
-    caption: `लियोनेल मेसी के करियर के आधिकारिक आंकड़े: ${appsNum("hi")} मैचों में ${num("hi", CAREER_GOALS)} गोल, ${trophyNum("hi")} ट्रॉफियां और ${ballonNum("hi")} बैलन डी'ऑर।`
-  },
-  ro: {
-    priority: "0.95",
-    title: `Goluri Ronaldo: ${num("ro", CAREER_GOALS)} Goluri Oficiale Live`,
-    caption: `Statisticile complete ale carierei lui Cristiano Ronaldo: ${num("ro", CAREER_GOALS)} goluri în ${appsNum("ro")} meciuri oficiale, ${trophyNum("ro")} trofee și ${ballonNum("ro")} Baloane de Aur.`
-  },
-  uz: {
-    priority: "0.95",
-    title: `Ronaldo gollari: ${num("uz", CAREER_GOALS)} ta rasmiy gol`,
-    caption: `Cristiano Ronaldoning toʻliq rasmiy statistikasi: ${appsNum("uz")} ta oʻyinda ${num("uz", CAREER_GOALS)} ta gol, ${trophyNum("uz")} ta sovrin va ${ballonNum("uz")} ta Oltin toʻp.`
-  }
 };
 
-for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+for (const lang of ["es","pt","fr"]) {
   const meta = langHomeMeta[lang];
   // Homepage
   urlBlocks.push(`  <url>

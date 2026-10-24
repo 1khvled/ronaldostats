@@ -45,8 +45,7 @@ Inside a value you may change the text freely. Keep:
 | hat-trick | the term your language uses (often a loanword — keep it if that is natural) |
 | free kick, penalty, assist | the terms your language uses |
 
-Numbers stay in Western digits. The renderer has a helper that renders
-Bengali numerals for the `bn` locale; you supply the Western digits.
+Numbers stay in Western digits.
 
 ## Tone
 

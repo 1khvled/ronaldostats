@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 // The page is Ronaldo's nine years AT Real Madrid. Rename it and say so.
 const COPY = [
@@ -40,46 +40,6 @@ const T = {
     "His Nine Years at the Bernabéu": "Ses neuf ans au Bernabéu",
     "Ronaldo at Real Madrid": "Ronaldo au Real Madrid",
     "Real Madrid years": "Les années au Real Madrid",
-  },
-  ar: {
-    "Ronaldo at Real Madrid: 450 Goals, 311 in La Liga, 18 in the Clásico | RonaldoStats": "رونالدو في ريال مدريد: 450 هدفاً، 311 في الليغا، 18 في الكلاسيكو | RonaldoStats",
-    "Frequently Asked Questions: Ronaldo at Real Madrid": "الأسئلة الشائعة: رونالدو في ريال مدريد",
-    "Cristiano Ronaldo at Real Madrid: 450 goals in nine years, 311 in La Liga, four Champions League titles and 18 goals in the El Clásico.": "كريستيانو رونالدو في ريال مدريد: 450 هدفاً في تسع سنوات، 311 في الليغا، أربعة أبطال أوروبا و18 هدفاً في الكلاسيكو.",
-    "His Nine Years at the Bernabéu": "تسع سنوات في البرنابيو",
-    "Ronaldo at Real Madrid": "رونالدو في ريال مدريد",
-    "Real Madrid years": "سنواته في ريال مدريد",
-  },
-  bn: {
-    "Ronaldo at Real Madrid: 450 Goals, 311 in La Liga, 18 in the Clásico | RonaldoStats": "রিয়াল মাদ্রিদে রোনালদো: ৪৫০ গোল, লা লিগায় ৩১১, ক্লাসিকোতে ১৮ | RonaldoStats",
-    "Frequently Asked Questions: Ronaldo at Real Madrid": "সাধারণ প্রশ্ন: রিয়াল মাদ্রিদে রোনালদো",
-    "Cristiano Ronaldo at Real Madrid: 450 goals in nine years, 311 in La Liga, four Champions League titles and 18 goals in the El Clásico.": "রিয়াল মাদ্রিদে ক্রিস্টিয়ানো রোনালদো: নয় বছরে ৪৫০ গোল, লা লিগায় ৩১১, চারটি চ্যাম্পিয়ন্স লিগ এবং ক্লাসিকোতে ১৮ গোল।",
-    "His Nine Years at the Bernabéu": "বার্নাবেউতে তাঁর নয় বছর",
-    "Ronaldo at Real Madrid": "রিয়াল মাদ্রিদে রোনালদো",
-    "Real Madrid years": "রিয়াল মাদ্রিদের বছরগুলো",
-  },
-  hi: {
-    "Ronaldo at Real Madrid: 450 Goals, 311 in La Liga, 18 in the Clásico | RonaldoStats": "रियल मैड्रिड में रोनाल्डो: 450 गोल, ला लीगा में 311, क्लासिको में 18 | RonaldoStats",
-    "Frequently Asked Questions: Ronaldo at Real Madrid": "अक्सर पूछे जाने वाले प्रश्न: रियल मैड्रिड में रोनाल्डो",
-    "Cristiano Ronaldo at Real Madrid: 450 goals in nine years, 311 in La Liga, four Champions League titles and 18 goals in the El Clásico.": "रियल मैड्रिड में क्रिस्टियानो रोनाल्डो: नौ साल में 450 गोल, ला लीगा में 311, चार चैंपियंस लीग और क्लासिको में 18 गोल।",
-    "His Nine Years at the Bernabéu": "बर्नाबेउ में उनके नौ साल",
-    "Ronaldo at Real Madrid": "रियल मैड्रिड में रोनाल्डो",
-    "Real Madrid years": "रियल मैड्रिड के वर्ष",
-  },
-  ro: {
-    "Ronaldo at Real Madrid: 450 Goals, 311 in La Liga, 18 in the Clásico | RonaldoStats": "Ronaldo la Real Madrid: 450 goluri, 311 în La Liga, 18 în Clásico | RonaldoStats",
-    "Frequently Asked Questions: Ronaldo at Real Madrid": "Întrebări frecvente: Ronaldo la Real Madrid",
-    "Cristiano Ronaldo at Real Madrid: 450 goals in nine years, 311 in La Liga, four Champions League titles and 18 goals in the El Clásico.": "Cristiano Ronaldo la Real Madrid: 450 de goluri în nouă ani, 311 în La Liga, patru Ligi ale Campionilor și 18 goluri în Clásico.",
-    "His Nine Years at the Bernabéu": "Cei nouă ani de la Bernabéu",
-    "Ronaldo at Real Madrid": "Ronaldo la Real Madrid",
-    "Real Madrid years": "Anii de la Real Madrid",
-  },
-  uz: {
-    "Ronaldo at Real Madrid: 450 Goals, 311 in La Liga, 18 in the Clásico | RonaldoStats": "Real Madridda Ronaldo: 450 gol, La Ligada 311, Klassikoda 18 | RonaldoStats",
-    "Frequently Asked Questions: Ronaldo at Real Madrid": "Tez-tez beriladigan savollar: Real Madridda Ronaldo",
-    "Cristiano Ronaldo at Real Madrid: 450 goals in nine years, 311 in La Liga, four Champions League titles and 18 goals in the El Clásico.": "Real Madridda Kristiano Ronaldo: to'qqiz yilda 450 gol, La Ligada 311, to'rtta Chempionlar Ligasi va Klassikoda 18 gol.",
-    "His Nine Years at the Bernabéu": "Bernabeudagi to'qqiz yili",
-    "Ronaldo at Real Madrid": "Real Madridda Ronaldo",
-    "Real Madrid years": "Real Madrid'dagi yillari",
   },
 };
 
@@ -123,11 +83,6 @@ const QUESTION = {
   es: ["¿Cuál es el récord de Ronaldo contra el Real Madrid?", "¿Cuál es el récord de Ronaldo en el Real Madrid?", "página de Ronaldo contra el Real Madrid", "página de Ronaldo en el Real Madrid"],
   pt: ["Qual é o retrospecto de Ronaldo contra o Real Madrid?", "Qual é o retrospecto de Ronaldo no Real Madrid?", "página de Ronaldo contra o Real Madrid", "página de Ronaldo no Real Madrid"],
   fr: ["Quel est le bilan de Ronaldo contre le Real Madrid ?", "Quel est le bilan de Ronaldo au Real Madrid ?", "page Ronaldo contre le Real Madrid", "page Ronaldo au Real Madrid"],
-  ar: ["ما هو سجل رونالدو ضد ريال مدريد؟", "ما هو سجل رونالدو في ريال مدريد؟", "صفحة رونالدو ضد ريال مدريد", "صفحة رونالدو في ريال مدريد"],
-  bn: ["রিয়াল মাদ্রিদের বিরুদ্ধে রোনালদোর রেকর্ড কী?", "রিয়াল মাদ্রিদে রোনালদোর রেকর্ড কী?", "রিয়াল মাদ্রিদের বিরুদ্ধে রোনালদোর পাতা", "রিয়াল মাদ্রিদে রোনালদোর পাতা"],
-  hi: ["रियल मैड्रिड के खिलाफ रोनाल्डो का रिकॉर्ड क्या है?", "रियल मैड्रिड में रोनाल्डो का रिकॉर्ड क्या है?", "रियल मैड्रिड के खिलाफ रोनाल्डो का पृष्ठ", "रियल मैड्रिड में रोनाल्डो का पृष्ठ"],
-  ro: ["Care este bilanul lui Ronaldo împotriva Real Madrid?", "Care este bilanul lui Ronaldo la Real Madrid?", "pagina Ronaldo împotriva Real Madrid", "pagina Ronaldo la Real Madrid"],
-  uz: ["Real Madridga qarshi Ronaldo natijasi qanday?", "Real Madridda Ronaldo natijasi qanday?", "Real Madridga qarshi Ronaldo sahifasi", "Real Madridda Ronaldo sahifasi"],
 };
 {
   const dir = path.join(ROOT, "src/i18n");

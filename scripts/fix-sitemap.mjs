@@ -141,18 +141,6 @@ t = t.replace(
 t = t.replace(/<image:geo_location>Miami, Florida, United States<\/image:geo_location>/,
   "<image:geo_location>${(LG?.venue || \"Riyadh, Saudi Arabia\").replace(/&/g, \"&amp;\")}</image:geo_location>");
 
-// 9. the video metadata in the three languages that still named Messi
-t = t.replace(/فيديو آخر هدف لليونيل ميسي: الهدف/g, "فيديو آخر هدف لكريستيانو رونالدو: الهدف");
-t = t.replace(/شاهد هدف ليونيل ميسي رقم/g, "شاهد هدف كريستيانو رونالدو رقم");
-t = t.replace(/"ليونيل ميسي"/g, '"كريستيانو رونالدو"');
-t = t.replace(/লিওনেল মেসির সর্বশেষ গোল ভিডিও/g, "ক্রিস্টিয়ানো রোনালদোর সর্বশেষ গোল ভিডিও");
-t = t.replace(/লিওনেল মেসির/g, "ক্রিস্টিয়ানো রোনালদোর");
-t = t.replace(/"লিওনেল মেসি"/g, '"ক্রিস্টিয়ানো রোনালদো"');
-t = t.replace(/मेसी का शেষ गोल/g, "रोनाल्डो का शेख गोल");
-t = t.replace(/लियोनेल मेसी का आखिरी गोल वीडियो/g, "क्रिस्तियानो रोनाल्डो का आखिरी गोल वीडियो");
-t = t.replace(/लियोनेल मेसी का/g, "क्रिस्तियानो रोनाल्डो का");
-t = t.replace(/"लियोनेल मेसी"/g, '"क्रिस्तियानो रोनाल्डो"');
-
 // 10. the fallback team
 t = t.replace(/const LG_TEAM = \(LG\?\.team \|\| "Inter Miami CF"\)/, 'const LG_TEAM = (LG?.team || "Al Nassr")');
 

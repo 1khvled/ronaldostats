@@ -39,8 +39,7 @@ Build check: `npm run build` then `npm run preview` (http://localhost:4173/).
 | Ronaldo vs Messi | `/ronaldo-vs-messi` | The full head-to-head, by the numbers |
 | Gear | `/gear` | The merchandise store |
 
-Every page exists in English, Spanish, Portuguese, French, Arabic, Bengali,
-Hindi, Romanian and Uzbek.
+Every page exists in English, Spanish, Portuguese and French.
 
 ## The data rule (no mistakes)
 

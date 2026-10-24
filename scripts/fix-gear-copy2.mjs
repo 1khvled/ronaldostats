@@ -21,7 +21,7 @@ const NEW = "a Portugal national team shirt";
 // --- the dictionaries: the key is the English text ---------------------------
 {
   const SHELL = ROOT + "src/i18n/shell/";
-  for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+  for (const lang of ["es","pt","fr"]) {
     const file = SHELL + lang + ".json";
     const dict = JSON.parse(fs.readFileSync(file, "utf8"));
     const out = {};

@@ -10,11 +10,6 @@ const NOTE = {
   es: "Todos los goles que marcó Ronaldo en la temporada {season}.",
   pt: "Todos os gols que o Ronaldo marcou na temporada {season}.",
   fr: "Tous les buts de Ronaldo lors de la saison {season}.",
-  ar: "كل أهداف رونالدو في موسم {season}.",
-  bn: "{season} মৌসুমে রোনালদোর করা সব গোল।",
-  hi: "{season} सीज़न में रोनाल्डो के सभी गोल।",
-  ro: "Toate golurile lui Ronaldo din sezonul {season}.",
-  uz: "{season} mavsumida Ronaldoning barcha golari.",
 };
 {
   const dir = path.join(ROOT, "src", "i18n");

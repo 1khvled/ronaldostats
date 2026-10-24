@@ -33,23 +33,6 @@ const FIXES = {
     ["sur les 96 bulletins de vote", "sur 77 des 96 bulletins de vote", 3],
     ["contre le Cagliari en février 2020", "contre le SPAL en février 2020", 1],
   ],
-  ar: [
-    ["في جميع بطاقات التصويت الـ 96", "في 77 بطاقة من بطاقات التصويت الـ 96", 2],
-    ["بتصويت جميع بطاقات الـ 96", "بتصويت 77 بطاقة من بطاقات الـ 96", 1],
-  ],
-  bn: [
-    ["সব 96টি ভোটেই", "96টি ভোটের মধ্যে 77টিতে", 3],
-  ],
-  hi: [
-    ["सभी 96 वोटिंग पत्रों पर", "96 वोटिंग पत्रों में से 77 पर", 3],
-  ],
-  ro: [
-    ["pe toate cele 96 de buletine de vot", "pe 77 din cele 96 de buletine de vot", 3],
-    ["împotriva celor de la Cagliari, în februarie 2020", "împotriva celor de la SPAL, în februarie 2020", 1],
-  ],
-  uz: [
-    ["96 ta rayonlikdan hammasi", "96 ta rayonlikdan 77 tasi", 3],
-  ],
 };
 
 let problems = 0;

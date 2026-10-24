@@ -3,7 +3,7 @@ import path from "node:path";
 const DIR = "D:/Projects/ronaldo-stats/src/i18n/shell/";
 // The rail mark used to read "M10" (Messi's shirt number) and now reads "CR7";
 // the old key is dead weight in every dictionary.
-for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+for (const lang of ["es","pt","fr"]) {
   const f = DIR + lang + ".json";
   const d = JSON.parse(fs.readFileSync(f, "utf8"));
   if (!("M10" in d)) { console.log(lang + ": nothing to remove"); continue; }

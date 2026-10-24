@@ -5,51 +5,38 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
 
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en", "es", "pt", "fr"];
 
-const SUBPAGES = [
+const PAGES = [
+  "index",
   "dashboard",
   "goalsbyseason",
   "goalsbyyear",
   "timeline",
-  "achievements",
-  "birthday",
-  "ronaldo-vs-messi",
+  "trophies",
+  "champions-league",
+  "gear",
   "real-madrid",
-  "gear"
+  "ronaldo-vs-messi"
 ];
 
-// 26 reciprocal hreflangs
+const HREFLANGS = [
+  ["en", "en-US", "en-NG", "en-IN", "en-PH"],
+  ["es", "es-AR", "es-ES"],
+  ["pt", "pt-BR", "pt-PT"],
+  ["fr", "fr-FR", "fr-CA"]
+];
+
 function getHreflangTags(pageSlug) {
   const slugPath = pageSlug === "index" || !pageSlug ? "" : `/${pageSlug}`;
-  return [
-    `<link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en${slugPath}"/>`,
-    `<link rel="alternate" hreflang="en-US" href="https://www.ronaldostats.site/en${slugPath}"/>`,
-    `<link rel="alternate" hreflang="en-NG" href="https://www.ronaldostats.site/en${slugPath}"/>`,
-    `<link rel="alternate" hreflang="en-IN" href="https://www.ronaldostats.site/en${slugPath}"/>`,
-    `<link rel="alternate" hreflang="en-PH" href="https://www.ronaldostats.site/en${slugPath}"/>`,
-    `<link rel="alternate" hreflang="es" href="https://www.ronaldostats.site/es${slugPath}"/>`,
-    `<link rel="alternate" hreflang="es-AR" href="https://www.ronaldostats.site/es${slugPath}"/>`,
-    `<link rel="alternate" hreflang="es-ES" href="https://www.ronaldostats.site/es${slugPath}"/>`,
-    `<link rel="alternate" hreflang="pt" href="https://www.ronaldostats.site/pt${slugPath}"/>`,
-    `<link rel="alternate" hreflang="pt-BR" href="https://www.ronaldostats.site/pt${slugPath}"/>`,
-    `<link rel="alternate" hreflang="pt-PT" href="https://www.ronaldostats.site/pt${slugPath}"/>`,
-    `<link rel="alternate" hreflang="fr" href="https://www.ronaldostats.site/fr${slugPath}"/>`,
-    `<link rel="alternate" hreflang="fr-FR" href="https://www.ronaldostats.site/fr${slugPath}"/>`,
-    `<link rel="alternate" hreflang="fr-NE" href="https://www.ronaldostats.site/fr${slugPath}"/>`,
-    `<link rel="alternate" hreflang="ar" href="https://www.ronaldostats.site/ar${slugPath}"/>`,
-    `<link rel="alternate" hreflang="ar-EG" href="https://www.ronaldostats.site/ar${slugPath}"/>`,
-    `<link rel="alternate" hreflang="bn" href="https://www.ronaldostats.site/bn${slugPath}"/>`,
-    `<link rel="alternate" hreflang="bn-BD" href="https://www.ronaldostats.site/bn${slugPath}"/>`,
-    `<link rel="alternate" hreflang="bn-IN" href="https://www.ronaldostats.site/bn${slugPath}"/>`,
-    `<link rel="alternate" hreflang="hi" href="https://www.ronaldostats.site/hi${slugPath}"/>`,
-    `<link rel="alternate" hreflang="hi-IN" href="https://www.ronaldostats.site/hi${slugPath}"/>`,
-    `<link rel="alternate" hreflang="ro" href="https://www.ronaldostats.site/ro${slugPath}"/>`,
-    `<link rel="alternate" hreflang="ro-RO" href="https://www.ronaldostats.site/ro${slugPath}"/>`,
-    `<link rel="alternate" hreflang="uz" href="https://www.ronaldostats.site/uz${slugPath}"/>`,
-    `<link rel="alternate" hreflang="uz-UZ" href="https://www.ronaldostats.site/uz${slugPath}"/>`,
-    `<link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en${slugPath}"/>`
-  ].join("\n");
+  const tags = [];
+  for (const [base, ...variants] of HREFLANGS) {
+    for (const code of [base, ...variants]) {
+      tags.push(`<link rel="alternate" hreflang="${code}" href="https://www.ronaldostats.site/${base}${slugPath}"/>`);
+    }
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="https://www.ronaldostats.site/en${slugPath}"/>`);
+  return tags.join("\n");
 }
 
 function updateFileHreflangs(filePath, lang, slug) {
@@ -61,15 +48,11 @@ function updateFileHreflangs(filePath, lang, slug) {
   const canonicalTag = `<link rel="canonical" href="${canonicalUrl}"/>`;
   const hreflangs = getHreflangTags(slug);
 
-  // Remove existing canonical links
   content = content.replace(/<link[^>]+rel=["']canonical["'][^>]*>\s*/gi, "");
   content = content.replace(/<link[^>]+href=["'][^"']+["'][^>]+rel=["']canonical["'][^>]*>\s*/gi, "");
-
-  // Remove existing alternate/hreflang links
   content = content.replace(/<link[^>]+hreflang=["'][^"']+["'][^>]*>\s*/gi, "");
   content = content.replace(/<link[^>]+rel=["']alternate["'][^>]+hreflang=["'][^"']+["'][^>]*>\s*/gi, "");
 
-  // Insert fresh block right after <head> or after meta description if present
   const block = `\n${canonicalTag}\n${hreflangs}\n`;
 
   if (/<meta[^>]+name=["']description["'][^>]*>/i.test(content)) {
@@ -81,22 +64,13 @@ function updateFileHreflangs(filePath, lang, slug) {
   fs.writeFileSync(filePath, content, "utf8");
 }
 
-// 1. Update root English files
-for (const sub of SUBPAGES) {
-  updateFileHreflangs(path.join(rootDir, `${sub}.html`), "en", sub);
-}
-
-// 2. Update Spanish files
-for (const sub of SUBPAGES) {
-  updateFileHreflangs(path.join(rootDir, "es", `${sub}.html`), "es", sub);
-}
-
-// 3. Update all 7 generated languages
-const otherLangs = ["pt", "fr", "ar", "bn", "hi", "ro", "uz"];
-for (const l of otherLangs) {
-  for (const sub of SUBPAGES) {
-    updateFileHreflangs(path.join(rootDir, l, `${sub}.html`), l, sub);
+for (const lang of LANGS) {
+  for (const page of PAGES) {
+    const file = page === "index"
+      ? path.join(rootDir, lang === "en" ? "index.html" : `${lang}/index.html`)
+      : path.join(rootDir, lang === "en" ? `${page}.html` : `${lang}/${page}.html`);
+    updateFileHreflangs(file, lang, page);
   }
 }
 
-console.log("Synchronized canonicals and 26 hreflang tags across all 9 languages and 8 subpages!");
+console.log("Synchronized canonicals and hreflang tags across 4 languages.");

@@ -61,11 +61,6 @@ const FAQ_FIXES = {
   es: ["sus primeros goles profesionales llegaron dos meses después, ante el Moreirense.", "sus primeros goles profesionales llegaron siete semanas después, ante el Moreirense."],
   pt: ["seus primeiros gols profissionais vieram dois meses depois, contra o Moreirense.", "seus primeiros gols profissionais vieram sete semanas depois, contra o Moreirense."],
   fr: ["ses premiers buts en équipe première sont tombés deux mois plus tard contre Moreirense.", "ses premiers buts en équipe première sont tombés sept semaines plus tard contre Moreirense."],
-  ar: ["وكانت أهدافه الأولى في المحترفين بعد شهرين أمام موريرينسي.", "وكانت أهدافه الأولى في المحترفين بعد سبعة أسابيع أمام موريرينسي."],
-  bn: ["দুই মাস পর মোরাইরেনসের বিরুদ্ধেই তাঁর প্রথম সিনিয়র গোল।", "সাত সপ্তাহ পর মোরাইরেনসের বিরুদ্ধেই তাঁর প্রথম সিনিয়র গোল।"],
-  hi: ["पहले सीनियर गोल दो महीने बाद मोरेरेंसे के खिलाफ आए।", "पहले सीनियर गोल सात सप्ताह बाद मोरेरेंसे के खिलाफ आए।"],
-  ro: ["primele sale goluri la seniori au venit două luni mai târziu, împotriva celor de la Moreirense.", "primele sale goluri la seniori au venit șapte săptămâni mai târziu, împotriva celor de la Moreirense."],
-  uz: ["birinchi rasmiy gollaridan ikki oy keyin Moreirense ga qarshi keldi.", "birinchi rasmiy gollaridan yetti hafta keyin Moreirense ga qarshi keldi."],
 };
 
 let problems = 0;

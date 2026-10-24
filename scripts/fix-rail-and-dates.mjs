@@ -6,7 +6,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replac
 // The rail in the twelve shells is already right: the CR7 monogram in the
 // Ronaldo palette and the translated labels. The sync script carried the
 // Messi project's labels ("against Ronaldo", "Messi's store") and rewrote the
-// Arabic, Bengali, Hindi, Romanian and Uzbek rails in English on every build.
+// localized rails in English on every build.
 {
   const P = path.join(ROOT, "package.json");
   const pkg = JSON.parse(fs.readFileSync(P, "utf8"));

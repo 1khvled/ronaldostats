@@ -17,7 +17,7 @@ facts, the brand, the routes and the technical contract. Follow it exactly.
 | Google tag | `G-FERBLJWWWZ` (keep as-is) |
 | AdSense | `ca-pub-8397501846754760` (keep as-is) |
 
-Language codes: `en es pt fr ar bn hi ro uz`. `ar` is RTL (`dir="rtl"`).
+Language codes: `en es pt fr`. All four are LTR (`dir="ltr"`).
 
 ## 2. Routes
 
@@ -93,11 +93,10 @@ always carry a caveat in the visible copy ("provisional until a hand count").
 3. **Keep the `<script>` tags**, including `src/app.js` with `type="module"`.
 4. **Keep exactly one `<h1>` per page** and a sane heading hierarchy
    (H1 → H2 → H3). No level skips.
-5. **Keep the `<html lang>` and `dir`** attributes; add `dir="rtl"` only for Arabic.
+5. **Keep the `<html lang>` and `dir`** attributes (`dir="ltr"` for every supported language).
 6. Canonical + hreflang: one canonical for the page, plus the full hreflang
    set (`en`, `en-US`, `en-NG`, `en-IN`, `en-PH`, `es`, `es-AR`, `es-ES`, `pt`,
-   `pt-BR`, `pt-PT`, `fr`, `fr-FR`, `fr-CA`, `ar`, `ar-EG`, `bn`, `bn-BD`,
-   `bn-IN`, `hi`, `hi-IN`, `ro`, `ro-RO`, `uz`, `uz-UZ`, `x-default`) pointing at
+   `pt-BR`, `pt-PT`, `fr`, `fr-FR`, `fr-CA`, `x-default`) pointing at
    `https://www.ronaldostats.site/<lang>/<slug>`.
 7. **Write UTF-8 without BOM.** Use Node `fs.writeFileSync(path, text, "utf8")`.
    NEVER use PowerShell `Set-Content` (it writes a BOM and mangles em dashes

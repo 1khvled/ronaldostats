@@ -10,11 +10,6 @@ const NOTE = {
   es: "Este gol aparece en una compilación de todos los goles. Usa el enlace del archivo para encontrar su posición exacta.",
   pt: "Este golo aparece numa compilação de todos os golos. Use o link do arquivo para encontrar a posição exata.",
   fr: "Ce but figure dans une compilation de tous les buts. Utilisez le lien de l'archive pour trouver sa position exacte.",
-  ar: "هذا الهدف يظهر في تجميع جميع الأهداف. استخدم رابط الأرشيف لمعرفة موضعه بالضبط.",
-  bn: "এই গোলটি সব গোলের সংকলনে রয়েছে। সঠিক অবস্থান জানতে আর্কাইভ লিঙ্ক ব্যবহার করুন।",
-  hi: "यह गोल सभी गोलों के संकलन में है। इसकी सही जगह जानने के लिए आर्काइव लिंक का उपयोग करें।",
-  ro: "Acest gol apare într-o compilație cu toate golurile. Folosiți linkul arhivei pentru poziția exactă.",
-  uz: "Bu gol barchi gollar kompilyatsiyasida mavjud. Uni aniq joyini topish uchun arxiv havolasidan foydalaning.",
 };
 {
   const dir = path.join(ROOT, "src", "i18n");

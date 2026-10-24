@@ -90,111 +90,6 @@ const NAV_LABELS = {
     themeToggle: "Basculer le thème",
     darkMode: "Mode sombre"
   },
-  ar: {
-    badgeAria: "الرئيسية RonaldoStats",
-    langName: "العربية",
-    langTag: "AR",
-    langSelectAria: "اختر اللغة (العربية)",
-    langSelectTitle: "اختر اللغة",
-    home: "الرئيسية",
-    latestGoal: "آخر هدف",
-    bday: "عيد الميلاد",
-    ronaldo: "ضد ميسي",
-    madrid: "ضد ريال مدريد",
-    ucl: "دوري الأبطال",
-    byyear: "الأهداف سنوياً",
-    byseason: "المواسم",
-    dashboard: "لوحة البيانات",
-    timeline: "التاريخ",
-    achievements: "الكؤوس",
-    gear: "متجر رونالدو",
-    themeToggle: "تبديل الوضع",
-    darkMode: "الوضع الداكن"
-  },
-  bn: {
-    badgeAria: "হোম RonaldoStats",
-    langName: "বাংলা",
-    langTag: "BN",
-    langSelectAria: "ভাষা নির্বাচন করুন (বাংলা)",
-    langSelectTitle: "ভাষা নির্বাচন করুন",
-    home: "হোম",
-    latestGoal: "সাম্প্রতিক গোল",
-    bday: "জন্মদিন",
-    ronaldo: "বনাম মেসি",
-    madrid: "বনাম রিয়াল মাদ্রিদ",
-    ucl: "চ্যাম্পিয়ন্স লিগ",
-    byyear: "বছর অনুযায়ী",
-    byseason: "মৌসুম",
-    dashboard: "ড্যাশবোর্ড",
-    timeline: "টাইমলাইন",
-    achievements: "ট্রফি",
-    gear: "রোনালদোর গিয়ার",
-    themeToggle: "থিম পরিবর্তন",
-    darkMode: "ডার্ক মোড"
-  },
-  hi: {
-    badgeAria: "होम RonaldoStats",
-    langName: "हिन्दी",
-    langTag: "HI",
-    langSelectAria: "भाषा चुनें (हिन्दी)",
-    langSelectTitle: "भाषा चुनें",
-    home: "होम",
-    latestGoal: "ताजा गोल",
-    bday: "जन्मदिन",
-    ronaldo: "बनाम मेसी",
-    madrid: "बनाम रियल मैड्रिड",
-    ucl: "चैंपियंस लीग",
-    byyear: "वर्षवार गोल",
-    byseason: "सीज़न",
-    dashboard: "डैशबोर्ड",
-    timeline: "इतिहास",
-    achievements: "ट्रॉफ़ी",
-    gear: "रोनाल्डो स्टोर",
-    themeToggle: "थीम बदलें",
-    darkMode: "डार्क मोड"
-  },
-  ro: {
-    badgeAria: "RonaldoStats Acasă",
-    langName: "Română",
-    langTag: "RO",
-    langSelectAria: "Selectează limba (Română)",
-    langSelectTitle: "Selectează limba",
-    home: "Acasă",
-    latestGoal: "Ultimul Gol",
-    bday: "Zi de naștere",
-    ronaldo: "vs Messi",
-    madrid: "vs Real Madrid",
-    ucl: "Champions League",
-    byyear: "Goluri pe An",
-    byseason: "Sezoane",
-    dashboard: "Panou",
-    timeline: "Istorie",
-    achievements: "Trofee",
-    gear: "Magazin Ronaldo",
-    themeToggle: "Comută tema",
-    darkMode: "Mod întunecat"
-  },
-  uz: {
-    badgeAria: "RonaldoStats Asosiy",
-    langName: "O'zbekcha",
-    langTag: "UZ",
-    langSelectAria: "Tilni tanlang (O'zbekcha)",
-    langSelectTitle: "Tilni tanlang",
-    home: "Asosiy",
-    latestGoal: "Soʻnggi gol",
-    bday: "Tug'ilgan kun",
-    ronaldo: "vs Messi",
-    madrid: "vs Real Madrid",
-    ucl: "Chempionlar Ligasi",
-    byyear: "Yillar bo'yicha",
-    byseason: "Mavsumlar",
-    dashboard: "Boshqaruv paneli",
-    timeline: "Tarix",
-    achievements: "Kuboklar",
-    gear: "Ronaldo do'koni",
-    themeToggle: "Mavzuni o'zgartirish",
-    darkMode: "Qorong'i rejim"
-  }
 };
 
 function generateRailHtml(lang, activeSlug) {
@@ -278,8 +173,8 @@ for (const [file, slug] of Object.entries(PAGES_MAP)) {
   updateFileRail(path.join(rootDir, file), "en", slug);
 }
 
-// 2. All 8 localized languages (es, pt, fr, ar, bn, hi, ro, uz)
-const ALL_LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+// 2. All 3 localized languages (es, pt, fr)
+const ALL_LANGS = ["es","pt","fr"];
 for (const lang of ALL_LANGS) {
   for (const [file, slug] of Object.entries(PAGES_MAP)) {
     if (file === "admin.html") continue;

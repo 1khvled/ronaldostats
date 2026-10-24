@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 const t = fs.readFileSync(path.join(ROOT, "real-madrid.html"), "utf8");
 console.log("=== the mangled / leftover strings in the English shell ===");
@@ -28,11 +28,6 @@ const T = {
   es: ["🏟️ Ronaldo en el Real Madrid", "Años en el Real Madrid"],
   pt: ["🏟️ Ronaldo no Real Madrid", "Anos no Real Madrid"],
   fr: ["🏟️ Ronaldo au Real Madrid", "Les années au Real Madrid"],
-  ar: ["🏟️ رونالدو في ريال مدريد", "سنواته في ريال مدريد"],
-  bn: ["🏟️ রিয়াল মাদ্রিদে রোনালদো", "রিয়াল মাদ্রিদের বছরগুলো"],
-  hi: ["🏟️ रियल मैड्रिड में रोनाल्डो", "रियल मैड्रिड के वर्ष"],
-  ro: ["🏟️ Ronaldo la Real Madrid", "Anii de la Real Madrid"],
-  uz: ["🏟️ Real Madridda Ronaldo", "Real Madrid'dagi yillari"],
 };
 {
   const dir = path.join(ROOT, "src/i18n/shell");

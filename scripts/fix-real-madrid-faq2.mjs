@@ -1,18 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 const Q = {
   en: ["What is Ronaldo's record at Real Madrid?", "Ronaldo at Real Madrid page"],
   es: ["¿Cuál es el récord de Ronaldo en el Real Madrid?", "página de Ronaldo en el Real Madrid"],
   pt: ["Qual é o retrospecto de Ronaldo no Real Madrid?", "página de Ronaldo no Real Madrid"],
   fr: ["Quel est le bilan de Ronaldo au Real Madrid ?", "page de Ronaldo au Real Madrid"],
-  ar: ["ما هو سجل رونالدو في ريال مدريد؟", "صفحة رونالدو في ريال مدريد"],
-  bn: ["রিয়াল মাদ্রিদে রোনালদোর রেকর্ড কী?", "রিয়াল মাদ্রিদে রোনালদোর পাতা"],
-  hi: ["रियल मैड्रिड में रोनाल्डो का रिकॉर्ड क्या है?", "रियल मैड्रिड में रोनाल्डो वाला पेज"],
-  ro: ["Care este bilanul lui Ronaldo la Real Madrid?", "pagina lui Ronaldo la Real Madrid"],
-  uz: ["Real Madridda Ronaldo natijasi qanday?", "Real Madridda Ronaldo sahifasi"],
 };
 
 for (const lang of ["en", ...LANGS]) {

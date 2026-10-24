@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 
 // the old alt described the card; now that the cards are photographs, the alt
 // describes the photograph
@@ -57,56 +57,6 @@ const T = {
     "Ronaldo en maillot de Manchester United lors de son second passage",
     "Ronaldo en maillot numéro 7 d'Al Nassr",
     "Ronaldo en maillot d'Al Nassr, célébrant son record de tous les temps",
-  ],
-  ar: [
-    "متحف سبورتينغ سي بي في لشبونة، مع قميص رونالدو رقم 28 من موسمه الأول",
-    "رونالدو بقميص مانشستر يونايتد رقم 7 في أول ترافورد",
-    "كاكا ورونالدو يحتفلان معاً مع ريال مدريد",
-    "رونالدو بقميص مانشستر يونايتد رقم 7 في 2008، عام أول كرة ذهبية",
-    "رونالدو بقميص يوفنتوس خلال موسمه في الدوري الإيطالي",
-    "رونالدو بقميص مانشستر يونايتد خلال فترته الثانية",
-    "رونالدو بقميص النصر رقم 7",
-    "رونالدو بقميص النصر، يحتفل برقمه القياسي",
-  ],
-  bn: [
-    "লিসবনের স্পোর্টিং সিপি জাদুঘর, রোনালদোর প্রথম মৌসুমের ২৮ নম্বর জার্সি সহ",
-    "ওল্ড ট্রাফোর্ডে ম্যানচেস্টার ইউনাইটেডের ৭ নম্বর জার্সিতে রোনালদো",
-    "রিয়েল মাদ্রিদের হয়ে একসাথে উদযাপন করছেন কাকা ও রোনালদো",
-    "২০০৮ সালে ম্যানচেস্টার ইউনাইটেডের ৭ নম্বর জার্সিতে রোনালদো, তাঁর প্রথম বলন ডি'অরের বছর",
-    "তাঁর সেরিয়ে এ মৌসুমে জুভেন্তাসের জার্সিতে রোনালদো",
-    "তাঁর দ্বিতীয় পর্বে ম্যানচেস্টার ইউনাইটেডের জার্সিতে রোনালদো",
-    "আল নাসরের ৭ নম্বর জার্সিতে রোনালদো",
-    "সর্বকালের রেকর্ড উদযাপন করছেন আল নাসরের জার্সিতে রোনালদো",
-  ],
-  hi: [
-    "लिस्बन के स्पोर्टिंग सीपी संग्रहालय, रोनाल्डो की पहली सीज़न की 28 नंबर की जर्सी के साथ",
-    "ओल्ड ट्राफोर्ड में मैनचेस्टर यूनाइटेड की 7 नंबर की जर्सी में रोनाल्डो",
-    "रियल मैड्रिड के लिए एक साथ जश्न मनाते काका और रोनाल्डो",
-    "2008 में मैनचेस्टर यूनाइटेड की 7 नंबर की जर्सी में रोनाल्डो, उनके पहले बलन डी'ऑर का साल",
-    "अपने सीरी ए सीज़न में जुवेंटस की जर्सी में रोनाल्डो",
-    "अपनी दूसरी अवधि में मैनचेस्टर यूनाइटेड की जर्सी में रोनाल्डो",
-    "अल नासर की 7 नंबर की जर्सी में रोनाल्डो",
-    "अल नासर की जर्सी में अपना सर्वकालिक रिकॉर्ड सहित रोनाल्डो",
-  ],
-  ro: [
-    "Muzeul Sporting CP din Lisabona, cu tricoul numărul 28 al lui Ronaldo din primul sezon",
-    "Ronaldo în tricoul numărul 7 de la Manchester United, pe Old Trafford",
-    "Kaka și Ronaldo sărbătorind împreună pentru Real Madrid",
-    "Ronaldo în tricoul numărul 7 de la Manchester United în 2008, anul primului său Ballon d'Or",
-    "Ronaldo în tricoul Juventusului în sezonul de Serie A",
-    "Ronaldo în tricoul Manchester United în a doua sa perioadă",
-    "Ronaldo în tricoul numărul 7 de la Al Nassr",
-    "Ronaldo în tricoul lui Al Nassr, sărbătorind recordul dezecholtă",
-  ],
-  uz: [
-    "Lizbondagi Sporting CP muzeyi, Ronaldoing dastlabki mavsumidagi 28-raqamli futbolkasi bilan",
-    "Old Traffordda Manchester Unitedning 7-raqamli futbolkasida Ronaldo",
-    "Real Madrid uchun birga bilan kutib chiqqan Kaka va Ronaldo",
-    "2008 yilda Manchester Unitedning 7-raqamli futbolkasida Ronaldo, uning birinchi Ballon d'ori olingan yil",
-    "Seriya A mavsumida Juventus futbolkasida Ronaldo",
-    "Ikkinchi ko'rinishida Manchester United futbolkasida Ronaldo",
-    "Al Nassrning 7-raqamli futbolkasida Ronaldo",
-    "Al Nassr futbolkasida, barcha vaqtdagi rekordini nishonlab Ronaldo",
   ],
 };
 

@@ -1,5 +1,5 @@
 /**
- * Drop the strings the English shells no longer use from the eight localized
+ * Drop the strings the English shells no longer use from the three localized
  * dictionaries.
  *
  *   node scripts/prune-shell-dictionaries.mjs
@@ -17,7 +17,7 @@ const SHELL = path.join(ROOT, "src", "i18n", "shell");
 const en = JSON.parse(fs.readFileSync(path.join(SHELL, "en.json"), "utf8"));
 const keys = new Set(Object.keys(en));
 
-for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+for (const lang of ["es","pt","fr"]) {
   const file = path.join(SHELL, lang + ".json");
   const dict = JSON.parse(fs.readFileSync(file, "utf8"));
   const stale = Object.keys(dict).filter((k) => !keys.has(k));

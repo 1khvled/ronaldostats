@@ -10,11 +10,6 @@ const WATCH = {
   es: "▶ Ver este gol",
   pt: "▶ Ver este gol",
   fr: "▶ Voir ce but",
-  ar: "▶ شاهد هذا الهدف",
-  bn: "▶ এই গোলটি দেখুন",
-  hi: "▶ यह गोल देखें",
-  ro: "▶ Uitează acest gol",
-  uz: "▶ Shu golni ko‘ring",
 };
 {
   const dir = path.join(ROOT, "src", "i18n");

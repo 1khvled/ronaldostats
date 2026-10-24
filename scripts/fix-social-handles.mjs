@@ -4,7 +4,7 @@
  *   node scripts/fix-social-handles.mjs
  *
  * The English strings carry the account name, and so does every translation:
- * "تابع @ronaldostat1 على X" still named the old account. The account the
+ * "Sigue @ronaldostat1 en X" still named the old account. The account the
  * site points at is the one MessiStat runs, @messistat1, and the channel is
  * @messistatdotcom, so every language says so.
  */
@@ -14,7 +14,7 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
 
-for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+for (const lang of ["es","pt","fr"]) {
   const file = path.join(SHELL, lang + ".json");
   const dict = JSON.parse(fs.readFileSync(file, "utf8"));
   let n = 0;

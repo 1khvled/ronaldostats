@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 const ROOT = "D:/Projects/ronaldo-stats/";
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 const PAGES = ["index", "dashboard", "goalsbyyear", "goalsbyseason", "timeline", "achievements",
   "birthday", "latest-goal", "champions-league", "gear", "real-madrid", "ronaldo-vs-messi"];
 
@@ -26,26 +26,6 @@ const T = {
   fr: {
     "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo au Real Madrid",
     "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "Ses neuf ans au Real Madrid : 450 buts, 311 en Liga, quatre Ligues des champions et 18 en Clásico.",
-  },
-  ar: {
-    "🏟️ Ronaldo at Real Madrid": "🏟️ رونالدو في ريال مدريد",
-    "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "تسع سنوات في ريال مدريد: 450 هدفاً، 311 في الليغا، أربعة أبطال أوروبا و18 في الكلاسيكو.",
-  },
-  bn: {
-    "🏟️ Ronaldo at Real Madrid": "🏟️ রিয়াল মাদ্রিদে রোনালদো",
-    "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "রিয়াল মাদ্রিদে নয় বছর: ৪৫০ গোল, লা লিগায় ৩১১, চারটি চ্যাম্পিয়ন্স লিগ এবং ক্লাসিকোতে ১৮।",
-  },
-  hi: {
-    "🏟️ Ronaldo at Real Madrid": "🏟️ रियल मैड्रिड में रोनाल्डो",
-    "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "रियल मैड्रिड में नौ साल: 450 गोल, ला लीगा में 311, चार चैंपियंस लीग और क्लासिको में 18।",
-  },
-  ro: {
-    "🏟️ Ronaldo at Real Madrid": "🏟️ Ronaldo la Real Madrid",
-    "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "Cei nouă ani la Real Madrid: 450 de goluri, 311 în La Liga, patru Ligi ale Campionilor și 18 în Clásico.",
-  },
-  uz: {
-    "🏟️ Ronaldo at Real Madrid": "🏟️ Real Madridda Ronaldo",
-    "His nine years at Real Madrid: 450 goals, 311 in La Liga, four Champions League titles and 18 in the Clásico.": "Real Madridda to'qqiz yil: 450 gol, La Ligada 311, to'rtta Chempionlar Ligasi va Klassikoda 18.",
   },
 };
 

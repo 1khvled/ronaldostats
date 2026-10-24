@@ -17,7 +17,7 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replac
 const SHELL = path.join(ROOT, "src", "i18n", "shell");
 const table = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts", "gear-i18n.json"), "utf8"));
 
-const LANGS = ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["es","pt","fr"];
 let added = 0;
 for (const lang of LANGS) {
   const file = path.join(SHELL, lang + ".json");

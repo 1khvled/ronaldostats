@@ -14,7 +14,7 @@ const ROOT = "D:/Projects/ronaldo-stats/";
 // --- the dictionaries: the same date ------------------------------------------
 {
   const SHELL = ROOT + "/src/i18n/shell/";
-  for (const lang of ["es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"]) {
+  for (const lang of ["es","pt","fr"]) {
     const file = SHELL + lang + ".json";
     const dict = JSON.parse(fs.readFileSync(file, "utf8"));
     if (dict["12 Oct 2026"] && dict["9 Oct 2026"]) {

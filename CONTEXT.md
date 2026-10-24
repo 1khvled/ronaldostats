@@ -17,7 +17,7 @@ This file is the A-to-Z. If you skip updating it, you break the next agent.
 ## What this is
 
 Static **Cristiano Ronaldo** career-statistics site, **https://www.ronaldostats.site**.
-Twelve pages in nine languages (en, es, pt, fr, ar, bn, hi, ro, uz). One JSON source of truth, no backend, no API keys, no third-party requests by default (the exceptions are the operator-installed Google tag and AdSense).
+Ten pages in four languages (en, es, pt, fr). One JSON source of truth, no backend, no API keys, no third-party requests by default (the exceptions are the operator-installed Google tag and AdSense).
 
 Live: **981 goals / 1,340 senior appearances** (835 club + 146 for Portugal), 261 assists,
 184 penalties, 66 direct free kicks, 66 hat-tricks, 35 senior team trophies, 5 Ballons d'Or,
@@ -25,10 +25,10 @@ Live: **981 goals / 1,340 senior appearances** (835 club + 146 for Portugal), 26
 
 ## Stack & commands
 
-- Vite 6 multi-page (`vite.config.js` — 12 English inputs + 8 locales × 12 pages).
+- Vite 6 multi-page (`vite.config.js` — 10 English inputs + 3 locales × 10 pages).
 - `npm run dev` (5173) · `npm run build` · `npm run preview` (4173).
 - `npm run build:data` — rebuild + re-verify `public/data/ronaldo-data.json` and `public/data/latest-goal.json`.
-- `npm run build:i18n` — re-extract the shell strings and regenerate the eight localized page sets.
+- `npm run build:i18n` — re-extract the shell strings and regenerate the three localized page sets.
 - `npm run build:bday` — rebuild the dated goal calendar.
 - `npm run audit` (`scripts/dist-audit.cjs`) · `npm run audit:i18n` (`scripts/verify-all-i18n.cjs`).
 - `npm run verify` — reads free public scoreboards and writes `public/data/last-check.json`. It **never** changes a total.

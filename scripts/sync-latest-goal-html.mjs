@@ -25,11 +25,6 @@ const VERDICT_LABEL = {
   es: "Último Resultado: ",
   pt: "Último Resultado: ",
   fr: "Résultat du dernier match : ",
-  ar: "نتيجة آخر مباراة: ",
-  bn: "সর্বশেষ ম্যাচের ফলাফল: ",
-  hi: "आख़िरी मैच का नतीजा: ",
-  ro: "Ultimul rezultat: ",
-  uz: "So'nggi natija: ",
 };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -276,21 +271,11 @@ const MONTHS_FULL = {
   es: ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
   pt: ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],
   fr: ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
-  ar: ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],
-  bn: ["জানুয়ারি","ফেব্রুয়ারি","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"],
-  hi: ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"],
-  ro: ["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"],
-  uz: ["yanvar","fevral","mart","aprel","may","iyun","iyul","avgust","sentabr","oktabr","noyabr","dekabr"]
 };
 const MONTHS_SHORT = {
   es: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
   pt: ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
   fr: ["jan","fév","mar","avr","mai","juin","juil","août","sep","oct","nov","déc"],
-  ar: ["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],
-  bn: ["জানুয়ারি","ফেব্রুয়ারি","মার্চ","এপ্রিল","মে","জুন","জুলাই","আগস্ট","সেপ্টেম্বর","অক্টোবর","নভেম্বর","ডিসেম্বর"],
-  hi: ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"],
-  ro: ["ian","feb","mar","apr","mai","iun","iul","aug","sep","oct","noi","dec"],
-  uz: ["yan","fev","mar","apr","may","iyn","iyl","avg","sen","okt","noy","dek"]
 };
 const EN_MONTHS_FULL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 const EN_MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -298,11 +283,6 @@ const TECH_WORDS = {
   es: { fk: "Tiro libre directo", header: "Cabeza", assist: "Asistencia", left: "Zurda", right: "Derecha", penalty: "Penalti", play: "Ver Video ▶", goalTag: "Gol 🔥" },
   pt: { fk: "Falta direta", header: "Cabeceio", assist: "assistência", left: "Chute de esquerda", right: "Chute de direita", penalty: "Pênalti", play: "Ver Vídeo ▶", goalTag: "Gol 🔥" },
   fr: { fk: "Coup franc direct", header: "Tête", assist: "passe décisive", left: "Frappe du gauche", right: "Frappe du droit", penalty: "Penalty", play: "Voir la Vidéo ▶", goalTag: "But 🔥" },
-  ar: { fk: "ركلة حرة مباشرة", header: "رأسية", assist: "تمريرة حاسمة", left: "تسديدة بالقدم اليسرى", right: "تسديدة بالقدم اليمنى", penalty: "ركلة جزاء", play: "تشغيل الفيديو ▶", goalTag: "هدف 🔥" },
-  bn: { fk: "ডাইরেক্ট ফ্রি কিক", header: "হেড", assist: "অ্যাসিস্ট", left: "বাঁ পায়ের শট", right: "ডান পায়ের শট", penalty: "পেনাল্টি", play: "ভিডিও দেখুন ▶", goalTag: "গোল 🔥" },
-  hi: { fk: "डायरेक्ट फ्री किक", header: "हेडर", assist: "असिस्ट", left: "बाएं पैर का शॉट", right: "दाएं पैर का शॉट", penalty: "पेनल्टी", play: "वीडियो देखें ▶", goalTag: "गोल 🔥" },
-  ro: { fk: "Lovitură liberă directă", header: "Cap", assist: "pasă decisivă", left: "Șut cu stângul", right: "Șut cu dreptul", penalty: "Penalty", play: "Vezi Videoclipul ▶", goalTag: "Gol 🔥" },
-  uz: { fk: "Jarima zarbasi", header: "Bosh bilan", assist: "assist", left: "Chap oyoq zarbasi", right: "O'ng oyoq zarbasi", penalty: "Penalti", play: "Videoni Ko'rish ▶", goalTag: "Gol 🔥" }
 };
 function locDateStr(s, lang, short = false) {
   if (!s || lang === "en" || (!MONTHS_FULL[lang] && !MONTHS_SHORT[lang])) return s;
@@ -417,7 +397,7 @@ export function syncLatestGoalHtml() {
     html = html.replace(/href="[^"]*"([^>]*id="link-bday-goal")/i, `href="${bdayHref}"$1`);
 
     // 6. Update Recent Goals 5-Card Switcher
-    const MATCH_PREP = { es: "en ", pt: "em ", fr: "contre ", ar: "ضد ", bn: "বনাম ", hi: "बनाम ", ro: "vs ", uz: "vs " };
+    const MATCH_PREP = { es: "en ", pt: "em ", fr: "contre ", };
     const cardsHtml = recent.slice(0, 5).map((rg, idx) => {
       const isActive = idx === 0 ? " active" : "";
       const goalLabel = locGoalLabel(rg.goalNumber, lang);

@@ -15,13 +15,12 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const LANGS = ["en", "es", "pt", "fr", "ar", "bn", "hi", "ro", "uz"];
+const LANGS = ["en","es","pt","fr"];
 
 // the helpers app.js publishes on the global object
 globalThis.n = (v) => Number(v).toLocaleString("en-US");
 globalThis.esc = (s) =>
   String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-globalThis.bn = (v) => String(v).replace(/[0-9]/g, (d) => "০১২৩৪৫৬৭৮৯"[+d]);
 globalThis.LIVE = {
   goals: 981, apps: 1340, clubGoals: 835, argGoals: 146, argCaps: 234,
   assists: 261, tmAssists: 291, ga: 1242, tmGa: 1272,

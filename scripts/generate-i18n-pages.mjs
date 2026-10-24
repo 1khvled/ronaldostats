@@ -1,11 +1,11 @@
-// Generate the eight localized page shells from the English ones.
+// Generate the three localized page shells from the English ones.
 //
 //   node scripts/generate-i18n-pages.mjs            -> every language
 //   node scripts/generate-i18n-pages.mjs es pt      -> only those
 //
 // For each language it
 //   1. swaps every translatable string using src/i18n/shell/<lang>.json,
-//   2. rewrites <html lang> / dir, the canonical, the 26-alternate hreflang
+//   2. rewrites <html lang> / dir, the canonical, the alternate hreflang
 //      block, og:url, og:locale and the internal links,
 //   3. writes <lang>/<slug>.html.
 //
@@ -37,11 +37,6 @@ const LANGS = {
   es: { dir: "ltr", locale: "es_ES", alts: ["es_AR", "es_ES"] },
   pt: { dir: "ltr", locale: "pt_BR", alts: ["pt_BR", "pt_PT"] },
   fr: { dir: "ltr", locale: "fr_FR", alts: ["fr_FR", "fr_CA"] },
-  ar: { dir: "rtl", locale: "ar_EG", alts: ["ar_EG"] },
-  bn: { dir: "ltr", locale: "bn_BD", alts: ["bn_BD", "bn_IN"] },
-  hi: { dir: "ltr", locale: "hi_IN", alts: ["hi_IN"] },
-  ro: { dir: "ltr", locale: "ro_RO", alts: ["ro_RO"] },
-  uz: { dir: "ltr", locale: "uz_UZ", alts: ["uz_UZ"] },
 };
 
 const wanted = process.argv.slice(2).filter((a) => LANGS[a]);
@@ -58,11 +53,6 @@ const HREFLANGS = [
   ["es", "es-AR", "es-ES"],
   ["pt", "pt-BR", "pt-PT"],
   ["fr", "fr-FR", "fr-CA"],
-  ["ar", "ar-EG"],
-  ["bn", "bn-BD", "bn-IN"],
-  ["hi", "hi-IN"],
-  ["ro", "ro-RO"],
-  ["uz", "uz-UZ"],
 ];
 
 // "content" is the meta description, the Open Graph card and the Twitter card:
@@ -139,7 +129,7 @@ function localizeHtml(html, lang, slug, dict) {
   // Rewriting them to /es/birthday/MM-DD produced thousands of links to
   // pages the build never writes - every one of them a 404.
   const isDatePage = /^\/birthday\/\d{1,2}-\d{1,2}$/;
-  out = out.replace(/href="\/(?:en|es|pt|fr|ar|bn|hi|ro|uz)(\/[^"]*)?"/g, (m, rest) => {
+  out = out.replace(/href="\/(?:en|es|pt|fr)(\/[^"]*)?"/g, (m, rest) => {
     if (rest && isDatePage.test(rest)) return m;
     return `href="/${lang}${rest || ""}"`;
   });
@@ -148,7 +138,7 @@ function localizeHtml(html, lang, slug, dict) {
   // 8. the renderer is served from the site root, so the localized pages
   //    must reference it absolutely
   // the renderer and the stylesheet are served from the root: a relative
-  // reference on /ar/index.html would ask for /ar/src/..., which the build does
+  // reference on /es/index.html would ask for /es/src/..., which the build does
   // not contain, and the page would ship with no stylesheet and no script
   out = out.replace(/(src|href)="(src\/[a-z0-9.\/-]+\.(?:js|css))"/g, '$1="/$2"');
 
