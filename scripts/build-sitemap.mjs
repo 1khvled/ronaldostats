@@ -19,14 +19,14 @@ import { S } from "./stats.mjs";
 const CAREER_GOALS = S.goals;
 const CAREER_APPS = S.apps;
 const CAREER_TROPHIES = S.trophies;
-const BALLONS_DOR = 8;
+const BALLONS_DOR = 5;
 const LG = S.latestGoal;
 const LG_NUM = LG?.goalNumber ?? CAREER_GOALS;
 const LG_OPP = (LG?.opponent || "").trim();
 const LG_TEAM = (LG?.team || "Al Nassr").replace(/\s+CF$/, "").trim();
 const LG_MIN = (LG?.minute || "").replace(/'/g, "").trim();
-const LG_FINISH = (LG?.finish || "left-foot").trim();
-const LG_COMP = (LG?.competition || "Major League Soccer").trim();
+const LG_FINISH = (LG?.finish || "right-foot").trim();
+const LG_COMP = (LG?.competition || "Saudi Pro League").trim();
 const LG_DATE = (LG?.formattedDate || todayIso).trim();
 const LG_VIDEO = LG?.videoUrl || `https://cr7allgoals.com/goal/${LG_NUM}/`;
 // URL-safe slug fragments for title/tags
