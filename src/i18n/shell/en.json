@@ -3572,6 +3572,27 @@
   ],
   "ctx": "[attr content]"
  },
+ "Cristiano Ronaldo celebrates his 15-minute hat-trick for Portugal in Belfast": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo celebrates his first goal for Portugal at Euro 2004": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
+ "Cristiano Ronaldo celebrates the 700th goal of his career against Ukraine": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo celebrating as the all-time leading goalscorer in international football": {
   "count": 2,
   "pages": [
@@ -3685,14 +3706,14 @@
   "ctx": "[attr alt]"
  },
  "Cristiano Ronaldo in action for Sporting CP": {
-  "count": 2,
+  "count": 1,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr data-label]"
  },
- "Cristiano Ronaldo in the Manchester United number 7 shirt": {
-  "count": 2,
+ "Cristiano Ronaldo in tears celebrating his historic 900th career goal against Croatia": {
+  "count": 1,
   "pages": [
    "timeline"
   ],
@@ -3803,6 +3824,13 @@
   ],
   "ctx": "Nine years in Madrid:  [Cristiano Ronaldo scored 18 goals against Barcelona for Real Madrid, alongside 311 La Liga goals, four Champions League titles and 66 career hat-tricks.] El Clásico Goals"
  },
+ "Cristiano Ronaldo scores his first senior career goal vs Moreirense": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo scores twice on his return debut for Manchester United at Old Trafford": {
   "count": 1,
   "pages": [
@@ -3831,12 +3859,26 @@
   ],
   "ctx": "[attr content]"
  },
+ "Cristiano Ronaldo unveiled by Juventus with the number 7 shirt at Allianz Stadium": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
+ },
  "Cristiano Ronaldo vs Lionel Messi: 981 goals vs 936, 261 assists vs 408, 66 hat-tricks vs 62, 140 Champions League goals vs 129, 35 trophies vs 46, 5 Ballons d'Or vs 8. Every figure sourced.": {
   "count": 3,
   "pages": [
    "ronaldo-vs-messi"
   ],
   "ctx": "[attr content]"
+ },
+ "Cristiano Ronaldo wins his first Ballon d'Or in 2008 at age 23": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
  },
  "Cristiano Ronaldo with the UEFA Champions League trophy": {
   "count": 1,
@@ -7077,25 +7119,18 @@
   "ctx": "▾  [Ronaldo holds both all-time international records with] 146 goals in 234 caps"
  },
  "Ronaldo in the Al Nassr number 7 shirt": {
-  "count": 3,
+  "count": 2,
   "pages": [
    "timeline"
   ],
   "ctx": "[attr alt]"
  },
  "Ronaldo in the Juventus shirt during his Serie A title season": {
-  "count": 4,
-  "pages": [
-   "timeline"
-  ],
-  "ctx": "[attr alt]"
- },
- "Ronaldo in the Manchester United number 7 shirt in 2008, the year of his first Ballon d'Or": {
   "count": 2,
   "pages": [
    "timeline"
   ],
-  "ctx": "[attr data-label]"
+  "ctx": "[attr alt]"
  },
  "Ronaldo or Messi? Cast Your Vote": {
   "count": 1,
@@ -7599,6 +7634,13 @@
    "timeline"
   ],
   "ctx": "10 Jun 2009  [Signs for Real Madrid for a world-record fee] — Ronaldo joins for a then record €94m, and 80,000 fans pack the Bernabéu for the presentation. He stays on the Spanish stage until 2018."
+ },
+ "Sir Alex Ferguson presents Cristiano Ronaldo with the Manchester United No. 7 shirt": {
+  "count": 1,
+  "pages": [
+   "timeline"
+  ],
+  "ctx": "[attr data-label]"
  },
  "Site directory": {
   "count": 5,
