@@ -216,7 +216,7 @@ export const ACH = {
     ["Qual é o troféu mais importante de Ronaldo?", "O <b>Campeonato Europeu de 2016</b> — o título que ele comandou a conquistar por Portugal em Paris, como segundo maior artilheiro do torneio."],
     ["Quantos títulos de liga Ronaldo conquistou?", "<b>Oito</b> — 3 da Premier League, 2 da La Liga, 2 da Serie A e 1 da Saudi Pro League, como detalhado na lista de honrarias deste arquivo."],
     ["Quantos prêmios individuais Ronaldo conquistou?", "Cinco Ballons d'Or, quatro Chuteiras de Ouro Europeias, três prêmios de melhor jogador da UEFA, o prêmio FIFA de melhor jogador do mundo em 2008, o prêmio FIFA Puskás em 2009, a Chuteira de Ouro da Euro 2020 e o The Best FIFA Men's Player em 2016 e 2017."],
-    ["Ronaldo é o jogador mais condecorado de todos os tempos?", "Apenas em títulos coletivos, Messi lidera com 46 contra 35 de Ronaldo. Ronaldo lidera os recordes de gols — 981 gols, 140 deles na Champions League, e 146 gols em 234 jogos pela Seleção Portuguesa."]
+    ["Ronaldo é o jogador mais condecorado de todos os tempos?", "Apenas em títulos coletivos, Messi lidera com 46 contra 35 de Ronaldo. Ronaldo lidera os recordes de gols — 983 gols, 140 deles na Champions League, e 146 gols em 234 jogos pela Seleção Portuguesa."]
   ]
 };
 

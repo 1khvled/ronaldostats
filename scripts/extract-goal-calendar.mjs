@@ -71,18 +71,44 @@ const GH = {
 for (const [name, url] of Object.entries(GH)) {
   const p = TMP + name;
   if (existsSync(p)) continue;
-  const r = await fetch(url, { headers: { "User-Agent": "ronaldostats/1.0 (data build)" } });
-  if (!r.ok) { console.error("could not fetch " + name + " (" + r.status + ")"); process.exit(1); }
-  writeFileSync(p, await r.text(), "utf8");
-  console.log("fetched " + name);
+  if (existsSync(CACHE + name)) {
+    fs.copyFileSync(CACHE + name, p);
+    console.log("using cached " + name);
+    continue;
+  }
+  try {
+    const r = await fetch(url, { headers: { "User-Agent": "ronaldostats/1.0 (data build)" }, signal: AbortSignal.timeout(10000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const txt = await r.text();
+    writeFileSync(p, txt, "utf8");
+    if (!existsSync(CACHE)) fs.mkdirSync(CACHE, { recursive: true });
+    writeFileSync(CACHE + name, txt, "utf8");
+    console.log("fetched " + name);
+  } catch (err) {
+    console.error("could not fetch " + name + ": " + err.message);
+    if (!existsSync(p)) process.exit(1);
+  }
 }
 
 // ---------- 0b. RSSSF: fetch it when it is not cached ----------
 if (!existsSync(TMP + "cr-rsssf.html")) {
-  const r = await fetch("https://www.rsssf.org/miscellaneous/cronaldo-intlg.html", { headers: { "User-Agent": "ronaldostats/1.0 (data build)" } });
-  if (!r.ok) { console.error("could not fetch RSSSF (" + r.status + ")"); process.exit(1); }
-  writeFileSync(TMP + "cr-rsssf.html", await r.text(), "utf8");
-  console.log("fetched cr-rsssf.html");
+  if (existsSync(CACHE + "cr-rsssf.html")) {
+    fs.copyFileSync(CACHE + "cr-rsssf.html", TMP + "cr-rsssf.html");
+    console.log("using cached cr-rsssf.html");
+  } else {
+    try {
+      const r = await fetch("https://www.rsssf.org/miscellaneous/cronaldo-intlg.html", { headers: { "User-Agent": "ronaldostats/1.0 (data build)" }, signal: AbortSignal.timeout(10000) });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const txt = await r.text();
+      writeFileSync(TMP + "cr-rsssf.html", txt, "utf8");
+      if (!existsSync(CACHE)) fs.mkdirSync(CACHE, { recursive: true });
+      writeFileSync(CACHE + "cr-rsssf.html", txt, "utf8");
+      console.log("fetched cr-rsssf.html");
+    } catch (err) {
+      console.error("could not fetch RSSSF: " + err.message);
+      if (!existsSync(TMP + "cr-rsssf.html")) process.exit(1);
+    }
+  }
 }
 
 // ---------- 1. RSSSF Portugal matches ----------

@@ -142,16 +142,26 @@ export function syncHomeKpis() {
     if (html.includes('id="kpis"')) {
       html = html.replace(/(<section[^>]*id="kpis"[^>]*>[\s\S]*?<\/section>)/i, (section) => {
         let s = section;
-        const nums = [...s.matchAll(/(<span class="kpi-num">)([^<]*)(<\/span>)/g)];
+        const isValClass = /class="kpi-value"/.test(s);
+        const clsPattern = isValClass ? "kpi-value" : "kpi-num";
+        const nums = [...s.matchAll(new RegExp(`(<span class="${clsPattern}">)([^<]*)(<\/span>)`, "g"))];
         if (nums.length === 6) {
           const vals = [String(goals), `${assists}*`, reformatLike(nums[2][2], ga), reformatLike(nums[3][2], apps), reformatLike(nums[4][2], trophies), nums[5][2]];
           let i = 0;
-          s = s.replace(/(<span class="kpi-num">)([^<]*)(<\/span>)/g, (w, a, _o, c) => (i < vals.length ? `${a}${vals[i++] ?? ""}${c}` : w));
+          s = s.replace(new RegExp(`(<span class="${clsPattern}">)([^<]*)(<\/span>)`, "g"), (w, a, _o, c) => (i < vals.length ? `${a}${vals[i++] ?? ""}${c}` : w));
         } else if (nums.length === 4) {
           const vals = [reformatLike(nums[0][2], goals), reformatLike(nums[1][2], apps), reformatLike(nums[2][2], trophies), nums[3][2]];
           let i = 0;
-          s = s.replace(/(<span class="kpi-num">)([^<]*)(<\/span>)/g, (w, a, _o, c) => (i < vals.length ? `${a}${vals[i++] ?? ""}${c}` : w));
+          s = s.replace(new RegExp(`(<span class="${clsPattern}">)([^<]*)(<\/span>)`, "g"), (w, a, _o, c) => (i < vals.length ? `${a}${vals[i++] ?? ""}${c}` : w));
         }
+        // Handle kpi progress specifically if present
+        s = s.replace(/(<div class="kpi progress">[\s\S]*?<\/div>)/i, (card) => {
+          let c = card;
+          c = c.replace(/(<span class="kpi-value">)[^<]*(<small)/i, `$1${goals} $2`);
+          c = c.replace(/(style="width:)[^;%]+%?(";?)/i, `$1${pct}%$2`);
+          c = c.replace(/(<span class="kpi-note">)[^<]*(to go)/i, `$1${toGo} $2`);
+          return c;
+        });
         // subs: only spans carrying digits; record prose untouched
         s = s.replace(/(<span class="kpi-sub">)([^<]*)(<\/span>)/g, (w, a, txt, c) => {
           if (!/[\d০-৯]/.test(txt)) return w;
@@ -161,8 +171,6 @@ export function syncHomeKpis() {
           } else if (/\d+[.,]\d+/.test(txt)) {
             out = txt.replace(/[\d০-৯]+([.,][\d০-৯]+)?/, (m) => reformatLike(m, pace, 2));
           } else {
-            // club · country split ("806 Club · 126 Argentina" in every
-            // locale's words): transplant both, preserving digit systems
             const ints = [...txt.matchAll(/[\d০-৯]+/g)].map((m) => m[0]);
             if (ints.length >= 2) {
               out = txt.replace(ints[0], /[০-৯]/.test(ints[0]) ? bnDigits(club) : String(club));
@@ -174,7 +182,6 @@ export function syncHomeKpis() {
         return s;
       });
     }
-
     // ---- Facts pass: prose totals/splits (bio JSON-LD, lede, pills,
     // footer links, chips, FAQ answers). Value-anchored: only magnitudes
     // that unambiguously mean one fact. Trophies-46 handled explicitly

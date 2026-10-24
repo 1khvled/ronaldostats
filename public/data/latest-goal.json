@@ -1,35 +1,61 @@
 {
- "syncedAt": "2026-10-21T17:50:14.471Z",
+ "syncedAt": "2026-10-24T21:49:54.868Z",
  "latestGoal": {
-  "goalNumber": 981,
+  "goalNumber": 983,
   "team": "Al-Nassr",
-  "opponent": "Neftchi Fergana",
-  "competition": "AFC Champions League Elite",
-  "competitionSlug": "afc-champions-league-elite",
-  "date": "2026-10-12",
-  "formattedDate": "12 October 2026",
-  "bdayKey": "10-12",
-  "minute": "42'",
-  "clock": "42'",
+  "opponent": "Al-Faisaly FC",
+  "competition": "Saudi Pro League",
+  "competitionSlug": "saudi-pro-league",
+  "date": "2026-10-23",
+  "formattedDate": "23 October 2026",
+  "bdayKey": "10-23",
+  "minute": "79'",
+  "clock": "79'",
   "type": "Right-footed shot",
   "finish": "Right-footed shot",
   "assist": "",
   "score": "3–1",
-  "venue": "Home",
-  "title": "Al-Nassr 3–1 Neftchi Fergana",
+  "venue": "Away",
+  "title": "Al-Nassr 3–1 Al-Faisaly FC",
   "videoUrl": "",
-  "bdayUrl": "/en/birthday/10-12"
+  "bdayUrl": "/en/birthday/10-23"
  },
  "todayStatus": {
   "didScoreToday": false,
   "hasMatchToday": false,
-  "lastMatchDate": "2026-10-12",
-  "lastMatchOpponent": "Neftchi Fergana",
-  "lastMatchResult": "Al-Nassr 3–1 Neftchi Fergana",
-  "lastGoalNumber": 981,
-  "lastGoalMinute": "42'"
+  "lastMatchDate": "2026-10-23",
+  "lastMatchOpponent": "Al-Faisaly FC",
+  "lastMatchResult": "Al-Nassr 3–1 Al-Faisaly FC",
+  "lastGoalNumber": 983,
+  "lastGoalMinute": "79'"
  },
  "recentGoals": [
+  {
+   "goalNumber": 983,
+   "title": "Al-Nassr 3–1 Al-Faisaly FC",
+   "meta": "Saudi Pro League • 23 Oct 2026",
+   "match": "vs Al-Faisaly FC (3–1)",
+   "date": "23 Oct 2026 • 79'",
+   "minute": "79'",
+   "type": "Right-footed shot",
+   "tag": "Right-footed shot",
+   "score": "3–1",
+   "comp": "Saudi Pro League",
+   "bdayUrl": "/en/birthday/10-23"
+  },
+  {
+   "goalNumber": 982,
+   "title": "Al-Nassr 3–1 Al-Faisaly FC",
+   "meta": "Saudi Pro League • 23 Oct 2026",
+   "match": "vs Al-Faisaly FC (3–1)",
+   "date": "23 Oct 2026 • 49'",
+   "minute": "49'",
+   "type": "Header",
+   "tag": "Header",
+   "score": "3–1",
+   "comp": "Saudi Pro League",
+   "bdayUrl": "/en/birthday/10-23"
+  },
   {
    "goalNumber": 981,
    "title": "Al-Nassr 3–1 Neftchi Fergana",
@@ -68,39 +94,13 @@
    "score": "2–1",
    "comp": "Saudi Pro League",
    "bdayUrl": "/en/birthday/09-09"
-  },
-  {
-   "goalNumber": 978,
-   "title": "Al-Nassr 2–1 Al-Taawoun FC",
-   "meta": "Saudi Pro League • 28 Aug 2026",
-   "match": "vs Al-Taawoun FC (2–1)",
-   "date": "28 Aug 2026 • 50'",
-   "minute": "50'",
-   "type": "Right foot",
-   "tag": "Right foot",
-   "score": "2–1",
-   "comp": "Saudi Pro League",
-   "bdayUrl": "/en/birthday/08-28"
-  },
-  {
-   "goalNumber": 977,
-   "title": "Al-Nassr 4–0 Al-Riyadh SC",
-   "meta": "Saudi Pro League • 21 Aug 2026",
-   "match": "vs Al-Riyadh SC (4–0)",
-   "date": "21 Aug 2026 • 83'",
-   "minute": "83'",
-   "type": "Left foot",
-   "tag": "Left foot",
-   "score": "4–0",
-   "comp": "Saudi Pro League",
-   "bdayUrl": "/en/birthday/08-21"
   }
  ],
  "totals": {
-  "goals": 981,
-  "alnassrGoals": 134,
-  "alnassrApps": 157,
-  "season2026Goals": 24,
+  "goals": 983,
+  "alnassrGoals": 136,
+  "alnassrApps": 159,
+  "season2026Goals": 26,
   "portugueseGoals": 146,
   "portugueseCaps": 234
  }

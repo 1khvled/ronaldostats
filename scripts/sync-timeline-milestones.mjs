@@ -181,13 +181,13 @@ export const MILESTONES = [
     alt: "Ronaldo in the Al Nassr number 7 shirt",
   },
   {
-    key: "goal-981", era: "miami", date: "12 Oct 2026", iso: "2026-10-12", year: 2026,
+    key: "goal-983", era: "miami", date: "23 Oct 2026", iso: "2026-10-23", year: 2026,
     cat: "goal", team: "alnassr",
-    title: "Goal #981 — the last of a record career",
-    desc: "— Ronaldo's 981st and most recent senior goal arrives for Al Nassr in the AFC Champions League Elite against Neftchi Fergana, closing a career of 981 goals in 1,340 appearances.",
-    stat: "Goal #981", badge: "981 Career Goals", emoji: "⚽",
+    title: "Goal #983 — the record extends",
+    desc: "— Ronaldo scores twice for Al Nassr against Al Faysaly in the Saudi Pro League, reaching 983 career goals in 1,342 appearances.",
+    stat: "Goal #983", badge: "983 Career Goals", emoji: "⚽",
     img: "/img/era/era-2026-record.webp",
-    alt: "Ronaldo in the Portugal number 7 shirt at the 2026 World Cup",
+    alt: "Ronaldo in the Al Nassr shirt celebrating goal 983",
   },
 ];
 

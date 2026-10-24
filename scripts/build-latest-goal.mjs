@@ -113,14 +113,27 @@ const feed = {
     lastGoalMinute: lg.minute,
   },
   recentGoals,
-  totals: {
-    goals: TOTAL_GOALS,
-    alnassrGoals: 134,
-    alnassrApps: 157,
-    season2026Goals: 24,
-    portugueseGoals: 146,
-    portugueseCaps: 234,
-  },
+  totals: (() => {
+    let alnassrGoals = 136, alnassrApps = 159, season2026Goals = 26;
+    try {
+      const rd = JSON.parse(fs.readFileSync(path.join(ROOT, "public/data/ronaldo-data.json"), "utf8"));
+      const anRows = (rd.clubSeasons || []).filter(r => r.club === "Al Nassr");
+      if (anRows.length) {
+        alnassrGoals = anRows.reduce((a, b) => a + b.goals, 0);
+        alnassrApps = anRows.reduce((a, b) => a + b.apps, 0);
+      }
+      const y26 = (rd.calendarYears || []).find(r => r.year === 2026);
+      if (y26) season2026Goals = y26.goals;
+    } catch (e) {}
+    return {
+      goals: TOTAL_GOALS,
+      alnassrGoals,
+      alnassrApps,
+      season2026Goals,
+      portugueseGoals: 146,
+      portugueseCaps: 234,
+    };
+  })(),
 };
 
 // The feed carries a "syncedAt" stamp. Writing it on every run would
