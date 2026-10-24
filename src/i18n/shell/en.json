@@ -36,6 +36,13 @@
   ],
   "ctx": "2013 is Ronaldo's highest-scoring calendar year: 69 goals  [&mdash; 59 for Real Madrid and 10 for Portugal. The 59 club goals are the most he has scored for his clubs in a calendar year, and the year included his first international hat-trick: three goals in fifteen minutes against Northern Ireland."
  },
+ "&mdash; Sponsored Hub": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "Match Highlights &amp; Deals  [&mdash; Sponsored Hub] International Editions / Idiomas"
+ },
  "&mdash; is his most prolific club season: 48 in La Liga, 10 in the Champions League, 1 in the Copa del Rey and 2 in the super cups. He scored in every competition he entered.": {
   "count": 1,
   "pages": [
@@ -4244,6 +4251,13 @@
   ],
   "ctx": "25  [Every year from 2002 to 2026.] Career Scoring Distributed by Decade"
  },
+ "Exclusive Sports Deals &amp; Partner Offers": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "[attr title]"
+ },
  "Explore Cristiano Ronaldo deep dive statistics": {
   "count": 1,
   "pages": [
@@ -5533,7 +5547,7 @@
    "real-madrid",
    "ronaldo-vs-messi"
   ],
-  "ctx": "— Free Live Football Streams  [International Editions / Idiomas] English (US, NG, IN, PH)"
+  "ctx": "&mdash; Sponsored Hub  [International Editions / Idiomas] English (US, NG, IN, PH)"
  },
  "International Goal": {
   "count": 1,
@@ -5951,6 +5965,13 @@
   ],
   "ctx": "[attr aria-label]"
  },
+ "Match Highlights &amp; Deals": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "★  [Match Highlights &amp; Deals] &mdash; Sponsored Hub"
+ },
  "Matches": {
   "count": 3,
   "pages": [
@@ -6204,7 +6225,7 @@
    "gear",
    "index"
   ],
-  "ctx": "✈️ Telegram Channel  [Official Verification &amp; Data Sources] FIFA Official Records"
+  "ctx": "⭐ Partner Deals &amp; Offers  [Official Verification &amp; Data Sources] FIFA Official Records"
  },
  "On": {
   "count": 3,
@@ -9440,7 +9461,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "Koora Live  [— Free Live Football Streams] International Editions / Idiomas"
+  "ctx": "Koora Live  [— Free Live Football Streams] ★"
  },
  "— Ronaldo converts the extra-time penalty at the Estádio da Luz to win a 4–1 Champions League final after extra time, giving Real Madrid a tenth European Cup and a personal 17-goal Champions League season.": {
   "count": 1,
@@ -9691,6 +9712,13 @@
   ],
   "ctx": "▾  [⚡ Career Scoring &amp; Playmaking Totals] 981 Official Career Goals"
  },
+ "⚡ Featured Partner Offers &amp; Sports Deals": {
+  "count": 1,
+  "pages": [
+   "gear"
+  ],
+  "ctx": "💖 Support Directly on Ko-fi  [⚡ Featured Partner Offers &amp; Sports Deals] 🛍️"
+ },
  "⚡ Landmark Goal Speed Tracker": {
   "count": 1,
   "pages": [
@@ -9766,7 +9794,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "to cover hosting and video streaming costs.  [✈️ Join Telegram Channel] 👕 Ronaldo Store 🛍️"
+  "ctx": "to cover hosting and video streaming costs.  [✈️ Join Telegram Channel] ⭐ Partner Deals"
  },
  "✈️ Telegram Channel": {
   "count": 2,
@@ -9774,7 +9802,7 @@
    "gear",
    "index"
   ],
-  "ctx": "💖 Donate on Ko-fi  [✈️ Telegram Channel] Official Verification &amp; Data Sources"
+  "ctx": "💖 Donate on Ko-fi  [✈️ Telegram Channel] ⭐ Partner Deals &amp; Offers"
  },
  "✓ Primary Source · Verified October 2026": {
   "count": 1,
@@ -9815,6 +9843,20 @@
    "trophies"
   ],
   "ctx": "Every meeting with Real Madrid, the goal log and video clips.  [⭐ Champions League Record] 140 UEFA Champions League goals, 183 appearances, 42 assists and 5 titles."
+ },
+ "⭐ Partner Deals": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "✈️ Join Telegram Channel  [⭐ Partner Deals] 👕 Ronaldo Store 🛍️"
+ },
+ "⭐ Partner Deals &amp; Offers": {
+  "count": 1,
+  "pages": [
+   "index"
+  ],
+  "ctx": "✈️ Telegram Channel  [⭐ Partner Deals &amp; Offers] Official Verification &amp; Data Sources"
  },
  "⭐ Tournament Kit": {
   "count": 1,
@@ -10048,7 +10090,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "✈️ Join Telegram Channel  [👕 Ronaldo Store 🛍️] 💖 Donate on Ko-fi"
+  "ctx": "⭐ Partner Deals  [👕 Ronaldo Store 🛍️] 💖 Donate on Ko-fi"
  },
  "👟 Pro Cleats": {
   "count": 1,
@@ -10070,7 +10112,7 @@
   "pages": [
    "gear"
   ],
-  "ctx": "Donate $15 →  [💖 Support Directly on Ko-fi] 🛍️"
+  "ctx": "Donate $15 →  [💖 Support Directly on Ko-fi] ⚡ Featured Partner Offers &amp; Sports Deals"
  },
  "💖 Support on Ko-fi": {
   "count": 2,

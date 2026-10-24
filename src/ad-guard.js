@@ -43,6 +43,7 @@
     'youtube.com',
     'youtu.be',
     'ronaldostats.site',
+    'araplhn.org',
     'localhost'
   ];
 
