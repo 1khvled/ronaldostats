@@ -547,6 +547,18 @@
     }
    ]
   },
+  "2018-2019": {
+   "season": "2018-2019",
+   "sourcePage": "https://www.ronaldo7.net/video/goals-2018-2019/goals-2018-2019.html",
+   "sourceTitle": "All Cristiano Ronaldo goals for Juventus in 2018-2019",
+   "seasonVideo": {
+    "provider": "youtube",
+    "videoId": "vNW4r7-s6hs",
+    "videoUrl": "https://www.youtube.com/watch?v=vNW4r7-s6hs",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/vNW4r7-s6hs"
+   },
+   "goals": []
+  },
   "2017-2018": {
    "season": "2017-2018",
    "sourcePage": "https://www.ronaldo7.net/video/goals-2017-2018/goals-2017-2018.html",
