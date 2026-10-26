@@ -1,7 +1,7 @@
 {
  "source": "ronaldo7.net",
  "sourceNote": "ronaldo7.net publishes one page per Ronaldo season. Where the page lists each goal on its own, the entry names the opponent, the date, the score, the competition and a description, and carries that goal's own video. The videos are third-party uploads on YouTube and Dailymotion; they are linked and embedded, never re-hosted. The season pages are the source of the video, the dates and the descriptions.",
- "retrieved": "2026-10-25",
+ "retrieved": "2026-10-26",
  "seasons": {
   "2021-2022": {
    "season": "2021-2022",
@@ -546,18 +546,6 @@
      "embedUrl": "https://www.youtube-nocookie.com/embed/RKGidAPzCoI"
     }
    ]
-  },
-  "2018-2019": {
-   "season": "2018-2019",
-   "sourcePage": "https://www.ronaldo7.net/video/goals-2018-2019/goals-2018-2019.html",
-   "sourceTitle": "All Cristiano Ronaldo goals for Juventus in 2018-2019",
-   "seasonVideo": {
-    "provider": "youtube",
-    "videoId": "vNW4r7-s6hs",
-    "videoUrl": "https://www.youtube.com/watch?v=vNW4r7-s6hs",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/vNW4r7-s6hs"
-   },
-   "goals": []
   },
   "2017-2018": {
    "season": "2017-2018",

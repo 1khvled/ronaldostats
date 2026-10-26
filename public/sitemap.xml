@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.ronaldostats.site/en</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/dashboard</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/goalsbyseason</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/goalsbyyear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -130,7 +130,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/real-madrid</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/real-madrid" />
@@ -156,7 +156,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/champions-league</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/timeline</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -245,7 +245,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/trophies</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/trophies" />
@@ -296,7 +296,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/en/gear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -317,7 +317,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -348,7 +348,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/dashboard</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -369,7 +369,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/goalsbyseason</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -390,7 +390,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/goalsbyyear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -411,7 +411,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -432,7 +432,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/real-madrid</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/real-madrid" />
@@ -453,7 +453,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/champions-league</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -474,7 +474,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/timeline</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -495,7 +495,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/trophies</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/trophies" />
@@ -516,7 +516,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/es/gear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -537,7 +537,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -568,7 +568,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/dashboard</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -589,7 +589,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/goalsbyseason</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -610,7 +610,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/goalsbyyear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -631,7 +631,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -652,7 +652,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/real-madrid</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/real-madrid" />
@@ -673,7 +673,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/champions-league</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -694,7 +694,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/timeline</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -715,7 +715,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/trophies</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/trophies" />
@@ -736,7 +736,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/pt/gear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
@@ -757,7 +757,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en" />
@@ -788,7 +788,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/dashboard</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/dashboard" />
@@ -809,7 +809,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/goalsbyseason</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyseason" />
@@ -830,7 +830,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/goalsbyyear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/goalsbyyear" />
@@ -851,7 +851,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/ronaldo-vs-messi</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/ronaldo-vs-messi" />
@@ -872,7 +872,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/real-madrid</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/real-madrid" />
@@ -893,7 +893,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/champions-league</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/champions-league" />
@@ -914,7 +914,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/timeline</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/timeline" />
@@ -935,7 +935,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/trophies</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/trophies" />
@@ -956,7 +956,7 @@
   </url>
   <url>
     <loc>https://www.ronaldostats.site/fr/gear</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ronaldostats.site/en/gear" />
