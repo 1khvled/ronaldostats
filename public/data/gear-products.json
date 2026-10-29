@@ -4,24 +4,24 @@
  "note": "Prices and ratings are read from the listing on the retrieval date and change; the card says so.",
  "products": [
   {
-   "file": "ronaldo-home-jersey.jpg",
-   "asin": "B0D5LXBBMQ",
-   "amazonTitle": "Portugal 2025/26 Men's Home Jersey",
-   "price": "49.99",
-   "rating": "4.5",
-   "reviews": "15",
-   "image": "https://m.media-amazon.com/images/I/51gK1Z7mK8L._AC_SL1200_.jpg",
-   "url": "https://www.amazon.com/dp/B0D5LXBBMQ?tag=ronaldostats-20"
-  },
-  {
    "file": "ronaldo-ball.jpg",
    "asin": "B0H8PBD6WV",
-   "amazonTitle": "Soccer Ball Size 5, Waterproof PU Leather, Official Match Ball, with Pump & Needles",
-   "price": "26.98",
-   "rating": "4.6",
-   "reviews": "27",
+   "amazonTitle": "Fußball, Größe 5, wasserdichtes PU-Leder, offizieller Spielball, mit Pumpe und Nadeln",
+   "price": "",
+   "rating": "",
+   "reviews": "",
    "image": "https://m.media-amazon.com/images/I/81RVncqgDaL._AC_SL1200_.jpg",
    "url": "https://www.amazon.com/dp/B0H8PBD6WV?tag=ronaldostats-20"
+  },
+  {
+   "file": "ronaldo-cap.jpg",
+   "asin": "B0H3XP4V8F",
+   "amazonTitle": "Icon Sports Officially Licensed Portugal National Football Team #7 Adjustable Cap - Unisex Adult - FPF111CP Black",
+   "price": "24.99",
+   "rating": "",
+   "reviews": "",
+   "image": "https://m.media-amazon.com/images/I/71NzWUo-kcL._AC_SL1200_.jpg",
+   "url": "https://www.amazon.com/dp/B0H3XP4V8F?tag=ronaldostats-20"
   }
  ]
 }
