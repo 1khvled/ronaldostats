@@ -552,7 +552,7 @@ function ensureMobileMenuDrawer() {
     {
       title: txt.catFeatured,
       items: [
-        { href: getLangUrl(curLangCode), label: txt.home, badge: "983 Goals", icon: `<svg viewBox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg>` },
+        { href: getLangUrl(curLangCode), label: txt.home, badge: "985 Goals", icon: `<svg viewBox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5"></path><path d="M5.5 10.5V21h5v-6h3v6h5V10.5"></path></svg>` },
         { href: `/${curLangCode}/ronaldo-vs-messi`, label: txt.vsRonaldo, badge: "GOAT", icon: `<svg viewBox="0 0 24 24"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8l4 4-4 4"></path></svg>` },
       ]
     },
@@ -1357,7 +1357,7 @@ function initGlobalGoatPoll() {
           </div>
           <div class="goat-vote-meta">
             <span class="vote-confirmed-tag">✓ Your vote was recorded! (${total.toLocaleString()} total community votes)</span>
-            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`I just voted in the Cristiano Ronaldo vs Lionel Messi GOAT poll on RonaldoStats! Compare their official 983 vs 936 career stats:`)}&url=${encodeURIComponent(window.location.href)}" target="_blank" rel="noopener noreferrer" class="btn-share-poll-vote">
+            <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(`I just voted in the Cristiano Ronaldo vs Lionel Messi GOAT poll on RonaldoStats! Compare their official 985 vs 936 career stats:`)}&url=${encodeURIComponent(window.location.href)}" target="_blank" rel="noopener noreferrer" class="btn-share-poll-vote">
               <span>🐦 Share Verdict</span>
             </a>
           </div>
@@ -1557,19 +1557,19 @@ function initDedicatedRoulette() {
       const rouletteSec = document.createElement("section");
       rouletteSec.className = "latest-goal-roulette-card";
       rouletteSec.id = "dedicated-roulette-section";
-      rouletteSec.setAttribute("aria-label", "983 Career Goal Roulette");
+      rouletteSec.setAttribute("aria-label", "985 Career Goal Roulette");
       rouletteSec.innerHTML = `
         <div class="roulette-card-header">
-          <div class="roulette-badge-pill">🎲 981-GOAL ROULETTE</div>
+          <div class="roulette-badge-pill">🎲 985-GOAL ROULETTE</div>
           <h2 class="roulette-section-title">Spin a Random Ronaldo Career Goal Highlight</h2>
-          <p class="roulette-section-desc">Spin through all 983 official senior goals across Cristiano Ronaldo's 25-year legendary career. Click to immediately stream and replay the highlight video in the player above!</p>
+          <p class="roulette-section-desc">Spin through all 985 official senior goals across Cristiano Ronaldo's 25-year legendary career. Click to immediately stream and replay the highlight video in the player above!</p>
         </div>
         <div class="roulette-interactive-stage">
           <div class="roulette-highlight-display" id="dedicated-roulette-display">
             <div class="roulette-standby-view">
               <span class="roulette-standby-icon">⚽</span>
               <div class="roulette-standby-text">
-                <b>983 Senior Goals Available</b>
+                <b>985 Senior Goals Available</b>
                 <span>Click the button below to randomly draw a classic milestone, solo stunner, or cup final decider.</span>
               </div>
             </div>
@@ -1651,7 +1651,7 @@ function initDedicatedRoulette() {
     display.innerHTML = `
       <div class="roulette-spinning-state">
         <div class="roulette-spinner-ring"></div>
-        <div class="roulette-spintip">🎲 Spinning across 983 career goals...</div>
+        <div class="roulette-spintip">🎲 Spinning across 985 career goals...</div>
       </div>
     `;
 
@@ -2116,20 +2116,20 @@ const gpg = (g, a) => (a ? (g / a).toFixed(2) : "—");
  */
 
 const LIVE = {
-  goals: 983, apps: 1342, clubGoals: 837, argGoals: 146, argCaps: 234,
-  assists: 261, tmAssists: 291, ga: 1242, tmGa: 1272,
+  goals: 985, apps: 1343, clubGoals: 839, argGoals: 146, argCaps: 234,
+  assists: 261, tmAssists: 291, ga: 1246, tmGa: 1276,
   trophies: 35, rTrophies: 46, tReal: 15, tManUtd: 9, tJuve: 5, tAlNassr: 2, tSporting: 1, tPortugal: 3,
-  gap: -45, fewer: 159, road: 19,
+  gap: -49, fewer: 162, road: 15,
   rGoals: 936, rApps: 1181, rAssists: 408, rGpg: "0.79", rGa: 1344, astLead: -147,
-  npg: 797, npgR: 827, npgLead: -30,
-  alnassrGoals: 134, alnassrApps: 157,
+  npg: 801, npgR: 827, npgLead: -26,
+  alnassrGoals: 138, alnassrApps: 160,
   abtReal: 152, abtPortugal: 14, abtAlNassr: 9, abtJuve: 20, abtManUtd: 66,
   compLiga: 311, compCDR: 22, compSuper: 12, compUCLb: 105, compUCLm: 24, compUCLj: 14,
-  compPL: 103, compSerieA: 81, compSPL: 106, compPrimeira: 3,
+  compPL: 103, compSerieA: 81, compSPL: 110, compPrimeira: 3,
   compCupMU: 17, compCupJuve: 4, compCupNassr: 3, compCupSporting: 2, compACL: 16,
   compShield: 1, compSupercoppaIt: 2, compACC: 9,
   compQual: 52, compWC: 52, compNL: 15, compEuro: 55, compConfed: 2, compFriend: 22,
-  lgNum: 983, lgOpp: "Al-Faisaly FC", lgDate: "23 October 2026",
+  lgNum: 985, lgOpp: "Al Kholood", lgDate: "29 October 2026",
 };
 
 // The dictionary modules are separate files, so the helpers
@@ -2917,8 +2917,8 @@ function renderHome(d) {
   // from live totals on each render — static HTML is SEO fallback only)
   const r1000 = el("road-1000");
   if (r1000) {
-    const goals = t.goals || 983;
-    const apps = t.apps || 1340;
+    const goals = t.goals || 985;
+    const apps = t.apps || 1343;
     const clubG = (d.totals && d.totals.club && d.totals.club.goals) || 835;
     const prtG = (d.totals && d.totals.country && d.totals.country.goals) || 146;
     const remaining = Math.max(0, 1000 - goals);
@@ -3525,7 +3525,7 @@ function renderDashboard(d, team) {
     // per-team NPG/FK/HT stay literal — the JSON has no per-team splits, so
     // PEN_BY_TEAM / FK_BY_TEAM / HT_BY_TEAM carry the frozen split and still
     // reconcile with the canonical career totals (184 pens, 66 FKs, 66 hat-tricks).
-    // G+A computed live (983+261 = 1,244).
+    // G+A computed live (985+261 = 1,246).
     const assistsBT = d.totals.assists.byTeam;
     const assistsVal = T === "all" ? n(d.totals.assists.official) + "+" : String(assistsBT[TEAM_ASSIST_KEY[T] || T].official);
     const gaVal = T === "all" ? n(d.totals.goals + d.totals.assists.official) + "+" : n(clubAgg(d)[T].goals + d.totals.assists.byTeam[TEAM_ASSIST_KEY[T] || T].official);
@@ -3915,7 +3915,7 @@ const ERA_PHOTOS = {
   ],
   miami: [
     { src: "/img/era/era-2023-alnassr.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Ronaldo in the Al Nassr number 7 shirt", cap: "The Al Nassr years — captain of the Saudi Pro League, 2023 to now" },
-    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating as the all-time leading goalscorer in international football", cap: "Records & milestones — 983 goals in 1,342 senior appearances" },
+    { src: "/img/era/era-2026-record.webp", w: 1200, h: 675, pos: "50% 25%", alt: "Cristiano Ronaldo celebrating as the all-time leading goalscorer in international football", cap: "Records & milestones — 985 goals in 1,343 senior appearances" },
   ],
 };
 ERA_PHOTOS.rosario = ERA_PHOTOS["Sporting CP 2002-2003"];
@@ -4382,7 +4382,7 @@ function updateBirthdaySocialShare(dayData, key) {
     } else if (isRonaldoBday) {
       shareText = `¡Cumplo años el mismo día que Cristiano Ronaldo (5 de febrero)! 🐐🎂 ¿Marcó en tu cumpleaños?`;
     } else {
-      shareText = `¿Marcó Cristiano Ronaldo en tu cumpleaños? Revisa los 366 días a lo largo de sus 983 goles:`;
+      shareText = `¿Marcó Cristiano Ronaldo en tu cumpleaños? Revisa los 366 días a lo largo de sus 985 goles:`;
     }
   } else if (lang === "pt") {
     if (dayData.goalsCount > 0) {
@@ -5573,7 +5573,7 @@ async function autoPullLatestGoalLive(d) {
     const todayCard = document.getElementById("today-status-section");
 
     const currentNumStr = (activeNum ? activeNum.textContent : "").replace(/\D/g, "");
-    const currentNum = parseInt(currentNumStr, 10) || 983;
+    const currentNum = parseInt(currentNumStr, 10) || 985;
 
     const isDesynced = (g.goalNumber !== currentNum) ||
       (video && !video.src.includes(`Goal${g.goalNumber}.mp4`)) ||

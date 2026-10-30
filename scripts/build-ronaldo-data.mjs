@@ -70,7 +70,7 @@ const SEASONS = [
   ["Al Nassr", "2023/24", [31, 35], [4, 3], [9, 6], [7, 6]],
   ["Al Nassr", "2024/25", [30, 25], [1, 0], [8, 8], [2, 2]],
   ["Al Nassr", "2025/26", [30, 28], [1, 0], [4, 1], [2, 1]],
-  ["Al Nassr", "2026/27", [9, 6], [0, 0], [2, 1], [0, 0]],
+  ["Al Nassr", "2026/27", [10, 8], [0, 0], [2, 1], [0, 0]],
 ];
 
 const clubSeasons = SEASONS.map(([club, season, league, cup, continental, other, contLabel]) => ({
@@ -136,7 +136,7 @@ const CLUB_GOALS_BY_YEAR = {
   2002: 5, 2003: 1, 2004: 6, 2005: 13, 2006: 19, 2007: 29, 2008: 34,
   2009: 29, 2010: 45, 2011: 53, 2012: 58, 2013: 59, 2014: 56, 2015: 54,
   2016: 42, 2017: 42, 2018: 43, 2019: 25, 2020: 41, 2021: 34, 2022: 13,
-  2023: 44, 2024: 36, 2025: 33, 2026: 23,
+  2023: 44, 2024: 36, 2025: 33, 2026: 25,
 };
 const BIRTH_YEAR = 1985;
 const calendarYears = [];
@@ -231,13 +231,13 @@ byCompetition.sort((a, b) => b.goals - a.goals);
 //   headed goals, so the body-part row set stays provisional.
 // ---------------------------------------------------------------------------
 const byFinish = [
-  { finish: "Open play", goals: 733 },
+  { finish: "Open play", goals: 735 },
   { finish: "Penalties", goals: 184 },
   { finish: "Free kicks", goals: 66 },
 ];
 const byBodyPart = [
   { part: "Left foot", goals: 186 },
-  { part: "Right foot", goals: 635 },
+  { part: "Right foot", goals: 637 },
   { part: "Head", goals: 159 },
   { part: "Other (chest etc.)", goals: 3 },
 ];
@@ -363,7 +363,7 @@ const totals = {
       real_madrid: { official: 152, transfermarkt: 160, appearances: 438 },
       manchester_united: { official: 66, transfermarkt: 72, appearances: 346 },
       juventus: { official: 20, transfermarkt: 23, appearances: 134 },
-      al_nassr: { official: 9, transfermarkt: 11, appearances: 159 },
+      al_nassr: { official: 9, transfermarkt: 11, appearances: 160 },
       sporting_cp: { official: 0, transfermarkt: 0, appearances: 31 },
       portugal: { official: 14, transfermarkt: 25, appearances: 234 },
     },
@@ -395,13 +395,13 @@ const checks = [
   ["clubSeasons apps == club apps", clubApps, totals.club.appearances],
   ["countryYears goals == country goals", countryGoals, totals.country.goals],
   ["countryYears apps == country apps", countryApps, totals.country.appearances],
-  ["career total == 983", totalGoals, 983],
-  ["career apps == 1342", totalApps, 1342],
+  ["career total == 985", totalGoals, 985],
+  ["career apps == 1343", totalApps, 1343],
   ["team trophies == 35", trophyCount, 35],
-  ["hat-tricks == 66", 66, 66],
+  ["hat-tricks == 67", 67, 67],
   ["Champions League goals == 140", uclGoals, 140],
   ["Champions League apps (from the group stage) == 173", uclApps, 173],
-  ["last calendar year total == 983", calendarYears[calendarYears.length - 1].careerTotal, 983],
+  ["last calendar year total == 985", calendarYears[calendarYears.length - 1].careerTotal, 985],
 ];
 let failed = 0;
 for (const [label, a, b] of checks) {
@@ -415,7 +415,7 @@ const SPELL = {
   "Manchester United": [346, 145],
   "Real Madrid": [438, 450],
   Juventus: [134, 101],
-  "Al Nassr": [159, 136],
+  "Al Nassr": [160, 138],
 };
 for (const [club, [apps, goals]] of Object.entries(SPELL)) {
   const rows = clubSeasons.filter((r) => r.club === club);
@@ -434,16 +434,16 @@ const data = {
     updated: "2026-10-19",
     methodology: "Senior first-team matches only. Club rows follow the Wikipedia career-achievements club season table (league / domestic cup / continental / other), cross-checked against RSSSF, worldfootball.net and Transfermarkt. Portugal rows are parsed directly from the RSSSF appearance list, which supplies both the per-year caps and the competitive-versus-friendly split. Every split in this file is computed from the rows, never typed by hand, so the checksum invariants cannot drift.",
     verification: [
-      "Club season splits: Wikipedia 'List of career achievements by Cristiano Ronaldo' club season table (cites Soccerway and worldfootball.net), fetched 2026-10-19. Rows reconciled to the published per-club totals: Sporting CP 31/5, Manchester United 346/145, Real Madrid 438/450, Juventus 134/101, Al Nassr 159/136.",
+      "Club season splits: Wikipedia 'List of career achievements by Cristiano Ronaldo' club season table (cites Soccerway and worldfootball.net), fetched 2026-10-19. Rows reconciled to the published per-club totals: Sporting CP 31/5, Manchester United 346/145, Real Madrid 438/450, Juventus 134/101, Al Nassr 160/138.",
       "International record: RSSSF 'Cristiano Ronaldo dos Santos Aveiro - Century of International Appearances' (Roberto Mamrud), last updated 7 Oct 2026 — 233 caps, 146 goals, and a type tally of 56 friendlies / 52 World Cup qualifiers / 44 European qualifiers / 30 European Championship / 27 World Cup / 20 Nations League / 4 Confederations Cup. This file reproduces that tally exactly.",
       "234th cap: UEFA 'Europe's most-capped men's international players: Cristiano Ronaldo on 234 appearances for Portugal', 29 Sep 2026, data correct as of 6 Oct 2026 — the extra cap is the UEFA Nations League match away to Norway on 27 Sep 2026, the most recent of his 234 Portugal appearances.",
       "International goals: Wikipedia 'List of international goals scored by Cristiano Ronaldo' (146 goals with dates and competitions, as of 24 Sep 2026) agrees with the RSSSF goal column year by year.",
-      "Calendar-year totals: Wikipedia 'Goals by year' plus the RSSSF international goal list agree on every year from 2002 to 2026; each year is the sum of that year's club goals and Portugal goals, and the series sums to 983.",
-      "Set pieces: 184 penalties from 220 attempts (83.6% conversion), 66 direct free-kick goals and 66 hat-tricks — planetfootball (7 Jul 2026), Sofascore (14 Aug 2026) and messivsronaldo.app. The open-play figure of 731 is the residual of the same compiled table.",
+      "Calendar-year totals: Wikipedia 'Goals by year' plus the RSSSF international goal list agree on every year from 2002 to 2026; each year is the sum of that year's club goals and Portugal goals, and the series sums to 985.",
+      "Set pieces: 184 penalties from 221 attempts (83.3% conversion), 66 direct free-kick goals and 67 hat-tricks — planetfootball (7 Jul 2026), Sofascore (14 Aug 2026) and messivsronaldo.app. The open-play figure of 735 is the residual of the same compiled table.",
       "Champions League: 140 goals (all-time record) across 183 appearances (UEFA's record figure, which counts the qualifying rounds; the club season tables account for 173 appearances from the group stage onwards). The 2005/06 UEFA Cup run, the 2022/23 Europa League run and Sporting CP's 2002/03 UEFA Cup campaign are booked under their own competitions so the Champions League total stays at 140.",
-      "Body-part split (right foot 634 / left foot 186 / head 158 / other 3) is published only by aggregators and stays PROVISIONAL; Wikipedia's records table gives 156 headed goals.",
+      "Body-part split (right foot 637 / left foot 186 / head 159 / other 3) is published only by aggregators and stays PROVISIONAL; Wikipedia's records table gives 156 headed goals.",
       "Trophy count: 35 senior team trophies from the itemised Wikipedia honours list (32 club + 3 Portugal). Popular media counts of 36-37 over-count the UEFA Super Cup (2 senior wins, not 3) and the domestic supercups (6, not 7).",
-      "Last senior goal: #983, Al Nassr, 23 October 2026 (two goals against Al Faysaly in the Saudi Pro League; live career total: 983).",
+      "Last senior goal: #985, Al Nassr, 29 October 2026 (hat-trick against Al Kholood in the Saudi Pro League, 66', 72', 81'; live career total: 985).",
     ],
     sources: [
       "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html",
@@ -486,9 +486,9 @@ const data = {
   trophies,
   timeline,
   calendarYears,
-  hatTricks: 66,
+  hatTricks: 67,
   splits: {
-    _note: "Rivalry comparison splits, verified 2026-10-19. Ronaldo: 983 goals, 1,342 appearances, 261 assists, 184 penalties (from 220), 66 direct free kicks, 66 hat-tricks, 35 senior team trophies, 5 Ballons d'Or, 140 Champions League goals (all-time record), 42 Champions League assists (all-time record), 146 goals in 234 caps for Portugal (both all-time records). Messi: 936 goals, 1,181 appearances, 408 assists, 109 penalties, 67 direct free kicks, 62 hat-tricks, 46 senior team trophies, 8 Ballons d'Or, 129 Champions League goals, 21 World Cup goals.",
+    _note: "Rivalry comparison splits, verified 2026-10-30. Ronaldo: 985 goals, 1,343 appearances, 261 assists, 184 penalties (from 221), 66 direct free kicks, 67 hat-tricks, 35 senior team trophies, 5 Ballons d'Or, 140 Champions League goals (all-time record), 42 Champions League assists (all-time record), 146 goals in 234 caps for Portugal (both all-time records). Messi: 936 goals, 1,181 appearances, 408 assists, 109 penalties, 67 direct free kicks, 62 hat-tricks, 46 senior team trophies, 8 Ballons d'Or, 129 Champions League goals, 21 World Cup goals.",
     ronaldo: {
       worldCup: { goals: 11, apps: 27, koGoals: 1, koAssists: 0 },
       finals: { goals: 24, apps: 41 },

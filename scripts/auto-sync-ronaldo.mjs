@@ -32,7 +32,7 @@ const ronaldoPath = resolve(root, "public", "data", "ronaldo-data.json");
 const builderPath = resolve(root, "scripts", "build-ronaldo-vs-messi.mjs");
 const pendingPath = resolve(root, "public", "data", "pending.json");
 
-const SOURCE_URL = "https://www.ronaldovsronaldo.app/";
+const SOURCE_URL = "https://www.messivsronaldo.app/";
 const isCheckOnly = process.argv.includes("--check");
 
 const HEADERS = {
@@ -135,8 +135,8 @@ export async function runRonaldoSync() {
   const ht = modalVal(html, "Hat-tricks");
   const modalRonaldoApps = modalRonaldoVal(html);
   const live = {
-    ronaldoGoals: liGoals[0] ?? null,
-    ronaldoApps: modalRonaldoApps,
+    messiGoals: liGoals[0] ?? null,
+    messiApps: modalRonaldoApps,
     ronaldoGoals: liGoals[1] ?? null,
     ronaldoApps: apps.value,
     ronaldoAssists: liAssists[1] ?? null,
@@ -147,14 +147,18 @@ export async function runRonaldoSync() {
   };
   console.log("parsed:", JSON.stringify(live));
 
-  if (!live.ronaldoGoals || !live.ronaldoGoals || !live.ronaldoApps) {
+  if (!live.messiGoals || !live.ronaldoGoals || !live.ronaldoApps) {
     stageReview("ronaldo-parse-failed", "Could not parse totals from ronaldovsronaldo.app (markup changed?)");
     return { status: "PARSE_FAILED" };
   }
 
   // Cross-check anchor: their Ronaldo numbers must equal our ground truth.
   // If they don't, methodology changed — do NOT apply anything.
-  if (live.ronaldoGoals !== d.totals.combined.goals || live.ronaldoApps !== d.totals.combined.appearances) {
+  if (live.ronaldoGoals === d.totals.combined.goals && live.ronaldoApps === d.totals.combined.appearances) {
+    console.log(`Cross-check OK: their Ronaldo ${live.ronaldoGoals}/${live.ronaldoApps} == our ground truth.`);
+    console.log(`Ronaldo unchanged at ${d.totals.combined.goals}/${d.totals.combined.appearances}. Nothing to do.`);
+    return { status: "UP_TO_DATE" };
+  } else {
     stageReview(
       "ronaldo-cross-check-mismatch",
       `Their Ronaldo ${live.ronaldoGoals}/${live.ronaldoApps} vs our ${d.totals.combined.goals}/${d.totals.combined.appearances} — methodology may have changed, human check needed.`

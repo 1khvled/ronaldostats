@@ -215,7 +215,7 @@ export const ACH = {
     ["¿Cuál es el trofeo más importante de Ronaldo?", "La <b>Eurocopa de 2016</b>: el título que capitaneó con Portugal en París, siendo el segundo máximo goleador del torneo."],
     ["¿Cuántos títulos de liga ha ganado Ronaldo?", "<b>Ocho</b>: 3 de Premier League, 2 de La Liga, 2 de Serie A y 1 de la Saudi Pro League, tal como se detalla en el palmarés de este archivo."],
     ["¿Cuántos premios individuales ha ganado Ronaldo?", "Cinco Ballons d'Or, cuatro Botas de Oro Europeas, tres premios UEFA de Mejor Jugador del Año, el FIFA World Player of the Year de 2008, el premio FIFA Puskás de 2009, la Bota de Oro de la Euro 2020 y The Best FIFA Men's Player en 2016 y 2017."],
-    ["¿Es Ronaldo el jugador más laureado de la historia?", "Solo en títulos colectivos, Messi va por delante con 46 frente a los 35 de Ronaldo. Ronaldo lidera los récords de gol: 983 goles, 140 de ellos en la Champions League, y 146 goles en 234 partidos con Portugal."]
+    ["¿Es Ronaldo el jugador más laureado de la historia?", "Solo en títulos colectivos, Messi va por delante con 46 frente a los 35 de Ronaldo. Ronaldo lidera los récords de gol: 985 goles, 140 de ellos en la Champions League, y 146 goles en 234 partidos con Portugal."]
   ]
 };
 

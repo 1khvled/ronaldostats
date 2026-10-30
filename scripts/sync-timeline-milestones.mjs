@@ -40,7 +40,7 @@ export const MILESTONES = [
     key: "first-goal", era: "rosario", date: "7 Oct 2002", iso: "2002-10-07", year: 2002,
     cat: "goal", team: "sporting",
     title: "First senior career goal vs Moreirense",
-    desc: "— seven weeks after his debut, Ronaldo opens his senior account with two goals against Moreirense in the Primeira Liga: the first of 981.",
+    desc: "— seven weeks after his debut, Ronaldo opens his senior account with two goals against Moreirense in the Primeira Liga: the first of 985.",
     stat: "Goal #1", badge: "First Senior Goal", emoji: "⚽",
     img: "/img/era/era-2002-sporting.webp",
     alt: "The Sporting CP museum in Lisbon, with Ronaldo's number 28 shirt from his debut season",
@@ -181,13 +181,13 @@ export const MILESTONES = [
     alt: "Ronaldo in the Al Nassr number 7 shirt",
   },
   {
-    key: "goal-983", era: "miami", date: "23 Oct 2026", iso: "2026-10-23", year: 2026,
+    key: "goal-985", era: "miami", date: "29 Oct 2026", iso: "2026-10-29", year: 2026,
     cat: "goal", team: "alnassr",
-    title: "Goal #983 — the record extends",
-    desc: "— Ronaldo scores twice for Al Nassr against Al Faysaly in the Saudi Pro League, reaching 983 career goals in 1,342 appearances.",
-    stat: "Goal #983", badge: "983 Career Goals", emoji: "⚽",
+    title: "Goal #985 — the 67th career hat-trick",
+    desc: "— Ronaldo scores a 15-minute second-half hat-trick for Al Nassr against Al Kholood in a 5–3 thriller, reaching 985 official career goals in 1,343 appearances.",
+    stat: "Goal #985", badge: "985 Career Goals", emoji: "⚽",
     img: "/img/era/era-2026-record.webp",
-    alt: "Ronaldo in the Al Nassr shirt celebrating goal 983",
+    alt: "Ronaldo in the Al Nassr shirt celebrating goal 985",
   },
 ];
 

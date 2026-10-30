@@ -331,5 +331,41 @@
   "venue": "Home",
   "minute": "42'",
   "type": "Right-footed shot"
+ },
+ {
+  "num": "982",
+  "date": "10/23/2026",
+  "home": "Al-Nassr",
+  "opp": "Al-Faisaly FC",
+  "venue": "Away",
+  "minute": "49'",
+  "type": "Header"
+ },
+ {
+  "num": "983",
+  "date": "10/29/2026",
+  "home": "Al-Nassr",
+  "opp": "Al Kholood",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "66'",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "984",
+  "date": "10/29/2026",
+  "home": "Al-Nassr",
+  "opp": "Al Kholood",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "72'",
+  "type": "Right-footed shot"
+ },
+ {
+  "num": "985",
+  "date": "10/29/2026",
+  "home": "Al-Nassr",
+  "opp": "Al Kholood",
+  "venue": "Al-Awwal Park, Riyadh, Saudi Arabia",
+  "minute": "81'",
+  "type": "Right-footed shot"
  }
 ]

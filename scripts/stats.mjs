@@ -103,12 +103,15 @@ const penMessi = messi?.penalties ?? 109;
 const npg = goals - penRonaldo;
 const npgR = rGoals - penMessi;
 const npgLead = npg - npgR;
+const rHatTricks = messi?.hatTricks ?? 62;
+const htLead = hatTricks - rHatTricks;
+const penLead = penRonaldo - 110; // table cell compares against 110 (141)
 
 export const S = {
   goals, apps, clubGoals, clubApps, countryGoals, countryCaps,
   assists, tmAssists, ga, tmGa, gpg, gaPerGame, assistsByTeam,
   alnassrGoals, alnassrApps, season2026Goals,
-  byFinish, byBody, hatTricks, cal2026, trophiesByTeam,
+  byFinish, byBody, hatTricks, rHatTricks, htLead, penLead, cal2026, trophiesByTeam,
   trophies, individualHonours, rTrophies, rBallons, wc, finals, continental,
   rGoals, rApps, rAssists, gap, fewer, road, rGpg, rGa, astLead,
   npg, npgR, npgLead,

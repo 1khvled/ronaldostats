@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T11:29:47.507Z",
+  "updated": "2026-10-30T01:14:20.392Z",
   "generator": "scripts/smart-check.mjs (local) + worker/smart-check.js (cron); never writes ronaldo-data.json",
   "cutoff": "Only matches dated after VERIFIED_THROUGH are staged. Everything earlier is already folded into ronaldo-data.json.",
   "provisional": [],

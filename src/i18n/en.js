@@ -217,7 +217,7 @@ export const ACH = {
     ["What is Ronaldo's most important trophy?", "The <b>2016 European Championship</b> — the title he captained Portugal to in Paris, as the tournament's second-highest scorer."],
     ["How many league titles has Ronaldo won?", "<b>Eight</b> — 3 Premier League, 2 La Liga, 2 Serie A and 1 Saudi Pro League, as itemised in this archive's honours list."],
     ["How many individual awards has Ronaldo won?", "Five Ballons d'Or, four European Golden Shoes, three UEFA Men's Player of the Year awards, the FIFA World Player of the Year in 2008, the FIFA Puskás Award in 2009, the Euro 2020 Golden Boot and The Best FIFA Men's Player in 2016 and 2017."],
-    ["Is Ronaldo the most decorated player ever?", "On team titles alone Messi leads with 46 to Ronaldo's 35. Ronaldo leads the scoring records — 983 goals, 140 of them in the Champions League, and 146 goals in 234 caps for Portugal."]
+    ["Is Ronaldo the most decorated player ever?", "On team titles alone Messi leads with 46 to Ronaldo's 35. Ronaldo leads the scoring records — 985 goals, 140 of them in the Champions League, and 146 goals in 234 caps for Portugal."]
   ]
 };
 

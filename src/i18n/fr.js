@@ -217,7 +217,7 @@ export const ACH = {
     ["Quel est le trophée le plus important de Ronaldo ?", "Le <b>Championnat d'Europe 2016</b> — le titre qu'il a remporté avec le Portugal à Paris, dans le rôle de capitaine, en étant le deuxième meilleur buteur de la compétition."],
     ["Combien de titres de championnat Ronaldo a-t-il remportés ?", "<b>Huit</b> — 3 Premier League, 2 La Liga, 2 Serie A et 1 Saudi Pro League, comme détaillé dans le palmarès de cette archive."],
     ["Combien de distinctions individuelles Ronaldo a-t-il remportées ?", "Cinq Ballons d'Or, quatre souliers d'or européens, trois titres de joueur de l'année de l'UEFA, le FIFA World Player of the Year en 2008, le Prix Puskás en 2009, le Soulier d'or de l'Euro 2020 et The Best FIFA Men's Player en 2016 et 2017."],
-    ["Ronaldo est-il le joueur le plus titré de l'histoire ?", "Sur les seuls titres collectifs, Messi mène avec 46 contre 35 pour Ronaldo. Ronaldo mène les records de buts — 983 buts, dont 140 en Ligue des champions, et 146 buts en 234 sélections avec le Portugal."]
+    ["Ronaldo est-il le joueur le plus titré de l'histoire ?", "Sur les seuls titres collectifs, Messi mène avec 46 contre 35 pour Ronaldo. Ronaldo mène les records de buts — 985 buts, dont 140 en Ligue des champions, et 146 buts en 234 sélections avec le Portugal."]
   ]
 };
 
