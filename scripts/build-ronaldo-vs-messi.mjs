@@ -970,6 +970,13 @@ function generateHtml(lang) {
 ${getHreflangs(lang, "messi-vs-ronaldo")}
 <meta name="keywords" content="${t.keywords}"/>
 <script src="/js/ad-guard.js"></script>
+  <link rel="preconnect" href="https://bauval.org" crossorigin />
+  <link rel="preconnect" href="https://highrevenueformat.com" crossorigin />
+  <link rel="preconnect" href="https://araplhn.org" crossorigin />
+  <link rel="dns-prefetch" href="https://bauval.org" />
+  <link rel="dns-prefetch" href="https://highrevenueformat.com" />
+  <link rel="dns-prefetch" href="https://araplhn.org" />
+  <link rel="preload" href="/ads/hrf-top.html" as="document" fetchpriority="high" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
 <meta name="theme-color" content="#16243a"/>
 <meta name="author" content="${t.brand}"/>
@@ -1052,7 +1059,7 @@ ${JSON.stringify(jsonLd, null, 2)}
     <aside aria-label="${t.adLabel}" class="ad-banner-wrap ad-banner-top">
       <span class="ad-native-label">${t.adLabel}</span>
       <div class="ad-banner-slot">
-        <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
+        <iframe class="safe-ad-frame safe-ad-top" src="/ads/hrf-top.html" width="728" height="90" loading="eager" fetchpriority="high" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
       </div>
     </aside>
 
@@ -1396,13 +1403,7 @@ ${JSON.stringify(jsonLd, null, 2)}
       </table>
     </div>
 
-    <!-- Banner Ad Slot -->
-    <aside aria-label="${t.adLabel}" class="ad-banner-wrap">
-      <span class="ad-native-label">${t.adLabel}</span>
-      <div class="ad-banner-slot">
-        <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
-      </div>
-    </aside>
+    
 
     <!-- 5. 36 Direct Encounters (Head-to-Head Table) -->
     <div class="shead"><h2>${t.h2hHeader}</h2></div>
@@ -1479,13 +1480,7 @@ ${JSON.stringify(jsonLd, null, 2)}
       </table>
     </div>
 
-    <!-- In-Content Banner Ad Slot (post-H2H, lazy: below fold) -->
-    <aside aria-label="${t.adLabel}" class="ad-banner-wrap">
-      <span class="ad-native-label">${t.adLabel}</span>
-      <div class="ad-banner-slot">
-        <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no" loading="lazy"></iframe>
-      </div>
-    </aside>
+    
 
     <!-- VIRAL MAIN ATTRACTION: Birthday Promo Card -->
     <aside class="bday-promo-card" aria-label="${t.bdayPromoAria}">
@@ -1499,13 +1494,7 @@ ${JSON.stringify(jsonLd, null, 2)}
       </div>
     </aside>
 
-    <!-- Ad Slot -->
-    <aside aria-label="${t.adLabel}" class="ad-native-wrap">
-      <span class="ad-native-label">${t.adLabel}</span>
-      <div class="ad-native-slot">
-        <iframe class="safe-ad-frame safe-ad-native" src="/ads/prc-native-6160.html" style="width:100%;height:320px" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
-      </div>
-    </aside>
+    
 
     <!-- FAQ Accordion Section -->
     <div class="shead"><h2>${t.faqHeader}</h2></div>
@@ -1521,13 +1510,7 @@ ${faqItemsHtml}
       </div>
     </aside>
 
-    <!-- Banner Ad Slot -->
-    <aside aria-label="${t.adLabel}" class="ad-banner-wrap">
-      <span class="ad-native-label">${t.adLabel}</span>
-      <div class="ad-banner-slot">
-        <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Advertisement" scrolling="no"></iframe>
-      </div>
-    </aside>
+    
 
     <!-- Support & Donation Card -->
     <section class="support-card" id="support" aria-label="${t.supportAria}">

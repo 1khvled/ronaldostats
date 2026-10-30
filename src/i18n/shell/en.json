@@ -27,7 +27,7 @@
   "pages": [
    "dashboard"
   ],
-  "ctx": "Senior team trophies  [&mdash; 32 with clubs and 3 with Portugal.] Advertisement"
+  "ctx": "Senior team trophies  [&mdash; 32 with clubs and 3 with Portugal.] Explore More Cristiano Ronaldo Statistics"
  },
  "&mdash; 59 for Real Madrid and 10 for Portugal. The 59 club goals are the most he has scored for his clubs in a calendar year, and the year included his first international hat-trick: three goals in fifteen minutes against Northern Ireland.": {
   "count": 1,
@@ -963,7 +963,7 @@
   "pages": [
    "champions-league"
   ],
-  "ctx": "5 titles, 7 top-scorer seasons  [2005/06 was a UEFA Cup campaign and 2022/23 was the Europa League, so neither counts towards the Champions League. Season lines follow UEFA's official record of 140 goals in 183 appearances.] Advertisement"
+  "ctx": "5 titles, 7 top-scorer seasons  [2005/06 was a UEFA Cup campaign and 2022/23 was the Europa League, so neither counts towards the Champions League. Season lines follow UEFA's official record of 140 goals in 183 appearances.] Records held in the competition"
  },
  "2008, 2013, 2014, 2016, 2017 — the first at 23 years old.": {
   "count": 1,
@@ -1312,7 +1312,7 @@
   "pages": [
    "ronaldo-vs-messi"
   ],
-  "ctx": "Advertisement  [36 Direct Head-to-Head Encounters] Every single time Cristiano Ronaldo and Lionel Messi faced each other for their clubs."
+  "ctx": "Ronaldo (4 Madrid, 1 United)  [36 Direct Head-to-Head Encounters] Every single time Cristiano Ronaldo and Lionel Messi faced each other for their clubs."
  },
  "39y 213d": {
   "count": 1,
@@ -2212,7 +2212,7 @@
   "ctx": "▾  [Across official senior matches, Cristiano Ronaldo has] 983 goals and 261 assists in 1,342 appearances"
  },
  "Advertisement": {
-  "count": 147,
+  "count": 102,
   "pages": [
    "champions-league",
    "dashboard",
@@ -2222,42 +2222,6 @@
    "real-madrid",
    "ronaldo-vs-messi",
    "timeline",
-   "trophies"
-  ],
-  "ctx": "[attr aria-label]"
- },
- "Advertisement 1": {
-  "count": 7,
-  "pages": [
-   "champions-league",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "real-madrid",
-   "timeline",
-   "trophies"
-  ],
-  "ctx": "[attr aria-label]"
- },
- "Advertisement 2": {
-  "count": 6,
-  "pages": [
-   "champions-league",
-   "goalsbyseason",
-   "goalsbyyear",
-   "index",
-   "real-madrid",
-   "trophies"
-  ],
-  "ctx": "[attr aria-label]"
- },
- "Advertisement 3": {
-  "count": 5,
-  "pages": [
-   "champions-league",
-   "goalsbyseason",
-   "goalsbyyear",
-   "real-madrid",
    "trophies"
   ],
   "ctx": "[attr aria-label]"
@@ -2831,7 +2795,7 @@
   "pages": [
    "goalsbyyear"
   ],
-  "ctx": "Current career total: 983 goals  [Bars: goals that year (peak 69, 2013). Line: climb to 983.] Advertisement"
+  "ctx": "Current career total: 983 goals  [Bars: goals that year (peak 69, 2013). Line: climb to 983.] Career goals"
  },
  "Bars: goals that year (peak 69, 2013). Line: cumulative career climb to 981.": {
   "count": 1,
@@ -3390,7 +3354,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "Advertisement  [Cristiano Ronaldo Career Statistics: All-Time Analytical Index] Interactive Dashboard →"
+  "ctx": "for Real Madrid.  [Cristiano Ronaldo Career Statistics: All-Time Analytical Index] Interactive Dashboard →"
  },
  "Cristiano Ronaldo Career Statistics: All-Time Analytical Index and Records": {
   "count": 1,
@@ -4302,7 +4266,7 @@
   "pages": [
    "trophies"
   ],
-  "ctx": "Advertisement  [Every Trophy Won by Club &amp; Country] Real Madrid — 15 trophies"
+  "ctx": "Portugal's record goalscorer, at six World Cups  [Every Trophy Won by Club &amp; Country] Real Madrid — 15 trophies"
  },
  "Every career milestone, dated and in order, from 2002 to today.": {
   "count": 4,
@@ -4319,7 +4283,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "Ronaldo through the years  [Every career milestone, dated and in order, from his 2002 debut to today.] Advertisement"
+  "ctx": "Ronaldo through the years  [Every career milestone, dated and in order, from his 2002 debut to today.] ❤️"
  },
  "Every meeting with Real Madrid, the goal log and video clips.": {
   "count": 1,
@@ -4388,7 +4352,7 @@
    "timeline",
    "trophies"
   ],
-  "ctx": "Advertisement  [Explore More Cristiano Ronaldo Statistics] Advertisement"
+  "ctx": "&mdash; 32 with clubs and 3 with Portugal.  [Explore More Cristiano Ronaldo Statistics] Advertisement"
  },
  "Explore full head-to-head statistics and all 36 club meetings on our": {
   "count": 1,
@@ -4560,7 +4524,7 @@
   "pages": [
    "timeline"
   ],
-  "ctx": "🇵🇹 Portugal (5)  [Filter milestones] Advertisement"
+  "ctx": "🇵🇹 Portugal (5)  [Filter milestones] Sporting CP"
  },
  "Filter milestones — try “World Cup”": {
   "count": 1,
@@ -4869,14 +4833,14 @@
   "pages": [
    "ronaldo-vs-messi"
   ],
-  "ctx": "Advertisement  [Frequently Asked Questions: Ronaldo vs Messi] Who has more total career goals: Ronaldo or Messi?"
+  "ctx": "The archive records the result of every meeting. The competition-by-competition split of those 36 games, and the goals scored inside them, are not carried in the dataset and are therefore not published here.  [Frequently Asked Questions: Ronaldo vs Messi] Who has more total career goals: Ronaldo or "
  },
  "Frequently Asked Questions: Ronaldo's Career Milestones": {
   "count": 1,
   "pages": [
    "timeline"
   ],
-  "ctx": "Advertisement  [Frequently Asked Questions: Ronaldo's Career Milestones] When did Ronaldo make his senior debut?"
+  "ctx": "983 career goals  [Frequently Asked Questions: Ronaldo's Career Milestones] When did Ronaldo make his senior debut?"
  },
  "Frequently asked questions": {
   "count": 3,
@@ -5366,7 +5330,7 @@
    "timeline",
    "trophies"
   ],
-  "ctx": "Advertisement  [How I put these numbers together — counted by hand and checked twice against named sources.] How I put these numbers together"
+  "ctx": "Filter every chart by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal.  [How I put these numbers together — counted by hand and checked twice against named sources.] How I put these numbers together"
  },
  "How does Ronaldo's El Clásico record compare with Messi's?": {
   "count": 1,
@@ -6583,7 +6547,7 @@
   "pages": [
    "trophies"
   ],
-  "ctx": "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.  [Portugal's record goalscorer, at six World Cups] Advertisement"
+  "ctx": "Six World Cups (2006–2026) and 146 goals in 234 caps for Portugal.  [Portugal's record goalscorer, at six World Cups] Every Trophy Won by Club &amp; Country"
  },
  "Portugal: 146 goals": {
   "count": 1,
@@ -6818,7 +6782,7 @@
   "pages": [
    "champions-league"
   ],
-  "ctx": "Advertisement  [Records held in the competition] Record"
+  "ctx": "2005/06 was a UEFA Cup campaign and 2022/23 was the Europa League, so neither counts towards the Champions League. Season lines follow UEFA's official record of 140 goals in 183 appearances.  [Records held in the competition] Record"
  },
  "Records on the biggest stages: the FIFA World Cup, senior continental championships and the Champions League. A dash means the figure is not carried in this archive's dataset, so it is shown as missing rather than estimated.": {
   "count": 1,
@@ -6982,7 +6946,7 @@
   "pages": [
    "ronaldo-vs-messi"
   ],
-  "ctx": "—  [Ronaldo (4 Madrid, 1 United)] Advertisement"
+  "ctx": "—  [Ronaldo (4 Madrid, 1 United)] 36 Direct Head-to-Head Encounters"
  },
  "Ronaldo (World Record)": {
   "count": 1,
@@ -7215,7 +7179,7 @@
   "pages": [
    "real-madrid"
   ],
-  "ctx": "▾  [Ronaldo's archive records 18 El Clásico goals against Barcelona for Real Madrid. Messi's published record is 26 El Clásico goals in 45 matches, almost all of them for Barcelona.] Advertisement"
+  "ctx": "▾  [Ronaldo's archive records 18 El Clásico goals against Barcelona for Real Madrid. Messi's published record is 26 El Clásico goals in 45 matches, almost all of them for Barcelona.] Explore More Cristiano Ronaldo Statistics"
  },
  "Ronaldo's nine years in Madrid, split by competition. The El Clásico line counts matches against Barcelona only and sits inside the rows below it; it is not added to the total.": {
   "count": 1,
@@ -7980,7 +7944,7 @@
   "pages": [
    "ronaldo-vs-messi"
   ],
-  "ctx": "11  [The archive records the result of every meeting. The competition-by-competition split of those 36 games, and the goals scored inside them, are not carried in the dataset and are therefore not published here.] Advertisement"
+  "ctx": "11  [The archive records the result of every meeting. The competition-by-competition split of those 36 games, and the goals scored inside them, are not carried in the dataset and are therefore not published here.] Frequently Asked Questions: Ronaldo vs Messi"
  },
  "The best calendar year of his career.": {
   "count": 1,
@@ -8958,7 +8922,7 @@
   "pages": [
    "index"
   ],
-  "ctx": "60 goals  [for Real Madrid.] Advertisement"
+  "ctx": "60 goals  [for Real Madrid.] Cristiano Ronaldo Career Statistics: All-Time Analytical Index"
  },
  "for Sporting CP, Manchester United, Real Madrid, Juventus and Al Nassr, and": {
   "count": 1,

@@ -16,6 +16,13 @@
      below load. Moving it after them, or making it async, disables the
      popunder and forced-redirect blocking. -->
 <script src="/js/ad-guard.js"></script>
+  <link rel="preconnect" href="https://bauval.org" crossorigin />
+  <link rel="preconnect" href="https://highrevenueformat.com" crossorigin />
+  <link rel="preconnect" href="https://araplhn.org" crossorigin />
+  <link rel="dns-prefetch" href="https://bauval.org" />
+  <link rel="dns-prefetch" href="https://highrevenueformat.com" />
+  <link rel="dns-prefetch" href="https://araplhn.org" />
+  <link rel="preload" href="/ads/hrf-top.html" as="document" fetchpriority="high" />
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <meta content="Os 983 gols de carreira de Cristiano Ronaldo em 1,342 participações profissionais, divididos por clube, competição, finalização e parte do corpo. Filtre por Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP ou Portugal." name="description"/>
@@ -102,7 +109,7 @@
       "name": "Cristiano Ronaldo goals by competition, season, finish and body part",
       "description": "Cristiano Ronaldo's 983 career goals split by competition, club season, finish type and body part, filterable by team — Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP and Portugal. Finish and body-part splits are provisional compiled tallies.",
       "temporalCoverage": "2002/2026",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-10-30",
       "creator": {
         "@id": "https://www.ronaldostats.site/#org"
       },
@@ -144,7 +151,7 @@
       "url": "https://www.ronaldostats.site/pt/dashboard",
       "name": "Cristiano Ronaldo Stats Dashboard — Goals by Team, Foot & Competition | RonaldoStats",
       "description": "Slice Ronaldo's 983 career goals by competition, season, finish and body part — filter by Real Madrid, Manchester United, Juventus, Al Nassr, Sporting CP or Portugal. Charts and full tables included.",
-      "dateModified": "2026-10-29",
+      "dateModified": "2026-10-30",
       "inLanguage": "en",
       "publisher": {
         "@id": "https://www.ronaldostats.site/#org"
@@ -274,7 +281,7 @@
 <aside aria-label="Publicidade" class="ad-banner-wrap ad-banner-top">
   <span class="ad-native-label">Publicidade</span>
   <div class="ad-banner-slot">
-    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
+    <iframe class="safe-ad-frame safe-ad-top" src="/ads/hrf-top.html" width="728" height="90" loading="eager" fetchpriority="high" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
   </div>
 </aside>
 <p class="eyebrow">Hub de estatísticas &amp; análises <i></i> <span id="upd">Atualizado em <span class="upd-date" data-no-translate data-date="2026-10-22">22 October 2026</span></span></p>
@@ -944,10 +951,10 @@
   </section>
 
 
-<aside aria-label="Publicidade" class="ad-banner-wrap">
+<aside aria-label="Publicidade" class="ad-banner-wrap ad-banner-468">
   <span class="ad-native-label">Publicidade</span>
   <div class="ad-banner-slot">
-    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no" loading="lazy"></iframe>
+    <iframe class="safe-ad-frame" src="/ads/hrf-468x60.html" width="468" height="60" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
   </div>
 </aside>
 
@@ -961,21 +968,16 @@
     <div class="record"><span class="num">35</span><span><b>Troféus coletivos</b> &mdash; 32 por clubes e 3 por Portugal.</span></div>
   </section>
 
-<aside aria-label="Publicidade" class="ad-banner-wrap">
-  <span class="ad-native-label">Publicidade</span>
-  <div class="ad-banner-slot">
-    <iframe class="safe-ad-frame" src="/ads/hrf-300x250.html" width="300" height="250" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
-  </div>
-</aside>
+
 
 
 
 <h2>Explore mais estatísticas de Cristiano Ronaldo</h2>
 <aside aria-label="Publicidade" class="ad-native-wrap">
-<span class="ad-native-label">Publicidade</span>
-<div class="ad-native-slot">
-<iframe class="safe-ad-frame safe-ad-native" src="/ads/prc-native-6161.html" style="width:100%;height:320px" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no"></iframe>
-</div>
+  <span class="ad-native-label">Publicidade</span>
+  <div class="ad-native-slot">
+    <iframe class="safe-ad-frame safe-ad-native" src="/ads/prc-native-6161.html" style="width:100%;height:320px" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Publicidade" scrolling="no" loading="lazy"></iframe>
+  </div>
 </aside><nav aria-label="Mais estatísticas de Cristiano Ronaldo" class="explore" id="explore">
     
     <a class="link-card" href="/pt/ronaldo-vs-messi"><strong>🐐 Ronaldo vs Messi — histórico</strong><span>Estatísticas de carreira em confrontos diretos: 983 contra 936 gols, 35 contra 46 troféus, 5 contra 8 Ballons d'Or.</span></a>
